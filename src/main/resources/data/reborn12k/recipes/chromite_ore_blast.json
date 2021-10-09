@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "reborn12k:chromite_ore"
+    },
+    "result": "reborn12k:chrome_dust",
+    "experience": 0.7,
+    "cookingtime": 100
+}

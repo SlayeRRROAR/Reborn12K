@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/magic_within",
+  "display": {
+    "icon": {
+      "item": "reborn12k:refined_manatite"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.experiments_with_magic.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.experiments_with_magic.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_manatite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:refined_manatite"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_manatite"
+    ]
+  ]
+}

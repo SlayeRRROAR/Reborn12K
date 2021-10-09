@@ -1,0 +1,79 @@
+{
+  "parent": "reborn12k:reborn12k/fiery_alloy",
+  "display": {
+    "icon": {
+      "item": "reborn12k:blazing_steel_chestplate"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.baptism_of_fire.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.baptism_of_fire.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "blazing_steel_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:blazing_steel_helmet"
+            ]
+          }
+        ]
+      }
+    },
+    "blazing_steel_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:blazing_steel_chestplate"
+            ]
+          }
+        ]
+      }
+    },
+    "blazing_steel_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:blazing_steel_leggings"
+            ]
+          }
+        ]
+      }
+    },
+    "blazing_steel_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:blazing_steel_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blazing_steel_helmet",
+      "blazing_steel_chestplate",
+      "blazing_steel_leggings",
+      "blazing_steel_boots"
+    ]
+  ]
+}

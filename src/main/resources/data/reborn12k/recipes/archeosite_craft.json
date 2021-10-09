@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:cobalt"
+        },
+        {
+            "item": "minecraft:netherite_ingot"
+        },
+        {
+            "item": "minecraft:dragon_breath"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:archeosite_ingot",
+        "count": 1
+    },
+    "group": "archeosite"
+}

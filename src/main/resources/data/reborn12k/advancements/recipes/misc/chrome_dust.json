@@ -1,0 +1,34 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:chrome_dust"
+      ]
+    },
+    "criteria": {
+      "has_chrome_block": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "reborn12k:chrome_block"
+              ]
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:chrome_dust"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_chrome_block",
+        "has_the_recipe"
+      ]
+    ]
+  }

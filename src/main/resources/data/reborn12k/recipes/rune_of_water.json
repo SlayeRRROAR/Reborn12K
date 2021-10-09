@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:blank_rune"
+    },
+    "addition": {
+        "item": "reborn12k:sapphire"
+    },
+    "result": {
+        "item": "reborn12k:rune_of_water"
+    }
+}

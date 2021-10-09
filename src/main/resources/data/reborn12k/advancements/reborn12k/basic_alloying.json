@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k/root",
+  "display": {
+    "icon": {
+      "item": "reborn12k:raw_steel"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.basic_alloying.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.basic_alloying.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_raw_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:raw_steel"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_raw_steel"
+    ]
+  ]
+}

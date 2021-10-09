@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:carbon_steel_axe"
+    },
+    "addition": {
+        "item": "reborn12k:blazing_steel_ingot"
+    },
+    "result": {
+        "item": "reborn12k:blazing_steel_axe"
+    }
+}

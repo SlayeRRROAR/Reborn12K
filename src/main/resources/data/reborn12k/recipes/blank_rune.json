@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:gold_nugget"
+        },
+        "B": {
+            "item": "reborn12k:silver_ingot"
+        }
+    },
+    "result": {
+        "item": "reborn12k:blank_rune",
+        "count": 3
+    }
+}

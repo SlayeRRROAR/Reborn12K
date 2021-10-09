@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "A A",
+        "A A"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:bronze_ingot"
+        }
+    },
+    "result": {
+        "item": "reborn12k:bronze_leggings",
+        "count": 1
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/mana_weaving",
+  "display": {
+    "icon": {
+      "item": "reborn12k:golden_ring"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.golden_rings.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.golden_rings.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_rings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:golden_ring"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_rings"
+    ]
+  ]
+}

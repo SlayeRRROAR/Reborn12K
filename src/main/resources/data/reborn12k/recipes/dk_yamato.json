@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wither_rose"
+    },
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "reborn12k:yamato"
+    }
+  ],
+  "result": {
+    "item": "reborn12k:yamato",
+    "data": {
+      "Enchantments": [
+        {
+          "id": "reborn12k:deathskiss",
+          "lvl": 5
+        }
+      ]
+    },
+    "count": 1
+  },
+  "group": "yamato"
+}

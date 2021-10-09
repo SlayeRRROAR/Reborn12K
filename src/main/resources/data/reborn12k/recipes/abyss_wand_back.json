@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:abyss_wand",
+            "remainder": { "item": "reborn12k:wooden_wand" }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:abyss_manatite",
+        "count": 1
+    },
+    "group": "abyss_manatite"
+}

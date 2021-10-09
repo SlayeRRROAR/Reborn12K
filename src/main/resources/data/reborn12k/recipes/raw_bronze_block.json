@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:raw_bronze"
+        }
+    },
+    "result": {
+        "item": "reborn12k:raw_bronze_block",
+        "count": 1
+    }
+}

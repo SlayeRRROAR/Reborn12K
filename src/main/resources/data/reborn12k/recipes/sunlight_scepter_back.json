@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:sunlight_scepter",
+            "remainder": { "item": "reborn12k:silver_scepter" }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:sunlight_manatite",
+        "count": 1
+    },
+    "group": "sunlight_manatite"
+}

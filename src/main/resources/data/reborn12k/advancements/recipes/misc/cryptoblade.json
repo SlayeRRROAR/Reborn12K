@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "reborn12k:cryptoblade"
+    ]
+  },
+  "criteria": {
+    "has_bladepiece": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:cryptoblade_piece"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "reborn12k:cryptoblade"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bladepiece",
+      "has_the_recipe"
+    ]
+  ]
+}

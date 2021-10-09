@@ -1,0 +1,34 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:crimson_rod"
+      ]
+    },
+    "criteria": {
+      "has_golden_rod": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "reborn12k:golden_rod"
+              ]
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:crimson_rod"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_golden_rod",
+        "has_the_recipe"
+      ]
+    ]
+  }

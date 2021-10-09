@@ -1,0 +1,48 @@
+{
+  "parent": "reborn12k:reborn12k_secrets/root",
+    "display": {
+      "icon": {
+        "item": "reborn12k:yamato_blade"
+      },
+      "title": {
+        "translate": "advancements.reborn12k_secrets.katanakaji.title"
+      },
+      "description": {
+        "translate": "advancements.reborn12k_secrets.katanakaji.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+  "criteria": {
+    "yamato_pieces": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:yamato_blade"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:katana_tsuba"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:katana_tsuka"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "yamato_pieces"
+    ]
+  ]
+}

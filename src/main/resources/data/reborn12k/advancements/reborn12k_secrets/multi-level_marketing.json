@@ -1,0 +1,38 @@
+{
+  "parent": "reborn12k:reborn12k_secrets/cryptoinvestor",
+    "display": {
+      "icon": {
+        "item": "reborn12k:cutter_237"
+      },
+      "title": {
+        "translate": "advancements.reborn12k_secrets.multi-level_marketing.title"
+      },
+      "description": {
+        "translate": "advancements.reborn12k_secrets.multi-level_marketing.description"
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+  "criteria": {
+    "get_cutter_237": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:cutter_237"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_cutter_237"
+    ]
+  ]
+}

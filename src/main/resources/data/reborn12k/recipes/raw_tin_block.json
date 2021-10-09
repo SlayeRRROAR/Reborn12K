@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:raw_tin"
+        }
+    },
+    "result": {
+        "item": "reborn12k:raw_tin_block",
+        "count": 1
+    }
+}

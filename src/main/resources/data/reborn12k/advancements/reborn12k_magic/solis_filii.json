@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/runic_discovery",
+  "display": {
+    "icon": {
+      "item": "reborn12k:sunlight_manatite"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.solis_filii.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.solis_filii.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_sunlight_manatite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:sunlight_manatite"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_sunlight_manatite"
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:netherite_block",
+    "minecraft:emerald_block",
+    "minecraft:diamond_block",
+    "minecraft:gold_block",
+    "minecraft:iron_block",
+    "minecraft:lapis_block",
+    "minecraft:copper_block",
+    "reborn12k:tin_block",
+    "reborn12k:silver_block",
+    "reborn12k:topaz_block",
+    "reborn12k:ruby_block",
+    "reborn12k:opal_block",
+    "reborn12k:sapphire_block",
+    "reborn12k:bronze_block",
+    "reborn12k:cobalt_block",
+    "reborn12k:carbon_steel_block",
+    "reborn12k:blazing_steel_block",
+    "reborn12k:archeosite_block",
+    "reborn12k:thelosite_block"
+  ]
+}

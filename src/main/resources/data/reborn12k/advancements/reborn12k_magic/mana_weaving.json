@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/experiments_with_magic",
+  "display": {
+    "icon": {
+      "item": "reborn12k:manaweave"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.mana_weaving.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.mana_weaving.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_weave": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:manaweave"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_weave"
+    ]
+  ]
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "reborn12k:deepslate_silver_ore"
+    },
+    "result": "reborn12k:silver_ingot",
+    "experience": 1.0,
+    "cookingtime": 200
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/runic_discovery",
+  "display": {
+    "icon": {
+      "item": "reborn12k:novilunium_manatite"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.night_haunter.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.night_haunter.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_novilunium_manatite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:novilunium_manatite"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_novilunium_manatite"
+    ]
+  ]
+}

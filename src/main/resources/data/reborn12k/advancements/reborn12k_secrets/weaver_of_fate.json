@@ -1,0 +1,38 @@
+{
+  "parent": "reborn12k:reborn12k_secrets/root",
+    "display": {
+      "icon": {
+        "item": "reborn12k:manaweave"
+      },
+      "title": {
+        "translate": "advancements.reborn12k_secrets.weaver_of_fate.title"
+      },
+      "description": {
+        "translate": "advancements.reborn12k_secrets.weaver_of_fate.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+  "criteria": {
+    "has_manaweave": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:manaweave"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_manaweave"
+    ]
+  ]
+}

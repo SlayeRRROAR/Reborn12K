@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "minecraft:netherite_leggings"
+    },
+    "addition": {
+        "item": "reborn12k:archeosite_ingot"
+    },
+    "result": {
+        "item": "reborn12k:archeosite_leggings"
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:netherite_ingot",
+    "minecraft:emerald",
+    "minecraft:diamond",
+    "minecraft:gold_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:lapis_lazuli",
+    "minecraft:copper_ingot",
+    "reborn12k:tin_ingot",
+    "reborn12k:silver_ingot",
+    "reborn12k:topaz",
+    "reborn12k:ruby",
+    "reborn12k:opal",
+    "reborn12k:sapphire",
+    "reborn12k:bronze_ingot",
+    "reborn12k:cobalt",
+    "reborn12k:carbon_steel_ingot",
+    "reborn12k:blazing_steel_ingot",
+    "reborn12k:archeosite_ingot",
+    "reborn12k:thelosite_ingot"
+  ]
+}

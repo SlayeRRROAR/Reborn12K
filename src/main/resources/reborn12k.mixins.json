@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.slayerrroar.reborn12k.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "BlazingSteelMixin",
+    "ArcheositeMixin",
+    "ThelositeMixin",
+    "MageMixin",
+    "PowerArmorMixin",
+    "LivingEntityMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

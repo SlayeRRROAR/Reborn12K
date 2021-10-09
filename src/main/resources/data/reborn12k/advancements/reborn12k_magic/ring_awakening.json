@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/golden_rings",
+  "display": {
+    "icon": {
+      "item": "reborn12k:awakened_golden_ring"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.ring_awakening.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.ring_awakening.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_ring": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:awakened_golden_ring"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_ring"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:awakened_golden_ring"
+    },
+    "addition": {
+        "item": "reborn12k:volcanic_manatite"
+    },
+    "result": {
+        "item": "reborn12k:ring_of_fire"
+    }
+}

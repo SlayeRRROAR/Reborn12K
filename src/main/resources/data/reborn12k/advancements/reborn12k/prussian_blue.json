@@ -1,0 +1,37 @@
+{
+    "parent": "reborn12k:reborn12k/root",
+    "display": {
+      "icon": {
+        "item": "reborn12k:cobalt"
+      },
+      "title": {
+        "translate": "advancements.reborn12k.prussian_blue.title"
+      },
+      "description": {
+        "translate": "advancements.reborn12k.prussian_blue.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "get_cobalt": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "reborn12k:cobalt"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "get_cobalt"
+      ]
+    ]
+  }

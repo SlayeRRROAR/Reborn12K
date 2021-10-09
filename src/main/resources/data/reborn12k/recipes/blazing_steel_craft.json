@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:carbon_steel_ingot"
+        },
+        {
+            "item": "reborn12k:carbon_steel_ingot"
+        },
+        {
+            "item": "reborn12k:carbon_steel_ingot"
+        },
+        {
+            "item": "reborn12k:carbon_steel_ingot"
+        },
+        {
+            "item": "minecraft:blaze_rod"
+        },
+        {
+            "item": "minecraft:blaze_rod"
+        },
+        {
+            "item": "minecraft:blaze_rod"
+        },
+        {
+            "item": "minecraft:blaze_rod"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:blazing_steel_ingot",
+        "count": 4
+    }
+}

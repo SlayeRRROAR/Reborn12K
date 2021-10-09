@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:cobalt"
+        },
+        {
+            "item": "reborn12k:blazing_steel_ingot"
+        },
+        {
+            "item": "minecraft:dragon_breath"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:thelosite_ingot",
+        "count": 1
+    },
+    "group": "thelosite"
+}

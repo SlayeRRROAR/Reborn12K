@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "reborn12k:end_cobalt_ore"
+    },
+    "result": "reborn12k:cobalt",
+    "experience": 1.3,
+    "cookingtime": 200
+}

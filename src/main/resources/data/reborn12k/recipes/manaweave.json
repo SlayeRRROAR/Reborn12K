@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:refined_manatite"
+        },
+        {
+            "item": "reborn12k:topaz"
+        },
+        {
+            "item": "reborn12k:opal"
+        },
+        {
+            "item": "reborn12k:ruby"
+        },
+        {
+            "item": "reborn12k:sapphire"
+        },
+        {
+            "item": "minecraft:diamond"
+        },
+        {
+            "item": "minecraft:emerald"
+        },
+        {
+            "item": "minecraft:amethyst_shard"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:manaweave",
+        "count": 1
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/runic_discovery",
+  "display": {
+    "icon": {
+      "item": "reborn12k:windstorm_manatite"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.rinceoir_gaoithe.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.rinceoir_gaoithe.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_windstorm_manatite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:windstorm_manatite"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_windstorm_manatite"
+    ]
+  ]
+}

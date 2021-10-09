@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "ABA",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:rune_of_dark"
+        },
+        "B": {
+            "item": "reborn12k:refined_manatite"
+        }
+    },
+    "result": {
+        "item": "reborn12k:novilunium_manatite",
+        "count": 1
+    },
+    "group": "novilunium_manatite"
+}
