@@ -216,8 +216,10 @@
     "item.reborn12k.thelosite_axe": "Thelosite Axe",
     "item.reborn12k.thelosite_hoe": "Thelosite Hoe",
 
+    "item.reborn12k.silver_claymore": "Silver Claymore",
     "item.reborn12k.yamato": "Yamato",
     "item.reborn12k.cutter_237": "Cutter 237",
+    "item.reborn12k.power_sword": "Power Sword",
 
     "item.reborn12k.mage_helmet": "Mage's Hood",
     "item.reborn12k.mage_chestplate": "Mage's Robes",
@@ -319,6 +321,8 @@
 
     "advancements.reborn12k_secrets.root.title": "REBORN12K - Secrets",
     "advancements.reborn12k_secrets.root.description": "Even more Easter Eggs",
+    "advancements.reborn12k_secrets.holy_knight.title": "Holy Knight",
+    "advancements.reborn12k_secrets.holy_knight.description": "Craft a Silver Claymore",
     "advancements.reborn12k_secrets.katanakaji.title": "Katanakaji",
     "advancements.reborn12k_secrets.katanakaji.description": "Craft a Yamato Blade, a Katana Tsuba and a Katana Tsuka",
     "advancements.reborn12k_secrets.crying_devil.title": "Crying Devil",
@@ -335,6 +339,8 @@
     "advancements.reborn12k_secrets.ceramite_plating.description": "The Emperor Protects (asking how is heresy)",
     "advancements.reborn12k_secrets.angel_of_death.title": "Angel of Death",
     "advancements.reborn12k_secrets.angel_of_death.description": "And they shall know no fear",
+    "advancements.reborn12k_secrets.wrath_of_the_emperor.title": "Wrath of the Emperor",
+    "advancements.reborn12k_secrets.wrath_of_the_emperor.description": "In battle, He offers us redemption",
     "advancements.reborn12k_secrets.reject_modernity.title": "Reject Modernity",
     "advancements.reborn12k_secrets.reject_modernity.description": "Craft a Golden Banana",
     "advancements.reborn12k_secrets.return_to_monke.title": "Return to Monke",

@@ -215,9 +215,10 @@
     "item.reborn12k.thelosite_axe": "Ascia di Thelosite",
     "item.reborn12k.thelosite_hoe": "Zappa di Thelosite",
 
-
+    "item.reborn12k.silver_claymore": "Claymore d'Argento",
     "item.reborn12k.yamato": "Yamato",
     "item.reborn12k.cutter_237": "Taglierino 237",
+    "item.reborn12k.power_sword": "Spada Potenziata",
 
     "item.reborn12k.mage_helmet": "Cappuccio del Mago",
     "item.reborn12k.mage_chestplate": "Mantello del Mago",
@@ -319,6 +320,8 @@
 
     "advancements.reborn12k_secrets.root.title": "REBORN12K - Segreti",
     "advancements.reborn12k_secrets.root.description": "Ancora più Easter Eggs",
+    "advancements.reborn12k_secrets.holy_knight.title": "Cavaliere senza Peccato",
+    "advancements.reborn12k_secrets.holy_knight.description": "Crea una Claymore d'Argento",
     "advancements.reborn12k_secrets.katanakaji.title": "Katanakaji",
     "advancements.reborn12k_secrets.katanakaji.description": "Crea una Lama Yamato, una Katana Tsuba e una Katana Tsuka",
     "advancements.reborn12k_secrets.crying_devil.title": "Crying Devil",
@@ -335,6 +338,8 @@
     "advancements.reborn12k_secrets.ceramite_plating.description": "L'Imperatore Protegge (chiedere come è eresia)",
     "advancements.reborn12k_secrets.angel_of_death.title": "Angelo della Morte",
     "advancements.reborn12k_secrets.angel_of_death.description": "E non conosceranno alcuna paura",
+    "advancements.reborn12k_secrets.wrath_of_the_emperor.title": "Furia dell'Imperatore",
+    "advancements.reborn12k_secrets.wrath_of_the_emperor.description": "In battaglia, Lui ci offre salvezza",
     "advancements.reborn12k_secrets.reject_modernity.title": "Reject Modernity",
     "advancements.reborn12k_secrets.reject_modernity.description": "Crea una Banana d'oro",
     "advancements.reborn12k_secrets.return_to_monke.title": "Return to Monke",
