@@ -1,0 +1,38 @@
+{
+  "parent": "reborn12k:reborn12k_secrets/root",
+    "display": {
+      "icon": {
+        "item": "reborn12k:silver_claymore"
+      },
+      "title": {
+        "translate": "advancements.reborn12k_secrets.holy_knight.title"
+      },
+      "description": {
+        "translate": "advancements.reborn12k_secrets.holy_knight.description"
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+  "criteria": {
+    "get_silver_claymore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:silver_claymore"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_silver_claymore"
+    ]
+  ]
+}
