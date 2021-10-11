@@ -15,12 +15,12 @@ public class ArcheositeMaterial implements ToolMaterial{
 
     @Override
     public int getDurability() {
-        return 2750;
+        return 3120;
     }
 
     @Override
     public int getEnchantability() {
-        return 22;
+        return 24;
     }
 
     @Override

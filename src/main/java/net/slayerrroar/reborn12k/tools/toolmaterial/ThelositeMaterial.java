@@ -15,12 +15,12 @@ public class ThelositeMaterial implements ToolMaterial{
 
     @Override
     public int getDurability() {
-        return 3120;
+        return 2750;
     }
 
     @Override
     public int getEnchantability() {
-        return 14;
+        return 15;
     }
 
     @Override
