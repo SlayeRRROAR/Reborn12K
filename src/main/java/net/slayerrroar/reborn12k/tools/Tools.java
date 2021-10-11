@@ -40,8 +40,10 @@ public class Tools {
     public static ToolItem THELOSITE_AXE = new BaseAxe(ThelositeMaterial.INSTANCE, 5, -3.0f, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
     public static ToolItem THELOSITE_HOE = new BaseHoe(ThelositeMaterial.INSTANCE, -6, 0.0f, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
 
+    public static ToolItem SILVER_CLAYMORE = new BaseSword(SilverMaterial.INSTANCE, 6, -3.2f, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
     public static ToolItem CUTTER_237 = new Cutter(DueTreSette.INSTANCE, 3, -1.2f, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
     public static ToolItem YAMATO = new BaseSword(Yamato.INSTANCE, 1, -1.6f, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
+    public static ToolItem POWER_SWORD = new BaseSword(PowerMaterial.INSTANCE, 1, -2.4f, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
 
     
     public static void register() {
@@ -76,8 +78,10 @@ public class Tools {
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "thelosite_axe"), THELOSITE_AXE);
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "thelosite_hoe"), THELOSITE_HOE);
 
+        Registry.register(Registry.ITEM, new Identifier("reborn12k", "silver_claymore"), SILVER_CLAYMORE);
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "cutter_237"), CUTTER_237);
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "yamato"), YAMATO);
+        Registry.register(Registry.ITEM, new Identifier("reborn12k", "power_sword"), POWER_SWORD);
 
 
     }
