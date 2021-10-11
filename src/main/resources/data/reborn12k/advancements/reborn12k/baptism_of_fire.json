@@ -19,7 +19,7 @@
     "experience": 100
   },
   "criteria": {
-    "blazing_steel_helmet": {
+    "blazing_steel_armor": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -27,38 +27,17 @@
             "items": [
               "reborn12k:blazing_steel_helmet"
             ]
-          }
-        ]
-      }
-    },
-    "blazing_steel_chestplate": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
+          },
           {
             "items": [
               "reborn12k:blazing_steel_chestplate"
             ]
-          }
-        ]
-      }
-    },
-    "blazing_steel_leggings": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
+          },
           {
             "items": [
               "reborn12k:blazing_steel_leggings"
             ]
-          }
-        ]
-      }
-    },
-    "blazing_steel_boots": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
+          },
           {
             "items": [
               "reborn12k:blazing_steel_boots"
@@ -70,10 +49,7 @@
   },
   "requirements": [
     [
-      "blazing_steel_helmet",
-      "blazing_steel_chestplate",
-      "blazing_steel_leggings",
-      "blazing_steel_boots"
+      "blazing_steel_armor"
     ]
   ]
 }

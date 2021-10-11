@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "carbon_steel_helmet": {
+    "carbon_steel_armor": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -24,38 +24,17 @@
             "items": [
               "reborn12k:carbon_steel_helmet"
             ]
-          }
-        ]
-      }
-    },
-    "carbon_steel_chestplate": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
+          },
           {
             "items": [
               "reborn12k:carbon_steel_chestplate"
             ]
-          }
-        ]
-      }
-    },
-    "carbon_steel_leggings": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
+          },
           {
             "items": [
               "reborn12k:carbon_steel_leggings"
             ]
-          }
-        ]
-      }
-    },
-    "carbon_steel_boots": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
+          },
           {
             "items": [
               "reborn12k:carbon_steel_boots"
@@ -67,10 +46,7 @@
   },
   "requirements": [
     [
-      "carbon_steel_helmet",
-      "carbon_steel_chestplate",
-      "carbon_steel_leggings",
-      "carbon_steel_boots"
+      "carbon_steel_armor"
     ]
   ]
 }
