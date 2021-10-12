@@ -10,10 +10,16 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.block_class.UraniumBlocks;
 
 public class BaseBlocks {
+
+    public static final Block DIORITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0).sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
+    public static final Block SMALL_DIORITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0).sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
+    public static final Block GRANITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0).sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
+    public static final Block SMALL_GRANITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0).sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
+    public static final Block ANDESITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0).sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
+    public static final Block SMALL_ANDESITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().breakByTool(FabricToolTags.PICKAXES, 0).sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
 
     public static final Block TOPAZ_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
     public static final Block OPAL_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().breakByTool(FabricToolTags.PICKAXES, 2).sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
@@ -43,7 +49,14 @@ public class BaseBlocks {
     public static void register(){
 
         //BLOCK
-        
+
+        Registry.register(Registry.BLOCK, new Identifier("reborn12k", "diorite_bricks"), DIORITE_BRICKS);
+        Registry.register(Registry.BLOCK, new Identifier("reborn12k", "small_diorite_bricks"), SMALL_DIORITE_BRICKS);
+        Registry.register(Registry.BLOCK, new Identifier("reborn12k", "granite_bricks"), GRANITE_BRICKS);
+        Registry.register(Registry.BLOCK, new Identifier("reborn12k", "small_granite_bricks"), SMALL_GRANITE_BRICKS);
+        Registry.register(Registry.BLOCK, new Identifier("reborn12k", "andesite_bricks"), ANDESITE_BRICKS);
+        Registry.register(Registry.BLOCK, new Identifier("reborn12k", "small_andesite_bricks"), SMALL_ANDESITE_BRICKS);
+
         Registry.register(Registry.BLOCK, new Identifier("reborn12k", "topaz_block"), TOPAZ_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier("reborn12k", "opal_block"), OPAL_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier("reborn12k", "ruby_block"), RUBY_BLOCK);
@@ -69,7 +82,14 @@ public class BaseBlocks {
         Registry.register(Registry.BLOCK, new Identifier("reborn12k", "thelosite_block"), THELOSITE_BLOCK);
     
         //ITEM
-    
+
+        Registry.register(Registry.ITEM, new Identifier("reborn12k", "diorite_bricks"), new BlockItem(DIORITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("reborn12k", "small_diorite_bricks"), new BlockItem(SMALL_DIORITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("reborn12k", "granite_bricks"), new BlockItem(GRANITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("reborn12k", "small_GRANite_bricks"), new BlockItem(SMALL_GRANITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("reborn12k", "andesite_bricks"), new BlockItem(ANDESITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("reborn12k", "small_andesite_bricks"), new BlockItem(SMALL_ANDESITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "topaz_block"), new BlockItem(TOPAZ_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "opal_block"), new BlockItem(OPAL_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "ruby_block"), new BlockItem(RUBY_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));

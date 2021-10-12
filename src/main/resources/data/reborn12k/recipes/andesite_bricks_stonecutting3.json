@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12K:small_andesite_bricks"
+  },
+  "result": "reborn12k:andesite_bricks",
+  "count": 1
+}
