@@ -86,7 +86,7 @@ public class BaseBlocks {
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "diorite_bricks"), new BlockItem(DIORITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "small_diorite_bricks"), new BlockItem(SMALL_DIORITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "granite_bricks"), new BlockItem(GRANITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-        Registry.register(Registry.ITEM, new Identifier("reborn12k", "small_GRANite_bricks"), new BlockItem(SMALL_GRANITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("reborn12k", "small_granite_bricks"), new BlockItem(SMALL_GRANITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "andesite_bricks"), new BlockItem(ANDESITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier("reborn12k", "small_andesite_bricks"), new BlockItem(SMALL_ANDESITE_BRICKS, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
 
