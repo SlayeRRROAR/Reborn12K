@@ -1,8 +1,8 @@
 package net.slayerrroar.reborn12k.enchantments.enchant;
 
-import net.minecraft.enchantment.DamageEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -19,7 +19,8 @@ public class DeathsKiss_Ench extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return !(other instanceof DamageEnchantment);
+
+        return super.canAccept(other) && other != Enchantments.SHARPNESS && other != Enchantments.SMITE && other != Enchantments.BANE_OF_ARTHROPODS;
     }
 
     @Override
