@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:andesite_bricks"
+  },
+  "result": "reborn12k:small_andesite_bricks_stairs",
+  "count": 1
+}
