@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:diorite_bricks"
-  },
-  "result": "minecraft:diorite",
-  "count": 1
-}
