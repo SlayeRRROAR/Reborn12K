@@ -14,6 +14,8 @@ import net.slayerrroar.reborn12k.tools.Tools;
 
 public class Reborn12K implements ModInitializer {
 
+    public static final String MOD_ID = "reborn12k";
+
     @Override
     public void onInitialize() {
 

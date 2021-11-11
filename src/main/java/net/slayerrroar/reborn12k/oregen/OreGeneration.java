@@ -11,6 +11,7 @@ import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
+import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.OreBlocks;
 
 public class OreGeneration {
@@ -184,93 +185,93 @@ public static void register() {
         // Overworld Ores
 
         RegistryKey<ConfiguredFeature<?, ?>> oreTopaz = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "ore_topaz"));
+                new Identifier(Reborn12K.MOD_ID, "ore_topaz"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreTopaz.getValue(), ORE_TOPAZ);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreTopaz);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreOpal = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "ore_opal"));
+                new Identifier(Reborn12K.MOD_ID, "ore_opal"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreOpal.getValue(), ORE_OPAL);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreOpal);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreRuby = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "ore_ruby"));
+                new Identifier(Reborn12K.MOD_ID, "ore_ruby"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreRuby.getValue(), ORE_RUBY);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreRuby);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreSapphire = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "ore_sapphire"));
+                new Identifier(Reborn12K.MOD_ID, "ore_sapphire"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreSapphire.getValue(), ORE_SAPPHIRE);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreSapphire);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreManatite = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "ore_manatite"));
+                new Identifier(Reborn12K.MOD_ID, "ore_manatite"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreManatite.getValue(), ORE_MANATITE);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreManatite);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreChromite = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "ore_chromite"));
+                new Identifier(Reborn12K.MOD_ID, "ore_chromite"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreChromite.getValue(), ORE_CHROMITE);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreChromite);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreTin = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "ore_tin"));
+                new Identifier(Reborn12K.MOD_ID, "ore_tin"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreTin.getValue(), ORE_TIN);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreTin);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreSilver = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "ore_silver"));
+                new Identifier(Reborn12K.MOD_ID, "ore_silver"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreSilver.getValue(), ORE_SILVER);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreSilver);
 
         // Deepslate Ores
 
         RegistryKey<ConfiguredFeature<?, ?>> oreDeepTopaz = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "deep_ore_topaz"));
+                new Identifier(Reborn12K.MOD_ID, "deep_ore_topaz"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreDeepTopaz.getValue(), DEEP_ORE_TOPAZ);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreDeepTopaz);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreDeepOpal = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "deep_ore_opal"));
+                new Identifier(Reborn12K.MOD_ID, "deep_ore_opal"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreDeepOpal.getValue(), DEEP_ORE_OPAL);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreDeepOpal);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreDeepRuby = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "deep_ore_ruby"));
+                new Identifier(Reborn12K.MOD_ID, "deep_ore_ruby"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreDeepRuby.getValue(), DEEP_ORE_RUBY);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreDeepRuby);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreDeepSapphire = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "deep_ore_sapphire"));
+                new Identifier(Reborn12K.MOD_ID, "deep_ore_sapphire"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreDeepSapphire.getValue(), DEEP_ORE_SAPPHIRE);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreDeepSapphire);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreDeepManatite = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "deep_ore_manatite"));
+                new Identifier(Reborn12K.MOD_ID, "deep_ore_manatite"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreDeepManatite.getValue(), DEEP_ORE_MANATITE);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreDeepManatite);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreDeepUranium = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "deep_ore_uranium"));
+                new Identifier(Reborn12K.MOD_ID, "deep_ore_uranium"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreDeepUranium.getValue(), DEEP_ORE_URANIUM);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreDeepUranium);
 
         RegistryKey<ConfiguredFeature<?, ?>> oreDeepSilver = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("reborn12k", "deep_ore_silver"));
+                new Identifier(Reborn12K.MOD_ID, "deep_ore_silver"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreDeepSilver.getValue(), DEEP_ORE_SILVER);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreDeepSilver);
 
         // Nether Ores
 
         RegistryKey<ConfiguredFeature<?, ?>> oreNetherUranium = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-        new Identifier("reborn12k", "nether_ore_uranium"));
+        new Identifier(Reborn12K.MOD_ID, "nether_ore_uranium"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreNetherUranium.getValue(), NETHER_ORE_URANIUM);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES, oreNetherUranium);
 
         // End Ores
 
         RegistryKey<ConfiguredFeature<?, ?>> oreEndCobalt = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-        new Identifier("reborn12k", "end_ore_cobalt"));
+        new Identifier(Reborn12K.MOD_ID, "end_ore_cobalt"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreEndCobalt.getValue(), END_ORE_COBALT);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, oreEndCobalt);
     

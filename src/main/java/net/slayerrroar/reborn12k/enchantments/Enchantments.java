@@ -5,6 +5,7 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.enchantments.enchant.DeathsKiss_Ench;
 import net.slayerrroar.reborn12k.enchantments.enchant.MagicProt_Ench;
 
@@ -16,8 +17,8 @@ public class Enchantments {
 
     public static void register() {
 
-        Registry.register(Registry.ENCHANTMENT, new Identifier("reborn12k", "deathskiss"), DEATHSKISS);
-        Registry.register(Registry.ENCHANTMENT, new Identifier("reborn12k", "magic_protection"), MAGIC_PROTECTION);
+        Registry.register(Registry.ENCHANTMENT, new Identifier(Reborn12K.MOD_ID, "deathskiss"), DEATHSKISS);
+        Registry.register(Registry.ENCHANTMENT, new Identifier(Reborn12K.MOD_ID, "magic_protection"), MAGIC_PROTECTION);
 
     }
 
