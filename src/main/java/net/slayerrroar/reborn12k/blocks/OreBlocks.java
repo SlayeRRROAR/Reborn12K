@@ -7,11 +7,12 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.block_class.UraniumBlocks;
+import net.slayerrroar.reborn12k.items.Reborn12KItemGroup;
 
 public class OreBlocks {
 
@@ -41,50 +42,50 @@ public class OreBlocks {
 
     //BLOCK
     
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "topaz_ore"), TOPAZ_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "opal_ore"), OPAL_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "ruby_ore"), RUBY_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "sapphire_ore"), SAPPHIRE_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "deepslate_topaz_ore"), DEEPSLATE_TOPAZ_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "deepslate_opal_ore"), DEEPSLATE_OPAL_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "deepslate_ruby_ore"), DEEPSLATE_RUBY_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "deepslate_sapphire_ore"), DEEPSLATE_SAPPHIRE_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "topaz_ore"), TOPAZ_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "opal_ore"), OPAL_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "ruby_ore"), RUBY_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "sapphire_ore"), SAPPHIRE_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_topaz_ore"), DEEPSLATE_TOPAZ_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_opal_ore"), DEEPSLATE_OPAL_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_ruby_ore"), DEEPSLATE_RUBY_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_sapphire_ore"), DEEPSLATE_SAPPHIRE_ORE);
 
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "manatite_ore"), MANATITE_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "deepslate_manatite_ore"), DEEPSLATE_MANATITE_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "manatite_ore"), MANATITE_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_manatite_ore"), DEEPSLATE_MANATITE_ORE);
 
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "chromite_ore"), CHROMITE_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "deepslate_uranium_ore"), DEEPSLATE_URANIUM_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "nether_uranium_ore"), NETHER_URANIUM_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "end_cobalt_ore"), END_COBALT_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "chromite_ore"), CHROMITE_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_uranium_ore"), DEEPSLATE_URANIUM_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "nether_uranium_ore"), NETHER_URANIUM_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "end_cobalt_ore"), END_COBALT_ORE);
 
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "tin_ore"), TIN_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "silver_ore"), SILVER_ORE);
-    Registry.register(Registry.BLOCK, new Identifier("reborn12k", "deepslate_silver_ore"), DEEPSLATE_SILVER_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "tin_ore"), TIN_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "silver_ore"), SILVER_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_silver_ore"), DEEPSLATE_SILVER_ORE);
 
 
     //ITEM
 
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "topaz_ore"), new BlockItem(TOPAZ_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "opal_ore"), new BlockItem(OPAL_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "ruby_ore"), new BlockItem(RUBY_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "sapphire_ore"), new BlockItem(SAPPHIRE_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "deepslate_topaz_ore"), new BlockItem(DEEPSLATE_TOPAZ_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "deepslate_opal_ore"), new BlockItem(DEEPSLATE_OPAL_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "deepslate_ruby_ore"), new BlockItem(DEEPSLATE_RUBY_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "deepslate_sapphire_ore"), new BlockItem(DEEPSLATE_SAPPHIRE_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "topaz_ore"), new BlockItem(TOPAZ_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "opal_ore"), new BlockItem(OPAL_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "ruby_ore"), new BlockItem(RUBY_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "sapphire_ore"), new BlockItem(SAPPHIRE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_topaz_ore"), new BlockItem(DEEPSLATE_TOPAZ_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_opal_ore"), new BlockItem(DEEPSLATE_OPAL_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_ruby_ore"), new BlockItem(DEEPSLATE_RUBY_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_sapphire_ore"), new BlockItem(DEEPSLATE_SAPPHIRE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
 
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "manatite_ore"), new BlockItem(MANATITE_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "deepslate_manatite_ore"), new BlockItem(DEEPSLATE_MANATITE_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "manatite_ore"), new BlockItem(MANATITE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_manatite_ore"), new BlockItem(DEEPSLATE_MANATITE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
 
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "chromite_ore"), new BlockItem(CHROMITE_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "deepslate_uranium_ore"), new BlockItem(DEEPSLATE_URANIUM_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "nether_uranium_ore"), new BlockItem(NETHER_URANIUM_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "end_cobalt_ore"), new BlockItem(END_COBALT_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "chromite_ore"), new BlockItem(CHROMITE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_uranium_ore"), new BlockItem(DEEPSLATE_URANIUM_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "nether_uranium_ore"), new BlockItem(NETHER_URANIUM_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "end_cobalt_ore"), new BlockItem(END_COBALT_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
     
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "tin_ore"), new BlockItem(TIN_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "silver_ore"), new BlockItem(SILVER_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
-    Registry.register(Registry.ITEM, new Identifier("reborn12k", "deepslate_silver_ore"), new BlockItem(DEEPSLATE_SILVER_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "tin_ore"), new BlockItem(TIN_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "silver_ore"), new BlockItem(SILVER_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_silver_ore"), new BlockItem(DEEPSLATE_SILVER_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
     
 
     }

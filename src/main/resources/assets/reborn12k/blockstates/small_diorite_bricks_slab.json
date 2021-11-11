@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "reborn12k:block/small_diorite_bricks_slab"
+    },
+    "type=double": {
+      "model": "reborn12k:block/small_diorite_bricks"
+    },
+    "type=top": {
+      "model": "reborn12k:block/small_diorite_bricks_slab_top"
+    }
+  }
+}

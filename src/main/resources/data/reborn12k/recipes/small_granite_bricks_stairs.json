@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "reborn12k:small_granite_bricks"
   },
-  "result": "minecraft:granite",
+  "result": "reborn12k:small_granite_bricks_stairs",
   "count": 1
 }

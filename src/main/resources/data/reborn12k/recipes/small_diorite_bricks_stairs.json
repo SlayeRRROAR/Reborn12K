@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "reborn12k:small_diorite_bricks"
   },
-  "result": "minecraft:diorite",
+  "result": "reborn12k:small_diorite_bricks_stairs",
   "count": 1
 }

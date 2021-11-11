@@ -87,6 +87,24 @@
     "block.reborn12k.small_granite_bricks": "Small Granite Bricks",
     "block.reborn12k.andesite_bricks": "Andesite Bricks",
     "block.reborn12k.small_andesite_bricks": "Small Andesite Bricks",
+    "block.reborn12k.small_stone_bricks": "Small Stone Bricks",
+
+    "block.reborn12k.diorite_bricks_stairs": "Diorite Bricks Stairs",
+    "block.reborn12k.small_diorite_bricks_stairs": "Small Diorite Bricks Stairs",
+    "block.reborn12k.granite_bricks_stairs": "Granite Bricks Stairs",
+    "block.reborn12k.small_granite_bricks_stairs": "Small Granite Bricks Stairs",
+    "block.reborn12k.andesite_bricks_stairs": "Andesite Bricks Stairs",
+    "block.reborn12k.small_andesite_bricks_stairs": "Small Andesite Bricks Stairs",
+    "block.reborn12k.small_stone_bricks_stairs": "Small Stone Bricks Stairs",
+
+    "block.reborn12k.diorite_bricks_slab": "Diorite Bricks Slab",
+    "block.reborn12k.small_diorite_bricks_slab": "Small Diorite Bricks Slab",
+    "block.reborn12k.granite_bricks_slab": "Granite Bricks Slab",
+    "block.reborn12k.small_granite_bricks_slab": "Small Granite Bricks Slab",
+    "block.reborn12k.andesite_bricks_slab": "Andesite Bricks Slab",
+    "block.reborn12k.small_andesite_bricks_slab": "Small Andesite Bricks Slab",
+    "block.reborn12k.small_stone_bricks_slab": "Small Stone Bricks Slab",
+
 
     "block.reborn12k.topaz_block": "Block of Topaz",
     "block.reborn12k.opal_block": "Block of Opal",
@@ -355,7 +373,10 @@
 
 
     "enchantment.reborn12k.deathskiss": "Death's Kiss",
-    "enchantment.reborn12k.magic_protection": "Magic Protection"
+    "enchantment.reborn12k.magic_protection": "Magic Protection",
+
+
+    "itemGroup.reborn12k.reborn12k": "Reborn12K"
 
     
   }

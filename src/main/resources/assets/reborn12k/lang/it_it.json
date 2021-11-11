@@ -88,6 +88,22 @@
     "block.reborn12k.andesite_bricks": "Mattoni di Andesite",
     "block.reborn12k.small_andesite_bricks": "Piccoli Mattoni di Andesite",
 
+    "block.reborn12k.diorite_bricks_stairs": "Scale di Mattoni di Diorite",
+    "block.reborn12k.small_diorite_bricks_stairs": "Scale di Piccoli Mattoni di Diorite",
+    "block.reborn12k.granite_bricks_stairs": "Scale di Mattoni di Granito",
+    "block.reborn12k.small_granite_bricks_stairs": "Scale di Piccoli Mattoni di Granito",
+    "block.reborn12k.andesite_bricks_stairs": "Scale di Mattoni di Andesite",
+    "block.reborn12k.small_andesite_bricks_stairs": "Scale di Piccoli Mattoni di Andesite",
+    "block.reborn12k.small_stone_bricks_stairs": "Scale di Piccoli Mattoni di Pietra",
+
+    "block.reborn12k.diorite_bricks_slab": "Lastra di Mattoni di Diorite",
+    "block.reborn12k.small_diorite_bricks_slab": "Lastra di Piccoli Mattoni di Diorite",
+    "block.reborn12k.granite_bricks_slab": "Lastra di Mattoni di Granito",
+    "block.reborn12k.small_granite_bricks_slab": "Lastra di Piccoli Mattoni di Granito",
+    "block.reborn12k.andesite_bricks_slab": "Lastra di Mattoni di Andesite",
+    "block.reborn12k.small_andesite_bricks_slab": "Lastra di Piccoli Mattoni di Andesite",
+    "block.reborn12k.small_stone_bricks_slab": "Lastra di Piccoli Mattoni di Pietra",
+
     "block.reborn12k.topaz_block": "Blocco di Topaio",
     "block.reborn12k.opal_block": "Blocco di Opale",
     "block.reborn12k.ruby_block": "Blocco di Rubino",
@@ -353,7 +369,11 @@
     "advancements.reborn12k_secrets.return_to_monke.description": "Crea una Banana d'oro Incantata",
 
     "enchantment.reborn12k.deathskiss": "Bacio della Morte",
-    "enchantment.reborn12k.magic_protection": "Protezione dalla Magia"
+    "enchantment.reborn12k.magic_protection": "Protezione dalla Magia",
+
+
+    "itemGroup.reborn12k.reborn12k": "Reborn12K",
+    "block.reborn12k.small_stone_bricks": "Small Stone Bricks"
 
     
   }

@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "reborn12k:andesite_bricks"
   },
-  "result": "minecraft:andesite",
-  "count": 1
+  "result": "reborn12k:andesite_bricks_slab",
+  "count": 2
 }
