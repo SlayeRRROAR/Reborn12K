@@ -15,7 +15,7 @@ public class Yamato implements ToolMaterial{
 
     @Override
     public int getDurability() {
-        return 1324;
+        return 1824;
     }
 
     @Override
