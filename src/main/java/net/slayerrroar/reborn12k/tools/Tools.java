@@ -8,6 +8,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.Reborn12KItemGroup;
 import net.slayerrroar.reborn12k.tools.toolmaterial.*;
 import net.slayerrroar.reborn12k.tools.tooltype.*;
+import org.lwjgl.system.CallbackI;
 
 public class Tools {
 
@@ -42,9 +43,12 @@ public class Tools {
     public static ToolItem THELOSITE_HOE = new BaseHoe(ThelositeMaterial.INSTANCE, -6, 0.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
 
     public static ToolItem SILVER_CLAYMORE = new BaseSword(SilverMaterial.INSTANCE, 4, -3.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem CUTTER_237 = new Cutter(DueTreSette.INSTANCE, 3, -1.2f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem YAMATO = new BaseSword(Yamato.INSTANCE, 1, -1.6f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem CUTTER_237 = new Cutter(DueTreSette.INSTANCE, 3, -1.8f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem YAMATO = new BaseSword(Yamato.INSTANCE, 1, -2.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
     public static ToolItem POWER_SWORD = new BaseSword(PowerMaterial.INSTANCE, 5, -2.4f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem MURASAMA = new BaseSword(HFBMaterial.INSTANCE, 3, -1.6f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem BLADEWOLF = new BaseSword(HFBMaterial.INSTANCE, 5, -2.4f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem REBELLION = new BaseSword(Rebellion.INSTANCE, 5, -2.6f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
 
     
     public static void register() {
@@ -83,6 +87,9 @@ public class Tools {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cutter_237"), CUTTER_237);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "yamato"), YAMATO);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "power_sword"), POWER_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "murasama"), MURASAMA);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "bladewolf"), BLADEWOLF);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "rebellion"), REBELLION);
 
 
     }
