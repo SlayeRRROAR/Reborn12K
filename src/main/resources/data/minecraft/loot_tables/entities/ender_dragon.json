@@ -1,0 +1,200 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "set_count",
+              "count":{
+                "min": 8,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "reborn12k:rebellion"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "reborn12k:murasama"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "reborn12k:bladewolf"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "reborn12k:rebellion",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 15,
+                "max": 30
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "reborn12k:murasama",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 15,
+                "max": 30
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "reborn12k:bladewolf",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 15,
+                "max": 30
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 8,
+          "name": "reborn12k:crimson_staff"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "reborn12k:abyss_staff"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "reborn12k:novilunium_staff"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 8,
+          "name": "reborn12k:sunlight_staff"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "reborn12k:refined_manatite",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 12,
+          "name": "reborn12k:cutter_237"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 12,
+          "name": "reborn12k:power_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "reborn12k:cutter_237",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 10,
+                "max": 20
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "reborn12k:power_sword",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 10,
+                "max": 20
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 12,
+          "name": "reborn12k:silver_claymore"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "reborn12k:silver_claymore",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 10,
+                "max": 20
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "reborn12k:yamato",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 10,
+                "max": 20
+              },
+              "treasure": true
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{lvl:5,id:\"reborn12k:deathskiss\"}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
