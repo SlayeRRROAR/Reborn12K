@@ -5,7 +5,7 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 6,
           "name": "minecraft:diamond_pickaxe",
           "functions": [
@@ -19,7 +19,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 6,
           "name": "minecraft:diamond_shovel",
           "functions": [
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 6,
           "name": "minecraft:crossbow",
           "functions": [
@@ -47,7 +47,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 12,
           "name": "minecraft:ancient_debris",
           "functions": [
@@ -58,7 +58,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 4,
           "name": "minecraft:netherite_scrap",
           "functions": [
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:spectral_arrow",
           "functions": [
@@ -83,7 +83,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 9,
           "name": "minecraft:piglin_banner_pattern",
           "functions": [
@@ -94,7 +94,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:music_disc_pigstep",
           "functions": [
@@ -105,7 +105,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 12,
           "name": "minecraft:golden_carrot",
           "functions": [
@@ -119,7 +119,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 9,
           "name": "minecraft:golden_apple",
           "functions": [
@@ -130,7 +130,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:book",
           "functions": [
@@ -148,7 +148,7 @@
       "rolls": 2,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:iron_sword",
           "functions": [
@@ -169,7 +169,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:iron_block",
           "functions": [
@@ -180,7 +180,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:golden_boots",
           "functions": [
@@ -197,7 +197,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:golden_axe",
           "functions": [
@@ -211,7 +211,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:gold_block",
           "functions": [
@@ -222,7 +222,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:crossbow",
           "functions": [
@@ -233,7 +233,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:gold_ingot",
           "functions": [
@@ -247,7 +247,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:iron_ingot",
           "functions": [
@@ -261,7 +261,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:golden_sword",
           "functions": [
@@ -272,7 +272,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:golden_chestplate",
           "functions": [
@@ -283,7 +283,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:golden_helmet",
           "functions": [
@@ -294,7 +294,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:golden_leggings",
           "functions": [
@@ -305,7 +305,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:golden_boots",
           "functions": [
@@ -316,7 +316,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:crying_obsidian",
           "functions": [
@@ -338,7 +338,7 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:gilded_blackstone",
           "functions": [
@@ -352,7 +352,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:chain",
           "functions": [
@@ -366,7 +366,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:magma_cream",
           "functions": [
@@ -380,7 +380,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:bone_block",
           "functions": [
@@ -394,7 +394,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:iron_nugget",
           "functions": [
@@ -408,7 +408,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:obsidian",
           "functions": [
@@ -422,7 +422,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:gold_nugget",
           "functions": [
@@ -436,7 +436,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:string",
           "functions": [
@@ -450,7 +450,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:arrow",
           "functions": [
@@ -464,7 +464,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:cooked_porkchop",
           "functions": [
@@ -483,7 +483,7 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "reborn12k:yamato",
           "functions": [
@@ -494,12 +494,12 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "reborn12k:cutter_237"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:netherite_sword",
           "functions": [

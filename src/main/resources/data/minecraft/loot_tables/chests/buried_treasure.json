@@ -5,7 +5,7 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:heart_of_the_sea"
         }
@@ -18,7 +18,7 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 20,
           "name": "minecraft:iron_ingot",
           "functions": [
@@ -32,7 +32,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:gold_ingot",
           "functions": [
@@ -46,7 +46,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:tnt",
           "functions": [
@@ -68,7 +68,7 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:emerald",
           "functions": [
@@ -82,7 +82,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:diamond",
           "functions": [
@@ -96,7 +96,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:prismarine_crystals",
           "functions": [
@@ -118,17 +118,17 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 6,
           "name": "minecraft:leather_chestplate"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 8,
           "name": "minecraft:iron_sword"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "reborn12k:yamato",
           "functions": [
@@ -139,12 +139,12 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "reborn12k:cutter_237"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "reborn12k:magical_wood_staff"
         }
@@ -154,7 +154,7 @@
       "rolls": 2,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:cooked_cod",
           "functions": [
@@ -168,7 +168,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:cooked_salmon",
           "functions": [

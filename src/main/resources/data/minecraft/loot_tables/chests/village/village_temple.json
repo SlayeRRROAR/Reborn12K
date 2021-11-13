@@ -9,7 +9,7 @@
             },
             "entries": [
                 {
-                    "type": "item",
+                    "type": "minecraft:item",
                     "weight": 6,
                     "name": "minecraft:redstone",
                     "functions": [
@@ -23,7 +23,7 @@
                     ]
                 },
                 {
-                    "type": "item",
+                    "type": "minecraft:item",
                     "weight": 15,
                     "name": "minecraft:bread",
                     "functions": [
@@ -37,7 +37,7 @@
                     ]
                 },
                 {
-                    "type": "item",
+                    "type": "minecraft:item",
                     "weight": 9,
                     "name": "minecraft:rotten_flesh",
                     "functions": [
@@ -51,7 +51,7 @@
                     ]
                 },
                 {
-                    "type": "item",
+                    "type": "minecraft:item",
                     "weight": 5,
                     "name": "minecraft:lapis_lazuli",
                     "functions": [
@@ -65,7 +65,7 @@
                     ]
                 },
                 {
-                    "type": "item",
+                    "type": "minecraft:item",
                     "weight": 5,
                     "name": "minecraft:gold_ingot",
                     "functions": [
@@ -79,7 +79,7 @@
                     ]
                 },
                 {
-                    "type": "item",
+                    "type": "minecraft:item",
                     "weight": 4,
                     "name": "minecraft:emerald",
                     "functions": [
@@ -93,22 +93,22 @@
                     ]
                 },
                 {
-                    "type": "item",
+                    "type": "minecraft:item",
                     "weight": 2,
                     "name": "reborn12k:mage_helmet"
                 },
                 {
-                    "type": "item",
+                    "type": "minecraft:item",
                     "weight": 2,
                     "name": "reborn12k:mage_chestplate"
                 },
                 {
-                    "type": "item",
+                    "type": "minecraft:item",
                     "weight": 2,
                     "name": "reborn12k:mage_leggings"
                 },
                 {
-                    "type": "item",
+                    "type": "minecraft:item",
                     "weight": 2,
                     "name": "reborn12k:mage_boots"
                 }

@@ -8,7 +8,7 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:diamond",
           "functions": [
@@ -22,7 +22,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:iron_ingot",
           "functions": [
@@ -36,7 +36,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 15,
           "name": "minecraft:gold_ingot",
           "functions": [
@@ -50,7 +50,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:emerald",
           "functions": [
@@ -64,7 +64,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:beetroot_seeds",
           "functions": [
@@ -78,27 +78,27 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:saddle"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:iron_horse_armor"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:golden_horse_armor"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:diamond_horse_armor"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:diamond_sword",
           "functions": [
@@ -113,7 +113,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:diamond_boots",
           "functions": [
@@ -128,7 +128,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:diamond_chestplate",
           "functions": [
@@ -143,7 +143,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:diamond_leggings",
           "functions": [
@@ -158,7 +158,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:diamond_helmet",
           "functions": [
@@ -173,7 +173,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:diamond_pickaxe",
           "functions": [
@@ -188,7 +188,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:diamond_shovel",
           "functions": [
@@ -203,7 +203,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:iron_sword",
           "functions": [
@@ -218,7 +218,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:iron_boots",
           "functions": [
@@ -233,7 +233,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:iron_chestplate",
           "functions": [
@@ -248,7 +248,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:iron_leggings",
           "functions": [
@@ -263,7 +263,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:iron_helmet",
           "functions": [
@@ -278,7 +278,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:iron_pickaxe",
           "functions": [
@@ -293,7 +293,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:iron_shovel",
           "functions": [
@@ -308,7 +308,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "reborn12k:yamato",
           "functions": [
@@ -327,7 +327,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 3,
           "name": "reborn12k:cutter_237",
           "functions": [

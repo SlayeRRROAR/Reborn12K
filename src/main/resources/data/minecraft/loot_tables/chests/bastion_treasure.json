@@ -8,7 +8,7 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 15,
           "name": "minecraft:netherite_ingot",
           "functions": [
@@ -19,7 +19,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:ancient_debris",
           "functions": [
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 8,
           "name": "minecraft:netherite_scrap",
           "functions": [
@@ -41,7 +41,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 4,
           "name": "minecraft:ancient_debris",
           "functions": [
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 6,
           "name": "minecraft:diamond_sword",
           "functions": [
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 6,
           "name": "minecraft:diamond_chestplate",
           "functions": [
@@ -86,7 +86,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 6,
           "name": "minecraft:diamond_helmet",
           "functions": [
@@ -103,7 +103,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 6,
           "name": "minecraft:diamond_leggings",
           "functions": [
@@ -120,7 +120,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 6,
           "name": "minecraft:diamond_boots",
           "functions": [
@@ -137,32 +137,32 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 6,
           "name": "minecraft:diamond_sword"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:diamond_chestplate"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:diamond_helmet"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:diamond_boots"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:diamond_leggings"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:diamond",
           "functions": [
@@ -176,7 +176,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 4,
           "name": "minecraft:enchanted_golden_apple",
           "functions": [
@@ -187,7 +187,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 6,
           "name": "reborn12k:yamato",
           "functions": [
@@ -198,7 +198,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 4,
           "name": "reborn12k:cutter_237"
         }
@@ -211,7 +211,7 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:spectral_arrow",
           "functions": [
@@ -225,7 +225,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:gold_block",
           "functions": [
@@ -239,7 +239,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:iron_block",
           "functions": [
@@ -253,7 +253,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:gold_ingot",
           "functions": [
@@ -267,7 +267,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:iron_ingot",
           "functions": [
@@ -281,7 +281,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:crying_obsidian",
           "functions": [
@@ -295,7 +295,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:quartz",
           "functions": [
@@ -309,7 +309,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:gilded_blackstone",
           "functions": [
@@ -323,7 +323,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:magma_cream",
           "functions": [

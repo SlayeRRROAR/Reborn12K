@@ -8,52 +8,52 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 20,
           "name": "minecraft:lead"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 15,
           "name": "minecraft:golden_apple"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:enchanted_golden_apple"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 15,
           "name": "minecraft:music_disc_13"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 15,
           "name": "minecraft:music_disc_cat"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 20,
           "name": "minecraft:name_tag"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:chainmail_chestplate"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 15,
           "name": "minecraft:diamond_hoe"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:diamond_chestplate"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:book",
           "functions": [
@@ -71,7 +71,7 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:iron_ingot",
           "functions": [
@@ -85,7 +85,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:gold_ingot",
           "functions": [
@@ -99,12 +99,12 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 20,
           "name": "minecraft:bread"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 20,
           "name": "minecraft:wheat",
           "functions": [
@@ -118,12 +118,12 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:bucket"
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 15,
           "name": "minecraft:redstone",
           "functions": [
@@ -137,7 +137,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 15,
           "name": "minecraft:coal",
           "functions": [
@@ -151,7 +151,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:melon_seeds",
           "functions": [
@@ -165,7 +165,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:pumpkin_seeds",
           "functions": [
@@ -179,7 +179,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:beetroot_seeds",
           "functions": [
@@ -198,7 +198,7 @@
       "rolls": 3,
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:bone",
           "functions": [
@@ -212,7 +212,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:gunpowder",
           "functions": [
@@ -226,7 +226,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:rotten_flesh",
           "functions": [
@@ -240,7 +240,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:string",
           "functions": [
@@ -262,7 +262,7 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 2,
           "name": "reborn12k:yamato",
           "functions": [
@@ -281,7 +281,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 1,
           "name": "reborn12k:cutter_237",
           "functions": [
@@ -296,7 +296,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 8,
           "name": "minecraft:iron_sword",
           "functions": [
@@ -310,7 +310,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 4,
           "name": "minecraft:iron_sword",
           "functions": [
@@ -325,7 +325,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "weight": 4,
           "name": "reborn12k:magical_wood_staff"
         }
