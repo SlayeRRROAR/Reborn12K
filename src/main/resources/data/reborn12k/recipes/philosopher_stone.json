@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "CDE",
+        "AFA"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:refined_manatite"
+        },
+        "B": {
+            "item": "reborn12k:archeosite_block"
+        },
+        "C": {
+            "item": "minecraft:totem_of_undying"
+        },
+        "D": {
+            "item": "minecraft:stone"
+        },
+        "E": {
+            "item": "minecraft:nether_star"
+        },
+        "F": {
+            "item": "reborn12k:thelosite_block"
+        }
+    },
+    "result": {
+        "item": "reborn12k:philosopher_stone",
+        "count": 1
+    }
+}

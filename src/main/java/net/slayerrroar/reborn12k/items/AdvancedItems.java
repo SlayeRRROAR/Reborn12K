@@ -7,6 +7,7 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.item_class.GlintedItem;
+import net.slayerrroar.reborn12k.items.item_class.PhilosopherStone;
 import net.slayerrroar.reborn12k.items.item_class.manatites.*;
 
 public class AdvancedItems {
@@ -39,7 +40,9 @@ public class AdvancedItems {
     public static final Item RUNE_OF_LIGHT = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(16));
     public static final Item RUNE_OF_DARK = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(16));
     public static final Item RUNE_OF_STRENGTH = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(16));
-    
+
+    public static final Item PHILOSOPHER_STONE = new PhilosopherStone(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof());
+
 
     public static void register() {
 
@@ -71,6 +74,8 @@ public class AdvancedItems {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "rune_of_light"), RUNE_OF_LIGHT);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "rune_of_dark"), RUNE_OF_DARK);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "rune_of_strength"), RUNE_OF_STRENGTH);
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "philosopher_stone"), PHILOSOPHER_STONE);
 
     }
     

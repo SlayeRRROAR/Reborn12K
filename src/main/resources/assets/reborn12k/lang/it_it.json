@@ -40,10 +40,15 @@
 
     "item.reborn12k.uranium.tooltip": "Un combustibile 8 volte più potente del Carbone",
 
+    "item.reborn12k.windstorm.tooltip": "Velocizza tutti attorno a te",
+    "item.reborn12k.viridian.tooltip": "Rafforza tutti attorno a te",
     "item.reborn12k.abyss.tooltip": "Rallenta i mob attorno a te",
+    "item.reborn12k.volcanic.tooltip": "Brucia i mob attorno a te",
     "item.reborn12k.sunlight.tooltip": "Cura tutto attorno a te",
     "item.reborn12k.novilunium.tooltip": "Rivela i mob attorno a te",
     "item.reborn12k.crimson.tooltip": "Libera una potente esplosione",
+
+    "item.reborn12k.philosopher_stone.tooltip": "Scambio Equivalente (c)",
 
     "item.reborn12k.windstorm_manatite.tooltip": "Quando guardi dentro di essa",
     "item.reborn12k.windstorm_manatite2.tooltip": "senti qualcuno sussurarti",
@@ -87,6 +92,7 @@
     "block.reborn12k.small_granite_bricks": "Piccoli Mattoni di Granito",
     "block.reborn12k.andesite_bricks": "Mattoni di Andesite",
     "block.reborn12k.small_andesite_bricks": "Piccoli Mattoni di Andesite",
+    "block.reborn12k.small_stone_bricks": "Small Stone Bricks",
 
     "block.reborn12k.diorite_bricks_stairs": "Scale di Mattoni di Diorite",
     "block.reborn12k.small_diorite_bricks_stairs": "Scale di Piccoli Mattoni di Diorite",
@@ -132,10 +138,25 @@
     "item.reborn12k.golden_rod": "Verga d'Oro",
     "item.reborn12k.magical_wood_staff": "Bastone di Legno Magico",
 
+    "item.reborn12k.windstorm_wand": "Bacchetta della Tempesta",
+    "item.reborn12k.windstorm_scepter": "Scettro della Tempesta",
+    "item.reborn12k.windstorm_rod": "Verga della Tempesta",
+    "item.reborn12k.windstorm_staff": "Bastone della Tempesta",
+
+    "item.reborn12k.viridian_wand": "Bacchetta Viridea",
+    "item.reborn12k.viridian_scepter": "Scettro Virideo",
+    "item.reborn12k.viridian_rod": "Verga Viridea",
+    "item.reborn12k.viridian_staff": "Bastone Virideo",
+
     "item.reborn12k.abyss_wand": "Bacchetta dell'Abisso",
     "item.reborn12k.abyss_scepter": "Scettro dell'Abisso",
     "item.reborn12k.abyss_rod": "Verga dell'Abisso",
     "item.reborn12k.abyss_staff": "Bastone dell'Abisso",
+
+    "item.reborn12k.volcanic_wand": "Bacchetta del Vulcano",
+    "item.reborn12k.volcanic_scepter": "Scettro del Vulcano",
+    "item.reborn12k.volcanic_rod": "Verga del Vulcano",
+    "item.reborn12k.volcanic_staff": "Bastone del Vulcano",
 
     "item.reborn12k.sunlight_wand": "Bacchetta del Sole",
     "item.reborn12k.sunlight_scepter": "Scettro del Sole",
@@ -171,6 +192,9 @@
     "item.reborn12k.rune_of_light": "Runa del Sole Mattutino",
     "item.reborn12k.rune_of_dark": "Runa della Luna Nuova",
     "item.reborn12k.rune_of_strength": "Runa della Forza",
+
+    "item.reborn12k.philosopher_stone": "Pietra Filosofale",
+
 
     "item.reborn12k.golden_ring": "Anello d'Oro",
     "item.reborn12k.awakened_golden_ring": "Anello d'Oro Risvegliato",
@@ -350,8 +374,10 @@
     "advancements.reborn12k_secrets.holy_knight.description": "Crea una Claymore d'Argento",
     "advancements.reborn12k_secrets.katanakaji.title": "Katanakaji",
     "advancements.reborn12k_secrets.katanakaji.description": "Crea una Lama Yamato, una Katana Tsuba e una Katana Tsuka",
-    "advancements.reborn12k_secrets.crying_devil.title": "Crying Devil",
-    "advancements.reborn12k_secrets.crying_devil.description": "Potresti essere una tempesta in arrivo",
+    "advancements.reborn12k_secrets.devil_may_cry.title": "Devil May Cry",
+    "advancements.reborn12k_secrets.devil_may_cry.description": "Potresti essere una tempesta in arrivo",
+    "advancements.reborn12k_secrets.devil_trigger.title": "Devil Trigger",
+    "advancements.reborn12k_secrets.devil_trigger.description": "Ha infilzato Dante più volte di ogni altra spada",
     "advancements.reborn12k_secrets.cryptoinvestor.title": "Cryptoinvestitore",
     "advancements.reborn12k_secrets.cryptoinvestor.description": "Crea un Involucro Mk.237 ed una Cryptolama",
     "advancements.reborn12k_secrets.multi-level_marketing.title": "Multi-Level Marketing",
@@ -370,13 +396,14 @@
     "advancements.reborn12k_secrets.reject_modernity.description": "Crea una Banana d'oro",
     "advancements.reborn12k_secrets.return_to_monke.title": "Return to Monke",
     "advancements.reborn12k_secrets.return_to_monke.description": "Crea una Banana d'oro Incantata",
+    "advancements.reborn12k_secrets.nicholas_flamel_the_immortal.title": "Nicholas Flamel, l'Immortale",
+    "advancements.reborn12k_secrets.nicholas_flamel_the_immortal.description": "Ottieni la Pietra Filosofale",
 
     "enchantment.reborn12k.deathskiss": "Bacio della Morte",
     "enchantment.reborn12k.magic_protection": "Protezione dalla Magia",
 
 
-    "itemGroup.reborn12k.reborn12k": "Reborn12K",
-    "block.reborn12k.small_stone_bricks": "Small Stone Bricks"
+    "itemGroup.reborn12k.reborn12k": "Reborn12K"
 
     
   }

@@ -1,0 +1,38 @@
+{
+  "parent": "reborn12k:reborn12k_secrets/root",
+    "display": {
+      "icon": {
+        "item": "reborn12k:philosopher_stone"
+      },
+      "title": {
+        "translate": "advancements.reborn12k_secrets.nicholas_flamel_the_immortal.title"
+      },
+      "description": {
+        "translate": "advancements.reborn12k_secrets.nicholas_flamel_the_immortal.description"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+  "criteria": {
+    "get_philosopher_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:philosopher_stone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_philosopher_stone"
+    ]
+  ]
+}
