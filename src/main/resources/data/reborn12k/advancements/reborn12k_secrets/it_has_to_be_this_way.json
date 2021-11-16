@@ -1,0 +1,38 @@
+{
+  "parent": "reborn12k:reborn12k_secrets/im_my_own_master_now",
+    "display": {
+      "icon": {
+        "item": "reborn12k:murasama"
+      },
+      "title": {
+        "translate": "advancements.reborn12k_secrets.it_has_to_be_this_way.title"
+      },
+      "description": {
+        "translate": "advancements.reborn12k_secrets.it_has_to_be_this_way.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+  "criteria": {
+    "get_murasama": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:murasama"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_murasama"
+    ]
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "reborn12k:reborn12k_secrets/katanakaji",
+    "display": {
+      "icon": {
+        "item": "reborn12k:yamato"
+      },
+      "title": {
+        "translate": "advancements.reborn12k_secrets.devil_may_cry.title"
+      },
+      "description": {
+        "translate": "advancements.reborn12k_secrets.devil_may_cry.description"
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+  "criteria": {
+    "get_yamato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:yamato"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_yamato"
+    ]
+  ]
+}
