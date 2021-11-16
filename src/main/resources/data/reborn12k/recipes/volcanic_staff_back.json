@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:volcanic_staff",
+            "remainder": { "item": "reborn12k:magical_wood_staff" }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:volcanic_manatite",
+        "count": 1
+    },
+    "group": "volcanic_manatite"
+}
