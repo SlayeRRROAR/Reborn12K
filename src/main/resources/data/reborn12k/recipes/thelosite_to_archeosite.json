@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A",
+        "B"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:philosopher_stone",
+            "remainder": { "item": "reborn12k:philosopher_stone" }
+        },
+        "B": {
+            "item": "reborn12k:thelosite_ingot"
+        }
+    },
+    "result": {
+        "item": "reborn12k:archeosite_ingot",
+        "count": 1
+    },
+    "group": "philosopher_stone"
+}

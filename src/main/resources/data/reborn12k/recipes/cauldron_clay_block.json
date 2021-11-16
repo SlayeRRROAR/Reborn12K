@@ -1,0 +1,10 @@
+{
+    "type": "nbtcrafting:cauldron",
+    "input": {
+        "tag": "minecraft:sand"
+    },
+    "result": {
+        "item": "minecraft:clay"
+    },
+    "levels": 1
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AB"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:philosopher_stone",
+            "remainder": { "item": "reborn12k:philosopher_stone" }
+        },
+        "B": {
+            "item": "minecraft:gravel"
+        }
+    },
+    "result": {
+        "item": "minecraft:dirt",
+        "count": 1
+    },
+    "group": "philosopher_stone"
+}
