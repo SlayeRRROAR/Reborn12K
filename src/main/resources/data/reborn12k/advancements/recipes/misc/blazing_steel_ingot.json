@@ -6,13 +6,13 @@
       ]
     },
     "criteria": {
-      "has_blazing_steel_block": {
+      "has_blaze_rod": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:blazing_steel_block"
+                "reborn12k:blaze_rod"
               ]
             }
           ]
@@ -27,7 +27,7 @@
     },
     "requirements": [
       [
-        "has_blazing_steel_block",
+        "has_blaze_rod",
         "has_the_recipe"
       ]
     ]
