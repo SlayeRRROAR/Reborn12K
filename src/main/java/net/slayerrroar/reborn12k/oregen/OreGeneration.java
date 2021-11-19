@@ -22,37 +22,37 @@ public class OreGeneration {
         .configure(new OreFeatureConfig(
                 OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                 OreBlocks.TOPAZ_ORE.getDefaultState(),
-                5)) // vein size
+                4)) // vein size
         .uniformRange(YOffset.fixed(0), YOffset.fixed(15))
         .spreadHorizontally()
-        .repeat(5); // number of veins per chunk
+        .repeat(3); // number of veins per chunk
 
         public static ConfiguredFeature<?, ?> ORE_OPAL = Feature.ORE
         .configure(new OreFeatureConfig(
                 OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                 OreBlocks.OPAL_ORE.getDefaultState(),
-                5)) // vein size
+                4)) // vein size
         .uniformRange(YOffset.fixed(0), YOffset.fixed(15))
         .spreadHorizontally()
-        .repeat(5); // number of veins per chunk
+        .repeat(3); // number of veins per chunk
 
         public static ConfiguredFeature<?, ?> ORE_RUBY = Feature.ORE
         .configure(new OreFeatureConfig(
                 OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                 OreBlocks.RUBY_ORE.getDefaultState(),
-                5)) // vein size
+                4)) // vein size
         .uniformRange(YOffset.fixed(0), YOffset.fixed(15))
         .spreadHorizontally()
-        .repeat(5); // number of veins per chunk
+        .repeat(3); // number of veins per chunk
 
         public static ConfiguredFeature<?, ?> ORE_SAPPHIRE = Feature.ORE
         .configure(new OreFeatureConfig(
                 OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                 OreBlocks.SAPPHIRE_ORE.getDefaultState(),
-                5)) // vein size
+                4)) // vein size
         .uniformRange(YOffset.fixed(0), YOffset.fixed(15))
         .spreadHorizontally()
-        .repeat(5); // number of veins per chunk
+        .repeat(3); // number of veins per chunk
 
         public static ConfiguredFeature<?, ?> ORE_MANATITE = Feature.ORE
                 .configure(new OreFeatureConfig(
@@ -61,7 +61,7 @@ public class OreGeneration {
                         4)) // vein size
                 .uniformRange(YOffset.fixed(0), YOffset.fixed(15))
                 .spreadHorizontally()
-                .repeat(4); // number of veins per chunk
+                .repeat(3); // number of veins per chunk
 
         public static ConfiguredFeature<?, ?> ORE_CHROMITE = Feature.ORE
         .configure(new OreFeatureConfig(
@@ -79,7 +79,7 @@ public class OreGeneration {
                 8)) // vein size
         .uniformRange(YOffset.fixed(32), YOffset.fixed(96))
         .spreadHorizontally()
-        .repeat(12); // number of veins per chunk
+        .repeat(10); // number of veins per chunk
 
         public static ConfiguredFeature<?, ?> ORE_SILVER = Feature.ORE
         .configure(new OreFeatureConfig(
