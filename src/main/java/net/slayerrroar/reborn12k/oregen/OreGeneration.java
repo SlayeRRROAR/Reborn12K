@@ -23,7 +23,7 @@ public class OreGeneration {
                 OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                 OreBlocks.TOPAZ_ORE.getDefaultState(),
                 4)) // vein size
-        .uniformRange(YOffset.fixed(0), YOffset.fixed(15))
+        .uniformRange(YOffset.fixed(0), YOffset.fixed(12))
         .spreadHorizontally()
         .repeat(3); // number of veins per chunk
 
@@ -32,7 +32,7 @@ public class OreGeneration {
                 OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                 OreBlocks.OPAL_ORE.getDefaultState(),
                 4)) // vein size
-        .uniformRange(YOffset.fixed(0), YOffset.fixed(15))
+        .uniformRange(YOffset.fixed(0), YOffset.fixed(12))
         .spreadHorizontally()
         .repeat(3); // number of veins per chunk
 
@@ -41,7 +41,7 @@ public class OreGeneration {
                 OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                 OreBlocks.RUBY_ORE.getDefaultState(),
                 4)) // vein size
-        .uniformRange(YOffset.fixed(0), YOffset.fixed(15))
+        .uniformRange(YOffset.fixed(0), YOffset.fixed(12))
         .spreadHorizontally()
         .repeat(3); // number of veins per chunk
 
@@ -50,7 +50,7 @@ public class OreGeneration {
                 OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                 OreBlocks.SAPPHIRE_ORE.getDefaultState(),
                 4)) // vein size
-        .uniformRange(YOffset.fixed(0), YOffset.fixed(15))
+        .uniformRange(YOffset.fixed(0), YOffset.fixed(12))
         .spreadHorizontally()
         .repeat(3); // number of veins per chunk
 
@@ -59,7 +59,7 @@ public class OreGeneration {
                         OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                         OreBlocks.MANATITE_ORE.getDefaultState(),
                         4)) // vein size
-                .uniformRange(YOffset.fixed(0), YOffset.fixed(15))
+                .uniformRange(YOffset.fixed(0), YOffset.fixed(12))
                 .spreadHorizontally()
                 .repeat(3); // number of veins per chunk
 
