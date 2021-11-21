@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "BCB",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:gold_ingot"
+        },
+        "B": {
+            "item": "minecraft:diamond"
+        },
+        "C": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "reborn12k:weak_philosopher_stone",
+        "count": 1
+    }
+}

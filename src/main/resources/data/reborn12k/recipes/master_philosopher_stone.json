@@ -16,7 +16,7 @@
             "item": "minecraft:totem_of_undying"
         },
         "D": {
-            "item": "minecraft:stone"
+            "item": "reborn12k:advanced_philosopher_stone"
         },
         "E": {
             "item": "minecraft:nether_star"
@@ -26,7 +26,7 @@
         }
     },
     "result": {
-        "item": "reborn12k:philosopher_stone",
+        "item": "reborn12k:master_philosopher_stone",
         "count": 1
     }
 }

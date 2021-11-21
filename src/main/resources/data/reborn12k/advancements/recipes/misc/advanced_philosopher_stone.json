@@ -2,17 +2,17 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:philosopher_stone"
+        "reborn12k:advanced_philosopher_stone"
       ]
     },
     "criteria": {
-      "has_nether_star": {
+      "has_weak_philosopher_stone": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "minecraft:nether_star"
+                "reborn12k:weak_philosopher_stone"
               ]
             }
           ]
@@ -21,13 +21,13 @@
       "has_the_recipe": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "reborn12k:philosopher_stone"
+          "recipe": "reborn12k:weak_philosopher_stone"
         }
       }
     },
     "requirements": [
       [
-        "has_nether_star",
+        "has_weak_philosopher_stone",
         "has_the_recipe"
       ]
     ]
