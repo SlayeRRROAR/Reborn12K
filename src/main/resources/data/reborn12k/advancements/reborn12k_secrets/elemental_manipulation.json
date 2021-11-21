@@ -1,29 +1,29 @@
 {
-  "parent": "reborn12k:reborn12k_secrets/root",
+  "parent": "reborn12k:reborn12k_secrets/equivalent_exchange",
     "display": {
       "icon": {
-        "item": "reborn12k:philosopher_stone"
+        "item": "reborn12k:advanced_philosopher_stone"
       },
       "title": {
-        "translate": "advancements.reborn12k_secrets.nicholas_flamel_the_immortal.title"
+        "translate": "advancements.reborn12k_secrets.elemental_manipulation.title"
       },
       "description": {
-        "translate": "advancements.reborn12k_secrets.nicholas_flamel_the_immortal.description"
+        "translate": "advancements.reborn12k_secrets.elemental_manipulation.description"
       },
-      "frame": "challenge",
+      "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": true,
       "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
   "criteria": {
-    "get_philosopher_stone": {
+    "get_advanced_philosopher_stone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "reborn12k:philosopher_stone"
+              "reborn12k:advanced_philosopher_stone"
             ]
           }
         ]
@@ -32,7 +32,7 @@
   },
   "requirements": [
     [
-      "get_philosopher_stone"
+      "get_advanced_philosopher_stone"
     ]
   ]
 }
