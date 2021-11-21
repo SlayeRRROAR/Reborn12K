@@ -5,16 +5,16 @@
         "B"
     ],
     "key": {
-        "A": {
+        "B": {
             "item": "reborn12k:master_philosopher_stone",
             "remainder": { "item": "reborn12k:master_philosopher_stone" }
         },
-        "B": {
-            "item": "minecraft:amethyst_shard"
+        "A": {
+            "item": "minecraft:sand"
         }
     },
     "result": {
-        "item": "reborn12k:topaz",
+        "item": "minecraft:dirt",
         "count": 1
     },
     "group": "master_philosopher_stone"

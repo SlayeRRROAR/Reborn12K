@@ -10,11 +10,11 @@
             "remainder": { "item": "reborn12k:master_philosopher_stone" }
         },
         "B": {
-            "item": "minecraft:amethyst_shard"
+            "item": "reborn12k:silver_ingot"
         }
     },
     "result": {
-        "item": "reborn12k:topaz",
+        "item": "minecraft:gold_ingot",
         "count": 1
     },
     "group": "master_philosopher_stone"

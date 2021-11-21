@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A",
+        "B"
+    ],
+    "key": {
+        "B": {
+            "item": "reborn12k:advanced_philosopher_stone",
+            "remainder": { "item": "reborn12k:advanced_philosopher_stone" }
+        },
+        "A": {
+            "item": "minecraft:dirt"
+        }
+    },
+    "result": {
+        "item": "minecraft:gravel",
+        "count": 1
+    },
+    "group": "advanced_philosopher_stone"
+}

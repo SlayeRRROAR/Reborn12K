@@ -10,12 +10,12 @@
             "remainder": { "item": "reborn12k:master_philosopher_stone" }
         },
         "B": {
-            "item": "minecraft:amethyst_shard"
+            "item": "minecraft:copper_ingot"
         }
     },
     "result": {
-        "item": "reborn12k:topaz",
-        "count": 1
+        "item": "minecraft:coal",
+        "count": 4
     },
     "group": "master_philosopher_stone"
 }

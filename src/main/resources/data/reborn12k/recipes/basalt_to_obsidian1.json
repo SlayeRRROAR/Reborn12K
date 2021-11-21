@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABB",
+        "BBB",
+        "BBB"
+    ],
+    "key": {
+        "B": {
+            "item": "reborn12k:advanced_philosopher_stone",
+            "remainder": { "item": "reborn12k:advanced_philosopher_stone" }
+        },
+        "A": {
+            "item": "minecraft:basalt"
+        }
+    },
+    "result": {
+        "item": "minecraft:obsidian",
+        "count": 1
+    },
+    "group": "advanced_philosopher_stone"
+}

@@ -1,8 +1,7 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "A",
-        "B"
+        "AB"
     ],
     "key": {
         "A": {
@@ -10,12 +9,12 @@
             "remainder": { "item": "reborn12k:master_philosopher_stone" }
         },
         "B": {
-            "item": "minecraft:amethyst_shard"
+            "item": "minecraft:diamond"
         }
     },
     "result": {
-        "item": "reborn12k:topaz",
-        "count": 1
+        "item": "minecraft:gold_ingot",
+        "count": 4
     },
     "group": "master_philosopher_stone"
 }

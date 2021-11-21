@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABB",
+        "BB "
+    ],
+    "key": {
+        "B": {
+            "item": "reborn12k:advanced_philosopher_stone",
+            "remainder": { "item": "reborn12k:advanced_philosopher_stone" }
+        },
+        "A": {
+            "item": "minecraft:magma_block"
+        }
+    },
+    "result": {
+        "item": "minecraft:blackstone",
+        "count": 1
+    },
+    "group": "advanced_philosopher_stone"
+}

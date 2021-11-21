@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A",
+        "B"
+    ],
+    "key": {
+        "B": {
+            "item": "reborn12k:weak_philosopher_stone",
+            "remainder": { "item": "reborn12k:weak_philosopher_stone" }
+        },
+        "A": {
+            "item": "minecraft:cobblestone"
+        }
+    },
+    "result": {
+        "item": "minecraft:granite",
+        "count": 1
+    },
+    "group": "weak_philosopher_stone"
+}

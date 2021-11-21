@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AB"
+    ],
+    "key": {
+        "B": {
+            "item": "reborn12k:advanced_philosopher_stone",
+            "remainder": { "item": "reborn12k:advanced_philosopher_stone" }
+        },
+        "A": {
+            "item": "minecraft:basalt"
+        }
+    },
+    "result": {
+        "item": "minecraft:blackstone",
+        "count": 4
+    },
+    "group": "advanced_philosopher_stone"
+}

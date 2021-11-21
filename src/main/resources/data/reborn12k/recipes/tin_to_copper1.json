@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AB",
+        "BB"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:advanced_philosopher_stone",
+            "remainder": { "item": "reborn12k:advanced_philosopher_stone" }
+        },
+        "B": {
+            "item": "reborn12k:tin_ingot"
+        }
+    },
+    "result": {
+        "item": "minecraft:copper_ingot",
+        "count": 1
+    },
+    "group": "advanced_philosopher_stone"
+}
