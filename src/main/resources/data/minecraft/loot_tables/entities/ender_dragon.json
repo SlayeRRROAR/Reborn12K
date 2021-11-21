@@ -193,11 +193,6 @@
               "tag": "{Enchantments:[{lvl:5,id:\"reborn12k:deathskiss\"}]}"
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "reborn12k:philosopher_stone"
         }
       ]
     }
