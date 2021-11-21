@@ -6,7 +6,7 @@ import net.minecraft.item.ToolMaterial;
 public class Cutter extends SwordItem{
 
     public Cutter(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
-        super(toolMaterial, attackDamage, attackSpeed, settings);
+        super(toolMaterial, attackDamage, attackSpeed, setting);
     }
 
 }
