@@ -1,54 +1,54 @@
 package net.slayerrroar.reborn12k.tools;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
+import net.slayerrroar.reborn12k.items.Reborn12KItemGroup;
 import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.items.Reborn12KItemGroup;
 import net.slayerrroar.reborn12k.tools.toolmaterial.*;
 import net.slayerrroar.reborn12k.tools.tooltype.*;
-import org.lwjgl.system.CallbackI;
 
 public class Tools {
 
-    public static ToolItem BRONZE_SWORD = new BaseSword(BronzeMaterial.INSTANCE, 3, -2.4f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
-    public static ToolItem BRONZE_SHOVEL = new BaseShovel(BronzeMaterial.INSTANCE, 2, -3.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
-    public static ToolItem BRONZE_PICKAXE = new BasePickaxe(BronzeMaterial.INSTANCE, 1, -2.8f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
-    public static ToolItem BRONZE_AXE = new BaseAxe(BronzeMaterial.INSTANCE, 7, -3.1f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
-    public static ToolItem BRONZE_HOE = new BaseHoe(BronzeMaterial.INSTANCE, -1, -1.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem BRONZE_SWORD = new BaseSword(BronzeMaterial.INSTANCE, 3, -2.4f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem BRONZE_SHOVEL = new BaseShovel(BronzeMaterial.INSTANCE, 2, -3.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem BRONZE_PICKAXE = new BasePickaxe(BronzeMaterial.INSTANCE, 1, -2.8f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem BRONZE_AXE = new BaseAxe(BronzeMaterial.INSTANCE, 7, -3.1f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem BRONZE_HOE = new BaseHoe(BronzeMaterial.INSTANCE, -1, -1.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     
-    public static ToolItem CARBON_STEEL_SWORD = new BaseSword(CarbonSteelMaterial.INSTANCE, 3, -2.4f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
-    public static ToolItem CARBON_STEEL_SHOVEL = new BaseShovel(CarbonSteelMaterial.INSTANCE, 1, -3.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
-    public static ToolItem CARBON_STEEL_PICKAXE = new BasePickaxe(CarbonSteelMaterial.INSTANCE, 1, -2.8f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
-    public static ToolItem CARBON_STEEL_AXE = new BaseAxe(CarbonSteelMaterial.INSTANCE, 5, -3.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
-    public static ToolItem CARBON_STEEL_HOE = new BaseHoe(CarbonSteelMaterial.INSTANCE, -4, 0.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem CARBON_STEEL_SWORD = new BaseSword(CarbonSteelMaterial.INSTANCE, 3, -2.4f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem CARBON_STEEL_SHOVEL = new BaseShovel(CarbonSteelMaterial.INSTANCE, 1, -3.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem CARBON_STEEL_PICKAXE = new BasePickaxe(CarbonSteelMaterial.INSTANCE, 1, -2.8f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem CARBON_STEEL_AXE = new BaseAxe(CarbonSteelMaterial.INSTANCE, 5, -3.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem CARBON_STEEL_HOE = new BaseHoe(CarbonSteelMaterial.INSTANCE, -4, 0.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     
-    public static ToolItem BLAZING_STEEL_SWORD = new BaseSword(BlazingSteelMaterial.INSTANCE, 3, -2.4f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem BLAZING_STEEL_SHOVEL = new BaseShovel(BlazingSteelMaterial.INSTANCE, 1, -3.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem BLAZING_STEEL_PICKAXE = new BasePickaxe(BlazingSteelMaterial.INSTANCE, 1, -2.8f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem BLAZING_STEEL_AXE = new BaseAxe(BlazingSteelMaterial.INSTANCE, 5, -3.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem BLAZING_STEEL_HOE = new BaseHoe(BlazingSteelMaterial.INSTANCE, -5, 0.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem BLAZING_STEEL_SWORD = new BaseSword(BlazingSteelMaterial.INSTANCE, 3, -2.4f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem BLAZING_STEEL_SHOVEL = new BaseShovel(BlazingSteelMaterial.INSTANCE, 1, -3.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem BLAZING_STEEL_PICKAXE = new BasePickaxe(BlazingSteelMaterial.INSTANCE, 1, -2.8f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem BLAZING_STEEL_AXE = new BaseAxe(BlazingSteelMaterial.INSTANCE, 5, -3.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem BLAZING_STEEL_HOE = new BaseHoe(BlazingSteelMaterial.INSTANCE, -5, 0.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
     
-    public static ToolItem ARCHEOSITE_SWORD = new BaseSword(ArcheositeMaterial.INSTANCE, 3, -2.4f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem ARCHEOSITE_SHOVEL = new BaseShovel(ArcheositeMaterial.INSTANCE, 1, -3.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem ARCHEOSITE_PICKAXE = new BasePickaxe(ArcheositeMaterial.INSTANCE, 1, -2.8f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem ARCHEOSITE_AXE = new BaseAxe(ArcheositeMaterial.INSTANCE, 5, -3.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem ARCHEOSITE_HOE = new BaseHoe(ArcheositeMaterial.INSTANCE, -5, 0.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem ARCHEOSITE_SWORD = new BaseSword(ArcheositeMaterial.INSTANCE, 3, -2.4f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem ARCHEOSITE_SHOVEL = new BaseShovel(ArcheositeMaterial.INSTANCE, 1, -3.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem ARCHEOSITE_PICKAXE = new BasePickaxe(ArcheositeMaterial.INSTANCE, 1, -2.8f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem ARCHEOSITE_AXE = new BaseAxe(ArcheositeMaterial.INSTANCE, 5, -3.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem ARCHEOSITE_HOE = new BaseHoe(ArcheositeMaterial.INSTANCE, -5, 0.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
     
-    public static ToolItem THELOSITE_SWORD = new BaseSword(ThelositeMaterial.INSTANCE, 3, -2.4f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem THELOSITE_SHOVEL = new BaseShovel(ThelositeMaterial.INSTANCE, 1, -3.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem THELOSITE_PICKAXE = new BasePickaxe(ThelositeMaterial.INSTANCE, 1, -2.8f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem THELOSITE_AXE = new BaseAxe(ThelositeMaterial.INSTANCE, 5, -3.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem THELOSITE_HOE = new BaseHoe(ThelositeMaterial.INSTANCE, -6, 0.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem THELOSITE_SWORD = new BaseSword(ThelositeMaterial.INSTANCE, 3, -2.4f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem THELOSITE_SHOVEL = new BaseShovel(ThelositeMaterial.INSTANCE, 1, -3.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem THELOSITE_PICKAXE = new BasePickaxe(ThelositeMaterial.INSTANCE, 1, -2.8f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem THELOSITE_AXE = new BaseAxe(ThelositeMaterial.INSTANCE, 5, -3.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem THELOSITE_HOE = new BaseHoe(ThelositeMaterial.INSTANCE, -6, 0.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
 
-    public static ToolItem SILVER_CLAYMORE = new BaseSword(SilverMaterial.INSTANCE, 4, -3.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem CUTTER_237 = new Cutter(DueTreSette.INSTANCE, 3, -1.8f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem YAMATO = new BaseSword(Yamato.INSTANCE, 1, -2.0f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem POWER_SWORD = new BaseSword(PowerMaterial.INSTANCE, 5, -2.4f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem MURASAMA = new BaseSword(HFBMaterial.INSTANCE, 3, -1.6f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem BLADEWOLF = new BaseSword(HFBMaterial.INSTANCE, 5, -2.4f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
-    public static ToolItem REBELLION = new BaseSword(Rebellion.INSTANCE, 5, -2.6f, new Item.Settings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem SILVER_CLAYMORE = new BaseSword(SilverMaterial.INSTANCE, 4, -3.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem CUTTER_237 = new Cutter(DueTreSette.INSTANCE, 3, -1.8f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem YAMATO = new BaseSword(Yamato.INSTANCE, 1, -2.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem POWER_SWORD = new BaseSword(PowerMaterial.INSTANCE, 5, -2.4f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem MURASAMA = new BaseSword(HFBMaterial.INSTANCE, 3, -1.6f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem BLADEWOLF = new BaseSword(HFBMaterial.INSTANCE, 5, -2.4f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem REBELLION = new BaseSword(Rebellion.INSTANCE, 5, -2.6f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
 
     
     public static void register() {
