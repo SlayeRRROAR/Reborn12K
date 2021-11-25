@@ -1,14 +1,15 @@
 {
+  "type": "minecraft:chest",
   "pools": [
     {
       "rolls": {
-        "min": 2,
-        "max": 4
+        "min": 3,
+        "max": 5
       },
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 10,
           "name": "minecraft:diamond",
           "functions": [
             {
@@ -111,16 +112,6 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
-          "name": "minecraft:iron_horse_armor"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:golden_horse_armor"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:diamond_horse_armor"
         },
@@ -143,11 +134,80 @@
           "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:enchanted_golden_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "reborn12k:enchanted_golden_banana"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "reborn12k:golden_banana"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "reborn12k:ruby",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "reborn12k:topaz",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "reborn12k:opal",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "reborn12k:sapphire",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "rolls": 4,
+      "rolls": {
+        "min": 3,
+        "max": 4
+      },
       "entries": [
         {
           "type": "minecraft:item",
@@ -250,6 +310,48 @@
                 "max": 20
               },
               "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "reborn12k:silver_claymore",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 10,
+                "max": 20
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "reborn12k:cutter_237"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_randomly"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "mending"
+              ]
             }
           ]
         }

@@ -3,7 +3,7 @@
   "pools": [
     {
       "rolls": {
-        "min": 3,
+        "min": 4,
         "max": 7
       },
       "entries": [
@@ -65,32 +65,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:beetroot_seeds",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:saddle"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:iron_horse_armor"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:golden_horse_armor"
         },
         {
           "type": "minecraft:item",
@@ -210,7 +186,7 @@
             {
               "function": "enchant_with_levels",
               "levels": {
-                "min": 20,
+                "min": 35,
                 "max": 39
               },
               "treasure": true
@@ -225,7 +201,7 @@
             {
               "function": "enchant_with_levels",
               "levels": {
-                "min": 20,
+                "min": 35,
                 "max": 39
               },
               "treasure": true
@@ -240,7 +216,7 @@
             {
               "function": "enchant_with_levels",
               "levels": {
-                "min": 20,
+                "min": 35,
                 "max": 39
               },
               "treasure": true
@@ -255,7 +231,7 @@
             {
               "function": "enchant_with_levels",
               "levels": {
-                "min": 20,
+                "min": 35,
                 "max": 39
               },
               "treasure": true
@@ -270,7 +246,7 @@
             {
               "function": "enchant_with_levels",
               "levels": {
-                "min": 20,
+                "min": 35,
                 "max": 39
               },
               "treasure": true
@@ -285,7 +261,7 @@
             {
               "function": "enchant_with_levels",
               "levels": {
-                "min": 20,
+                "min": 35,
                 "max": 39
               },
               "treasure": true
@@ -300,6 +276,119 @@
             {
               "function": "enchant_with_levels",
               "levels": {
+                "min": 35,
+                "max": 39
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "reborn12k:power_helmet",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 39
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "reborn12k:power_chestplate",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 39
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "reborn12k:power_leggings",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 39
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "reborn12k:power_boots",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 39
+              },
+              "treasure": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "reborn12k:cutter_237",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 39
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "reborn12k:silver_claymore",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 39
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "reborn12k:yamato",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
                 "min": 20,
                 "max": 39
               },
@@ -310,32 +399,58 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "reborn12k:yamato",
+          "name": "reborn12k:power_sword",
           "functions": [
             {
               "function": "enchant_with_levels",
               "levels": {
-                "min": 15,
-                "max": 25
+                "min": 20,
+                "max": 39
               },
               "treasure": true
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{lvl:5,id:\"reborn12k:deathskiss\"}]}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
-          "name": "reborn12k:cutter_237",
+          "weight": 2,
+          "name": "reborn12k:rebellion",
           "functions": [
             {
               "function": "enchant_with_levels",
               "levels": {
-                "min": 15,
-                "max": 25
+                "min": 20,
+                "max": 39
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "reborn12k:murasama",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 39
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "reborn12k:bladewolf",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 35,
+                "max": 39
               },
               "treasure": true
             }

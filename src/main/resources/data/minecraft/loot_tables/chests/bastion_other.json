@@ -484,7 +484,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 3,
           "name": "reborn12k:yamato",
           "functions": [
             {
@@ -495,23 +495,48 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 2,
           "name": "reborn12k:cutter_237"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 4,
           "name": "minecraft:netherite_sword",
           "functions": [
             {
               "function": "enchant_with_levels",
               "levels": {
                 "min": 5,
-                "max": 25
+                "max": 15
               },
               "treasure": true
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "reborn12k:silver_claymore"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "reborn12k:rebellion"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "reborn12k:murasama"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "reborn12k:bladewolf"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "reborn12k:power_sword"
         }
       ]
     }

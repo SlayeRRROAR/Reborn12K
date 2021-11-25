@@ -10,7 +10,7 @@
         {
           "type": "minecraft:item",
           "weight": 20,
-          "name": "minecraft:lead"
+          "name": "minecraft:saddle"
         },
         {
           "type": "minecraft:item",
@@ -39,13 +39,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
-          "name": "minecraft:diamond_hoe"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:diamond_chestplate"
+          "weight": 10,
+          "name": "minecraft:diamond_horse_armor"
         },
         {
           "type": "minecraft:item",
@@ -71,13 +66,13 @@
     },
     {
       "rolls": {
-        "min": 3,
-        "max": 6
+        "min": 2,
+        "max": 5
       },
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 10,
           "name": "minecraft:iron_ingot",
           "functions": [
             {
@@ -91,7 +86,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 6,
           "name": "minecraft:gold_ingot",
           "functions": [
             {
@@ -105,21 +100,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:diamond",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
+          "weight": 8,
           "name": "reborn12k:carbon_steel_ingot",
           "functions": [
             {
@@ -147,7 +128,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 4,
           "name": "reborn12k:topaz",
           "functions": [
             {
@@ -161,7 +142,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 4,
           "name": "reborn12k:opal",
           "functions": [
             {
@@ -175,7 +156,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 4,
           "name": "reborn12k:sapphire",
           "functions": [
             {
@@ -189,14 +170,14 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
-          "name": "minecraft:amethyst_shard",
+          "weight": 5,
+          "name": "minecraft:diamond",
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 3,
-                "max": 9
+                "min": 1,
+                "max": 4
               }
             }
           ]
@@ -204,128 +185,61 @@
       ]
     },
     {
-      "rolls": {
-        "min": 1,
-        "max": 3
-      },
+      "rolls": 3,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "name": "reborn12k:yamato",
+          "weight": 10,
+          "name": "minecraft:bone",
           "functions": [
             {
-              "function": "enchant_with_levels",
-              "levels": {
-                "min": 10,
-                "max": 25
-              },
-              "treasure": true
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "name": "reborn12k:cutter_237",
+          "weight": 10,
+          "name": "minecraft:gunpowder",
           "functions": [
             {
-              "function": "enchant_with_levels",
-              "levels": {
-                "min": 10,
-                "max": 25
-              },
-              "treasure": true
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
-          "name": "minecraft:iron_sword",
+          "weight": 10,
+          "name": "minecraft:rotten_flesh",
           "functions": [
             {
-              "function": "enchant_with_levels",
-              "levels": {
-                "min": 30,
-                "max": 39
-              },
-              "treasure": true
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
-          "name": "reborn12k:power_sword",
+          "weight": 10,
+          "name": "minecraft:string",
           "functions": [
             {
-              "function": "enchant_with_levels",
-              "levels": {
-                "min": 10,
-                "max": 25
-              },
-              "treasure": true
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "name": "reborn12k:silver_claymore",
-          "functions": [
-            {
-              "function": "enchant_with_levels",
-              "levels": {
-                "min": 10,
-                "max": 25
-              },
-              "treasure": true
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "reborn12k:rebellion",
-          "functions": [
-            {
-              "function": "enchant_with_levels",
-              "levels": {
-                "min": 10,
-                "max": 25
-              },
-              "treasure": true
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "reborn12k:murasama",
-          "functions": [
-            {
-              "function": "enchant_with_levels",
-              "levels": {
-                "min": 10,
-                "max": 25
-              },
-              "treasure": true
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "reborn12k:bladewolf",
-          "functions": [
-            {
-              "function": "enchant_with_levels",
-              "levels": {
-                "min": 30,
-                "max": 39
-              },
-              "treasure": true
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
             }
           ]
         }
