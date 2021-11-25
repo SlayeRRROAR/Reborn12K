@@ -5,7 +5,7 @@ import net.slayerrroar.reborn12k.armors.Armors;
 import net.slayerrroar.reborn12k.blocks.BaseBlocks;
 import net.slayerrroar.reborn12k.blocks.OreBlocks;
 import net.slayerrroar.reborn12k.enchantments.Enchantments;
-import net.slayerrroar.reborn12k.fuel.Fuels;
+import net.slayerrroar.reborn12k.util.Fuels;
 import net.slayerrroar.reborn12k.items.BaseItems;
 import net.slayerrroar.reborn12k.items.Rings;
 import net.slayerrroar.reborn12k.items.AdvancedItems;
