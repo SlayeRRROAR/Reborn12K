@@ -33,7 +33,7 @@ public class Reborn12K implements ModInitializer {
         OreBlocks.register();
         BaseBlocks.register();
 
-        OreGeneration.register();
+        //OreGeneration.register();
 
         Fuels.register();
 

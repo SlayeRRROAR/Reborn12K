@@ -8,8 +8,7 @@
     "ArcheositeMixin",
     "ThelositeMixin",
     "MageMixin",
-    "PowerArmorMixin",
-    "LivingEntityMixin"
+    "PowerArmorMixin"
   ],
   "client": [
   ],

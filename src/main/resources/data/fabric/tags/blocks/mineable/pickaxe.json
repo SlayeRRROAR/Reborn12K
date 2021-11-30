@@ -1,0 +1,73 @@
+{
+  "replace": false,
+  "values": [
+    "reborn12k:topaz_ore",
+    "reborn12k:opal_ore",
+    "reborn12k:ruby_ore",
+    "reborn12k:sapphire_ore",
+    "reborn12k:deepslate_topaz_ore",
+    "reborn12k:deepslate_opal_ore",
+    "reborn12k:deepslate_ruby_ore",
+    "reborn12k:deepslate_sapphire_ore",
+
+    "reborn12k:manatite_ore",
+    "reborn12k:deepslate_manatite_ore",
+
+    "reborn12k:chromite_ore",
+    "reborn12k:deepslate_uranium_ore",
+    "reborn12k:nether_uranium_ore",
+    "reborn12k:end_cobalt_ore",
+
+    "reborn12k:tin_ore",
+    "reborn12k:silver_ore",
+    "reborn12k:deepslate_silver_ore",
+    
+    "reborn12k:diorite_bricks",
+    "reborn12k:diorite_bricks_stairs",
+    "reborn12k:diorite_bricks_slab",
+    "reborn12k:small_diorite_bricks",
+    "reborn12k:small_diorite_bricks_stairs",
+    "reborn12k:small_diorite_bricks_slab",
+
+    "reborn12k:granite_bricks",
+    "reborn12k:granite_bricks_stairs",
+    "reborn12k:granite_bricks_slab",
+    "reborn12k:small_granite_bricks",
+    "reborn12k:small_granite_bricks_stairs",
+    "reborn12k:small_granite_bricks_slab",
+
+    "reborn12k:andesite_bricks",
+    "reborn12k:andesite_bricks_stairs",
+    "reborn12k:andesite_bricks_slab",
+    "reborn12k:small_andesite_bricks",
+    "reborn12k:small_andesite_bricks_stairs",
+    "reborn12k:small_andesite_bricks_slab",
+
+    "reborn12k:small_stone_bricks",
+    "reborn12k:small_stone_bricks_stairs",
+    "reborn12k:small_stone_bricks_slab",
+
+    "reborn12k:topaz_block",
+    "reborn12k:opal_block",
+    "reborn12k:ruby_block",
+    "reborn12k:sapphire_block",
+
+    "reborn12k:chrome_block",
+    "reborn12k:uranium_block",
+    "reborn12k:cobalt_block",
+
+    "reborn12k:raw_tin_block",
+    "reborn12k:raw_silver_block",
+    "reborn12k:raw_bronze_block",
+    "reborn12k:raw_steel_block",
+
+    "reborn12k:tin_block",
+    "reborn12k:silver_block",
+    "reborn12k:bronze_block",
+    "reborn12k:carbon_steel_block",
+    "reborn12k:blazing_steel_block",
+
+    "reborn12k:thelosite_block",
+    "reborn12k:archeosite_block"
+  ]
+}
