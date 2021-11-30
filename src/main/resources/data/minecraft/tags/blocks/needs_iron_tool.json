@@ -1,21 +1,6 @@
 {
   "replace": false,
   "values": [
-
-    "minecraft:diamond_block",
-    "minecraft:diamond_ore",
-    "minecraft:deepslate_diamond_ore",
-    "minecraft:emerald_ore",
-    "minecraft:deepslate_emerald_ore",
-    "minecraft:emerald_block",
-    "minecraft:gold_block",
-    "minecraft:raw_gold_block",
-    "minecraft:gold_ore",
-    "minecraft:deepslate_gold_ore",
-    "minecraft:redstone_ore",
-    "minecraft:deepslate_redstone_ore",
-
-
     "reborn12k:topaz_ore",
     "reborn12k:opal_ore",
     "reborn12k:ruby_ore",
@@ -29,7 +14,6 @@
     "reborn12k:chromite_ore",
     "reborn12k:deepslate_uranium_ore",
     "reborn12k:nether_uranium_ore",
-
     "reborn12k:topaz_block",
     "reborn12k:opal_block",
     "reborn12k:ruby_block",

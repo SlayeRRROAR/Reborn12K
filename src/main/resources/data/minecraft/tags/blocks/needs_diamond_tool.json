@@ -1,14 +1,8 @@
 {
   "replace": false,
   "values": [
-    "minecraft:obsidian",
-    "minecraft:crying_obsidian",
-    "minecraft:netherite_block",
-    "minecraft:respawn_anchor",
-    "minecraft:ancient_debris",
 
     "reborn12k:end_cobalt_ore",
-
     "reborn12k:blazing_steel_block",
     "reborn12k:archeosite_block",
     "reborn12k:thelosite_block",

@@ -27,8 +27,7 @@ public class MageArmorItem extends ArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if(!world.isClient()) {
-            if(entity instanceof PlayerEntity) {
-                PlayerEntity player = (PlayerEntity)entity;
+            if(entity instanceof PlayerEntity player) {
 
                 if(hasFullSuitOfArmorOn(player)) {
                     evaluateArmorEffects(player);
