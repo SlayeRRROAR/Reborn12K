@@ -10,7 +10,6 @@ import net.slayerrroar.reborn12k.items.BaseItems;
 import net.slayerrroar.reborn12k.items.Rings;
 import net.slayerrroar.reborn12k.items.AdvancedItems;
 import net.slayerrroar.reborn12k.items.Staffs;
-import net.slayerrroar.reborn12k.oregen.OreGeneration;
 import net.slayerrroar.reborn12k.tools.Tools;
 
 public class Reborn12K implements ModInitializer {
@@ -32,8 +31,6 @@ public class Reborn12K implements ModInitializer {
 
         OreBlocks.register();
         BaseBlocks.register();
-
-        //OreGeneration.register();
 
         Fuels.register();
 

@@ -7,6 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.Reborn12K;
+import net.slayerrroar.reborn12k.armors.armor_item.MageArmorItem;
 import net.slayerrroar.reborn12k.armors.armor_material.*;
 import net.slayerrroar.reborn12k.items.Reborn12KItemGroup;
 
@@ -47,10 +48,10 @@ public class Armors {
 
     
     
-    public static final Item MAGE_HELMET = new ArmorItem(MAGE_ARMOR, EquipmentSlot.HEAD, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
-    public static final Item MAGE_CHESTPLATE = new ArmorItem(MAGE_ARMOR, EquipmentSlot.CHEST, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
-    public static final Item MAGE_LEGGINGS = new ArmorItem(MAGE_ARMOR, EquipmentSlot.LEGS, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
-    public static final Item MAGE_BOOTS = new ArmorItem(MAGE_ARMOR, EquipmentSlot.FEET, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
+    public static final Item MAGE_HELMET = new MageArmorItem(MAGE_ARMOR, EquipmentSlot.HEAD, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
+    public static final Item MAGE_CHESTPLATE = new MageArmorItem(MAGE_ARMOR, EquipmentSlot.CHEST, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
+    public static final Item MAGE_LEGGINGS = new MageArmorItem(MAGE_ARMOR, EquipmentSlot.LEGS, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
+    public static final Item MAGE_BOOTS = new MageArmorItem(MAGE_ARMOR, EquipmentSlot.FEET, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
 
     public static final Item POWER_HELMET = new ArmorItem(POWER_ARMOR, EquipmentSlot.HEAD, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item POWER_CHESTPLATE = new ArmorItem(POWER_ARMOR, EquipmentSlot.CHEST, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
