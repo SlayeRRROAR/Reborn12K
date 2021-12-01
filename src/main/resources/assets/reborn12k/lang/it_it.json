@@ -16,6 +16,10 @@
     "item.reborn12k.novilunium_manatite": "Manatite del Novilunio",
     "item.reborn12k.crimson_manatite": "Manatite Cremisi",
 
+    "item.reborn12k.magic_mirror": "Specchio Magico",
+    "item.reborn12k.ice_mirror": "Specchio di Ghiaccio",
+    "item.reborn12k.cell_phone": "Telefono Cellulare",
+
     "item.reborn12k.chrome_dust": "Polvere di Cromo",
     "item.reborn12k.uranium": "Uranio",
     "item.reborn12k.cobalt": "Cobalto",
@@ -64,6 +68,12 @@
     "item.reborn12k.novilunium_manatite2.tooltip": "ti senti al di fuori della realtà",
     "item.reborn12k.crimson_manatite.tooltip": "Quando guardi dentro di essa",
     "item.reborn12k.crimson_manatite2.tooltip": "ti senti invincibile",
+
+
+    "item.reborn12k.magic_mirror.tooltip1": "§bTeletrasportato al tuo ultimo respawn",
+    "item.reborn12k.magic_mirror.tooltip2": "§6Non hai un punto di respawn",
+    "item.reborn12k.magic_mirror.tooltip3": "§cLo specchio funziona solo nell'Overworld",
+    "item.reborn12k.magic_mirror.tooltip4": "§cLo specchio è troppo danneggiato",
 
     "block.reborn12k.topaz_ore": "Minerale di Topazio",
     "block.reborn12k.opal_ore": "Minerale di Opale",
@@ -317,6 +327,16 @@
     "advancements.reborn12k_magic.root.description": "Mana, Rune ed Anelli",
     "advancements.reborn12k_magic.magic_within.title": "Magia nell'aria",
     "advancements.reborn12k_magic.magic_within.description": "Ottieni dell'Argento",
+    "advancements.reborn12k_magic.mirror_mirror_on_the_wall.title": "Specchio specchio delle mie brame",
+    "advancements.reborn12k_magic.mirror_mirror_on_the_wall.description": "Chi è la più bella del reame?",
+    "advancements.reborn12k_magic.ice_ice_baby.title": "Ice Ice Baby",
+    "advancements.reborn12k_magic.ice_ice_baby.description": "Ice is back with my brand new invention",
+    "advancements.reborn12k_magic.i_got_two_phones.title": "I Got Two Phones",
+    "advancements.reborn12k_magic.i_got_two_phones.description": "One for the plug and one for the load",
+    "advancements.reborn12k_secrets.im_my_own_master_now.title": "I'm My Own Master Now",
+    "advancements.reborn12k_secrets.im_my_own_master_now.description": "Ottieni la Bladewolf",
+    "advancements.reborn12k_secrets.it_has_to_be_this_way.title": "It Has To Be This Way",
+    "advancements.reborn12k_secrets.it_has_to_be_this_way.description": "Ottieni la Murasama (aspetta, non era Muramasa?)",
     "advancements.reborn12k_magic.experiments_with_magic.title": "Esperimenti di magia",
     "advancements.reborn12k_magic.experiments_with_magic.description": "Crea una Manatite Raffinata",
     "advancements.reborn12k_magic.mana_weaving.title": "Tessitura di Mana",
