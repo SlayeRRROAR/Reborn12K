@@ -10,7 +10,6 @@ public class Fuels {
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
         registry.add(BaseItems.URANIUM, 12800);
-        registry.add(BaseBlocks.URANIUM_BLOCK, 128000);
 
     }
 }
