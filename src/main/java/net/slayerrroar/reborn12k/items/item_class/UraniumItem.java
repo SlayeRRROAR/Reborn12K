@@ -20,6 +20,6 @@ public class UraniumItem extends Item{
         
         tooltip.add( new TranslatableText("item.reborn12k.uranium.tooltip") );
 
-}
+    }
     
 }
