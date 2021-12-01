@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "reborn12k:magic_mirror",
+      "data": {
+        "require": {
+          "Damage": "$..0"
+        }
+      }
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "result": {
+    "item": "reborn12k:cell_phone",
+    "count": 1
+  }
+}
