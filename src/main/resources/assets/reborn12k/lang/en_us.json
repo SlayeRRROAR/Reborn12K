@@ -20,6 +20,8 @@
     "item.reborn12k.ice_mirror": "Ice Mirror",
     "item.reborn12k.cell_phone": "Cell Phone",
 
+    "item.reborn12k.magnet": "Magnet",
+
     "item.reborn12k.chrome_dust": "Chrome Dust",
     "item.reborn12k.uranium": "Uranium",
     "item.reborn12k.cobalt": "Cobalt",
@@ -73,6 +75,9 @@
     "item.reborn12k.magic_mirror.tooltip2": "§6You haven't set a respawn point",
     "item.reborn12k.magic_mirror.tooltip3": "§cThe mirror only works in the Overworld",
     "item.reborn12k.magic_mirror.tooltip4": "§cThe mirror is too damaged to work",
+
+    "item.reborn12k.magnet.tooltip1": "The magnet is §cINACTIVE",
+    "item.reborn12k.magnet.tooltip2": "The magnet is §1ACTIVE",
 
 
     "block.reborn12k.topaz_ore": "Topaz Ore",
@@ -298,6 +303,10 @@
 
     "advancements.reborn12k.root.title": "REBORN12K - Alloying",
     "advancements.reborn12k.root.description": "Discover the wonders of mixing random metals",
+
+    "advancements.reborn12k.magnetic_force.title": "Magnetic Force",
+    "advancements.reborn12k.magnetic_force.description": "Obtain a Magnet",
+
     "advancements.reborn12k.lightweight_alloy.title": "Lightweight Alloy",
     "advancements.reborn12k.lightweight_alloy.description": "Craft some Bronze",
     "advancements.reborn12k.like_romans.title": "Just like Romans",

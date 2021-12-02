@@ -20,6 +20,8 @@
     "item.reborn12k.ice_mirror": "Specchio di Ghiaccio",
     "item.reborn12k.cell_phone": "Telefono Cellulare",
 
+    "item.reborn12k.magnet": "Calamita",
+
     "item.reborn12k.chrome_dust": "Polvere di Cromo",
     "item.reborn12k.uranium": "Uranio",
     "item.reborn12k.cobalt": "Cobalto",
@@ -74,6 +76,9 @@
     "item.reborn12k.magic_mirror.tooltip2": "§6Non hai un punto di respawn",
     "item.reborn12k.magic_mirror.tooltip3": "§cLo specchio funziona solo nell'Overworld",
     "item.reborn12k.magic_mirror.tooltip4": "§cLo specchio è troppo danneggiato",
+
+    "item.reborn12k.magnet.tooltip1": "La calamita è §cINATTIVA",
+    "item.reborn12k.magnet.tooltip2": "La calamita è §1ATTIVA",
 
     "block.reborn12k.topaz_ore": "Minerale di Topazio",
     "block.reborn12k.opal_ore": "Minerale di Opale",
@@ -296,6 +301,10 @@
 
     "advancements.reborn12k.root.title": "REBORN12K - Leghe",
     "advancements.reborn12k.root.description": "Scopri come creare potenti leghe",
+
+    "advancements.reborn12k.magnetic_force.title": "Forza Magnetica",
+    "advancements.reborn12k.magnetic_force.description": "Ottieni una Calamita",
+
     "advancements.reborn12k.lightweight_alloy.title": "Lega Leggera",
     "advancements.reborn12k.lightweight_alloy.description": "Crea del Bronzo",
     "advancements.reborn12k.like_romans.title": "Come i Romani",
