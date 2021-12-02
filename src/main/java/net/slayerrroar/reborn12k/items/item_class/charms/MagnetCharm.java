@@ -1,0 +1,161 @@
+package net.slayerrroar.reborn12k.items.item_class.charms;
+
+import java.util.List;
+
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.ExperienceOrbEntity;
+import net.minecraft.entity.ItemEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.predicate.entity.EntityPredicates;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
+import net.minecraft.world.World;
+
+public class MagnetCharm extends Item
+{
+    static final String ATTRACTION_MODE = "Attraction Mode";
+
+    public MagnetCharm(Settings settings)
+    {
+        super(settings);
+    }
+
+    public boolean hasGlint(ItemStack magnet_charm)
+    {
+        return isActive(magnet_charm);
+    }
+
+    public enum MagnetState
+    {
+        ACTIVE(true), INACTIVE(false);
+        final boolean state;
+        MagnetState(boolean state)
+        {
+            this.state = state;
+        }
+        public boolean getBoolean()
+        {
+            return state;
+        }
+    }
+
+    public boolean isActive(ItemStack magnet_charm)
+    {
+        return getMagnetState(magnet_charm).getBoolean();
+    }
+
+    private void setMagnetState(ItemStack magnet_charm, MagnetState mode)
+    {
+        checkTag(magnet_charm);
+        assert magnet_charm.getNbt() != null;
+        magnet_charm.getNbt().putBoolean(ATTRACTION_MODE, mode.getBoolean());
+    }
+
+    private MagnetState getMagnetState(ItemStack magnet_charm)
+    {
+        if(!magnet_charm.isEmpty())
+        {
+            checkTag(magnet_charm);
+
+            assert magnet_charm.getNbt() != null;
+            return magnet_charm.getNbt().getBoolean(ATTRACTION_MODE) ? MagnetState.ACTIVE : MagnetState.INACTIVE;
+        }
+        return MagnetState.INACTIVE;
+    }
+
+    private void toggleMode(ItemStack magnet_charm)
+    {
+        MagnetState currentMode = getMagnetState(magnet_charm);
+
+        if(currentMode.getBoolean())
+        {
+            setMagnetState(magnet_charm, MagnetState.INACTIVE);
+
+            return;
+        }
+
+        setMagnetState(magnet_charm, MagnetState.ACTIVE);
+    }
+
+    private void checkTag(ItemStack magnet_charm)
+    {
+        if(!magnet_charm.isEmpty())
+        {
+
+            if(!magnet_charm.hasNbt())
+            {
+                magnet_charm.setNbt(new NbtCompound());
+            }
+            NbtCompound nbt = magnet_charm.getNbt();
+
+            assert nbt != null;
+
+            if(!nbt.contains(ATTRACTION_MODE))
+            {
+                nbt.putBoolean(ATTRACTION_MODE, false);
+            }
+        }
+    }
+
+    static int setRange = 12;
+
+    @Override
+    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected)
+    {
+
+        if(!world.isClient && isActive(stack))
+        {
+            ServerPlayerEntity playerEntity = (ServerPlayerEntity) entity;
+
+            List<ItemEntity> entityItems = playerEntity.getWorld().getEntitiesByClass(ItemEntity.class, playerEntity.getBoundingBox().expand(setRange), EntityPredicates.VALID_ENTITY);
+            for (ItemEntity entityItemNearby : entityItems)
+            {
+                entityItemNearby.onPlayerCollision(playerEntity);
+            }
+
+            List<ExperienceOrbEntity> entityXP = playerEntity.getWorld().getEntitiesByClass(ExperienceOrbEntity.class, playerEntity.getBoundingBox().expand(setRange), EntityPredicates.VALID_ENTITY);
+            for (Entity entityXPNearby : entityXP)
+            {
+                entityXPNearby.onPlayerCollision(playerEntity);
+            }
+        }
+    }
+
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand)
+    {
+        ItemStack magnet_charm = playerEntity.getStackInHand(hand);
+
+        if(!world.isClient && !playerEntity.isSneaking())
+        {
+            toggleMode(magnet_charm);
+            playerEntity.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
+        }
+
+        return new TypedActionResult<>(ActionResult.SUCCESS, magnet_charm);
+    }
+
+    @Environment(EnvType.CLIENT)
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext)
+    {
+        if(getMagnetState(itemStack) != MagnetState.ACTIVE){
+            tooltip.add(new TranslatableText("item.reborn12k.magnet.tooltip1"));
+        }
+
+        else {
+            tooltip.add(new TranslatableText("item.reborn12k.magnet.tooltip2"));
+        }
+    }
+
+}
