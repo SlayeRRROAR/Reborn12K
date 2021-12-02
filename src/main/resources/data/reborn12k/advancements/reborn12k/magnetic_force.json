@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k/root",
+  "display": {
+    "icon": {
+      "item": "reborn12k:magnet"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.magnetic_force.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.magnetic_force.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_magnet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:magnet"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_magnet"
+    ]
+  ]
+}
