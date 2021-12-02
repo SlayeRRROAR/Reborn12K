@@ -19,6 +19,11 @@ public class MirrorCharm extends Item {
         super(settings);
     }
 
+    public void setPositionAndUpdate(ServerPlayerEntity playerEntity, BlockPos bedPos) {
+        playerEntity.teleport(bedPos.getX() + 0.5F, bedPos.getY() + 0.6F, bedPos.getZ() + 0.5F);
+        playerEntity.fallDistance = 0;
+    }
+
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
         ItemStack itemStack = playerEntity.getStackInHand(hand);
@@ -59,10 +64,5 @@ public class MirrorCharm extends Item {
         }
 
         return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
-    }
-
-    public void setPositionAndUpdate(ServerPlayerEntity playerEntity, BlockPos bedPos) {
-        playerEntity.teleport(bedPos.getX() + 0.5F, bedPos.getY() + 0.6F, bedPos.getZ() + 0.5F);
-        playerEntity.fallDistance = 0;
     }
 }
