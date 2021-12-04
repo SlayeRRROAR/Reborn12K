@@ -16,8 +16,13 @@ public class Reborn12K implements ModInitializer {
     @Override
     public void onInitialize() {
 
+
+        BaseBlocks.register();
+        OreBlocks.register();
+
         BaseItems.register();
         AdvancedItems.register();
+
         Rings.register();
         Staffs.register();
         Charms.register();
@@ -26,9 +31,6 @@ public class Reborn12K implements ModInitializer {
         Armors.register();
 
         Enchantments.register();
-
-        OreBlocks.register();
-        BaseBlocks.register();
 
         Fuels.register();
 
