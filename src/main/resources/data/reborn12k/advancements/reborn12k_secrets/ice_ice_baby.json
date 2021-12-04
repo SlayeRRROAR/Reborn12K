@@ -1,14 +1,14 @@
 {
-  "parent": "reborn12k:reborn12k_magic/mirror_mirror_on_the_wall",
+  "parent": "reborn12k:reborn12k_secrets/mirror_mirror_on_the_wall",
   "display": {
     "icon": {
-      "item": "reborn12k:cell_phone"
+      "item": "reborn12k:ice_mirror"
     },
     "title": {
-      "translate": "advancements.reborn12k_magic.i_got_two_phones.title"
+      "translate": "advancements.reborn12k_secrets.ice_ice_baby.title"
     },
     "description": {
-      "translate": "advancements.reborn12k_magic.i_got_two_phones.description"
+      "translate": "advancements.reborn12k_secrets.ice_ice_baby.description"
     },
     "frame": "goal",
     "show_toast": true,
@@ -16,13 +16,13 @@
     "hidden": true
   },
   "criteria": {
-    "get_cell_phone": {
+    "get_ice_mirror": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "reborn12k:cell_phone"
+              "reborn12k:ice_mirror"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "get_cell_phone"
+      "get_ice_mirror"
     ]
   ]
 }
