@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_secrets/root",
+  "display": {
+    "icon": {
+      "item": "reborn12k:yggdrasill_branch"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_secrets.tree_of_life.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_secrets.tree_of_life.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_yggdrasill_branch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:yggdrasill_branch"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_yggdrasill_branch"
+    ]
+  ]
+}

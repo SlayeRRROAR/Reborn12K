@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:lapis_lazuli"
+        },
+        {
+            "item": "reborn12k:sapphire"
+        },
+        {
+            "item": "minecraft:diamond"
+        },
+        {
+            "item": "minecraft:amethyst_shard"
+        },
+        {
+            "tag": "minecraft:saplings"
+        },
+        {
+            "item": "minecraft:emerald"
+        },
+        {
+            "item": "reborn12k:ruby"
+        },
+        {
+            "item": "reborn12k:opal"
+        },
+        {
+            "item": "reborn12k:topaz"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:yggdrasill_branch",
+        "count": 1
+    }
+}
