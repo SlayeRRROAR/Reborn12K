@@ -12,10 +12,7 @@ group = project.maven_group
 
 repositories {
 
-	//maven {
-		//name "Siphalor's Maven"
-		//url "https://maven.siphalor.de"
-	//}
+	//maven {"https://maven.siphalor.de"}
 
 }
 
@@ -24,12 +21,7 @@ dependencies {
     minecraft "com.mojang:minecraft:1.18"
     mappings "net.fabricmc:yarn:1.18+build.1:v2"
     modImplementation "net.fabricmc:fabric-loader:0.12.6"
-
-	// Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:0.43.1+1.18"
-
-	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
-	// You may need to force-disable transitiveness on them.
 
 	//modImplementation "de.siphalor:nbtcrafting-1.17:2+"
 
