@@ -14,6 +14,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.predicate.entity.EntityPredicates;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
@@ -22,9 +23,10 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-public class MagnetCharm extends Item
-{
-    static final String ATTRACTION_MODE = "Attraction Mode";
+public class MagnetCharm extends Item {
+
+    static int setRange = 12; //defines range of magnet
+    static final String MAGNET_STATE = "Magnet State";
 
     public MagnetCharm(Settings settings)
     {
@@ -38,7 +40,7 @@ public class MagnetCharm extends Item
 
     public enum MagnetState
     {
-        ACTIVE(true), INACTIVE(false);
+        ON(true), OFF(false);
         final boolean state;
         MagnetState(boolean state)
         {
@@ -59,7 +61,7 @@ public class MagnetCharm extends Item
     {
         checkTag(magnet_charm);
         assert magnet_charm.getNbt() != null;
-        magnet_charm.getNbt().putBoolean(ATTRACTION_MODE, mode.getBoolean());
+        magnet_charm.getNbt().putBoolean(MAGNET_STATE, mode.getBoolean());
     }
 
     private MagnetState getMagnetState(ItemStack magnet_charm)
@@ -69,23 +71,25 @@ public class MagnetCharm extends Item
             checkTag(magnet_charm);
 
             assert magnet_charm.getNbt() != null;
-            return magnet_charm.getNbt().getBoolean(ATTRACTION_MODE) ? MagnetState.ACTIVE : MagnetState.INACTIVE;
+            return magnet_charm.getNbt().getBoolean(MAGNET_STATE) ? MagnetState.ON : MagnetState.OFF;
         }
-        return MagnetState.INACTIVE;
+        return MagnetState.OFF;
     }
 
-    private void toggleMode(ItemStack magnet_charm)
+    private void toggleMode(ItemStack magnet_charm, PlayerEntity playerEntity)
     {
         MagnetState currentMode = getMagnetState(magnet_charm);
 
         if(currentMode.getBoolean())
         {
-            setMagnetState(magnet_charm, MagnetState.INACTIVE);
+            setMagnetState(magnet_charm, MagnetState.OFF);
+            playerEntity.sendMessage(new TranslatableText("item.reborn12k.magnet.tooltip1"), true);
 
             return;
         }
 
-        setMagnetState(magnet_charm, MagnetState.ACTIVE);
+        setMagnetState(magnet_charm, MagnetState.ON);
+        playerEntity.sendMessage(new TranslatableText("item.reborn12k.magnet.tooltip2"), true);
     }
 
     private void checkTag(ItemStack magnet_charm)
@@ -101,14 +105,12 @@ public class MagnetCharm extends Item
 
             assert nbt != null;
 
-            if(!nbt.contains(ATTRACTION_MODE))
+            if(!nbt.contains(MAGNET_STATE))
             {
-                nbt.putBoolean(ATTRACTION_MODE, false);
+                nbt.putBoolean(MAGNET_STATE, false);
             }
         }
     }
-
-    static int setRange = 12;
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected)
@@ -132,15 +134,17 @@ public class MagnetCharm extends Item
         }
     }
 
+
+
     @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand)
+    public TypedActionResult<ItemStack> use( World world, PlayerEntity playerEntity, Hand hand)
     {
         ItemStack magnet_charm = playerEntity.getStackInHand(hand);
 
         if(!world.isClient && !playerEntity.isSneaking())
         {
-            toggleMode(magnet_charm);
-            playerEntity.playSound(SoundEvents.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
+            toggleMode(magnet_charm, playerEntity);
+            world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
         }
 
         return new TypedActionResult<>(ActionResult.SUCCESS, magnet_charm);
@@ -149,7 +153,7 @@ public class MagnetCharm extends Item
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext)
     {
-        if(getMagnetState(itemStack) != MagnetState.ACTIVE){
+        if(getMagnetState(itemStack) != MagnetState.ON){
             tooltip.add(new TranslatableText("item.reborn12k.magnet.tooltip1"));
         }
 
