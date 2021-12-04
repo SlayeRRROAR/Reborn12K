@@ -6,7 +6,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.items.item_class.GlintedItem;
 import net.slayerrroar.reborn12k.items.item_class.PhilosopherStone;
 import net.slayerrroar.reborn12k.items.item_class.manatites.*;
 
@@ -22,7 +21,7 @@ public class AdvancedItems {
 
 
     public static final Item MANAWEAVE = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
-    public static final Item REFINED_MANATITE = new GlintedItem(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE));
+    public static final Item REFINED_MANATITE = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE));
 
     public static final Item WINDSTORM_MANATITE = new WindstormManatite(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
     public static final Item VIRIDIAN_MANATITE = new ViridianManatite(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
