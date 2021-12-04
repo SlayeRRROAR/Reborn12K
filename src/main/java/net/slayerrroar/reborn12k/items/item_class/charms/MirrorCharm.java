@@ -40,7 +40,7 @@ public class MirrorCharm extends Item {
                             BlockPos bedPos = serverPlayer.getSpawnPointPosition();
                             serverPlayer.stopRiding();
                             setPositionAndUpdate(serverPlayer, bedPos);
-                            world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 0.5F, 0.5F);
+                            world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 0.25F, 0.25F);
                             playerEntity.sendMessage(new TranslatableText("item.reborn12k.magic_mirror.tooltip1"), true);   //tp to last bed
                             playerEntity.getItemCooldownManager().set(this, 20*3);
                             playerEntity.getStackInHand(hand).damage(1, world.random, null);
