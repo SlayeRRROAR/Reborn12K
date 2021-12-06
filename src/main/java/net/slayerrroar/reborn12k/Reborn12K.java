@@ -8,6 +8,7 @@ import net.slayerrroar.reborn12k.enchantments.Enchantments;
 import net.slayerrroar.reborn12k.items.*;
 import net.slayerrroar.reborn12k.util.Fuels;
 import net.slayerrroar.reborn12k.tools.Tools;
+import net.slayerrroar.reborn12k.world.Oregen;
 
 public class Reborn12K implements ModInitializer {
 
@@ -31,6 +32,8 @@ public class Reborn12K implements ModInitializer {
         Armors.register();
 
         Enchantments.register();
+
+        Oregen.register();
 
         Fuels.register();
 
