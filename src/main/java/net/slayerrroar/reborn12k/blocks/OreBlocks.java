@@ -2,7 +2,6 @@ package net.slayerrroar.reborn12k.blocks;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.OreBlock;
@@ -29,8 +28,11 @@ public class OreBlocks {
     public static final Block DEEPSLATE_MANATITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(5.0f).resistance(3.0f));
 
     public static final Block CHROMITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f));
+    public static final Block DEEPSLATE_CHROMITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f));
+
     public static final Block DEEPSLATE_URANIUM_ORE = new UraniumBlocks(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f));
     public static final Block NETHER_URANIUM_ORE = new UraniumBlocks(FabricBlockSettings.copyOf(Blocks.NETHER_QUARTZ_ORE).requiresTool().sounds(BlockSoundGroup.NETHER_GOLD_ORE).hardness(5.0f).resistance(3.0f));
+
     public static final Block END_COBALT_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(15.0f).resistance(9.0f));
     
     public static final Block TIN_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f));
@@ -55,8 +57,11 @@ public class OreBlocks {
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_manatite_ore"), DEEPSLATE_MANATITE_ORE);
 
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "chromite_ore"), CHROMITE_ORE);
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_chromite_ore"), DEEPSLATE_CHROMITE_ORE);
+
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_uranium_ore"), DEEPSLATE_URANIUM_ORE);
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "nether_uranium_ore"), NETHER_URANIUM_ORE);
+
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "end_cobalt_ore"), END_COBALT_ORE);
 
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "tin_ore"), TIN_ORE);
@@ -79,8 +84,11 @@ public class OreBlocks {
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_manatite_ore"), new BlockItem(DEEPSLATE_MANATITE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
 
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "chromite_ore"), new BlockItem(CHROMITE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_chromite_ore"), new BlockItem(DEEPSLATE_CHROMITE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_uranium_ore"), new BlockItem(DEEPSLATE_URANIUM_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "nether_uranium_ore"), new BlockItem(NETHER_URANIUM_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "end_cobalt_ore"), new BlockItem(END_COBALT_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
     
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "tin_ore"), new BlockItem(TIN_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
