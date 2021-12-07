@@ -9,6 +9,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.item_class.charms.MagnetCharm;
 import net.slayerrroar.reborn12k.items.item_class.charms.MirrorCharm;
 import net.slayerrroar.reborn12k.items.item_class.charms.NatureCharm;
+import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 
 public class Charms {
 

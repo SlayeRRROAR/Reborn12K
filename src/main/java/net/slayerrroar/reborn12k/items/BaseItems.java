@@ -11,6 +11,7 @@ import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 
 public class BaseItems {
 

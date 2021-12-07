@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.block_class.UraniumBlocks;
-import net.slayerrroar.reborn12k.items.Reborn12KItemGroup;
+import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 
 public class OreBlocks {
 

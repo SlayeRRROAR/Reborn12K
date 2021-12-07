@@ -1,8 +1,7 @@
 package net.slayerrroar.reborn12k.tools;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.Item;
-import net.slayerrroar.reborn12k.items.Reborn12KItemGroup;
+import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;

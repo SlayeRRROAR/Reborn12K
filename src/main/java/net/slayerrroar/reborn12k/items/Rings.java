@@ -14,6 +14,7 @@ import net.slayerrroar.reborn12k.items.item_class.rings.RingFIRE;
 import net.slayerrroar.reborn12k.items.item_class.rings.RingLIGHT;
 import net.slayerrroar.reborn12k.items.item_class.rings.RingDARK;
 import net.slayerrroar.reborn12k.items.item_class.rings.RingSTRENGTH;
+import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 
 public class Rings {
 

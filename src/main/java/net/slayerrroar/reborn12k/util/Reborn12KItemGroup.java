@@ -1,10 +1,11 @@
-package net.slayerrroar.reborn12k.items;
+package net.slayerrroar.reborn12k.util;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
+import net.slayerrroar.reborn12k.items.BaseItems;
 
 public class Reborn12KItemGroup {
 
