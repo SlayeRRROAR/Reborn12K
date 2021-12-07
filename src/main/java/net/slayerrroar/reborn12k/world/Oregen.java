@@ -184,7 +184,7 @@ public class Oregen {
                     7));                                                                        //Blocks per vein
 
     private static final PlacedFeature CHROMITE_ORE_PLACED = CHROMITE_ORE
-            .withPlacement(CountPlacementModifier.of(16),                                       //Veins per chunk
+            .withPlacement(CountPlacementModifier.of(12),                                       //Veins per chunk
                     SquarePlacementModifier.of(),                                               //Horizontal spread
                     HeightRangePlacementModifier.trapezoid(
                             YOffset.fixed(-64),                                                 //Min generation Y level
@@ -198,7 +198,7 @@ public class Oregen {
                     7));                                                                        //Blocks per vein
 
     private static final PlacedFeature DEEP_CHROMITE_ORE_PLACED = DEEP_CHROMITE_ORE
-            .withPlacement(CountPlacementModifier.of(16),                                       //Veins per chunk
+            .withPlacement(CountPlacementModifier.of(12),                                       //Veins per chunk
                     SquarePlacementModifier.of(),                                               //Horizontal spread
                     HeightRangePlacementModifier.trapezoid(
                             YOffset.fixed(-64),                                                 //Min generation Y level
@@ -213,7 +213,7 @@ public class Oregen {
                     9));                                                                        //Blocks per vein
 
     private static final PlacedFeature SILVER_ORE_PLACED = SILVER_ORE
-            .withPlacement(CountPlacementModifier.of(6),                                        //Veins per chunk
+            .withPlacement(CountPlacementModifier.of(8),                                        //Veins per chunk
                     SquarePlacementModifier.of(),                                               //Horizontal spread
                     HeightRangePlacementModifier.trapezoid(
                             YOffset.fixed(-64),                                                 //Min generation Y level
@@ -227,7 +227,7 @@ public class Oregen {
                     9));                                                                        //Blocks per vein
 
     private static final PlacedFeature DEEP_SILVER_ORE_PLACED = DEEP_SILVER_ORE
-            .withPlacement(CountPlacementModifier.of(6),                                        //Veins per chunk
+            .withPlacement(CountPlacementModifier.of(8),                                        //Veins per chunk
                     SquarePlacementModifier.of(),                                               //Horizontal spread
                     HeightRangePlacementModifier.trapezoid(
                             YOffset.fixed(-64),                                                 //Min generation Y level
@@ -239,7 +239,7 @@ public class Oregen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     OreBlocks.DEEPSLATE_URANIUM_ORE.getDefaultState(),
-                    2));                                                                        //Blocks per vein
+                    3));                                                                        //Blocks per vein
 
     private static final PlacedFeature DEEP_URANIUM_ORE_PLACED = DEEP_URANIUM_ORE
             .withPlacement(CountPlacementModifier.of(3),                                        //Veins per chunk
