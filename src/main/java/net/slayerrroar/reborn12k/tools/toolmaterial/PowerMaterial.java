@@ -3,7 +3,6 @@ package net.slayerrroar.reborn12k.tools.toolmaterial;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.slayerrroar.reborn12k.items.AdvancedItems;
-import net.slayerrroar.reborn12k.items.BaseItems;
 
 public class PowerMaterial implements ToolMaterial {
 
