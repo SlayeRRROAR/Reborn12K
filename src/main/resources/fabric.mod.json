@@ -9,8 +9,9 @@
     "SlayeRRROAR"
   ],
   "contact": {
-    "homepage": "",
-    "sources": "https://github.com/SlayeRRROAR/Reborn12K"
+    "homepage": "https://github.com/SlayeRRROAR/Reborn12K",
+    "sources": "https://github.com/SlayeRRROAR/Reborn12K",
+    "issues": "https://github.com/SlayeRRROAR/Reborn12K/issues"
   },
 
   "license": "MIT",
