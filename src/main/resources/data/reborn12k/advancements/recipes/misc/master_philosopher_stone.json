@@ -21,7 +21,7 @@
       "has_the_recipe": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "reborn12k:advanced_philosopher_stone"
+          "recipe": "reborn12k:master_philosopher_stone"
         }
       }
     },
