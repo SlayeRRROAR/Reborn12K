@@ -17,7 +17,7 @@ import net.minecraft.world.gen.feature.*;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.OreBlocks;
 
-public class Oregen {
+public class OreGen {
 
     private static final ConfiguredFeature<?, ?> TOPAZ_ORE =                                    //Topaz Ore
             Feature.ORE.configure(new OreFeatureConfig(

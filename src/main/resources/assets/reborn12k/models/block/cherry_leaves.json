@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "reborn12k:block/cherry_leaves"
+  }
+}

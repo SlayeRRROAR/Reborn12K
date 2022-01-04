@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "reborn12k:block/cherry_log",
+    "side": "reborn12k:block/cherry_log"
+  }
+}

@@ -2,9 +2,7 @@ package net.slayerrroar.reborn12k.blocks;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SlabBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
@@ -15,6 +13,13 @@ import net.slayerrroar.reborn12k.blocks.block_class.UraniumBlocks;
 import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 
 public class BaseBlocks {
+
+    public static final Block CHERRY_LOG =new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG));
+    public static final Block CHERRY_WOOD =new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD));
+    public static final Block STRIPPED_CHERRY_LOG =new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG));
+    public static final Block STRIPPED_CHERRY_WOOD =new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD));
+    public static final Block CHERRY_PLANKS =new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
+    public static final Block CHERRY_LEAVES =new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES));
 
     public static final Block DIORITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
     public static final Block SMALL_DIORITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
@@ -70,6 +75,14 @@ public class BaseBlocks {
 
         //BLOCK
 
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_log"), CHERRY_LOG);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_wood"), CHERRY_WOOD);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "stripped_cherry_log"), STRIPPED_CHERRY_LOG);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "stripped_cherry_wood"), STRIPPED_CHERRY_WOOD);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_planks"), CHERRY_PLANKS);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_leaves"), CHERRY_LEAVES);
+
+
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "diorite_bricks"), DIORITE_BRICKS);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "small_diorite_bricks"), SMALL_DIORITE_BRICKS);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "granite_bricks"), GRANITE_BRICKS);
@@ -119,6 +132,14 @@ public class BaseBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "thelosite_block"), THELOSITE_BLOCK);
     
         //ITEM
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_log"), new BlockItem(CHERRY_LOG, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_wood"), new BlockItem(CHERRY_WOOD, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "stripped_cherry_log"), new BlockItem(STRIPPED_CHERRY_LOG, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "stripped_cherry_wood"), new BlockItem(STRIPPED_CHERRY_WOOD, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_planks"), new BlockItem(CHERRY_PLANKS, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_leaves"), new BlockItem(CHERRY_LEAVES, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "diorite_bricks"), new BlockItem(DIORITE_BRICKS, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "small_diorite_bricks"), new BlockItem(SMALL_DIORITE_BRICKS, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
