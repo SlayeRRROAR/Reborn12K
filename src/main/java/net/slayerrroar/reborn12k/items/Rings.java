@@ -28,7 +28,7 @@ public class Rings {
     public static final Item RING_OF_LIGHT = new RingLIGHT(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof());
     public static final Item RING_OF_DARK = new RingDARK(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof());
     public static final Item RING_OF_STRENGTH = new RingSTRENGTH(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof());
-    
+
     public static void register() {
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "golden_ring"), GOLDEN_RING);

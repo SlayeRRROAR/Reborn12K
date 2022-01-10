@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:cherry_planks"
+        }
+    },
+    "result": {
+        "item": "reborn12k:cherry_slab",
+        "count": 3
+    }
+}

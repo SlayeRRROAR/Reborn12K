@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_pressed",
+  "textures": {
+    "texture": "reborn12k:block/cherry_planks"
+  }
+}

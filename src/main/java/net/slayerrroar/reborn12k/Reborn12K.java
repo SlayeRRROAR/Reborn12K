@@ -10,6 +10,7 @@ import net.slayerrroar.reborn12k.util.Fuels;
 import net.slayerrroar.reborn12k.tools.Tools;
 import net.slayerrroar.reborn12k.util.Strippable;
 import net.slayerrroar.reborn12k.world.OreGen;
+import net.slayerrroar.reborn12k.world.features.TreeGeneration;
 
 public class Reborn12K implements ModInitializer {
 
@@ -35,6 +36,7 @@ public class Reborn12K implements ModInitializer {
         Enchantments.register();
 
         OreGen.register();
+        TreeGeneration.register();
 
         Fuels.register();
         Strippable.register();

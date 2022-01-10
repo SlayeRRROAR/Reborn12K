@@ -36,7 +36,7 @@ public class BaseItems {
     public static final Item TIN_INGOT = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item SILVER_INGOT = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item BRONZE_INGOT = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
-    
+
     public static final Item CARBON_STEEL_INGOT = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item BLAZING_STEEL_INGOT = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
 
@@ -53,46 +53,46 @@ public class BaseItems {
     public static final Item GOLDEN_BANANA = new GoldenBanana(new FabricItemSettings().food(new FoodComponent.Builder().hunger(5).saturationModifier(1.08f).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20*30, 3), 1f).alwaysEdible().build()).group(Reborn12KItemGroup.REBORN12K));
     public static final Item ENCHANTED_GOLDEN_BANANA = new EnchantedGoldenBanana(new FabricItemSettings().food(new FoodComponent.Builder().hunger(5).saturationModifier(1.08f).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20*300, 6), 1f).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 20*300, 3), 1f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 20*180, 5), 1f).alwaysEdible().build()).group(Reborn12KItemGroup.REBORN12K));
 
-    
-public static void register() {
-        
-    // Resources
-        
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "topaz"), TOPAZ);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "opal"), OPAL);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "ruby"), RUBY);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "sapphire"), SAPPHIRE);
 
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "manatite"), MANATITE);
-        
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "chrome_dust"), CHROME_DUST);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "uranium"), URANIUM);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cobalt"), COBALT);
-        
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_tin"), RAW_TIN);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_silver"), RAW_SILVER);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_bronze"), RAW_BRONZE);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_steel"), RAW_STEEL);
-        
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "tin_ingot"), TIN_INGOT);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "silver_ingot"), SILVER_INGOT);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "bronze_ingot"), BRONZE_INGOT);
-        
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "carbon_steel_ingot"), CARBON_STEEL_INGOT);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "blazing_steel_ingot"), BLAZING_STEEL_INGOT);
-        
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "thelosite_ingot"), THELOSITE_INGOT);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "archeosite_ingot"), ARCHEOSITE_INGOT);
+    public static void register() {
 
-    // Mob Drops
+        // Resources
 
-    
-    
-    // Food
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "topaz"), TOPAZ);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "opal"), OPAL);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "ruby"), RUBY);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "sapphire"), SAPPHIRE);
 
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "banana"), BANANA);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "golden_banana"), GOLDEN_BANANA);
-    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "enchanted_golden_banana"), ENCHANTED_GOLDEN_BANANA);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "manatite"), MANATITE);
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "chrome_dust"), CHROME_DUST);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "uranium"), URANIUM);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cobalt"), COBALT);
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_tin"), RAW_TIN);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_silver"), RAW_SILVER);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_bronze"), RAW_BRONZE);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_steel"), RAW_STEEL);
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "tin_ingot"), TIN_INGOT);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "silver_ingot"), SILVER_INGOT);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "bronze_ingot"), BRONZE_INGOT);
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "carbon_steel_ingot"), CARBON_STEEL_INGOT);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "blazing_steel_ingot"), BLAZING_STEEL_INGOT);
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "thelosite_ingot"), THELOSITE_INGOT);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "archeosite_ingot"), ARCHEOSITE_INGOT);
+
+        // Mob Drops
+
+
+
+        // Food
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "banana"), BANANA);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "golden_banana"), GOLDEN_BANANA);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "enchanted_golden_banana"), ENCHANTED_GOLDEN_BANANA);
 
 
     }

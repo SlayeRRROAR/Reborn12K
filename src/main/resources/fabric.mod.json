@@ -21,6 +21,9 @@
   "entrypoints": {
     "main": [
       "net.slayerrroar.reborn12k.Reborn12K"
+    ],
+    "client": [
+      "net.slayerrroar.reborn12k.ClientReborn12K"
     ]
   },
   "mixins": [

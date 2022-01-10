@@ -8,18 +8,32 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.block_class.StairBlock;
-import net.slayerrroar.reborn12k.blocks.block_class.UraniumBlocks;
+import net.slayerrroar.reborn12k.blocks.block_class.*;
 import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
+import net.slayerrroar.reborn12k.world.features.CherrySaplingGenerator;
+import net.slayerrroar.reborn12k.world.features.TreeGeneration;
 
 public class BaseBlocks {
 
-    public static final Block CHERRY_LOG =new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG));
-    public static final Block CHERRY_WOOD =new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD));
-    public static final Block STRIPPED_CHERRY_LOG =new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG));
-    public static final Block STRIPPED_CHERRY_WOOD =new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD));
-    public static final Block CHERRY_PLANKS =new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
-    public static final Block CHERRY_LEAVES =new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES));
+    public static final Block CHERRY_LOG = new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG));
+    public static final Block CHERRY_WOOD = new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD));
+    public static final Block STRIPPED_CHERRY_LOG = new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG));
+    public static final Block STRIPPED_CHERRY_WOOD = new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD));
+    public static final Block CHERRY_PLANKS = new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
+
+    public static final Block CHERRY_LEAVES = new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES));
+    public static final Block CHERRY_SAPLING = new CherrySaplingBlock(new CherrySaplingGenerator(TreeGeneration.CHERRY_TREE_FEATURE), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly());
+
+    public static final Block CHERRY_STAIRS = new StairBlock(BaseBlocks.CHERRY_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS));
+    public static final Block CHERRY_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB));
+    public static final Block CHERRY_FENCE = new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE));
+    public static final Block CHERRY_FENCE_GATE = new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE));
+    public static final Block CHERRY_BUTTON = new WoodButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON));
+    public static final Block CHERRY_PRESSURE_PLATE = new PressurePlateBlocks(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE));
+    public static final Block CHERRY_DOOR = new DoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque());
+    public static final Block CHERRY_TRAPDOOR = new TrapdoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque());
+
+
 
     public static final Block DIORITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
     public static final Block SMALL_DIORITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
@@ -80,7 +94,18 @@ public class BaseBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "stripped_cherry_log"), STRIPPED_CHERRY_LOG);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "stripped_cherry_wood"), STRIPPED_CHERRY_WOOD);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_planks"), CHERRY_PLANKS);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_stairs"), CHERRY_STAIRS);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_slab"), CHERRY_SLAB);
+
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_leaves"), CHERRY_LEAVES);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_sapling"), CHERRY_SAPLING);
+
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_fence"), CHERRY_FENCE);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_fence_gate"), CHERRY_FENCE_GATE);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_button"), CHERRY_BUTTON);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_pressure_plate"), CHERRY_PRESSURE_PLATE);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_door"), CHERRY_DOOR);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_trapdoor"), CHERRY_TRAPDOOR);
 
 
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "diorite_bricks"), DIORITE_BRICKS);
@@ -138,7 +163,18 @@ public class BaseBlocks {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "stripped_cherry_log"), new BlockItem(STRIPPED_CHERRY_LOG, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "stripped_cherry_wood"), new BlockItem(STRIPPED_CHERRY_WOOD, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_planks"), new BlockItem(CHERRY_PLANKS, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_stairs"), new BlockItem(CHERRY_STAIRS, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_slab"), new BlockItem(CHERRY_SLAB, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_leaves"), new BlockItem(CHERRY_LEAVES, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_sapling"), new BlockItem(CHERRY_SAPLING, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_fence"), new BlockItem(CHERRY_FENCE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_fence_gate"), new BlockItem(CHERRY_FENCE_GATE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_button"), new BlockItem(CHERRY_BUTTON, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_pressure_plate"), new BlockItem(CHERRY_PRESSURE_PLATE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_door"), new BlockItem(CHERRY_DOOR, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_trapdoor"), new BlockItem(CHERRY_TRAPDOOR, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
 
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "diorite_bricks"), new BlockItem(DIORITE_BRICKS, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));

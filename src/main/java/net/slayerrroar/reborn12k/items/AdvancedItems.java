@@ -82,5 +82,5 @@ public class AdvancedItems {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "master_philosopher_stone"), MASTER_PHILOSOPHER_STONE);
 
     }
-    
+
 }

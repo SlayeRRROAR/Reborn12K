@@ -1,7 +1,6 @@
 {
-  "parent": "minecraft:block/cube_column",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "end": "reborn12k:block/stripped_cherry_log",
-    "side": "reborn12k:block/stripped_cherry_log"
+    "all": "reborn12k:block/stripped_cherry_log"
   }
 }
