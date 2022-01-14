@@ -30,6 +30,8 @@ public class Charms {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "magnet"), MAGNET);
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "yggdrasill_branch"), YGGDRASILL_BRANCH);
+
+        Reborn12K.LOGGER.info("Registering Charms for " + Reborn12K.MOD_ID);
     }
 
 }

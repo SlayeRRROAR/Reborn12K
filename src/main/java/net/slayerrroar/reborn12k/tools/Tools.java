@@ -90,6 +90,8 @@ public class Tools {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "bladewolf"), BLADEWOLF);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "rebellion"), REBELLION);
 
+        Reborn12K.LOGGER.info("Registering Tools for " + Reborn12K.MOD_ID);
+
 
     }
 

@@ -28,6 +28,8 @@ public class BaseItems {
 
     public static final Item MANATITE = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
 
+    public static final Item ELEMENT_115 = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+
     public static final Item RAW_TIN = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item RAW_SILVER = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item RAW_BRONZE = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
@@ -65,6 +67,8 @@ public class BaseItems {
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "manatite"), MANATITE);
 
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "element_115"), ELEMENT_115);
+
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "chrome_dust"), CHROME_DUST);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "uranium"), URANIUM);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cobalt"), COBALT);
@@ -93,6 +97,8 @@ public class BaseItems {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "banana"), BANANA);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "golden_banana"), GOLDEN_BANANA);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "enchanted_golden_banana"), ENCHANTED_GOLDEN_BANANA);
+
+        Reborn12K.LOGGER.info("Registering Base Items for " + Reborn12K.MOD_ID);
 
 
     }

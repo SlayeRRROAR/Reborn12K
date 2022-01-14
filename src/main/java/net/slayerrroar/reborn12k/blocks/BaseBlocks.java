@@ -83,8 +83,8 @@ public class BaseBlocks {
     
     public static final Block THELOSITE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).hardness(80.0f).resistance(6000.0f));
     public static final Block ARCHEOSITE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).hardness(80.0f).resistance(6000.0f));
-    
-    
+
+
     public static void register(){
 
         //BLOCK
@@ -155,6 +155,8 @@ public class BaseBlocks {
 
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "archeosite_block"), ARCHEOSITE_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "thelosite_block"), THELOSITE_BLOCK);
+
+        Reborn12K.LOGGER.info("Registering Base Blocks for " + Reborn12K.MOD_ID);
     
         //ITEM
 
@@ -224,7 +226,9 @@ public class BaseBlocks {
         
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "archeosite_block"), new BlockItem(ARCHEOSITE_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "thelosite_block"), new BlockItem(THELOSITE_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
-        
-    
+
+        Reborn12K.LOGGER.info("Registering Base Block Items for " + Reborn12K.MOD_ID);
+
+
         }
 }

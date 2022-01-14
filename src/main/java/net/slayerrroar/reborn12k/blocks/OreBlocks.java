@@ -27,6 +27,8 @@ public class OreBlocks {
     public static final Block MANATITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(4.5f).resistance(3.0f));
     public static final Block DEEPSLATE_MANATITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(5.0f).resistance(3.0f));
 
+    public static final Block DEEPSLATE_ELEMENT_115_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(5.0f).resistance(3.0f));
+
     public static final Block CHROMITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f));
     public static final Block DEEPSLATE_CHROMITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f));
 
@@ -56,6 +58,8 @@ public class OreBlocks {
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "manatite_ore"), MANATITE_ORE);
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_manatite_ore"), DEEPSLATE_MANATITE_ORE);
 
+    Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_element_115_ore"), DEEPSLATE_ELEMENT_115_ORE);
+
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "chromite_ore"), CHROMITE_ORE);
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_chromite_ore"), DEEPSLATE_CHROMITE_ORE);
 
@@ -67,6 +71,8 @@ public class OreBlocks {
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "tin_ore"), TIN_ORE);
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "silver_ore"), SILVER_ORE);
     Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "deepslate_silver_ore"), DEEPSLATE_SILVER_ORE);
+
+    Reborn12K.LOGGER.info("Registering Ore Blocks for " + Reborn12K.MOD_ID);
 
 
     //ITEM
@@ -83,8 +89,10 @@ public class OreBlocks {
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "manatite_ore"), new BlockItem(MANATITE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_manatite_ore"), new BlockItem(DEEPSLATE_MANATITE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
 
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_element_115_ore"), new BlockItem(DEEPSLATE_ELEMENT_115_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "chromite_ore"), new BlockItem(CHROMITE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
-        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_chromite_ore"), new BlockItem(DEEPSLATE_CHROMITE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+    Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_chromite_ore"), new BlockItem(DEEPSLATE_CHROMITE_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
 
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_uranium_ore"), new BlockItem(DEEPSLATE_URANIUM_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "nether_uranium_ore"), new BlockItem(NETHER_URANIUM_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
@@ -94,7 +102,8 @@ public class OreBlocks {
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "tin_ore"), new BlockItem(TIN_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "silver_ore"), new BlockItem(SILVER_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
     Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "deepslate_silver_ore"), new BlockItem(DEEPSLATE_SILVER_ORE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
-    
+
+    Reborn12K.LOGGER.info("Registering Ore Block Items for " + Reborn12K.MOD_ID);
 
     }
 }

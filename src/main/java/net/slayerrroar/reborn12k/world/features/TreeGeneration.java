@@ -13,10 +13,8 @@ import net.minecraft.world.gen.decorator.RarityFilterPlacementModifier;
 import net.minecraft.world.gen.decorator.SquarePlacementModifier;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
-import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.BaseBlocks;
@@ -29,13 +27,6 @@ public class TreeGeneration {
 
     public static ConfiguredFeature<RandomPatchFeatureConfig, ?> CHERRY_TREE_PATCH_FEATURE;
     public static PlacedFeature CHERRY_TREE_PATCH_PLACED_FEATURE;
-
-    public static void register() {
-        registerTreeDecorators();
-
-        BiomeModifications.create(new Identifier(Reborn12K.MOD_ID, "features"))
-                .add(ModificationPhase.ADDITIONS, BiomeSelectors.categories(Biome.Category.FOREST), cherryTreeModifier());
-    }
 
     private static void registerTreeDecorators() {
         Identifier treeId = new Identifier(Reborn12K.MOD_ID, "cherry_tree");
@@ -78,7 +69,7 @@ public class TreeGeneration {
                 new StraightTrunkPlacer(5, 2, 1),
                 BlockStateProvider.of(BaseBlocks.CHERRY_LEAVES.getDefaultState()),
                 new BlobFoliagePlacer(
-                        ConstantIntProvider.create(3),
+                        ConstantIntProvider.create(2),
                         ConstantIntProvider.create(0),
                         3
                 ),
@@ -88,4 +79,14 @@ public class TreeGeneration {
                         2)
         );
     }
+
+    public static void register() {
+        registerTreeDecorators();
+
+        BiomeModifications.create(new Identifier(Reborn12K.MOD_ID, "features"))
+                .add(ModificationPhase.ADDITIONS, BiomeSelectors.categories(Biome.Category.FOREST), cherryTreeModifier());
+
+        Reborn12K.LOGGER.info("Registering Tree Generation for " + Reborn12K.MOD_ID);
+    }
+
 }

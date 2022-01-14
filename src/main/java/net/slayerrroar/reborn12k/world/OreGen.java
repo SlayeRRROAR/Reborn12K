@@ -161,6 +161,20 @@ public class OreGen {
                             YOffset.fixed(16)));                                                //Max generation Y level
 
 
+    private static final ConfiguredFeature<?, ?> DEEP_ELEMENT_115_ORE =                         //Deepslate Element 115 Ore
+            Feature.ORE.configure(new OreFeatureConfig(
+                    OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
+                    OreBlocks.DEEPSLATE_MANATITE_ORE.getDefaultState(),
+                    2));                                                                        //Blocks per vein
+
+    private static final PlacedFeature DEEP_ELEMENT_115_ORE_PLACED = DEEP_ELEMENT_115_ORE
+            .withPlacement(CountPlacementModifier.of(4),                                        //Veins per chunk
+                    SquarePlacementModifier.of(),                                               //Horizontal spread
+                    HeightRangePlacementModifier.trapezoid(
+                            YOffset.fixed(-64),                                                 //Min generation Y level
+                            YOffset.fixed(-32)));                                               //Max generation Y level
+
+
 
     private static final ConfiguredFeature<?, ?> TIN_ORE =                                      //Tin Ore
             Feature.ORE.configure(new OreFeatureConfig(
@@ -385,6 +399,17 @@ public class OreGen {
 
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Reborn12K.MOD_ID, "deep_element_115_ore"), DEEP_ELEMENT_115_ORE);
+        Registry.register(BuiltinRegistries.PLACED_FEATURE,
+                new Identifier(Reborn12K.MOD_ID, "deep_element_115_ore"), DEEP_ELEMENT_115_ORE_PLACED);
+        BiomeModifications.addFeature(
+                BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES,
+                RegistryKey.of(Registry.PLACED_FEATURE_KEY,
+                        new Identifier(Reborn12K.MOD_ID, "deep_element_115_ore")));
+
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Reborn12K.MOD_ID, "tin_ore"), TIN_ORE);
         Registry.register(BuiltinRegistries.PLACED_FEATURE,
                 new Identifier(Reborn12K.MOD_ID, "tin_ore"), TIN_ORE_PLACED);
@@ -468,6 +493,8 @@ public class OreGen {
                 GenerationStep.Feature.UNDERGROUND_ORES,
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier(Reborn12K.MOD_ID, "end_cobalt_ore")));
+
+        Reborn12K.LOGGER.info("Registering Ore Generation for " + Reborn12K.MOD_ID);
 
     }
 

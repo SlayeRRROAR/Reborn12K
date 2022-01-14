@@ -20,6 +20,7 @@ public class Armors {
     public static final ArmorMaterial THELOSITE_ARMOR = new ThelositeArmor();
     public static final ArmorMaterial MAGE_ARMOR = new MageArmor();
     public static final ArmorMaterial POWER_ARMOR = new PowerArmor();
+    public static final ArmorMaterial LONG_FALL_ARMOR = new LongFallArmor();
 
     public static final Item BRONZE_HELMET = new ArmorItem(BRONZE_ARMOR, EquipmentSlot.HEAD, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item BRONZE_CHESTPLATE = new ArmorItem(BRONZE_ARMOR, EquipmentSlot.CHEST, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
@@ -58,6 +59,7 @@ public class Armors {
     public static final Item POWER_LEGGINGS = new ArmorItem(POWER_ARMOR, EquipmentSlot.LEGS, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item POWER_BOOTS = new ArmorItem(POWER_ARMOR, EquipmentSlot.FEET, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
 
+    public static final Item LONG_FALL_BOOTS = new ArmorItem(LONG_FALL_ARMOR, EquipmentSlot.FEET, new Item.Settings().group(Reborn12KItemGroup.REBORN12K));
 
     public static void register(){
 
@@ -97,6 +99,9 @@ public class Armors {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "power_leggings"), POWER_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "power_boots"), POWER_BOOTS);
 
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "long_fall_boots"), LONG_FALL_BOOTS);
+
+        Reborn12K.LOGGER.info("Registering Armors for " + Reborn12K.MOD_ID);
 
     }
 

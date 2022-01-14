@@ -20,6 +20,8 @@ public class Enchantments {
         Registry.register(Registry.ENCHANTMENT, new Identifier(Reborn12K.MOD_ID, "deathskiss"), DEATHSKISS);
         Registry.register(Registry.ENCHANTMENT, new Identifier(Reborn12K.MOD_ID, "magic_protection"), MAGIC_PROTECTION);
 
+        Reborn12K.LOGGER.info("Registering Enchantments for " + Reborn12K.MOD_ID);
+
     }
 
 }

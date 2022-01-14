@@ -120,6 +120,9 @@ public class Staffs {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "crimson_scepter"), CRIMSON_SCEPTER);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "crimson_rod"), CRIMSON_ROD);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "crimson_staff"), CRIMSON_STAFF);
+
+        Reborn12K.LOGGER.info("Registering Staffs for " + Reborn12K.MOD_ID);
+
     }
 
 }
