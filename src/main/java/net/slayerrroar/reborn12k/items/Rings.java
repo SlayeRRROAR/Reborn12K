@@ -42,6 +42,8 @@ public class Rings {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "ring_of_dark"), RING_OF_DARK);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "ring_of_strength"), RING_OF_STRENGTH);
 
+        Reborn12K.LOGGER.info("Registering Rings for " + Reborn12K.MOD_ID);
+
     }
 
 }

@@ -8,6 +8,8 @@
     "item.reborn12k.manatite": "Manatite",
     "item.reborn12k.refined_manatite": "Refined Manatite",
 
+    "item.reborn12k.element_115": "Element 115",
+
     "item.reborn12k.windstorm_manatite": "Windstorm Manatite",
     "item.reborn12k.viridian_manatite": "Viridian Manatite",
     "item.reborn12k.abyss_manatite": "Abyss Manatite",
@@ -45,6 +47,9 @@
     "item.reborn12k.banana": "Banana",
     "item.reborn12k.golden_banana": "Golden Banana",
     "item.reborn12k.enchanted_golden_banana": "Enchanted Golden Banana",
+
+    "item.reborn12k.z115": "115",
+    "item.reborn12k.z115.desc": "Elena Siegman - 115",
 
     "item.reborn12k.uranium.tooltip": "A fuel source 8 times stronger than Coal",
 
@@ -96,6 +101,8 @@
 
     "block.reborn12k.manatite_ore": "Manatite Ore",
     "block.reborn12k.deepslate_manatite_ore": "Deepslate Manatite Ore",
+
+    "block.reborn12k.deepslate_element_115_ore": "Deepslate Element 115 Ore",
 
     "block.reborn12k.chromite_ore": "Chromite Ore",
     "block.reborn12k.deepslate_chromite_ore": "Deepslate Chromite Ore",
@@ -326,6 +333,8 @@
     "item.reborn12k.power_leggings": "Power Armor Leggings",
     "item.reborn12k.power_boots": "Power Armor Boots",
 
+    "item.reborn12k.long_fall_boots": "Long Fall Boots",
+
 
 
     "advancements.reborn12k.root.title": "REBORN12K - Alloying",
@@ -468,6 +477,9 @@
 
     "enchantment.reborn12k.deathskiss": "Death's Kiss",
     "enchantment.reborn12k.magic_protection": "Magic Protection",
+
+
+    "sounds:reborn12k.z115": "Elena Siegman - 115",
 
 
     "itemGroup.reborn12k.reborn12k": "Reborn12K"

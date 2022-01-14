@@ -8,6 +8,8 @@
     "item.reborn12k.manatite": "Manatite",
     "item.reborn12k.refined_manatite": "Manatite Raffinata",
 
+    "item.reborn12k.element_115": "Elemento 115",
+
     "item.reborn12k.windstorm_manatite": "Manatite della Tempesta",
     "item.reborn12k.viridian_manatite": "Manatite Viridea",
     "item.reborn12k.abyss_manatite": "Manatite dell'Abisso",
@@ -45,6 +47,9 @@
     "item.reborn12k.banana": "Banana",
     "item.reborn12k.golden_banana": "Banana d'oro",
     "item.reborn12k.enchanted_golden_banana": "Banana d'oro Incantata",
+
+    "item.reborn12k.z115": "115",
+    "item.reborn12k.z115.desc": "Elena Siegman - 115",
 
     "item.reborn12k.uranium.tooltip": "Un combustibile 8 volte più potente del Carbone",
 
@@ -95,6 +100,8 @@
 
     "block.reborn12k.manatite_ore": "Minerale di Manatite",
     "block.reborn12k.deepslate_manatite_ore": "Minerale di Manatite in Ardesia Profonda",
+
+    "block.reborn12k.deepslate_element_115_ore": "Minerale di Elemento 115 in Ardesia Profonda",
 
     "block.reborn12k.chromite_ore": "Minerale di Cromite",
     "block.reborn12k.deepslate_chromite_ore": "Minerale di Cromite in Ardesia Profonda",
@@ -322,6 +329,8 @@
     "item.reborn12k.power_leggings": "Gambali di Armatura Potenziata",
     "item.reborn12k.power_boots": "Stivali di Armatura Potenziata",
 
+    "item.reborn12k.long_fall_boots": "Stivali della Caduta Libera",
+
 
 
     "advancements.reborn12k.root.title": "REBORN12K - Leghe",
@@ -463,6 +472,9 @@
 
     "enchantment.reborn12k.deathskiss": "Bacio della Morte",
     "enchantment.reborn12k.magic_protection": "Protezione dalla Magia",
+
+
+    "sounds:reborn12k.z115": "Elena Siegman - 115",
 
 
     "itemGroup.reborn12k.reborn12k": "Reborn12K"
