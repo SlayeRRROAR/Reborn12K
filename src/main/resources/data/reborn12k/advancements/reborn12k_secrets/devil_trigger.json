@@ -1,8 +1,8 @@
 {
-  "parent": "reborn12k:reborn12k_secrets/devil_may_cry",
+  "parent": "reborn12k:reborn12k_secrets/katanakaji",
     "display": {
       "icon": {
-        "item": "reborn12k:rebellion"
+        "item": "reborn12k:yamato"
       },
       "title": {
         "translate": "advancements.reborn12k_secrets.devil_trigger.title"
@@ -17,13 +17,13 @@
       "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
   "criteria": {
-    "get_rebellion": {
+    "get_yamato": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "reborn12k:rebellion"
+              "reborn12k:yamato"
             ]
           }
         ]
@@ -32,7 +32,7 @@
   },
   "requirements": [
     [
-      "get_rebellion"
+      "get_yamato"
     ]
   ]
 }
