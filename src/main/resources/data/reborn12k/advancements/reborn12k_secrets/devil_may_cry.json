@@ -1,5 +1,5 @@
 {
-  "parent": "reborn12k:reborn12k_secrets/devil_may_cry",
+  "parent": "reborn12k:reborn12k_secrets/devil_trigger",
     "display": {
       "icon": {
         "item": "reborn12k:rebellion"
@@ -18,7 +18,7 @@
     },
   "criteria": {
     "get_rebellion": {
-      "may_cry": "minecraft:inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
