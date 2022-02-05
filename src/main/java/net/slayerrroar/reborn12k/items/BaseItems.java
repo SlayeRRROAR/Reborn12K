@@ -1,9 +1,9 @@
 package net.slayerrroar.reborn12k.items;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.items.item_class.EnchantedGoldenBanana;
-import net.slayerrroar.reborn12k.items.item_class.GoldenBanana;
+import net.slayerrroar.reborn12k.items.item_class.GlintedItem;
 import net.slayerrroar.reborn12k.items.item_class.UraniumItem;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -52,8 +52,27 @@ public class BaseItems {
     // Food
 
     public static final Item BANANA = new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(5).saturationModifier(0.3f).build()).group(Reborn12KItemGroup.REBORN12K));
-    public static final Item GOLDEN_BANANA = new GoldenBanana(new FabricItemSettings().food(new FoodComponent.Builder().hunger(5).saturationModifier(1.08f).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20*30, 3), 1f).alwaysEdible().build()).group(Reborn12KItemGroup.REBORN12K));
-    public static final Item ENCHANTED_GOLDEN_BANANA = new EnchantedGoldenBanana(new FabricItemSettings().food(new FoodComponent.Builder().hunger(5).saturationModifier(1.08f).statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20*300, 6), 1f).statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 20*300, 3), 1f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 20*180, 5), 1f).alwaysEdible().build()).group(Reborn12KItemGroup.REBORN12K));
+    public static final Item GOLDEN_BANANA = new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(5).saturationModifier(1.08f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20*30, 3), 1f)
+            .alwaysEdible().build()).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE));
+    public static final Item ENCHANTED_GOLDEN_BANANA = new GlintedItem(new FabricItemSettings().food(new FoodComponent.Builder().hunger(5).saturationModifier(1.08f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20*300, 6), 1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 20*300, 3), 1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 20*180, 5), 1f)
+            .alwaysEdible().build()).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
+
+    public static final Item CHERRY = new Item(new FabricItemSettings().food(new FoodComponent.Builder().snack().hunger(2).saturationModifier(0.2f).build()).group(Reborn12KItemGroup.REBORN12K));
+    public static final Item GOLDEN_CHERRY = new Item(new FabricItemSettings().food(new FoodComponent.Builder().snack().hunger(3).saturationModifier(0.8f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 20*1, 1), 1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*10, 0), 0.7f)
+            .alwaysEdible().build()).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE));
+    public static final Item ENCHANTED_GOLDEN_CHERRY = new GlintedItem(new FabricItemSettings().food(new FoodComponent.Builder().snack().hunger(3).saturationModifier(0.8f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 20*1, 4), 1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*30, 2), 1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 20*240, 2), 0.5f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 20*240, 3), 0.25f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 20*120, 1), 0.1f)
+            .alwaysEdible().build()).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
 
 
     public static void register() {
@@ -97,6 +116,10 @@ public class BaseItems {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "banana"), BANANA);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "golden_banana"), GOLDEN_BANANA);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "enchanted_golden_banana"), ENCHANTED_GOLDEN_BANANA);
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry"), CHERRY);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "golden_cherry"), GOLDEN_CHERRY);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "enchanted_golden_cherry"), ENCHANTED_GOLDEN_CHERRY);
 
         Reborn12K.LOGGER.info("Registering Base Items for " + Reborn12K.MOD_ID);
 

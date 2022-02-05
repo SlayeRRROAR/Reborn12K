@@ -1,0 +1,38 @@
+{
+  "parent": "reborn12k:reborn12k_secrets/the_cherry_on_top",
+    "display": {
+      "icon": {
+        "item": "reborn12k:enchanted_golden_cherry"
+      },
+      "title": {
+        "translate": "advancements.reborn12k_secrets.something_to_cherry-ish_forever.title"
+      },
+      "description": {
+        "translate": "advancements.reborn12k_secrets.something_to_cherry-ish_forever.description"
+      },
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true,
+      "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+  "criteria": {
+    "get_enchanted_golden_cherry": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:enchanted_golden_cherry"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_enchanted_golden_cherry"
+    ]
+  ]
+}
