@@ -6,13 +6,13 @@
       ]
     },
     "criteria": {
-      "has_refined_manatite": {
+      "has_element_115": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:refined_manatite"
+                "reborn12k:element_115"
               ]
             }
           ]
@@ -27,7 +27,7 @@
     },
     "requirements": [
       [
-        "has_refined_manatite",
+        "has_element_115",
         "has_the_recipe"
       ]
     ]

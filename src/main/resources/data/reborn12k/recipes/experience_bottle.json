@@ -10,11 +10,11 @@
             "item": "minecraft:gold_ingot"
         },
         "B": {
-            "item": "reborn12k:refined_manatite"
+            "item": "reborn12k:element_115"
         }
     },
     "result": {
         "item": "minecraft:experience_bottle",
-        "count": 16
+        "count": 64
     }
 }
