@@ -23,7 +23,7 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     OreBlocks.TOPAZ_ORE.getDefaultState(),
-                    4));                                                                        //Blocks per vein
+                    4));                                                                   //Blocks per vein
 
     private static final PlacedFeature TOPAZ_ORE_PLACED = TOPAZ_ORE
             .withPlacement(CountPlacementModifier.of(2),                                        //Veins per chunk
@@ -37,7 +37,7 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     OreBlocks.OPAL_ORE.getDefaultState(),
-                    4));                                                                        //Blocks per vein
+                    4));                                                                   //Blocks per vein
 
     private static final PlacedFeature OPAL_ORE_PLACED = OPAL_ORE
             .withPlacement(CountPlacementModifier.of(2),                                        //Veins per chunk
@@ -51,7 +51,7 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     OreBlocks.RUBY_ORE.getDefaultState(),
-                    4));                                                                        //Blocks per vein
+                    4));                                                                    //Blocks per vein
 
     private static final PlacedFeature RUBY_ORE_PLACED = RUBY_ORE
             .withPlacement(CountPlacementModifier.of(2),                                        //Veins per chunk
@@ -61,11 +61,11 @@ public class OreGen {
                             YOffset.fixed(16)));                                                //Max generation Y level
 
 
-    private static final ConfiguredFeature<?, ?> SAPPHIRE_ORE =                                     //Opal Ore
+    private static final ConfiguredFeature<?, ?> SAPPHIRE_ORE =                                 //Opal Ore
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     OreBlocks.SAPPHIRE_ORE.getDefaultState(),
-                    4));                                                                        //Blocks per vein
+                    4));                                                                   //Blocks per vein
 
     private static final PlacedFeature SAPPHIRE_ORE_PLACED = SAPPHIRE_ORE
             .withPlacement(CountPlacementModifier.of(2),                                        //Veins per chunk
@@ -80,10 +80,10 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     OreBlocks.DEEPSLATE_TOPAZ_ORE.getDefaultState(),
-                    4));                                                                        //Blocks per vein
+                    4));                                                                    //Blocks per vein
 
     private static final PlacedFeature DEEP_TOPAZ_ORE_PLACED = DEEP_TOPAZ_ORE
-            .withPlacement(CountPlacementModifier.of(4),                                        //Veins per chunk
+            .withPlacement(CountPlacementModifier.of(5),                                        //Veins per chunk
                     SquarePlacementModifier.of(),                                               //Horizontal spread
                     HeightRangePlacementModifier.trapezoid(
                             YOffset.fixed(-64),                                                 //Min generation Y level
@@ -97,7 +97,7 @@ public class OreGen {
                     4));                                                                        //Blocks per vein
 
     private static final PlacedFeature DEEP_OPAL_ORE_PLACED = DEEP_OPAL_ORE
-            .withPlacement(CountPlacementModifier.of(4),                                        //Veins per chunk
+            .withPlacement(CountPlacementModifier.of(5),                                        //Veins per chunk
                     SquarePlacementModifier.of(),                                               //Horizontal spread
                     HeightRangePlacementModifier.trapezoid(
                             YOffset.fixed(-64),                                                 //Min generation Y level
@@ -111,7 +111,7 @@ public class OreGen {
                     4));                                                                        //Blocks per vein
 
     private static final PlacedFeature DEEP_RUBY_ORE_PLACED = DEEP_RUBY_ORE
-            .withPlacement(CountPlacementModifier.of(4),                                        //Veins per chunk
+            .withPlacement(CountPlacementModifier.of(5),                                        //Veins per chunk
                     SquarePlacementModifier.of(),                                               //Horizontal spread
                     HeightRangePlacementModifier.trapezoid(
                             YOffset.fixed(-64),                                                 //Min generation Y level
@@ -122,10 +122,10 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     OreBlocks.DEEPSLATE_SAPPHIRE_ORE.getDefaultState(),
-                    4));                                                                        //Blocks per vein
+                    4));                                                                   //Blocks per vein
 
     private static final PlacedFeature DEEP_SAPPHIRE_ORE_PLACED = DEEP_SAPPHIRE_ORE
-            .withPlacement(CountPlacementModifier.of(4),                                        //Veins per chunk
+            .withPlacement(CountPlacementModifier.of(5),                                        //Veins per chunk
                     SquarePlacementModifier.of(),                                               //Horizontal spread
                     HeightRangePlacementModifier.trapezoid(
                             YOffset.fixed(-64),                                                 //Min generation Y level
@@ -137,10 +137,10 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     OreBlocks.MANATITE_ORE.getDefaultState(),
-                    3));                                                                        //Blocks per vein
+                    3));                                                                    //Blocks per vein
 
     private static final PlacedFeature MANATITE_ORE_PLACED = MANATITE_ORE
-            .withPlacement(CountPlacementModifier.of(1),                                        //Veins per chunk
+            .withPlacement(CountPlacementModifier.of(3),                                        //Veins per chunk
                     SquarePlacementModifier.of(),                                               //Horizontal spread
                     HeightRangePlacementModifier.trapezoid(
                             YOffset.fixed(-64),                                                 //Min generation Y level
@@ -151,7 +151,7 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     OreBlocks.DEEPSLATE_MANATITE_ORE.getDefaultState(),
-                    3));                                                                        //Blocks per vein
+                    3));                                                                   //Blocks per vein
 
     private static final PlacedFeature DEEP_MANATITE_ORE_PLACED = DEEP_MANATITE_ORE
             .withPlacement(CountPlacementModifier.of(3),                                        //Veins per chunk
@@ -165,7 +165,7 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     OreBlocks.DEEPSLATE_MANATITE_ORE.getDefaultState(),
-                    2));                                                                        //Blocks per vein
+                    3));                                                                    //Blocks per vein
 
     private static final PlacedFeature DEEP_ELEMENT_115_ORE_PLACED = DEEP_ELEMENT_115_ORE
             .withPlacement(CountPlacementModifier.of(4),                                        //Veins per chunk
@@ -180,7 +180,7 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     OreBlocks.TIN_ORE.getDefaultState(),
-                    9));                                                                        //Blocks per vein
+                    9));                                                                   //Blocks per vein
 
     private static final PlacedFeature TIN_ORE_PLACED = TIN_ORE
             .withPlacement(CountPlacementModifier.of(16),                                       //Veins per chunk
@@ -195,10 +195,10 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     OreBlocks.CHROMITE_ORE.getDefaultState(),
-                    7));                                                                        //Blocks per vein
+                    6));                                                                   //Blocks per vein
 
     private static final PlacedFeature CHROMITE_ORE_PLACED = CHROMITE_ORE
-            .withPlacement(CountPlacementModifier.of(12),                                       //Veins per chunk
+            .withPlacement(CountPlacementModifier.of(10),                                       //Veins per chunk
                     SquarePlacementModifier.of(),                                               //Horizontal spread
                     HeightRangePlacementModifier.trapezoid(
                             YOffset.fixed(-64),                                                 //Min generation Y level
@@ -209,10 +209,10 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     OreBlocks.DEEPSLATE_CHROMITE_ORE.getDefaultState(),
-                    7));                                                                        //Blocks per vein
+                    6));                                                                    //Blocks per vein
 
     private static final PlacedFeature DEEP_CHROMITE_ORE_PLACED = DEEP_CHROMITE_ORE
-            .withPlacement(CountPlacementModifier.of(12),                                       //Veins per chunk
+            .withPlacement(CountPlacementModifier.of(10),                                       //Veins per chunk
                     SquarePlacementModifier.of(),                                               //Horizontal spread
                     HeightRangePlacementModifier.trapezoid(
                             YOffset.fixed(-64),                                                 //Min generation Y level
@@ -224,7 +224,7 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     OreBlocks.SILVER_ORE.getDefaultState(),
-                    7));                                                                        //Blocks per vein
+                    7));                                                                    //Blocks per vein
 
     private static final PlacedFeature SILVER_ORE_PLACED = SILVER_ORE
             .withPlacement(CountPlacementModifier.of(8),                                        //Veins per chunk
@@ -238,7 +238,7 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     OreBlocks.DEEPSLATE_SILVER_ORE.getDefaultState(),
-                    7));                                                                        //Blocks per vein
+                    7));                                                                   //Blocks per vein
 
     private static final PlacedFeature DEEP_SILVER_ORE_PLACED = DEEP_SILVER_ORE
             .withPlacement(CountPlacementModifier.of(8),                                        //Veins per chunk
@@ -253,7 +253,7 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     OreBlocks.DEEPSLATE_URANIUM_ORE.getDefaultState(),
-                    3));                                                                        //Blocks per vein
+                    3));                                                                   //Blocks per vein
 
     private static final PlacedFeature DEEP_URANIUM_ORE_PLACED = DEEP_URANIUM_ORE
             .withPlacement(CountPlacementModifier.of(3),                                        //Veins per chunk
@@ -268,7 +268,7 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     OreConfiguredFeatures.NETHERRACK,
                     OreBlocks.NETHER_URANIUM_ORE.getDefaultState(),
-                    13));                                                                       //Blocks per vein
+                    13));                                                                   //Blocks per vein
 
     public static PlacedFeature NETHER_URANIUM_ORE_PLACED = NETHER_URANIUM_ORE
             .withPlacement(CountPlacementModifier.of(32),                                       //Veins per chunk
@@ -283,7 +283,7 @@ public class OreGen {
             Feature.ORE.configure(new OreFeatureConfig(
                     new BlockMatchRuleTest(Blocks.END_STONE),
                     OreBlocks.END_COBALT_ORE.getDefaultState(),
-                    9));                                                                        //Blocks per vein
+                    9));                                                                    //Blocks per vein
 
     private static final PlacedFeature END_COBALT_ORE_PLACED = END_COBALT_ORE
             .withPlacement(CountPlacementModifier.of(12),                                       //Veins per chunk
