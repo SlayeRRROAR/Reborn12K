@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:steel_ingots"
+    },
+    "B": {
+      "item": "reborn12k:devil_bringer"
+    }
+  },
+  "result": {
+    "item": "reborn12k:queen_blade",
+    "count": 1
+  }
+}

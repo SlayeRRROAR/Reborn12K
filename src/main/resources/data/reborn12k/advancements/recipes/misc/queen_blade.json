@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "reborn12k:queen_blade"
+    ]
+  },
+  "criteria": {
+    "has_devil_bringer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:devil_bringer"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "reborn12k:queen_blade"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_devil_bringer",
+      "has_the_recipe"
+    ]
+  ]
+}
