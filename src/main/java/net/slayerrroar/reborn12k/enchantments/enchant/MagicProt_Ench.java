@@ -12,6 +12,11 @@ public class MagicProt_Ench extends Enchantment {
     }
 
     @Override
+    public boolean isAvailableForEnchantedBookOffer() {
+        return true;
+    }
+
+    @Override
     protected boolean canAccept(Enchantment other) {
         return super.canAccept(other) && other != Enchantments.PROTECTION && other != Enchantments.BLAST_PROTECTION && other != Enchantments.FIRE_PROTECTION && other != Enchantments.PROJECTILE_PROTECTION;
     }
