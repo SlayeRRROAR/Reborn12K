@@ -8,6 +8,10 @@ public class RebornRenderHelper {
     public static void setRenderLayers() {
         BlockRenderLayerMap.INSTANCE.putBlock(BaseBlocks.CHERRY_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BaseBlocks.CHERRY_SAPLING, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(BaseBlocks.SLIMY_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BaseBlocks.SLIMY_SAPLING, RenderLayer.getCutout());
+
         BlockRenderLayerMap.INSTANCE.putBlock(BaseBlocks.CHERRY_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BaseBlocks.CHERRY_TRAPDOOR, RenderLayer.getCutout());
     }

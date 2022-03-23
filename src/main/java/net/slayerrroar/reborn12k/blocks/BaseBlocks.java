@@ -11,6 +11,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.block_class.*;
 import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 import net.slayerrroar.reborn12k.world.features.CherrySaplingGenerator;
+import net.slayerrroar.reborn12k.world.features.SlimySaplingGenerator;
 import net.slayerrroar.reborn12k.world.features.TreeGeneration;
 
 public class BaseBlocks {
@@ -22,7 +23,7 @@ public class BaseBlocks {
     public static final Block CHERRY_PLANKS = new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
 
     public static final Block CHERRY_LEAVES = new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES));
-    public static final Block CHERRY_SAPLING = new CherrySaplingBlock(new CherrySaplingGenerator(TreeGeneration.CHERRY_TREE_FEATURE), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly());
+    public static final Block CHERRY_SAPLING = new CustomSaplingBlock(new CherrySaplingGenerator(TreeGeneration.CHERRY_TREE_FEATURE), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly());
 
     public static final Block CHERRY_STAIRS = new StairBlock(BaseBlocks.CHERRY_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS));
     public static final Block CHERRY_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB));
@@ -33,6 +34,10 @@ public class BaseBlocks {
     public static final Block CHERRY_DOOR = new DoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque());
     public static final Block CHERRY_TRAPDOOR = new TrapdoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque());
 
+
+    public static final Block SLIMY_LOG = new PillarBlock(FabricBlockSettings.copyOf(Blocks.SLIME_BLOCK).hardness(2.0f).resistance(2.0f));
+    public static final Block SLIMY_LEAVES = new LeavesBlock(FabricBlockSettings.copyOf(Blocks.SLIME_BLOCK).hardness(0.2f).resistance(0.2f));
+    public static final Block SLIMY_SAPLING = new CustomSaplingBlock(new SlimySaplingGenerator(TreeGeneration.SLIMY_TREE_FEATURE), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly());
 
 
     public static final Block DIORITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
@@ -108,6 +113,11 @@ public class BaseBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cherry_trapdoor"), CHERRY_TRAPDOOR);
 
 
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "slimy_log"), SLIMY_LOG);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "slimy_leaves"), SLIMY_LEAVES);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "slimy_sapling"), SLIMY_SAPLING);
+
+
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "diorite_bricks"), DIORITE_BRICKS);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "small_diorite_bricks"), SMALL_DIORITE_BRICKS);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "granite_bricks"), GRANITE_BRICKS);
@@ -177,6 +187,11 @@ public class BaseBlocks {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_pressure_plate"), new BlockItem(CHERRY_PRESSURE_PLATE, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_door"), new BlockItem(CHERRY_DOOR, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cherry_trapdoor"), new BlockItem(CHERRY_TRAPDOOR, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "slimy_log"), new BlockItem(SLIMY_LOG, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "slimy_leaves"), new BlockItem(SLIMY_LEAVES, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "slimy_sapling"), new BlockItem(SLIMY_SAPLING, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
 
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "diorite_bricks"), new BlockItem(DIORITE_BRICKS, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
