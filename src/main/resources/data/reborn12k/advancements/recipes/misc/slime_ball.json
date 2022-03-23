@@ -2,17 +2,17 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:name_tag"
+        "minecraft:slime_ball"
       ]
     },
     "criteria": {
-      "has_iron": {
+      "has_slimy_log": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "minecraft:iron_ingot"
+                "reborn12k:slimy_log"
               ]
             }
           ]
@@ -21,13 +21,13 @@
       "has_the_recipe": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "reborn12k:name_tag"
+          "recipe": "minecraft:slime_ball"
         }
       }
     },
     "requirements": [
       [
-        "has_iron",
+        "has_slimy_log",
         "has_the_recipe"
       ]
     ]
