@@ -10,7 +10,7 @@
             "remainder": { "item": "reborn12k:master_philosopher_stone" }
         },
         "B": {
-            "item": "reborn12k:topaz"
+            "tag": "c:topazes"
         }
     },
     "result": {

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        {
+            "item": "reborn12k:chrome_dust"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:carbon_steel_ingot",
+        "count": 1
+    },
+    "group": "carbon_steel"
+}

@@ -11,7 +11,7 @@
             "item": "minecraft:raw_copper"
         },
         {
-            "item": "reborn12k:raw_tin"
+            "tag": "c:raw_tins"
         }
     ],
     "result": {

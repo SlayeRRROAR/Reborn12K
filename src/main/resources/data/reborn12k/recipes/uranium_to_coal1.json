@@ -10,7 +10,7 @@
             "remainder": { "item": "reborn12k:advanced_philosopher_stone" }
         },
         "B": {
-            "item": "reborn12k:uranium"
+            "tag": "c:uraniums"
         }
     },
     "result": {

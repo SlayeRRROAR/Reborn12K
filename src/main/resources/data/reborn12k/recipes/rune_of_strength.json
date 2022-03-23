@@ -4,7 +4,7 @@
         "item": "reborn12k:blank_rune"
     },
     "addition": {
-        "item": "reborn12k:ruby"
+        "tag": "c:rubies"
     },
     "result": {
         "item": "reborn12k:rune_of_strength"

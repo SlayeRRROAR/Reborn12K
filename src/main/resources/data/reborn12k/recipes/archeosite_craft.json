@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:cobalt"
+            "tag": "c:cobalt_ingots"
         },
         {
             "item": "minecraft:netherite_ingot"

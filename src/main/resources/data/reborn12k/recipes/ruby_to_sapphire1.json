@@ -10,7 +10,7 @@
             "remainder": { "item": "reborn12k:weak_philosopher_stone" }
         },
         "B": {
-            "item": "reborn12k:ruby"
+            "tag": "c:rubies"
         }
     },
     "result": {

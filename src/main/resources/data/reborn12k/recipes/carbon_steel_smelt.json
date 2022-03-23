@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smelting",
     "ingredient": {
-        "item": "reborn12k:raw_steel"
+        "tag": "c:raw_steels"
     },
     "result": "reborn12k:carbon_steel_ingot",
     "experience": 1.0,

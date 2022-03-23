@@ -22,7 +22,7 @@
             "item": "minecraft:emerald_block"
         },
         "F": {
-            "item": "reborn12k:silver_block"
+            "tag": "c:silver_blocks"
         }
     },
     "result": {

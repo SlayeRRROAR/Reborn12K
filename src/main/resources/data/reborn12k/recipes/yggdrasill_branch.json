@@ -5,7 +5,7 @@
             "item": "minecraft:lapis_lazuli"
         },
         {
-            "item": "reborn12k:sapphire"
+            "tag": "c:sapphires"
         },
         {
             "item": "minecraft:diamond"
@@ -20,13 +20,13 @@
             "item": "minecraft:emerald"
         },
         {
-            "item": "reborn12k:ruby"
+            "tag": "c:rubies"
         },
         {
-            "item": "reborn12k:opal"
+            "tag": "c:opals"
         },
         {
-            "item": "reborn12k:topaz"
+            "tag": "c:topazes"
         }
     ],
     "result": {

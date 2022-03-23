@@ -2,22 +2,19 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         " A ",
-        "BCB",
+        "ABA",
         " A "
     ],
     "key": {
         "A": {
-            "tag": "c:silver_ingots"
-        },
-        "B": {
             "item": "minecraft:gold_ingot"
         },
-        "C": {
-            "item": "reborn12k:manatite"
+        "B": {
+            "item": "reborn12k:refined_manatite"
         }
     },
     "result": {
-        "item": "reborn12k:refined_manatite",
-        "count": 1
+        "item": "minecraft:experience_bottle",
+        "count": 16
     }
 }
