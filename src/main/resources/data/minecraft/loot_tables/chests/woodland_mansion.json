@@ -212,6 +212,21 @@
         {
           "type": "minecraft:item",
           "weight": 2,
+          "name": "reborn12k:red_queen",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 10,
+                "max": 25
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
           "name": "reborn12k:yamato",
           "functions": [
             {
@@ -273,6 +288,21 @@
           "type": "minecraft:item",
           "weight": 5,
           "name": "reborn12k:silver_claymore",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 10,
+                "max": 25
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "reborn12k:yamato",
           "functions": [
             {
               "function": "enchant_with_levels",
