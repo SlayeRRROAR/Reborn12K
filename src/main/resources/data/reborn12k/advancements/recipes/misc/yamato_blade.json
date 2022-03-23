@@ -6,13 +6,13 @@
     ]
   },
   "criteria": {
-    "has_cobalt": {
+    "has_devil_bringer": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "reborn12k:cobalt"
+              "reborn12k:devil_bringer"
             ]
           }
         ]
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "has_cobalt",
+      "has_devil_bringer",
       "has_the_recipe"
     ]
   ]

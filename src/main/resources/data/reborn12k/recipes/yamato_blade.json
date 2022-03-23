@@ -1,19 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "ABA",
-    "ACA",
-    "ABA"
+    "A",
+    "B",
+    "A"
   ],
   "key": {
     "A": {
-      "item": "reborn12k:cobalt"
+      "tag": "c:silver_ingots"
     },
     "B": {
-      "item": "reborn12k:silver_ingot"
-    },
-    "C": {
-      "item": "minecraft:gold_ingot"
+      "item": "reborn12k:devil_bringer"
     }
   },
   "result": {

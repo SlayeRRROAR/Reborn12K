@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
+import org.lwjgl.system.CallbackI;
 
 public class BaseItems {
 
@@ -47,7 +48,7 @@ public class BaseItems {
 
     // Mob Drops
 
-
+    public static final Item DEVIL_BRINGER = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
 
     // Food
 
@@ -109,7 +110,7 @@ public class BaseItems {
 
         // Mob Drops
 
-
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "devil_bringer"), DEVIL_BRINGER);
 
         // Food
 
