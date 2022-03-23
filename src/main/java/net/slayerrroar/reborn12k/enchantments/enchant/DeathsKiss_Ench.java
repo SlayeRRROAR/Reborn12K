@@ -15,7 +15,10 @@ public class DeathsKiss_Ench extends Enchantment {
         super(weight, type, slotTypes);
     }
 
-
+    @Override
+    public boolean isAvailableForEnchantedBookOffer() {
+        return true;
+    }
 
     @Override
     protected boolean canAccept(Enchantment other) {
