@@ -14,10 +14,13 @@ public class DiscItem {
 
     public static final Item Z115 = new CustomDiscItem(15, SoundClass.Z115, new FabricItemSettings()
             .group(Reborn12KItemGroup.REBORN12K).maxCount(1).rarity(Rarity.EPIC));
+    public static final Item DEVIL_TRIGGER_DISC = new CustomDiscItem(15, SoundClass.DEVIL_TRIGGER, new FabricItemSettings()
+            .group(Reborn12KItemGroup.REBORN12K).maxCount(1).rarity(Rarity.EPIC));
 
     public static void register() {
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "z115"), Z115);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "devil_trigger_disc"), DEVIL_TRIGGER_DISC);
 
     }
 
