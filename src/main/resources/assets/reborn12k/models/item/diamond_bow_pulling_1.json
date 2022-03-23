@@ -1,0 +1,6 @@
+{
+  "parent": "reborn12k:item/diamond_bow",
+  "textures": {
+    "layer0": "reborn12k:item/diamond_bow_pulling_1"
+  }
+}

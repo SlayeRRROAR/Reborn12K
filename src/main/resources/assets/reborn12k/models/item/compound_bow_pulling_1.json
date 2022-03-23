@@ -1,0 +1,6 @@
+{
+  "parent": "reborn12k:item/compound_bow",
+  "textures": {
+    "layer0": "reborn12k:item/compound_bow_pulling_1"
+  }
+}
