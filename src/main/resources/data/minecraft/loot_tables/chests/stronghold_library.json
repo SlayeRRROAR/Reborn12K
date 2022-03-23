@@ -128,13 +128,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "reborn12k:yamato",
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{lvl:5,id:\"reborn12k:deathskiss\"}]}"
-            }
-          ]
+          "name": "reborn12k:red_queen"
         },
         {
           "type": "minecraft:item",

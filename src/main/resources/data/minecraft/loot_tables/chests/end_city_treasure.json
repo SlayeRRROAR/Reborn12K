@@ -384,6 +384,21 @@
         {
           "type": "minecraft:item",
           "weight": 2,
+          "name": "reborn12k:red_queen",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 39
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
           "name": "reborn12k:yamato",
           "functions": [
             {
