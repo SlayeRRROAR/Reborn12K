@@ -6,7 +6,7 @@ import net.slayerrroar.reborn12k.items.AdvancedItems;
 
 public class PowerMaterial implements ToolMaterial {
 
-    public static final Yamato INSTANCE = new Yamato();
+    public static final PowerMaterial INSTANCE = new PowerMaterial();
 
     @Override
     public float getAttackDamage() {
