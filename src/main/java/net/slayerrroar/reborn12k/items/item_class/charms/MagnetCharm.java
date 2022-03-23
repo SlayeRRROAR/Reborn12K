@@ -28,46 +28,37 @@ public class MagnetCharm extends Item {
     static int setRange = 12; //defines range of magnet
     static final String MAGNET_STATE = "Magnet State";
 
-    public MagnetCharm(Settings settings)
-    {
+    public MagnetCharm(Settings settings) {
         super(settings);
     }
 
-    public boolean hasGlint(ItemStack magnet_charm)
-    {
+    public boolean hasGlint(ItemStack magnet_charm) {
         return isActive(magnet_charm);
     }
 
-    public enum MagnetState
-    {
+    public enum MagnetState {
         ON(true), OFF(false);
         final boolean state;
-        MagnetState(boolean state)
-        {
+        MagnetState(boolean state) {
             this.state = state;
         }
-        public boolean getBoolean()
-        {
+        public boolean getBoolean() {
             return state;
         }
     }
 
-    public boolean isActive(ItemStack magnet_charm)
-    {
+    public boolean isActive(ItemStack magnet_charm) {
         return getMagnetState(magnet_charm).getBoolean();
     }
 
-    private void setMagnetState(ItemStack magnet_charm, MagnetState mode)
-    {
+    private void setMagnetState(ItemStack magnet_charm, MagnetState mode) {
         checkTag(magnet_charm);
         assert magnet_charm.getNbt() != null;
         magnet_charm.getNbt().putBoolean(MAGNET_STATE, mode.getBoolean());
     }
 
-    private MagnetState getMagnetState(ItemStack magnet_charm)
-    {
-        if(!magnet_charm.isEmpty())
-        {
+    private MagnetState getMagnetState(ItemStack magnet_charm) {
+        if(!magnet_charm.isEmpty()) {
             checkTag(magnet_charm);
 
             assert magnet_charm.getNbt() != null;
@@ -76,12 +67,10 @@ public class MagnetCharm extends Item {
         return MagnetState.OFF;
     }
 
-    private void toggleMode(ItemStack magnet_charm, PlayerEntity playerEntity)
-    {
+    private void toggleMode(ItemStack magnet_charm, PlayerEntity playerEntity) {
         MagnetState currentMode = getMagnetState(magnet_charm);
 
-        if(currentMode.getBoolean())
-        {
+        if(currentMode.getBoolean()) {
             setMagnetState(magnet_charm, MagnetState.OFF);
             playerEntity.sendMessage(new TranslatableText("item.reborn12k.magnet.tooltip1"), true);
 
@@ -92,21 +81,17 @@ public class MagnetCharm extends Item {
         playerEntity.sendMessage(new TranslatableText("item.reborn12k.magnet.tooltip2"), true);
     }
 
-    private void checkTag(ItemStack magnet_charm)
-    {
-        if(!magnet_charm.isEmpty())
-        {
+    private void checkTag(ItemStack magnet_charm) {
+        if(!magnet_charm.isEmpty()) {
 
-            if(!magnet_charm.hasNbt())
-            {
+            if(!magnet_charm.hasNbt()) {
                 magnet_charm.setNbt(new NbtCompound());
             }
             NbtCompound nbt = magnet_charm.getNbt();
 
             assert nbt != null;
 
-            if(!nbt.contains(MAGNET_STATE))
-            {
+            if(!nbt.contains(MAGNET_STATE)) {
                 nbt.putBoolean(MAGNET_STATE, false);
             }
         }
@@ -137,12 +122,10 @@ public class MagnetCharm extends Item {
 
 
     @Override
-    public TypedActionResult<ItemStack> use( World world, PlayerEntity playerEntity, Hand hand)
-    {
+    public TypedActionResult<ItemStack> use( World world, PlayerEntity playerEntity, Hand hand) {
         ItemStack magnet_charm = playerEntity.getStackInHand(hand);
 
-        if(!world.isClient && !playerEntity.isSneaking())
-        {
+        if(!world.isClient && !playerEntity.isSneaking()) {
             toggleMode(magnet_charm, playerEntity);
             world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
         }
@@ -151,8 +134,7 @@ public class MagnetCharm extends Item {
     }
 
     @Environment(EnvType.CLIENT)
-    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext)
-    {
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         if(getMagnetState(itemStack) != MagnetState.ON){
             tooltip.add(new TranslatableText("item.reborn12k.magnet.tooltip1"));
         }
