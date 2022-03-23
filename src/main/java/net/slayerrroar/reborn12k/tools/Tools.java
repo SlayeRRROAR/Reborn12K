@@ -1,6 +1,7 @@
 package net.slayerrroar.reborn12k.tools;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.item.Item;
 import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
@@ -48,7 +49,12 @@ public class Tools {
     public static ToolItem MURASAMA = new BaseSword(HFBMaterial.INSTANCE, 3, -1.6f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
     public static ToolItem BLADEWOLF = new BaseSword(HFBMaterial.INSTANCE, 5, -2.4f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
     public static ToolItem REBELLION = new BaseSword(Rebellion.INSTANCE, 5, -2.6f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
+    public static ToolItem RED_QUEEN = new ExceedSword(RedQueen.INSTANCE, 5 , -2.4f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
 
+
+    public static Item IRON_BOW = new IronBow(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).maxDamage(548));
+    public static Item COMPOUND_BOW = new CompoundBow(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).maxDamage(832));
+    public static Item DIAMOND_BOW = new DiamondBow(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).maxDamage(1167));
     
     public static void register() {
 
@@ -89,11 +95,14 @@ public class Tools {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "murasama"), MURASAMA);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "bladewolf"), BLADEWOLF);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "rebellion"), REBELLION);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "red_queen"), RED_QUEEN);
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "iron_bow"), IRON_BOW);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "compound_bow"), COMPOUND_BOW);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "diamond_bow"), DIAMOND_BOW);
 
         Reborn12K.LOGGER.info("Registering Tools for " + Reborn12K.MOD_ID);
 
 
     }
-
-
 }
