@@ -43,6 +43,8 @@
     "item.reborn12k.thelosite_ingot": "Lingotto di Thelosite",
     "item.reborn12k.archeosite_ingot": "Lingotto di Archeosite",
 
+    "item.reborn12k.devil_bringer": "Devil Bringer",
+
     
     "item.reborn12k.banana": "Banana",
     "item.reborn12k.golden_banana": "Banana d'oro",
@@ -54,6 +56,9 @@
 
     "item.reborn12k.z115": "115",
     "item.reborn12k.z115.desc": "Elena Siegman - 115",
+
+    "item.reborn12k.devil_trigger_disc": "Devil Trigger",
+    "item.reborn12k.devil_trigger_disc.desc": "Casey Edwards - Devil Trigger",
 
     "item.reborn12k.uranium.tooltip": "Un combustibile 8 volte più potente del Carbone",
 
@@ -92,6 +97,12 @@
 
     "item.reborn12k.yggdrasill_branch.tooltip1": "Il ramo dell'Yggdrasill è §2INATTIVO",
     "item.reborn12k.yggdrasill_branch.tooltip2": "Il ramo dell'Yggdrasill è §aATTIVO",
+
+    "item.reborn12k.red_queen.tooltip1": "Exceed non è §cPRONTO",
+    "item.reborn12k.red_queen.tooltip2": "Exceed è §1PRONTO",
+    "item.reborn12k.red_queen.tooltip3": "§1Exceed è carico!",
+    "item.reborn12k.red_queen.tooltip4": "§cCi sei quasi!",
+    "item.reborn12k.red_queen.tooltip5": "Exceed è già carico!",
 
     "block.reborn12k.topaz_ore": "Minerale di Topazio",
     "block.reborn12k.opal_ore": "Minerale di Opale",
@@ -136,6 +147,10 @@
     "block.reborn12k.cherry_pressure_plate": "Pedana a pressione di Ciliegio",
     "block.reborn12k.cherry_door": "Porta di Ciliegio",
     "block.reborn12k.cherry_trapdoor": "Botola di Ciliegio",
+
+    "block.reborn12k.slimy_log": "Tronco Viscoso",
+    "block.reborn12k.slimy_leaves": "Foglie Viscose",
+    "block.reborn12k.slimy_sapling": "Arboscello Viscoso",
 
     "block.reborn12k.diorite_bricks": "Mattoni di Diorite",
     "block.reborn12k.small_diorite_bricks": "Piccoli Mattoni di Diorite",
@@ -228,13 +243,20 @@
     "item.reborn12k.yamato_blade": "Lama Yamato",
     "item.reborn12k.katana_tsuba": "Katana Tsuba",
     "item.reborn12k.katana_tsuka": "Katana Tsuka",
+
+    "item.reborn12k.queen_blade": "Lama Regina",
+    "item.reborn12k.red_engine": "Motore Rosso",
+
     "item.reborn12k.cryptoblade": "Cryptolama",
     "item.reborn12k.cryptoblade_piece": "Frammento di Cryptolama",
     "item.reborn12k.casing_mk237": "Involucro Mk.237",
+
     "item.reborn12k.ceramite_plate": "Piastra di Ceramite",
 
     
     "item.reborn12k.manaweave": "Tessitura di Mana",
+    "item.reborn12k.magical_ink": "Inchiostro Magico WIP",
+
     "item.reborn12k.blank_rune": "Runa Vuota",
     "item.reborn12k.rune_of_air": "Runa dell'Aria",
     "item.reborn12k.rune_of_earth": "Runa della Terra",
@@ -334,6 +356,10 @@
     "item.reborn12k.power_boots": "Stivali di Armatura Potenziata",
 
     "item.reborn12k.long_fall_boots": "Stivali della Caduta Libera",
+
+    "item.reborn12k.iron_bow": "Arco di Ferro",
+    "item.reborn12k.compound_bow": "Arco Composito",
+    "item.reborn12k.diamond_bow": "Arco di Diamante",
 
 
 
@@ -445,8 +471,8 @@
     "advancements.reborn12k_secrets.holy_knight.description": "Crea una Claymore d'Argento",
     "advancements.reborn12k_secrets.katanakaji.title": "Katanakaji",
     "advancements.reborn12k_secrets.katanakaji.description": "Crea una Lama Yamato, una Katana Tsuba e una Katana Tsuka",
-    "advancements.reborn12k_secrets.devil_trigger.title": "Devil Trigger",
-    "advancements.reborn12k_secrets.devil_trigger.description": "Sono la tempesta in arrivo",
+    "advancements.reborn12k_secrets.bury_the_light.title": "Bury The Light",
+    "advancements.reborn12k_secrets.bury_the_light.description": "Sono la tempesta in arrivo",
     "advancements.reborn12k_secrets.devil_may_cry.title": "Devil May Cry",
     "advancements.reborn12k_secrets.devil_may_cry.description": "Pensi di potermi battere? Neanche in un milione d'anni!",
     "advancements.reborn12k_secrets.cryptoinvestor.title": "Cryptoinvestitore",
@@ -481,12 +507,17 @@
     "advancements.reborn12k_secrets.heart_of_the_universe.description": "La realtà nel palmo delle tue mani",
     "advancements.reborn12k_secrets.kino_der_toten.title": "Kino der Toten",
     "advancements.reborn12k_secrets.kino_der_toten.description": "Everyone tries to hold onto their lives",
+    "advancements.reborn12k_secrets.bang_bang_bang.title": "Bang! Bang! Bang!",
+    "advancements.reborn12k_secrets.bang_bang_bang.description": "Pull My Devil Trigger!",
 
     "enchantment.reborn12k.deathskiss": "Bacio della Morte",
     "enchantment.reborn12k.magic_protection": "Protezione dalla Magia",
 
 
     "sounds:reborn12k.z115": "Elena Siegman - 115",
+    "subtitles.reborn12k.z115": "Elena Siegman - 115 sta suonando",
+    "sounds:reborn12k.devil_trigger": "Casey Edwards - Devil Trigger",
+    "subtitles.reborn12k.devil_trigger": "Casey Edwards - Devil Trigger sta suonando",
 
 
     "itemGroup.reborn12k.reborn12k": "Reborn12K"
