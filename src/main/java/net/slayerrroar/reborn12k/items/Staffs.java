@@ -44,40 +44,40 @@ public class Staffs {
     public static final Item MAGICAL_WOOD_STAFF = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
 
 
-    public static final Item WINDSTORM_WAND = new WindstormWand(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof());
-    public static final Item WINDSTORM_SCEPTER = new WindstormScepter(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
-    public static final Item WINDSTORM_ROD = new WindstormRod(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.RARE));
-    public static final Item WINDSTORM_STAFF = new WindstormStaff(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.EPIC));
+    public static final Item WINDSTORM_WAND = new WindstormWand(new FabricItemSettings().maxCount(1).fireproof());
+    public static final Item WINDSTORM_SCEPTER = new WindstormScepter(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
+    public static final Item WINDSTORM_ROD = new WindstormRod(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.RARE));
+    public static final Item WINDSTORM_STAFF = new WindstormStaff(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.EPIC));
 
-    public static final Item VIRIDIAN_WAND = new ViridianWand(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof());
-    public static final Item VIRIDIAN_SCEPTER = new ViridianScepter(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
-    public static final Item VIRIDIAN_ROD = new ViridianRod(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.RARE));
-    public static final Item VIRIDIAN_STAFF = new ViridianStaff(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.EPIC));
+    public static final Item VIRIDIAN_WAND = new ViridianWand(new FabricItemSettings().maxCount(1).fireproof());
+    public static final Item VIRIDIAN_SCEPTER = new ViridianScepter(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
+    public static final Item VIRIDIAN_ROD = new ViridianRod(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.RARE));
+    public static final Item VIRIDIAN_STAFF = new ViridianStaff(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.EPIC));
 
-    public static final Item ABYSS_WAND = new AbyssWand(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof());
-    public static final Item ABYSS_SCEPTER = new AbyssScepter(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
-    public static final Item ABYSS_ROD = new AbyssRod(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.RARE));
-    public static final Item ABYSS_STAFF = new AbyssStaff(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.EPIC));
+    public static final Item ABYSS_WAND = new AbyssWand(new FabricItemSettings().maxCount(1).fireproof());
+    public static final Item ABYSS_SCEPTER = new AbyssScepter(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
+    public static final Item ABYSS_ROD = new AbyssRod(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.RARE));
+    public static final Item ABYSS_STAFF = new AbyssStaff(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.EPIC));
 
-    public static final Item VOLCANIC_WAND = new VolcanicWand(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof());
-    public static final Item VOLCANIC_SCEPTER = new VolcanicScepter(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
-    public static final Item VOLCANIC_ROD = new VolcanicRod(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.RARE));
-    public static final Item VOLCANIC_STAFF = new VolcanicStaff(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.EPIC));
+    public static final Item VOLCANIC_WAND = new VolcanicWand(new FabricItemSettings().maxCount(1).fireproof());
+    public static final Item VOLCANIC_SCEPTER = new VolcanicScepter(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
+    public static final Item VOLCANIC_ROD = new VolcanicRod(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.RARE));
+    public static final Item VOLCANIC_STAFF = new VolcanicStaff(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.EPIC));
 
-    public static final Item SUNLIGHT_WAND = new SunlightWand(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof());
-    public static final Item SUNLIGHT_SCEPTER = new SunlightScepter(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
-    public static final Item SUNLIGHT_ROD = new SunlightRod(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.RARE));
-    public static final Item SUNLIGHT_STAFF = new SunlightStaff(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.EPIC));
+    public static final Item SUNLIGHT_WAND = new SunlightWand(new FabricItemSettings().maxCount(1).fireproof());
+    public static final Item SUNLIGHT_SCEPTER = new SunlightScepter(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
+    public static final Item SUNLIGHT_ROD = new SunlightRod(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.RARE));
+    public static final Item SUNLIGHT_STAFF = new SunlightStaff(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.EPIC));
 
-    public static final Item NOVILUNIUM_WAND = new NoviluniumWand(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof());
-    public static final Item NOVILUNIUM_SCEPTER = new NoviluniumScepter(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
-    public static final Item NOVILUNIUM_ROD = new NoviluniumRod(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.RARE));
-    public static final Item NOVILUNIUM_STAFF = new NoviluniumStaff(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.EPIC));
+    public static final Item NOVILUNIUM_WAND = new NoviluniumWand(new FabricItemSettings().maxCount(1).fireproof());
+    public static final Item NOVILUNIUM_SCEPTER = new NoviluniumScepter(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
+    public static final Item NOVILUNIUM_ROD = new NoviluniumRod(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.RARE));
+    public static final Item NOVILUNIUM_STAFF = new NoviluniumStaff(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.EPIC));
 
-    public static final Item CRIMSON_WAND = new CrimsonWand(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof());
-    public static final Item CRIMSON_SCEPTER = new CrimsonScepter(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
-    public static final Item CRIMSON_ROD = new CrimsonRod(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.RARE));
-    public static final Item CRIMSON_STAFF = new CrimsonStaff(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).fireproof().rarity(Rarity.EPIC));
+    public static final Item CRIMSON_WAND = new CrimsonWand(new FabricItemSettings().maxCount(1).fireproof());
+    public static final Item CRIMSON_SCEPTER = new CrimsonScepter(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.UNCOMMON));
+    public static final Item CRIMSON_ROD = new CrimsonRod(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.RARE));
+    public static final Item CRIMSON_STAFF = new CrimsonStaff(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.EPIC));
 
     public static void register() {
 
