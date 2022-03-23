@@ -1,9 +1,20 @@
 {
   "z115": {
-    "category": "blocks",
-    "subtitle": "reborn12k.z115",
+    "subtitle": "subtitles.reborn12k.z115",
     "sounds": [
-      "reborn12k:z115"
+      {
+        "name":"reborn12k:z115",
+        "stream": true
+      }
+    ]
+  },
+  "devil_trigger": {
+    "subtitle": "subtitles.reborn12k.devil_trigger",
+    "sounds": [
+      {
+        "name":"reborn12k:devil_trigger",
+        "stream": true
+      }
     ]
   }
 }
