@@ -5,10 +5,10 @@
         "item": "reborn12k:yamato"
       },
       "title": {
-        "translate": "advancements.reborn12k_secrets.devil_trigger.title"
+        "translate": "advancements.reborn12k_secrets.bury_the_light.title"
       },
       "description": {
-        "translate": "advancements.reborn12k_secrets.devil_trigger.description"
+        "translate": "advancements.reborn12k_secrets.bury_the_light.description"
       },
       "frame": "goal",
       "show_toast": true,
