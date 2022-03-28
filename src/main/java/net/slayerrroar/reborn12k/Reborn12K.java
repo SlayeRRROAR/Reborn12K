@@ -10,8 +10,9 @@ import net.slayerrroar.reborn12k.sounds.SoundClass;
 import net.slayerrroar.reborn12k.util.Fuels;
 import net.slayerrroar.reborn12k.tools.Tools;
 import net.slayerrroar.reborn12k.util.Strippable;
-import net.slayerrroar.reborn12k.world.OreGen;
-import net.slayerrroar.reborn12k.world.features.TreeGeneration;
+import net.slayerrroar.reborn12k.world.features.RebornConfiguredFeatures;
+import net.slayerrroar.reborn12k.world.features.RebornPlacedFeatures;
+import net.slayerrroar.reborn12k.world.generation.RebornWorldGen;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -42,8 +43,8 @@ public class Reborn12K implements ModInitializer {
 
         Enchantments.register();
 
-        OreGen.register();
-        TreeGeneration.register();
+        RebornConfiguredFeatures.register();
+        RebornWorldGen.generate();
 
         Fuels.register();
         Strippable.register();
