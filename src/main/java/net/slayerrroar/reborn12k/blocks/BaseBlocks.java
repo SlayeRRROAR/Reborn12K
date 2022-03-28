@@ -10,9 +10,8 @@ import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.block_class.*;
 import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
-import net.slayerrroar.reborn12k.world.features.CherrySaplingGenerator;
-import net.slayerrroar.reborn12k.world.features.SlimySaplingGenerator;
-import net.slayerrroar.reborn12k.world.features.TreeGeneration;
+import net.slayerrroar.reborn12k.world.features.tree.CherrySaplingGenerator;
+import net.slayerrroar.reborn12k.world.features.tree.SlimySaplingGenerator;
 
 public class BaseBlocks {
 
@@ -23,7 +22,7 @@ public class BaseBlocks {
     public static final Block CHERRY_PLANKS = new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
 
     public static final Block CHERRY_LEAVES = new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES));
-    public static final Block CHERRY_SAPLING = new CustomSaplingBlock(new CherrySaplingGenerator(TreeGeneration.CHERRY_TREE_FEATURE), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly());
+    public static final Block CHERRY_SAPLING = new CustomSaplingBlock(new CherrySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly());
 
     public static final Block CHERRY_STAIRS = new StairBlock(BaseBlocks.CHERRY_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS));
     public static final Block CHERRY_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB));
@@ -37,7 +36,7 @@ public class BaseBlocks {
 
     public static final Block SLIMY_LOG = new PillarBlock(FabricBlockSettings.copyOf(Blocks.SLIME_BLOCK).hardness(2.0f).resistance(2.0f));
     public static final Block SLIMY_LEAVES = new LeavesBlock(FabricBlockSettings.copyOf(Blocks.SLIME_BLOCK).hardness(0.2f).resistance(0.2f));
-    public static final Block SLIMY_SAPLING = new CustomSaplingBlock(new SlimySaplingGenerator(TreeGeneration.SLIMY_TREE_FEATURE), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly());
+    public static final Block SLIMY_SAPLING = new CustomSaplingBlock(new SlimySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly());
 
 
     public static final Block DIORITE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
