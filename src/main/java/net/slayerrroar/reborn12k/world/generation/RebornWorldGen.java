@@ -5,6 +5,7 @@ public class RebornWorldGen {
     public static void generate() {
 
         RebornOreGen.generateOres();
+
         RebornTreeGen.generateTrees();
     }
 }
