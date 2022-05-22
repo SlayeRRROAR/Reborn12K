@@ -17,7 +17,7 @@ public class RebornPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> SLIMY_PLACED =                                                     //SLIMY TREE
             PlacedFeatures.register("slimy_placed",
             RebornConfiguredFeatures.SLIMY_SPAWN,
-                    VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
+                    VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 1)));
 
 
     public static final RegistryEntry<PlacedFeature> TOPAZ_ORE_SMALL_PLACED =                                           //TOPAZ ORES

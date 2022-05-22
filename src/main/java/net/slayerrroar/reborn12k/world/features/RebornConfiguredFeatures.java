@@ -39,7 +39,7 @@ public class RebornConfiguredFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> CHERRY_SPAWN =
             ConfiguredFeatures.register("cherry_spawn", Feature.RANDOM_SELECTOR,
-                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(CHERRY_CHECKED, 0.3f)),
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(CHERRY_CHECKED, 0.5f)),
                             CHERRY_CHECKED));
 
 
@@ -57,7 +57,7 @@ public class RebornConfiguredFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> SLIMY_SPAWN =
             ConfiguredFeatures.register("slimy_spawn", Feature.RANDOM_SELECTOR,
-                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(SLIMY_CHECKED, 0.3f)),
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(SLIMY_CHECKED, 0.1f)),
                             SLIMY_CHECKED));
 
 

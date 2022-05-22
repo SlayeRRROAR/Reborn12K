@@ -105,6 +105,9 @@
     "item.reborn12k.red_queen.tooltip5": "Exceed is already charged!",
 
 
+    "block.reborn12k.market_table": "Market Table",
+
+
     "block.reborn12k.topaz_ore": "Topaz Ore",
     "block.reborn12k.opal_ore": "Opal Ore",
     "block.reborn12k.ruby_ore": "Ruby Ore",
@@ -524,7 +527,12 @@
     "subtitles.reborn12k.devil_trigger": "Casey Edwards - Devil Trigger is playing",
 
 
-    "itemGroup.reborn12k.reborn12k": "Reborn12K"
+    "itemGroup.reborn12k.reborn12k": "Reborn12K",
+
+
+
+    "entity.minecraft.villager.dealer": "Dealer",
+    "entity.minecraft.villager.blacksmith": "Blacksmith"
 
     
   }

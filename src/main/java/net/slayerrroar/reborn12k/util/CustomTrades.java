@@ -9,6 +9,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.AdvancedItems;
 import net.slayerrroar.reborn12k.items.BaseItems;
 import net.slayerrroar.reborn12k.tools.Tools;
+import net.slayerrroar.reborn12k.villagers.CustomVillagers;
 
 public class CustomTrades {
 
@@ -116,17 +117,172 @@ public class CustomTrades {
                         new ItemStack(Items.EMERALD, 1),
                         16, 30, 0.05f)));
 
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 5,                                     //Butcher - Bladewolf
-                factories -> factories.add((entity, random) -> new TradeOffer(
-                        new ItemStack(Items.EMERALD, 64),
-                        new ItemStack(Tools.BLADEWOLF, 1),
-                        3, 30, 0.2f)));
 
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN, 5,                                   //Librarian - Power Sword
-                factories -> factories.add((entity, random) -> new TradeOffer(
-                        new ItemStack(Items.EMERALD, 64),
-                        new ItemStack(Tools.POWER_SWORD, 1),
-                        3, 30, 0.2f)));
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.DEALER,1,                                          //Dealer - L1
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.LEATHER, 6),
+                            new ItemStack(Items.EMERALD, 1),
+                            12,1,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.BONE, 8),
+                            new ItemStack(Items.EMERALD, 1),
+                            12,1,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.ROTTEN_FLESH, 32),
+                            new ItemStack(Items.EMERALD, 1),
+                            16,1,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.SPIDER_EYE, 4),
+                            new ItemStack(Items.EMERALD, 1),
+                            12,1,0.12f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.DEALER,2,                                          //Dealer - L2
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.GUNPOWDER, 16),
+                            new ItemStack(Items.EMERALD, 1),
+                            16,5,0.2f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.ENDER_PEARL, 1),
+                            new ItemStack(Items.EMERALD, 3),
+                            12,5,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.PHANTOM_MEMBRANE, 3),
+                            new ItemStack(Items.EMERALD, 1),
+                            12,5,0.12f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.SLIME_BALL, 8),
+                            new ItemStack(Items.EMERALD, 1),
+                            12,5,0.12f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.DEALER,3,                                          //Dealer - L3
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.BLAZE_ROD, 3),
+                            new ItemStack(Items.EMERALD, 1),
+                            16,10,0.15f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.GLOW_INK_SAC, 7),
+                            new ItemStack(Items.EMERALD, 1),
+                            12,10,0.12f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 9),
+                            new ItemStack(Items.GHAST_TEAR, 1),
+                            12,20,0.12f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.DEALER,4,                                          //Dealer - L4
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.MAGMA_CREAM, 3),
+                            new ItemStack(Items.EMERALD, 1),
+                            12,15,0.12f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.DRAGON_BREATH, 1),
+                            new ItemStack(Items.EMERALD, 14),
+                            16,20,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 32),
+                            new ItemStack(Items.WITHER_SKELETON_SKULL, 1),
+                            9,30,0.2f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.DEALER,5,                                          //Dealer - L5
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.NETHER_STAR, 1),
+                            new ItemStack(Items.TOTEM_OF_UNDYING, 1),
+                            8,30,0.2f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 64),
+                            new ItemStack(Tools.BLADEWOLF, 1),
+                            3,30,0.2f));
+                });
+
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.BLACKSMITH,1,                                      //Blacksmith - L1
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.REDSTONE, 16),
+                            new ItemStack(Items.EMERALD, 1),
+                            16,1,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.COPPER_INGOT, 9),
+                            new ItemStack(Items.EMERALD, 1),
+                            12,1,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.QUARTZ, 12),
+                            new ItemStack(Items.EMERALD, 1),
+                            16,1,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(BaseItems.CHROME_DUST, 4),
+                            12,2,0.12f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.BLACKSMITH,2,                                      //Blacksmith - L2
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.GOLD_INGOT, 3),
+                            new ItemStack(Items.EMERALD, 1),
+                            16,5,0.2f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(BaseItems.BRONZE_INGOT, 6),
+                            new ItemStack(Items.EMERALD, 1),
+                            12,5,0.12f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(BaseItems.SILVER_INGOT, 2),
+                            12,10,0.12f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.BLACKSMITH,3,                                      //Blacksmith - L3
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 2),
+                            new ItemStack(Items.DIAMOND, 1),
+                            16,10,0.15f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 2),
+                            new ItemStack(BaseItems.CARBON_STEEL_INGOT, 1),
+                            12,10,0.12f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 9),
+                            new ItemStack(BaseItems.ELEMENT_115, 1),
+                            12,20,0.12f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.BLACKSMITH,4,                                      //Blacksmith - L4
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(BaseItems.BLAZING_STEEL_INGOT, 1),
+                            new ItemStack(Items.EMERALD, 12),
+                            12,15,0.2f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 3),
+                            new ItemStack(BaseItems.COBALT, 1),
+                            16,30,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 6),
+                            new ItemStack(BaseItems.MANATITE, 1),
+                            12,30,0.2f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.BLACKSMITH,5,                                      //Blacksmith - L5
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 20),
+                            new ItemStack(Items.NETHERITE_SCRAP, 1),
+                            12,30,0.12f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 64),
+                            new ItemStack(Tools.POWER_SWORD, 1),
+                            3, 30, 0.2f));
+                });
 
 
         Reborn12K.LOGGER.info("Registering Trade Offers for " + Reborn12K.MOD_ID);

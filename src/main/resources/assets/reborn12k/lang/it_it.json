@@ -104,6 +104,10 @@
     "item.reborn12k.red_queen.tooltip4": "§cCi sei quasi!",
     "item.reborn12k.red_queen.tooltip5": "Exceed è già carico!",
 
+
+    "block.reborn12k.market_table": "Tavolo da Mercato",
+
+
     "block.reborn12k.topaz_ore": "Minerale di Topazio",
     "block.reborn12k.opal_ore": "Minerale di Opale",
     "block.reborn12k.ruby_ore": "Minerale di Rubino",
@@ -520,7 +524,12 @@
     "subtitles.reborn12k.devil_trigger": "Casey Edwards - Devil Trigger sta suonando",
 
 
-    "itemGroup.reborn12k.reborn12k": "Reborn12K"
+    "itemGroup.reborn12k.reborn12k": "Reborn12K",
+
+
+
+    "entity.minecraft.villager.dealer": "Mercante",
+    "entity.minecraft.villager.blacksmith": "Fabbro"
 
     
   }

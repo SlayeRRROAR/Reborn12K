@@ -8,6 +8,7 @@ import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.block_class.UraniumBlocks;
@@ -15,19 +16,19 @@ import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 
 public class OreBlocks {
 
-    public static final Block TOPAZ_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f));
-    public static final Block OPAL_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f));
-    public static final Block RUBY_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f));
-    public static final Block SAPPHIRE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f));
-    public static final Block DEEPSLATE_TOPAZ_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f));
-    public static final Block DEEPSLATE_OPAL_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f));
-    public static final Block DEEPSLATE_RUBY_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f));
-    public static final Block DEEPSLATE_SAPPHIRE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f));
+    public static final Block TOPAZ_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f), UniformIntProvider.create(2, 6));
+    public static final Block OPAL_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f), UniformIntProvider.create(2, 6));
+    public static final Block RUBY_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f), UniformIntProvider.create(2, 6));
+    public static final Block SAPPHIRE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f), UniformIntProvider.create(2, 6));
+    public static final Block DEEPSLATE_TOPAZ_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f), UniformIntProvider.create(3, 7));
+    public static final Block DEEPSLATE_OPAL_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f), UniformIntProvider.create(3, 7));
+    public static final Block DEEPSLATE_RUBY_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f), UniformIntProvider.create(3, 7));
+    public static final Block DEEPSLATE_SAPPHIRE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f), UniformIntProvider.create(3, 7));
 
-    public static final Block MANATITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(4.5f).resistance(3.0f));
-    public static final Block DEEPSLATE_MANATITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(5.0f).resistance(3.0f));
+    public static final Block MANATITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(4.5f).resistance(3.0f), UniformIntProvider.create(2, 6));
+    public static final Block DEEPSLATE_MANATITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(5.0f).resistance(3.0f), UniformIntProvider.create(3, 7));
 
-    public static final Block DEEPSLATE_ELEMENT_115_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(5.0f).resistance(3.0f));
+    public static final Block DEEPSLATE_ELEMENT_115_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(5.0f).resistance(3.0f), UniformIntProvider.create(2, 6));
 
     public static final Block CHROMITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f));
     public static final Block DEEPSLATE_CHROMITE_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f));
@@ -35,7 +36,7 @@ public class OreBlocks {
     public static final Block DEEPSLATE_URANIUM_ORE = new UraniumBlocks(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3.0f));
     public static final Block NETHER_URANIUM_ORE = new UraniumBlocks(FabricBlockSettings.copyOf(Blocks.NETHER_QUARTZ_ORE).requiresTool().sounds(BlockSoundGroup.NETHER_GOLD_ORE).hardness(5.0f).resistance(3.0f));
 
-    public static final Block END_COBALT_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(15.0f).resistance(9.0f));
+    public static final Block END_COBALT_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(15.0f).resistance(9.0f), UniformIntProvider.create(3, 7));
     
     public static final Block TIN_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f));
     public static final Block SILVER_ORE = new OreBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f));

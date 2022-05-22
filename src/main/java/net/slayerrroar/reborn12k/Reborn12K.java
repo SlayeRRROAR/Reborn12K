@@ -2,6 +2,7 @@ package net.slayerrroar.reborn12k;
 
 import net.fabricmc.api.ModInitializer;
 import net.slayerrroar.reborn12k.armors.Armors;
+import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
 import net.slayerrroar.reborn12k.blocks.BaseBlocks;
 import net.slayerrroar.reborn12k.blocks.OreBlocks;
 import net.slayerrroar.reborn12k.enchantments.Enchantments;
@@ -11,8 +12,8 @@ import net.slayerrroar.reborn12k.util.CustomTrades;
 import net.slayerrroar.reborn12k.util.Fuels;
 import net.slayerrroar.reborn12k.tools.Tools;
 import net.slayerrroar.reborn12k.util.Strippable;
+import net.slayerrroar.reborn12k.villagers.CustomVillagers;
 import net.slayerrroar.reborn12k.world.features.RebornConfiguredFeatures;
-import net.slayerrroar.reborn12k.world.features.RebornPlacedFeatures;
 import net.slayerrroar.reborn12k.world.generation.RebornWorldGen;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,6 +29,7 @@ public class Reborn12K implements ModInitializer {
 
         SoundClass.register();
 
+        AdvancedBlocks.register();
         BaseBlocks.register();
         OreBlocks.register();
 
@@ -49,6 +51,7 @@ public class Reborn12K implements ModInitializer {
 
         Fuels.register();
         Strippable.register();
+        CustomVillagers.register();
         CustomTrades.register();
 
     }
