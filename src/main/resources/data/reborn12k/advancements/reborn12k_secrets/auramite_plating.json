@@ -2,13 +2,13 @@
   "parent": "reborn12k:reborn12k_secrets/root",
   "display": {
     "icon": {
-      "item": "reborn12k:ceramite_plate"
+      "item": "reborn12k:auramite_plate"
     },
     "title": {
-      "translate": "advancements.reborn12k_secrets.ceramite_plating.title"
+      "translate": "advancements.reborn12k_secrets.auramite_plating.title"
     },
     "description": {
-      "translate": "advancements.reborn12k_secrets.ceramite_plating.description"
+      "translate": "advancements.reborn12k_secrets.auramite_plating.description"
     },
     "frame": "task",
     "show_toast": true,
@@ -17,13 +17,13 @@
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
   },
   "criteria": {
-    "get_ceramite_plate": {
+    "get_auramite_plate": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "reborn12k:ceramite_plate"
+              "reborn12k:auramite_plate"
             ]
           }
         ]
@@ -32,7 +32,7 @@
   },
   "requirements": [
     [
-      "get_ceramite_plate"
+      "get_auramite_plate"
     ]
   ]
 }

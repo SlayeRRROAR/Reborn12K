@@ -35,7 +35,7 @@ public class PowerMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(AdvancedItems.CERAMITE_PLATE);
+        return Ingredient.ofItems(AdvancedItems.AURAMITE_PLATE);
     }
 
 

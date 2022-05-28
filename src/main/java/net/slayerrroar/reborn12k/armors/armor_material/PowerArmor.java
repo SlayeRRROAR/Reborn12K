@@ -37,7 +37,7 @@ public class PowerArmor implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(AdvancedItems.CERAMITE_PLATE);
+        return Ingredient.ofItems(AdvancedItems.AURAMITE_PLATE);
     }
 
     @Override

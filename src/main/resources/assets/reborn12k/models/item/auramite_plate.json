@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-      "layer0": "reborn12k:item/ceramite_plate"
+      "layer0": "reborn12k:item/auramite_plate"
     }
   }

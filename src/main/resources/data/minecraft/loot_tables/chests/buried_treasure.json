@@ -76,7 +76,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "reborn12k:ceramite_plate",
+          "name": "reborn12k:auramite_plate",
           "functions": [
             {
               "function": "set_count",

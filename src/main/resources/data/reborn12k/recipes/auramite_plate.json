@@ -1,0 +1,15 @@
+{
+    "type": "reborn12k:alloy_furnace",
+    "ingredients": [
+        {
+            "item": "minecraft:nether_star"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:auramite_plate",
+        "count": 4
+    }
+}

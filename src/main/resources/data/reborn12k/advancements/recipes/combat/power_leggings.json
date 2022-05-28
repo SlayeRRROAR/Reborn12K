@@ -6,13 +6,13 @@
       ]
     },
     "criteria": {
-      "has_ceramite_plate": {
+      "has_auramite_plate": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:ceramite_plate"
+                "reborn12k:auramite_plate"
               ]
             }
           ]
@@ -27,7 +27,7 @@
     },
     "requirements": [
       [
-        "has_ceramite_plate",
+        "has_auramite_plate",
         "has_the_recipe"
       ]
     ]
