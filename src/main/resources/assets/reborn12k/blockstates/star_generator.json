@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "reborn12k:block/star_generator" }
+  }
+}
