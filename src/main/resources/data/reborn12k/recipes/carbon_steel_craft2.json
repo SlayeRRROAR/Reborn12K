@@ -1,0 +1,14 @@
+{
+    "type": "reborn12k:alloy_furnace",
+    "ingredients": [
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        {
+            "item": "reborn12k:chrome_dust"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:carbon_steel_ingot"
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "reborn12k:alloy_furnace",
     "ingredients": [
         {
             "item": "minecraft:raw_iron"
@@ -8,9 +8,7 @@
             "item": "reborn12k:chrome_dust"
         }
     ],
-    "result": {
-        "item": "reborn12k:raw_steel",
-        "count": 1
-    },
-    "group": "raw_steel"
+    "output": {
+        "item": "reborn12k:carbon_steel_ingot"
+    }
 }

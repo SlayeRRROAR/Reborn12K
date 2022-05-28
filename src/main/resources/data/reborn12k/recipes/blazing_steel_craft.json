@@ -1,33 +1,15 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "reborn12k:alloy_furnace",
     "ingredients": [
         {
-            "tag": "c:steel_ingots"
-        },
-        {
-            "tag": "c:steel_ingots"
-        },
-        {
-            "tag": "c:steel_ingots"
-        },
-        {
-            "tag": "c:steel_ingots"
-        },
-        {
             "item": "minecraft:blaze_rod"
         },
         {
-            "item": "minecraft:blaze_rod"
-        },
-        {
-            "item": "minecraft:blaze_rod"
-        },
-        {
-            "item": "minecraft:blaze_rod"
+            "tag": "c:steel_ingots"
         }
     ],
-    "result": {
+    "output": {
         "item": "reborn12k:blazing_steel_ingot",
-        "count": 4
+        "count": 1
     }
 }

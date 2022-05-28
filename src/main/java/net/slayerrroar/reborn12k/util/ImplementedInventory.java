@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.items.inventory;
+package net.slayerrroar.reborn12k.util;
 
 
 import net.minecraft.entity.player.PlayerEntity;
