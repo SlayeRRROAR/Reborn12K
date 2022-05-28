@@ -6,9 +6,12 @@ import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
 import net.slayerrroar.reborn12k.blocks.BaseBlocks;
 import net.slayerrroar.reborn12k.blocks.OreBlocks;
 import net.slayerrroar.reborn12k.enchantments.Enchantments;
+import net.slayerrroar.reborn12k.blocks.entity.CustomBlockEntities;
 import net.slayerrroar.reborn12k.items.*;
+import net.slayerrroar.reborn12k.recipe.CustomRecipes;
+import net.slayerrroar.reborn12k.screen.CustomScreenHandlers;
 import net.slayerrroar.reborn12k.sounds.SoundClass;
-import net.slayerrroar.reborn12k.util.CustomTrades;
+import net.slayerrroar.reborn12k.villagers.CustomTrades;
 import net.slayerrroar.reborn12k.util.Fuels;
 import net.slayerrroar.reborn12k.tools.Tools;
 import net.slayerrroar.reborn12k.util.Strippable;
@@ -46,6 +49,8 @@ public class Reborn12K implements ModInitializer {
 
         Enchantments.register();
 
+        CustomBlockEntities.register();
+
         RebornConfiguredFeatures.register();
         RebornWorldGen.generate();
 
@@ -53,6 +58,9 @@ public class Reborn12K implements ModInitializer {
         Strippable.register();
         CustomVillagers.register();
         CustomTrades.register();
+
+        CustomRecipes.register();
+        CustomScreenHandlers.register();
 
     }
 }
