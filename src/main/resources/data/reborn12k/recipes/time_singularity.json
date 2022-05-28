@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:cobalt_ingots"
+        },
+        "B": {
+            "item": "minecraft:clock"
+        },
+        "C": {
+            "item": "minecraft:dragon_breath"
+        }
+    },
+    "result": {
+        "item": "reborn12k:time_singularity",
+        "count": 1
+    }
+}
