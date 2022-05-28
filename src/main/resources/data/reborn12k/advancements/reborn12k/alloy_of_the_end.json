@@ -1,5 +1,5 @@
 {
-    "parent": "reborn12k:reborn12k/prussian_blue",
+    "parent": "reborn12k:reborn12k/time_for_action",
     "display": {
       "icon": {
         "item": "reborn12k:thelosite_ingot"
@@ -16,7 +16,7 @@
       "hidden": false
     },
     "criteria": {
-      "get_steel": {
+      "get_thelosite": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
@@ -31,7 +31,7 @@
     },
     "requirements": [
       [
-        "get_steel"
+        "get_thelosite"
       ]
     ]
   }

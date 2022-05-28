@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:steel_ingots"
-    },
-    "result": "reborn12k:carbon_steel_ingot",
-    "experience": 1.0,
-    "cookingtime": 100
-}
