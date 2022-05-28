@@ -18,6 +18,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.stream.Stream;
 
+@SuppressWarnings("deprecation")
+
 public class MarketBlock extends Block {
     public static final DirectionProperty FACING = Properties.HOPPER_FACING;
 
@@ -59,18 +61,13 @@ public class MarketBlock extends Block {
 
     @Override
     public VoxelShape getOutlineShape(BlockState blockState, BlockView blockView, BlockPos blockPos, ShapeContext shapeContext) {
-        switch (blockState.get(FACING)) {
-            case NORTH:
-                return SHAPE_N;
-            case WEST:
-                return SHAPE_W;
-            case SOUTH:
-                return SHAPE_S;
-            case EAST:
-                return SHAPE_E;
-            default:
-                return SHAPE_N;
-        }
+        return switch (blockState.get(FACING)) {
+            case NORTH -> SHAPE_N;
+            case WEST -> SHAPE_W;
+            case SOUTH -> SHAPE_S;
+            case EAST -> SHAPE_E;
+            default -> SHAPE_N;
+        };
     }
 
     @Nullable
