@@ -6,6 +6,7 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStep;
 import net.slayerrroar.reborn12k.world.features.RebornPlacedFeatures;
 
+@SuppressWarnings("ALL")
 public class RebornTreeGen {
 
     public static void generateTrees() {
