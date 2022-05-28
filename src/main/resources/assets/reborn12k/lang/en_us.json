@@ -33,7 +33,6 @@
     "item.reborn12k.raw_tin": "Raw Tin",
     "item.reborn12k.raw_silver": "Raw Silver",
     "item.reborn12k.raw_bronze": "Raw Bronze",
-    "item.reborn12k.raw_steel": "Raw Steel",
 
     "item.reborn12k.tin_ingot": "Tin Ingot",
     "item.reborn12k.silver_ingot": "Silver Ingot",
@@ -106,6 +105,8 @@
 
 
     "block.reborn12k.market_table": "Market Table",
+    "block.reborn12k.star_generator": "Star Generator",
+    "block.reborn12k.alloy_furnace": "Alloy Furnace",
 
 
     "block.reborn12k.topaz_ore": "Topaz Ore",
@@ -194,7 +195,6 @@
     "block.reborn12k.raw_tin_block": "Block of Raw Tin",
     "block.reborn12k.raw_silver_block": "Block of Raw Silver",
     "block.reborn12k.raw_bronze_block": "Block of Raw Bronze",
-    "block.reborn12k.raw_steel_block": "Block of Raw Steel",
 
     "block.reborn12k.tin_block": "Block of Tin",
     "block.reborn12k.silver_block": "Block of Silver",
@@ -257,8 +257,9 @@
     "item.reborn12k.cryptoblade_piece": "Cryptoblade Piece",
     "item.reborn12k.casing_mk237": "Casing Mk.237",
 
-    "item.reborn12k.ceramite_plate": "Ceramite Plate",
+    "item.reborn12k.auramite_plate": "Auramite Plate",
 
+    "item.reborn12k.time_singularity": "Time Singularity",
 
     "item.reborn12k.manaweave": "Manaweave",
     "item.reborn12k.magical_ink": "Magical Ink WIP",
@@ -381,21 +382,23 @@
     "advancements.reborn12k.like_romans.description": "Get a full suit of Bronze armor",
 
     "advancements.reborn12k.basic_alloying.title": "Basic Alloying",
-    "advancements.reborn12k.basic_alloying.description": "Mix Chrome and Iron",
+    "advancements.reborn12k.basic_alloying.description": "Craft an Alloy Furnace",
     "advancements.reborn12k.a_stronger_alloy.title": "A Stronger Alloy",
-    "advancements.reborn12k.a_stronger_alloy.description": "Smelt a Carbon Steel Ingot",
+    "advancements.reborn12k.a_stronger_alloy.description": "Smelt Iron and Chrome in an Alloy Furnace",
     "advancements.reborn12k.steelclad_knight.title": "Steelclad Knight",
     "advancements.reborn12k.steelclad_knight.description": "Get a full suit of Carbon Steel armor",
     "advancements.reborn12k.fiery_alloy.title": "Fiery Alloy",
-    "advancements.reborn12k.fiery_alloy.description": "Craft a Blazing Steel Ingot",
+    "advancements.reborn12k.fiery_alloy.description": "Smelt a Carbon Steel and a Blaze Rod in an Alloy Furnace",
     "advancements.reborn12k.baptism_of_fire.title": "Baptism of Fire",
     "advancements.reborn12k.baptism_of_fire.description": "Get a full suit of Blazing Steel armor",
     "advancements.reborn12k.prussian_blue.title": "Prussian Blue",
     "advancements.reborn12k.prussian_blue.description": "Obtain some Cobalt",
+    "advancements.reborn12k.time_for_action.title": "Time for Action",
+    "advancements.reborn12k.time_for_action.description": "Obtain a Time Singularity",
     "advancements.reborn12k.alloy_of_the_beginning.title": "Alloy of the Beginning",
-    "advancements.reborn12k.alloy_of_the_beginning.description": "Mix Netherite with Cobalt, Refined Manatite and Dragon Breath",
+    "advancements.reborn12k.alloy_of_the_beginning.description": "Smelt Netherite with a Time Singularity in an Alloy Furnace",
     "advancements.reborn12k.alloy_of_the_end.title": "Alloy of the End",
-    "advancements.reborn12k.alloy_of_the_end.description": "Mix Blazing Steel with Cobalt, Refined Manatite and Dragon Breath",
+    "advancements.reborn12k.alloy_of_the_end.description": "Smelt Blazing Steel with a Time Singularity in an Alloy Furnace",
     "advancements.reborn12k.envoy_of_creation.title": "Envoy of Creation",
     "advancements.reborn12k.envoy_of_creation.description": "Get a full suit of Archeosite armor",
     "advancements.reborn12k.envoy_of_destruction.title": "Envoy of Destruction",
@@ -487,8 +490,8 @@
     "advancements.reborn12k_secrets.weaver_of_fate.description": "What's meant to be will always find a way",
     "advancements.reborn12k_secrets.acolythus_magicae.title": "Acolythus Magicae",
     "advancements.reborn12k_secrets.acolythus_magicae.description": "Can I show you my magic trick?",
-    "advancements.reborn12k_secrets.ceramite_plating.title": "Ceramite Plating",
-    "advancements.reborn12k_secrets.ceramite_plating.description": "The Emperor Protects (asking how is heresy)",
+    "advancements.reborn12k_secrets.auramite_plating.title": "Auramite Plating",
+    "advancements.reborn12k_secrets.auramite_plating.description": "The Emperor Protects (asking how is heresy)",
     "advancements.reborn12k_secrets.angel_of_death.title": "Angel of Death",
     "advancements.reborn12k_secrets.angel_of_death.description": "And they shall know no fear",
     "advancements.reborn12k_secrets.wrath_of_the_emperor.title": "Wrath of the Emperor",
@@ -532,7 +535,9 @@
 
 
     "entity.minecraft.villager.dealer": "Dealer",
-    "entity.minecraft.villager.blacksmith": "Blacksmith"
+    "entity.minecraft.villager.blacksmith": "Blacksmith",
+
+    "blockentity.alloy_furnace": "Alloy Furnace"
 
     
   }

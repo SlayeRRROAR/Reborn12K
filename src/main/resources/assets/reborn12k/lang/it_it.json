@@ -33,7 +33,6 @@
     "item.reborn12k.raw_tin": "Stagno Grezzo",
     "item.reborn12k.raw_silver": "Argento Grezzo",
     "item.reborn12k.raw_bronze": "Bronzo Grezzo",
-    "item.reborn12k.raw_steel": "Acciaio Grezzo",
 
     "item.reborn12k.tin_ingot": "Lingotto di Stagno",
     "item.reborn12k.silver_ingot": "Lingotto d'Argento",
@@ -106,6 +105,8 @@
 
 
     "block.reborn12k.market_table": "Tavolo da Mercato",
+    "block.reborn12k.star_generator": "Generatore Stellare",
+    "block.reborn12k.alloy_furnace": "Fornace per Leghe",
 
 
     "block.reborn12k.topaz_ore": "Minerale di Topazio",
@@ -190,9 +191,8 @@
     "block.reborn12k.cobalt_block": "Blocco di Cobalto",
 
     "block.reborn12k.raw_tin_block": "Blocco di Stagno Grezzo",
-    "block.reborn12k.raw_silver_block": "Blocco di Stagno Grezzo",
-    "block.reborn12k.raw_bronze_block": "Blocco di Stagno Grezzo",
-    "block.reborn12k.raw_steel_block": "Blocco di Stagno Grezzo",
+    "block.reborn12k.raw_silver_block": "Blocco di Argento Grezzo",
+    "block.reborn12k.raw_bronze_block": "Blocco di Bronzo Grezzo",
 
     "block.reborn12k.tin_block": "Blocco di Stagno",
     "block.reborn12k.silver_block": "Blocco di Argento",
@@ -255,8 +255,9 @@
     "item.reborn12k.cryptoblade_piece": "Frammento di Cryptolama",
     "item.reborn12k.casing_mk237": "Involucro Mk.237",
 
-    "item.reborn12k.ceramite_plate": "Piastra di Ceramite",
+    "item.reborn12k.auramite_plate": "Piastra di Auramite",
 
+    "item.reborn12k.time_singularity": "Singolarità Temporale",
     
     "item.reborn12k.manaweave": "Tessitura di Mana",
     "item.reborn12k.magical_ink": "Inchiostro Magico WIP",
@@ -378,22 +379,24 @@
     "advancements.reborn12k.like_romans.title": "Come i Romani",
     "advancements.reborn12k.like_romans.description": "Ottieni un'armatura di Bronzo",
 
-    "advancements.reborn12k.basic_alloying.title": "Lega Base",
-    "advancements.reborn12k.basic_alloying.description": "Combina Cromo e Ferro",
+    "advancements.reborn12k.basic_alloying.title": "Dalle Basi",
+    "advancements.reborn12k.basic_alloying.description": "Ottieni una Fornace per Leghe",
     "advancements.reborn12k.a_stronger_alloy.title": "Una Lega più Forte",
-    "advancements.reborn12k.a_stronger_alloy.description": "Cuoci un Lingotto di Acciaio al Carbonio",
+    "advancements.reborn12k.a_stronger_alloy.description": "Combina Ferro e Cromo in una Fornace per Leghe",
     "advancements.reborn12k.steelclad_knight.title": "Cavaliere d'Acciaio",
     "advancements.reborn12k.steelclad_knight.description": "Ottieni un'armatura di Acciaio al Carbonio",
     "advancements.reborn12k.fiery_alloy.title": "Lega Focosa",
-    "advancements.reborn12k.fiery_alloy.description": "Crea un Lingotto di Acciaio Fiammeggiante",
+    "advancements.reborn12k.fiery_alloy.description": "Combina Acciaio e Verga di Blaze in una Fornace per Leghe",
     "advancements.reborn12k.baptism_of_fire.title": "Battesimo del Fuoco",
     "advancements.reborn12k.baptism_of_fire.description": "Ottieni un'armatura di Acciaio Fiammeggiante",
     "advancements.reborn12k.prussian_blue.title": "Blu di Prussia",
     "advancements.reborn12k.prussian_blue.description": "Ottieni del Cobalto",
+    "advancements.reborn12k.time_for_action.title": "Tempo di Agire",
+    "advancements.reborn12k.time_for_action.description": "Crea un Singolarità Temporale",
     "advancements.reborn12k.alloy_of_the_beginning.title": "Lega dell'Inizio",
-    "advancements.reborn12k.alloy_of_the_beginning.description": "Combina Netherite con Cobalto, Manatite Raffinata e Soffio di Drago",
+    "advancements.reborn12k.alloy_of_the_beginning.description": "Combina Netherite e Singolarità Temporale in una Fornace per Leghe",
     "advancements.reborn12k.alloy_of_the_end.title": "Lega della Fine",
-    "advancements.reborn12k.alloy_of_the_end.description": "Combina Acciaio Fiammeggiante con Cobalto, Manatite Raffinata e Soffio di Drago",
+    "advancements.reborn12k.alloy_of_the_end.description": "Combina Acciaio Fiammeggiante e Singolarità Temporale in una Fornace per Leghe",
     "advancements.reborn12k.envoy_of_creation.title": "Emissario della Crezione",
     "advancements.reborn12k.envoy_of_creation.description": "Ottieni un'armatura di Archeosite",
     "advancements.reborn12k.envoy_of_destruction.title": "Emissario della Distruzione",
@@ -489,8 +492,8 @@
     "advancements.reborn12k_secrets.weaver_of_fate.description": "Ciò che è destinato ad essere troverà sempre la sua strada",
     "advancements.reborn12k_secrets.acolythus_magicae.title": "Acolythus Magicae",
     "advancements.reborn12k_secrets.acolythus_magicae.description": "Posso farti vedere un trucco di magia?",
-    "advancements.reborn12k_secrets.ceramite_plating.title": "Piastratura in Ceramite",
-    "advancements.reborn12k_secrets.ceramite_plating.description": "L'Imperatore Protegge (chiedere come è eresia)",
+    "advancements.reborn12k_secrets.auramite_plating.title": "Piastratura in Auramite",
+    "advancements.reborn12k_secrets.auramite_plating.description": "L'Imperatore Protegge (chiedere come è eresia)",
     "advancements.reborn12k_secrets.angel_of_death.title": "Angelo della Morte",
     "advancements.reborn12k_secrets.angel_of_death.description": "E non conosceranno alcuna paura",
     "advancements.reborn12k_secrets.wrath_of_the_emperor.title": "Furia dell'Imperatore",
@@ -529,7 +532,9 @@
 
 
     "entity.minecraft.villager.dealer": "Mercante",
-    "entity.minecraft.villager.blacksmith": "Fabbro"
+    "entity.minecraft.villager.blacksmith": "Fabbro",
+
+    "blockentity.alloy_furnace": "Fornace per Leghe"
 
     
   }
