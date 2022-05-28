@@ -12,7 +12,6 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
-import org.lwjgl.system.CallbackI;
 
 public class BaseItems {
 
@@ -34,7 +33,6 @@ public class BaseItems {
     public static final Item RAW_TIN = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item RAW_SILVER = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item RAW_BRONZE = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
-    public static final Item RAW_STEEL = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
 
     public static final Item TIN_INGOT = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item SILVER_INGOT = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
@@ -96,7 +94,6 @@ public class BaseItems {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_tin"), RAW_TIN);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_silver"), RAW_SILVER);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_bronze"), RAW_BRONZE);
-        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_steel"), RAW_STEEL);
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "tin_ingot"), TIN_INGOT);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "silver_ingot"), SILVER_INGOT);
