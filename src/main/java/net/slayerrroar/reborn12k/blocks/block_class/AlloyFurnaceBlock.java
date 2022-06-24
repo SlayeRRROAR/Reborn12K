@@ -79,7 +79,6 @@ public class AlloyFurnaceBlock extends BlockWithEntity implements BlockEntityPro
         return checkType(blockEntityType, CustomBlockEntities.ALLOY_FURNACE, AlloyFurnaceBlockEntity::tick);
     }
 
-    @Override
     public void randomDisplayTick(BlockState blockState, World world, BlockPos blockPos, Random random) {
         if (!blockState.get(LIT)) {
             return;

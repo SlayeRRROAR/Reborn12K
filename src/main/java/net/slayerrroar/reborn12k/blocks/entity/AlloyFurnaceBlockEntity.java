@@ -7,16 +7,18 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.inventory.SidedInventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.blocks.block_class.AlloyFurnaceBlock;
 import net.slayerrroar.reborn12k.recipe.AlloyFurnaceRecipe;
@@ -26,7 +28,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public class AlloyFurnaceBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
+public class AlloyFurnaceBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory, SidedInventory {
     private final DefaultedList<ItemStack> inventory =
             DefaultedList.ofSize(4, ItemStack.EMPTY);
 
@@ -35,6 +37,9 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements NamedScreenH
     private int maxProgress = 199;
     private int fuelTime = 0;
     private int maxFuelTime = 0;
+    private static final int[] INGREDIENTS_SLOTS = new int[]{2, 1};
+    private static final int[] FUEL_SLOTS = new int[]{0};
+    private static final int[] OUTPUT_SLOTS = new int[]{3};
 
     public AlloyFurnaceBlockEntity(BlockPos pos, BlockState state) {
         super(CustomBlockEntities.ALLOY_FURNACE, pos, state);
@@ -71,7 +76,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements NamedScreenH
 
     @Override
     public Text getDisplayName() {
-        return new TranslatableText("blockentity.alloy_furnace");
+        return Text.translatable("blockentity.alloy_furnace");
     }
 
     @Nullable
@@ -192,4 +197,28 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements NamedScreenH
         return inventory.getStack(3).getMaxCount() > inventory.getStack(3).getCount();
     }
 
+    @Override
+    public int[] getAvailableSlots(Direction direction) {
+
+        if (direction == Direction.DOWN) {
+            return OUTPUT_SLOTS;
+        }
+        if (direction == Direction.UP ) {
+            return FUEL_SLOTS;
+        }
+        return INGREDIENTS_SLOTS;
+    }
+
+    @Override
+    public boolean canInsert(int i, ItemStack itemStack, @Nullable Direction direction) {
+        return this.isValid(i, itemStack);
+    }
+
+    @Override
+    public boolean canExtract(int i, ItemStack itemStack, Direction direction) {
+        if (direction == Direction.DOWN && i == 1) {
+            return itemStack.isOf(Items.WATER_BUCKET) || itemStack.isOf(Items.BUCKET);
+        }
+        return true;
+    }
 }
