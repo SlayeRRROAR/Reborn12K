@@ -11,7 +11,6 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -83,13 +82,13 @@ public class NatureCharm extends Item {
         if(currentMode.getBoolean())
         {
             setNatureState(nature_charm, NatureState.OFF);
-            playerEntity.sendMessage(new TranslatableText("item.reborn12k.yggdrasill_branch.tooltip1"), true);
+            playerEntity.sendMessage(Text.translatable("item.reborn12k.yggdrasill_branch.tooltip1"), true);
 
             return;
         }
 
         setNatureState(nature_charm, NatureState.ON);
-        playerEntity.sendMessage(new TranslatableText("item.reborn12k.yggdrasill_branch.tooltip2"), true);
+        playerEntity.sendMessage(Text.translatable("item.reborn12k.yggdrasill_branch.tooltip2"), true);
     }
 
     private void checkTag(ItemStack nature_charm)
@@ -143,11 +142,11 @@ public class NatureCharm extends Item {
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext)
     {
         if(getNatureState(itemStack) != NatureState.ON){
-            tooltip.add(new TranslatableText("item.reborn12k.yggdrasill_branch.tooltip1"));
+            tooltip.add(Text.translatable("item.reborn12k.yggdrasill_branch.tooltip1"));
         }
 
         else {
-            tooltip.add(new TranslatableText("item.reborn12k.yggdrasill_branch.tooltip2"));
+            tooltip.add(Text.translatable("item.reborn12k.yggdrasill_branch.tooltip2"));
         }
     }
 }

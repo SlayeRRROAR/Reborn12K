@@ -4,7 +4,6 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -23,6 +22,6 @@ public class PhilosopherStone extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
 
-        tooltip.add( new TranslatableText("item.reborn12k.philosopher_stone.tooltip") );
+        tooltip.add( Text.translatable("item.reborn12k.philosopher_stone.tooltip") );
     }
 }

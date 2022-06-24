@@ -16,7 +16,6 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -116,14 +115,14 @@ public class ExceedSword extends SwordItem {
                 if(int_random < 6) {
                     ActivateExceed(red_queen);
                     world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.15F, 0.0F);
-                    playerEntity.sendMessage(new TranslatableText("item.reborn12k.red_queen.tooltip3"), true);
+                    playerEntity.sendMessage(Text.translatable("item.reborn12k.red_queen.tooltip3"), true);
                 }
                 else {
-                    playerEntity.sendMessage(new TranslatableText("item.reborn12k.red_queen.tooltip4"), true);
+                    playerEntity.sendMessage(Text.translatable("item.reborn12k.red_queen.tooltip4"), true);
                 }
                 return new TypedActionResult<>(ActionResult.SUCCESS, red_queen);
             }
-            playerEntity.sendMessage(new TranslatableText("item.reborn12k.red_queen.tooltip5"), true);
+            playerEntity.sendMessage(Text.translatable("item.reborn12k.red_queen.tooltip5"), true);
         }
         return new TypedActionResult<>(ActionResult.FAIL, red_queen);
     }
@@ -131,11 +130,11 @@ public class ExceedSword extends SwordItem {
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         if(getExceedState(itemStack) != ExceedState.ACTIVE){
-            tooltip.add(new TranslatableText("item.reborn12k.red_queen.tooltip1"));
+            tooltip.add(Text.translatable("item.reborn12k.red_queen.tooltip1"));
         }
 
         else {
-            tooltip.add(new TranslatableText("item.reborn12k.red_queen.tooltip2"));
+            tooltip.add(Text.translatable("item.reborn12k.red_queen.tooltip2"));
         }
     }
 

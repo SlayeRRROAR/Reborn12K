@@ -17,7 +17,6 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -72,13 +71,13 @@ public class MagnetCharm extends Item {
 
         if(currentMode.getBoolean()) {
             setMagnetState(magnet_charm, MagnetState.OFF);
-            playerEntity.sendMessage(new TranslatableText("item.reborn12k.magnet.tooltip1"), true);
+            playerEntity.sendMessage(Text.translatable("item.reborn12k.magnet.tooltip1"), true);
 
             return;
         }
 
         setMagnetState(magnet_charm, MagnetState.ON);
-        playerEntity.sendMessage(new TranslatableText("item.reborn12k.magnet.tooltip2"), true);
+        playerEntity.sendMessage(Text.translatable("item.reborn12k.magnet.tooltip2"), true);
     }
 
     private void checkTag(ItemStack magnet_charm) {
@@ -136,11 +135,11 @@ public class MagnetCharm extends Item {
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         if(getMagnetState(itemStack) != MagnetState.ON){
-            tooltip.add(new TranslatableText("item.reborn12k.magnet.tooltip1"));
+            tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip1"));
         }
 
         else {
-            tooltip.add(new TranslatableText("item.reborn12k.magnet.tooltip2"));
+            tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip2"));
         }
     }
 

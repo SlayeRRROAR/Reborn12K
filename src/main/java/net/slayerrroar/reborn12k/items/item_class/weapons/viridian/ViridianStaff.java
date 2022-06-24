@@ -10,7 +10,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -28,7 +27,7 @@ public class ViridianStaff extends Item {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
 
-        tooltip.add(new TranslatableText("item.reborn12k.viridian.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.viridian.tooltip"));
     }
 
     @Override

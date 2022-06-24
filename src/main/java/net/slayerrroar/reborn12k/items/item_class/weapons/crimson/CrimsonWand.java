@@ -1,7 +1,5 @@
 package net.slayerrroar.reborn12k.items.item_class.weapons.crimson;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -10,7 +8,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -32,7 +29,7 @@ public class CrimsonWand extends Item {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
 
-        tooltip.add(new TranslatableText("item.reborn12k.crimson.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.crimson.tooltip"));
     }
 
     @Override
