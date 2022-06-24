@@ -6,6 +6,7 @@ import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
 import net.slayerrroar.reborn12k.Reborn12K;
+import net.slayerrroar.reborn12k.armors.Armors;
 import net.slayerrroar.reborn12k.items.AdvancedItems;
 import net.slayerrroar.reborn12k.items.BaseItems;
 import net.slayerrroar.reborn12k.tools.Tools;
@@ -165,7 +166,7 @@ public class CustomTrades {
                             new ItemStack(Items.EMERALD, 1),
                             16,10,0.15f));
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.GLOW_INK_SAC, 7),
+                            new ItemStack(Items.GLOW_INK_SAC, 3),
                             new ItemStack(Items.EMERALD, 1),
                             12,10,0.12f));
                     factories.add((entity, random) -> new TradeOffer(
@@ -274,12 +275,73 @@ public class CustomTrades {
         TradeOfferHelper.registerVillagerOffers(CustomVillagers.BLACKSMITH,5,                                      //Blacksmith - L5
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 20),
+                            new ItemStack(Items.EMERALD, 24),
                             new ItemStack(Items.NETHERITE_SCRAP, 1),
                             12,30,0.12f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 64),
                             new ItemStack(Tools.POWER_SWORD, 1),
+                            3, 30, 0.2f));
+                });
+
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.HMBLE,1,                                           //Hmble - L1
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 18),
+                            new ItemStack(Items.TNT, 1),
+                            9,2,0.15f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(BaseItems.BANANA, 5),
+                            new ItemStack(Items.EMERALD, 1),
+                            16, 1, 0.08f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.HMBLE,2,                                           //Hmble - L2
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(Items.COOKED_CHICKEN, 8),
+                            16,5,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.GLASS_PANE, 11),
+                            new ItemStack(Items.EMERALD, 1),
+                            16, 5, 0.08f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.HMBLE,3,                                           //Hmble - L3
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.PAPER, 24),
+                            new ItemStack(Items.EMERALD, 1),
+                            16,10,0.08f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.NETHERRACK, 32),
+                            new ItemStack(Items.EMERALD, 1),
+                            16, 20, 0.12f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.HMBLE,4,                                           //Hmble - L4
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 9),
+                            new ItemStack(Items.OBSIDIAN, 1),
+                            12,30,0.12f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.WHEAT_SEEDS, 64),
+                            new ItemStack(Items.EMERALD, 1),
+                            16, 15, 0.08f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(CustomVillagers.HMBLE,5,                                           //Hmble - L5
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 37),
+                            new ItemStack(Armors.LONG_FALL_BOOTS, 1),
+                            3,30,0.2f));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 64),
+                            new ItemStack(Tools.CUTTER_237, 1),
                             3, 30, 0.2f));
                 });
 
