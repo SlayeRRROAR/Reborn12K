@@ -31,6 +31,7 @@ public class Reborn12K implements ModInitializer {
 
         SoundClass.register();
 
+
         AdvancedBlocks.register();
         BaseBlocks.register();
         OreBlocks.register();
