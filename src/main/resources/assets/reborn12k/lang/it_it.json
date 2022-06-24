@@ -105,7 +105,7 @@
 
 
     "block.reborn12k.market_table": "Tavolo da Mercato",
-    "block.reborn12k.star_generator": "Generatore Stellare",
+    "block.reborn12k.fancy_lamp": "Lanterna Stravagante",
     "block.reborn12k.alloy_furnace": "Fornace per Leghe",
 
 
@@ -349,6 +349,7 @@
     "item.reborn12k.murasama": "Murasama",
     "item.reborn12k.bladewolf": "Bladewolf",
     "item.reborn12k.rebellion": "Rebellion",
+    "item.reborn12k.red_queen": "Red Queen",
 
     "item.reborn12k.mage_helmet": "Cappuccio del Mago",
     "item.reborn12k.mage_chestplate": "Mantello del Mago",
@@ -533,6 +534,7 @@
 
     "entity.minecraft.villager.dealer": "Mercante",
     "entity.minecraft.villager.blacksmith": "Fabbro",
+    "entity.minecraft.villager.hmble": "Wuk Hmble",
 
     "blockentity.alloy_furnace": "Fornace per Leghe"
 
