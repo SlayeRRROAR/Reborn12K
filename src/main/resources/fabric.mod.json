@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "reborn12k",
-  "version": "1.18.2-2.0",
+  "version": "1.19-1.0",
 
   "name": "12K Reborn",
   "description": "Rebirth of PVP12K",
@@ -31,9 +31,9 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": ">=0.14.6",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "~1.19",
     "java": ">=17",
     "nbtcrafting": "*"
   },
