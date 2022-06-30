@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "tag": "minecraft:planks"
+    },
+    "result": "reborn12k:blank_doll",
+    "count": 4
+}
