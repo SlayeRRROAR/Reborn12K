@@ -7,6 +7,9 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.item_class.PhilosopherStone;
+import net.slayerrroar.reborn12k.items.item_class.RunicSnareItem;
+import net.slayerrroar.reborn12k.items.item_class.dolls.BlankDoll;
+import net.slayerrroar.reborn12k.items.item_class.dolls.Doll;
 import net.slayerrroar.reborn12k.items.item_class.manatites.*;
 import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 
@@ -29,8 +32,6 @@ public class AdvancedItems {
 
     public static final Item MANAWEAVE = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item REFINED_MANATITE = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE));
-    //public static final Item MAGICAL_INK = new GlintedItem(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
-    //public static final Item EMPTY_ENCHANTED_BOOK = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
 
     public static final Item WINDSTORM_MANATITE = new WindstormManatite(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
     public static final Item VIRIDIAN_MANATITE = new ViridianManatite(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
@@ -49,10 +50,20 @@ public class AdvancedItems {
     public static final Item RUNE_OF_DARK = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(16));
     public static final Item RUNE_OF_STRENGTH = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(16));
 
+    public static final Item RUNIC_SNARE = new RunicSnareItem(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+
     public static final Item WEAK_PHILOSOPHER_STONE = new PhilosopherStone(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.UNCOMMON).maxCount(1).fireproof());
     public static final Item ADVANCED_PHILOSOPHER_STONE = new PhilosopherStone(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE).maxCount(1).fireproof());
     public static final Item MASTER_PHILOSOPHER_STONE = new PhilosopherStone(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC).maxCount(1).fireproof());
 
+    public static final Item BLANK_DOLL = new BlankDoll(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+
+    public static final Item BLESSED_DOLL = new Doll(new FabricItemSettings().maxCount(1).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.UNCOMMON));
+    public static final Item CURSED_DOLL = new Doll(new FabricItemSettings().maxCount(1).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.UNCOMMON));
+    public static final Item CURSED_NETHER_DOLL = new Doll(new FabricItemSettings().maxCount(1).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE));
+    public static final Item CURSED_ENDER_DOLL = new Doll(new FabricItemSettings().maxCount(1).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE));
+    public static final Item WITHERED_DOLL = new Doll(new FabricItemSettings().maxCount(1).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
+    public static final Item DRACONIC_DOLL = new Doll(new FabricItemSettings().maxCount(1).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
 
     public static void register() {
 
@@ -73,8 +84,6 @@ public class AdvancedItems {
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "manaweave"), MANAWEAVE);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "refined_manatite"), REFINED_MANATITE);
-        //Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "magical_ink"), MAGICAL_INK);
-        //Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "empty_enchanted_book"), EMPTY_ENCHANTED_BOOK);
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "windstorm_manatite"), WINDSTORM_MANATITE);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "viridian_manatite"), VIRIDIAN_MANATITE);
@@ -93,9 +102,19 @@ public class AdvancedItems {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "rune_of_dark"), RUNE_OF_DARK);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "rune_of_strength"), RUNE_OF_STRENGTH);
 
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "runic_snare"), RUNIC_SNARE);
+
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "weak_philosopher_stone"), WEAK_PHILOSOPHER_STONE);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "advanced_philosopher_stone"), ADVANCED_PHILOSOPHER_STONE);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "master_philosopher_stone"), MASTER_PHILOSOPHER_STONE);
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "blank_doll"), BLANK_DOLL);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "blessed_doll"), BLESSED_DOLL);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cursed_doll"), CURSED_DOLL);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cursed_nether_doll"), CURSED_NETHER_DOLL);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cursed_ender_doll"), CURSED_ENDER_DOLL);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "withered_doll"), WITHERED_DOLL);
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "draconic_doll"), DRACONIC_DOLL);
 
         Reborn12K.LOGGER.info("Registering Advanced Items for " + Reborn12K.MOD_ID);
 
