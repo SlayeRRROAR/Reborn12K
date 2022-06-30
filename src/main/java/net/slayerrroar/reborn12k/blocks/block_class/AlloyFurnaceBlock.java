@@ -20,11 +20,9 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.entity.AlloyFurnaceBlockEntity;
-import net.slayerrroar.reborn12k.blocks.entity.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.block.AlloyFurnaceBlockEntity;
+import net.slayerrroar.reborn12k.entity.block.CustomBlockEntities;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.Random;
 
 @SuppressWarnings("deprecation")
 public class AlloyFurnaceBlock extends BlockWithEntity implements BlockEntityProvider {
@@ -79,7 +77,8 @@ public class AlloyFurnaceBlock extends BlockWithEntity implements BlockEntityPro
         return checkType(blockEntityType, CustomBlockEntities.ALLOY_FURNACE, AlloyFurnaceBlockEntity::tick);
     }
 
-    public void randomDisplayTick(BlockState blockState, World world, BlockPos blockPos, Random random) {
+    @Override
+    public void randomDisplayTick(BlockState blockState, World world, BlockPos blockPos, net.minecraft.util.math.random.Random random) {
         if (!blockState.get(LIT)) {
             return;
         }
