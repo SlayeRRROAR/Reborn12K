@@ -4,6 +4,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EntityGroup;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -59,6 +60,8 @@ public class ExceedSword extends SwordItem {
         return ExceedState.INACTIVE;
     }
 
+
+
     private void ActivateExceed(ItemStack red_queen) {
         setExceedState(red_queen, ExceedState.ACTIVE);
     }
@@ -80,7 +83,8 @@ public class ExceedSword extends SwordItem {
                 DeactivateExceed(red_queen);
             }
         }
-        return false;
+        red_queen.damage(1, attacker, livingEntity -> livingEntity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
+        return true;
     }
 
     private void checkTag(ItemStack red_queen) {
