@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/elemental_master",
+  "display": {
+    "icon": {
+      "item": "reborn12k:runic_snare"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.runic_binding.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.runic_binding.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_runic_snare": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:runic_snare"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_runic_snare"
+    ]
+  ]
+}
