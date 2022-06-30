@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.screen;
+package net.slayerrroar.reborn12k.screen.alloy_furnace;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -9,6 +9,7 @@ import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
+import net.slayerrroar.reborn12k.screen.CustomScreenHandlers;
 import net.slayerrroar.reborn12k.screen.slot.CustomFuelSlot;
 import net.slayerrroar.reborn12k.screen.slot.CustomResultSlot;
 
