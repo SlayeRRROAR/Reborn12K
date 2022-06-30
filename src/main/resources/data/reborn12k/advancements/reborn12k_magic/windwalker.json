@@ -5,10 +5,10 @@
       "item": "reborn12k:windstorm_manatite"
     },
     "title": {
-      "translate": "advancements.reborn12k_magic.rinceoir_gaoithe.title"
+      "translate": "advancements.reborn12k_magic.windwalker.title"
     },
     "description": {
-      "translate": "advancements.reborn12k_magic.rinceoir_gaoithe.description"
+      "translate": "advancements.reborn12k_magic.windwalker.description"
     },
     "frame": "challenge",
     "show_toast": true,
