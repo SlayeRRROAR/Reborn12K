@@ -13,8 +13,8 @@ import java.util.stream.Stream;
 
 @SuppressWarnings("deprecation")
 
-public class StarGeneratorBlock extends Block {
-    public StarGeneratorBlock(Settings settings) {
+public class FancyLampBlock extends Block {
+    public FancyLampBlock(Settings settings) {
         super(settings);
     }
 
@@ -23,6 +23,7 @@ public class StarGeneratorBlock extends Block {
             Block.createCuboidShape(2, 2, 2, 14, 14, 14),
             Block.createCuboidShape(0, 0, 0, 2, 2, 14),
             Block.createCuboidShape(0, 0, 14, 14, 2, 16),
+
             Block.createCuboidShape(2, 0, 0, 16, 2, 2),
             Block.createCuboidShape(14, 0, 2, 16, 2, 16),
             Block.createCuboidShape(0, 2, 0, 2, 14, 2),
