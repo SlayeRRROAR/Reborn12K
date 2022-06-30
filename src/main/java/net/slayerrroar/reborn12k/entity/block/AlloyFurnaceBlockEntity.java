@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.blocks.entity;
+package net.slayerrroar.reborn12k.entity.block;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.BlockState;
@@ -22,7 +22,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.blocks.block_class.AlloyFurnaceBlock;
 import net.slayerrroar.reborn12k.recipe.AlloyFurnaceRecipe;
-import net.slayerrroar.reborn12k.screen.AlloyFurnaceScreenHandler;
+import net.slayerrroar.reborn12k.screen.alloy_furnace.AlloyFurnaceScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
