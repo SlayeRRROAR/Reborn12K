@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "reborn12k:cursed_end_materia"
+    },
+    "result": "minecraft:end_rod",
+    "count": 1
+}

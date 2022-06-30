@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "reborn12k:withered_materia"
+    },
+    "result": "minecraft:wither_skeleton_skull",
+    "count": 1
+}
