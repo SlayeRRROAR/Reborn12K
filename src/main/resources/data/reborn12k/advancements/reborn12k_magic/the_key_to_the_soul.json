@@ -1,0 +1,50 @@
+{
+  "parent": "reborn12k:reborn12k_magic/runic_binding",
+  "display": {
+    "icon": {
+      "item": "reborn12k:mana_glass_dagger"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.the_key_to_the_soul.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.the_key_to_the_soul.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_glass_dagger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:glass_dagger"
+            ]
+          }
+        ]
+      }
+    },
+    "get_mana_glass_dagger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:mana_glass_dagger"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_glass_dagger",
+      "get_mana_glass_dagger"
+    ]
+  ]
+}

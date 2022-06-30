@@ -1,0 +1,62 @@
+{
+  "parent": "reborn12k:reborn12k_magic/soul_dolls",
+  "display": {
+    "icon": {
+      "item": "reborn12k:draconic_doll"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.experienced_necromancer.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.experienced_necromancer.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "all_dolls": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:blessed_doll"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:cursed_doll"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:cursed_nether_doll"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:cursed_ender_doll"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:withered_doll"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:draconic_doll"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "all_dolls"
+    ]
+  ]
+}
