@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A",
+        "B",
+        "C"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:rune_of_strength"
+        },
+        "B": {
+            "item": "reborn12k:glass_dagger"
+        },
+        "C": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "reborn12k:mana_glass_dagger",
+        "count": 1
+    }
+}
