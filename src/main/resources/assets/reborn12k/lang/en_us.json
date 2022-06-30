@@ -44,6 +44,8 @@
 
     "item.reborn12k.devil_bringer": "Devil Bringer",
 
+    "item.reborn12k.withered_star": "Withered Star",
+
     
     "item.reborn12k.banana": "Banana",
     "item.reborn12k.golden_banana": "Golden Banana",
@@ -97,6 +99,20 @@
     "item.reborn12k.yggdrasill_branch.tooltip1": "The Yggdrasill's Branch is §2INACTIVE",
     "item.reborn12k.yggdrasill_branch.tooltip2": "The Yggdrasill's Branch is §aACTIVE",
 
+
+    "item.reborn12k.runic_snare.tooltip1": "Throw to a mob to",
+    "item.reborn12k.runic_snare.tooltip2": "inflict Frail Soul",
+
+    "item.reborn12k.dagger.tooltip1": "Use on Frail mobs to",
+    "item.reborn12k.dagger.tooltip2": "extract their soul",
+
+    "item.reborn12k.doll.tooltip1": "Insert in a Runic Artifact",
+    "item.reborn12k.doll.tooltip2": "§cNot consumed in the process",
+
+    "item.reborn12k.materia.tooltip1": "Can be consumed for experience or",
+    "item.reborn12k.materia.tooltip2": "processed (stonecutter) for resources",
+    "item.reborn12k.materia.tooltip3": "§cSneak to consume the whole stack",
+
     "item.reborn12k.red_queen.tooltip1": "Exceed is §cOFF",
     "item.reborn12k.red_queen.tooltip2": "Exceed is §1ON",
     "item.reborn12k.red_queen.tooltip3": "§1Exceed is charged!",
@@ -106,7 +122,9 @@
 
     "block.reborn12k.market_table": "Market Table",
     "block.reborn12k.fancy_lamp": "Fancy Lamp",
+
     "block.reborn12k.alloy_furnace": "Alloy Furnace",
+    "block.reborn12k.runic_artifact": "Runic Artifact",
 
 
     "block.reborn12k.topaz_ore": "Topaz Ore",
@@ -262,7 +280,6 @@
     "item.reborn12k.time_singularity": "Time Singularity",
 
     "item.reborn12k.manaweave": "Manaweave",
-    "item.reborn12k.magical_ink": "Magical Ink WIP",
 
     "item.reborn12k.blank_rune": "Blank Rune",
     "item.reborn12k.rune_of_air": "Rune of Air",
@@ -273,9 +290,28 @@
     "item.reborn12k.rune_of_dark": "Rune of the New Moon",
     "item.reborn12k.rune_of_strength": "Rune of Strength",
 
+    "item.reborn12k.runic_snare": "Runic Snare",
+
     "item.reborn12k.weak_philosopher_stone": "Weak Philosopher's Stone",
     "item.reborn12k.advanced_philosopher_stone": "Advanced Philosopher's Stone",
     "item.reborn12k.master_philosopher_stone": "Master Philosopher's Stone",
+
+
+    "item.reborn12k.blank_doll": "Blank Doll",
+    "item.reborn12k.blessed_doll": "Blessed Doll",
+    "item.reborn12k.cursed_doll": "Cursed Doll",
+    "item.reborn12k.cursed_nether_doll": "Cursed Nether Doll",
+    "item.reborn12k.cursed_ender_doll": "Cursed Ender Doll",
+    "item.reborn12k.withered_doll": "Withered Doll",
+    "item.reborn12k.draconic_doll": "Draconic Doll",
+
+
+    "item.reborn12k.blessed_materia": "Blessed Materia",
+    "item.reborn12k.cursed_materia": "Cursed Materia",
+    "item.reborn12k.cursed_nether_materia": "Cursed Nether Materia",
+    "item.reborn12k.cursed_end_materia": "Cursed End Materia",
+    "item.reborn12k.withered_materia": "Withered Materia",
+    "item.reborn12k.draconic_materia": "Draconic Materia",
 
 
     "item.reborn12k.golden_ring": "Golden Ring",
@@ -352,6 +388,9 @@
     "item.reborn12k.bladewolf": "Bladewolf",
     "item.reborn12k.rebellion": "Rebellion",
     "item.reborn12k.red_queen": "Red Queen",
+
+    "item.reborn12k.glass_dagger": "Glass Dagger",
+    "item.reborn12k.mana_glass_dagger": "Mana Glass Dagger",
 
     "item.reborn12k.mage_helmet": "Mage's Hood",
     "item.reborn12k.mage_chestplate": "Mage's Robes",
@@ -445,9 +484,19 @@
     "advancements.reborn12k_magic.runic_discovery.description": "Craft some Blank Runes. Then combine them with gems to call upon the nature's power",
     "advancements.reborn12k_magic.elemental_master.title": "Elemental Master",
     "advancements.reborn12k_magic.elemental_master.description": "Obtain all 7 Elemental Runes. You can then combine any of the runes with 3 empty bottles to brew potions",
+    "advancements.reborn12k_magic.runic_binding.title": "Runic Binding",
+    "advancements.reborn12k_magic.runic_binding.description": "Craft some Runic Snares. Throw them at a mob to inflict Frail Soul",
+    "advancements.reborn12k_magic.the_key_to_the_soul.title": "The Key to the Soul",
+    "advancements.reborn12k_magic.the_key_to_the_soul.description": "Craft the delicate Glass Dagger or the unbreakable Mana Glass Dagger",
+    "advancements.reborn12k_magic.soul_dolls.title": "Soul Dolls",
+    "advancements.reborn12k_magic.soul_dolls.description": "Extract a Soul Doll from a Frail Soul mob (Bosses are never frail, you might need a little more commitment)",
+    "advancements.reborn12k_magic.soul_condensation.title": "Soul Condensation",
+    "advancements.reborn12k_magic.soul_condensation.description": "Craft a Runic Artifact. Insert a Doll into it to extract materia from it. (The doll is not consumed)",
+    "advancements.reborn12k_magic.experienced_necromancer.title": "Experienced Necromancer",
+    "advancements.reborn12k_magic.experienced_necromancer.description": "Obtain all the existing Dolls",
 
-    "advancements.reborn12k_magic.rinceoir_gaoithe.title": "Rinceoir Gaoithe",
-    "advancements.reborn12k_magic.rinceoir_gaoithe.description": "Those who follow the path of the wind shall walk in its divine protection",
+    "advancements.reborn12k_magic.windwalker.title": "Windwalker",
+    "advancements.reborn12k_magic.windwalker.description": "Those who follow the path of the wind shall walk in its divine protection",
     "advancements.reborn12k_magic.rules_of_nature.title": "Rules of Nature",
     "advancements.reborn12k_magic.rules_of_nature.description": "Who will survive in the game of life, the skilled hunter or the agile prey?",
     "advancements.reborn12k_magic.gaze_into_the_abyss.title": "Gaze into the abyss",
@@ -538,7 +587,10 @@
     "entity.minecraft.villager.blacksmith": "Blacksmith",
     "entity.minecraft.villager.hmble": "Wuk Hmble",
 
-    "blockentity.alloy_furnace": "Alloy Furnace"
+    "blockentity.alloy_furnace": "Alloy Furnace",
+    "blockentity.runic_artifact": "Runic Artifact",
 
+
+    "effect.reborn12k.frail": "Frail Soul"
     
   }

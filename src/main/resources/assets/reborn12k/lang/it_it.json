@@ -44,6 +44,8 @@
 
     "item.reborn12k.devil_bringer": "Devil Bringer",
 
+    "item.reborn12k.withered_star": "Stella Morente",
+
     
     "item.reborn12k.banana": "Banana",
     "item.reborn12k.golden_banana": "Banana d'oro",
@@ -97,6 +99,20 @@
     "item.reborn12k.yggdrasill_branch.tooltip1": "Il ramo dell'Yggdrasill è §2INATTIVO",
     "item.reborn12k.yggdrasill_branch.tooltip2": "Il ramo dell'Yggdrasill è §aATTIVO",
 
+
+    "item.reborn12k.runic_snare.tooltip1": "Tiralo ad un mob per",
+    "item.reborn12k.runic_snare.tooltip2": "infliggergli Animo Fragile",
+
+    "item.reborn12k.dagger.tooltip1": "Usa su chi è d'Animo Fragile",
+    "item.reborn12k.dagger.tooltip2": "per estrarne l' anima",
+
+    "item.reborn12k.doll.tooltip1": "Inserire in un Artefatto Runico",
+    "item.reborn12k.doll.tooltip2": "§cNon si consuma nel processo",
+
+    "item.reborn12k.materia.tooltip1": "Può essere consumata per esperienza o",
+    "item.reborn12k.materia.tooltip2": "lavorata (tagliapietra) per estrarne risorse",
+    "item.reborn12k.materia.tooltip3": "§cAccovacciati per consumare l'intero stack",
+
     "item.reborn12k.red_queen.tooltip1": "Exceed non è §cPRONTO",
     "item.reborn12k.red_queen.tooltip2": "Exceed è §1PRONTO",
     "item.reborn12k.red_queen.tooltip3": "§1Exceed è carico!",
@@ -106,7 +122,9 @@
 
     "block.reborn12k.market_table": "Tavolo da Mercato",
     "block.reborn12k.fancy_lamp": "Lanterna Stravagante",
+
     "block.reborn12k.alloy_furnace": "Fornace per Leghe",
+    "block.reborn12k.runic_artifact": "Artefatto Runico",
 
 
     "block.reborn12k.topaz_ore": "Minerale di Topazio",
@@ -260,7 +278,6 @@
     "item.reborn12k.time_singularity": "Singolarità Temporale",
     
     "item.reborn12k.manaweave": "Tessitura di Mana",
-    "item.reborn12k.magical_ink": "Inchiostro Magico WIP",
 
     "item.reborn12k.blank_rune": "Runa Vuota",
     "item.reborn12k.rune_of_air": "Runa dell'Aria",
@@ -271,9 +288,28 @@
     "item.reborn12k.rune_of_dark": "Runa della Luna Nuova",
     "item.reborn12k.rune_of_strength": "Runa della Forza",
 
+    "item.reborn12k.runic_snare": "Trappola Runica",
+
     "item.reborn12k.weak_philosopher_stone": "Pietra Filosofale Debole",
     "item.reborn12k.advanced_philosopher_stone": "Pietra Filosofale Avanzata",
     "item.reborn12k.master_philosopher_stone": "Pietra Filosofale Maestra",
+
+
+    "item.reborn12k.blank_doll": "Bambola Vuota",
+    "item.reborn12k.blessed_doll": "Bambola Beata",
+    "item.reborn12k.cursed_doll": "Bambola Maledetta",
+    "item.reborn12k.cursed_nether_doll": "Bambola Maledetta del Nether",
+    "item.reborn12k.cursed_ender_doll": "Bambola Maledetta dell'End",
+    "item.reborn12k.withered_doll": "Bambola Rotta",
+    "item.reborn12k.draconic_doll": "Bambola Draconica",
+
+
+    "item.reborn12k.blessed_materia": "Materia Beata",
+    "item.reborn12k.cursed_materia": "Materia Maledetta",
+    "item.reborn12k.cursed_nether_materia": "Materia Maledetta del Nether",
+    "item.reborn12k.cursed_end_materia": "Materia Maledetta dell'End",
+    "item.reborn12k.withered_materia": "Materia Appassita",
+    "item.reborn12k.draconic_materia": "Materia Draconica",
 
 
     "item.reborn12k.golden_ring": "Anello d'Oro",
@@ -350,6 +386,9 @@
     "item.reborn12k.bladewolf": "Bladewolf",
     "item.reborn12k.rebellion": "Rebellion",
     "item.reborn12k.red_queen": "Red Queen",
+
+    "item.reborn12k.glass_dagger": "Pugnale di Vetro",
+    "item.reborn12k.mana_glass_dagger": "Pugnale di Vetro Incantato",
 
     "item.reborn12k.mage_helmet": "Cappuccio del Mago",
     "item.reborn12k.mage_chestplate": "Mantello del Mago",
@@ -448,9 +487,19 @@
     "advancements.reborn12k_magic.runic_discovery.description": "Crea delle Rune Vuote. Poi combinale con delle gemme per chiamare a te il potere della natura",
     "advancements.reborn12k_magic.elemental_master.title": "Elemental Master",
     "advancements.reborn12k_magic.elemental_master.description": "Ottieni tutte le 7 Rune Elementali. Puoi combinare qualsiasi runa con 3 bottiglie per creare delle pozioni",
+    "advancements.reborn12k_magic.runic_binding.title": "Vincolo Runico",
+    "advancements.reborn12k_magic.runic_binding.description": "Ottieni delle Catene Runiche. Tirale a dei mob per affliggerli con Animo Fragile",
+    "advancements.reborn12k_magic.the_key_to_the_soul.title": "La chiave dell'anima",
+    "advancements.reborn12k_magic.the_key_to_the_soul.description": "Ottieni il delicato Pugnale di Vetro o l'indistruttibile Pugnale di Vetro Incantato",
+    "advancements.reborn12k_magic.soul_dolls.title": "Bambole dell'Anima",
+    "advancements.reborn12k_magic.soul_dolls.description": "Estrai una Bambola dell'Anima da un mob con Animo Fragile (I Boss non sono mai fragili, con loro ti serviranno più sforzi)",
+    "advancements.reborn12k_magic.soul_condensation.title": "Condensazione dell'Anima",
+    "advancements.reborn12k_magic.soul_condensation.description": "Ottieni un Artefatto Runico. Inserisci una Bambola dentro di esso per estrarne Materia (La Bambola non si consuma)",
+    "advancements.reborn12k_magic.experienced_necromancer.title": "Necromante Esperto",
+    "advancements.reborn12k_magic.experienced_necromancer.description": "Ottieni tutte le Bambole esistenti",
 
-    "advancements.reborn12k_magic.rinceoir_gaoithe.title": "Rinceoir Gaoithe",
-    "advancements.reborn12k_magic.rinceoir_gaoithe.description": "Coloro che seguono il percorso del vento cammineranno nella Sua divina protezione",
+    "advancements.reborn12k_magic.windwalker.title": "Windwalker",
+    "advancements.reborn12k_magic.windwalker.description": "Coloro che seguono il percorso del vento cammineranno nella Sua divina protezione",
     "advancements.reborn12k_magic.rules_of_nature.title": "Regole della Natura",
     "advancements.reborn12k_magic.rules_of_nature.description": "Chi sopravviverà nel gioco della vita, l'abile cacciatore o l'agile preda?",
     "advancements.reborn12k_magic.gaze_into_the_abyss.title": "Guarda nell'abisso",
@@ -536,7 +585,11 @@
     "entity.minecraft.villager.blacksmith": "Fabbro",
     "entity.minecraft.villager.hmble": "Wuk Hmble",
 
-    "blockentity.alloy_furnace": "Fornace per Leghe"
+    "blockentity.alloy_furnace": "Fornace per Leghe",
+    "blockentity.runic_artifact": "Artefatto Runico",
+
+
+    "effect.reborn12k.frail": "Animo Fragile"
 
     
-  }
+}
