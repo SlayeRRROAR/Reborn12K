@@ -48,6 +48,8 @@ public class BaseItems {
 
     public static final Item DEVIL_BRINGER = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
 
+    public static final Item WITHERED_STAR = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+
     // Food
 
     public static final Item BANANA = new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(5).saturationModifier(0.3f).build()).group(Reborn12KItemGroup.REBORN12K));
@@ -108,6 +110,8 @@ public class BaseItems {
         // Mob Drops
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "devil_bringer"), DEVIL_BRINGER);
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "withered_star"), WITHERED_STAR);
 
         // Food
 
