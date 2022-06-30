@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "C D",
+        "AEA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:chain"
+        },
+        "B": {
+            "item": "reborn12k:rune_of_air"
+        },
+        "C": {
+            "item": "reborn12k:rune_of_water"
+        },
+        "D": {
+            "item": "reborn12k:rune_of_light"
+        },
+        "E": {
+            "item": "reborn12k:rune_of_strength"
+        }
+    },
+    "result": {
+        "item": "reborn12k:runic_snare",
+        "count": 8
+    }
+}
