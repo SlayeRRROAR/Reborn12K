@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:runic_artifact",
+    "ingredients": [
+        {
+            "item": "reborn12k:withered_doll"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:withered_materia"
+    }
+}
