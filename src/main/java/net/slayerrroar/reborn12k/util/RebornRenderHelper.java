@@ -10,6 +10,7 @@ public class RebornRenderHelper {
 
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.MARKET_TABLE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.FANCY_LAMP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.RUNIC_ARTIFACT, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(BaseBlocks.CHERRY_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(BaseBlocks.CHERRY_SAPLING, RenderLayer.getCutout());
