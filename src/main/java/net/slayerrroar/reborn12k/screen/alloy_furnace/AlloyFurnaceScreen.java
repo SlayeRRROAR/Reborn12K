@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.screen;
+package net.slayerrroar.reborn12k.screen.alloy_furnace;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
