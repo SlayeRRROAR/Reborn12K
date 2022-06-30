@@ -12,17 +12,29 @@ group = project.maven_group
 
 repositories {
 
+	maven {
+		name "Siphalor's Maven"
+		url "https://maven.siphalor.de"
+	}
+
+	maven {
+		name "Jitpack"
+		url "https://jitpack.io"
+	}
+
 }
 
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:1.19"
-	mappings "net.fabricmc:yarn:1.19+build.2"
-	modImplementation "net.fabricmc:fabric-loader:0.14.7"
+	mappings "net.fabricmc:yarn:1.19+build.4"
+	modImplementation "net.fabricmc:fabric-loader:0.14.8"
 
 	//Fabric api
-	modImplementation "net.fabricmc.fabric-api:fabric-api:0.55.3+1.19"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:0.57.0+1.19"
 
+	//Nbtcrafting
+	modImplementation "de.siphalor:nbtcrafting-1.19:2+"
 
 }
 
