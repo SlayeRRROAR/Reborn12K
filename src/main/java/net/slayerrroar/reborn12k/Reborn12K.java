@@ -6,11 +6,13 @@ import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
 import net.slayerrroar.reborn12k.blocks.BaseBlocks;
 import net.slayerrroar.reborn12k.blocks.OreBlocks;
 import net.slayerrroar.reborn12k.enchantments.Enchantments;
-import net.slayerrroar.reborn12k.blocks.entity.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.block.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.projectile.CustomProjectileEntities;
 import net.slayerrroar.reborn12k.items.*;
 import net.slayerrroar.reborn12k.recipe.CustomRecipes;
 import net.slayerrroar.reborn12k.screen.CustomScreenHandlers;
 import net.slayerrroar.reborn12k.sounds.SoundClass;
+import net.slayerrroar.reborn12k.statuses.CustomStatusEffects;
 import net.slayerrroar.reborn12k.villagers.CustomTrades;
 import net.slayerrroar.reborn12k.util.Fuels;
 import net.slayerrroar.reborn12k.tools.Tools;
@@ -37,6 +39,7 @@ public class Reborn12K implements ModInitializer {
 
         BaseItems.register();
         AdvancedItems.register();
+        MateriaItems.register();
 
         DiscItem.register();
         Rings.register();
@@ -47,8 +50,10 @@ public class Reborn12K implements ModInitializer {
         Armors.register();
 
         Enchantments.register();
+        CustomStatusEffects.register();
 
         CustomBlockEntities.register();
+        CustomProjectileEntities.register();
 
         RebornConfiguredFeatures.register();
         RebornWorldGen.generate();
