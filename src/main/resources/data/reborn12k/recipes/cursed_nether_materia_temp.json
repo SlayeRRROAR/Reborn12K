@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:cursed_nether_doll",
+            "remainder": {
+                "item": "reborn12k:cursed_nether_doll",
+                "data": {
+                    "Damage": "$ i0.Damage + 1"
+                }
+            }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:cursed_nether_materia"
+    }
+}
