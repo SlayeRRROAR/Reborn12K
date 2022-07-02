@@ -57,7 +57,7 @@ public class AlloyFurnaceRecipe implements Recipe<SimpleInventory> {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return null;
+        return Serializer.INSTANCE;
     }
 
     @Override
