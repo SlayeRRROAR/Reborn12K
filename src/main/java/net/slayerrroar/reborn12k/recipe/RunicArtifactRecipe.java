@@ -27,10 +27,7 @@ public class RunicArtifactRecipe implements Recipe<SimpleInventory> {
     @Override
     public boolean matches(SimpleInventory inventory, World world) {
 
-        if(recipeItems.get(0).test(inventory.getStack(0))) {
-        return true;
-        }
-        return false;
+        return recipeItems.get(0).test(inventory.getStack(0));
     }
 
     @Override
