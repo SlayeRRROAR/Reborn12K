@@ -1,11 +1,12 @@
 {
-    "type": "reborn12k:alloy_furnace",
+    "type": "minecraft:smithing",
     "ingredients": [
-        {
-            "item": "minecraft:blaze_rod"
-        },
+
         {
             "tag": "c:steel_ingots"
+        },
+        {
+            "item": "minecraft:blaze_rod"
         }
     ],
     "output": {
