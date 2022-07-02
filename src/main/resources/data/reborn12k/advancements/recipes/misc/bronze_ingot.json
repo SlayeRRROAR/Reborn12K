@@ -6,13 +6,13 @@
       ]
     },
     "criteria": {
-      "has_bronze_block": {
+      "has_raw_copper": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:bronze_block"
+                "minecraft:raw_copper"
               ]
             }
           ]
@@ -27,7 +27,7 @@
     },
     "requirements": [
       [
-        "has_bronze_block",
+        "has_raw_copper",
         "has_the_recipe"
       ]
     ]
