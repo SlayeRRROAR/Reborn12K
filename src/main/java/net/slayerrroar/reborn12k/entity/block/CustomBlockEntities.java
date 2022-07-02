@@ -17,12 +17,12 @@ public class CustomBlockEntities {
         ALLOY_FURNACE = Registry.register(Registry.BLOCK_ENTITY_TYPE,
                 new Identifier(Reborn12K.MOD_ID, "alloy_furnace"),
                 FabricBlockEntityTypeBuilder.create(AlloyFurnaceBlockEntity::new,
-                        AdvancedBlocks.ALLOY_FURNACE).build(null));
+                        AdvancedBlocks.ALLOY_FURNACE).build());
 
         RUNIC_ARTIFACT = Registry.register(Registry.BLOCK_ENTITY_TYPE,
                 new Identifier(Reborn12K.MOD_ID, "runic_artifact"),
                 FabricBlockEntityTypeBuilder.create(RunicArtifactBlockEntity::new,
-                        AdvancedBlocks.RUNIC_ARTIFACT).build(null));
+                        AdvancedBlocks.RUNIC_ARTIFACT).build());
 
         Reborn12K.LOGGER.info("Registering Block Entities for " + Reborn12K.MOD_ID);
 
