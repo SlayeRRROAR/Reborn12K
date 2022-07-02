@@ -106,8 +106,8 @@
     "item.reborn12k.dagger.tooltip1": "Use on Frail mobs to",
     "item.reborn12k.dagger.tooltip2": "extract their soul",
 
-    "item.reborn12k.doll.tooltip1": "Insert in a Runic Artifact",
-    "item.reborn12k.doll.tooltip2": "§cNot consumed in the process",
+    "item.reborn12k.doll.tooltip1": "Crafts into materia",
+    "item.reborn12k.doll.tooltip2": "§cConsumes slowly",
 
     "item.reborn12k.materia.tooltip1": "Can be consumed for experience or",
     "item.reborn12k.materia.tooltip2": "processed (stonecutter) for resources",
@@ -123,8 +123,8 @@
     "block.reborn12k.market_table": "Market Table",
     "block.reborn12k.fancy_lamp": "Fancy Lamp",
 
-    "block.reborn12k.alloy_furnace": "Alloy Furnace",
-    "block.reborn12k.runic_artifact": "Runic Artifact",
+    "block.reborn12k.alloy_furnace": "§cWIP Alloy Furnace §cWIP",
+    "block.reborn12k.runic_artifact": "§cWIP Runic Artifact §cWIP",
 
 
     "block.reborn12k.topaz_ore": "Topaz Ore",

@@ -106,8 +106,8 @@
     "item.reborn12k.dagger.tooltip1": "Usa su chi è d'Animo Fragile",
     "item.reborn12k.dagger.tooltip2": "per estrarne l' anima",
 
-    "item.reborn12k.doll.tooltip1": "Inserire in un Artefatto Runico",
-    "item.reborn12k.doll.tooltip2": "§cNon si consuma nel processo",
+    "item.reborn12k.doll.tooltip1": "Si può craftare in materia",
+    "item.reborn12k.doll.tooltip2": "§cSi consuma lentamente",
 
     "item.reborn12k.materia.tooltip1": "Può essere consumata per esperienza o",
     "item.reborn12k.materia.tooltip2": "lavorata (tagliapietra) per estrarne risorse",
@@ -123,8 +123,8 @@
     "block.reborn12k.market_table": "Tavolo da Mercato",
     "block.reborn12k.fancy_lamp": "Lanterna Stravagante",
 
-    "block.reborn12k.alloy_furnace": "Fornace per Leghe",
-    "block.reborn12k.runic_artifact": "Artefatto Runico",
+    "block.reborn12k.alloy_furnace": "§cWIP Fornace per Leghe §cWIP",
+    "block.reborn12k.runic_artifact": "§cWIP Artefatto Runico §cWIP",
 
 
     "block.reborn12k.topaz_ore": "Minerale di Topazio",
