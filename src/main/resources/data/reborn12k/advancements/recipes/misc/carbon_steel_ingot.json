@@ -6,13 +6,13 @@
       ]
     },
     "criteria": {
-      "has_carbon_steel_block": {
+      "has_chrome_dust": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:carbon_steel_block"
+                "reborn12k:chrome_dust"
               ]
             }
           ]
@@ -27,7 +27,7 @@
     },
     "requirements": [
       [
-        "has_carbon_steel_block",
+        "has_chrome_dust",
         "has_the_recipe"
       ]
     ]
