@@ -51,8 +51,8 @@ public class Tools {
     public static ToolItem REBELLION = new BaseSword(Rebellion.INSTANCE, 5, -2.6f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
     public static ToolItem RED_QUEEN = new ExceedSword(RedQueen.INSTANCE, 5 , -2.4f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).fireproof());
 
-    public static ToolItem GLASS_DAGGER = new Dagger(GlassMaterial.INSTANCE, 0 , -1.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
-    public static ToolItem MANA_GLASS_DAGGER = new Dagger(ManaGlassMaterial.INSTANCE, 0 , -1.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem GLASS_DAGGER = new Dagger(GlassMaterial.INSTANCE, -1 , -1.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
+    public static ToolItem MANA_GLASS_DAGGER = new Dagger(ManaGlassMaterial.INSTANCE, -1 , -1.0f, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
 
 
     public static Item IRON_BOW = new IronBow(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K).maxCount(1).maxDamage(548));
