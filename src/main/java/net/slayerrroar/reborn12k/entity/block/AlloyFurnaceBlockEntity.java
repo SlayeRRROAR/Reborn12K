@@ -2,7 +2,6 @@ package net.slayerrroar.reborn12k.entity.block;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -136,7 +135,7 @@ public class AlloyFurnaceBlockEntity extends BlockEntity implements NamedScreenH
             world.setBlockState(pos, state, 3);
         }
         if (bl2) {
-            AbstractFurnaceBlockEntity.markDirty(world, pos, state);
+            AlloyFurnaceBlockEntity.markDirty(world, pos, state);
         }
     }
 

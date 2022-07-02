@@ -1,7 +1,6 @@
 package net.slayerrroar.reborn12k.entity.block;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -108,7 +107,7 @@ public class RunicArtifactBlockEntity extends BlockEntity implements NamedScreen
             world.setBlockState(pos, state, 3);
         }
         if (bl2) {
-            AbstractFurnaceBlockEntity.markDirty(world, pos, state);
+            RunicArtifactBlockEntity.markDirty(world, pos, state);
         }
     }
 
