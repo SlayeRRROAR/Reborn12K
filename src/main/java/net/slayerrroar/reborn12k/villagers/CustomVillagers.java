@@ -22,7 +22,7 @@ public class CustomVillagers {
     public static final VillagerProfession DEALER = registerProfession("dealer",
             RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Reborn12K.MOD_ID, "dealerpoi")));
 
-    public static final PointOfInterestType BLACKSMITH_POI = registerPOI("blacksmithpoi", AdvancedBlocks.ALLOY_FURNACE);
+    public static final PointOfInterestType BLACKSMITH_POI = registerPOI("blacksmithpoi", AdvancedBlocks.FANCY_LAMP);
     public static final VillagerProfession BLACKSMITH = registerProfession("blacksmith",
             RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Reborn12K.MOD_ID, "blacksmithpoi")));
 
