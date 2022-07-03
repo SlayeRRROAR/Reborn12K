@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:draconic_doll",
+            "data": {
+                "require": {
+                    "Damage": "$8.."
+                }
+            }
+        },
+        {
+            "item": "reborn12k:blank_doll"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:draconic_doll",
+        "data": {
+            "Damage": "$ i0.Damage - 8"
+        }
+    }
+}

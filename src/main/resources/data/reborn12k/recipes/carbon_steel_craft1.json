@@ -2,7 +2,7 @@
     "type": "reborn12k:alloy_furnace",
     "ingredients": [
         {
-            "item": "minecraft:iron_ingot"
+            "item": "minecraft:raw_iron"
         },
         {
             "item": "reborn12k:chrome_dust"

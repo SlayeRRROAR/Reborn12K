@@ -1,8 +1,8 @@
 {
     "type": "minecraft:stonecutting",
     "ingredient": {
-        "tag": "minecraft:planks"
+        "item": "reborn12k:rune_of_earth"
     },
     "result": "reborn12k:blank_doll",
-    "count": 4
+    "count": 1
 }

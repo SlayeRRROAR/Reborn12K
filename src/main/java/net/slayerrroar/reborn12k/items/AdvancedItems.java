@@ -58,12 +58,12 @@ public class AdvancedItems {
 
     public static final Item BLANK_DOLL = new BlankDoll(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
 
-    public static final Item BLESSED_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(255).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.UNCOMMON));
-    public static final Item CURSED_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(127).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.UNCOMMON));
-    public static final Item CURSED_NETHER_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(127).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE));
-    public static final Item CURSED_ENDER_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(127).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE));
-    public static final Item WITHERED_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(63).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
-    public static final Item DRACONIC_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(63).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
+    public static final Item BLESSED_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(256).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.UNCOMMON));
+    public static final Item CURSED_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(128).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.UNCOMMON));
+    public static final Item CURSED_NETHER_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(128).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE));
+    public static final Item CURSED_ENDER_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(128).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.RARE));
+    public static final Item WITHERED_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(64).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
+    public static final Item DRACONIC_DOLL = new Doll(new FabricItemSettings().maxCount(1).maxDamage(64).group(Reborn12KItemGroup.REBORN12K).rarity(Rarity.EPIC));
 
     public static void register() {
 

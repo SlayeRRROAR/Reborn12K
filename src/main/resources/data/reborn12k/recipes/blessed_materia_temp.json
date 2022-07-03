@@ -3,6 +3,11 @@
     "ingredients": [
         {
             "item": "reborn12k:blessed_doll",
+            "data": {
+                "require": {
+                    "Damage": "$..255"
+                }
+            },
             "remainder": {
                 "item": "reborn12k:blessed_doll",
                 "data": {

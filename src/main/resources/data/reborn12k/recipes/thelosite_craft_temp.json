@@ -1,15 +1,12 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "reborn12k:blazing_steel_ingot"
-        },
-        {
-            "item": "reborn12k:time_singularity"
-        }
-    ],
-    "output": {
-        "item": "reborn12k:thelosite_ingot",
-        "count": 1
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:time_singularity"
+    },
+    "addition": {
+        "item": "reborn12k:blazing_steel_ingot"
+    },
+    "result": {
+        "item": "reborn12k:thelosite_ingot"
     }
 }

@@ -12,10 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.block_class.AlloyFurnaceBlock;
-import net.slayerrroar.reborn12k.blocks.block_class.MarketBlock;
-import net.slayerrroar.reborn12k.blocks.block_class.RunicArtifactBlock;
-import net.slayerrroar.reborn12k.blocks.block_class.FancyLampBlock;
+import net.slayerrroar.reborn12k.blocks.block_class.*;
 import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 
 import java.util.function.ToIntFunction;

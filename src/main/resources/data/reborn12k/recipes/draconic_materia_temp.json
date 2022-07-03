@@ -3,6 +3,11 @@
     "ingredients": [
         {
             "item": "reborn12k:draconic_doll",
+            "data": {
+                "require": {
+                    "Damage": "$..63"
+                }
+            },
             "remainder": {
                 "item": "reborn12k:draconic_doll",
                 "data": {
