@@ -6,8 +6,8 @@
     ],
     "key": {
         "A": {
-            "item": "reborn12k:weak_philosopher_stone",
-            "remainder": { "item": "reborn12k:weak_philosopher_stone" }
+            "item": "reborn12k:advanced_philosopher_stone",
+            "remainder": { "item": "reborn12k:advanced_philosopher_stone" }
         },
         "B": {
             "tag": "c:topazes"
@@ -17,5 +17,5 @@
         "item": "reborn12k:opal",
         "count": 1
     },
-    "group": "weak_philosopher_stone"
+    "group": "advanced_philosopher_stone"
 }

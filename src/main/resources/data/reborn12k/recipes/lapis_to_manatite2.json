@@ -1,8 +1,9 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "A",
-        "B"
+        "ABB",
+        "BBB",
+        "BBB"
     ],
     "key": {
         "A": {
@@ -10,11 +11,11 @@
             "remainder": { "item": "reborn12k:master_philosopher_stone" }
         },
         "B": {
-            "tag": "c:opals"
+            "item": "minecraft:lapis_block"
         }
     },
     "result": {
-        "item": "reborn12k:ruby",
+        "item": "reborn12k:manatite",
         "count": 1
     },
     "group": "master_philosopher_stone"

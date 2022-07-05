@@ -2,7 +2,8 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "ABB",
-        "BB "
+        "BBB",
+        "BBB"
     ],
     "key": {
         "A": {
@@ -10,11 +11,11 @@
             "remainder": { "item": "reborn12k:advanced_philosopher_stone" }
         },
         "B": {
-            "item": "minecraft:lapis_lazuli"
+            "item": "minecraft:lapis_block"
         }
     },
     "result": {
-        "item": "reborn12k:cobalt",
+        "item": "reborn12k:manatite",
         "count": 1
     },
     "group": "advanced_philosopher_stone"

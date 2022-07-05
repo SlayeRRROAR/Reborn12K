@@ -109,7 +109,7 @@ public class RebornPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> CHROMITE_ORE_PLACED =                                              //CHROMITE ORES
             PlacedFeatures.register("chromite_ore_placed",
                     RebornConfiguredFeatures.CHROMITE_ORE,
-                    RebornOreFeatures.modifiersWithCount(10,
+                    RebornOreFeatures.modifiersWithCount(12,
                             HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-48), YOffset.aboveBottom(24))));
 
 
@@ -123,7 +123,7 @@ public class RebornPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> NETHER_URANIUM_ORE_PLACED =                                        //NETHER URANIUM ORES
             PlacedFeatures.register("nether_uranium_ore_placed",
                     RebornConfiguredFeatures.NETHER_URANIUM_ORE,
-                    RebornOreFeatures.modifiersWithCount(32,
+                    RebornOreFeatures.modifiersWithCount(13,
                             HeightRangePlacementModifier.uniform(YOffset.aboveBottom(10), YOffset.aboveBottom(120))));
 
 

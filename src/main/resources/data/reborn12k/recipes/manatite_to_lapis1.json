@@ -10,12 +10,12 @@
             "remainder": { "item": "reborn12k:advanced_philosopher_stone" }
         },
         "B": {
-            "item": "minecraft:emerald"
+            "item": "reborn12k:manatite"
         }
     },
     "result": {
-        "item": "minecraft:amethyst_shard",
-        "count": 1
+        "item": "minecraft:lapis_block",
+        "count": 8
     },
     "group": "advanced_philosopher_stone"
 }

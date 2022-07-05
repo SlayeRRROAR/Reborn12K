@@ -1,8 +1,8 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "ABB",
-        "BB "
+        "A",
+        "B"
     ],
     "key": {
         "A": {
@@ -10,11 +10,11 @@
             "remainder": { "item": "reborn12k:advanced_philosopher_stone" }
         },
         "B": {
-            "item": "reborn12k:chrome_dust"
+            "item": "minecraft:emerald"
         }
     },
     "result": {
-        "item": "minecraft:lapis_lazuli",
+        "item": "reborn12k:topaz",
         "count": 1
     },
     "group": "advanced_philosopher_stone"

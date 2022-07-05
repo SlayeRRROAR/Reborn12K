@@ -5,8 +5,8 @@
     ],
     "key": {
         "A": {
-            "item": "reborn12k:advanced_philosopher_stone",
-            "remainder": { "item": "reborn12k:advanced_philosopher_stone" }
+            "item": "reborn12k:master_philosopher_stone",
+            "remainder": { "item": "reborn12k:master_philosopher_stone" }
         },
         "B": {
             "item": "minecraft:netherite_ingot"
@@ -16,5 +16,5 @@
         "item": "minecraft:diamond",
         "count": 4
     },
-    "group": "advanced_philosopher_stone"
+    "group": "master_philosopher_stone"
 }

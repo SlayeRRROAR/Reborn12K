@@ -10,12 +10,12 @@
             "remainder": { "item": "reborn12k:master_philosopher_stone" }
         },
         "B": {
-            "tag": "c:rubies"
+            "item": "reborn12k:chrome_dust"
         }
     },
     "result": {
-        "item": "reborn12k:sapphire",
-        "count": 1
+        "item": "minecraft:redstone",
+        "count": 8
     },
     "group": "master_philosopher_stone"
 }

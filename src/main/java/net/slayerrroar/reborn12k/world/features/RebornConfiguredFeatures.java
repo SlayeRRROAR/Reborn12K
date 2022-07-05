@@ -133,7 +133,7 @@ public class RebornConfiguredFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> MANATITE_ORE_LARGE =
             ConfiguredFeatures.register("manatite_ore_large",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_OPAL_ORES, 12, 0.7f));
+                    new OreFeatureConfig(OVERWORLD_MANATITE_ORES, 12, 0.7f));
 
 
     public static final List<OreFeatureConfig.Target> OVERWORLD_E115_ORES = List.of(                                    //E115 ORE
@@ -171,7 +171,7 @@ public class RebornConfiguredFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> CHROMITE_ORE =
             ConfiguredFeatures.register("chromite_ore",Feature.ORE,
-                new OreFeatureConfig(OVERWORLD_CHROMITE_ORES, 8));
+                new OreFeatureConfig(OVERWORLD_CHROMITE_ORES, 9));
 
 
     public static final List<OreFeatureConfig.Target> OVERWORLD_SILVER_ORES = List.of(                                  //SILVER ORES
@@ -191,7 +191,7 @@ public class RebornConfiguredFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_URANIUM_ORE =
             ConfiguredFeatures.register("nether_uranium_ore",Feature.ORE,
-                    new OreFeatureConfig(NETHER_URANIUM_ORES, 12));
+                    new OreFeatureConfig(NETHER_URANIUM_ORES, 9));
 
 
     public static final List<OreFeatureConfig.Target> END_COBALT_ORES = List.of(                                        //END COBALT ORES
