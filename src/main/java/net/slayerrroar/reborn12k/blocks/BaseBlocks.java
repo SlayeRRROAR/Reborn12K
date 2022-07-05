@@ -70,7 +70,6 @@ public class BaseBlocks {
     public static final Block SAPPHIRE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
     
     public static final Block CHROME_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
-    public static final Block URANIUM_BLOCK = new UraniumBlocks(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(10.0f).resistance(9.0f));
     public static final Block COBALT_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(25.0f).resistance(9.0f));
     
     public static final Block RAW_TIN_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
@@ -146,7 +145,6 @@ public class BaseBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "sapphire_block"), SAPPHIRE_BLOCK);
         
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "chrome_block"), CHROME_BLOCK);
-        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "uranium_block"), URANIUM_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cobalt_block"), COBALT_BLOCK);
         
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "raw_tin_block"), RAW_TIN_BLOCK);
@@ -221,7 +219,6 @@ public class BaseBlocks {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "sapphire_block"), new BlockItem(SAPPHIRE_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "chrome_block"), new BlockItem(CHROME_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
-        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "uranium_block"), new BlockItem(URANIUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cobalt_block"), new BlockItem(COBALT_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_tin_block"), new BlockItem(RAW_TIN_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));

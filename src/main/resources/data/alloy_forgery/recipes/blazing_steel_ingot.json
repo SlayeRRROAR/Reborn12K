@@ -1,0 +1,29 @@
+{
+  "type": "alloy_forgery:forging",
+  "inputs": [
+    {
+      "item": "reborn12k:carbon_steel_ingot"
+    },
+    {
+      "item": "reborn12k:carbon_steel_ingot"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "output": {
+    "id": "reborn12k:blazing_steel_ingot",
+    "count": 2
+  },
+  "min_forge_tier": 2,
+  "fuel_per_tick": 100
+}

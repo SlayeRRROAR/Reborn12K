@@ -27,7 +27,6 @@
     "item.reborn12k.yggdrasill_branch": "Yggdrasill's Branch",
 
     "item.reborn12k.chrome_dust": "Chrome Dust",
-    "item.reborn12k.uranium": "Uranium",
     "item.reborn12k.cobalt": "Cobalt",
 
     "item.reborn12k.raw_tin": "Raw Tin",
@@ -60,8 +59,6 @@
 
     "item.reborn12k.devil_trigger_disc": "Devil Trigger",
     "item.reborn12k.devil_trigger_disc.desc": "Casey Edwards - Devil Trigger",
-
-    "item.reborn12k.uranium.tooltip": "A fuel source 8 times stronger than Coal",
 
     "item.reborn12k.windstorm.tooltip": "Hastens everyone around you",
     "item.reborn12k.viridian.tooltip": "Strenghtens everyone around you",
@@ -123,9 +120,6 @@
     "block.reborn12k.market_table": "Market Table",
     "block.reborn12k.fancy_lamp": "Fancy Lamp",
 
-    "block.reborn12k.alloy_furnace": "§cWIP Alloy Furnace §cWIP",
-    "block.reborn12k.runic_artifact": "§cWIP Runic Artifact §cWIP",
-
 
     "block.reborn12k.topaz_ore": "Topaz Ore",
     "block.reborn12k.opal_ore": "Opal Ore",
@@ -143,9 +137,7 @@
 
     "block.reborn12k.chromite_ore": "Chromite Ore",
     "block.reborn12k.deepslate_chromite_ore": "Deepslate Chromite Ore",
-
-    "block.reborn12k.deepslate_uranium_ore": "Deepslate Uranium Ore",
-    "block.reborn12k.nether_uranium_ore": "Nether Uranium Ore",
+    "block.reborn12k.nether_chromite_ore": "Nether Chromite Ore",
 
     "block.reborn12k.end_cobalt_ore": "End Cobalt Ore",
 
@@ -207,7 +199,6 @@
     "block.reborn12k.sapphire_block": "Block of Sapphire",
 
     "block.reborn12k.chrome_block": "Block of Chrome",
-    "block.reborn12k.uranium_block": "Block of Uranium",
     "block.reborn12k.cobalt_block": "Block of Cobalt",
 
     "block.reborn12k.raw_tin_block": "Block of Raw Tin",
@@ -415,29 +406,33 @@
     "advancements.reborn12k.magnetic_force.title": "Magnetic Force",
     "advancements.reborn12k.magnetic_force.description": "Obtain a Magnet",
 
-    "advancements.reborn12k.lightweight_alloy.title": "Lightweight Alloy",
-    "advancements.reborn12k.lightweight_alloy.description": "Craft some Bronze",
-    "advancements.reborn12k.like_romans.title": "Just like Romans",
-    "advancements.reborn12k.like_romans.description": "Get a full suit of Bronze armor",
 
     "advancements.reborn12k.basic_alloying.title": "Basic Alloying",
-    "advancements.reborn12k.basic_alloying.description": "Craft an Alloy Furnace",
+    "advancements.reborn12k.basic_alloying.description": "Obtain a tier one Alloy Forge Controller (Brick or Stone)",
+    "advancements.reborn12k.lightweight_alloy.title": "Lightweight Alloy",
+    "advancements.reborn12k.lightweight_alloy.description": "Smelt Copper and Tin in an Alloy Forge",
+    "advancements.reborn12k.like_romans.title": "Just like Romans",
+    "advancements.reborn12k.like_romans.description": "Get a full suit of Bronze armor",
     "advancements.reborn12k.a_stronger_alloy.title": "A Stronger Alloy",
-    "advancements.reborn12k.a_stronger_alloy.description": "Smelt Iron and Chrome in an Alloy Furnace",
+    "advancements.reborn12k.a_stronger_alloy.description": "Smelt Iron and Chrome in an Alloy Forge",
     "advancements.reborn12k.steelclad_knight.title": "Steelclad Knight",
     "advancements.reborn12k.steelclad_knight.description": "Get a full suit of Carbon Steel armor",
+    "advancements.reborn12k.advanced_alloying.title": "Advanced Alloying",
+    "advancements.reborn12k.advanced_alloying.description": "Obtain a tier two Alloy Forge (Deepslate or Blackstone)",
     "advancements.reborn12k.fiery_alloy.title": "Fiery Alloy",
-    "advancements.reborn12k.fiery_alloy.description": "Smelt a Carbon Steel and a Blaze Rod in an Alloy Furnace",
+    "advancements.reborn12k.fiery_alloy.description": "Smelt a Carbon Steel and Blaze Powder in an Alloy Forge",
     "advancements.reborn12k.baptism_of_fire.title": "Baptism of Fire",
     "advancements.reborn12k.baptism_of_fire.description": "Get a full suit of Blazing Steel armor",
     "advancements.reborn12k.prussian_blue.title": "Prussian Blue",
     "advancements.reborn12k.prussian_blue.description": "Obtain some Cobalt",
     "advancements.reborn12k.time_for_action.title": "Time for Action",
     "advancements.reborn12k.time_for_action.description": "Obtain a Time Singularity",
+    "advancements.reborn12k.final_lesson_in_alloying.title": "Final Lesson in Alloying",
+    "advancements.reborn12k.final_lesson_in_alloying.description": "Obtain a tier three Alloy Forge (End Stone)",
     "advancements.reborn12k.alloy_of_the_beginning.title": "Alloy of the Beginning",
-    "advancements.reborn12k.alloy_of_the_beginning.description": "Smelt Netherite with a Time Singularity in an Alloy Furnace",
+    "advancements.reborn12k.alloy_of_the_beginning.description": "Smelt Netherite with a Time Singularity in an Alloy Forge",
     "advancements.reborn12k.alloy_of_the_end.title": "Alloy of the End",
-    "advancements.reborn12k.alloy_of_the_end.description": "Smelt Blazing Steel with a Time Singularity in an Alloy Furnace",
+    "advancements.reborn12k.alloy_of_the_end.description": "Smelt Blazing Steel with a Time Singularity in an Alloy Forge",
     "advancements.reborn12k.envoy_of_creation.title": "Envoy of Creation",
     "advancements.reborn12k.envoy_of_creation.description": "Get a full suit of Archeosite armor",
     "advancements.reborn12k.envoy_of_destruction.title": "Envoy of Destruction",
@@ -490,8 +485,6 @@
     "advancements.reborn12k_magic.the_key_to_the_soul.description": "Craft the delicate Glass Dagger or the unbreakable Mana Glass Dagger",
     "advancements.reborn12k_magic.soul_dolls.title": "Soul Dolls",
     "advancements.reborn12k_magic.soul_dolls.description": "Extract a Soul Doll from a Frail Soul mob (Bosses are never frail, you might need a little more commitment)",
-    "advancements.reborn12k_magic.soul_condensation.title": "Soul Condensation",
-    "advancements.reborn12k_magic.soul_condensation.description": "Craft a Runic Artifact. Insert a Doll into it to extract materia from it. (The doll is not consumed)",
     "advancements.reborn12k_magic.experienced_necromancer.title": "Experienced Necromancer",
     "advancements.reborn12k_magic.experienced_necromancer.description": "Obtain all the existing Dolls",
 
@@ -586,9 +579,6 @@
     "entity.minecraft.villager.dealer": "Dealer",
     "entity.minecraft.villager.blacksmith": "Blacksmith",
     "entity.minecraft.villager.hmble": "Wuk Hmble",
-
-    "blockentity.alloy_furnace": "Alloy Furnace",
-    "blockentity.runic_artifact": "Runic Artifact",
 
 
     "effect.reborn12k.frail": "Frail Soul"

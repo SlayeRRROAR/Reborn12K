@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.item_class.GlintedItem;
-import net.slayerrroar.reborn12k.items.item_class.UraniumItem;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
@@ -23,7 +22,6 @@ public class BaseItems {
     public static final Item SAPPHIRE = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
 
     public static final Item CHROME_DUST = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
-    public static final Item URANIUM = new UraniumItem(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
     public static final Item COBALT = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
 
     public static final Item MANATITE = new Item(new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K));
@@ -90,7 +88,6 @@ public class BaseItems {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "element_115"), ELEMENT_115);
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "chrome_dust"), CHROME_DUST);
-        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "uranium"), URANIUM);
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cobalt"), COBALT);
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_tin"), RAW_TIN);

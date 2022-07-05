@@ -27,7 +27,6 @@
     "item.reborn12k.yggdrasill_branch": "Ramo dell'Yggdrasill",
 
     "item.reborn12k.chrome_dust": "Polvere di Cromo",
-    "item.reborn12k.uranium": "Uranio",
     "item.reborn12k.cobalt": "Cobalto",
 
     "item.reborn12k.raw_tin": "Stagno Grezzo",
@@ -60,8 +59,6 @@
 
     "item.reborn12k.devil_trigger_disc": "Devil Trigger",
     "item.reborn12k.devil_trigger_disc.desc": "Casey Edwards - Devil Trigger",
-
-    "item.reborn12k.uranium.tooltip": "Un combustibile 8 volte più potente del Carbone",
 
     "item.reborn12k.windstorm.tooltip": "Velocizza tutti attorno a te",
     "item.reborn12k.viridian.tooltip": "Rafforza tutti attorno a te",
@@ -123,9 +120,6 @@
     "block.reborn12k.market_table": "Tavolo da Mercato",
     "block.reborn12k.fancy_lamp": "Lanterna Stravagante",
 
-    "block.reborn12k.alloy_furnace": "§cWIP Fornace per Leghe §cWIP",
-    "block.reborn12k.runic_artifact": "§cWIP Artefatto Runico §cWIP",
-
 
     "block.reborn12k.topaz_ore": "Minerale di Topazio",
     "block.reborn12k.opal_ore": "Minerale di Opale",
@@ -143,9 +137,7 @@
 
     "block.reborn12k.chromite_ore": "Minerale di Cromite",
     "block.reborn12k.deepslate_chromite_ore": "Minerale di Cromite in Ardesia Profonda",
-
-    "block.reborn12k.deepslate_uranium_ore": "Minerale di Uranio in Ardesia Profonda",
-    "block.reborn12k.nether_uranium_ore": "Minerale di Uranio del Nether",
+    "block.reborn12k.nether_chromite_ore": "Minerale di Cromite del Nether",
 
     "block.reborn12k.end_cobalt_ore": "Minerale di Cobalto dell'End",
 
@@ -205,7 +197,6 @@
     "block.reborn12k.sapphire_block": "Blocco di Zaffiro",
 
     "block.reborn12k.chrome_block": "Blocco di Cromo",
-    "block.reborn12k.uranium_block": "Blocco di Uranio",
     "block.reborn12k.cobalt_block": "Blocco di Cobalto",
 
     "block.reborn12k.raw_tin_block": "Blocco di Stagno Grezzo",
@@ -414,29 +405,33 @@
     "advancements.reborn12k.magnetic_force.title": "Forza Magnetica",
     "advancements.reborn12k.magnetic_force.description": "Ottieni una Calamita",
 
-    "advancements.reborn12k.lightweight_alloy.title": "Lega Leggera",
-    "advancements.reborn12k.lightweight_alloy.description": "Crea del Bronzo",
-    "advancements.reborn12k.like_romans.title": "Come i Romani",
-    "advancements.reborn12k.like_romans.description": "Ottieni un'armatura di Bronzo",
 
     "advancements.reborn12k.basic_alloying.title": "Dalle Basi",
-    "advancements.reborn12k.basic_alloying.description": "Ottieni una Fornace per Leghe",
+    "advancements.reborn12k.basic_alloying.description": "Ottieni una Forgia per Leghe basica (Mattoni o Pietra)",
+    "advancements.reborn12k.lightweight_alloy.title": "Lega Leggera",
+    "advancements.reborn12k.lightweight_alloy.description": "Combina Rame e Stagno in una Forgia per Leghe",
+    "advancements.reborn12k.like_romans.title": "Come i Romani",
+    "advancements.reborn12k.like_romans.description": "Ottieni un'armatura di Bronzo",
     "advancements.reborn12k.a_stronger_alloy.title": "Una Lega più Forte",
-    "advancements.reborn12k.a_stronger_alloy.description": "Combina Ferro e Cromo in una Fornace per Leghe",
+    "advancements.reborn12k.a_stronger_alloy.description": "Combina Ferro e Cromo in una Forgia per Leghe",
     "advancements.reborn12k.steelclad_knight.title": "Cavaliere d'Acciaio",
     "advancements.reborn12k.steelclad_knight.description": "Ottieni un'armatura di Acciaio al Carbonio",
+    "advancements.reborn12k.advanced_alloying.title": "Leghe Avanzate",
+    "advancements.reborn12k.advanced_alloying.description": "Ottieni una Forgia per Leghe intermedia (Ardesia Profonda o Pietranera)",
     "advancements.reborn12k.fiery_alloy.title": "Lega Focosa",
-    "advancements.reborn12k.fiery_alloy.description": "Combina Acciaio e Verga di Blaze in una Fornace per Leghe",
+    "advancements.reborn12k.fiery_alloy.description": "Combina Acciaio e Polvere di Blaze in una Forgia per Leghe",
     "advancements.reborn12k.baptism_of_fire.title": "Battesimo del Fuoco",
     "advancements.reborn12k.baptism_of_fire.description": "Ottieni un'armatura di Acciaio Fiammeggiante",
     "advancements.reborn12k.prussian_blue.title": "Blu di Prussia",
     "advancements.reborn12k.prussian_blue.description": "Ottieni del Cobalto",
     "advancements.reborn12k.time_for_action.title": "Tempo di Agire",
     "advancements.reborn12k.time_for_action.description": "Crea un Singolarità Temporale",
+    "advancements.reborn12k.final_lesson_in_alloying.title": "Ultima Lezione sulle Leghe",
+    "advancements.reborn12k.final_lesson_in_alloying.description": "Ottieni una Forgia per Leghe avanzata (Pietra dell'End)",
     "advancements.reborn12k.alloy_of_the_beginning.title": "Lega dell'Inizio",
-    "advancements.reborn12k.alloy_of_the_beginning.description": "Combina Netherite e Singolarità Temporale in una Fornace per Leghe",
+    "advancements.reborn12k.alloy_of_the_beginning.description": "Combina Netherite e Singolarità Temporale in una Forgia per Leghe",
     "advancements.reborn12k.alloy_of_the_end.title": "Lega della Fine",
-    "advancements.reborn12k.alloy_of_the_end.description": "Combina Acciaio Fiammeggiante e Singolarità Temporale in una Fornace per Leghe",
+    "advancements.reborn12k.alloy_of_the_end.description": "Combina Acciaio Fiammeggiante e Singolarità Temporale in una Forgia per Leghe",
     "advancements.reborn12k.envoy_of_creation.title": "Emissario della Crezione",
     "advancements.reborn12k.envoy_of_creation.description": "Ottieni un'armatura di Archeosite",
     "advancements.reborn12k.envoy_of_destruction.title": "Emissario della Distruzione",
@@ -493,8 +488,6 @@
     "advancements.reborn12k_magic.the_key_to_the_soul.description": "Ottieni il delicato Pugnale di Vetro o l'indistruttibile Pugnale di Vetro Incantato",
     "advancements.reborn12k_magic.soul_dolls.title": "Bambole dell'Anima",
     "advancements.reborn12k_magic.soul_dolls.description": "Estrai una Bambola dell'Anima da un mob con Animo Fragile (I Boss non sono mai fragili, con loro ti serviranno più sforzi)",
-    "advancements.reborn12k_magic.soul_condensation.title": "Condensazione dell'Anima",
-    "advancements.reborn12k_magic.soul_condensation.description": "Ottieni un Artefatto Runico. Inserisci una Bambola dentro di esso per estrarne Materia (La Bambola non si consuma)",
     "advancements.reborn12k_magic.experienced_necromancer.title": "Necromante Esperto",
     "advancements.reborn12k_magic.experienced_necromancer.description": "Ottieni tutte le Bambole esistenti",
 
@@ -584,9 +577,6 @@
     "entity.minecraft.villager.dealer": "Mercante",
     "entity.minecraft.villager.blacksmith": "Fabbro",
     "entity.minecraft.villager.hmble": "Wuk Hmble",
-
-    "blockentity.alloy_furnace": "Fornace per Leghe",
-    "blockentity.runic_artifact": "Artefatto Runico",
 
 
     "effect.reborn12k.frail": "Animo Fragile"

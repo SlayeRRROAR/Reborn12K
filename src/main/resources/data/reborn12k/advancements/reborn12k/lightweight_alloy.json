@@ -1,5 +1,5 @@
 {
-  "parent": "reborn12k:reborn12k/root",
+  "parent": "reborn12k:reborn12k/basic_alloying",
   "display": {
     "icon": {
       "item": "reborn12k:raw_bronze"

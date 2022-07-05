@@ -1,0 +1,20 @@
+{
+  "type": "alloy_forgery:forging",
+  "inputs": [
+    {
+      "item": "reborn12k:archeosite_ingot"
+    },
+    {
+      "item": "reborn12k:thelosite_ingot"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "output": {
+    "id": "reborn12k:auramite_plate",
+    "count": 4
+  },
+  "min_forge_tier": 3,
+  "fuel_per_tick": 100
+}

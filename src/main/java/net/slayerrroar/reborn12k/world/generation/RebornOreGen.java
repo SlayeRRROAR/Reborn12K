@@ -44,9 +44,6 @@ public class RebornOreGen {
                 GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.E115_ORE_PLACED.getKey().get());
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.URANIUM_ORE_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.TIN_ORE_PLACED.getKey().get());
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
@@ -56,7 +53,7 @@ public class RebornOreGen {
                 GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.SILVER_ORE_PLACED.getKey().get());
 
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.NETHER_URANIUM_ORE_PLACED.getKey().get());
+                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.NETHER_CHROMITE_ORE_PLACED.getKey().get());
 
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
                 GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.END_COBALT_ORE_PLACED.getKey().get());

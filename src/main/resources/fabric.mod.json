@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "reborn12k",
-  "version": "1.19-0.9-beta7",
+  "version": "1.19-0.9-beta8",
 
   "name": "12K Reborn",
   "description": "Rebirth of PVP12K",
@@ -35,7 +35,8 @@
     "fabric": "*",
     "minecraft": "~1.19",
     "java": ">=17",
-    "nbtcrafting": "*"
+    "nbtcrafting": "*",
+    "alloy_forgery": "*"
   },
   "suggests": {
     "modmenu": "*"

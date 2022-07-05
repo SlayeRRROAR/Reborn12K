@@ -145,15 +145,6 @@ public class RebornConfiguredFeatures {
                     new OreFeatureConfig(OVERWORLD_E115_ORES, 8, 0.7f));
 
 
-    public static final List<OreFeatureConfig.Target> OVERWORLD_URANIUM_ORES = List.of(                                 //URANIUM ORE
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
-                    OreBlocks.DEEPSLATE_URANIUM_ORE.getDefaultState()));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> URANIUM_ORE =
-            ConfiguredFeatures.register("uranium_ore",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_URANIUM_ORES, 8, 0.5f));
-
-
     public static final List<OreFeatureConfig.Target> OVERWORLD_TIN_ORES = List.of(                                     //TIN ORES
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     OreBlocks.TIN_ORE.getDefaultState()));
@@ -185,13 +176,13 @@ public class RebornConfiguredFeatures {
                     new OreFeatureConfig(OVERWORLD_SILVER_ORES, 8));
 
 
-    public static final List<OreFeatureConfig.Target> NETHER_URANIUM_ORES = List.of(                                    //NETHER URANIUM ORES
+    public static final List<OreFeatureConfig.Target> NETHER_CHROMITE_ORES = List.of(                                    //NETHER URANIUM ORES
             OreFeatureConfig.createTarget(OreConfiguredFeatures.NETHERRACK,
-                    OreBlocks.NETHER_URANIUM_ORE.getDefaultState()));
+                    OreBlocks.NETHER_CHROMITE_ORE.getDefaultState()));
 
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_URANIUM_ORE =
-            ConfiguredFeatures.register("nether_uranium_ore",Feature.ORE,
-                    new OreFeatureConfig(NETHER_URANIUM_ORES, 9));
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_CHROMITE_ORE =
+            ConfiguredFeatures.register("nether_chromite_ore",Feature.ORE,
+                    new OreFeatureConfig(NETHER_CHROMITE_ORES, 7));
 
 
     public static final List<OreFeatureConfig.Target> END_COBALT_ORES = List.of(                                        //END COBALT ORES

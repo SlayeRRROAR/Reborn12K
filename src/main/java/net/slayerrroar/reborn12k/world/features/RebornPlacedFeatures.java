@@ -92,13 +92,6 @@ public class RebornPlacedFeatures {
                             HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
 
 
-    public static final RegistryEntry<PlacedFeature> URANIUM_ORE_PLACED =                                               //URANIUM ORES
-            PlacedFeatures.register("uranium_ore_placed",
-                    RebornConfiguredFeatures.URANIUM_ORE,
-                    RebornOreFeatures.modifiersWithCount(6,
-                            HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
-
-
     public static final RegistryEntry<PlacedFeature> TIN_ORE_PLACED =                                                   //TIN ORES
             PlacedFeatures.register("tin_ore_placed",
                     RebornConfiguredFeatures.TIN_ORE,
@@ -120,16 +113,16 @@ public class RebornPlacedFeatures {
                             HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-48), YOffset.aboveBottom(24))));
 
 
-    public static final RegistryEntry<PlacedFeature> NETHER_URANIUM_ORE_PLACED =                                        //NETHER URANIUM ORES
-            PlacedFeatures.register("nether_uranium_ore_placed",
-                    RebornConfiguredFeatures.NETHER_URANIUM_ORE,
-                    RebornOreFeatures.modifiersWithCount(13,
+    public static final RegistryEntry<PlacedFeature> NETHER_CHROMITE_ORE_PLACED =                                        //NETHER URANIUM ORES
+            PlacedFeatures.register("nether_chromite_ore_placed",
+                    RebornConfiguredFeatures.NETHER_CHROMITE_ORE,
+                    RebornOreFeatures.modifiersWithCount(7,
                             HeightRangePlacementModifier.uniform(YOffset.aboveBottom(10), YOffset.aboveBottom(120))));
 
 
     public static final RegistryEntry<PlacedFeature> END_COBALT_ORE_PLACED =                                            //END COBALT ORES
             PlacedFeatures.register("end_cobalt_ore_placed",
-                    RebornConfiguredFeatures.END_COBALT_ORE, RebornOreFeatures.modifiersWithCount(12,
+                    RebornConfiguredFeatures.END_COBALT_ORE, RebornOreFeatures.modifiersWithCount(10,
                             HeightRangePlacementModifier.uniform(YOffset.aboveBottom(32), YOffset.aboveBottom(70))));
 
 }

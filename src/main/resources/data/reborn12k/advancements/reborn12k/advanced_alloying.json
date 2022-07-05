@@ -1,14 +1,14 @@
 {
-  "parent": "reborn12k:reborn12k/root",
+  "parent": "reborn12k:reborn12k/steelclad_knight",
   "display": {
     "icon": {
-      "item": "alloy_forgery:bricks_forge_controller"
+      "item": "alloy_forgery:deepslate_bricks_forge_controller"
     },
     "title": {
-      "translate": "advancements.reborn12k.basic_alloying.title"
+      "translate": "advancements.reborn12k.advanced_alloying.title"
     },
     "description": {
-      "translate": "advancements.reborn12k.basic_alloying.description"
+      "translate": "advancements.reborn12k.advanced_alloying.description"
     },
     "frame": "task",
     "show_toast": true,
@@ -16,18 +16,6 @@
     "hidden": false
   },
   "criteria": {
-    "get_bricks_forge": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "alloy_forgery:bricks_forge_controller"
-            ]
-          }
-        ]
-      }
-    },
     "get_deepslate_bricks_forge": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -63,27 +51,13 @@
           }
         ]
       }
-    },
-    "get_stone_bricks_forge": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "alloy_forgery:stone_bricks_forge_controller"
-            ]
-          }
-        ]
-      }
     }
   },
   "requirements": [
     [
-      "get_bricks_forge",
       "get_deepslate_bricks_forge",
       "get_end_stone_bricks_forge",
-      "get_polished_blackstone_forge",
-      "get_stone_bricks_forge"
+      "get_polished_blackstone_forge"
     ]
   ]
 }

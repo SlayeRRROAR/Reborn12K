@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "reborn12k:nether_uranium_ore"
-    },
-    "result": "reborn12k:uranium",
-    "experience": 0.4,
-    "cookingtime": 200
-}

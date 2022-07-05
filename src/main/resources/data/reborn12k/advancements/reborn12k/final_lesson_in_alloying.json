@@ -1,28 +1,28 @@
 {
-    "parent": "reborn12k:reborn12k/final_lesson_in_alloying",
+    "parent": "reborn12k:reborn12k/time_for_action",
     "display": {
       "icon": {
-        "item": "reborn12k:thelosite_ingot"
+        "item": "alloy_forgery:end_stone_bricks_forge_controller"
       },
       "title": {
-        "translate": "advancements.reborn12k.alloy_of_the_end.title"
+        "translate": "advancements.reborn12k.final_lesson_in_alloying.title"
       },
       "description": {
-        "translate": "advancements.reborn12k.alloy_of_the_end.description"
+        "translate": "advancements.reborn12k.final_lesson_in_alloying.description"
       },
-      "frame": "goal",
+      "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
     },
     "criteria": {
-      "get_thelosite": {
+      "get_end_stone_bricks_forge": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:thelosite_ingot"
+                "alloy_forgery:end_stone_bricks_forge_controller"
               ]
             }
           ]
@@ -31,7 +31,7 @@
     },
     "requirements": [
       [
-        "get_thelosite"
+        "get_end_stone_bricks_forge"
       ]
     ]
   }

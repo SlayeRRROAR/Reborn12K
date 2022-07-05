@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "item": "reborn12k:deepslate_uranium_ore"
-    },
-    "result": "reborn12k:uranium",
-    "experience": 0.4,
-    "cookingtime": 100
-}
