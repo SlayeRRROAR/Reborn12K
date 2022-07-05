@@ -1,9 +1,9 @@
 {
-    "type": "minecraft:blasting",
+    "type": "minecraft:smelting",
     "ingredient": {
         "item": "reborn12k:nether_chromite_ore"
     },
     "result": "reborn12k:chrome_dust",
     "experience": 0.7,
-    "cookingtime": 100
+    "cookingtime": 200
 }
