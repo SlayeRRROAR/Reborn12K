@@ -22,6 +22,11 @@ repositories {
 		url "https://jitpack.io"
 	}
 
+	maven {
+		name = "TerraformersMC"
+		url = "https://maven.terraformersmc.com/"
+	}
+
 }
 
 dependencies {
@@ -32,6 +37,9 @@ dependencies {
 
 	//Fabric api
 	modImplementation "net.fabricmc.fabric-api:fabric-api:0.57.0+1.19"
+
+	//Modmenu
+	modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
 
 	//Nbtcrafting
 	modImplementation "de.siphalor:nbtcrafting-1.19:2+"
