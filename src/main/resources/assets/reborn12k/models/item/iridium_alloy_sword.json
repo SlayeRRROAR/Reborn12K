@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+      "layer0": "reborn12k:item/iridium_alloy_sword"
+    }
+  }

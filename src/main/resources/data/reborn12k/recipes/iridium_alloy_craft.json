@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:advanced_alloy_ingot"
+        },
+        {
+            "item": "reborn12k:advanced_alloy_ingot"
+        },
+        {
+            "item": "reborn12k:advanced_alloy_ingot"
+        },
+        {
+            "item": "reborn12k:advanced_alloy_ingot"
+        },
+        {
+            "item": "reborn12k:iridium_ingot"
+        },
+        {
+            "item": "reborn12k:iridium_ingot"
+        },
+        {
+            "item": "reborn12k:iridium_ingot"
+        },
+        {
+            "item": "reborn12k:iridium_ingot"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:iridium_alloy_ingot",
+        "count": 1
+    },
+    "group": "iridium_alloy"
+}
