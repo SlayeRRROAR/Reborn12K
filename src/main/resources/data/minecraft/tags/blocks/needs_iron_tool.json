@@ -1,26 +1,22 @@
 {
   "replace": false,
   "values": [
-    "reborn12k:topaz_ore",
-    "reborn12k:opal_ore",
-    "reborn12k:ruby_ore",
-    "reborn12k:sapphire_ore",
-    "reborn12k:deepslate_topaz_ore",
-    "reborn12k:deepslate_opal_ore",
-    "reborn12k:deepslate_ruby_ore",
-    "reborn12k:deepslate_sapphire_ore",
     "reborn12k:silver_ore",
     "reborn12k:deepslate_silver_ore",
     "reborn12k:chromite_ore",
     "reborn12k:deepslate_chromite_ore",
+    "reborn12k:titanium_ore",
+    "reborn12k:deepslate_titanium_ore",
     "reborn12k:nether_chromite_ore",
-    "reborn12k:topaz_block",
-    "reborn12k:opal_block",
-    "reborn12k:ruby_block",
-    "reborn12k:sapphire_block",
+    "reborn12k:nether_aluminum_ore",
     "reborn12k:raw_silver_block",
+    "reborn12k:raw_titanium_block",
+    "reborn12k:raw_aluminum_block",
+    "reborn12k:raw_steel_block",
     "reborn12k:chrome_block",
     "reborn12k:silver_block",
-    "reborn12k:carbon_steel_block"
+    "reborn12k:titanium_block",
+    "reborn12k:aluminum_block",
+    "reborn12k:steel_block"
   ]
 }

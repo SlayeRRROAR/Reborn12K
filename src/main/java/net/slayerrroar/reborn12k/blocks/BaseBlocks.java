@@ -64,25 +64,43 @@ public class BaseBlocks {
     public static final Block SMALL_ANDESITE_BRICKS_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
     public static final Block SMALL_STONE_BRICKS_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f));
 
-    public static final Block TOPAZ_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
-    public static final Block OPAL_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
-    public static final Block RUBY_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
-    public static final Block SAPPHIRE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
-    
-    public static final Block CHROME_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
-    public static final Block COBALT_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(25.0f).resistance(9.0f));
-    
     public static final Block RAW_TIN_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
     public static final Block RAW_SILVER_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
+    public static final Block RAW_TITANIUM_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
+
+    public static final Block RAW_ALUMINUM_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(3.0f).resistance(4.0f));
+
+    public static final Block RAW_COBALT_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(20.0f).resistance(30.0f));
+    public static final Block RAW_IRIDIUM_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(25.0f).resistance(50.0f));
+
     public static final Block RAW_BRONZE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
+
+    public static final Block RAW_ELECTRUM_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(15.0f).resistance(10.0f));
+    public static final Block RAW_STEEL_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(15.0f).resistance(10.0f));
+
+    public static final Block RAW_SIGNALUM_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(50.0f).resistance(1200.0f));
 
     public static final Block TIN_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(3.0f).resistance(6.0f));
     public static final Block SILVER_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(3.0f).resistance(6.0f));
+    public static final Block CHROME_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
+    public static final Block TITANIUM_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
+
+    public static final Block ALUMINUM_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(3.0f).resistance(4.0f));
+
+    public static final Block COBALT_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(20.0f).resistance(30.0f));
+    public static final Block IRIDIUM_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(25.0f).resistance(50.0f));
+
     public static final Block BRONZE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
-    
-    public static final Block CARBON_STEEL_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f));
+
+    public static final Block ELECTRUM_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(15.0f).resistance(10.0f));
+    public static final Block STEEL_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(15.0f).resistance(10.0f));
+
+    public static final Block SIGNALUM_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).hardness(50.0f).resistance(1200.0f));
+    public static final Block ADVANCED_ALLOY_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).hardness(50.0f).resistance(1200.0f));
     public static final Block BLAZING_STEEL_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).hardness(50.0f).resistance(1200.0f));
-    
+
+    public static final Block ENDERIUM_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).hardness(80.0f).resistance(6000.0f));
+    public static final Block IRIDIUM_ALLOY_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).hardness(80.0f).resistance(6000.0f));
     public static final Block THELOSITE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).hardness(80.0f).resistance(6000.0f));
     public static final Block ARCHEOSITE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).hardness(80.0f).resistance(6000.0f));
 
@@ -139,25 +157,44 @@ public class BaseBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "small_andesite_bricks_slab"), SMALL_ANDESITE_BRICKS_SLAB);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "small_stone_bricks_slab"), SMALL_STONE_BRICKS_SLAB);
 
-        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "topaz_block"), TOPAZ_BLOCK);
-        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "opal_block"), OPAL_BLOCK);
-        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "ruby_block"), RUBY_BLOCK);
-        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "sapphire_block"), SAPPHIRE_BLOCK);
-        
-        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "chrome_block"), CHROME_BLOCK);
-        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cobalt_block"), COBALT_BLOCK);
-        
+
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "raw_tin_block"), RAW_TIN_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "raw_silver_block"), RAW_SILVER_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "raw_titanium_block"), RAW_TITANIUM_BLOCK);
+
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "raw_aluminum_block"), RAW_ALUMINUM_BLOCK);
+
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "raw_cobalt_block"), RAW_COBALT_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "raw_iridium_block"), RAW_IRIDIUM_BLOCK);
+
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "raw_bronze_block"), RAW_BRONZE_BLOCK);
+
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "raw_electrum_block"), RAW_ELECTRUM_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "raw_steel_block"), RAW_STEEL_BLOCK);
+
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "raw_signalum_block"), RAW_SIGNALUM_BLOCK);
 
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "tin_block"), TIN_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "silver_block"), SILVER_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "chrome_block"), CHROME_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "titanium_block"), TITANIUM_BLOCK);
+
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "aluminum_block"), ALUMINUM_BLOCK);
+
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "cobalt_block"), COBALT_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "iridium_block"), IRIDIUM_BLOCK);
+
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "bronze_block"), BRONZE_BLOCK);
-        
-        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "carbon_steel_block"), CARBON_STEEL_BLOCK);
+
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "electrum_block"), ELECTRUM_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "advanced_alloy_block"), ADVANCED_ALLOY_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "steel_block"), STEEL_BLOCK);
+
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "signalum_block"), SIGNALUM_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "blazing_steel_block"), BLAZING_STEEL_BLOCK);
 
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "enderium_block"), ENDERIUM_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "iridium_alloy_block"), IRIDIUM_ALLOY_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "archeosite_block"), ARCHEOSITE_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Reborn12K.MOD_ID, "thelosite_block"), THELOSITE_BLOCK);
 
@@ -213,25 +250,44 @@ public class BaseBlocks {
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "small_andesite_bricks_slab"), new BlockItem(SMALL_ANDESITE_BRICKS_SLAB, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "small_stone_bricks_slab"), new BlockItem(SMALL_STONE_BRICKS_SLAB, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
 
-        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "topaz_block"), new BlockItem(TOPAZ_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
-        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "opal_block"), new BlockItem(OPAL_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
-        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "ruby_block"), new BlockItem(RUBY_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
-        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "sapphire_block"), new BlockItem(SAPPHIRE_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
-        
-        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "chrome_block"), new BlockItem(CHROME_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
-        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cobalt_block"), new BlockItem(COBALT_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
-        
+
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_tin_block"), new BlockItem(RAW_TIN_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_silver_block"), new BlockItem(RAW_SILVER_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_titanium_block"), new BlockItem(RAW_TITANIUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_aluminum_block"), new BlockItem(RAW_ALUMINUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_cobalt_block"), new BlockItem(RAW_COBALT_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_iridium_block"), new BlockItem(RAW_IRIDIUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_bronze_block"), new BlockItem(RAW_BRONZE_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_electrum_block"), new BlockItem(RAW_ELECTRUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_steel_block"), new BlockItem(RAW_STEEL_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "raw_signalum_block"), new BlockItem(RAW_SIGNALUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
 
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "tin_block"), new BlockItem(TIN_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "silver_block"), new BlockItem(SILVER_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "chrome_block"), new BlockItem(CHROME_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "titanium_block"), new BlockItem(TITANIUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "aluminum_block"), new BlockItem(ALUMINUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "cobalt_block"), new BlockItem(COBALT_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "iridium_block"), new BlockItem(IRIDIUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "bronze_block"), new BlockItem(BRONZE_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "electrum_block"), new BlockItem(ELECTRUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "steel_block"), new BlockItem(STEEL_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         
-        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "carbon_steel_block"), new BlockItem(CARBON_STEEL_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "signalum_block"), new BlockItem(SIGNALUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "advanced_alloy_block"), new BlockItem(ADVANCED_ALLOY_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "blazing_steel_block"), new BlockItem(BLAZING_STEEL_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
-        
+
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "enderium_block"), new BlockItem(ENDERIUM_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
+        Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "iridium_alloy_block"), new BlockItem(IRIDIUM_ALLOY_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "archeosite_block"), new BlockItem(ARCHEOSITE_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
         Registry.register(Registry.ITEM, new Identifier(Reborn12K.MOD_ID, "thelosite_block"), new BlockItem(THELOSITE_BLOCK, new FabricItemSettings().group(Reborn12KItemGroup.REBORN12K)));
 

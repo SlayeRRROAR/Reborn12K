@@ -11,39 +11,6 @@ public class RebornOreGen {
     public static void generateOres() {
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.TOPAZ_ORE_SMALL_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.TOPAZ_ORE_LARGE_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.OPAL_ORE_SMALL_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.OPAL_ORE_LARGE_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.RUBY_ORE_SMALL_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.RUBY_ORE_LARGE_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.SAPPHIRE_ORE_SMALL_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.SAPPHIRE_ORE_LARGE_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.MANATITE_ORE_SMALL_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.MANATITE_ORE_LARGE_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.E115_ORE_PLACED.getKey().get());
-
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.TIN_ORE_PLACED.getKey().get());
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
@@ -52,11 +19,20 @@ public class RebornOreGen {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.SILVER_ORE_PLACED.getKey().get());
 
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.TITANIUM_ORE_PLACED.getKey().get());
+
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
                 GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.NETHER_CHROMITE_ORE_PLACED.getKey().get());
 
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
+                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.NETHER_ALUMINUM_ORE_PLACED.getKey().get());
+
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
                 GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.END_COBALT_ORE_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
+                GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.END_IRIDIUM_ORE_PLACED.getKey().get());
 
     }
 }

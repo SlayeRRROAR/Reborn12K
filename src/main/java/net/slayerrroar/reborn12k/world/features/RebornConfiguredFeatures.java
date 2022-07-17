@@ -61,97 +61,13 @@ public class RebornConfiguredFeatures {
                             SLIMY_CHECKED));
 
 
-    public static final List<OreFeatureConfig.Target> OVERWORLD_TOPAZ_ORES = List.of(                                   //TOPAZ ORES
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
-                    OreBlocks.TOPAZ_ORE.getDefaultState()),
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
-                    OreBlocks.DEEPSLATE_TOPAZ_ORE.getDefaultState()));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> TOPAZ_ORE_SMALL =
-            ConfiguredFeatures.register("topaz_ore_small",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_TOPAZ_ORES, 8, 0.3f));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> TOPAZ_ORE_LARGE =
-            ConfiguredFeatures.register("topaz_ore_large",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_TOPAZ_ORES, 12, 0.5f));
-
-
-    public static final List<OreFeatureConfig.Target> OVERWORLD_OPAL_ORES = List.of(                                    //OPAL ORES
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
-                    OreBlocks.OPAL_ORE.getDefaultState()),
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
-                    OreBlocks.DEEPSLATE_OPAL_ORE.getDefaultState()));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> OPAL_ORE_SMALL =
-            ConfiguredFeatures.register("opal_ore_small",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_OPAL_ORES, 8, 0.3f));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> OPAL_ORE_LARGE =
-            ConfiguredFeatures.register("opal_ore_large",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_OPAL_ORES, 12, 0.5f));
-
-
-    public static final List<OreFeatureConfig.Target> OVERWORLD_RUBY_ORES = List.of(                                    //RUBY ORES
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
-                    OreBlocks.RUBY_ORE.getDefaultState()),
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
-                    OreBlocks.DEEPSLATE_RUBY_ORE.getDefaultState()));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> RUBY_ORE_SMALL =
-            ConfiguredFeatures.register("ruby_ore_small",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_RUBY_ORES, 8, 0.3f));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> RUBY_ORE_LARGE =
-            ConfiguredFeatures.register("ruby_ore_large",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_RUBY_ORES, 12, 0.5f));
-
-
-    public static final List<OreFeatureConfig.Target> OVERWORLD_SAPPHIRE_ORES = List.of(                                //SAPPHIRE ORES
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
-                    OreBlocks.SAPPHIRE_ORE.getDefaultState()),
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
-                    OreBlocks.DEEPSLATE_SAPPHIRE_ORE.getDefaultState()));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> SAPPHIRE_ORE_SMALL =
-            ConfiguredFeatures.register("sapphire_ore_small",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_SAPPHIRE_ORES, 8, 0.3f));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> SAPPHIRE_ORE_LARGE =
-            ConfiguredFeatures.register("sapphire_ore_large",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_SAPPHIRE_ORES, 12, 0.5f));
-
-
-    public static final List<OreFeatureConfig.Target> OVERWORLD_MANATITE_ORES = List.of(                                //MANATITE ORES
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
-                    OreBlocks.MANATITE_ORE.getDefaultState()),
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
-                    OreBlocks.DEEPSLATE_MANATITE_ORE.getDefaultState()));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> MANATITE_ORE_SMALL =
-            ConfiguredFeatures.register("manatite_ore_small",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_MANATITE_ORES, 8, 0.5f));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> MANATITE_ORE_LARGE =
-            ConfiguredFeatures.register("manatite_ore_large",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_MANATITE_ORES, 12, 0.7f));
-
-
-    public static final List<OreFeatureConfig.Target> OVERWORLD_E115_ORES = List.of(                                    //E115 ORE
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
-                    OreBlocks.DEEPSLATE_ELEMENT_115_ORE.getDefaultState()));
-
-    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> E115_ORE =
-            ConfiguredFeatures.register("e115_ore",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_E115_ORES, 8, 0.7f));
-
-
     public static final List<OreFeatureConfig.Target> OVERWORLD_TIN_ORES = List.of(                                     //TIN ORES
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     OreBlocks.TIN_ORE.getDefaultState()));
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> TIN_ORE =
             ConfiguredFeatures.register("tin_ore",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_TIN_ORES, 8));
+                    new OreFeatureConfig(OVERWORLD_TIN_ORES, 9));
 
 
     public static final List<OreFeatureConfig.Target> OVERWORLD_CHROMITE_ORES = List.of(                                //CHROMITE ORES
@@ -173,16 +89,36 @@ public class RebornConfiguredFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> SILVER_ORE =
             ConfiguredFeatures.register("silver_ore",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_SILVER_ORES, 8));
+                    new OreFeatureConfig(OVERWORLD_SILVER_ORES, 9));
 
 
-    public static final List<OreFeatureConfig.Target> NETHER_CHROMITE_ORES = List.of(                                    //NETHER URANIUM ORES
+    public static final List<OreFeatureConfig.Target> OVERWORLD_TITANIUM_ORES = List.of(                                //TITANIUM ORES
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    OreBlocks.TITANIUM_ORE.getDefaultState()),
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
+                    OreBlocks.DEEPSLATE_TITANIUM_ORE.getDefaultState()));
+
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> TITANIUM_ORE =
+            ConfiguredFeatures.register("titanium_ore",Feature.ORE,
+                    new OreFeatureConfig(OVERWORLD_TITANIUM_ORES, 9));
+
+
+    public static final List<OreFeatureConfig.Target> NETHER_CHROMITE_ORES = List.of(                                    //NETHER CHROMITE ORES
             OreFeatureConfig.createTarget(OreConfiguredFeatures.NETHERRACK,
                     OreBlocks.NETHER_CHROMITE_ORE.getDefaultState()));
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_CHROMITE_ORE =
             ConfiguredFeatures.register("nether_chromite_ore",Feature.ORE,
-                    new OreFeatureConfig(NETHER_CHROMITE_ORES, 7));
+                    new OreFeatureConfig(NETHER_CHROMITE_ORES, 11));
+
+
+    public static final List<OreFeatureConfig.Target> NETHER_ALUMINUM_ORES = List.of(                                    //NETHER ALUMINUM ORES
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.NETHERRACK,
+                    OreBlocks.NETHER_ALUMINUM_ORE.getDefaultState()));
+
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_ALUMINUM_ORE =
+            ConfiguredFeatures.register("nether_aluminum_ore",Feature.ORE,
+                    new OreFeatureConfig(NETHER_ALUMINUM_ORES, 9));
 
 
     public static final List<OreFeatureConfig.Target> END_COBALT_ORES = List.of(                                        //END COBALT ORES
@@ -191,7 +127,16 @@ public class RebornConfiguredFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> END_COBALT_ORE =
             ConfiguredFeatures.register("end_cobalt_ore",Feature.ORE,
-                    new OreFeatureConfig(END_COBALT_ORES, 8));
+                    new OreFeatureConfig(END_COBALT_ORES, 9));
+
+
+    public static final List<OreFeatureConfig.Target> END_IRIDIUM_ORES = List.of(                                        //END COBALT ORES
+            OreFeatureConfig.createTarget(RebornConfiguredFeatures.ENDSTONE,
+                    OreBlocks.END_IRIDIUM_ORE.getDefaultState()));
+
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> END_IRIDIUM_ORE =
+            ConfiguredFeatures.register("end_iridium_ore",Feature.ORE,
+                    new OreFeatureConfig(END_IRIDIUM_ORES, 4));
 
 
     public static void register() {
