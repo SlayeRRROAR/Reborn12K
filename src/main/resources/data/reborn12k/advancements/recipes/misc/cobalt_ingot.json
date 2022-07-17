@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:cobalt"
+        "reborn12k:cobalt_ingot"
       ]
     },
     "criteria": {
@@ -21,7 +21,7 @@
       "has_the_recipe": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "reborn12k:cobalt"
+          "recipe": "reborn12k:cobalt_ingot"
         }
       }
     },
