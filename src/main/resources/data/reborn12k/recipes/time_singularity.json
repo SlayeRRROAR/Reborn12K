@@ -7,7 +7,7 @@
     ],
     "key": {
         "A": {
-            "tag": "c:cobalt_ingots"
+            "item": "reborn12k:cobalt_ingot"
         },
         "B": {
             "item": "minecraft:clock"
