@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:raw_aluminum_block"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_aluminum",
+        "count": 9
+    },
+    "group": "raw_aluminum"
+}
