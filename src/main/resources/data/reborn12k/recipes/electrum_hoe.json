@@ -1,20 +1,20 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "A",
-        "A",
-        "B"
+        "AA",
+        " B",
+        " B"
     ],
     "key": {
         "A": {
-            "tag": "c:steel_ingots"
+            "item": "reborn12k:electrum_ingot"
         },
         "B": {
             "item": "minecraft:stick"
         }
     },
     "result": {
-        "item": "reborn12k:carbon_steel_sword",
+        "item": "reborn12k:electrum_hoe",
         "count": 1
     }
 }

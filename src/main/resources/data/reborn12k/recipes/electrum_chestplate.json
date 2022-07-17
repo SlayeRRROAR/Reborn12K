@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A A",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:electrum_ingot"
+        }
+    },
+    "result": {
+        "item": "reborn12k:electrum_chestplate",
+        "count": 1
+    }
+}

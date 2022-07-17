@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "AAA",
-        "A A",
-        "A A"
+        "AAA",
+        "AAA"
     ],
     "key": {
         "A": {
-            "item": "reborn12k:manaweave"
+            "item": "reborn12k:electrum_ingot"
         }
     },
     "result": {
-        "item": "reborn12k:mage_leggings",
+        "item": "reborn12k:electrum_block",
         "count": 1
     }
 }

@@ -7,7 +7,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.slayerrroar.reborn12k.items.BaseItems;
 
-public class CarbonSteelArmor implements ArmorMaterial {
+public class ElectrumArmor implements ArmorMaterial {
 
 	private static final int[] BASE_DURABILITY = new int[] {13, 15, 16, 11};
 	private static final int[] PROTECTION_VALUES = new int[] {3, 6, 8, 3};
@@ -25,7 +25,7 @@ public class CarbonSteelArmor implements ArmorMaterial {
     }
     @Override
     public int getEnchantability() {
-        return 9;
+        return 17;
     }
     @Override
     public SoundEvent getEquipSound() {
@@ -33,15 +33,15 @@ public class CarbonSteelArmor implements ArmorMaterial {
     }
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.CARBON_STEEL_INGOT);
+        return Ingredient.ofItems(BaseItems.ELECTRUM_INGOT);
     }
     @Override
     public String getName() {
-        return "carbon_steel";
+        return "electrum";
     }
     @Override
     public float getToughness() {
-        return 3;
+        return 2;
     }
     @Override
     public float getKnockbackResistance() {
