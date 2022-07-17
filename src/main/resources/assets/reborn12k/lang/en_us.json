@@ -1,51 +1,42 @@
 {
 
-    "item.reborn12k.topaz": "Topaz",
-    "item.reborn12k.opal": "Opal",
-    "item.reborn12k.ruby": "Ruby",
-    "item.reborn12k.sapphire": "Sapphire",
-
-    "item.reborn12k.manatite": "Manatite",
-    "item.reborn12k.refined_manatite": "Refined Manatite",
-
-    "item.reborn12k.element_115": "Element 115",
-
-    "item.reborn12k.windstorm_manatite": "Windstorm Manatite",
-    "item.reborn12k.viridian_manatite": "Viridian Manatite",
-    "item.reborn12k.abyss_manatite": "Abyss Manatite",
-    "item.reborn12k.volcanic_manatite": "Volcanic Manatite",
-    "item.reborn12k.sunlight_manatite": "Sunlight Manatite",
-    "item.reborn12k.novilunium_manatite": "Novilunium Manatite",
-    "item.reborn12k.crimson_manatite": "Crimson Manatite",
-
-    "item.reborn12k.magic_mirror": "Magic Mirror",
-    "item.reborn12k.ice_mirror": "Ice Mirror",
-    "item.reborn12k.cell_phone": "Cell Phone",
-
-    "item.reborn12k.magnet": "Magnet",
-
-    "item.reborn12k.yggdrasill_branch": "Yggdrasill's Branch",
-
-    "item.reborn12k.chrome_dust": "Chrome Dust",
-    "item.reborn12k.cobalt": "Cobalt",
-
-    "item.reborn12k.raw_tin": "Raw Tin",
-    "item.reborn12k.raw_silver": "Raw Silver",
-    "item.reborn12k.raw_bronze": "Raw Bronze",
-
     "item.reborn12k.tin_ingot": "Tin Ingot",
+    "item.reborn12k.chrome_dust": "Chrome Dust",
     "item.reborn12k.silver_ingot": "Silver Ingot",
+    "item.reborn12k.titanium_ingot": "Titanium Ingot",
+
+    "item.reborn12k.aluminum_ingot": "Aluminum Ingot",
+
+    "item.reborn12k.cobalt_ingot": "Cobalt Ingot",
+    "item.reborn12k.iridium_ingot": "Iridium Ingot",
+
     "item.reborn12k.bronze_ingot": "Bronze Ingot",
-    "item.reborn12k.carbon_steel_ingot": "Carbon Steel Ingot",
+    "item.reborn12k.electrum_ingot": "Electrum Ingot",
+    "item.reborn12k.steel_ingot": "Steel Ingot",
+    "item.reborn12k.advanced_alloy_ingot": "Advanced Alloy Ingot",
     "item.reborn12k.blazing_steel_ingot": "Blazing Steel Ingot",
+    "item.reborn12k.signalum_ingot": "Signalum Ingot",
+    "item.reborn12k.iridium_alloy_ingot": "Iridium Alloy Ingot",
+    "item.reborn12k.enderium_ingot": "Enderium Ingot",
     "item.reborn12k.thelosite_ingot": "Thelosite Ingot",
     "item.reborn12k.archeosite_ingot": "Archeosite Ingot",
 
-    "item.reborn12k.devil_bringer": "Devil Bringer",
+    "item.reborn12k.raw_tin": "Raw Tin",
+    "item.reborn12k.raw_silver": "Raw Silver",
+    "item.reborn12k.raw_titanium": "Raw Titanium",
 
-    "item.reborn12k.withered_star": "Withered Star",
+    "item.reborn12k.raw_aluminum": "Raw Aluminum",
 
-    
+    "item.reborn12k.raw_cobalt": "Raw Cobalt",
+    "item.reborn12k.raw_iridium": "Raw Iridium",
+
+    "item.reborn12k.raw_bronze": "Raw Bronze",
+    "item.reborn12k.raw_steel": "Raw Steel",
+    "item.reborn12k.raw_electrum": "Raw Electrum",
+
+    "item.reborn12k.raw_signalum": "Raw Signalum",
+
+
     "item.reborn12k.banana": "Banana",
     "item.reborn12k.golden_banana": "Golden Banana",
     "item.reborn12k.enchanted_golden_banana": "Enchanted Golden Banana",
@@ -54,96 +45,24 @@
     "item.reborn12k.golden_cherry": "Golden Cherry",
     "item.reborn12k.enchanted_golden_cherry": "Enchanted Golden Cherry",
 
-    "item.reborn12k.z115": "115",
-    "item.reborn12k.z115.desc": "Elena Siegman - 115",
-
-    "item.reborn12k.devil_trigger_disc": "Devil Trigger",
-    "item.reborn12k.devil_trigger_disc.desc": "Casey Edwards - Devil Trigger",
-
-    "item.reborn12k.windstorm.tooltip": "Hastens everyone around you",
-    "item.reborn12k.viridian.tooltip": "Strenghtens everyone around you",
-    "item.reborn12k.abyss.tooltip": "Slows down mobs around you",
-    "item.reborn12k.volcanic.tooltip": "Sets mobs around you on fire",
-    "item.reborn12k.sunlight.tooltip": "Heals everything around you",
-    "item.reborn12k.novilunium.tooltip": "Reveals mobs around you",
-    "item.reborn12k.crimson.tooltip": "Unleashes a powerful explosion",
-
-    "item.reborn12k.philosopher_stone.tooltip": "Equivalent Exchange (c)",
-
-    "item.reborn12k.windstorm_manatite.tooltip": "When gazing into it you",
-    "item.reborn12k.windstorm_manatite2.tooltip": "can hear someone whispering",
-    "item.reborn12k.viridian_manatite.tooltip": "When gazing into it you",
-    "item.reborn12k.viridian_manatite2.tooltip": "feel one with nature",
-    "item.reborn12k.abyss_manatite.tooltip": "When gazing into it you",
-    "item.reborn12k.abyss_manatite2.tooltip": "feel an eerie cold",
-    "item.reborn12k.volcanic_manatite.tooltip": "When gazing into it you",
-    "item.reborn12k.volcanic_manatite2.tooltip": "feel a comfortable heat",
-    "item.reborn12k.sunlight_manatite.tooltip": "When gazing into it you",
-    "item.reborn12k.sunlight_manatite2.tooltip": "feel invigorated",
-    "item.reborn12k.novilunium_manatite.tooltip": "When gazing into it you",
-    "item.reborn12k.novilunium_manatite2.tooltip": "feel out of reality",
-    "item.reborn12k.crimson_manatite.tooltip": "When gazing into it you",
-    "item.reborn12k.crimson_manatite2.tooltip": "feel invincible",
-
-    "item.reborn12k.magic_mirror.tooltip1": "§bTeleported to your last respawn",
-    "item.reborn12k.magic_mirror.tooltip2": "§6You haven't set a respawn point",
-    "item.reborn12k.magic_mirror.tooltip3": "§cThe mirror only works in the Overworld",
-    "item.reborn12k.magic_mirror.tooltip4": "§cThe mirror is too damaged to work",
-
-    "item.reborn12k.magnet.tooltip1": "The magnet is §cINACTIVE",
-    "item.reborn12k.magnet.tooltip2": "The magnet is §1ACTIVE",
-
-    "item.reborn12k.yggdrasill_branch.tooltip1": "The Yggdrasill's Branch is §2INACTIVE",
-    "item.reborn12k.yggdrasill_branch.tooltip2": "The Yggdrasill's Branch is §aACTIVE",
-
-
-    "item.reborn12k.runic_snare.tooltip1": "Throw to a mob to",
-    "item.reborn12k.runic_snare.tooltip2": "inflict Frail Soul",
-
-    "item.reborn12k.dagger.tooltip1": "Use on Frail mobs to",
-    "item.reborn12k.dagger.tooltip2": "extract their soul",
-
-    "item.reborn12k.doll.tooltip1": "Crafts into materia",
-    "item.reborn12k.doll.tooltip2": "§cConsumes slowly",
-
-    "item.reborn12k.materia.tooltip1": "Can be consumed for experience or",
-    "item.reborn12k.materia.tooltip2": "processed (stonecutter) for resources",
-    "item.reborn12k.materia.tooltip3": "§cSneak to consume the whole stack",
-
-    "item.reborn12k.red_queen.tooltip1": "Exceed is §cOFF",
-    "item.reborn12k.red_queen.tooltip2": "Exceed is §1ON",
-    "item.reborn12k.red_queen.tooltip3": "§1Exceed is charged!",
-    "item.reborn12k.red_queen.tooltip4": "§cNot quite there yet!",
-    "item.reborn12k.red_queen.tooltip5": "Exceed is already charged!",
-
 
     "block.reborn12k.market_table": "Market Table",
     "block.reborn12k.fancy_lamp": "Fancy Lamp",
 
-
-    "block.reborn12k.topaz_ore": "Topaz Ore",
-    "block.reborn12k.opal_ore": "Opal Ore",
-    "block.reborn12k.ruby_ore": "Ruby Ore",
-    "block.reborn12k.sapphire_ore": "Sapphire Ore",
-    "block.reborn12k.deepslate_topaz_ore": "Deepslate Topaz Ore",
-    "block.reborn12k.deepslate_opal_ore": "Deepslate Opal Ore",
-    "block.reborn12k.deepslate_ruby_ore": "Deepslate Ruby Ore",
-    "block.reborn12k.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
-
-    "block.reborn12k.manatite_ore": "Manatite Ore",
-    "block.reborn12k.deepslate_manatite_ore": "Deepslate Manatite Ore",
-
-    "block.reborn12k.deepslate_element_115_ore": "Deepslate Element 115 Ore",
-
-    "block.reborn12k.chromite_ore": "Chromite Ore",
-    "block.reborn12k.deepslate_chromite_ore": "Deepslate Chromite Ore",
-    "block.reborn12k.nether_chromite_ore": "Nether Chromite Ore",
-
-    "block.reborn12k.end_cobalt_ore": "End Cobalt Ore",
-
     "block.reborn12k.tin_ore": "Tin Ore",
     "block.reborn12k.silver_ore": "Silver Ore",
     "block.reborn12k.deepslate_silver_ore": "Deepslate Silver Ore",
+    "block.reborn12k.chromite_ore": "Chromite Ore",
+    "block.reborn12k.deepslate_chromite_ore": "Deepslate Chromite Ore",
+    "block.reborn12k.titanium_ore": "Titanium Ore",
+    "block.reborn12k.deepslate_titanium_ore": "Deepslate Titanium Ore",
+
+    "block.reborn12k.nether_chromite_ore": "Nether Chromite Ore",
+    "block.reborn12k.nether_aluminum_ore": "Nether Aluminum Ore",
+
+    "block.reborn12k.end_cobalt_ore": "End Cobalt Ore",
+    "block.reborn12k.end_iridium_ore": "End Iridium Ore",
+
 
     "block.reborn12k.cherry_log": "Cherry Log",
     "block.reborn12k.cherry_wood": "Cherry Wood",
@@ -193,127 +112,45 @@
     "block.reborn12k.small_stone_bricks_slab": "Small Stone Bricks Slab",
 
 
-    "block.reborn12k.topaz_block": "Block of Topaz",
-    "block.reborn12k.opal_block": "Block of Opal",
-    "block.reborn12k.ruby_block": "Block of Ruby",
-    "block.reborn12k.sapphire_block": "Block of Sapphire",
-
-    "block.reborn12k.chrome_block": "Block of Chrome",
-    "block.reborn12k.cobalt_block": "Block of Cobalt",
-
     "block.reborn12k.raw_tin_block": "Block of Raw Tin",
     "block.reborn12k.raw_silver_block": "Block of Raw Silver",
+    "block.reborn12k.raw_titanium_block": "Block of Raw Titanium",
+
+    "block.reborn12k.raw_aluminum_block": "Block of Raw Aluminum",
+
+    "block.reborn12k.raw_cobalt_block": "Block of Raw Cobalt",
+    "block.reborn12k.raw_iridium_block": "Block of Raw Iridium",
+
     "block.reborn12k.raw_bronze_block": "Block of Raw Bronze",
+    "block.reborn12k.raw_electrum_block": "Block of Raw Electrum",
+    "block.reborn12k.raw_steel_block": "Block of Raw Steel",
+
+    "block.reborn12k.raw_signalum_block": "Block of Raw Signalum",
 
     "block.reborn12k.tin_block": "Block of Tin",
     "block.reborn12k.silver_block": "Block of Silver",
+    "block.reborn12k.chrome_block": "Block of Chrome",
+    "block.reborn12k.titanium_block": "Block of Titanium",
+
+    "block.reborn12k.aluminum_block": "Block of Aluminum",
+
+    "block.reborn12k.cobalt_block": "Block of Cobalt",
+    "block.reborn12k.iridium_block": "Block of Iridium",
+
     "block.reborn12k.bronze_block": "Block of Bronze",
-    "block.reborn12k.carbon_steel_block": "Block of Carbon Steel",
+    "block.reborn12k.steel_block": "Block of Steel",
+    "block.reborn12k.electrum_block": "Block of Electrum",
+    "block.reborn12k.advanced_alloy_block": "Block of Advanced Alloy",
     "block.reborn12k.blazing_steel_block": "Block of Blazing Steel",
+    "block.reborn12k.signalum_block": "Block of Signalum",
+
+    "block.reborn12k.enderium_block": "Block of Enderium",
+    "block.reborn12k.iridium_alloy_block": "Block of Iridium Alloy",
     "block.reborn12k.thelosite_block": "Block of Thelosite",
     "block.reborn12k.archeosite_block": "Block of Archeosite",
 
 
-    "item.reborn12k.wooden_wand": "Wooden Wand",
-    "item.reborn12k.silver_scepter": "Silver Scepter",
-    "item.reborn12k.golden_rod": "Golden Rod",
-    "item.reborn12k.magical_wood_staff": "Magical Wood Staff",
-
-    "item.reborn12k.windstorm_wand": "Windstorm Wand",
-    "item.reborn12k.windstorm_scepter": "Windstorm Scepter",
-    "item.reborn12k.windstorm_rod": "Windstorm Rod",
-    "item.reborn12k.windstorm_staff": "Windstorm Staff",
-
-    "item.reborn12k.viridian_wand": "Viridian Wand",
-    "item.reborn12k.viridian_scepter": "Viridian Scepter",
-    "item.reborn12k.viridian_rod": "Viridian Rod",
-    "item.reborn12k.viridian_staff": "Viridian Staff",
-
-    "item.reborn12k.abyss_wand": "Abyss Wand",
-    "item.reborn12k.abyss_scepter": "Abyss Scepter",
-    "item.reborn12k.abyss_rod": "Abyss Rod",
-    "item.reborn12k.abyss_staff": "Abyss Staff",
-
-    "item.reborn12k.volcanic_wand": "Volcanic Wand",
-    "item.reborn12k.volcanic_scepter": "Volcanic Scepter",
-    "item.reborn12k.volcanic_rod": "Volcanic Rod",
-    "item.reborn12k.volcanic_staff": "Volcanic Staff",
-
-    "item.reborn12k.sunlight_wand": "Sunlight Wand",
-    "item.reborn12k.sunlight_scepter": "Sunlight Scepter",
-    "item.reborn12k.sunlight_rod": "Sunlight Rod",
-    "item.reborn12k.sunlight_staff": "Sunlight Staff",
-
-    "item.reborn12k.novilunium_wand": "Novilunium Wand",
-    "item.reborn12k.novilunium_scepter": "Novilunium Scepter",
-    "item.reborn12k.novilunium_rod": "Novilunium Rod",
-    "item.reborn12k.novilunium_staff": "Novilunium Staff",
-
-    "item.reborn12k.crimson_wand": "Crimson Wand",
-    "item.reborn12k.crimson_scepter": "Crimson Scepter",
-    "item.reborn12k.crimson_rod": "Crimson Rod",
-    "item.reborn12k.crimson_staff": "Crimson Staff",
-
-
-    "item.reborn12k.yamato_blade": "Yamato Blade",
-    "item.reborn12k.katana_tsuba": "Katana Tsuba",
-    "item.reborn12k.katana_tsuka": "Katana Tsuka",
-
-    "item.reborn12k.queen_blade": "Queen Blade",
-    "item.reborn12k.red_engine": "Red Engine",
-
-    "item.reborn12k.cryptoblade": "Cryptoblade",
-    "item.reborn12k.cryptoblade_piece": "Cryptoblade Piece",
-    "item.reborn12k.casing_mk237": "Casing Mk.237",
-
-    "item.reborn12k.auramite_plate": "Auramite Plate",
-
     "item.reborn12k.time_singularity": "Time Singularity",
-
-    "item.reborn12k.manaweave": "Manaweave",
-
-    "item.reborn12k.blank_rune": "Blank Rune",
-    "item.reborn12k.rune_of_air": "Rune of Air",
-    "item.reborn12k.rune_of_earth": "Rune of Earth",
-    "item.reborn12k.rune_of_water": "Rune of Water",
-    "item.reborn12k.rune_of_fire": "Rune of Fire",
-    "item.reborn12k.rune_of_light": "Rune of the Morning Sun",
-    "item.reborn12k.rune_of_dark": "Rune of the New Moon",
-    "item.reborn12k.rune_of_strength": "Rune of Strength",
-
-    "item.reborn12k.runic_snare": "Runic Snare",
-
-    "item.reborn12k.weak_philosopher_stone": "Weak Philosopher's Stone",
-    "item.reborn12k.advanced_philosopher_stone": "Advanced Philosopher's Stone",
-    "item.reborn12k.master_philosopher_stone": "Master Philosopher's Stone",
-
-
-    "item.reborn12k.blank_doll": "Blank Doll",
-    "item.reborn12k.blessed_doll": "Blessed Doll",
-    "item.reborn12k.cursed_doll": "Cursed Doll",
-    "item.reborn12k.cursed_nether_doll": "Cursed Nether Doll",
-    "item.reborn12k.cursed_ender_doll": "Cursed Ender Doll",
-    "item.reborn12k.withered_doll": "Withered Doll",
-    "item.reborn12k.draconic_doll": "Draconic Doll",
-
-
-    "item.reborn12k.blessed_materia": "Blessed Materia",
-    "item.reborn12k.cursed_materia": "Cursed Materia",
-    "item.reborn12k.cursed_nether_materia": "Cursed Nether Materia",
-    "item.reborn12k.cursed_end_materia": "Cursed End Materia",
-    "item.reborn12k.withered_materia": "Withered Materia",
-    "item.reborn12k.draconic_materia": "Draconic Materia",
-
-
-    "item.reborn12k.golden_ring": "Golden Ring",
-    "item.reborn12k.awakened_golden_ring": "Awakened Golden Ring",
-    "item.reborn12k.ring_of_air": "§bRing of Zephyr",
-    "item.reborn12k.ring_of_earth": "§2Ring of Gaia",
-    "item.reborn12k.ring_of_water": "§1Ring of Poseidon",
-    "item.reborn12k.ring_of_fire": "§cRing of Hephaestus",
-    "item.reborn12k.ring_of_light": "§6Ring of Apollo",
-    "item.reborn12k.ring_of_dark": "§5Ring of Artemis",
-    "item.reborn12k.ring_of_strength": "§4Ring of Mars Ultor",
 
 
     "item.reborn12k.bronze_helmet": "Bronze Helmet",
@@ -327,16 +164,38 @@
     "item.reborn12k.bronze_axe": "Bronze Axe",
     "item.reborn12k.bronze_hoe": "Bronze Hoe",
 
-    "item.reborn12k.carbon_steel_helmet": "Carbon Steel Helmet",
-    "item.reborn12k.carbon_steel_chestplate": "Carbon Steel Chestplate",
-    "item.reborn12k.carbon_steel_leggings": "Carbon Steel Leggings",
-    "item.reborn12k.carbon_steel_boots": "Carbon Steel Boots",
+    "item.reborn12k.titanium_helmet": "Titanium Helmet",
+    "item.reborn12k.titanium_chestplate": "Titanium Chestplate",
+    "item.reborn12k.titanium_leggings": "Titanium Leggings",
+    "item.reborn12k.titanium_boots": "Titanium Boots",
+
+    "item.reborn12k.titanium_sword": "Titanium Sword",
+    "item.reborn12k.titanium_shovel": "Titanium Shovel",
+    "item.reborn12k.titanium_pickaxe": "Titanium Pickaxe",
+    "item.reborn12k.titanium_axe": "Titanium Axe",
+    "item.reborn12k.titanium_hoe": "Titanium Hoe",
+
+    "item.reborn12k.steel_helmet": "Steel Helmet",
+    "item.reborn12k.steel_chestplate": "Steel Chestplate",
+    "item.reborn12k.steel_leggings": "Steel Leggings",
+    "item.reborn12k.steel_boots": "Steel Boots",
     
-    "item.reborn12k.carbon_steel_sword": "Carbon Steel Sword",
-    "item.reborn12k.carbon_steel_shovel": "Carbon Steel Shovel",
-    "item.reborn12k.carbon_steel_pickaxe": "Carbon Steel Pickaxe",
-    "item.reborn12k.carbon_steel_axe": "Carbon Steel Axe",
-    "item.reborn12k.carbon_steel_hoe": "Carbon Steel Hoe",
+    "item.reborn12k.steel_sword": "Steel Sword",
+    "item.reborn12k.steel_shovel": "Steel Shovel",
+    "item.reborn12k.steel_pickaxe": "Steel Pickaxe",
+    "item.reborn12k.steel_axe": "Steel Axe",
+    "item.reborn12k.steel_hoe": "Steel Hoe",
+
+    "item.reborn12k.electrum_helmet": "Electrum Helmet",
+    "item.reborn12k.electrum_chestplate": "Electrum Chestplate",
+    "item.reborn12k.electrum_leggings": "Electrum Leggings",
+    "item.reborn12k.electrum_boots": "Electrum Boots",
+
+    "item.reborn12k.electrum_sword": "Electrum Sword",
+    "item.reborn12k.electrum_shovel": "Electrum Shovel",
+    "item.reborn12k.electrum_pickaxe": "Electrum Pickaxe",
+    "item.reborn12k.electrum_axe": "Electrum Axe",
+    "item.reborn12k.electrum_hoe": "Electrum Hoe",
 
     "item.reborn12k.blazing_steel_helmet": "Blazing Steel Helmet",
     "item.reborn12k.blazing_steel_chestplate": "Blazing Steel Chestplate",
@@ -349,16 +208,49 @@
     "item.reborn12k.blazing_steel_axe": "Blazing Steel Axe",
     "item.reborn12k.blazing_steel_hoe": "Blazing Steel Hoe",
 
-    "item.reborn12k.archeosite_helmet": "Archeosite Helmet",
-    "item.reborn12k.archeosite_chestplate": "Archeosite Chestplate",
-    "item.reborn12k.archeosite_leggings": "Archeosite Leggings",
-    "item.reborn12k.archeosite_boots": "Archeosite Boots",
-    
-    "item.reborn12k.archeosite_sword": "Archeosite Sword",
-    "item.reborn12k.archeosite_shovel": "Archeosite Shovel",
-    "item.reborn12k.archeosite_pickaxe": "Archeosite Pickaxe",
-    "item.reborn12k.archeosite_axe": "Archeosite Axe",
-    "item.reborn12k.archeosite_hoe": "Archeosite Hoe",
+    "item.reborn12k.advanced_alloy_helmet": "Advanced Alloy Helmet",
+    "item.reborn12k.advanced_alloy_chestplate": "Advanced Alloy Chestplate",
+    "item.reborn12k.advanced_alloy_leggings": "Advanced Alloy Leggings",
+    "item.reborn12k.advanced_alloy_boots": "Advanced Alloy Boots",
+
+    "item.reborn12k.advanced_alloy_sword": "Advanced Alloy Sword",
+    "item.reborn12k.advanced_alloy_shovel": "Advanced Alloy Shovel",
+    "item.reborn12k.advanced_alloy_pickaxe": "Advanced Alloy Pickaxe",
+    "item.reborn12k.advanced_alloy_axe": "Advanced Alloy Axe",
+    "item.reborn12k.advanced_alloy_hoe": "Advanced Alloy Hoe",
+
+    "item.reborn12k.signalum_helmet": "Signalum Helmet",
+    "item.reborn12k.signalum_chestplate": "Signalum Chestplate",
+    "item.reborn12k.signalum_leggings": "Signalum Leggings",
+    "item.reborn12k.signalum_boots": "Signalum Boots",
+
+    "item.reborn12k.signalum_sword": "Signalum Sword",
+    "item.reborn12k.signalum_shovel": "Signalum Shovel",
+    "item.reborn12k.signalum_pickaxe": "Signalum Pickaxe",
+    "item.reborn12k.signalum_axe": "Signalum Axe",
+    "item.reborn12k.signalum_hoe": "Signalum Hoe",
+
+    "item.reborn12k.iridium_alloy_helmet": "Iridium Alloy Helmet",
+    "item.reborn12k.iridium_alloy_chestplate": "Iridium Alloy Chestplate",
+    "item.reborn12k.iridium_alloy_leggings": "Iridium Alloy Leggings",
+    "item.reborn12k.iridium_alloy_boots": "Iridium Alloy Boots",
+
+    "item.reborn12k.iridium_alloy_sword": "Iridium Alloy Sword",
+    "item.reborn12k.iridium_alloy_shovel": "Iridium Alloy Shovel",
+    "item.reborn12k.iridium_alloy_pickaxe": "Iridium Alloy Pickaxe",
+    "item.reborn12k.iridium_alloy_axe": "Iridium Alloy Axe",
+    "item.reborn12k.iridium_alloy_hoe": "Iridium Alloy Hoe",
+
+    "item.reborn12k.enderium_helmet": "Enderium Helmet",
+    "item.reborn12k.enderium_chestplate": "Enderium Chestplate",
+    "item.reborn12k.enderium_leggings": "Enderium Leggings",
+    "item.reborn12k.enderium_boots": "Enderium Boots",
+
+    "item.reborn12k.enderium_sword": "Enderium Sword",
+    "item.reborn12k.enderium_shovel": "Enderium Shovel",
+    "item.reborn12k.enderium_pickaxe": "Enderium Pickaxe",
+    "item.reborn12k.enderium_axe": "Enderium Axe",
+    "item.reborn12k.enderium_hoe": "Enderium Hoe",
 
     "item.reborn12k.thelosite_helmet": "Thelosite Helmet",
     "item.reborn12k.thelosite_chestplate": "Thelosite Chestplate",
@@ -371,216 +263,25 @@
     "item.reborn12k.thelosite_axe": "Thelosite Axe",
     "item.reborn12k.thelosite_hoe": "Thelosite Hoe",
 
-    "item.reborn12k.silver_claymore": "Silver Claymore",
-    "item.reborn12k.yamato": "Yamato",
-    "item.reborn12k.cutter_237": "Cutter 237",
-    "item.reborn12k.power_sword": "Power Sword",
-    "item.reborn12k.murasama": "Murasama",
-    "item.reborn12k.bladewolf": "Bladewolf",
-    "item.reborn12k.rebellion": "Rebellion",
-    "item.reborn12k.red_queen": "Red Queen",
+    "item.reborn12k.archeosite_helmet": "Archeosite Helmet",
+    "item.reborn12k.archeosite_chestplate": "Archeosite Chestplate",
+    "item.reborn12k.archeosite_leggings": "Archeosite Leggings",
+    "item.reborn12k.archeosite_boots": "Archeosite Boots",
 
-    "item.reborn12k.glass_dagger": "Glass Dagger",
-    "item.reborn12k.mana_glass_dagger": "Mana Glass Dagger",
-
-    "item.reborn12k.mage_helmet": "Mage's Hood",
-    "item.reborn12k.mage_chestplate": "Mage's Robes",
-    "item.reborn12k.mage_leggings": "Mage's Leggings",
-    "item.reborn12k.mage_boots": "Mage's Boots",
-
-    "item.reborn12k.power_helmet": "Power Armor Helmet",
-    "item.reborn12k.power_chestplate": "Power Armor Chestplate",
-    "item.reborn12k.power_leggings": "Power Armor Leggings",
-    "item.reborn12k.power_boots": "Power Armor Boots",
+    "item.reborn12k.archeosite_sword": "Archeosite Sword",
+    "item.reborn12k.archeosite_shovel": "Archeosite Shovel",
+    "item.reborn12k.archeosite_pickaxe": "Archeosite Pickaxe",
+    "item.reborn12k.archeosite_axe": "Archeosite Axe",
+    "item.reborn12k.archeosite_hoe": "Archeosite Hoe",
 
     "item.reborn12k.long_fall_boots": "Long Fall Boots",
-
-    "item.reborn12k.iron_bow": "Iron Bow",
-    "item.reborn12k.compound_bow": "Compound Bow",
-    "item.reborn12k.diamond_bow": "Diamond Bow",
 
 
     "advancements.reborn12k.root.title": "REBORN12K - Alloying",
     "advancements.reborn12k.root.description": "Discover the wonders of mixing random metals",
 
-    "advancements.reborn12k.magnetic_force.title": "Magnetic Force",
-    "advancements.reborn12k.magnetic_force.description": "Obtain a Magnet",
 
 
-    "advancements.reborn12k.basic_alloying.title": "Basic Alloying",
-    "advancements.reborn12k.basic_alloying.description": "Obtain a tier one Alloy Forge Controller (Brick or Stone)",
-    "advancements.reborn12k.lightweight_alloy.title": "Lightweight Alloy",
-    "advancements.reborn12k.lightweight_alloy.description": "Smelt Copper and Tin in an Alloy Forge",
-    "advancements.reborn12k.like_romans.title": "Just like Romans",
-    "advancements.reborn12k.like_romans.description": "Get a full suit of Bronze armor",
-    "advancements.reborn12k.a_stronger_alloy.title": "A Stronger Alloy",
-    "advancements.reborn12k.a_stronger_alloy.description": "Smelt Iron and Chrome in an Alloy Forge",
-    "advancements.reborn12k.steelclad_knight.title": "Steelclad Knight",
-    "advancements.reborn12k.steelclad_knight.description": "Get a full suit of Carbon Steel armor",
-    "advancements.reborn12k.advanced_alloying.title": "Advanced Alloying",
-    "advancements.reborn12k.advanced_alloying.description": "Obtain a tier two Alloy Forge (Deepslate or Blackstone)",
-    "advancements.reborn12k.fiery_alloy.title": "Fiery Alloy",
-    "advancements.reborn12k.fiery_alloy.description": "Smelt a Carbon Steel and Blaze Powder in an Alloy Forge",
-    "advancements.reborn12k.baptism_of_fire.title": "Baptism of Fire",
-    "advancements.reborn12k.baptism_of_fire.description": "Get a full suit of Blazing Steel armor",
-    "advancements.reborn12k.prussian_blue.title": "Prussian Blue",
-    "advancements.reborn12k.prussian_blue.description": "Obtain some Cobalt",
-    "advancements.reborn12k.time_for_action.title": "Time for Action",
-    "advancements.reborn12k.time_for_action.description": "Obtain a Time Singularity",
-    "advancements.reborn12k.final_lesson_in_alloying.title": "Final Lesson in Alloying",
-    "advancements.reborn12k.final_lesson_in_alloying.description": "Obtain a tier three Alloy Forge (End Stone)",
-    "advancements.reborn12k.alloy_of_the_beginning.title": "Alloy of the Beginning",
-    "advancements.reborn12k.alloy_of_the_beginning.description": "Smelt Netherite with a Time Singularity in an Alloy Forge",
-    "advancements.reborn12k.alloy_of_the_end.title": "Alloy of the End",
-    "advancements.reborn12k.alloy_of_the_end.description": "Smelt Blazing Steel with a Time Singularity in an Alloy Forge",
-    "advancements.reborn12k.envoy_of_creation.title": "Envoy of Creation",
-    "advancements.reborn12k.envoy_of_creation.description": "Get a full suit of Archeosite armor",
-    "advancements.reborn12k.envoy_of_destruction.title": "Envoy of Destruction",
-    "advancements.reborn12k.envoy_of_destruction.description": "Get a full suit of Thelosite armor",
+    "itemGroup.reborn12k.reborn12k": "Reborn12K"
 
-    
-    "advancements.reborn12k_magic.root.title": "REBORN12K - Magic",
-    "advancements.reborn12k_magic.root.description": "Mana, Runes and Rings",
-    "advancements.reborn12k_magic.magic_within.title": "Magic within",
-    "advancements.reborn12k_magic.magic_within.description": "Obtain some Silver",
-    "advancements.reborn12k_magic.experiments_with_magic.title": "Experiments with magic",
-    "advancements.reborn12k_magic.experiments_with_magic.description": "Craft a Refined Manatite",
-    "advancements.reborn12k_magic.mana_weaving.title": "Mana weaving",
-    "advancements.reborn12k_magic.mana_weaving.description": "Craft some Manaweave",
-    "advancements.reborn12k_magic.golden_rings.title": "Golden Rings",
-    "advancements.reborn12k_magic.golden_rings.description": "Craft a Golden Ring",
-    "advancements.reborn12k_magic.ring_awakening.title": "Ring Awakening",
-    "advancements.reborn12k_magic.ring_awakening.description": "Awaken a Golden Ring by imbuing it with Experience and a Manaweave in an anvil. When awakened, Attuned Manatites can be embedded on the ring with a smithing table",
-    "advancements.reborn12k_magic.ring_of_zephyr.title": "Ring of Zephyr",
-    "advancements.reborn12k_magic.ring_of_zephyr.description": "Fly like an angel",
-    "advancements.reborn12k_magic.ring_of_gaia.title": "Ring of Gaia",
-    "advancements.reborn12k_magic.ring_of_gaia.description": "One with the Earth",
-    "advancements.reborn12k_magic.ring_of_poseidon.title": "Ring of Poseidon",
-    "advancements.reborn12k_magic.ring_of_poseidon.description": "Hydrodinamic might",
-    "advancements.reborn12k_magic.ring_of_hephaestus.title": "Ring of Hephaestus",
-    "advancements.reborn12k_magic.ring_of_hephaestus.description": "Let it burn",
-    "advancements.reborn12k_magic.ring_of_apollo.title": "Ring of Apollo",
-    "advancements.reborn12k_magic.ring_of_apollo.description": "Shine bright",
-    "advancements.reborn12k_magic.ring_of_artemis.title": "Ring of Artemis",
-    "advancements.reborn12k_magic.ring_of_artemis.description": "The Great Hunt is open",
-    "advancements.reborn12k_magic.ring_of_mars.title": "Ring of Mars Ultor",
-    "advancements.reborn12k_magic.ring_of_mars.description": "Built for War",
-
-    "advancements.reborn12k_magic.artificer.title": "Artificer",
-    "advancements.reborn12k_magic.artificer.description": "Obtain a Wooden Wand",
-    "advancements.reborn12k_magic.apprentice_mage.title": "Apprentice Mage",
-    "advancements.reborn12k_magic.apprentice_mage.description": "Obtain a Silver Scepter",
-    "advancements.reborn12k_magic.wizard.title": "Wizard",
-    "advancements.reborn12k_magic.wizard.description": "Obtain a Golden Rod",
-    "advancements.reborn12k_magic.arch_mage.title": "Arch Mage",
-    "advancements.reborn12k_magic.arch_mage.description": "Obtain a Magical Wood Staff",
-
-    "advancements.reborn12k_magic.runic_discovery.title": "Runic discovery",
-    "advancements.reborn12k_magic.runic_discovery.description": "Craft some Blank Runes. Then combine them with gems in a smithing table to call upon the nature's power",
-    "advancements.reborn12k_magic.elemental_master.title": "Elemental Master",
-    "advancements.reborn12k_magic.elemental_master.description": "Obtain all 7 Elemental Runes. You can then combine any of the runes with 3 empty bottles to brew potions",
-    "advancements.reborn12k_magic.runic_binding.title": "Runic Binding",
-    "advancements.reborn12k_magic.runic_binding.description": "Craft some Runic Snares. Throw them at a mob to inflict Frail Soul",
-    "advancements.reborn12k_magic.the_key_to_the_soul.title": "The Key to the Soul",
-    "advancements.reborn12k_magic.the_key_to_the_soul.description": "Craft the delicate Glass Dagger or the unbreakable Mana Glass Dagger",
-    "advancements.reborn12k_magic.soul_dolls.title": "Soul Dolls",
-    "advancements.reborn12k_magic.soul_dolls.description": "Extract a Soul Doll from a Frail Soul mob (Bosses are never frail, you might need a little more commitment)",
-    "advancements.reborn12k_magic.experienced_necromancer.title": "Experienced Necromancer",
-    "advancements.reborn12k_magic.experienced_necromancer.description": "Obtain all the existing Dolls",
-
-    "advancements.reborn12k_magic.windwalker.title": "Windwalker",
-    "advancements.reborn12k_magic.windwalker.description": "Those who follow the path of the wind shall walk in its divine protection",
-    "advancements.reborn12k_magic.rules_of_nature.title": "Rules of Nature",
-    "advancements.reborn12k_magic.rules_of_nature.description": "Who will survive in the game of life, the skilled hunter or the agile prey?",
-    "advancements.reborn12k_magic.gaze_into_the_abyss.title": "Gaze into the abyss",
-    "advancements.reborn12k_magic.gaze_into_the_abyss.description": "If you gaze long enough into the abyss, the abyss will gaze back into you",
-    "advancements.reborn12k_magic.firelord.title": "Firelord",
-    "advancements.reborn12k_magic.firelord.description": "Into the fires of battle! Unto the anvil of war!",
-    "advancements.reborn12k_magic.solis_filii.title": "Solis Filii",
-    "advancements.reborn12k_magic.solis_filii.description": "Keep your face to the Sun and you will never fear the shadows",
-    "advancements.reborn12k_magic.night_haunter.title": "Night Haunter",
-    "advancements.reborn12k_magic.night_haunter.description": "Ave Dominus Nox!",
-    "advancements.reborn12k_magic.crimson_demon.title": "Crimson Demon",
-    "advancements.reborn12k_magic.crimson_demon.description": "Darker than black, darker than darkness, combine with my intense crimson",
-
-
-    "advancements.reborn12k_secrets.root.title": "REBORN12K - Secrets",
-    "advancements.reborn12k_secrets.root.description": "Even more Easter Eggs",
-    "advancements.reborn12k_secrets.mirror_mirror_on_the_wall.title": "Mirror mirror on the wall",
-    "advancements.reborn12k_secrets.mirror_mirror_on_the_wall.description": "Who's the fairest of them all?",
-    "advancements.reborn12k_secrets.ice_ice_baby.title": "Ice Ice Baby",
-    "advancements.reborn12k_secrets.ice_ice_baby.description": "Ice is back with my brand new invention",
-    "advancements.reborn12k_secrets.i_got_two_phones.title": "I Got Two Phones",
-    "advancements.reborn12k_secrets.i_got_two_phones.description": "One for the plug and one for the load",
-    "advancements.reborn12k_secrets.tree_of_life.title": "Tree of Life",
-    "advancements.reborn12k_secrets.tree_of_life.description": "Obtain a branch of the Yggdrasill",
-    "advancements.reborn12k_secrets.holy_knight.title": "Holy Knight",
-    "advancements.reborn12k_secrets.holy_knight.description": "Craft a Silver Claymore",
-    "advancements.reborn12k_secrets.katanakaji.title": "Katanakaji",
-    "advancements.reborn12k_secrets.katanakaji.description": "Craft a Yamato Blade, a Katana Tsuba and a Katana Tsuka",
-    "advancements.reborn12k_secrets.bury_the_light.title": "Bury The Light",
-    "advancements.reborn12k_secrets.bury_the_light.description": "I am the storm that is approaching",
-    "advancements.reborn12k_secrets.devil_may_cry.title": "Devil May Cry",
-    "advancements.reborn12k_secrets.devil_may_cry.description": "Think you can beat me? Not in a million years!",
-    "advancements.reborn12k_secrets.cryptoinvestor.title": "Cryptoinvestor",
-    "advancements.reborn12k_secrets.cryptoinvestor.description": "Craft a Casing Mk.237 and a Cryptoblade",
-    "advancements.reborn12k_secrets.multi-level_marketing.title": "Multi-Level Marketing",
-    "advancements.reborn12k_secrets.multi-level_marketing.description": "Wait... Is it just a pyramid scheme?!",
-    "advancements.reborn12k_secrets.reproducible_human_error.title": "Reproducible Human Error",
-    "advancements.reborn12k_secrets.reproducible_human_error.description": "Not bad. I forgot how good you are at this",
-    "advancements.reborn12k_secrets.weaver_of_fate.title": "Weaver of Fate",
-    "advancements.reborn12k_secrets.weaver_of_fate.description": "What's meant to be will always find a way",
-    "advancements.reborn12k_secrets.acolythus_magicae.title": "Acolythus Magicae",
-    "advancements.reborn12k_secrets.acolythus_magicae.description": "Can I show you my magic trick?",
-    "advancements.reborn12k_secrets.auramite_plating.title": "Auramite Plating",
-    "advancements.reborn12k_secrets.auramite_plating.description": "The Emperor Protects (asking how is heresy)",
-    "advancements.reborn12k_secrets.angel_of_death.title": "Angel of Death",
-    "advancements.reborn12k_secrets.angel_of_death.description": "And they shall know no fear",
-    "advancements.reborn12k_secrets.wrath_of_the_emperor.title": "Wrath of the Emperor",
-    "advancements.reborn12k_secrets.wrath_of_the_emperor.description": "In battle, He offers us redemption",
-    "advancements.reborn12k_secrets.reject_modernity.title": "Reject Modernity",
-    "advancements.reborn12k_secrets.reject_modernity.description": "Craft a Golden Banana",
-    "advancements.reborn12k_secrets.return_to_monke.title": "Return to Monke",
-    "advancements.reborn12k_secrets.return_to_monke.description": "Craft an Enchanted Golden Banana",
-    "advancements.reborn12k_secrets.the_cherry_on_top.title": "The Cherry on Top",
-    "advancements.reborn12k_secrets.the_cherry_on_top.description": "Craft a Golden Cherry",
-    "advancements.reborn12k_secrets.something_to_cherry-ish_forever.title": "Something to Cherry-ish Forever",
-    "advancements.reborn12k_secrets.something_to_cherry-ish_forever.description": "Craft an Enchanted Golden Cherry",
-    "advancements.reborn12k_secrets.im_my_own_master_now.title": "I'm My Own Master Now",
-    "advancements.reborn12k_secrets.im_my_own_master_now.description": "Obtain the Bladewolf",
-    "advancements.reborn12k_secrets.it_has_to_be_this_way.title": "It Has To Be This Way",
-    "advancements.reborn12k_secrets.it_has_to_be_this_way.description": "Obtain the Murasama (wait, wasn't it Muramasa?)",
-    "advancements.reborn12k_secrets.equivalent_exchange.title": "Equivalent Exchange",
-    "advancements.reborn12k_secrets.equivalent_exchange.description": "No anime references here",
-    "advancements.reborn12k_secrets.elemental_manipulation.title": "Elemental Manipulation",
-    "advancements.reborn12k_secrets.elemental_manipulation.description": "Rewriting nature's code",
-    "advancements.reborn12k_secrets.heart_of_the_universe.title": "Heart of the Universe",
-    "advancements.reborn12k_secrets.heart_of_the_universe.description": "Reality in the palm of your hands",
-    "advancements.reborn12k_secrets.kino_der_toten.title": "Kino der Toten",
-    "advancements.reborn12k_secrets.kino_der_toten.description": "Everyone tries to hold onto their lives",
-    "advancements.reborn12k_secrets.bang_bang_bang.title": "Bang! Bang! Bang!",
-    "advancements.reborn12k_secrets.bang_bang_bang.description": "Pull My Devil Trigger!",
-
-
-    "enchantment.reborn12k.deathskiss": "Death's Kiss",
-    "enchantment.reborn12k.magic_protection": "Magic Protection",
-
-
-    "sounds:reborn12k.z115": "Elena Siegman - 115",
-    "subtitles.reborn12k.z115": "Elena Siegman - 115 is playing",
-    "sounds:reborn12k.devil_trigger": "Casey Edwards - Devil Trigger",
-    "subtitles.reborn12k.devil_trigger": "Casey Edwards - Devil Trigger is playing",
-
-
-    "itemGroup.reborn12k.reborn12k": "Reborn12K",
-
-
-
-    "entity.minecraft.villager.dealer": "Dealer",
-    "entity.minecraft.villager.blacksmith": "Blacksmith",
-    "entity.minecraft.villager.hmble": "Wuk Hmble",
-
-
-    "effect.reborn12k.frail": "Frail Soul"
-    
   }
