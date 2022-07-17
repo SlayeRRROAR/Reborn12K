@@ -7,11 +7,11 @@
     ],
     "key": {
         "A": {
-            "tag": "c:sapphires"
+            "item": "reborn12k:raw_cobalt"
         }
     },
     "result": {
-        "item": "reborn12k:sapphire_block",
+        "item": "reborn12k:raw_cobalt_block",
         "count": 1
     }
 }
