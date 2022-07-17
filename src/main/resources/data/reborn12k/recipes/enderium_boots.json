@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:signalum_boots"
+    },
+    "addition": {
+        "item": "reborn12k:enderium_ingot"
+    },
+    "result": {
+        "item": "reborn12k:enderium_boots"
+    }
+}

@@ -4,9 +4,9 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.slayerrroar.reborn12k.items.BaseItems;
 
-public class RedQueen implements ToolMaterial {
+public class EnderiumMaterial implements ToolMaterial{
 
-    public static final RedQueen INSTANCE = new RedQueen();
+    public static final EnderiumMaterial INSTANCE = new EnderiumMaterial();
 
     @Override
     public float getAttackDamage() {
@@ -15,27 +15,27 @@ public class RedQueen implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 1689;
+        return 2112;
     }
 
     @Override
     public int getEnchantability() {
-        return 18;
+        return 30;
     }
 
     @Override
     public int getMiningLevel() {
-        return 4;
+        return 5;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 14.0f;
+        return 12.0f;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.CARBON_STEEL_INGOT);
+        return Ingredient.ofItems(BaseItems.ENDERIUM_INGOT);
     }
-
+    
 }

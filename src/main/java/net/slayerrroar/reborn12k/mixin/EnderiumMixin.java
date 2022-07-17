@@ -21,7 +21,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.UUID;
 
 @Mixin (ArmorItem.class)
-public class MageMixin {
+public class EnderiumMixin {
  
     @Shadow @Final private static UUID[] MODIFIERS;
     @Shadow @Final @Mutable private Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
@@ -31,7 +31,7 @@ public class MageMixin {
     private void constructor(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings, CallbackInfo ci) {
         UUID uUID = MODIFIERS[slot.getEntitySlotId()];
  
-        if (material == Armors.MAGE_ARMOR) {
+        if (material == Armors.ENDERIUM_ARMOR) {
             ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
  
             this.attributeModifiers.forEach(builder::put);
