@@ -2,17 +2,17 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:sapphire_block"
+        "reborn12k:raw_tin_block"
       ]
     },
     "criteria": {
-      "has_sapphire": {
+      "has_raw_tin": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:sapphire"
+                "reborn12k:raw_tin"
               ]
             }
           ]
@@ -21,13 +21,13 @@
       "has_the_recipe": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "reborn12k:sapphire_block"
+          "recipe": "reborn12k:raw_tin_block"
         }
       }
     },
     "requirements": [
       [
-        "has_sapphire",
+        "has_raw_tin",
         "has_the_recipe"
       ]
     ]

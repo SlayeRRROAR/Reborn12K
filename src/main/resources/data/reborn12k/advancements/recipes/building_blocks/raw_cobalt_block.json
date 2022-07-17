@@ -2,17 +2,17 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:cobalt_block"
+        "reborn12k:raw_cobalt_block"
       ]
     },
     "criteria": {
-      "has_cobalt_ingot": {
+      "has_raw_cobalt": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:cobalt_ingot"
+                "reborn12k:raw_cobalt"
               ]
             }
           ]
@@ -21,13 +21,13 @@
       "has_the_recipe": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "reborn12k:cobalt_block"
+          "recipe": "reborn12k:raw_cobalt_block"
         }
       }
     },
     "requirements": [
       [
-        "has_cobalt_ingot",
+        "has_raw_cobalt",
         "has_the_recipe"
       ]
     ]

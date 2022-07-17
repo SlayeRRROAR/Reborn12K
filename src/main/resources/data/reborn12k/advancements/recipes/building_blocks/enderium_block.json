@@ -2,17 +2,17 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:cobalt_block"
+        "reborn12k:enderium_block"
       ]
     },
     "criteria": {
-      "has_cobalt_ingot": {
+      "has_enderium_ingot": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:cobalt_ingot"
+                "reborn12k:enderium_ingot"
               ]
             }
           ]
@@ -21,13 +21,13 @@
       "has_the_recipe": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "reborn12k:cobalt_block"
+          "recipe": "reborn12k:enderium_block"
         }
       }
     },
     "requirements": [
       [
-        "has_cobalt_ingot",
+        "has_enderium_ingot",
         "has_the_recipe"
       ]
     ]

@@ -2,17 +2,17 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:opal_block"
+        "reborn12k:raw_silver_block"
       ]
     },
     "criteria": {
-      "has_opal": {
+      "has_raw_silver": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:opal"
+                "reborn12k:raw_silver"
               ]
             }
           ]
@@ -21,13 +21,13 @@
       "has_the_recipe": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "reborn12k:opal_block"
+          "recipe": "reborn12k:raw_silver_block"
         }
       }
     },
     "requirements": [
       [
-        "has_opal",
+        "has_raw_silver",
         "has_the_recipe"
       ]
     ]
