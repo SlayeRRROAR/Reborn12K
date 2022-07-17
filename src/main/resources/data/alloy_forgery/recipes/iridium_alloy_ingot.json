@@ -1,0 +1,35 @@
+{
+  "type": "alloy_forgery:forging",
+  "inputs": [
+    {
+      "item": "reborn12k:advanced_alloy_ingot"
+    },
+    {
+      "item": "reborn12k:advanced_alloy_ingot"
+    },
+    {
+      "item": "reborn12k:advanced_alloy_ingot"
+    },
+    {
+      "item": "reborn12k:advanced_alloy_ingot"
+    },
+    {
+      "item": "reborn12k:iridium_ingot"
+    },
+    {
+      "item": "reborn12k:iridium_ingot"
+    },
+    {
+      "item": "reborn12k:iridium_ingot"
+    },
+    {
+      "item": "reborn12k:iridium_ingot"
+    }
+  ],
+  "output": {
+    "id": "reborn12k:iridium_alloy_ingot",
+    "count": 2
+  },
+  "min_forge_tier": 3,
+  "fuel_per_tick": 100
+}

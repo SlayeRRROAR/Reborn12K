@@ -2,20 +2,19 @@
   "type": "alloy_forgery:forging",
   "inputs": [
     {
-      "item": "reborn12k:tin_ore"
+      "item": "reborn12k:raw_titanium"
+    },
+    {
+      "item": "reborn12k:raw_titanium"
     }
   ],
   "output": {
-    "id": "reborn12k:tin_ingot",
-    "count": 2
+    "id": "reborn12k:titanium_ingot",
+    "count": 3
   },
   "overrides": {
-    "2": {
-      "id": "reborn12k:tin_ingot",
-      "count": 3
-    },
     "3+": {
-      "id": "reborn12k:tin_ingot",
+      "id": "reborn12k:titanium_ingot",
       "count": 4
     }
   },

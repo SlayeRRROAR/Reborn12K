@@ -5,12 +5,21 @@
       "item": "minecraft:netherite_ingot"
     },
     {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
       "item": "reborn12k:time_singularity"
     }
   ],
   "output": {
     "id": "reborn12k:archeosite_ingot",
-    "count": 1
+    "count": 2
   },
   "min_forge_tier": 3,
   "fuel_per_tick": 100

@@ -2,7 +2,7 @@
   "type": "alloy_forgery:forging",
   "inputs": [
     {
-      "item": "reborn12k:silver_ore"
+      "item": "reborn12k:deepslate_silver_ore"
     }
   ],
   "output": {

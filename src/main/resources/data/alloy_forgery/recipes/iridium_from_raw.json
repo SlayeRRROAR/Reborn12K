@@ -1,0 +1,17 @@
+{
+  "type": "alloy_forgery:forging",
+  "inputs": [
+    {
+      "item": "reborn12k:raw_iridium"
+    },
+    {
+      "item": "reborn12k:raw_iridium"
+    }
+  ],
+  "output": {
+    "id": "reborn12k:iridium_ingot",
+    "count": 3
+  },
+  "min_forge_tier": 3,
+  "fuel_per_tick": 5
+}

@@ -5,12 +5,21 @@
       "item": "reborn12k:blazing_steel_ingot"
     },
     {
+      "item": "reborn12k:blazing_steel_ingot"
+    },
+    {
+      "item": "reborn12k:blazing_steel_ingot"
+    },
+    {
+      "item": "reborn12k:blazing_steel_ingot"
+    },
+    {
       "item": "reborn12k:time_singularity"
     }
   ],
   "output": {
     "id": "reborn12k:thelosite_ingot",
-    "count": 1
+    "count": 2
   },
   "min_forge_tier": 3,
   "fuel_per_tick": 100
