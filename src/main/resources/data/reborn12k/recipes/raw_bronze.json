@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_bronze_blocks"
+            "item": "reborn12k:raw_bronze_block"
         }
     ],
     "result": {
