@@ -5,12 +5,7 @@ import net.slayerrroar.reborn12k.armors.Armors;
 import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
 import net.slayerrroar.reborn12k.blocks.BaseBlocks;
 import net.slayerrroar.reborn12k.blocks.OreBlocks;
-import net.slayerrroar.reborn12k.enchantments.Enchantments;
-import net.slayerrroar.reborn12k.entity.projectile.CustomProjectileEntities;
 import net.slayerrroar.reborn12k.items.*;
-import net.slayerrroar.reborn12k.sounds.SoundClass;
-import net.slayerrroar.reborn12k.statuses.CustomStatusEffects;
-import net.slayerrroar.reborn12k.villagers.CustomTrades;
 import net.slayerrroar.reborn12k.tools.Tools;
 import net.slayerrroar.reborn12k.util.Strippable;
 import net.slayerrroar.reborn12k.world.features.RebornConfiguredFeatures;
@@ -27,34 +22,20 @@ public class Reborn12K implements ModInitializer {
     public void onInitialize() {
 
 
-        SoundClass.register();
-
         AdvancedBlocks.register();
         BaseBlocks.register();
         OreBlocks.register();
 
         BaseItems.register();
         AdvancedItems.register();
-        MateriaItems.register();
-
-        DiscItem.register();
-        Rings.register();
-        Staffs.register();
-        Charms.register();
 
         Tools.register();
         Armors.register();
-
-        Enchantments.register();
-        CustomStatusEffects.register();
-
-        CustomProjectileEntities.register();
 
         RebornConfiguredFeatures.register();
         RebornWorldGen.generate();
 
         Strippable.register();
-        CustomTrades.register();
 
     }
 }
