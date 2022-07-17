@@ -1,0 +1,23 @@
+{
+  "type": "alloy_forgery:forging",
+  "inputs": [
+    {
+      "item": "reborn12k:raw_aluminum"
+    },
+    {
+      "item": "reborn12k:raw_aluminum"
+    }
+  ],
+  "output": {
+    "id": "reborn12k:aluminum_ingot",
+    "count": 3
+  },
+  "overrides": {
+    "3+": {
+      "id": "reborn12k:aluminum_ingot",
+      "count": 4
+    }
+  },
+  "min_forge_tier": 2,
+  "fuel_per_tick": 5
+}

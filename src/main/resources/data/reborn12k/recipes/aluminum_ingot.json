@@ -5,11 +5,12 @@
     ],
     "key": {
         "A": {
-            "tag": "c:ruby_blocks"
+            "item": "reborn12k:aluminum_block"
         }
     },
     "result": {
-        "item": "reborn12k:ruby",
+        "item": "reborn12k:aluminum_ingot",
         "count": 9
-    }
+    },
+    "group": "aluminum"
 }
