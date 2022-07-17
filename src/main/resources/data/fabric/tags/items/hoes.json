@@ -1,10 +1,16 @@
 {
-    "replace": false,
-    "values": [
-      "reborn12k:bronze_hoe",
-      "reborn12k:carbon_steel_hoe",
-      "reborn12k:blazing_steel_hoe",
-      "reborn12k:archeosite_hoe",
-      "reborn12k:thelosite_hoe"
-    ]
-  }
+  "replace": false,
+  "values": [
+    "reborn12k:bronze_hoe",
+    "reborn12k:titanium_hoe",
+    "reborn12k:electrum_hoe",
+    "reborn12k:steel_hoe",
+    "reborn12k:signalum_hoe",
+    "reborn12k:advanced_alloy_hoe",
+    "reborn12k:blazing_steel_hoe",
+    "reborn12k:enderium_hoe",
+    "reborn12k:iridium_alloy_hoe",
+    "reborn12k:thelosite_hoe",
+    "reborn12k:archeosite_hoe"
+  ]
+}

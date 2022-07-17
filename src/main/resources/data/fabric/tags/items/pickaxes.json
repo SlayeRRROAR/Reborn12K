@@ -1,10 +1,16 @@
 {
-    "replace": false,
-    "values": [
-      "reborn12k:bronze_pickaxe",
-      "reborn12k:carbon_steel_pickaxe",
-      "reborn12k:blazing_steel_pickaxe",
-      "reborn12k:archeosite_pickaxe",
-      "reborn12k:thelosite_pickaxe"
-    ]
-  }
+  "replace": false,
+  "values": [
+    "reborn12k:bronze_pickaxe",
+    "reborn12k:titanium_pickaxe",
+    "reborn12k:electrum_pickaxe",
+    "reborn12k:steel_pickaxe",
+    "reborn12k:signalum_pickaxe",
+    "reborn12k:advanced_alloy_pickaxe",
+    "reborn12k:blazing_steel_pickaxe",
+    "reborn12k:enderium_pickaxe",
+    "reborn12k:iridium_alloy_pickaxe",
+    "reborn12k:thelosite_pickaxe",
+    "reborn12k:archeosite_pickaxe"
+  ]
+}

@@ -1,16 +1,16 @@
 {
-    "replace": false,
-    "values": [
-      "reborn12k:bronze_sword",
-      "reborn12k:carbon_steel_sword",
-      "reborn12k:blazing_steel_sword",
-      "reborn12k:archeosite_sword",
-      "reborn12k:thelosite_sword",
-      "reborn12k:silver_claymore",
-      "reborn12k:yamato",
-      "reborn12k:cutter_237",
-      "reborn12k:power_sword",
-      "reborn12k:glass_dagger",
-      "reborn12k:mana_glass_dagger"
-    ]
-  }
+  "replace": false,
+  "values": [
+    "reborn12k:bronze_sword",
+    "reborn12k:titanium_sword",
+    "reborn12k:electrum_sword",
+    "reborn12k:steel_sword",
+    "reborn12k:signalum_sword",
+    "reborn12k:advanced_alloy_sword",
+    "reborn12k:blazing_steel_sword",
+    "reborn12k:enderium_sword",
+    "reborn12k:iridium_alloy_sword",
+    "reborn12k:thelosite_sword",
+    "reborn12k:archeosite_sword"
+  ]
+}
