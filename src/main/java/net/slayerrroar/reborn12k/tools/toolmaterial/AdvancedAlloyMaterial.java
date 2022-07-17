@@ -4,23 +4,23 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.slayerrroar.reborn12k.items.BaseItems;
 
-public class Rebellion implements ToolMaterial{
+public class AdvancedAlloyMaterial implements ToolMaterial{
 
-    public static final Rebellion INSTANCE = new Rebellion();
+    public static final AdvancedAlloyMaterial INSTANCE = new AdvancedAlloyMaterial();
 
     @Override
     public float getAttackDamage() {
-        return 6.0f;
+        return 3.0f;
     }
 
     @Override
     public int getDurability() {
-        return 1689;
+        return 2437;
     }
 
     @Override
     public int getEnchantability() {
-        return 18;
+        return 15;
     }
 
     @Override
@@ -30,12 +30,12 @@ public class Rebellion implements ToolMaterial{
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 14.0f;
+        return 7.0f;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.CARBON_STEEL_INGOT);
+        return Ingredient.ofItems(BaseItems.ADVANCED_ALLOY_INGOT);
     }
-
+    
 }

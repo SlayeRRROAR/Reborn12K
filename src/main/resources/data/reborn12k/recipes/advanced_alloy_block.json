@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:advanced_alloy_ingot"
+        }
+    },
+    "result": {
+        "item": "reborn12k:advanced_alloy_block",
+        "count": 1
+    }
+}

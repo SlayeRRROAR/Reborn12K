@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:titanium_hoe"
+    },
+    "addition": {
+        "item": "reborn12k:advanced_alloy_ingot"
+    },
+    "result": {
+        "item": "reborn12k:advanced_alloy_hoe"
+    }
+}

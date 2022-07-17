@@ -1,0 +1,32 @@
+{
+  "type": "alloy_forgery:forging",
+  "inputs": [
+    {
+      "item": "reborn12k:titanium_ingot"
+    },
+    {
+      "item": "reborn12k:titanium_ingot"
+    },
+    {
+      "item": "reborn12k:titanium_ingot"
+    },
+    {
+      "item": "reborn12k:titanium_ingot"
+    },
+    {
+      "item": "reborn12k:aluminum_ingot"
+    },
+    {
+      "item": "reborn12k:aluminum_ingot"
+    },
+    {
+      "item": "reborn12k:chrome_dust"
+    }
+  ],
+  "output": {
+    "id": "reborn12k:advanced_alloy_ingot",
+    "count": 2
+  },
+  "min_forge_tier": 2,
+  "fuel_per_tick": 20
+}
