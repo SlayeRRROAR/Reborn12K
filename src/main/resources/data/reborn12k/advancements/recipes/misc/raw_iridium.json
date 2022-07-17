@@ -1,0 +1,34 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:raw_iridium"
+      ]
+    },
+    "criteria": {
+      "has_raw_iridium_block": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "reborn12k:raw_iridium_block"
+              ]
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:raw_iridium"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_raw_iridium_block",
+        "has_the_recipe"
+      ]
+    ]
+  }
