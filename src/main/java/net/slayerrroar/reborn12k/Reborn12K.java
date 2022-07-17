@@ -8,6 +8,7 @@ import net.slayerrroar.reborn12k.blocks.OreBlocks;
 import net.slayerrroar.reborn12k.items.*;
 import net.slayerrroar.reborn12k.tools.Tools;
 import net.slayerrroar.reborn12k.util.Strippable;
+import net.slayerrroar.reborn12k.villagers.CustomTrades;
 import net.slayerrroar.reborn12k.world.features.RebornConfiguredFeatures;
 import net.slayerrroar.reborn12k.world.generation.RebornWorldGen;
 import org.apache.logging.log4j.LogManager;
@@ -36,6 +37,8 @@ public class Reborn12K implements ModInitializer {
         RebornWorldGen.generate();
 
         Strippable.register();
+
+        CustomTrades.register();
 
     }
 }
