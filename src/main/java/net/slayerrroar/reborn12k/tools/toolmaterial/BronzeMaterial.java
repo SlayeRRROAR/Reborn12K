@@ -15,12 +15,12 @@ public class BronzeMaterial implements ToolMaterial{
 
     @Override
     public int getDurability() {
-        return 320;
+        return 325;
     }
 
     @Override
     public int getEnchantability() {
-        return 8;
+        return 9;
     }
 
     @Override

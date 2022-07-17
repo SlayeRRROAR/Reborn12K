@@ -17,7 +17,7 @@ public class BronzeArmor implements ArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()]*18;
+        return BASE_DURABILITY[slot.getEntitySlotId()]*19;
     }
     @Override
     public int getProtectionAmount(EquipmentSlot slot) {
@@ -25,7 +25,7 @@ public class BronzeArmor implements ArmorMaterial {
     }
     @Override
     public int getEnchantability() {
-        return 8;
+        return 9;
     }
     @Override
     public SoundEvent getEquipSound() {
