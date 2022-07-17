@@ -38,6 +38,7 @@
     "nbtcrafting": "*"
   },
   "suggests": {
-    "modmenu": "*"
+    "modmenu": "*",
+    "alloy_forgery": "*"
   }
 }
