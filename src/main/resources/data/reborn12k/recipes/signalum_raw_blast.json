@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "reborn12k:raw_signalum"
+    },
+    "result": "reborn12k:signalum_ingot",
+    "experience": 1.4,
+    "cookingtime": 100
+}
