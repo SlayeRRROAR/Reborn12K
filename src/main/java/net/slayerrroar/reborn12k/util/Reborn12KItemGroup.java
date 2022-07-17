@@ -10,6 +10,6 @@ import net.slayerrroar.reborn12k.items.BaseItems;
 public class Reborn12KItemGroup {
 
     public static final ItemGroup REBORN12K = FabricItemGroupBuilder.build(new Identifier(Reborn12K.MOD_ID, "reborn12k"),
-            () -> new ItemStack(BaseItems.SAPPHIRE));
+            () -> new ItemStack(BaseItems.STEEL_INGOT));
 
 }
