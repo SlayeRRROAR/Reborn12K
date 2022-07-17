@@ -2,17 +2,17 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:ruby_block"
+        "reborn12k:raw_electrum"
       ]
     },
     "criteria": {
-      "has_ruby": {
+      "has_raw_gold": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:ruby"
+                "minecraft:raw_gold"
               ]
             }
           ]
@@ -21,13 +21,13 @@
       "has_the_recipe": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "reborn12k:ruby_block"
+          "recipe": "reborn12k:raw_electrum"
         }
       }
     },
     "requirements": [
       [
-        "has_ruby",
+        "has_raw_gold",
         "has_the_recipe"
       ]
     ]

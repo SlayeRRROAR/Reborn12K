@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:raw_gold"
+        },
+        {
+            "item": "reborn12k:raw_silver"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_electrum",
+        "count": 2
+    }
+}
