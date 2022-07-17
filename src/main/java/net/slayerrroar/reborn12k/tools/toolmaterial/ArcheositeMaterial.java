@@ -10,17 +10,17 @@ public class ArcheositeMaterial implements ToolMaterial{
 
     @Override
     public float getAttackDamage() {
-        return 5.0f;
+        return 6.0f;
     }
 
     @Override
     public int getDurability() {
-        return 3120;
+        return 2640;
     }
 
     @Override
     public int getEnchantability() {
-        return 24;
+        return 22;
     }
 
     @Override

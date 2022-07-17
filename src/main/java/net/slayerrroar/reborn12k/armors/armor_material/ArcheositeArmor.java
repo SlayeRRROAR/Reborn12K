@@ -41,7 +41,7 @@ public class ArcheositeArmor implements ArmorMaterial {
     }
     @Override
     public float getToughness() {
-        return 4;
+        return 5;
     }
     @Override
     public float getKnockbackResistance() {
