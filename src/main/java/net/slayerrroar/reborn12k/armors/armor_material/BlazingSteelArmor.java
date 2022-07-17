@@ -10,14 +10,14 @@ import net.slayerrroar.reborn12k.items.BaseItems;
 public class BlazingSteelArmor implements ArmorMaterial {
 
 	private static final int[] BASE_DURABILITY = new int[] {13, 15, 16, 11};
-	private static final int[] PROTECTION_VALUES = new int[] {4, 7, 9, 4};
+	private static final int[] PROTECTION_VALUES = new int[] {3, 6, 8, 3};
 
     // In which A is helmet, B chestplate, C leggings and D boots. 
 	// For reference, Leather uses {1, 2, 3, 1}, and Diamond/Netherite {3, 6, 8, 3}
 
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()]*29;
+        return BASE_DURABILITY[slot.getEntitySlotId()]*37;
     }
     @Override
     public int getProtectionAmount(EquipmentSlot slot) {
@@ -25,7 +25,7 @@ public class BlazingSteelArmor implements ArmorMaterial {
     }
     @Override
     public int getEnchantability() {
-        return 10;
+        return 8;
     }
     @Override
     public SoundEvent getEquipSound() {
@@ -45,7 +45,7 @@ public class BlazingSteelArmor implements ArmorMaterial {
     }
     @Override
     public float getKnockbackResistance() {
-        return 0.1f;
+        return 0.2f;
     }
 
 }

@@ -15,12 +15,12 @@ public class BlazingSteelMaterial implements ToolMaterial{
 
     @Override
     public int getDurability() {
-        return 2370;
+        return 2031;
     }
 
     @Override
     public int getEnchantability() {
-        return 10;
+        return 8;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class BlazingSteelMaterial implements ToolMaterial{
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 11.0f;
+        return 9.0f;
     }
 
     @Override

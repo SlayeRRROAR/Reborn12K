@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smithing",
     "base": {
-        "item": "reborn12k:carbon_steel_hoe"
+        "item": "reborn12k:steel_hoe"
     },
     "addition": {
         "item": "reborn12k:blazing_steel_ingot"
