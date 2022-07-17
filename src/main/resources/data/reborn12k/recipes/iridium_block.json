@@ -7,11 +7,11 @@
     ],
     "key": {
         "A": {
-            "tag": "c:opals"
+            "item": "reborn12k:iridium_ingot"
         }
     },
     "result": {
-        "item": "reborn12k:opal_block",
+        "item": "reborn12k:iridium_block",
         "count": 1
     }
 }

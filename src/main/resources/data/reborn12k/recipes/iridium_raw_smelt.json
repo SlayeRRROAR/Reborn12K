@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "reborn12k:raw_iridium"
+    },
+    "result": "reborn12k:iridium_ingot",
+    "experience": 1.3,
+    "cookingtime": 200
+}
