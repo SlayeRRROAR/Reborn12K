@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "item": "reborn12k:deepslate_topaz_ore"
-    },
-    "result": "reborn12k:topaz",
-    "experience": 1,
-    "cookingtime": 100
-}

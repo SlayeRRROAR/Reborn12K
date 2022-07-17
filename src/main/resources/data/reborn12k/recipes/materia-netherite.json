@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "reborn12k:withered_materia"
-    },
-    "result": "minecraft:netherite_scrap",
-    "count": 1
-}

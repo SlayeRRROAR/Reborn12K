@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "reborn12k:cursed_nether_materia"
-    },
-    "result": "minecraft:magma_cream",
-    "count": 4
-}

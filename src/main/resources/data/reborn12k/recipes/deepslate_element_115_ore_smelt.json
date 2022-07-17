@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "reborn12k:deepslate_element_115_ore"
-    },
-    "result": "reborn12k:element_115",
-    "experience": 1.0,
-    "cookingtime": 200
-}

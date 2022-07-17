@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "reborn12k:cursed_nether_materia"
-    },
-    "result": "minecraft:blaze_rod",
-    "count": 1
-}

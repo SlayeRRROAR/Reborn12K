@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "reborn12k:blessed_materia"
-    },
-    "result": "minecraft:chicken",
-    "count": 3
-}
