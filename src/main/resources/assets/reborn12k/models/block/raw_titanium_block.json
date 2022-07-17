@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "reborn12k:block/ruby_ore"
+    "all": "reborn12k:block/raw_titanium_block"
   }
 }

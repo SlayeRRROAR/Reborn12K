@@ -2,17 +2,17 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:steel_craft"
+        "reborn12k:titanium_hoe"
       ]
     },
     "criteria": {
-      "has_chrome_dust": {
+      "has_titanium_ingot": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:chrome_dust"
+                "reborn12k:titanium_ingot"
               ]
             }
           ]
@@ -21,13 +21,13 @@
       "has_the_recipe": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "reborn12k:steel_craft"
+          "recipe": "reborn12k:titanium_hoe"
         }
       }
     },
     "requirements": [
       [
-        "has_chrome_dust",
+        "has_titanium_ingot",
         "has_the_recipe"
       ]
     ]

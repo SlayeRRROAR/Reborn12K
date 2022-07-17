@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AA",
+        "AB",
+        " B"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:titanium_ingot"
+        },
+        "B": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "reborn12k:titanium_axe",
+        "count": 1
+    }
+}

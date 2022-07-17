@@ -2,15 +2,16 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "A A",
-        "A A"
+        "AAA",
+        "AAA"
     ],
     "key": {
         "A": {
-            "item": "reborn12k:manaweave"
+            "item": "reborn12k:titanium_ingot"
         }
     },
     "result": {
-        "item": "reborn12k:mage_boots",
+        "item": "reborn12k:titanium_chestplate",
         "count": 1
     }
 }

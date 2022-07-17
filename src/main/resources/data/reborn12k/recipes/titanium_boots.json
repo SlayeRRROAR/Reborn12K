@@ -1,17 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "AAA",
         "A A",
-        "AAA"
+        "A A"
     ],
     "key": {
         "A": {
-            "item": "minecraft:gold_ingot"
+            "item": "reborn12k:titanium_ingot"
         }
     },
     "result": {
-        "item": "reborn12k:golden_ring",
+        "item": "reborn12k:titanium_boots",
         "count": 1
     }
 }

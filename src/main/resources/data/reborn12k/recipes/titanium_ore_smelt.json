@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "reborn12k:titanium_ore"
+    },
+    "result": "reborn12k:titanium_ingot",
+    "experience": 1.0,
+    "cookingtime": 200
+}

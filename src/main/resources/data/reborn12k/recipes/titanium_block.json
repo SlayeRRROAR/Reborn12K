@@ -2,16 +2,16 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "AAA",
-        "A A",
-        "A A"
+        "AAA",
+        "AAA"
     ],
     "key": {
         "A": {
-            "item": "reborn12k:auramite_plate"
+            "item": "reborn12k:titanium_ingot"
         }
     },
     "result": {
-        "item": "reborn12k:power_leggings",
+        "item": "reborn12k:titanium_block",
         "count": 1
     }
 }
