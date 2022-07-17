@@ -6,13 +6,13 @@
       ]
     },
     "criteria": {
-      "has_cobalt": {
+      "has_blazing_steel": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:cobalt"
+                "reborn12k:blazing_steel"
               ]
             }
           ]
@@ -27,7 +27,7 @@
     },
     "requirements": [
       [
-        "has_cobalt",
+        "has_blazing_steel",
         "has_the_recipe"
       ]
     ]

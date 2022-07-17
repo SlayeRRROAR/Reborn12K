@@ -25,7 +25,7 @@ public class ThelositeArmor implements ArmorMaterial {
     }
     @Override
     public int getEnchantability() {
-        return 14;
+        return 15;
     }
     @Override
     public SoundEvent getEquipSound() {
@@ -33,7 +33,7 @@ public class ThelositeArmor implements ArmorMaterial {
     }
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.THELOSITE_INGOT);
+        return Ingredient.ofItems(BaseItems.ARCHEOSITE_INGOT);
     }
     @Override
     public String getName() {
@@ -41,7 +41,7 @@ public class ThelositeArmor implements ArmorMaterial {
     }
     @Override
     public float getToughness() {
-        return 5;
+        return 6;
     }
     @Override
     public float getKnockbackResistance() {

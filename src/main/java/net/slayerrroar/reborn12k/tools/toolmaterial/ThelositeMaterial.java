@@ -10,12 +10,12 @@ public class ThelositeMaterial implements ToolMaterial{
 
     @Override
     public float getAttackDamage() {
-        return 6.0f;
+        return 7.0f;
     }
 
     @Override
     public int getDurability() {
-        return 2750;
+        return 2640;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class ThelositeMaterial implements ToolMaterial{
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 13.0f;
+        return 14.0f;
     }
 
     @Override
