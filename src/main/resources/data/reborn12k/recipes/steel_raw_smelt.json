@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "reborn12k:raw_steel"
+    },
+    "result": "reborn12k:steel_ingot",
+    "experience": 1.0,
+    "cookingtime": 200
+}

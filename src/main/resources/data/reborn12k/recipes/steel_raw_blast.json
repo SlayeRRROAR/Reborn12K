@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "reborn12k:raw_steel"
+    },
+    "result": "reborn12k:steel_ingot",
+    "experience": 1.0,
+    "cookingtime": 100
+}

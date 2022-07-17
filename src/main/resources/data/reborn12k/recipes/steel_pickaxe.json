@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        " B ",
+        " B "
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:steel_ingot"
+        },
+        "B": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "reborn12k:steel_pickaxe",
+        "count": 1
+    }
+}

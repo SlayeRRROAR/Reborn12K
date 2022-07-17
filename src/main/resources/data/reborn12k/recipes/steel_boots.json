@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A A",
+        "A A"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:steel_ingot"
+        }
+    },
+    "result": {
+        "item": "reborn12k:steel_boots",
+        "count": 1
+    }
+}

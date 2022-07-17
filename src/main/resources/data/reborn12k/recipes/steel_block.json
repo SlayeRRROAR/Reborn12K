@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:steel_ingot"
+        }
+    },
+    "result": {
+        "item": "reborn12k:steel_block",
+        "count": 1
+    }
+}
