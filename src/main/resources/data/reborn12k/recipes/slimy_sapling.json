@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "reborn12k:minecraft_saplings"
+            "tag": "minecraft_saplings"
         },
         {
             "item": "minecraft:slime_ball"
