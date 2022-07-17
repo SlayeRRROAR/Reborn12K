@@ -4,9 +4,9 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.slayerrroar.reborn12k.items.BaseItems;
 
-public class Yamato implements ToolMaterial{
+public class IridiumAlloyMaterial implements ToolMaterial{
 
-    public static final Yamato INSTANCE = new Yamato();
+    public static final IridiumAlloyMaterial INSTANCE = new IridiumAlloyMaterial();
 
     @Override
     public float getAttackDamage() {
@@ -15,27 +15,27 @@ public class Yamato implements ToolMaterial{
 
     @Override
     public int getDurability() {
-        return 1824;
+        return 3168;
     }
 
     @Override
     public int getEnchantability() {
-        return 12;
+        return 22;
     }
 
     @Override
     public int getMiningLevel() {
-        return 4;
+        return 5;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 14.0f;
+        return 10.0f;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.SILVER_INGOT);
+        return Ingredient.ofItems(BaseItems.IRIDIUM_ALLOY_INGOT);
     }
-
+    
 }
