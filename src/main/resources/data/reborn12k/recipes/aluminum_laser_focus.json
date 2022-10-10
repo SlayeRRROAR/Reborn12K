@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:advanced_laser_focus"
+        },
+        {
+            "item": "reborn12k:raw_aluminum",
+            "remainder": { "item": "reborn12k:raw_aluminum" }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:aluminum_laser_focus",
+        "count": 1
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "The Nether",
+  "advancement": "story/form_obsidian",
+  "description": "I'll be frank $(playername), there isn't much else that can be done by staying here. We must go even deeper...",
+  "icon": "minecraft:writable_book",
+  "sortnum": 8
+}

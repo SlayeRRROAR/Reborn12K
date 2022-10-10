@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:tungstensteel_block"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:tungstensteel_ingot",
+        "count": 9
+    },
+    "group": "tungstensteel_ingot"
+}

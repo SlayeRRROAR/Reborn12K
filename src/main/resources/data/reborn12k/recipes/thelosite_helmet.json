@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smithing",
     "base": {
-        "item": "reborn12k:blazing_steel_helmet"
+        "item": "reborn12k:tungstensteel_helmet"
     },
     "addition": {
         "item": "reborn12k:thelosite_ingot"

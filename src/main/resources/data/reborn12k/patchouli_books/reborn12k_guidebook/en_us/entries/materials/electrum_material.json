@@ -1,0 +1,19 @@
+{
+  "name": "Electrum",
+  "icon": "reborn12k:electrum_ingot",
+  "advancement": "minecraft:story/iron_tools",
+  "category": "reborn12k:materials",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Electrum",
+        "text": "Electrum is an alloy made from Silver and Gold, and an alternative to Diamond.$(br)Tools and armor made of this material aren't as durable as their diamond counterpart, albeit keeping the same speed and strength. It has a very good enchantability.$(br2)DURABILITY: $(l)MEDIUM$()$(br)MINING SPEED: $(l)8$()$(br)ATTACK DAMAGE: $(l)7$()$(br)ENCHANTABILITY: $(l)HIGH"
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:raw_electrum_craft",
+      "text": "Raw Electrum can be smelted into ingots either by a Furnace or a Blast Furnace. Tools and armor must be crafted using individual pieces of Electrum."
+    }
+  ],
+  "sortnum": 222
+}

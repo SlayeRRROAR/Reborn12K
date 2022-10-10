@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:basic_laser_focus"
+        },
+        {
+            "item": "reborn12k:raw_nickel",
+            "remainder": { "item": "reborn12k:raw_nickel" }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:nickel_laser_focus",
+        "count": 1
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Advanced Runes",
+  "icon": "reborn12k:rune_of_chaos",
+  "advancement": "reborn12k:reborn12k_magic/elemental_runes",
+  "category": "reborn12k:magic",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Advanced Runes",
+      "text": "There are a lot of runes in the magic world. Most of them are still unknown to us. The reason being they are a mix of elemental runes, so... you know... infinite combinations and that kind of stuff. I'll teach you how to make a few of those Advanced Runes, so you can make some $(l:magical_materials/charms)cool charms$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:rune_of_iron",
+      "recipe2": "reborn12k:rune_of_nature"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:rune_of_order",
+      "text": "reborn12k:rune_of_chaos"
+    }
+  ],
+  "sortnum": 105
+}

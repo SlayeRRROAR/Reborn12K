@@ -1,0 +1,52 @@
+{
+  "parent": "reborn12k:reborn12k_magic/fateweaver",
+  "display": {
+    "icon": {
+      "item": "reborn12k:mage_chestplate"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.dressed_to_charm.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.dressed_to_charm.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mage_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:mage_helmet"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:mage_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:mage_leggings"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:mage_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "mage_armor"
+    ]
+  ]
+}

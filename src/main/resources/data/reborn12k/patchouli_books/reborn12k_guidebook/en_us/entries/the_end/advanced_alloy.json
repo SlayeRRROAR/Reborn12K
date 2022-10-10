@@ -1,0 +1,19 @@
+{
+  "name": "Advanced Alloy",
+  "icon": "reborn12k:advanced_alloy_ingot",
+  "advancement": "reborn12k:reborn12k/bulletproof",
+  "category": "reborn12k:the_nether",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Advanced Alloy",
+        "text": "Titanium is a very strong material, but it's heavy and not really easy to work with. Advanced Alloy is a mix of Titanium, Aluminum and Chrome, and it's the solution to the aformentioned problem."
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:advanced_alloy_craft",
+      "text": "A thin coating of Advanced Alloy over Titanium gear will suffice, no need to waste even more Titanium if you already have some."
+    }
+  ],
+  "sortnum": 32
+}

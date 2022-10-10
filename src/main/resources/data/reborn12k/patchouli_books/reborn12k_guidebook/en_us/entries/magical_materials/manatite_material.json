@@ -1,0 +1,30 @@
+{
+  "name": "Manatite",
+  "icon": "reborn12k:manatite",
+  "advancement": "reborn12k:reborn12k_magic/ashy_slashy",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Manatite",
+      "text": "Manatite generates rarely naturally in the Overworld.$(br)Can be found from Y level 16 to Y level -64, where is less rare.$(br)Can be used to craft lots of things, but usually it has to be refined first."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:refined_manatite",
+      "text": "A Refined Manatite is a Manatite Gem that has reached its maximum potential.$(br)The only thing that's left right now is to put its power into use.$(br)As you know, Manatites are basically a large battery of mana, but without an attunement all this power will be left unexpressed."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:windstorm_manatite",
+      "title": "Attuned Manatite",
+      "text": "An attuned manatite can be embedded either on a Ring or a Staff. A Ring will provide benefits for the wearer, but a Staff can manifest the full power of the Manatite in a single burst."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:ring_of_air",
+      "recipe2": "reborn12k:windstorm_wand"
+    }
+  ],
+  "sortnum": 308
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k/shocking",
+  "display": {
+    "icon": {
+      "item": "reborn12k:signalum_ingot"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.hyperconductor.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.hyperconductor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_signalum_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:signalum_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_signalum_ingot"
+    ]
+  ]
+}

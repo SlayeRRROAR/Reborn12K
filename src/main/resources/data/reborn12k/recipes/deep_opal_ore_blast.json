@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "reborn12k:deepslate_opal_ore"
+    },
+    "result": "reborn12k:opal",
+    "experience": 1,
+    "cookingtime": 100
+}

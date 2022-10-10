@@ -1,0 +1,11 @@
+{
+  "type": "reborn12k:runic_artifact",
+  "ingredients": [
+    {
+      "item": "reborn12k:blessed_catalyst"
+    }
+  ],
+  "output": {
+    "item": "reborn12k:blessed_materia"
+  }
+}

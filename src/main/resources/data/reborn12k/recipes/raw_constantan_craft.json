@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:raw_copper"
+        },
+        {
+            "item": "reborn12k:raw_nickel"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_constantan",
+        "count": 2
+    },
+    "group": "raw_constantan"
+}

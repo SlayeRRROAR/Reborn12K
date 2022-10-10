@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "reborn12k:opal",
+        "reborn12k:ruby",
+        "reborn12k:sapphire",
+        "minecraft:diamond",
+        "minecraft:emerald",
+        "minecraft:amethyst_shard"
+    ]
+}

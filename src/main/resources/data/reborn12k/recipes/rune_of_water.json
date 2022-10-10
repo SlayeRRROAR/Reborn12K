@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:blank_rune"
+        },
+        {
+            "item": "reborn12k:sapphire"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:rune_of_water",
+        "count": 1
+    }
+}

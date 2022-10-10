@@ -1,0 +1,11 @@
+{
+  "type": "reborn12k:runic_artifact",
+  "ingredients": [
+    {
+      "item": "reborn12k:nether_catalyst"
+    }
+  ],
+  "output": {
+    "item": "reborn12k:nether_materia"
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:hammer",
+            "remainder": { "item": "reborn12k:hammer" }
+        },
+        {
+            "item": "minecraft:iron_ingot"
+        }
+    ],
+    "result": {
+        "item": "minecraft:raw_iron",
+        "count": 1
+    },
+    "group": "raw_iron"
+}

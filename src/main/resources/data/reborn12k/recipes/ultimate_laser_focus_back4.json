@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:uranium_laser_focus"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:ultimate_laser_focus",
+        "count": 1
+    },
+    "group": "ultimate_laser_focus"
+}

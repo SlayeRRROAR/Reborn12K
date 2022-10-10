@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:raw_steel"
+        },
+        {
+            "item": "reborn12k:raw_steel"
+        },
+        {
+            "item": "reborn12k:raw_tungsten"
+        },
+        {
+            "item": "minecraft:blaze_rod"
+        },
+        {
+            "item": "minecraft:blaze_rod"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_tungstensteel",
+        "count": 3
+    },
+    "group": "raw_tungstensteel"
+}

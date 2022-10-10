@@ -1,0 +1,13 @@
+{
+    "type": "nbtcrafting:anvil",
+    "base": {
+        "item": "reborn12k:golden_ring"
+    },
+    "ingredient": {
+        "item": "reborn12k:manaweave"
+    },
+    "result": {
+        "item": "reborn12k:awakened_golden_ring"
+    },
+    "levels": 30
+}

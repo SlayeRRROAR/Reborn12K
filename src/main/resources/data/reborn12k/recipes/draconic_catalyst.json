@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "CDC",
+        "AEA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:dragon_breath"
+        },
+        "B": {
+            "item":  "minecraft:dragon_egg"
+        },
+        "C": {
+            "item":  "reborn12k:rune_of_strength"
+        },
+        "D": {
+            "item":  "reborn12k:incomplete_draconic_catalyst"
+        },
+        "E": {
+            "item":  "minecraft:dragon_egg"
+        }
+    },
+    "result": {
+        "item": "reborn12k:draconic_catalyst",
+        "count": 1
+    }
+}

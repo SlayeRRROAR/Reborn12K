@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:raw_tungstensteel"
+        },
+        {
+            "item": "reborn12k:raw_tungstensteel"
+        },
+        {
+            "item": "reborn12k:raw_tungstensteel"
+        },
+        {
+            "item": "reborn12k:raw_tungstensteel"
+        },
+        {
+            "item": "reborn12k:raw_cobalt"
+        },
+        {
+            "item": "reborn12k:raw_cobalt"
+        },
+        {
+            "item": "reborn12k:raw_cobalt"
+        },
+        {
+            "item": "reborn12k:raw_cobalt"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_thelosite",
+        "count": 1
+    },
+    "group": "raw_thelosite"
+}

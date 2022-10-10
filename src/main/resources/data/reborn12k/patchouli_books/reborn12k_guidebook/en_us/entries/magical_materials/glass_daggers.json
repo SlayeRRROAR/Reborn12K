@@ -1,0 +1,19 @@
+{
+  "name": "Glass Daggers",
+  "icon": "reborn12k:mana_glass_dagger",
+  "advancement": "reborn12k:reborn12k_magic/advanced_runes",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Glass Daggers",
+      "text": "The only items that can extract a Catalyst from a Frail mob. They deal very low damage. The Glass Dagger has a single durability point, while the Mana Glass Dagger is unbreakable. Enchanting them is pointless, but at least they look cool."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:glass_dagger",
+      "recipe2": "reborn12k:mana_glass_dagger"
+    }
+  ],
+  "sortnum": 337
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "reborn12k:nether_tungsten_ore"
+    },
+    "result": "reborn12k:tungsten_ingot",
+    "experience": 1.0,
+    "cookingtime": 100
+}

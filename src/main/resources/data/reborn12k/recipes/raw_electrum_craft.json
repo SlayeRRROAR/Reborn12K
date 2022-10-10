@@ -11,5 +11,6 @@
     "result": {
         "item": "reborn12k:raw_electrum",
         "count": 2
-    }
+    },
+    "group": "raw_electrum"
 }

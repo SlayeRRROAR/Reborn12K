@@ -1,0 +1,11 @@
+{
+  "type": "reborn12k:quarry",
+  "ingredients": [
+    {
+      "item": "reborn12k:gold_laser_focus"
+    }
+  ],
+  "output": {
+    "item": "minecraft:gold_ore"
+  }
+}

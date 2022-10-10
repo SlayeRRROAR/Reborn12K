@@ -1,0 +1,19 @@
+{
+  "name": "Runic Artifact",
+  "icon": "reborn12k:runic_artifact",
+  "advancement": "reborn12k:reborn12k_magic/soul_extraction",
+  "category": "reborn12k:magic",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Runic Artifact",
+      "text": "Once you have completed your first Catalyst, it's time to construct the device that will generate resources for you. The Runic Artifact is a powerful and mysterious machine, eight levitating spheres of obsidian covered in magically glowing runes, capable of collecting the mana in the air and giving it a physical form."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:runic_artifact",
+      "text": "Different Catalyst will yield different products, however the time it takes to complete the process remains the same. Consult your Compendium to learn what each Catalyst can produce."
+    }
+  ],
+  "sortnum": 110
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Withered Catalyst",
+  "icon": "reborn12k:incomplete_withered_catalyst",
+  "advancement": "reborn12k:reborn12k_magic/chained_souls",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Withered Catalyst",
+      "text": "A catalyst extracted from the soul of the Wither. As a boss, it's immune to statuses, so Daggers have a 20% chance of dropping a Catalyst when hitting it."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:withered_catalyst",
+      "text": "Complete the Catalyst by absorbing the correct souls, until the process is finished and the Catalyst appears."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:withered_materia",
+      "text": "When used in a Runic Artifact, a Withered Catalyst produces Withered Materia. Withered Materia can be consumed for experience or transformed into Withered Skeleton Skulls, Netherite Scraps or Withered Stars."
+    }
+  ],
+  "sortnum": 342
+}

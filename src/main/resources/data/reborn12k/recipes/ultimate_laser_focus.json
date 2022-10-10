@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "CDC",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:enderium_ingot"
+        },
+        "B": {
+            "item": "reborn12k:supercharged_fuel_cell"
+        },
+        "C": {
+            "item": "minecraft:nether_star"
+        },
+        "D": {
+            "item": "reborn12k:advanced_laser_focus"
+        }
+    },
+    "result": {
+        "item": "reborn12k:ultimate_laser_focus",
+        "count": 1
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A B",
+        " C ",
+        "B A"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:rune_of_darkness"
+        },
+        "B": {
+            "item": "reborn12k:rune_of_fire"
+        },
+        "C": {
+            "item": "reborn12k:blank_rune"
+        }
+    },
+    "result": {
+        "item": "reborn12k:rune_of_chaos",
+        "count": 1
+    }
+}

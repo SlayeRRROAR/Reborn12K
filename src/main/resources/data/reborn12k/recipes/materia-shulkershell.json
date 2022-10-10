@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "reborn12k:end_materia"
+    },
+    "result": "minecraft:shulker_shell",
+    "count": 1
+}

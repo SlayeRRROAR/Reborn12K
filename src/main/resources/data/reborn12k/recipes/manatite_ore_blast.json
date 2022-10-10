@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "reborn12k:manatite_ore"
+    },
+    "result": "reborn12k:manatite",
+    "experience": 1,
+    "cookingtime": 100
+}

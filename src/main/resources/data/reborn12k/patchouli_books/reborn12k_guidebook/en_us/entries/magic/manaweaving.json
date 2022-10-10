@@ -1,0 +1,29 @@
+{
+  "name": "Manaweaving",
+  "icon": "reborn12k:manaweave",
+  "advancement": "reborn12k:reborn12k_magic/kinda_expensive_stones",
+  "category": "reborn12k:magic",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Manaweaving",
+      "text": "Mana Gems aren't only useful for runes or jewelry. Oh no, they can do a lot. One of those more obscure uses is to create a something called Manaweave. This iridescent rainbow-colored string is far stronger than any fabric could ever hope to be, putting even kevlar to shame."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:mage_helmet",
+      "recipe2": "reborn12k:mage_chestplate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:mage_leggings",
+      "recipe2": "reborn12k:mage_boots"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:manaweave",
+      "text": "A string of Manaweave is used to Awaken a Golden Ring. If one is expert enough, through the use of an Anvil a Manasmith can awaken a Golden Ring with a single piece of Manaweave."
+    }
+  ],
+  "sortnum": 102
+}

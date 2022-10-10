@@ -1,0 +1,19 @@
+{
+  "name": "Hammer Time",
+  "icon": "reborn12k:hammer",
+  "category": "reborn12k:the_overworld",
+  "advancement": "reborn12k:reborn12k/getting_started",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Hammer Time",
+        "text": "Most of the alloys in this mod can only be obtained through raw materials. But what if you have already smelted those into ingots? Well, I'm not gonna present you a way to use the ingots (yet), but I can show you how to get those raw materials back."
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:hammer",
+      "text": "Behold... a hammer! If an ingot has a raw material counterpart, this tool will allow you (through crafting) to crush it. Might be useful, might be not. But if you need it, it's here."
+    }
+  ],
+  "sortnum": 4
+}

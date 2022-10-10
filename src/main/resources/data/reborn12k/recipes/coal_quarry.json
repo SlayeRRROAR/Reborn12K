@@ -1,0 +1,11 @@
+{
+  "type": "reborn12k:quarry",
+  "ingredients": [
+    {
+      "item": "reborn12k:coal_laser_focus"
+    }
+  ],
+  "output": {
+    "item": "minecraft:coal_ore"
+  }
+}

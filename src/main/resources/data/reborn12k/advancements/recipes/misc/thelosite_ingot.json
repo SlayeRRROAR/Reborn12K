@@ -6,13 +6,13 @@
       ]
     },
     "criteria": {
-      "has_blazing_steel_ingot": {
+      "has_tungstensteel_ingot": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "reborn12k:blazing_steel_ingot"
+                "reborn12k:tungstensteel_ingot"
               ]
             }
           ]
@@ -27,7 +27,7 @@
     },
     "requirements": [
       [
-        "has_blazing_steel_ingot",
+        "has_tungstensteel_ingot",
         "has_the_recipe"
       ]
     ]

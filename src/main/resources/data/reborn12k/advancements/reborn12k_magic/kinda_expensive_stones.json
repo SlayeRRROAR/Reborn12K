@@ -1,0 +1,76 @@
+{
+  "parent": "reborn12k:reborn12k_magic/magic_within",
+  "display": {
+    "icon": {
+      "item": "reborn12k:ruby"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.kinda_expensive_stones.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.kinda_expensive_stones.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_opal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:opal"
+            ]
+          }
+        ]
+      }
+    },
+    "get_sapphire": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:sapphire"
+            ]
+          }
+        ]
+      }
+    },
+    "get_ruby": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:ruby"
+            ]
+          }
+        ]
+      }
+    },
+    "get_manatite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:manatite"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_opal",
+      "get_sapphire",
+      "get_ruby",
+      "get_manatite"
+    ]
+  ]
+}

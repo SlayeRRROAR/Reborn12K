@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k/hyperconductor",
+  "display": {
+    "icon": {
+      "item": "reborn12k:enderium_ingot"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.fishing_in_the_dirac_sea.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.fishing_in_the_dirac_sea.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_enderium_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:enderium_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_enderium_ingot"
+    ]
+  ]
+}

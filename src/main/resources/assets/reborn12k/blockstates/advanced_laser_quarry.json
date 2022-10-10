@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "reborn12k:block/advanced_laser_quarry",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "reborn12k:block/advanced_laser_quarry"
+    },
+    "facing=south": {
+      "model": "reborn12k:block/advanced_laser_quarry",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "reborn12k:block/advanced_laser_quarry",
+      "y": 270
+    }
+  }
+}

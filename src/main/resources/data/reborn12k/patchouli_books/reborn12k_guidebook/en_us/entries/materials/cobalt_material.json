@@ -1,0 +1,19 @@
+{
+  "name": "Cobalt",
+  "icon": "reborn12k:cobalt_ingot",
+  "advancement": "minecraft:story/enter_the_end",
+  "category": "reborn12k:materials",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Cobalt",
+        "text": "Cobalt is a resource which was thought to exist only in myths.$(br)A very famous legends narrates this fantastic metal and how time bends around it and so it exist only in a realm outside of time. It is also told that a $(l)Dragon$() has made it his treasure, and so it shall be guarded until the $(l)End."
+      },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:end_cobalt_ore",
+      "text": "$(o)<<Time is devoid of Order and Chaos, lying beyond the dualistic nature of both Creation and Destruction. Without Time, nothing would be born. Without Time, nothing would die. Without time, nothing can change.>>$()$(br)The Tale of the Two Knights"
+    }
+  ],
+  "sortnum": 205
+}

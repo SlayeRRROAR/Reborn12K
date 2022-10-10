@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:raw_bronze"
+        "reborn12k:raw_bronze_craft"
       ]
     },
     "criteria": {

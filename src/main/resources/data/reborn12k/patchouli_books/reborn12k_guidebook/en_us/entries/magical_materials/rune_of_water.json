@@ -1,0 +1,19 @@
+{
+  "name": "Rune of Water",
+  "icon": "reborn12k:rune_of_water",
+  "advancement": "reborn12k:reborn12k_magic/kinda_expensive_stones",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Rune of Water",
+        "text": "A rune imbued with the power of the Water. Multiple can be used to attune a Refined Manatite into a Abyss Manatite."
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:rune_of_water",
+      "recipe2": "reborn12k:abyss_manatite"
+    }
+  ],
+  "sortnum": 311
+}

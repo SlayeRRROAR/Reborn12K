@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:advanced_laser_focus"
+        },
+        {
+            "item": "reborn12k:sapphire",
+            "remainder": { "item": "reborn12k:sapphire" }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:sapphire_laser_focus",
+        "count": 1
+    }
+}

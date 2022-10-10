@@ -1,0 +1,19 @@
+{
+  "name": "The Bronze Age",
+  "icon": "reborn12k:bronze_pickaxe",
+  "category": "reborn12k:the_overworld",
+  "advancement": "reborn12k:reborn12k/getting_started",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "The Bronze Age",
+        "text": "Now, this part is totally optional, but some things may be useful in early game. Bronze tools are an alternative to iron tools, they last longer, but they aren't as fast.$(br)Bronze armor is also an option if you are low on Iron."
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:bronze_pickaxe",
+      "recipe2": "reborn12k:bronze_chestplate"
+    }
+  ],
+  "sortnum": 3
+}

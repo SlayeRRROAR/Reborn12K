@@ -1,0 +1,24 @@
+{
+  "name": "Silver",
+  "icon": "reborn12k:silver_ingot",
+  "advancement": "minecraft:story/iron_tools",
+  "category": "reborn12k:materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Silver",
+      "text": "Silver is a resource that naturally generates in the overworld, from Y level -48 up to Y level 16.$(br)Using it as a tool material is basically a waste, due to its innate magical properties. However a few alloys use such holy material as an ingredient."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:silver_ore",
+      "text": "Silver is material extremely useful in magical applications."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:silver_claymore",
+      "text": "Due to its natural attunement with magic, one $(o)could$() forge a sword made out of Silver to imbue strong enchantments on it. No enchantment can make it any lighter though."
+    }
+  ],
+  "sortnum": 201
+}

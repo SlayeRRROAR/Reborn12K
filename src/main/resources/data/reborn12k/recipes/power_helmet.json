@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "A A"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:ceramite_plate"
+        }
+    },
+    "result": {
+        "item": "reborn12k:power_helmet",
+        "count": 1
+    }
+}

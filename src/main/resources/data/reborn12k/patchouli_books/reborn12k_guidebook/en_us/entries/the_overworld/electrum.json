@@ -1,0 +1,19 @@
+{
+  "name": "Electrum",
+  "icon": "reborn12k:electrum_ingot",
+  "advancement": "reborn12k:reborn12k_magic/magic_within",
+  "category": "reborn12k:the_overworld",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Electrum",
+        "text": "It's common knowledge that Silver and Gold are rare and precious metals. So majestic and pure that they could be even considered magical.$(br)Electrum is an alloy made out of those rare metals, usually in equal parts. Five thousand years ago The Egyptians used it to coat pyramids and obelisks, and to make jewelry, while Greeks used it to make coins."
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:raw_electrum_craft",
+      "text": "Did I already mention that any material that has a block form can be used as a Beacon Base? No? Well, know you know!"
+    }
+  ],
+  "sortnum": 7
+}

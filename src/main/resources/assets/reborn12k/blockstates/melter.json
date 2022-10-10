@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "reborn12k:block/melter",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "reborn12k:block/melter"
+    },
+    "facing=south": {
+      "model": "reborn12k:block/melter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "reborn12k:block/melter",
+      "y": 270
+    }
+  }
+}

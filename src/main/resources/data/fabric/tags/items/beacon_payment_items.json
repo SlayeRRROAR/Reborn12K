@@ -11,6 +11,9 @@
     "reborn12k:tin_ingot",
     "reborn12k:silver_ingot",
     "reborn12k:titanium_ingot",
+    "reborn12k:opal",
+    "reborn12k:sapphire",
+    "reborn12k:ruby",
     "reborn12k:aluminum_ingot",
     "reborn12k:cobalt_ingot",
     "reborn12k:iridium_ingot",
@@ -19,10 +22,11 @@
     "reborn12k:steel_ingot",
     "reborn12k:advanced_alloy_ingot",
     "reborn12k:signalum_ingot",
-    "reborn12k:blazing_steel_ingot",
+    "reborn12k:tungstensteel_ingot",
     "reborn12k:enderium_ingot",
     "reborn12k:advanced_alloy_ingot",
     "reborn12k:thelosite_ingot",
-    "reborn12k:archeosite_ingot"
+    "reborn12k:archeosite_ingot",
+    "reborn12k:demonic_metal_ingot"
   ]
 }

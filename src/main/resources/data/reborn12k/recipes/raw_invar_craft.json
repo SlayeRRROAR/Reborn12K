@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:raw_iron"
+        },
+        {
+            "item": "minecraft:raw_iron"
+        },
+        {
+            "item": "reborn12k:raw_nickel"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_invar",
+        "count": 3
+    },
+    "group": "raw_invar"
+}

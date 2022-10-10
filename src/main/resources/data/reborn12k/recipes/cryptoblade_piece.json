@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "reborn12k:cobalt_ingot"
+    },
+    "B": {
+      "item": "reborn12k:thelosite_ingot"
+    }
+  },
+  "result": {
+    "item": "reborn12k:cryptoblade_piece",
+    "count": 1
+  }
+}

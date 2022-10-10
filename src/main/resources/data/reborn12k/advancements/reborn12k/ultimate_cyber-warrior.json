@@ -1,0 +1,52 @@
+{
+  "parent": "reborn12k:reborn12k/cyber_alloy",
+  "display": {
+    "icon": {
+      "item": "reborn12k:iridium_alloy_chestplate"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.ultimate_cyber-warrior.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.ultimate_cyber-warrior.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "iridium_alloy_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:iridium_alloy_helmet"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:iridium_alloy_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:iridium_alloy_leggings"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:iridium_alloy_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "iridium_alloy_armor"
+    ]
+  ]
+}

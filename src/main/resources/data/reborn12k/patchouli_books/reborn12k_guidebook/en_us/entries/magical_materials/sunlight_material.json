@@ -1,0 +1,29 @@
+{
+  "name": "Sunlight Manatite",
+  "icon": "reborn12k:sunlight_manatite",
+  "advancement": "reborn12k:reborn12k_magic/manasmith",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Sunlight Manatite",
+      "text": "A Manatite attuned to Light with Runes of Light.$(br)A Ring forged with this Manatite will grant the wearer satiety and, if the user choses so, can replenish vitality. When used in a staff the caster can heal and regenerate ANY living creature in a radius. Useful to heal friends and harm the undead."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:sunlight_manatite",
+      "text": "$(l)Ring Effects$()$(br)$(li)Passive: Saturation$(li)Active: Regeneration II"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:sunlight_staff",
+      "text": "$(l)Staff Target:$()$(li)Living Creatures$(br2)$(l)Staff Effects:$()$(li)Instant Health$(li)Regeneration"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Sunlight Staffs",
+      "text": "Duration, Power and Range of the effects depend on the tier of the staff.$(br)Wooden is the worst. Silver has good range, but weaker effects and moderate cooldown. Gold has abysmal range, but powerful effects with a long cooldown. Archmage is the best."
+    }
+  ],
+  "sortnum": 322
+}

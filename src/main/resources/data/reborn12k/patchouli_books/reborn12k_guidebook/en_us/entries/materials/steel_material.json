@@ -1,0 +1,19 @@
+{
+  "name": "Steel",
+  "icon": "reborn12k:steel_ingot",
+  "advancement": "minecraft:story/iron_tools",
+  "category": "reborn12k:materials",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Steel",
+        "text": "Steel is mix of iron and chrome dust, and an alternative to Diamond.$(br)Tools and armor made of this material are as durable as their diamond counterpart, but faster and stronger. However, they're not as enchantable.$(br2)DURABILITY: $(l)HIGH$()$(br)MINING SPEED: $(l)9$()$(br)ATTACK DAMAGE: $(l)8$()$(br)ENCHANTABILITY: $(l)VERY LOW"
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:raw_steel_craft",
+      "text": "Raw Steel can be smelted into ingots either by a Furnace or a Blast Furnace. Tools and armor must be crafted using individual pieces of Steel."
+    }
+  ],
+  "sortnum": 221
+}

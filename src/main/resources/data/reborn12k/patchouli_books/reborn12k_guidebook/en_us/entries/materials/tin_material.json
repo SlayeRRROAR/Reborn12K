@@ -1,0 +1,19 @@
+{
+  "name": "Tin",
+  "icon": "reborn12k:tin_ingot",
+  "advancement": "minecraft:story/upgrade_tools",
+  "category": "reborn12k:materials",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Tin",
+        "text": "Tin is a resource that naturally generates in the overworld, from Y level 24 up to Y level 124.$(br)It's too weak to be used for tools and armor, but can be used to create stronger alloys."
+      },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:tin_ore",
+      "text": "Tin blocks can be used as a beacon base or decorative blocks, if you don't know what to do with them."
+    }
+  ],
+  "sortnum": 200
+}

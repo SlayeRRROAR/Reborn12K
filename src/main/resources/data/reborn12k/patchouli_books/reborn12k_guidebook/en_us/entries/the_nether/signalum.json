@@ -1,0 +1,19 @@
+{
+  "name": "Signalum",
+  "icon": "reborn12k:electrum_ingot",
+  "advancement": "reborn12k:reborn12k/shocking",
+  "category": "reborn12k:the_nether",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Signalum",
+        "text": "While made out of rare materials, Electrum gear performance isn't that great. It's a very good conductor of electricity tho. That's why it reacts so well with Redstone, forming the alloy known as Signalum (with a pinch of Aluminum for durability reasons)."
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:raw_signalum_craft",
+      "text": "No need to make a ton of it though. A single piece of Signalum can be smithed over Electrum gear to make an effective bond."
+    }
+  ],
+  "sortnum": 23
+}

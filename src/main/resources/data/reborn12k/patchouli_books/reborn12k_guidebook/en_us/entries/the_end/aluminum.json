@@ -1,0 +1,19 @@
+{
+  "name": "Aluminum",
+  "icon": "reborn12k:aluminum_ingot",
+  "advancement": "minecraft:story/enter_the_nether",
+  "category": "reborn12k:the_nether",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Aluminum",
+        "text": "Welcome to the Nether $(playername)! Here you will find the resource you need: Aluminum! By itself, this metal isn't durable enough to forge tools with, but is a good addition for other alloys. So go get some! Oh, you'll also find more Chrome here if you need it."
+      },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:nether_aluminum_ore",
+      "recipe2": "reborn12k:raw_signalum_crafting"
+    }
+  ],
+  "sortnum": 30
+}

@@ -2,35 +2,27 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:raw_electrum"
+            "item": "minecraft:raw_copper"
         },
         {
-            "item": "minecraft:redstone"
+            "item": "minecraft:raw_copper"
         },
         {
-            "item": "minecraft:redstone"
+            "item": "minecraft:raw_copper"
         },
         {
-            "item": "minecraft:redstone"
+            "item": "reborn12k:raw_silver"
         },
         {
-            "item": "minecraft:redstone"
+            "tag": "minecraft:sand"
         },
         {
-            "item": "minecraft:redstone"
-        },
-        {
-            "item": "minecraft:redstone"
-        },
-        {
-            "item": "minecraft:redstone"
-        },
-        {
-            "item": "minecraft:redstone"
+            "item": "reborn12k:destabilized_redstone_bucket"
         }
     ],
     "result": {
         "item": "reborn12k:raw_signalum",
-        "count": 1
-    }
+        "count": 4
+    },
+    "group": "raw_signalum"
 }

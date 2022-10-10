@@ -1,0 +1,51 @@
+{
+  "name": "Charms",
+  "icon": "reborn12k:magnet",
+  "advancement": "reborn12k:reborn12k_magic/advanced_runes",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Charms",
+      "text": "Advanced Runes allow you to craft charms. Charms vary in power and effects, some have passive benefits that can be toggled, some are just there, others do things when used. The following page will list all the avaible charms."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Magnet$(br)$(li)Yggdrasill Branch$(br)$(li)Magic Mirror$(br)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:magnet",
+      "text": "$(l)Effects:$()$(br)Can be toggled. When active dropped items and experience near you will be pulled towards you.$(br2)Range: $(l)5$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:magnet"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:yggdrasill_branch",
+      "text": "$(l)Effects:$()$(br)Can be toggled. When active crops and plants near you will grow faster.$(br2)Range: $(l)9$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:yggdrasill_branch"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:magic_mirror",
+      "text": "$(l)Effects:$()$(br)When activated the charm will teleport to your latest bed location. Has a set amount of uses, but can be recharged with an ender pearl.$(br)$(l)Will not work if no respawn has been set.$(br)Will only work in the Overworld.$(br)Will not work when out of charges."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:magic_mirror",
+      "recipe2": "reborn12k:magic_mirror_repair"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:ice_mirror",
+      "recipe2": "reborn12k:cell_phone"
+    }
+  ],
+  "sortnum": 335
+}

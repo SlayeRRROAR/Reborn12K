@@ -1,16 +1,13 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "A"
-    ],
-    "key": {
-        "A": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
             "item": "reborn12k:archeosite_block"
         }
-    },
+    ],
     "result": {
         "item": "reborn12k:archeosite_ingot",
         "count": 9
     },
-    "group": "archeosite"
+    "group": "archeosite_ingot"
 }

@@ -1,0 +1,52 @@
+{
+  "parent": "reborn12k:reborn12k/a_new_beginning",
+  "display": {
+    "icon": {
+      "item": "reborn12k:archeosite_chestplate"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.envoy_of_creation.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.envoy_of_creation.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "archeosite_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:archeosite_helmet"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:archeosite_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:archeosite_leggings"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:archeosite_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "archeosite_armor"
+    ]
+  ]
+}

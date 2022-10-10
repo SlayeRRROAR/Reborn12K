@@ -1,0 +1,19 @@
+{
+  "name": "Runic Artifact",
+  "icon": "reborn12k:runic_artifact",
+  "advancement": "reborn12k:reborn12k_magic/advanced_runes",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Runic Artifact",
+      "text": "A powerful and mysterious contraption, capable of condensating the mana in the air in a physical form when given a Catalyst."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:runic_artifact",
+      "text": "Catalysts must be complete for the Artifact to work. The Artifact needs 36 seconds to complete any process."
+    }
+  ],
+  "sortnum": 344
+}

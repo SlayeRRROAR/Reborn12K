@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "reborn12k:block/ash_planks"
+  }
+}

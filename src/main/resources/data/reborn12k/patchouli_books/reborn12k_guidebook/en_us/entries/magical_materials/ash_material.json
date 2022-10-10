@@ -1,0 +1,19 @@
+{
+  "name": "Ash Tree",
+  "icon": "reborn12k:ash_log",
+  "advancement": "reborn12k:reborn12k_magic/magic_within",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Ash Tree",
+        "text": "The Ash is a tall tree of a dark hue that can be found in the Taiga. Its wood is one of the strongest in the world, but brute force isn't all that's capable. The Ash wood can act as the perfect conduit of magic, as it doesn't cause disturbance in the flow of Mana like other types of wood."
+      },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:ash_sapling",
+      "text": "In the Norse mythology the 'Yggdrasill', or 'World Tree', is an immense Ash tree that stands at the center of the Cosmos. It's said that the nine realms are held by the branches of the tree, including Asgard, home of the Gods, while its roots reach deep down into hell. The tree is also the home of Nidhogg, an evil serpent-like dragon."
+    }
+  ],
+  "sortnum": 300
+}

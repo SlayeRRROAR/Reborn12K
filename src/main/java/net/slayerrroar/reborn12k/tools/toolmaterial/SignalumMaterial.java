@@ -30,7 +30,7 @@ public class SignalumMaterial implements ToolMaterial{
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 8.0f;
+        return 10.0f;
     }
 
     @Override

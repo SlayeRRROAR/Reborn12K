@@ -1,0 +1,18 @@
+{
+  "name": "Archmage Staff",
+  "icon": "reborn12k:archmage_staff",
+  "advancement": "reborn12k:reborn12k_magic/manasmith",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Archmage Staff",
+      "text": "The best staff there is. Only the most powerful wizards have ever held one of these. Effects are strong and long lasting, the range is the longest and the cooldown is very short. Truly a masterpiece of manasmithing."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:archmage_staff"
+    }
+  ],
+  "sortnum": 334
+}

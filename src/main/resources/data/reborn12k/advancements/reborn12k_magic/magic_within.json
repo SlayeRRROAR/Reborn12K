@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/root",
+  "display": {
+    "icon": {
+      "item": "reborn12k:silver_ingot"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.magic_within.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.magic_within.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "get_silver_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:silver_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_silver_ingot"
+    ]
+  ]
+}

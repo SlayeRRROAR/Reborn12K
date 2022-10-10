@@ -1,0 +1,19 @@
+{
+  "name": "Chrome Dust",
+  "icon": "reborn12k:chrome_dust",
+  "advancement": "minecraft:story/smelt_iron",
+  "category": "reborn12k:materials",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Chrome Dust",
+        "text": "Chrome Dust is a resource that naturally generates in the overworld, from Y level -64 up to Y level 48, and in the Nether, from Y level 10 to Y level 120.$(br)It's weak by itself, but when it's mixed into with other materials the resultant alloy is stronger and nigh impervious to external agents."
+      },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:chromite_ore",
+      "text": "Can be used to craft Steel Ingots and Advanced Alloy Ingots"
+    }
+  ],
+  "sortnum": 202
+}

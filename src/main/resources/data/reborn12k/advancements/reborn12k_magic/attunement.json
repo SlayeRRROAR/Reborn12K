@@ -1,0 +1,102 @@
+{
+  "parent": "reborn12k:reborn12k_magic/manasmith",
+  "display": {
+    "icon": {
+      "item": "reborn12k:windstorm_manatite"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.attunement.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.attunement.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_windstorm_manatite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:windstorm_manatite"
+            ]
+          }
+        ]
+      }
+    },
+    "get_viridian_manatite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:viridian_manatite"
+            ]
+          }
+        ]
+      }
+    },
+    "get_abyss_manatite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:abyss_manatite"
+            ]
+          }
+        ]
+      }
+    },
+    "get_volcanic_manatite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:volcanic_manatite"
+            ]
+          }
+        ]
+      }
+    },
+    "get_sunlight_manatite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:sunlight_manatite"
+            ]
+          }
+        ]
+      }
+    },
+    "get_novilunium_manatite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:novilunium_manatite"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_windstorm_manatite",
+      "get_viridian_manatite",
+      "get_abyss_manatite",
+      "get_volcanic_manatite",
+      "get_sunlight_manatite",
+      "get_novilunium_manatite"
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Golden Ring",
+  "icon": "reborn12k:golden_ring",
+  "advancement": "reborn12k:reborn12k_magic/manasmith",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Golden Ring",
+      "text": "A ring made out of eight pieces of gold, with a hole for a Manatite Gem. Has to be awoken first."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:golden_ring",
+      "text": "To wake a Golden Ring place it in an anvil with a string of Manaweave. The process requires 30 levels of experience."
+    }
+  ],
+  "sortnum": 330
+}

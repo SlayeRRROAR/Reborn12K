@@ -1,0 +1,63 @@
+{
+  "parent": "reborn12k:reborn12k_magic/elemental_runes",
+  "display": {
+    "icon": {
+      "item": "reborn12k:rune_of_chaos"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.advanced_runes.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.advanced_runes.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "get_rune_of_iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_iron"
+            ]
+          }
+        ]
+      }
+    },
+    "get_rune_of_order": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_order"
+            ]
+          }
+        ]
+      }
+    },
+    "get_rune_of_chaos": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_chaos"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_rune_of_iron",
+      "get_rune_of_order",
+      "get_rune_of_chaos"
+    ]
+  ]
+}

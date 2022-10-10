@@ -1,0 +1,19 @@
+{
+  "name": "Blazing Steel",
+  "icon": "reborn12k:tungstensteel_ingot",
+  "advancement": "reborn12k:reborn12k/stainless",
+  "category": "reborn12k:materials",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Blazing Steel",
+        "text": "Blazing Steel is mix of Steel and Blaze Powder, and an alternative to Netherite.$(br)Tools and armor made of this material are as durable as their netherite counterpart, but faster and stronger. However, they're not as enchantable.$(br2)DURABILITY: $(l)VERY HIGH$()$(br)MINING SPEED: $(l)11$()$(br)ATTACK DAMAGE: $(l)9$()$(br)ENCHANTABILITY: $(l)LOW"
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:tungstensteel_craft",
+      "text": "To obtain tools and armor made out of Blazing Steel, one must be smith Steel gear with a Blazing Steel Ingot."
+    }
+  ],
+  "sortnum": 223
+}

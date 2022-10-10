@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:advanced_laser_focus"
+        },
+        {
+            "item": "minecraft:redstone",
+            "remainder": { "item": "minecraft:redstone" }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:redstone_laser_focus",
+        "count": 1
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Catalysts",
+  "icon": "reborn12k:incomplete_cursed_catalyst",
+  "advancement": "reborn12k:reborn12k_magic/chained_souls",
+  "category": "reborn12k:magic",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "The Six Catalysts",
+      "text": "Now you should have both some Runic Snares and a Glass Dagger. The third thing you need is... a target. There are six types of Catalyst: Blessed, Cursed, Nether, Ender, Withered and Draconic. Depending on what mob you strike, you'll recieve a different Catalyst (As always, consult your Compendium)."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:incomplete_cursed_catalyst",
+      "title": "Incomplete Catalyst",
+      "text": "If you find yourself holding one you may also notice that they are incomplete. Can't have anything simple here, right? Well, it's infinite resources we're talking about, so it can't be that easy. To complete the Catalyst refer to its specific page in the Compendium."
+    }
+  ],
+  "sortnum": 109
+}

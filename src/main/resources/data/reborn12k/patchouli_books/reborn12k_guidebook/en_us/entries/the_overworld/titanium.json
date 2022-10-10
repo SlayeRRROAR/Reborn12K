@@ -1,0 +1,19 @@
+{
+  "name": "Titanium",
+  "icon": "reborn12k:titanium_ingot",
+  "advancement": "story/iron_tools",
+  "category": "reborn12k:the_overworld",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Titanium",
+        "text": "If you're planning to go deep enough when mining you might come across this material.$(br)Titanium is a durable metal that's strong enough by itself and can be used to make tools and armors. But this doesn't mean that alloys can't be made with it..."
+      },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "reborn12k:titanium_raw_smelt",
+      "text": "Titanium ores can be mined by an Iron Tier Pickaxe or better."
+    }
+  ],
+  "sortnum": 6
+}

@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:raw_lead"
+        },
+        {
+            "item": "reborn12k:raw_lead"
+        },
+        {
+            "item": "reborn12k:raw_lead"
+        },
+        {
+            "item": "reborn12k:raw_platinum"
+        },
+        {
+            "tag": "minecraft:sand"
+        },
+        {
+            "item": "reborn12k:resonant_ender_bucket"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_enderium",
+        "count": 4
+    },
+    "group": "raw_enderium"
+}

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:basic_laser_focus"
+        },
+        {
+            "item": "minecraft:raw_copper",
+            "remainder": { "item": "minecraft:raw_copper" }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:copper_laser_focus",
+        "count": 1
+    }
+}

@@ -1,15 +1,13 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "A"
-    ],
-    "key": {
-        "A": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
             "item": "reborn12k:raw_silver_block"
         }
-    },
+    ],
     "result": {
         "item": "reborn12k:raw_silver",
         "count": 9
-    }
+    },
+    "group": "raw_silver"
 }

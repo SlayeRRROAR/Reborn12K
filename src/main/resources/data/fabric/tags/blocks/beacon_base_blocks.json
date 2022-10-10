@@ -11,6 +11,9 @@
     "reborn12k:tin_block",
     "reborn12k:silver_block",
     "reborn12k:titanium_block",
+    "reborn12k:opal_block",
+    "reborn12k:ruby_block",
+    "reborn12k:sapphire_block",
     "reborn12k:aluminum_block",
     "reborn12k:cobalt_block",
     "reborn12k:iridium_block",
@@ -19,10 +22,11 @@
     "reborn12k:steel_block",
     "reborn12k:advanced_alloy_block",
     "reborn12k:signalum_block",
-    "reborn12k:blazing_steel_block",
+    "reborn12k:tungstensteel_block",
     "reborn12k:enderium_block",
     "reborn12k:advanced_alloy_block",
     "reborn12k:thelosite_block",
-    "reborn12k:archeosite_block"
+    "reborn12k:archeosite_block",
+    "reborn12k:demonic_metal_block"
   ]
 }

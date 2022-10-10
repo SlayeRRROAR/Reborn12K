@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:lapis_laser_focus"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:advanced_laser_focus",
+        "count": 1
+    },
+    "group": "advanced_laser_focus"
+}

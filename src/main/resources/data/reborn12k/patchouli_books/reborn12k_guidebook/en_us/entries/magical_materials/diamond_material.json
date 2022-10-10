@@ -1,0 +1,18 @@
+{
+  "name": "Diamond",
+  "icon": "minecraft:diamond",
+  "advancement": "reborn12k:reborn12k_magic/ashy_slashy",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Diamond",
+        "text": "Diamond generates naturally in the Overworld.$(br)Can be found from Y level 16 to Y level -64, where is less rare. It has a tendency to not be exposed to air.$(br)Can be used to craft Runes of Air."
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:rune_of_air"
+    }
+  ],
+  "sortnum": 301
+}

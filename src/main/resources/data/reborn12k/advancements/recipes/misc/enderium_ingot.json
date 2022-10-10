@@ -6,13 +6,13 @@
       ]
     },
     "criteria": {
-      "has_ender_pearl": {
+      "has_enderium_block": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "items": [
-                "minecraft:ender_pearl"
+                "reborn12k:enderium_block"
               ]
             }
           ]
@@ -27,7 +27,7 @@
     },
     "requirements": [
       [
-        "has_ender_pearl",
+        "has_enderium_block",
         "has_the_recipe"
       ]
     ]

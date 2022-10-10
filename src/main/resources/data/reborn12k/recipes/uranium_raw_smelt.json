@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "reborn12k:raw_uranium"
+    },
+    "result": "reborn12k:uranium_ingot",
+    "experience": 1.0,
+    "cookingtime": 200
+}

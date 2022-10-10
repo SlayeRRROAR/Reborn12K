@@ -1,7 +1,7 @@
 {
     "type": "minecraft:smithing",
     "base": {
-        "item": "reborn12k:blazing_steel_shovel"
+        "item": "reborn12k:tungstensteel_shovel"
     },
     "addition": {
         "item": "reborn12k:thelosite_ingot"

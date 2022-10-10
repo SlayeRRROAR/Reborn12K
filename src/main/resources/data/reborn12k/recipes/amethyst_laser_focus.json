@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:advanced_laser_focus"
+        },
+        {
+            "item": "minecraft:amethyst_shard",
+            "remainder": { "item": "minecraft:amethyst_shard" }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:amethyst_laser_focus",
+        "count": 1
+    }
+}

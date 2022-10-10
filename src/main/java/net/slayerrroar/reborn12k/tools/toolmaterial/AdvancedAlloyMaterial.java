@@ -30,7 +30,7 @@ public class AdvancedAlloyMaterial implements ToolMaterial{
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 7.0f;
+        return 9.0f;
     }
 
     @Override

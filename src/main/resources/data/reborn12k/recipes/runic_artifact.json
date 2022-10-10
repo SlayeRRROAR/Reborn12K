@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "CDC",
+        "AEA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:obsidian"
+        },
+        "B": {
+            "item": "reborn12k:rune_of_order"
+        },
+        "C": {
+            "item": "reborn12k:silver_ingot"
+        },
+        "D": {
+            "item": "minecraft:furnace"
+        },
+        "E": {
+            "item": "reborn12k:refined_manatite"
+        }
+    },
+    "result": {
+        "item": "reborn12k:runic_artifact",
+        "count": 1
+    }
+}

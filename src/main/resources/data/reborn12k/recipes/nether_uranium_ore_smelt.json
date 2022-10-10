@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "reborn12k:nether_uranium_ore"
+    },
+    "result": "reborn12k:uranium_ingot",
+    "experience": 0.8,
+    "cookingtime": 200
+}

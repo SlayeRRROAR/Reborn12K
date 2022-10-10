@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k/prussian_blue",
+  "display": {
+    "icon": {
+      "item": "reborn12k:archeosite_ingot"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.a_new_beginning.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.a_new_beginning.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_archeosite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:archeosite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_archeosite_ingot"
+    ]
+  ]
+}

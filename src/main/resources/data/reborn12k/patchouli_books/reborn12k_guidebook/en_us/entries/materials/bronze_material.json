@@ -1,0 +1,19 @@
+{
+  "name": "Bronze",
+  "icon": "reborn12k:bronze_ingot",
+  "advancement": "minecraft:story/upgrade_tools",
+  "category": "reborn12k:materials",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Bronze",
+        "text": "Bronze is the simplest alloy you can make. Obtained with copper and tin, is an alternative to Iron.$(br)Tools and armor made of this material are more durable than their iron counterpart, but not as strong or fast.$(br2)DURABILITY: $(l)LOW$()$(br)MINING SPEED: $(l)5$()$(br)ATTACK DAMAGE: $(l)5$()$(br)ENCHANTABILITY: $(l)MODERATE"
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:raw_bronze_craft",
+      "text": "Raw Bronze can be smelted into ingots either by a Furnace or a Blast Furnace. Tools and armor must be crafted using individual pieces of Bronze."
+    }
+  ],
+  "sortnum": 220
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A",
+    "B",
+    "C"
+  ],
+  "key": {
+    "A": {
+      "item": "reborn12k:yamato_blade"
+    },
+    "B": {
+      "item": "reborn12k:katana_tsuba"
+    },
+    "C": {
+      "item": "reborn12k:katana_tsuka"
+    }
+  },
+  "result": {
+    "item": "reborn12k:yamato",
+    "count": 1
+  },
+  "group": "yamato"
+}

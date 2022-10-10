@@ -1,0 +1,24 @@
+{
+  "name": "Draconic Catalyst",
+  "icon": "reborn12k:incomplete_withered_catalyst",
+  "advancement": "reborn12k:reborn12k_magic/chained_souls",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Draconic Catalyst",
+      "text": "A catalyst extracted from the soul of the Ender Dragon. As a boss, it's immune to statuses, so Daggers have a 25% chance of dropping a Catalyst when hitting it."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:draconic_catalyst",
+      "text": "Complete the Catalyst by following the recipe. I hope your Dragon Egg wasn't lost."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:end_materia",
+      "text": "When used in a Runic Artifact, an Draconic Catalyst produces Draconic Materia. Draconic Materia can be consumed for experience or transformed into Diamonds, Dragon Breath, Dragon Eggs or Dragon Heads."
+    }
+  ],
+  "sortnum": 343
+}

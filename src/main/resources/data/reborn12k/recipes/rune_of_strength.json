@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABC",
+        "DEF",
+        "GHI"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:rune_of_air"
+        },
+        "B": {
+            "item": "reborn12k:rune_of_order"
+        },
+        "C": {
+            "item": "reborn12k:rune_of_water"
+        },
+        "D": {
+            "item": "reborn12k:rune_of_light"
+        },
+        "E": {
+            "item": "reborn12k:blank_rune"
+        },
+        "F": {
+            "item": "reborn12k:rune_of_darkness"
+        },
+        "G": {
+            "item": "reborn12k:rune_of_fire"
+        },
+        "H": {
+            "item": "reborn12k:rune_of_chaos"
+        },
+        "I": {
+            "item": "reborn12k:rune_of_earth"
+        }
+    },
+    "result": {
+        "item": "reborn12k:rune_of_strength",
+        "count": 1
+    }
+}

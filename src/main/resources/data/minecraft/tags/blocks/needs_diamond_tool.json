@@ -1,19 +1,22 @@
 {
   "replace": false,
   "values": [
+    "reborn12k:manatite_ore",
+    "reborn12k:deepslate_manatite_ore",
     "reborn12k:end_cobalt_ore",
     "reborn12k:end_iridium_ore",
     "reborn12k:cobalt_block",
     "reborn12k:iridium_block",
     "reborn12k:signalum_block",
     "reborn12k:advanced_alloy_block",
-    "reborn12k:blazing_steel_block",
+    "reborn12k:tungstensteel_block",
     "reborn12k:enderium_block",
     "reborn12k:iridium_alloy_block",
     "reborn12k:thelosite_block",
     "reborn12k:archeosite_block",
     "reborn12k:raw_cobalt_block",
     "reborn12k:raw_iridium_block",
-    "reborn12k:raw_signalum_block"
+    "reborn12k:raw_signalum_block",
+    "reborn12k:demonic_metal_block"
   ]
 }

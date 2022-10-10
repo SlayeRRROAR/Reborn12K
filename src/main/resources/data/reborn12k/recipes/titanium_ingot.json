@@ -1,15 +1,13 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "A"
-    ],
-    "key": {
-        "A": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
             "item": "reborn12k:titanium_block"
         }
-    },
+    ],
     "result": {
         "item": "reborn12k:titanium_ingot",
         "count": 9
-    }
+    },
+    "group": "titanium_ingot"
 }

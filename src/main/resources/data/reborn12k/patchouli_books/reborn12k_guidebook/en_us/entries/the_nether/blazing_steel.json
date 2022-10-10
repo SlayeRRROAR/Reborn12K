@@ -1,0 +1,19 @@
+{
+  "name": "Tungstesteel",
+  "icon": "reborn12k:tungstensteel_ingot",
+  "advancement": "reborn12k:reborn12k/stainless",
+  "category": "reborn12k:the_nether",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Tungstesteel",
+        "text": ""
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:tungstensteel_craft",
+      "text": ""
+    }
+  ],
+  "sortnum": 21
+}

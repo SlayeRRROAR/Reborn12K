@@ -1,0 +1,29 @@
+{
+  "z115": {
+    "subtitle": "subtitles.reborn12k.z115",
+    "sounds": [
+      {
+        "name":"reborn12k:z115",
+        "stream": true
+      }
+    ]
+  },
+  "devil_trigger": {
+    "subtitle": "subtitles.reborn12k.devil_trigger",
+    "sounds": [
+      {
+        "name":"reborn12k:devil_trigger",
+        "stream": true
+      }
+    ]
+  },
+  "free_bird": {
+    "subtitle": "subtitles.reborn12k.free_bird",
+    "sounds": [
+      {
+        "name":"reborn12k:free_bird",
+        "stream": true
+      }
+    ]
+  }
+}

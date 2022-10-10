@@ -1,0 +1,19 @@
+{
+  "name": "Manaweave",
+  "icon": "reborn12k:manaweave",
+  "advancement": "reborn12k:reborn12k_magic/ashy_slashy",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Manaweave",
+        "text": "Obtained by fusing Mana Gems with wool.$(br)Armor can be made of this material, as durable as Diamond, but stronger and more enchantable.$(br2)DURABILITY: $(l)HIGH$()$(br)PROTECTION: $(l)HIGH$()$(br)ENCHANTABILITY: $(l)PERFECT$()$(br)PROTECTION: $(l)HIGH$()$(br)EFFECT: $(l)REGENERATION"
+      },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:manaweave",
+      "text": "Mage's Robes can be crafted using individual strings of manaweave."
+    }
+  ],
+  "sortnum": 307
+}

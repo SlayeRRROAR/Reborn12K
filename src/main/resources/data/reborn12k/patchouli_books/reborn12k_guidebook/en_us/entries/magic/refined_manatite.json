@@ -1,0 +1,18 @@
+{
+  "name": "Refined Manatite",
+  "icon": "reborn12k:refined_manatite",
+  "advancement": "reborn12k:reborn12k_magic/kinda_expensive_stones",
+  "category": "reborn12k:magic",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Refined Manatite",
+      "text": "Good job $(playername)! Now what you should do is refine your newfound manatite. You'll need some gold and silver ingots, but I honestly doubt that's going to be a problem for you."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:refined_manatite"
+    }
+  ],
+  "sortnum": 104
+}

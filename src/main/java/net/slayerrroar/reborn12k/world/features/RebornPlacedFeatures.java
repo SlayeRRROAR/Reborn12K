@@ -9,10 +9,17 @@ import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 
 public class RebornPlacedFeatures {
 
+    public static final RegistryEntry<PlacedFeature> ASH_PLACED =                                                    //ASH TREE
+            PlacedFeatures.register("ash_placed",
+                    RebornConfiguredFeatures.ASH_SPAWN,
+                    VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
+
+
     public static final RegistryEntry<PlacedFeature> CHERRY_PLACED =                                                    //CHERRY TREE
             PlacedFeatures.register("cherry_placed",
-            RebornConfiguredFeatures.CHERRY_SPAWN,
+                    RebornConfiguredFeatures.CHERRY_SPAWN,
                     VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
+
 
     public static final RegistryEntry<PlacedFeature> SLIMY_PLACED =                                                     //SLIMY TREE
             PlacedFeatures.register("slimy_placed",
@@ -41,19 +48,74 @@ public class RebornPlacedFeatures {
                             HeightRangePlacementModifier.uniform(YOffset.fixed(-48), YOffset.fixed(16))));
 
 
-    public static final RegistryEntry<PlacedFeature> TITANIUM_ORE_PLACED =                                              //TITANIUM ORES
-            PlacedFeatures.register("titanium_ore_placed",
-                    RebornConfiguredFeatures.TITANIUM_ORE,
+   public static final RegistryEntry<PlacedFeature> OPAL_ORE_SMALL_PLACED =                                            //OPAL ORES
+            PlacedFeatures.register("opal_ore_small_placed",
+                    RebornConfiguredFeatures.OPAL_ORE_SMALL,
+                    RebornOreFeatures.modifiersWithCount(2,
+                            HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-16), YOffset.aboveBottom(16))));
+
+    public static final RegistryEntry<PlacedFeature> OPAL_ORE_LARGE_PLACED =
+            PlacedFeatures.register("opal_ore_large_placed",
+                    RebornConfiguredFeatures.OPAL_ORE_LARGE,
+                    RebornOreFeatures.modifiersWithCount(5,
+                            HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
+
+    public static final RegistryEntry<PlacedFeature> OPAL_ORE_MOUNTAIN_PLACED =
+            PlacedFeatures.register("opal_ore_mountain_placed",
+                    RebornConfiguredFeatures.OPAL_ORE_MOUNTAIN,
+                    RebornOreFeatures.modifiersWithCount(6,
+                            HeightRangePlacementModifier.uniform(YOffset.aboveBottom(16), YOffset.aboveBottom(64))));
+
+
+    public static final RegistryEntry<PlacedFeature> RUBY_ORE_SMALL_PLACED =                                            //RUBY ORES
+            PlacedFeatures.register("ruby_ore_small_placed",
+                    RebornConfiguredFeatures.RUBY_ORE_SMALL,
+                    RebornOreFeatures.modifiersWithCount(2,
+                            HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-16), YOffset.aboveBottom(16))));
+
+    public static final RegistryEntry<PlacedFeature> RUBY_ORE_LARGE_PLACED =
+            PlacedFeatures.register("ruby_ore_large_placed",
+                    RebornConfiguredFeatures.RUBY_ORE_LARGE,
+                    RebornOreFeatures.modifiersWithCount(5,
+                            HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
+
+    public static final RegistryEntry<PlacedFeature> RUBY_ORE_LAVA_PLACED =
+            PlacedFeatures.register("ruby_ore_lava_placed",
+                    RebornConfiguredFeatures.RUBY_ORE_LAVA,
+                    RebornOreFeatures.modifiersWithCount(1,
+                            HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-56), YOffset.aboveBottom(-48))));
+
+
+    public static final RegistryEntry<PlacedFeature> SAPPHIRE_ORE_SMALL_PLACED =                                        //SAPPHIRE ORES
+            PlacedFeatures.register("sapphire_ore_small_placed",
+                    RebornConfiguredFeatures.SAPPHIRE_ORE_SMALL,
+                    RebornOreFeatures.modifiersWithCount(2,
+                            HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-16), YOffset.aboveBottom(16))));
+
+    public static final RegistryEntry<PlacedFeature> SAPPHIRE_ORE_LARGE_PLACED =
+            PlacedFeatures.register("sapphire_ore_large_placed",
+                    RebornConfiguredFeatures.SAPPHIRE_ORE_LARGE,
+                    RebornOreFeatures.modifiersWithCount(5,
+                            HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
+
+    public static final RegistryEntry<PlacedFeature> SAPPHIRE_ORE_OCEAN_PLACED =
+            PlacedFeatures.register("sapphire_ore_ocean_placed",
+                    RebornConfiguredFeatures.SAPPHIRE_ORE_OCEAN,
                     RebornOreFeatures.modifiersWithCount(4,
-                            HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(-16))));
+                            HeightRangePlacementModifier.uniform(YOffset.aboveBottom(24), YOffset.aboveBottom(48))));
 
 
-    public static final RegistryEntry<PlacedFeature> NETHER_CHROMITE_ORE_PLACED =                                       //NETHER CHROMITE ORES
-            PlacedFeatures.register("nether_chromite_ore_placed",
-                    RebornConfiguredFeatures.NETHER_CHROMITE_ORE,
-                    RebornOreFeatures.modifiersWithCount(11,
-                            HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.fixed(120))));
+    public static final RegistryEntry<PlacedFeature> MANATITE_ORE_SMALL_PLACED =                                        //MANATITE ORES
+            PlacedFeatures.register("manatite_ore_small_placed",
+                    RebornConfiguredFeatures.MANATITE_ORE_SMALL,
+                    RebornOreFeatures.modifiersWithCount(2,
+                            HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-16), YOffset.aboveBottom(16))));
 
+    public static final RegistryEntry<PlacedFeature> MANATITE_ORE_LARGE_PLACED =
+            PlacedFeatures.register("manatite_ore_large_placed",
+                    RebornConfiguredFeatures.MANATITE_ORE_LARGE,
+                    RebornOreFeatures.modifiersWithCount(4,
+                            HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
 
     public static final RegistryEntry<PlacedFeature> NETHER_ALUMINUM_ORE_PLACED =                                       //NETHER ALUMINUM ORES
             PlacedFeatures.register("nether_aluminum_ore_placed",

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "BCD",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "tag": "reborn12k:items/terracotta"
+    },
+    "B": {
+      "item": "reborn12k:steel_ingot"
+    },
+    "C": {
+      "item": "reborn12k:iridium_ingot"
+    },
+    "D": {
+      "item": "reborn12k:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "reborn12k:ceramite_plate",
+    "count": 3
+  }
+}

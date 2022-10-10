@@ -1,0 +1,24 @@
+{
+  "name": "Ender Catalyst",
+  "icon": "reborn12k:incomplete_ender_catalyst",
+  "advancement": "reborn12k:reborn12k_magic/chained_souls",
+  "category": "reborn12k:magical_materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Ender Catalyst",
+      "text": "A catalyst extracted from the soul of the mobs that roam the End. List of valid mobs: Endermen, Endermites and Shulkers."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:ender_catalyst",
+      "text": "Complete the Catalyst by absorbing the correct souls, until the process is finished and the Catalyst appears."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:end_materia",
+      "text": "When used in a Runic Artifact, an Ender Catalyst produces End Materia. End Materia can be consumed for experience or transformed into Chorus Fruit, End Rod, Ender Pearl, End Stone or Shulker Shell."
+    }
+  ],
+  "sortnum": 341
+}

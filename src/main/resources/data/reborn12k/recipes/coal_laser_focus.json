@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:basic_laser_focus"
+        },
+        {
+            "item": "minecraft:coal",
+            "remainder": { "item": "minecraft:coal" }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:coal_laser_focus",
+        "count": 1
+    }
+}

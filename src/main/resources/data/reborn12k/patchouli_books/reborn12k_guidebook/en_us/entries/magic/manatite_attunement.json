@@ -1,0 +1,19 @@
+{
+  "name": "Manatite Attunement",
+  "icon": "reborn12k:windstorm_manatite",
+  "advancement": "reborn12k:reborn12k_magic/manasmith",
+  "category": "reborn12k:magic",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Manatite Attunement",
+      "text": "Congratulations! All of your efforts are about to pay off! You have your battery ready, time for the attunement. The process is extremely simple, it's just basic crafting. You have six choices for attunement, one for each element. Refer to your Magical Compendium for more information on specific attunements."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:windstorm_manatite",
+      "text": "As you might expect, the process is the same for all elements, the only difference being the runes used."
+    }
+  ],
+  "sortnum": 106
+}
