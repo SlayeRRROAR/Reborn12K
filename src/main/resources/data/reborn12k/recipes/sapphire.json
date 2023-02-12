@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:sapphire_block"
+            "tag": "c:sapphire_blocks"
         }
     ],
     "result": {

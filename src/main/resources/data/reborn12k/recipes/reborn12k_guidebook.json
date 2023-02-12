@@ -1,0 +1,13 @@
+{
+    "type": "patchouli:shapeless_book_recipe",
+    "ingredients": [
+        {
+            "item": "minecraft:book"
+        },
+        {
+            "item": "reborn12k:hammer",
+            "remainder": { "item": "reborn12k:hammer" }
+        }
+    ],
+    "book": "reborn12k:reborn12k_guidebook"
+}

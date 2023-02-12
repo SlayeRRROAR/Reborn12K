@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:raw_signalum"
+        "reborn12k:raw_signalum_craft"
       ]
     },
     "criteria": {

@@ -5,7 +5,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.slayerrroar.reborn12k.items.BaseItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class AdvancedAlloyArmor implements ArmorMaterial {
 
@@ -33,7 +33,7 @@ public class AdvancedAlloyArmor implements ArmorMaterial {
     }
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.ADVANCED_ALLOY_INGOT);
+        return Ingredient.ofItems(RebornItems.ADVANCED_ALLOY_INGOT);
     }
     @Override
     public String getName() {

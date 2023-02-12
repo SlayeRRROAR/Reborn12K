@@ -1,0 +1,14 @@
+{
+  "type": "reborn12k:synthesis",
+  "ingredients": [
+    {
+      "item": "reborn12k:chicken_ai_module"
+    },
+    {
+      "item": "reborn12k:butchering_chip"
+    }
+  ],
+  "output": {
+    "item": "minecraft:chicken"
+  }
+}

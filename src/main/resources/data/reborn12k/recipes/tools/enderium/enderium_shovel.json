@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:signalum_shovel"
+    },
+    "addition": {
+        "tag": "c:enderium_ingots"
+    },
+    "result": {
+        "item": "reborn12k:enderium_shovel"
+    }
+}

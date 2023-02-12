@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "reborn12k:nether_materia"
-    },
-    "result": "minecraft:ghast_tear",
-    "count": 1
-}

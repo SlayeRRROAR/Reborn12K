@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "ABA",
+        "CDC"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:aluminum_ingots"
+        },
+        "B": {
+            "item": "minecraft:copper_ingot"
+        },
+        "C": {
+            "item": "minecraft:iron_nugget"
+        },
+        "D": {
+            "item": "minecraft:copper_block"
+        }
+    },
+    "result": {
+        "item": "reborn12k:cooling_assembly",
+        "count": 1
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "tag": "c:raw_chrome_blocks"
+    },
+    "result": "reborn12k:chrome_block",
+    "experience": 0.7,
+    "cookingtime": 100
+}

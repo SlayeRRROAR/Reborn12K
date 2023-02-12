@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:red_engine"
+      ]
+    },
+    "criteria": {
+      "has_tungstensteel_ingot": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:tungstensteel_ingots"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:red_engine"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_tungstensteel_ingot",
+        "has_the_recipe"
+      ]
+    ]
+  }

@@ -16,7 +16,7 @@ public class FuelCell extends Item {
     }
 
     private int getRemaining(ItemStack itemStack) {
-        return itemStack.getMaxDamage() - itemStack.getDamage() + 1;
+        return itemStack.getMaxDamage() - itemStack.getDamage();
     }
 
     @Environment(EnvType.CLIENT)

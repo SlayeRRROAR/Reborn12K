@@ -2,9 +2,15 @@
   "replace": false,
   "values": [
     "reborn12k:tin_ore",
+    "reborn12k:deepslate_tin_ore",
     "reborn12k:raw_tin_block",
-    "reborn12k:raw_bronze_block",
     "reborn12k:tin_block",
-    "reborn12k:bronze_block"
+    "reborn12k:aluminum_ore",
+    "reborn12k:deepslate_aluminum_ore",
+    "reborn12k:raw_aluminum_block",
+    "reborn12k:aluminum_block",
+    "reborn12k:raw_bronze_block",
+    "reborn12k:bronze_block",
+    "reborn12k:fancy_lamp"
   ]
 }

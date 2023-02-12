@@ -1,0 +1,14 @@
+{
+  "type": "reborn12k:synthesis",
+  "ingredients": [
+    {
+      "item": "reborn12k:zombie_ai_module"
+    },
+    {
+      "item": "reborn12k:exp_drain_chip"
+    }
+  ],
+  "output": {
+    "item": "reborn12k:experience_data_card_v2"
+  }
+}

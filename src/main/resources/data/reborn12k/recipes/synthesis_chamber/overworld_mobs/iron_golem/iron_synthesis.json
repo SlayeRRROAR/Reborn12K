@@ -1,0 +1,14 @@
+{
+  "type": "reborn12k:synthesis",
+  "ingredients": [
+    {
+      "item": "reborn12k:iron_golem_ai_module"
+    },
+    {
+      "item": "reborn12k:butchering_chip"
+    }
+  ],
+  "output": {
+    "item": "minecraft:iron_ingot"
+  }
+}

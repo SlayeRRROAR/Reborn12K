@@ -17,6 +17,15 @@
       }
     ]
   },
+  "bury_the_light": {
+    "subtitle": "subtitles.reborn12k.bury_the_light",
+    "sounds": [
+      {
+        "name":"reborn12k:bury_the_light",
+        "stream": true
+      }
+    ]
+  },
   "free_bird": {
     "subtitle": "subtitles.reborn12k.free_bird",
     "sounds": [

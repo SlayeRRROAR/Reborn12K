@@ -20,13 +20,12 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
-import net.slayerrroar.reborn12k.fluids.CustomFluids;
+import net.slayerrroar.reborn12k.fluids.RebornFluids;
 
 import java.util.Optional;
 
 public abstract class LiquidManaFluid extends FlowableFluid {
 
-    @Override
     protected boolean isInfinite() {
         return false;
     }
@@ -74,17 +73,17 @@ public abstract class LiquidManaFluid extends FlowableFluid {
 
     @Override
     public Fluid getStill() {
-        return CustomFluids.LIQUID_MANA_STILL;
+        return RebornFluids.LIQUID_MANA_STILL;
     }
 
     @Override
     public Fluid getFlowing() {
-        return CustomFluids.LIQUID_MANA_FLOWING;
+        return RebornFluids.LIQUID_MANA_FLOWING;
     }
 
     @Override
     public Item getBucketItem() {
-        return CustomFluids.LIQUID_MANA_BUCKET;
+        return RebornFluids.LIQUID_MANA_BUCKET;
     }
 
     @Override
@@ -115,7 +114,7 @@ public abstract class LiquidManaFluid extends FlowableFluid {
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return CustomFluids.LIQUID_MANA_BLOCK.getDefaultState()
+        return RebornFluids.LIQUID_MANA_BLOCK.getDefaultState()
                 .with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
@@ -132,6 +131,11 @@ public abstract class LiquidManaFluid extends FlowableFluid {
         }
 
         @Override
+        protected boolean isInfinite(World world) {
+            return false;
+        }
+
+        @Override
         public int getLevel(FluidState state) {
             return state.get(LEVEL);
         }
@@ -143,6 +147,11 @@ public abstract class LiquidManaFluid extends FlowableFluid {
     }
 
     public static class Still extends LiquidManaFluid {
+
+        @Override
+        protected boolean isInfinite(World world) {
+            return false;
+        }
 
         @Override
         public int getLevel(FluidState state) {

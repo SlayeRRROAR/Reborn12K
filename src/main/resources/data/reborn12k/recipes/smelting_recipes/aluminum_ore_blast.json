@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "tag": "c:aluminum_ores"
+    },
+    "result": "reborn12k:aluminum_ingot",
+    "experience": 0.9,
+    "cookingtime": 100
+}

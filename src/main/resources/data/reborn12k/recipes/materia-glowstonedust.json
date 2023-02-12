@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "reborn12k:nether_materia"
-    },
-    "result": "minecraft:glowstone_dust",
-    "count": 4
-}

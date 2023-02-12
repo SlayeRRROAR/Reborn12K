@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "reborn12k:nichirin_ore"
+    },
+    "result": "reborn12k:nichirin_ingot",
+    "experience": 1.2,
+    "cookingtime": 200
+}

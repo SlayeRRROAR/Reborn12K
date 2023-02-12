@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "item": "reborn12k:ruby_ore"
-    },
-    "result": "reborn12k:ruby",
-    "experience": 1,
-    "cookingtime": 100
-}

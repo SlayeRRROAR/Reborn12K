@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "BCB",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "tag": "c:uranium_blocks"
+        },
+        "B": {
+            "tag": "c:signalum_ingots"
+        },
+        "C": {
+            "item": "reborn12k:fuel_cell"
+        }
+    },
+    "result": {
+        "item": "reborn12k:charged_fuel_cell",
+        "count": 1
+    }
+}

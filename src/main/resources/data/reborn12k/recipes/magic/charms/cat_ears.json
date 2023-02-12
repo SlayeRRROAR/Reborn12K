@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:demon_kings_crown"
+    },
+    "addition": {
+        "tag": "minecraft:fishes"
+    },
+    "result": {
+        "item": "reborn12k:cat_ears"
+    }
+}

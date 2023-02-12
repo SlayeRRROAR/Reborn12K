@@ -1,5 +1,5 @@
 {
-  "parent": "reborn12k:reborn12k/bulletproof",
+  "parent": "reborn12k:reborn12k/lightweight",
   "display": {
     "icon": {
       "item": "reborn12k:advanced_alloy_ingot"

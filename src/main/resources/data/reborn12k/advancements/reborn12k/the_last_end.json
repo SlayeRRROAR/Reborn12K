@@ -1,5 +1,5 @@
 {
-  "parent": "reborn12k:reborn12k/prussian_blue",
+  "parent": "reborn12k:reborn12k/fearless",
   "display": {
     "icon": {
       "item": "reborn12k:thelosite_ingot"
@@ -10,7 +10,7 @@
     "description": {
       "translate": "advancements.reborn12k.the_last_end.description"
     },
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

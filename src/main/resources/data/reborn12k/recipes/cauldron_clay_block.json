@@ -1,7 +1,7 @@
 {
     "type": "nbtcrafting:cauldron",
     "input": {
-        "tag": "minecraft:sand"
+        "tag": "sand"
     },
     "result": {
         "item": "minecraft:clay"

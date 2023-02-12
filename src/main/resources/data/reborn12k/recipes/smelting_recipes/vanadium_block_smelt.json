@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "tag": "c:raw_vanadium_blocks"
+    },
+    "result": "reborn12k:vanadium_block",
+    "experience": 1.0,
+    "cookingtime": 200
+}

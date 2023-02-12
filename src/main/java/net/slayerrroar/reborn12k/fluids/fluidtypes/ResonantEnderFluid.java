@@ -20,16 +20,11 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
-import net.slayerrroar.reborn12k.fluids.CustomFluids;
+import net.slayerrroar.reborn12k.fluids.RebornFluids;
 
 import java.util.Optional;
 
 public class ResonantEnderFluid extends FlowableFluid {
-
-    @Override
-    protected boolean isInfinite() {
-        return false;
-    }
 
     @Override
     protected void beforeBreakingBlock(WorldAccess world, BlockPos pos, BlockState state) {
@@ -75,17 +70,22 @@ public class ResonantEnderFluid extends FlowableFluid {
 
     @Override
     public Fluid getStill() {
-        return CustomFluids.RESONANT_ENDER_STILL;
+        return RebornFluids.RESONANT_ENDER_STILL;
+    }
+
+    @Override
+    protected boolean isInfinite(World world) {
+        return false;
     }
 
     @Override
     public Fluid getFlowing() {
-        return CustomFluids.RESONANT_ENDER_FLOWING;
+        return RebornFluids.RESONANT_ENDER_FLOWING;
     }
 
     @Override
     public Item getBucketItem() {
-        return CustomFluids.RESONANT_ENDER_BUCKET;
+        return RebornFluids.RESONANT_ENDER_BUCKET;
     }
 
     @Override
@@ -116,7 +116,7 @@ public class ResonantEnderFluid extends FlowableFluid {
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return CustomFluids.RESONANT_ENDER_BLOCK.getDefaultState()
+        return RebornFluids.RESONANT_ENDER_BLOCK.getDefaultState()
                 .with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 

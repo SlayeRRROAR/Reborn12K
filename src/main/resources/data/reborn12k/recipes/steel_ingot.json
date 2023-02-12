@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:steel_block"
+            "tag": "c:steel_blocks"
         }
     ],
     "result": {
         "item": "reborn12k:steel_ingot",
         "count": 9
-    },
-    "group": "steel_ingot"
+    }
 }

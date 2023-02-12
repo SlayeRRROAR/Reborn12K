@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "reborn12k:precious_gems"
+        },
+        "B": {
+            "item": "reborn12k:golden_necklace"
+        }
+    },
+    "result": {
+        "item": "reborn12k:bejeweled_necklace",
+        "count": 1
+    }
+}

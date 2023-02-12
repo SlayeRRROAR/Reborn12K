@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "ACA",
+        "ADA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:constantan_ingots"
+        },
+        "B": {
+            "item": "reborn12k:cooling_assembly"
+        },
+        "C": {
+            "item": "reborn12k:power_supply_module"
+        },
+        "D": {
+            "item": "reborn12k:laser_diode"
+        }
+    },
+    "result": {
+        "item": "reborn12k:laser_emitter",
+        "count": 1
+    }
+}

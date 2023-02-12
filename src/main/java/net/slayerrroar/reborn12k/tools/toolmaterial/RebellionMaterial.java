@@ -2,7 +2,7 @@ package net.slayerrroar.reborn12k.tools.toolmaterial;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.slayerrroar.reborn12k.items.BaseItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class RebellionMaterial implements ToolMaterial {
 
@@ -35,7 +35,7 @@ public class RebellionMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.DEMONIC_METAL_INGOT);
+        return Ingredient.ofItems(RebornItems.DEMONIC_METAL_INGOT);
     }
 
 }

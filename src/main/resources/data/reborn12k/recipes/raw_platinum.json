@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:raw_platinum_block"
+            "tag": "c:raw_platinum_blocks"
         }
     ],
     "result": {

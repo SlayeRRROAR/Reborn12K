@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "CDC",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:invar_ingots"
+        },
+        "B": {
+            "tag": "c:copper_ingots"
+        },
+        "C": {
+            "item": "minecraft:redstone_block"
+        },
+        "D": {
+            "tag": "c:signalum_ingots"
+        }
+    },
+    "result": {
+        "item": "reborn12k:power_supply_module",
+        "count": 1
+    }
+}

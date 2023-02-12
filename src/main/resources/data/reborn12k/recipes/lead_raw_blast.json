@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "item": "reborn12k:raw_lead"
-    },
-    "result": "reborn12k:lead_ingot",
-    "experience": 1.0,
-    "cookingtime": 100
-}

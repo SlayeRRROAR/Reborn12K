@@ -22,6 +22,6 @@ public class CustomFuelSlot extends Slot {
     }
 
     public static boolean isBucket(ItemStack stack) {
-        return stack.isOf(Items.BUCKET);
+        return stack.isOf(Items.LAVA_BUCKET);
     }
 }

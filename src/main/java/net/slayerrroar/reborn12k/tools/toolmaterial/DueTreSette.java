@@ -35,7 +35,7 @@ public class DueTreSette implements ToolMaterial{
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(SecretItems.CRYPTOBLADE_PIECE);
+        return Ingredient.ofItems(SecretItems.CASING_MK237);
     }
 
 }

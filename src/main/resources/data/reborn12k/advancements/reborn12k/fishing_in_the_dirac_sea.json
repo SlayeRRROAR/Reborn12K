@@ -1,8 +1,8 @@
 {
-  "parent": "reborn12k:reborn12k/hyperconductor",
+  "parent": "reborn12k:reborn12k/negative_space",
   "display": {
     "icon": {
-      "item": "reborn12k:enderium_ingot"
+      "item": "reborn12k:enderium_chestplate"
     },
     "title": {
       "translate": "advancements.reborn12k.fishing_in_the_dirac_sea.title"
@@ -10,19 +10,34 @@
     "description": {
       "translate": "advancements.reborn12k.fishing_in_the_dirac_sea.description"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "get_enderium_ingot": {
+    "enderium_armor": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "reborn12k:enderium_ingot"
+              "reborn12k:enderium_helmet"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:enderium_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:enderium_leggings"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:enderium_boots"
             ]
           }
         ]
@@ -31,7 +46,7 @@
   },
   "requirements": [
     [
-      "get_enderium_ingot"
+      "enderium_armor"
     ]
   ]
 }

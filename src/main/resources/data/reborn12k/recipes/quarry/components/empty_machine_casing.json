@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "A A",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:aluminum_ingots"
+        }
+    },
+    "result": {
+        "item": "reborn12k:empty_machine_casing",
+        "count": 1
+    }
+}

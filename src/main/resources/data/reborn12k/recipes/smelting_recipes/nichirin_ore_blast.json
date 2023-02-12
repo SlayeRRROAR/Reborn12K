@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "reborn12k:nichirin_ore"
+    },
+    "result": "reborn12k:nichirin_ingot",
+    "experience": 1.2,
+    "cookingtime": 100
+}

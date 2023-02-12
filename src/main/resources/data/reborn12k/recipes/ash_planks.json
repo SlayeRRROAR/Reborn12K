@@ -3,7 +3,7 @@
     "group": "planks",
     "ingredients": [
         {
-            "tag": "minecraft:ash_logs"
+            "tag": "reborn12k:ash_logs"
         }
     ],
     "result": {

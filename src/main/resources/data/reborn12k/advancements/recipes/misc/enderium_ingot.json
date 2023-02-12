@@ -11,9 +11,7 @@
         "conditions": {
           "items": [
             {
-              "items": [
-                "reborn12k:enderium_block"
-              ]
+              "tag": "c:enderium_blocks"
             }
           ]
         }

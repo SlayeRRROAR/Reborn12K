@@ -5,7 +5,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.slayerrroar.reborn12k.items.BaseItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class EnderiumArmor implements ArmorMaterial {
 
@@ -17,7 +17,7 @@ public class EnderiumArmor implements ArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()]*37;
+        return BASE_DURABILITY[slot.getEntitySlotId()]*38;
     }
     @Override
     public int getProtectionAmount(EquipmentSlot slot) {
@@ -33,7 +33,7 @@ public class EnderiumArmor implements ArmorMaterial {
     }
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.ENDERIUM_INGOT);
+        return Ingredient.ofItems(RebornItems.ENDERIUM_INGOT);
     }
     @Override
     public String getName() {

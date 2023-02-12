@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:glacial_wand",
+            "remainder": { "item": "reborn12k:wooden_wand" }
+        }
+    ],
+    "result": {
+        "item": "reborn12k:glacial_manatite",
+        "count": 1
+    },
+    "group": "glacial_manatite"
+}

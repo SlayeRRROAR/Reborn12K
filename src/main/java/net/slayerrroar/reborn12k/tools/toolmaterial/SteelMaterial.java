@@ -2,7 +2,7 @@ package net.slayerrroar.reborn12k.tools.toolmaterial;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.slayerrroar.reborn12k.items.BaseItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class SteelMaterial implements ToolMaterial{
 
@@ -15,7 +15,7 @@ public class SteelMaterial implements ToolMaterial{
 
     @Override
     public int getDurability() {
-        return 1562;
+        return 1561;
     }
 
     @Override
@@ -35,7 +35,7 @@ public class SteelMaterial implements ToolMaterial{
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.STEEL_INGOT);
+        return Ingredient.ofItems(RebornItems.STEEL_INGOT);
     }
     
 }

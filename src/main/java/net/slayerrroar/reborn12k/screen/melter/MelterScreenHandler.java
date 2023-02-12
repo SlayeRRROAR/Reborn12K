@@ -9,7 +9,7 @@ import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
-import net.slayerrroar.reborn12k.screen.CustomScreenRegistry;
+import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
 import net.slayerrroar.reborn12k.screen.slots.CustomBucketSlot;
 import net.slayerrroar.reborn12k.screen.slots.CustomFuelSlot;
 import net.slayerrroar.reborn12k.screen.slots.CustomResultSlot;
@@ -19,11 +19,11 @@ public class MelterScreenHandler extends ScreenHandler {
     private final PropertyDelegate propertyDelegate;
 
     public MelterScreenHandler(int syncId, PlayerInventory inventory) {
-        this(syncId, inventory, new SimpleInventory(7), new ArrayPropertyDelegate(6));
+        this(syncId, inventory, new SimpleInventory(7), new ArrayPropertyDelegate(4));
     }
 
     public MelterScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
-        super(CustomScreenRegistry.MELTER_SCREEN_HANDLER, syncId);
+        super(RebornScreenRegistry.MELTER_SCREEN_HANDLER, syncId);
         checkSize(inventory, 7);
         this.inventory = inventory;
         inventory.onOpen(playerInventory.player);
@@ -69,7 +69,7 @@ public class MelterScreenHandler extends ScreenHandler {
     }
 
     @Override
-    public ItemStack transferSlot(PlayerEntity player, int invSlot) {
+    public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
         if (slot != null && slot.hasStack()) {

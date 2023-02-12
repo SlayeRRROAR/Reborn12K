@@ -11,9 +11,7 @@
         "conditions": {
           "items": [
             {
-              "items": [
-                "reborn12k:advanced_alloy_ingot"
-              ]
+              "tag": "c:advanced_alloy_ingots"
             }
           ]
         }

@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k/cutting_edge",
+  "display": {
+    "icon": {
+      "item": "reborn12k:advanced_laser_quarry"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.ultra_high_frequency_pulse.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.ultra_high_frequency_pulse.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_advanced_laser_quarry": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:advanced_laser_quarry"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_advanced_laser_quarry"
+    ]
+  ]
+}

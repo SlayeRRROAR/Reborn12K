@@ -2,28 +2,31 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:raw_tungstensteel"
+            "tag": "c:raw_tungstensteel_ores"
         },
         {
-            "item": "reborn12k:raw_tungstensteel"
+            "tag": "c:raw_tungstensteel_ores"
         },
         {
-            "item": "reborn12k:raw_tungstensteel"
+            "tag": "c:raw_tungstensteel_ores"
         },
         {
-            "item": "reborn12k:raw_tungstensteel"
+            "tag": "c:raw_tungstensteel_ores"
         },
         {
-            "item": "reborn12k:raw_cobalt"
+            "tag": "c:raw_cobalt_ores"
         },
         {
-            "item": "reborn12k:raw_cobalt"
+            "tag": "c:raw_cobalt_ores"
         },
         {
-            "item": "reborn12k:raw_cobalt"
+            "tag": "c:raw_osmium_ores"
         },
         {
-            "item": "reborn12k:raw_cobalt"
+            "tag": "c:raw_osmium_ores"
+        },
+        {
+            "tag": "c:raw_neodymium_ores"
         }
     ],
     "result": {

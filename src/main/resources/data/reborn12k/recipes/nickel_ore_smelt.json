@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "reborn12k:nickel_ore"
-    },
-    "result": "reborn12k:nickel_ingot",
-    "experience": 1.0,
-    "cookingtime": 200
-}

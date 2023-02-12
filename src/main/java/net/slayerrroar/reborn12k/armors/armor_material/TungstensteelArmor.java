@@ -5,7 +5,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.slayerrroar.reborn12k.items.BaseItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class TungstensteelArmor implements ArmorMaterial {
 
@@ -33,7 +33,7 @@ public class TungstensteelArmor implements ArmorMaterial {
     }
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.TUNGSTENSTEEL_INGOT);
+        return Ingredient.ofItems(RebornItems.TUNGSTENSTEEL_INGOT);
     }
     @Override
     public String getName() {

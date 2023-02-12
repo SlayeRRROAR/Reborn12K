@@ -20,13 +20,12 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
-import net.slayerrroar.reborn12k.fluids.CustomFluids;
+import net.slayerrroar.reborn12k.fluids.RebornFluids;
 
 import java.util.Optional;
 
 public class EnergizedGlowstoneFluid extends FlowableFluid {
 
-    @Override
     protected boolean isInfinite() {
         return false;
     }
@@ -75,17 +74,22 @@ public class EnergizedGlowstoneFluid extends FlowableFluid {
 
     @Override
     public Fluid getStill() {
-        return CustomFluids.ENERGIZED_GLOWSTONE_STILL;
+        return RebornFluids.ENERGIZED_GLOWSTONE_STILL;
+    }
+
+    @Override
+    protected boolean isInfinite(World world) {
+        return false;
     }
 
     @Override
     public Fluid getFlowing() {
-        return CustomFluids.ENERGIZED_GLOWSTONE_FLOWING;
+        return RebornFluids.ENERGIZED_GLOWSTONE_FLOWING;
     }
 
     @Override
     public Item getBucketItem() {
-        return CustomFluids.ENERGIZED_GLOWSTONE_BUCKET;
+        return RebornFluids.ENERGIZED_GLOWSTONE_BUCKET;
     }
 
     @Override
@@ -116,7 +120,7 @@ public class EnergizedGlowstoneFluid extends FlowableFluid {
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return CustomFluids.ENERGIZED_GLOWSTONE_BLOCK.getDefaultState()
+        return RebornFluids.ENERGIZED_GLOWSTONE_BLOCK.getDefaultState()
                 .with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 

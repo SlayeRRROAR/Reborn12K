@@ -11,9 +11,7 @@
         "conditions": {
           "items": [
             {
-              "items": [
-                "reborn12k:uranium_block"
-              ]
+              "tag": "c:uranium_blocks"
             }
           ]
         }

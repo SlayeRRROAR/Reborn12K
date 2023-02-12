@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "tag": "c:raw_enderium_blocks"
+    },
+    "result": "reborn12k:enderium_block",
+    "experience": 3.0,
+    "cookingtime": 100
+}

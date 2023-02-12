@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "reborn12k:nether_materia"
-    },
-    "result": "minecraft:gold_ingot",
-    "count": 1
-}

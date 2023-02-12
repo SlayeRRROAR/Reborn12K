@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "tag": "c:raw_archeosite_blocks"
+    },
+    "result": "reborn12k:archeosite_block",
+    "experience": 3.0,
+    "cookingtime": 100
+}

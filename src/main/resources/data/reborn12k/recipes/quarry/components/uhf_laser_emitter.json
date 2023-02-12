@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "ACA",
+        "ADA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:advanced_alloy_ingots"
+        },
+        "B": {
+            "item": "reborn12k:power_supply_module"
+        },
+        "C": {
+            "item": "reborn12k:high_frequency_resonance_coil"
+        },
+        "D": {
+            "item": "reborn12k:laser_emitter"
+        }
+    },
+    "result": {
+        "item": "reborn12k:uhf_laser_emitter",
+        "count": 1
+    }
+}

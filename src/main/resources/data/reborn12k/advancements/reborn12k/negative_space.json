@@ -1,8 +1,8 @@
 {
-  "parent": "reborn12k:reborn12k/fishing_in_the_dirac_sea",
+  "parent": "reborn12k:reborn12k/illuminating",
   "display": {
     "icon": {
-      "item": "reborn12k:enderium_chestplate"
+      "item": "reborn12k:enderium_ingot"
     },
     "title": {
       "translate": "advancements.reborn12k.negative_space.title"
@@ -10,34 +10,19 @@
     "description": {
       "translate": "advancements.reborn12k.negative_space.description"
     },
-    "frame": "challenge",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "enderium_armor": {
+    "get_enderium_ingot": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "reborn12k:enderium_helmet"
-            ]
-          },
-          {
-            "items": [
-              "reborn12k:enderium_chestplate"
-            ]
-          },
-          {
-            "items": [
-              "reborn12k:enderium_leggings"
-            ]
-          },
-          {
-            "items": [
-              "reborn12k:enderium_boots"
+              "reborn12k:enderium_ingot"
             ]
           }
         ]
@@ -46,7 +31,7 @@
   },
   "requirements": [
     [
-      "enderium_armor"
+      "get_enderium_ingot"
     ]
   ]
 }

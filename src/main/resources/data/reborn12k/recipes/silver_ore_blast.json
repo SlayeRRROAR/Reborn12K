@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "item": "reborn12k:silver_ore"
-    },
-    "result": "reborn12k:silver_ingot",
-    "experience": 1.0,
-    "cookingtime": 100
-}

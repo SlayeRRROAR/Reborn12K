@@ -20,13 +20,12 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
-import net.slayerrroar.reborn12k.fluids.CustomFluids;
+import net.slayerrroar.reborn12k.fluids.RebornFluids;
 
 import java.util.Optional;
 
 public class DestabilizedRedstoneFluid extends FlowableFluid {
 
-    @Override
     protected boolean isInfinite() {
         return false;
     }
@@ -75,17 +74,22 @@ public class DestabilizedRedstoneFluid extends FlowableFluid {
 
     @Override
     public Fluid getStill() {
-        return CustomFluids.DESTABILIZED_REDSTONE_STILL;
+        return RebornFluids.DESTABILIZED_REDSTONE_STILL;
+    }
+
+    @Override
+    protected boolean isInfinite(World world) {
+        return false;
     }
 
     @Override
     public Fluid getFlowing() {
-        return CustomFluids.DESTABILIZED_REDSTONE_FLOWING;
+        return RebornFluids.DESTABILIZED_REDSTONE_FLOWING;
     }
 
     @Override
     public Item getBucketItem() {
-        return CustomFluids.DESTABILIZED_REDSTONE_BUCKET;
+        return RebornFluids.DESTABILIZED_REDSTONE_BUCKET;
     }
 
     @Override
@@ -116,7 +120,7 @@ public class DestabilizedRedstoneFluid extends FlowableFluid {
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return CustomFluids.DESTABILIZED_REDSTONE_BLOCK.getDefaultState()
+        return RebornFluids.DESTABILIZED_REDSTONE_BLOCK.getDefaultState()
                 .with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 

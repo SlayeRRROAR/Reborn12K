@@ -7,7 +7,7 @@
     ],
     "key": {
         "A": {
-            "tag": "minecraft:planks"
+            "tag": "c:planks"
         },
         "B": {
             "item": "minecraft:crafting_table"

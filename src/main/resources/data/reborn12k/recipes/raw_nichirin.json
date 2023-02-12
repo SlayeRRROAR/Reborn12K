@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:raw_nichirin_block"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_nichirin",
+        "count": 9
+    }
+}

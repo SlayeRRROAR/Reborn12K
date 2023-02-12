@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:hammer",
+            "remainder": { "item": "reborn12k:hammer" }
+        },
+        {
+            "tag": "c:vanadium_ingots"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_vanadium",
+        "count": 1
+    },
+    "group": "raw_vanadium"
+}

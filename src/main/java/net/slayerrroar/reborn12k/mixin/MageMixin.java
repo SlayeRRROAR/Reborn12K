@@ -9,7 +9,7 @@ import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
-import net.slayerrroar.reborn12k.armors.Armors;
+import net.slayerrroar.reborn12k.armors.RebornArmors;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
@@ -31,7 +31,7 @@ public class MageMixin {
     private void constructor(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings, CallbackInfo ci) {
         UUID uUID = MODIFIERS[slot.getEntitySlotId()];
  
-        if (material == Armors.MAGE_ARMOR) {
+        if (material == RebornArmors.MAGE_ARMOR) {
             ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
  
             this.attributeModifiers.forEach(builder::put);

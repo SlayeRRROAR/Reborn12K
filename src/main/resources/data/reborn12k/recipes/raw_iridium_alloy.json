@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:raw_iridium_alloy_block"
+            "tag": "c:raw_iridium_alloy_blocks"
         }
     ],
     "result": {

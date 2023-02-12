@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "tag": "c:raw_advanced_alloy_blocks"
+    },
+    "result": "reborn12k:advanced_alloy_block",
+    "experience": 0.9,
+    "cookingtime": 100
+}

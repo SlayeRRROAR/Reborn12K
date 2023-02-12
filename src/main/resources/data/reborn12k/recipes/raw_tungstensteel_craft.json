@@ -2,19 +2,22 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:raw_steel"
+            "tag": "c:raw_steel_ores"
         },
         {
-            "item": "reborn12k:raw_steel"
+            "tag": "c:raw_steel_ores"
         },
         {
-            "item": "reborn12k:raw_tungsten"
+            "tag": "c:raw_steel_ores"
         },
         {
-            "item": "minecraft:blaze_rod"
+            "tag": "c:raw_tungsten_ores"
         },
         {
-            "item": "minecraft:blaze_rod"
+            "tag": "c:raw_tungsten_ores"
+        },
+        {
+            "tag": "c:raw_vanadium_ores"
         }
     ],
     "result": {

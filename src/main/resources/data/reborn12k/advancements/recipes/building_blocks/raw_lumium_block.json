@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:raw_lumium_block"
+      ]
+    },
+    "criteria": {
+      "has_raw_lumium": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:raw_lumium_ores"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:raw_lumium_block"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_raw_lumium",
+        "has_the_recipe"
+      ]
+    ]
+  }

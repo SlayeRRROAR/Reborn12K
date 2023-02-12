@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "minecraft:netherite_axe"
+    },
+    "addition": {
+        "tag": "c:archeosite_ingots"
+    },
+    "result": {
+        "item": "reborn12k:archeosite_axe"
+    }
+}

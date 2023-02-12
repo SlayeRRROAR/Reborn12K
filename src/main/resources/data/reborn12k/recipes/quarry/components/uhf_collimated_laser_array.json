@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:uhf_laser_emitter"
+        },
+        "B": {
+            "item": "reborn12k:power_supply_module"
+        },
+        "C": {
+            "item": "reborn12k:light_collimator_array"
+        }
+    },
+    "result": {
+        "item": "reborn12k:uhf_collimated_laser_array",
+        "count": 1
+    }
+}

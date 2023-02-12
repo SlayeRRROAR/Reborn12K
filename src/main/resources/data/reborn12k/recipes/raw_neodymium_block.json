@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:raw_neodymium_ores"
+        }
+    },
+    "result": {
+        "item": "reborn12k:raw_neodymium_block",
+        "count": 1
+    }
+}

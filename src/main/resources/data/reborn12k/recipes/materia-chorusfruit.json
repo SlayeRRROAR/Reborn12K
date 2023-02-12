@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "reborn12k:end_materia"
-    },
-    "result": "minecraft:chorus_fruit",
-    "count": 3
-}

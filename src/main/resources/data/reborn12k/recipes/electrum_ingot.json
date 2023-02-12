@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:electrum_block"
+            "tag": "c:electrum_blocks"
         }
     ],
     "result": {

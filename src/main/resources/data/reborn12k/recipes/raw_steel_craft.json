@@ -2,10 +2,10 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "minecraft:iron_ingot"
+            "item": "minecraft:raw_iron"
         },
         {
-            "item": "reborn12k:chrome_dust"
+            "tag": "c:raw_chrome_ores"
         },
         {
             "item": "reborn12k:coal_dust"

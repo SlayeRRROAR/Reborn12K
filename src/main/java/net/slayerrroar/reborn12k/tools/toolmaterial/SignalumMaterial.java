@@ -2,7 +2,7 @@ package net.slayerrroar.reborn12k.tools.toolmaterial;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.slayerrroar.reborn12k.items.BaseItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class SignalumMaterial implements ToolMaterial{
 
@@ -30,12 +30,12 @@ public class SignalumMaterial implements ToolMaterial{
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 10.0f;
+        return 9.0f;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.SIGNALUM_INGOT);
+        return Ingredient.ofItems(RebornItems.SIGNALUM_INGOT);
     }
     
 }

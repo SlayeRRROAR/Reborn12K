@@ -7,10 +7,10 @@
     ],
     "key": {
         "A": {
-            "item": "reborn12k:raw_iridium"
+            "tag": "c:raw_iridium_ores"
         },
         "B": {
-            "item": "reborn12k:raw_advanced_alloy"
+            "tag": "c:raw_advanced_alloy_ores"
         },
         "C": {
             "item": "minecraft:diamond"

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "tag": "c:raw_osmium_blocks"
+    },
+    "result": "reborn12k:osmium_block",
+    "experience": 1.3,
+    "cookingtime": 100
+}

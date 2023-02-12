@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "reborn12k:lead_ore"
-    },
-    "result": "reborn12k:lead_ingot",
-    "experience": 1.0,
-    "cookingtime": 200
-}

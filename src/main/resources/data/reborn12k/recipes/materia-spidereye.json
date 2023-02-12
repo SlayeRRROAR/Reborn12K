@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "reborn12k:cursed_materia"
-    },
-    "result": "minecraft:spider_eye",
-    "count": 2
-}

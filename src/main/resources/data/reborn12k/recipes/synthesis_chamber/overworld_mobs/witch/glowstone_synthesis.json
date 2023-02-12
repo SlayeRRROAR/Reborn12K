@@ -1,0 +1,14 @@
+{
+  "type": "reborn12k:synthesis",
+  "ingredients": [
+    {
+      "item": "reborn12k:witch_ai_module"
+    },
+    {
+      "item": "reborn12k:extraction_chip"
+    }
+  ],
+  "output": {
+    "item": "minecraft:glowstone_dust"
+  }
+}

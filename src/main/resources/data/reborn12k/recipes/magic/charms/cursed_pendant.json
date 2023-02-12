@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:heart_pendant"
+    },
+    "addition": {
+        "item": "reborn12k:demonic_metal_ingot"
+    },
+    "result": {
+        "item": "reborn12k:cursed_pendant"
+    }
+}

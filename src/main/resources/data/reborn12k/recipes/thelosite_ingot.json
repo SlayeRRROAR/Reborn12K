@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:thelosite_block"
+            "tag": "c:thelosite_blocks"
         }
     ],
     "result": {
         "item": "reborn12k:thelosite_ingot",
         "count": 9
-    },
-    "group": "thelosite_ingot"
+    }
 }

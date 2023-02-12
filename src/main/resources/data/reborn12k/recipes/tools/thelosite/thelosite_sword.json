@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:tungstensteel_sword"
+    },
+    "addition": {
+        "tag": "c:thelosite_ingots"
+    },
+    "result": {
+        "item": "reborn12k:thelosite_sword"
+    }
+}

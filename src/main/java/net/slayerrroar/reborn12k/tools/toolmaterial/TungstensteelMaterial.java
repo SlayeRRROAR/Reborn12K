@@ -2,7 +2,7 @@ package net.slayerrroar.reborn12k.tools.toolmaterial;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.slayerrroar.reborn12k.items.BaseItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class TungstensteelMaterial implements ToolMaterial{
 
@@ -30,12 +30,12 @@ public class TungstensteelMaterial implements ToolMaterial{
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 11.0f;
+        return 10.0f;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.TUNGSTENSTEEL_INGOT);
+        return Ingredient.ofItems(RebornItems.TUNGSTENSTEEL_INGOT);
     }
     
 }

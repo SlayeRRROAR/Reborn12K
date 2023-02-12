@@ -11,14 +11,14 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.armors.Armors;
+import net.slayerrroar.reborn12k.armors.RebornArmors;
 
 import java.util.Map;
 
 public class MageArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffect> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffect>())
-                    .put(Armors.MAGE_ARMOR, StatusEffects.REGENERATION).build();
+                    .put(RebornArmors.MAGE_ARMOR, StatusEffects.REGENERATION).build();
 
     public MageArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -53,7 +53,7 @@ public class MageArmorItem extends ArmorItem {
         boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect);
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect, 200));
+            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect, 20*10, 0, false, false));
 
         }
     }
@@ -61,10 +61,10 @@ public class MageArmorItem extends ArmorItem {
     private boolean hasFullSuitOfArmorOn(PlayerEntity player) {
         ItemStack boots = player.getInventory().getArmorStack(0);
         ItemStack leggings = player.getInventory().getArmorStack(1);
-        ItemStack breastplate = player.getInventory().getArmorStack(2);
+        ItemStack chestplate = player.getInventory().getArmorStack(2);
         ItemStack helmet = player.getInventory().getArmorStack(3);
 
-        return !helmet.isEmpty() && !breastplate.isEmpty()
+        return !helmet.isEmpty() && !chestplate.isEmpty()
                 && !leggings.isEmpty() && !boots.isEmpty();
     }
 
@@ -78,10 +78,10 @@ public class MageArmorItem extends ArmorItem {
 
         ArmorItem boots = ((ArmorItem)player.getInventory().getArmorStack(0).getItem());
         ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
-        ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
+        ArmorItem chestplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
         ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
 
-        return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
+        return helmet.getMaterial() == material && chestplate.getMaterial() == material &&
                 leggings.getMaterial() == material && boots.getMaterial() == material;
     }
 

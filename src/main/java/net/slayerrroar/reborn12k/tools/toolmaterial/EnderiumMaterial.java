@@ -2,7 +2,7 @@ package net.slayerrroar.reborn12k.tools.toolmaterial;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.slayerrroar.reborn12k.items.BaseItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class EnderiumMaterial implements ToolMaterial{
 
@@ -10,7 +10,7 @@ public class EnderiumMaterial implements ToolMaterial{
 
     @Override
     public float getAttackDamage() {
-        return 6.0f;
+        return 7.0f;
     }
 
     @Override
@@ -30,12 +30,12 @@ public class EnderiumMaterial implements ToolMaterial{
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 12.0f;
+        return 14.0f;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.ENDERIUM_INGOT);
+        return Ingredient.ofItems(RebornItems.ENDERIUM_INGOT);
     }
     
 }

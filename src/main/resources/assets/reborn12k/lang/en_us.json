@@ -3,24 +3,30 @@
     "item.reborn12k.coal_dust": "Coal Dust",
 
     "item.reborn12k.tin_ingot": "Tin Ingot",
+    "item.reborn12k.aluminum_ingot": "Aluminum Ingot",
     "item.reborn12k.silver_ingot": "Silver Ingot",
     "item.reborn12k.lead_ingot": "Lead Ingot",
     "item.reborn12k.nickel_ingot": "Nickel Ingot",
+    "item.reborn12k.chrome_ingot": "Chrome Ingot",
     "item.reborn12k.titanium_ingot": "Titanium Ingot",
-    "item.reborn12k.chrome_dust": "Chrome Dust",
 
-    "item.reborn12k.opal": "Opal",
-    "item.reborn12k.ruby": "Ruby",
     "item.reborn12k.sapphire": "Sapphire",
+    "item.reborn12k.ruby": "Ruby",
 
     "item.reborn12k.manatite": "Manatite",
     "item.reborn12k.refined_manatite": "Refined Manatite",
 
-    "item.reborn12k.aluminum_ingot": "Aluminum Ingot",
+    "item.reborn12k.sunstone": "Sunstone",
+    "item.reborn12k.moonstone": "Moonstone",
+
+
     "item.reborn12k.tungsten_ingot": "Tungsten Ingot",
+    "item.reborn12k.vanadium_ingot": "Vanadium Ingot",
+    "item.reborn12k.neodymium_ingot": "Nodymium Ingot",
     "item.reborn12k.uranium_ingot": "Uranium Ingot",
 
     "item.reborn12k.cobalt_ingot": "Cobalt Ingot",
+    "item.reborn12k.osmium_ingot": "Osmium Ingot",
     "item.reborn12k.platinum_ingot": "Platinum Ingot",
     "item.reborn12k.iridium_ingot": "Iridium Ingot",
 
@@ -38,20 +44,28 @@
     "item.reborn12k.archeosite_ingot": "Archeosite Ingot",
     "item.reborn12k.thelosite_ingot": "Thelosite Ingot",
 
+    "item.reborn12k.magisteel_ingot": "Magisteel Ingot",
 
+    "item.reborn12k.nichirin_ingot": "Nichirin Ingot",
+    "item.reborn12k.orichalcum_ingot": "Orichalcum Ingot",
+    "item.reborn12k.mithril_ingot": "Mithril Ingot",
     "item.reborn12k.demonic_metal_ingot": "Demonic Metal Ingot",
 
     "item.reborn12k.raw_tin": "Raw Tin",
+    "item.reborn12k.raw_aluminum": "Raw Aluminum",
     "item.reborn12k.raw_silver": "Raw Silver",
     "item.reborn12k.raw_lead": "Raw Lead",
     "item.reborn12k.raw_nickel": "Raw Nickel",
+    "item.reborn12k.raw_chrome": "Raw Chrome",
     "item.reborn12k.raw_titanium": "Raw Titanium",
 
-    "item.reborn12k.raw_aluminum": "Raw Aluminum",
     "item.reborn12k.raw_tungsten": "Raw Tungsten",
+    "item.reborn12k.raw_vanadium": "Raw Vanadium",
+    "item.reborn12k.raw_neodymium": "Raw Neodymium",
     "item.reborn12k.raw_uranium": "Raw Uranium",
 
     "item.reborn12k.raw_cobalt": "Raw Cobalt",
+    "item.reborn12k.raw_osmium": "Raw Osmium",
     "item.reborn12k.raw_platinum": "Raw Platinum",
     "item.reborn12k.raw_iridium": "Raw Iridium",
 
@@ -69,6 +83,8 @@
     "item.reborn12k.raw_archeosite": "Raw Archeosite",
     "item.reborn12k.raw_thelosite": "Raw Thelosite",
 
+    "item.reborn12k.raw_nichirin": "Raw Nichirin",
+
 
     "item.reborn12k.banana": "Banana",
     "item.reborn12k.golden_banana": "Golden Banana",
@@ -77,8 +93,6 @@
     "item.reborn12k.cherry": "Cherry",
     "item.reborn12k.golden_cherry": "Golden Cherry",
     "item.reborn12k.enchanted_golden_cherry": "Enchanted Golden Cherry",
-
-    "item.reborn12k.devil_bringer": "Devil Bringer",
 
     "item.reborn12k.withered_star": "Withered Star",
 
@@ -91,6 +105,12 @@
     "item.reborn12k.volcanic_manatite": "Volcanic Manatite",
     "item.reborn12k.sunlight_manatite": "Sunlight Manatite",
     "item.reborn12k.novilunium_manatite": "Novilunium Manatite",
+
+    "item.reborn12k.ferrum_manatite": "Ferrum Manatite",
+    "item.reborn12k.terra_manatite": "Terra Manatite",
+    "item.reborn12k.glacial_manatite": "Glacial Manatite",
+    "item.reborn12k.thunderbolt_manatite": "Thunderbolt Manatite",
+
     "item.reborn12k.crimson_manatite": "Crimson Manatite",
 
     "item.reborn12k.magic_mirror": "Magic Mirror",
@@ -105,14 +125,22 @@
     "block.reborn12k.market_table": "Market Table",
     "block.reborn12k.fancy_lamp": "Fancy Lamp",
 
-    "block.reborn12k.runic_artifact": "Runic Artifact",
+    "block.reborn12k.arcane_pedestal": "Arcane Pedestal",
+
+    "block.reborn12k.arcane_artifact": "Arcane Artifact",
+
+    "block.reborn12k.mineral_manufactory": "Mineral Manufactory",
     "block.reborn12k.melter": "Melter",
+
     "block.reborn12k.basic_laser_quarry": "Basic Laser Quarry",
     "block.reborn12k.advanced_laser_quarry": "Advanced Laser Quarry",
     "block.reborn12k.ultimate_laser_quarry": "Ultimate Laser Quarry",
 
+    "block.reborn12k.synthesis_chamber": "Synthesis Chamber",
+
 
     "block.reborn12k.tin_ore": "Tin Ore",
+    "block.reborn12k.deepslate_tin_ore": "Deepslate Tin Ore",
     "block.reborn12k.silver_ore": "Silver Ore",
     "block.reborn12k.deepslate_silver_ore": "Deepslate Silver Ore",
     "block.reborn12k.lead_ore": "Lead Ore",
@@ -121,26 +149,30 @@
     "block.reborn12k.deepslate_nickel_ore": "Deepslate Nickel Ore",
     "block.reborn12k.titanium_ore": "Titanium Ore",
     "block.reborn12k.deepslate_titanium_ore": "Deepslate Titanium Ore",
+    "block.reborn12k.aluminum_ore": "Aluminum Ore",
+    "block.reborn12k.deepslate_aluminum_ore": "Deepslate Aluminum Ore",
     "block.reborn12k.chromite_ore": "Chromite Ore",
     "block.reborn12k.deepslate_chromite_ore": "Deepslate Chromite Ore",
 
-    "block.reborn12k.opal_ore": "Opal Ore",
-    "block.reborn12k.ruby_ore": "Ruby Ore",
     "block.reborn12k.sapphire_ore": "Sapphire Ore",
-    "block.reborn12k.deepslate_opal_ore": "Deepslate Opal Ore",
-    "block.reborn12k.deepslate_ruby_ore": "Deepslate Ruby Ore",
+    "block.reborn12k.ruby_ore": "Ruby Ore",
     "block.reborn12k.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+    "block.reborn12k.deepslate_ruby_ore": "Deepslate Ruby Ore",
 
     "block.reborn12k.manatite_ore": "Manatite Ore",
     "block.reborn12k.deepslate_manatite_ore": "Deepslate Manatite Ore",
 
-    "block.reborn12k.nether_aluminum_ore": "Nether Aluminum Ore",
     "block.reborn12k.nether_tungsten_ore": "Nether Tungsten Ore",
+    "block.reborn12k.nether_vanadium_ore": "Nether Vanadium Ore",
+    "block.reborn12k.nether_neodymium_ore": "Nether Neodymium Ore",
     "block.reborn12k.nether_uranium_ore": "Nether Uranium Ore",
 
     "block.reborn12k.end_cobalt_ore": "End Cobalt Ore",
+    "block.reborn12k.end_osmium_ore": "End Osmium Ore",
     "block.reborn12k.end_platinum_ore": "End Platinum Ore",
     "block.reborn12k.end_iridium_ore": "End Iridium Ore",
+
+    "block.reborn12k.nichirin_ore": "Nichirin Ore",
 
 
     "block.reborn12k.ash_log": "Ash Log",
@@ -211,16 +243,20 @@
 
 
     "block.reborn12k.raw_tin_block": "Block of Raw Tin",
+    "block.reborn12k.raw_aluminum_block": "Block of Raw Aluminum",
     "block.reborn12k.raw_silver_block": "Block of Raw Silver",
     "block.reborn12k.raw_lead_block": "Block of Raw Lead",
     "block.reborn12k.raw_nickel_block": "Block of Raw Nickel",
+    "block.reborn12k.raw_chrome_block": "Block of Raw Chrome",
     "block.reborn12k.raw_titanium_block": "Block of Raw Titanium",
 
-    "block.reborn12k.raw_aluminum_block": "Block of Raw Aluminum",
     "block.reborn12k.raw_tungsten_block": "Block of Raw Tungsten",
+    "block.reborn12k.raw_vanadium_block": "Block of Raw Vanadium",
+    "block.reborn12k.raw_neodymium_block": "Block of Raw Neodymium",
     "block.reborn12k.raw_uranium_block": "Block of Raw Uranium",
 
     "block.reborn12k.raw_cobalt_block": "Block of Raw Cobalt",
+    "block.reborn12k.raw_osmium_block": "Block of Raw Osmium",
     "block.reborn12k.raw_platinum_block": "Block of Raw Platinum",
     "block.reborn12k.raw_iridium_block": "Block of Raw Iridium",
 
@@ -238,22 +274,31 @@
     "block.reborn12k.raw_archeosite_block": "Block of Raw Archeosite",
     "block.reborn12k.raw_thelosite_block": "Block of Raw Thelosite",
 
+    "block.reborn12k.raw_nichirin_block": "Block of Raw Nichirin",
+
     "block.reborn12k.tin_block": "Block of Tin",
+    "block.reborn12k.aluminum_block": "Block of Aluminum",
     "block.reborn12k.silver_block": "Block of Silver",
     "block.reborn12k.lead_block": "Block of Lead",
     "block.reborn12k.nickel_block": "Block of Nickel",
-    "block.reborn12k.titanium_block": "Block of Titanium",
     "block.reborn12k.chrome_block": "Block of Chrome",
+    "block.reborn12k.titanium_block": "Block of Titanium",
 
-    "block.reborn12k.opal_block": "Block of Opal",
     "block.reborn12k.ruby_block": "Block of Ruby",
     "block.reborn12k.sapphire_block": "Block of Sapphire",
 
-    "block.reborn12k.aluminum_block": "Block of Aluminum",
+    "block.reborn12k.manatite_block": "Block of Manatite",
+
+    "block.reborn12k.sunstone_block": "Block of Sunstone",
+    "block.reborn12k.moonstone_block": "Block of Moonstone",
+
     "block.reborn12k.tungsten_block": "Block of Tungsten",
+    "block.reborn12k.vanadium_block": "Block of Vanadium",
+    "block.reborn12k.neodymium_block": "Block of Neodymium",
     "block.reborn12k.uranium_block": "Block of Uranium",
 
     "block.reborn12k.cobalt_block": "Block of Cobalt",
+    "block.reborn12k.osmium_block": "Block of Osmium",
     "block.reborn12k.platinum_block": "Block of Platinum",
     "block.reborn12k.iridium_block": "Block of Iridium",
 
@@ -271,6 +316,11 @@
     "block.reborn12k.archeosite_block": "Block of Archeosite",
     "block.reborn12k.thelosite_block": "Block of Thelosite",
 
+    "block.reborn12k.magisteel_block": "Block of Magisteel",
+
+    "block.reborn12k.nichirin_block": "Block of Nichirin",
+    "block.reborn12k.orichalcum_block": "Block of Orichalcum",
+    "block.reborn12k.mithril_block": "Block of Mithril",
     "block.reborn12k.demonic_metal_block": "Block of Demonic Metal",
 
 
@@ -304,6 +354,26 @@
     "item.reborn12k.sunlight_rod": "Sunlight Rod",
     "item.reborn12k.sunlight_staff": "Sunlight Staff",
 
+    "item.reborn12k.ferrum_wand": "Ferrum Wand",
+    "item.reborn12k.ferrum_scepter": "Ferrum Scepter",
+    "item.reborn12k.ferrum_rod": "Ferrum Rod",
+    "item.reborn12k.ferrum_staff": "Ferrum Staff",
+
+    "item.reborn12k.terra_wand": "Terra Wand",
+    "item.reborn12k.terra_scepter": "Terra Scepter",
+    "item.reborn12k.terra_rod": "Terra Rod",
+    "item.reborn12k.terra_staff": "Terra Staff",
+
+    "item.reborn12k.glacial_wand": "Glacial Wand",
+    "item.reborn12k.glacial_scepter": "Glacial Scepter",
+    "item.reborn12k.glacial_rod": "Glacial Rod",
+    "item.reborn12k.glacial_staff": "Glacial Staff",
+
+    "item.reborn12k.thunderbolt_wand": "Thunderbolt Wand",
+    "item.reborn12k.thunderbolt_scepter": "Thunderbolt Scepter",
+    "item.reborn12k.thunderbolt_rod": "Thunderbolt Rod",
+    "item.reborn12k.thunderbolt_staff": "Thunderbolt Staff",
+
     "item.reborn12k.novilunium_wand": "Novilunium Wand",
     "item.reborn12k.novilunium_scepter": "Novilunium Scepter",
     "item.reborn12k.novilunium_rod": "Novilunium Rod",
@@ -314,26 +384,115 @@
     "item.reborn12k.crimson_rod": "Crimson Rod",
     "item.reborn12k.crimson_staff": "Crimson Staff",
 
+    "item.reborn12k.empty_machine_casing": "Empty Machine Casing",
 
-    "item.reborn12k.yamato_blade": "Yamato Blade",
-    "item.reborn12k.katana_tsuba": "Katana Tsuba",
-    "item.reborn12k.katana_tsuka": "Katana Tsuka",
+    "item.reborn12k.cooling_assembly": "Cooling Assembly",
+    "item.reborn12k.power_supply_module": "Power Supply Module",
+    "item.reborn12k.laser_diode": "Laser Diode",
+    "item.reborn12k.high_frequency_resonance_coil": "High Frequency Resonance Coil",
+    "item.reborn12k.light_collimator_array": "Light Collimator Array",
 
-    "item.reborn12k.queen_blade": "Queen Blade",
-    "item.reborn12k.red_engine": "Red Engine",
-
-    "item.reborn12k.cryptoblade": "Cryptoblade",
-    "item.reborn12k.cryptoblade_piece": "Cryptoblade Piece",
-    "item.reborn12k.casing_mk237": "Casing Mk.237",
-
-    "item.reborn12k.ceramite_plate": "Ceramite Plate",
+    "item.reborn12k.laser_emitter": "Laser Emitter",
+    "item.reborn12k.uhf_laser_emitter": "UHF Laser Emitter",
+    "item.reborn12k.uhf_collimated_laser_array": "UHF Collimated Laser Array",
 
     "item.reborn12k.empty_fuel_cell": "Empty Fuel Cell",
     "item.reborn12k.fuel_cell": "Fuel Cell",
     "item.reborn12k.charged_fuel_cell": "Charged Fuel Cell",
     "item.reborn12k.supercharged_fuel_cell": "Supercharged Fuel Cell",
 
+    "item.reborn12k.basic_laser_focus": "Basic Laser Focus",
+    "item.reborn12k.advanced_laser_focus": "Advanced Laser Focus",
+    "item.reborn12k.ultimate_laser_focus": "Ultimate Laser Focus",
+
+    "item.reborn12k.coal_laser_focus": "Coal Laser Focus",
+    "item.reborn12k.copper_laser_focus": "Copper Laser Focus",
+    "item.reborn12k.iron_laser_focus": "Iron Laser Focus",
+    "item.reborn12k.gold_laser_focus": "Gold Laser Focus",
+    "item.reborn12k.lapis_laser_focus": "Lapis Laser Focus",
+    "item.reborn12k.redstone_laser_focus": "Redstone Laser Focus",
+    "item.reborn12k.diamond_laser_focus": "Diamond Laser Focus",
+    "item.reborn12k.emerald_laser_focus": "Emerald Laser Focus",
+    "item.reborn12k.amethyst_laser_focus": "Amethyst Laser Focus",
+
+    "item.reborn12k.quartz_laser_focus": "Quartz Laser Focus",
+    "item.reborn12k.netherite_laser_focus": "Netherite Laser Focus",
+
+    "item.reborn12k.tin_laser_focus": "Tin Laser Focus",
+    "item.reborn12k.aluminum_laser_focus": "Aluminum Laser Focus",
+    "item.reborn12k.silver_laser_focus": "Silver Laser Focus",
     "item.reborn12k.lead_laser_focus": "Lead Laser Focus",
+    "item.reborn12k.nickel_laser_focus": "Nickel Laser Focus",
+    "item.reborn12k.chrome_laser_focus": "Chrome Laser Focus",
+    "item.reborn12k.titanium_laser_focus": "Titanium Laser Focus",
+
+    "item.reborn12k.sapphire_laser_focus": "Sapphire Laser Focus",
+    "item.reborn12k.ruby_laser_focus": "Ruby Laser Focus",
+
+    "item.reborn12k.manatite_laser_focus": "Manatite Laser Focus",
+
+    "item.reborn12k.tungsten_laser_focus": "Tungsten Laser Focus",
+    "item.reborn12k.vanadium_laser_focus": "Vanadium Laser Focus",
+    "item.reborn12k.neodymium_laser_focus": "Neodymium Laser Focus",
+    "item.reborn12k.uranium_laser_focus": "Uranium Laser Focus",
+
+    "item.reborn12k.cobalt_laser_focus": "Cobalt Laser Focus",
+    "item.reborn12k.osmium_laser_focus": "Osmium Laser Focus",
+    "item.reborn12k.platinum_laser_focus": "Platinum Laser Focus",
+    "item.reborn12k.iridium_laser_focus": "Iridium Laser Focus",
+
+    "item.reborn12k.empty_battery": "Empty Battery",
+    "item.reborn12k.lv_battery": "LV Battery",
+    "item.reborn12k.mv_battery": "MV Battery",
+    "item.reborn12k.hv_battery": "HV Battery",
+
+    "item.reborn12k.basic_ai_module": "Basic AI Module",
+    "item.reborn12k.advanced_ai_module": "Advanced AI Module",
+    "item.reborn12k.ultimate_ai_module": "Ultimate AI Module",
+    "item.reborn12k.special_ai_module": "Special AI Module",
+
+    "item.reborn12k.instruction_chip": "Instruction Chip",
+
+    "item.reborn12k.butchering_chip": "Butchering Chip",
+    "item.reborn12k.shearing_chip": "Shearing Chip",
+    "item.reborn12k.severing_chip": "Severing Chip",
+    "item.reborn12k.decapitation_chip": "Decapitation Chip",
+    "item.reborn12k.extraction_chip": "Extraction Chip",
+    "item.reborn12k.recombination_chip": "Recombination Chip",
+    "item.reborn12k.exp_drain_chip": "EXP-Drain Chip",
+    "item.reborn12k.s_rep_chip": "S-ReP Chip",
+
+
+    "item.reborn12k.bee_ai_module": "Bee AI Module",
+    "item.reborn12k.chicken_ai_module": "Chicken AI Module",
+    "item.reborn12k.cow_ai_module": "Cow AI Module",
+    "item.reborn12k.fish_ai_module": "Fish AI Module",
+    "item.reborn12k.pig_ai_module": "Pig AI Module",
+    "item.reborn12k.rabbit_ai_module": "Rabbit AI Module",
+    "item.reborn12k.sheep_ai_module": "Sheep AI Module",
+    "item.reborn12k.squid_ai_module": "Squid AI Module",
+    "item.reborn12k.creeper_ai_module": "Creeper AI Module",
+    "item.reborn12k.zombie_ai_module": "Zombie AI Module",
+    "item.reborn12k.slime_ai_module": "Slime AI Module",
+    "item.reborn12k.skeleton_ai_module": "Skeleton AI Module",
+    "item.reborn12k.witch_ai_module": "Witch AI Module",
+    "item.reborn12k.spider_ai_module": "Spider AI Module",
+    "item.reborn12k.iron_golem_ai_module": "Iron Golem AI Module",
+    "item.reborn12k.illager_ai_module": "Illager AI Module",
+    "item.reborn12k.guardian_ai_module": "Guardian AI Module",
+    "item.reborn12k.enderman_ai_module": "Enderman AI Module",
+    "item.reborn12k.shulker_ai_module": "Shulker AI Module",
+    "item.reborn12k.ghast_ai_module": "Ghast AI Module",
+    "item.reborn12k.blaze_ai_module": "Blaze AI Module",
+    "item.reborn12k.wither_skeleton_ai_module": "Wither Skeleton AI Module",
+    "item.reborn12k.phantom_ai_module": "Phantom AI Module",
+    "item.reborn12k.wither_ai_module": "Wither AI Module",
+    "item.reborn12k.ender_dragon_ai_module": "Ender Dragon AI Module",
+    "item.reborn12k.experience_data_card": "Experience Data Card",
+    "item.reborn12k.experience_data_card_v2": "Experience Data Card v2",
+    "item.reborn12k.experience_data_card_v3": "Experience Data Card v3",
+    "item.reborn12k.experience_data_card_v237": "Experience Data Card v23.7",
+
 
     "item.reborn12k.manaweave": "Manaweave",
 
@@ -347,35 +506,15 @@
 
     "item.reborn12k.rune_of_iron": "Rune of Iron",
     "item.reborn12k.rune_of_nature": "Rune of Nature",
+    "item.reborn12k.rune_of_ice": "Rune of Ice",
+    "item.reborn12k.rune_of_lightning": "Rune of Lightning",
 
     "item.reborn12k.rune_of_order": "Rune of Order",
     "item.reborn12k.rune_of_chaos": "Rune of Chaos",
+    "item.reborn12k.elemental_rune": "Elemental Rune",
+    "item.reborn12k.ethereal_rune": "Ethereal Rune",
 
     "item.reborn12k.rune_of_strength": "Rune of Strength",
-
-    "item.reborn12k.runic_snare": "Runic Snare",
-
-    "item.reborn12k.blessed_catalyst": "Blessed Catalyst",
-    "item.reborn12k.cursed_catalyst": "Cursed Catalyst",
-    "item.reborn12k.nether_catalyst": "Cursed Nether Catalyst",
-    "item.reborn12k.ender_catalyst": "Cursed Ender Catalyst",
-    "item.reborn12k.withered_catalyst": "Withered Catalyst",
-    "item.reborn12k.draconic_catalyst": "Draconic Catalyst",
-
-    "item.reborn12k.incomplete_blessed_catalyst": "Incomplete Blessed Catalyst",
-    "item.reborn12k.incomplete_cursed_catalyst": "Incomplete Cursed Catalyst",
-    "item.reborn12k.incomplete_nether_catalyst": "Incomplete Nether Catalyst",
-    "item.reborn12k.incomplete_ender_catalyst": "Incomplete Ender Catalyst",
-    "item.reborn12k.incomplete_withered_catalyst": "Incomplete Withered Catalyst",
-    "item.reborn12k.incomplete_draconic_catalyst": "Incomplete Draconic Catalyst",
-
-
-    "item.reborn12k.blessed_materia": "Blessed Materia",
-    "item.reborn12k.cursed_materia": "Cursed Materia",
-    "item.reborn12k.nether_materia": "Cursed Nether Materia",
-    "item.reborn12k.end_materia": "Cursed End Materia",
-    "item.reborn12k.withered_materia": "Withered Materia",
-    "item.reborn12k.draconic_materia": "Draconic Materia",
 
     "item.reborn12k.liquid_mana_bucket": "Liquid Mana Bucket",
     "item.reborn12k.destabilized_redstone_bucket": "Destabilized Redstone Bucket",
@@ -383,14 +522,52 @@
     "item.reborn12k.resonant_ender_bucket": "Resonant Ender Bucket",
 
 
+    "item.reborn12k.sturdy_fabric": "Sturdy Fabric",
+
+    "item.reborn12k.shades": "Filo's Aviators",
+    "item.reborn12k.cat_ears": "Cat Ears",
+    "item.reborn12k.cow_ears": "Cow Ears",
+    "item.reborn12k.bunny_ears": "Bunny Ears",
+    "item.reborn12k.demon_kings_crown": "Demon King's Crown",
+    "item.reborn12k.magnifier_goggles": "Magnifier Goggles",
+
+    "item.reborn12k.parachute": "Parachute",
+    "item.reborn12k.angel_wings": "Angel Wings",
+    "item.reborn12k.demon_wings": "Demon Wings",
+    "item.reborn12k.bat_wings": "Bat Wings",
+
+    "item.reborn12k.black_belt": "Black Belt",
+    "item.reborn12k.expert_belt": "Expert Belt",
+    "item.reborn12k.champions_belt": "Champion's Belt",
+    "item.reborn12k.focus_belt": "Focus Belt",
+
+    "item.reborn12k.comfy_shoes": "Comfy Shoes",
+    "item.reborn12k.travelers_shoes": "Traveler's Shoes",
+    "item.reborn12k.running_shoes": "Running Shoes",
+    "item.reborn12k.long_fall_boots": "Long Fall Boots",
+
+    "item.reborn12k.old_necklace": "Old Necklace",
+    "item.reborn12k.golden_necklace": "Golden Necklace",
+    "item.reborn12k.bejeweled_necklace": "Bejeweled Necklace",
+    "item.reborn12k.heart_pendant": "Heart Pendant",
+    "item.reborn12k.arcane_pendant": "Arcane Pendant",
+    "item.reborn12k.cursed_pendant": "Cursed Pendant",
+
     "item.reborn12k.golden_ring": "Golden Ring",
     "item.reborn12k.awakened_golden_ring": "Awakened Golden Ring",
+
     "item.reborn12k.ring_of_air": "§bRing of Zephyr",
     "item.reborn12k.ring_of_earth": "§2Ring of Gaia",
     "item.reborn12k.ring_of_water": "§1Ring of Poseidon",
-    "item.reborn12k.ring_of_fire": "§cRing of Hephaestus",
-    "item.reborn12k.ring_of_light": "§6Ring of Apollo",
+    "item.reborn12k.ring_of_fire": "§cRing of Prometheus",
+    "item.reborn12k.ring_of_light": "§eRing of Apollo",
     "item.reborn12k.ring_of_darkness": "§5Ring of Artemis",
+
+    "item.reborn12k.ring_of_iron": "§7Ring of Hephaestus",
+    "item.reborn12k.ring_of_nature": "§aRing of Aphrodite",
+    "item.reborn12k.ring_of_ice": "§9Ring of Boreas",
+    "item.reborn12k.ring_of_lightning": "§6Ring of Zeus",
+
     "item.reborn12k.ring_of_strength": "§4Ring of Mars Ultor",
 
 
@@ -515,6 +692,12 @@
     "item.reborn12k.thelosite_axe": "Thelosite Axe",
     "item.reborn12k.thelosite_hoe": "Thelosite Hoe",
 
+
+    "item.reborn12k.nichirin_helmet": "Nichirin Helmet",
+    "item.reborn12k.nichirin_chestplate": "Nichirin Chestplate",
+    "item.reborn12k.nichirin_leggings": "Nichirin Leggings",
+    "item.reborn12k.nichirin_boots": "Nichirin Boots",
+
     "item.reborn12k.mage_helmet": "Mage's Hood",
     "item.reborn12k.mage_chestplate": "Mage's Robes",
     "item.reborn12k.mage_leggings": "Mage's Leggings",
@@ -525,8 +708,11 @@
     "item.reborn12k.power_leggings": "Power Armor Leggings",
     "item.reborn12k.power_boots": "Power Armor Boots",
 
-    "item.reborn12k.long_fall_boots": "Long Fall Boots",
+    "item.reborn12k.red_engine": "Red Engine",
 
+    "item.reborn12k.casing_mk237": "Casing Mk.237",
+
+    "item.reborn12k.ceramite_plate": "Ceramite Plate",
 
     "item.reborn12k.silver_claymore": "Silver Claymore",
     "item.reborn12k.yamato": "Yamato",
@@ -536,9 +722,7 @@
     "item.reborn12k.bladewolf": "Bladewolf",
     "item.reborn12k.rebellion": "Rebellion",
     "item.reborn12k.red_queen": "Red Queen",
-
-    "item.reborn12k.glass_dagger": "Glass Dagger",
-    "item.reborn12k.mana_glass_dagger": "Mana Glass Dagger",
+    "item.reborn12k.silence": "Silence",
 
 
     "item.reborn12k.z115_disc": "115 Disc",
@@ -547,16 +731,25 @@
     "item.reborn12k.devil_trigger_disc": "Devil Trigger Disc",
     "item.reborn12k.devil_trigger_disc.desc": "Casey Edwards - Devil Trigger",
 
+    "item.reborn12k.bury_the_light_disc": "Bury The Light Disc",
+    "item.reborn12k.bury_the_light_disc.desc": "Casey Edwards - Bury The Light",
+
     "item.reborn12k.free_bird_disc": "Free Bird Disc",
     "item.reborn12k.free_bird_disc.desc": "Lynyrd Skynyrd - Free Bird",
 
-    "item.reborn12k.windstorm.tooltip": "Hastens everyone around you",
-    "item.reborn12k.viridian.tooltip": "Strenghtens everyone around you",
-    "item.reborn12k.abyss.tooltip": "Slows down mobs around you",
-    "item.reborn12k.volcanic.tooltip": "Sets mobs around you on fire",
-    "item.reborn12k.sunlight.tooltip": "Heals everything around you",
-    "item.reborn12k.novilunium.tooltip": "Reveals mobs around you",
-    "item.reborn12k.crimson.tooltip": "Unleashes a powerful explosion",
+    "item.reborn12k.windstorm.tooltip": "§8Nimbles allies",
+    "item.reborn12k.viridian.tooltip": "§8Hastens allies",
+    "item.reborn12k.abyss.tooltip": "§8Allies become unaffected by water",
+    "item.reborn12k.volcanic.tooltip": "§8Sets mobs around you on fire",
+    "item.reborn12k.sunlight.tooltip": "§8Reinvigorates allies",
+    "item.reborn12k.novilunium.tooltip": "§8Reveals mobs around you",
+
+    "item.reborn12k.ferrum.tooltip": "§8Strengthens allies",
+    "item.reborn12k.terra.tooltip": "§8Heals allies, poisons undead",
+    "item.reborn12k.glacial.tooltip": "§8Slows enemies",
+    "item.reborn12k.thunderbolt.tooltip": "§8Summons a lightning",
+
+    "item.reborn12k.crimson.tooltip": "§8Unleashes an explosion",
 
     "item.reborn12k.magic_mirror.tooltip1": "§bTeleported to your last respawn",
     "item.reborn12k.magic_mirror.tooltip2": "§6You haven't set a respawn point",
@@ -569,34 +762,26 @@
     "item.reborn12k.yggdrasill_branch.tooltip1": "The Yggdrasill's Branch is §2INACTIVE",
     "item.reborn12k.yggdrasill_branch.tooltip2": "The Yggdrasill's Branch is §aACTIVE",
 
+    "item.reborn12k.shades.tooltip1": "§8Might have no effect but",
+    "item.reborn12k.shades.tooltip2": "§8damn they look cool",
 
-    "item.reborn12k.runic_snare.tooltip1": "Throw to a mob to",
-    "item.reborn12k.runic_snare.tooltip2": "inflict Frail Soul",
+    "item.reborn12k.fake_ears.tooltip1": "§8Fake animal ears.",
+    "item.reborn12k.fake_ears.tooltip2": "§8They kinda look cute on you.",
 
-    "item.reborn12k.dagger.tooltip1": "Strike a Frail mob",
-    "item.reborn12k.dagger.tooltip2": "to extract an",
-    "item.reborn12k.dagger.tooltip3": "Incomplete Catalyst",
+    "item.reborn12k.demon_kings_crown.tooltip1": "§8The throne is now",
+    "item.reborn12k.demon_kings_crown.tooltip2": "§8yours to take...",
 
-    "item.reborn12k.incomplete_generic_catalyst.tooltip1": "Right-click the correct mobs",
-    "item.reborn12k.incomplete_generic_catalyst.tooltip2": "to absorb their souls",
-    "item.reborn12k.incomplete_generic_catalyst.tooltip3": "§aMore...",
-    "item.reborn12k.incomplete_generic_catalyst.tooltip4": "§cNot this",
-    "item.reborn12k.incomplete_generic_catalyst.tooltip5": "§aThe harvest is complete",
+    "item.reborn12k.parachute.tooltip": "§8Crouch to break your fall",
 
-    "item.reborn12k.incomplete_blessed_catalyst.tooltip": "§4Passive Mobs to absorb: %s",
-    "item.reborn12k.incomplete_cursed_catalyst.tooltip": "§4Hostile Mobs to absorb: %s",
-    "item.reborn12k.incomplete_nether_catalyst.tooltip": "§4Nether Mobs to absorb: %s",
-    "item.reborn12k.incomplete_ender_catalyst.tooltip": "§4End Mobs to absorb: %s",
-    "item.reborn12k.incomplete_withered_catalyst.tooltip": "§4Withers to absorb: %s",
+    "item.reborn12k.angel_wings.tooltip1": "§8You are not a mere",
+    "item.reborn12k.angel_wings.tooltip2": "§8mortal anymore...",
 
-    "item.reborn12k.catalyst.tooltip1": "Can be used to create materia",
+    "item.reborn12k.long_fall_boots.tooltip1": "§8Property of Aperture",
+    "item.reborn12k.long_fall_boots.tooltip2": "§8Laboratories #G14-D05",
 
-    "item.reborn12k.materia.tooltip1": "Can be consumed for experience or",
-    "item.reborn12k.materia.tooltip2": "processed (stonecutter) for resources",
-    "item.reborn12k.materia.tooltip3": "§cSneak to consume the whole stack",
 
-    "item.reborn12k.red_queen.tooltip1": "Exceed is §cOFF",
-    "item.reborn12k.red_queen.tooltip2": "Exceed is §1ON",
+    "item.reborn12k.red_queen.tooltip1": "§8Exceed is §cOFF",
+    "item.reborn12k.red_queen.tooltip2": "§8Exceed is §1ON",
     "item.reborn12k.red_queen.tooltip3": "§1Exceed is charged!",
     "item.reborn12k.red_queen.tooltip4": "§cNot quite there yet!",
     "item.reborn12k.red_queen.tooltip5": "Exceed is already charged!",
@@ -604,8 +789,59 @@
 
     "item.reborn12k.fuel_cell.tooltip": "§4Remaining uses: %s",
 
-    "item.reborn12k.laser_focus1.tooltip": "Can be used in",
-    "item.reborn12k.laser_focus2.tooltip": "a §4Laser Quarry",
+    "item.reborn12k.laser_focus1.tooltip": "§8Can be used in",
+    "item.reborn12k.laser_focus2.tooltip": "§8a §4Laser Quarry",
+
+    "item.reborn12k.rechargeable_battery.tooltip": "§4Remaining charge: %s",
+
+    "item.reborn12k.basic_ai_module.tooltip": "For animals",
+    "item.reborn12k.advanced_ai_module.tooltip": "For most mobs",
+    "item.reborn12k.ultimate_ai_module.tooltip": "For stronger mobs",
+    "item.reborn12k.special_ai_module.tooltip1": "For Bosses",
+    "item.reborn12k.special_ai_module.tooltip2": "§8Punch a Boss",
+    "item.reborn12k.special_ai_module.tooltip3": "§8and don't die",
+
+    "item.reborn12k.ai_module.tooltip1": "§8Right-click a mob",
+    "item.reborn12k.ai_module.tooltip2": "§aAI Module has been set",
+    "item.reborn12k.ai_module.tooltip3": "§cInvalid DNA Detected!",
+
+    "item.reborn12k.complete_ai_module.tooltip1": "AI Module: §2Online",
+    "item.reborn12k.complete_ai_module.tooltip2": "§8Instruction Chip Missing",
+
+    "item.reborn12k.instruction_chip.tooltip1": "Essential Chip for AI Modules",
+    "item.reborn12k.instruction_chip.tooltip2": "§8Specification not set",
+
+    "item.reborn12k.butchering_chip.tooltip1": "§8Chip that mimicks the",
+    "item.reborn12k.butchering_chip.tooltip2": "§8act of gathering flesh",
+
+    "item.reborn12k.shearing_chip.tooltip1": "§8Chip that mimicks the",
+    "item.reborn12k.shearing_chip.tooltip2": "§8act of cutting",
+
+    "item.reborn12k.severing_chip.tooltip1": "§8Chip that mimicks a",
+    "item.reborn12k.severing_chip.tooltip2": "§8sword strike",
+
+    "item.reborn12k.decapitation_chip.tooltip1": "§8Chip that mimicks a",
+    "item.reborn12k.decapitation_chip.tooltip2": "§8cut to the head",
+
+    "item.reborn12k.extraction_chip.tooltip1": "§8Chip that mimicks the",
+    "item.reborn12k.extraction_chip.tooltip2": "§8extraction of resources",
+
+    "item.reborn12k.recombination_chip.tooltip1": "§8Chip that allows DNA",
+    "item.reborn12k.recombination_chip.tooltip2": "§8reconstruction",
+
+    "item.reborn12k.exp_drain_chip.tooltip1": "§8Chip for the convertion",
+    "item.reborn12k.exp_drain_chip.tooltip2": "§8to experience points",
+
+    "item.reborn12k.s_rep_chip.tooltip1": "§8Self-Replication Protocol",
+    "item.reborn12k.s_rep_chip.tooltip2": "§8Forces the AI to clone itself",
+
+    "item.reborn12k.exp_card.tooltip1": "§8Can be consumed for experience",
+    "item.reborn12k.exp_card.tooltip2": "SNEAK §8to consume the whole stack",
+
+    "item.reborn12k.experience_data_card.tooltip": "NEGLIGIBLE §8Experience",
+    "item.reborn12k.experience_data_card_v2.tooltip": "MINIMAL §8Experience",
+    "item.reborn12k.experience_data_card_v3.tooltip": "MODERATE §8Experience",
+    "item.reborn12k.experience_data_card_v237.tooltip": "HIGH §8Experience",
 
 
     "advancements.reborn12k.root.title": "REBORN12K - Alloying",
@@ -622,6 +858,9 @@
     "sounds:reborn12k.devil_trigger": "Casey Edwards - Devil Trigger",
     "subtitles.reborn12k.devil_trigger": "Casey Edwards - Devil Trigger is playing",
 
+    "sounds:reborn12k.bury_the_light": "Casey Edwards - Bury The Light",
+    "subtitles.reborn12k.bury_the_light": "Casey Edwards - Bury The Light is playing",
+
     "sounds:reborn12k.free_bird": "Lynyrd Skynyrd - Free Bird",
     "subtitles.reborn12k.free_bird": "Lynyrd Skynyrd - Free Bird is playing",
 
@@ -629,9 +868,7 @@
     "entity.minecraft.villager.blacksmith": "Blacksmith",
     "entity.minecraft.villager.hmble": "Wuk Hmble",
 
-    "effect.reborn12k.frail": "Frail Soul",
 
-
-    "itemGroup.reborn12k.reborn12k": "Reborn12K"
+    "itemGroup.reborn12k": "Reborn12K"
 
   }

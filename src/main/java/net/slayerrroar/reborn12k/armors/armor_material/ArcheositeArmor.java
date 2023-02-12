@@ -5,7 +5,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.slayerrroar.reborn12k.items.BaseItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class ArcheositeArmor implements ArmorMaterial {
 
@@ -17,7 +17,7 @@ public class ArcheositeArmor implements ArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()]*41;
+        return BASE_DURABILITY[slot.getEntitySlotId()]*42;
     }
     @Override
     public int getProtectionAmount(EquipmentSlot slot) {
@@ -33,7 +33,7 @@ public class ArcheositeArmor implements ArmorMaterial {
     }
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.ARCHEOSITE_INGOT);
+        return Ingredient.ofItems(RebornItems.ARCHEOSITE_INGOT);
     }
     @Override
     public String getName() {

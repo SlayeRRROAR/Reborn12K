@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:aluminum_block"
+            "tag": "c:aluminum_blocks"
         }
     ],
     "result": {

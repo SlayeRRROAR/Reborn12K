@@ -11,9 +11,7 @@
         "conditions": {
           "items": [
             {
-              "items": [
-                "reborn12k:raw_tungsten"
-              ]
+              "tag": "c:raw_tungsten_ores"
             }
           ]
         }

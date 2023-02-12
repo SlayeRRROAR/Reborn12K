@@ -1,0 +1,14 @@
+{
+  "type": "reborn12k:synthesis",
+  "ingredients": [
+    {
+      "item": "reborn12k:slime_ai_module"
+    },
+    {
+      "item": "reborn12k:recombination_chip"
+    }
+  ],
+  "output": {
+    "item": "minecraft:magma_cream"
+  }
+}

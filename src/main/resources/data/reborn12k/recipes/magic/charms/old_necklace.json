@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "B B",
+        "ACA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:iron_nugget"
+        },
+        "B": {
+            "item": "minecraft:iron_ingot"
+        },
+        "C": {
+            "item": "minecraft:amethyst_shard"
+        }
+    },
+    "result": {
+        "item": "reborn12k:old_necklace",
+        "count": 1
+    }
+}

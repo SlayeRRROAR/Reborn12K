@@ -9,10 +9,10 @@ import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
-import net.slayerrroar.reborn12k.screen.CustomScreenRegistry;
+import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
 import net.slayerrroar.reborn12k.screen.slots.CustomFocusSlot;
 import net.slayerrroar.reborn12k.screen.slots.CustomResultSlot;
-import net.slayerrroar.reborn12k.screen.slots.CustomCellSlot;
+import net.slayerrroar.reborn12k.screen.slots.CustomFuelCellSlot;
 
 public class QuarryScreenHandler extends ScreenHandler {
     private final Inventory inventory;
@@ -23,13 +23,13 @@ public class QuarryScreenHandler extends ScreenHandler {
     }
 
     public QuarryScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
-        super(CustomScreenRegistry.QUARRY_SCREEN_HANDLER, syncId);
+        super(RebornScreenRegistry.QUARRY_SCREEN_HANDLER, syncId);
         checkSize(inventory, 4);
         this.inventory = inventory;
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 
-        this.addSlot(new CustomCellSlot(inventory, 0, 35, 22));
+        this.addSlot(new CustomFuelCellSlot(inventory, 0, 35, 22));
         this.addSlot(new CustomFocusSlot(inventory, 1, 80, 22));
         this.addSlot(new CustomResultSlot(inventory, 2, 80, 54));
         this.addSlot(new CustomResultSlot(inventory, 3, 125, 54));
@@ -54,7 +54,7 @@ public class QuarryScreenHandler extends ScreenHandler {
     }
 
     @Override
-    public ItemStack transferSlot(PlayerEntity player, int invSlot) {
+    public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
         if (slot != null && slot.hasStack()) {

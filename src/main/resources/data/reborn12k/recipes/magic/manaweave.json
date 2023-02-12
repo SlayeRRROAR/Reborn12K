@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABC",
+        " D ",
+        "EFG"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:diamond"
+        },
+        "B": {
+            "item": "minecraft:emerald"
+        },
+        "C": {
+            "tag": "c:sapphires"
+        },
+        "D": {
+            "tag": "wool"
+        },
+        "E": {
+            "tag": "c:rubies"
+        },
+        "F": {
+            "item": "reborn12k:sunstone"
+        },
+        "G": {
+            "item": "minecraft:amethyst_shard"
+        }
+    },
+    "result": {
+        "item": "reborn12k:manaweave",
+        "count": 4
+    }
+}

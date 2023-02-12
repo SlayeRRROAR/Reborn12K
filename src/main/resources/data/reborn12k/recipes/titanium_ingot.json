@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:titanium_block"
+            "tag": "c:titanium_blocks"
         }
     ],
     "result": {

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "reborn12k:block/arcane_artifact"
+    },
+    "facing=south": {
+      "model": "reborn12k:block/arcane_artifact",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "reborn12k:block/arcane_artifact",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "reborn12k:block/arcane_artifact",
+      "y": 90
+    }
+  }
+}

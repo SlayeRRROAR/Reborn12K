@@ -6,14 +6,12 @@
       ]
     },
     "criteria": {
-      "has_tungstensteel_ingot": {
+      "has_thelosite_block": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
-              "items": [
-                "reborn12k:tungstensteel_ingot"
-              ]
+              "tag": "c:thelosite_blocks"
             }
           ]
         }
@@ -27,7 +25,7 @@
     },
     "requirements": [
       [
-        "has_tungstensteel_ingot",
+        "has_thelosite_block",
         "has_the_recipe"
       ]
     ]

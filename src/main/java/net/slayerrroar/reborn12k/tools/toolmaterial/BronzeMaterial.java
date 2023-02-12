@@ -2,7 +2,7 @@ package net.slayerrroar.reborn12k.tools.toolmaterial;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.slayerrroar.reborn12k.items.BaseItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class BronzeMaterial implements ToolMaterial{
 
@@ -35,7 +35,7 @@ public class BronzeMaterial implements ToolMaterial{
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(BaseItems.BRONZE_INGOT);
+        return Ingredient.ofItems(RebornItems.BRONZE_INGOT);
     }
     
 }

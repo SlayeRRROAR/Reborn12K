@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "reborn12k",
-  "version": "1.19.2-1.1",
+  "version": "1.19.3-1.0",
 
   "name": "12K Reborn",
   "description": "Rebirth of PVP12K",
@@ -24,6 +24,9 @@
     ],
     "client": [
       "net.slayerrroar.reborn12k.ClientReborn12K"
+    ],
+    "fabric-datagen": [
+      "net.slayerrroar.reborn12k.Reborn12KDataGen"
     ]
   },
   "mixins": [
@@ -31,12 +34,14 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.9",
+    "fabricloader": ">=0.14.14",
     "fabric": "*",
-    "minecraft": "~1.19.2",
+    "minecraft": "~1.19.3",
     "java": ">=17",
     "nbtcrafting": "*",
-    "patchouli": "*"
+    "patchouli": "*",
+    "trinkets": "*",
+    "reach-entity-attributes": "*"
   },
   "suggests": {
     "modmenu": "*"

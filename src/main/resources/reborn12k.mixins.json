@@ -6,14 +6,15 @@
   "mixins": [
     "AdvancedAlloyMixin",
     "ArcheositeMixin",
-    "TungstenSteelMixin",
+    "TungstensteelMixin",
     "EnderiumMixin",
     "IridiumAlloyMixin",
     "LongFallBootsMixin",
     "SignalumMixin",
     "ThelositeMixin",
     "MageMixin",
-    "PowerArmorMixin"
+    "PowerArmorMixin",
+    "ShadesMixin"
   ],
   "client": [
   ],

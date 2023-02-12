@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:constantan_block"
+            "tag": "c:constantan_blocks"
         }
     ],
     "result": {
         "item": "reborn12k:constantan_ingot",
         "count": 9
-    },
-    "group": "constantan_ingot"
+    }
 }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BA",
+    "BC",
+    " C"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:redstone_block"
+    },
+    "B": {
+      "tag": "c:steel_ingots"
+    },
+    "C": {
+      "item": "reborn12k:demonic_metal_ingot"
+    }
+  },
+  "result": {
+    "item": "reborn12k:red_engine",
+    "count": 1
+  }
+}

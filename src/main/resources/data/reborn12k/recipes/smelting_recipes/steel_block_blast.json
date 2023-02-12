@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "tag": "c:raw_steel_blocks"
+    },
+    "result": "reborn12k:steel_block",
+    "experience": 1.0,
+    "cookingtime": 100
+}

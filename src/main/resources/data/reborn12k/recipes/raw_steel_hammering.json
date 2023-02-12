@@ -6,7 +6,7 @@
             "remainder": { "item": "reborn12k:hammer" }
         },
         {
-            "item": "reborn12k:steel_ingot"
+            "tag": "c:steel_ingots"
         }
     ],
     "result": {

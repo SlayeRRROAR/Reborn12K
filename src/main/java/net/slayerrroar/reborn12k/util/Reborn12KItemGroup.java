@@ -1,14 +1,20 @@
 package net.slayerrroar.reborn12k.util;
 
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.items.BaseItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class Reborn12KItemGroup {
 
-    public static final ItemGroup REBORN12K = FabricItemGroupBuilder.build(new Identifier(Reborn12K.MOD_ID, "reborn12k"),
-            () -> new ItemStack(BaseItems.SAPPHIRE));
+    public static ItemGroup REBORN12K;
+
+    public static void registerItemGroups() {
+        REBORN12K = FabricItemGroup.builder(new Identifier(Reborn12K.MOD_ID, "reborn12k"))
+                .displayName(Text.translatable("itemGroup.reborn12k"))
+                .icon(() -> new ItemStack(RebornItems.SAPPHIRE)).build();
+    }
 }

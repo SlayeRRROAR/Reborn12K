@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:demon_kings_crown"
+    },
+    "addition": {
+        "item": "minecraft:leather"
+    },
+    "result": {
+        "item": "reborn12k:cow_ears"
+    }
+}

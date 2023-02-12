@@ -1,0 +1,11 @@
+{
+  "type": "reborn12k:quarry",
+  "ingredients": [
+    {
+      "item": "reborn12k:osmium_laser_focus"
+    }
+  ],
+  "output": {
+    "item": "reborn12k:end_osmium_ore"
+  }
+}

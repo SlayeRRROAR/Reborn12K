@@ -1,8 +1,8 @@
 {
-  "parent": "reborn12k:reborn12k/shocking",
+  "parent": "reborn12k:reborn12k/the_four_cs",
   "display": {
     "icon": {
-      "item": "reborn12k:aluminum_ingot"
+      "item": "minecraft:netherite_ingot"
     },
     "title": {
       "translate": "advancements.reborn12k.reaching_deep.title"
@@ -16,13 +16,13 @@
     "hidden": false
   },
   "criteria": {
-    "get_aluminum_ingot": {
+    "get_netherite_ingot": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "reborn12k:aluminum_ingot"
+              "minecraft:netherite_ingot"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "get_aluminum_ingot"
+      "get_netherite_ingot"
     ]
   ]
 }

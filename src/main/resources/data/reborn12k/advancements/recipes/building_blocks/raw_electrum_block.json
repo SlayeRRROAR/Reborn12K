@@ -11,9 +11,7 @@
         "conditions": {
           "items": [
             {
-              "items": [
-                "reborn12k:raw_electrum"
-              ]
+              "tag": "c:raw_electrum_ores"
             }
           ]
         }

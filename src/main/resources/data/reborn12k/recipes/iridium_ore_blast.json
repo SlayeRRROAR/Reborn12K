@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "item": "reborn12k:end_iridium_ore"
-    },
-    "result": "reborn12k:iridium_ingot",
-    "experience": 1.5,
-    "cookingtime": 100
-}

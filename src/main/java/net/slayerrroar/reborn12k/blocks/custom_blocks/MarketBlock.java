@@ -62,7 +62,6 @@ public class MarketBlock extends Block {
     @Override
     public VoxelShape getOutlineShape(BlockState blockState, BlockView blockView, BlockPos blockPos, ShapeContext shapeContext) {
         return switch (blockState.get(FACING)) {
-            case NORTH -> SHAPE_N;
             case WEST -> SHAPE_W;
             case SOUTH -> SHAPE_S;
             case EAST -> SHAPE_E;

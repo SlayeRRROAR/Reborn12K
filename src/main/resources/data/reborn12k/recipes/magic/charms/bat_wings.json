@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:demon_wings"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:bat_wings",
+        "count": 1
+    }
+}

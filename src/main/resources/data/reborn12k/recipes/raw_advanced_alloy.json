@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:raw_advanced_alloy_block"
+            "tag": "c:raw_advanced_alloy_blocks"
         }
     ],
     "result": {

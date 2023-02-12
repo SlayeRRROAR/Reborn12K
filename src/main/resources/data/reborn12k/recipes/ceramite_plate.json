@@ -7,20 +7,20 @@
   ],
   "key": {
     "A": {
-      "tag": "reborn12k:items/terracotta"
+      "tag": "c:terracotta"
     },
     "B": {
-      "item": "reborn12k:steel_ingot"
+      "tag": "c:steel_ingots"
     },
     "C": {
-      "item": "reborn12k:iridium_ingot"
+      "tag": "c:iridium_ingots"
     },
     "D": {
-      "item": "reborn12k:cobalt_ingot"
+      "tag": "c:cobalt_ingots"
     }
   },
   "result": {
     "item": "reborn12k:ceramite_plate",
-    "count": 3
+    "count": 1
   }
 }

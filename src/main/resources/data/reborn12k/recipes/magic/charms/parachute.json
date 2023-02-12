@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "B B",
+        "BCB"
+    ],
+    "key": {
+        "A": {
+            "tag": "wool"
+        },
+        "B": {
+            "item": "reborn12k:sturdy_fabric"
+        },
+        "C": {
+            "item": "minecraft:chest"
+        }
+    },
+    "result": {
+        "item": "reborn12k:parachute",
+        "count": 1
+    }
+}

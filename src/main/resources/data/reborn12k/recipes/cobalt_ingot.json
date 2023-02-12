@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:cobalt_block"
+            "tag": "c:cobalt_blocks"
         }
     ],
     "result": {

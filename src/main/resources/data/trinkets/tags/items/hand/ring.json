@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "reborn12k:ring_of_air",
+    "reborn12k:ring_of_earth",
+    "reborn12k:ring_of_water",
+    "reborn12k:ring_of_fire",
+    "reborn12k:ring_of_light",
+    "reborn12k:ring_of_darkness",
+
+    "reborn12k:ring_of_iron",
+    "reborn12k:ring_of_nature",
+    "reborn12k:ring_of_ice",
+    "reborn12k:ring_of_lightning",
+
+    "reborn12k:ring_of_strength"
+  ]
+}

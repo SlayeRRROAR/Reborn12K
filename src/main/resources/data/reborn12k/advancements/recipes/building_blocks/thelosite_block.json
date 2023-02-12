@@ -11,9 +11,7 @@
         "conditions": {
           "items": [
             {
-              "items": [
-                "reborn12k:thelosite_ingot"
-              ]
+              "tag": "c:thelosite_ingots"
             }
           ]
         }

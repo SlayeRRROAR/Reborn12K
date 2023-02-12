@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "reborn12k:ash_placed",
+    "features": [
+      {
+        "chance": 0.5,
+        "feature": "reborn12k:ash_placed"
+      }
+    ]
+  }
+}

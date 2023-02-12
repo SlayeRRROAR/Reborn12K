@@ -1,10 +1,9 @@
 package net.slayerrroar.reborn12k.mixin;
 
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ItemStack;
+import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.slayerrroar.reborn12k.armors.Armors;
+import net.slayerrroar.reborn12k.items.CharmItems;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -21,10 +20,8 @@ public abstract class LongFallBootsMixin
     private void tick(CallbackInfo info)
     {
         ServerPlayerEntity player = this.networkHandler.player;
-        ItemStack equippedStack = player.getEquippedStack(EquipmentSlot.FEET);
 
-        if (equippedStack.getItem().equals(Armors.LONG_FALL_BOOTS))
-        {
+        if(TrinketsApi.getTrinketComponent(player).get().isEquipped(CharmItems.LONG_FALL_BOOTS)){
             player.handleFall(0, true);
         }
     }

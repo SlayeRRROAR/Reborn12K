@@ -1,0 +1,14 @@
+{
+  "type": "reborn12k:synthesis",
+  "ingredients": [
+    {
+      "item": "reborn12k:bee_ai_module"
+    },
+    {
+      "item": "reborn12k:shearing_chip"
+    }
+  ],
+  "output": {
+    "item": "minecraft:honeycomb"
+  }
+}

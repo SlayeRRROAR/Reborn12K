@@ -11,10 +11,10 @@
             "item": "minecraft:raw_copper"
         },
         {
-            "item": "reborn12k:raw_silver"
+            "tag": "c:raw_silver_ores"
         },
         {
-            "tag": "minecraft:sand"
+            "tag": "sand"
         },
         {
             "item": "reborn12k:destabilized_redstone_bucket"

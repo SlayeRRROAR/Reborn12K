@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:note_block"
+        },
+        {
+            "item": "minecraft:rotten_flesh"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:z115_disc",
+        "count": 1
+    }
+}

@@ -8,8 +8,8 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
-import net.slayerrroar.reborn12k.fluids.CustomFluids;
-import net.slayerrroar.reborn12k.screen.CustomScreenRegistry;
+import net.slayerrroar.reborn12k.fluids.RebornFluids;
+import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
 import net.slayerrroar.reborn12k.util.RebornRenderHelper;
 
 @Environment(EnvType.CLIENT)
@@ -21,9 +21,9 @@ public class ClientReborn12K implements ClientModInitializer {
 
         RebornRenderHelper.setRenderLayers();
 
-        CustomScreenRegistry.registerClient();
+        RebornScreenRegistry.registerClient();
 
-        FluidRenderHandlerRegistry.INSTANCE.register(CustomFluids.LIQUID_MANA_STILL, CustomFluids.LIQUID_MANA_FLOWING,
+        FluidRenderHandlerRegistry.INSTANCE.register(RebornFluids.LIQUID_MANA_STILL, RebornFluids.LIQUID_MANA_FLOWING,
                 new SimpleFluidRenderHandler(
                         new Identifier("minecraft:block/water_still"),
                         new Identifier("minecraft:block/water_flow"),
@@ -31,9 +31,9 @@ public class ClientReborn12K implements ClientModInitializer {
                 ));
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
-                CustomFluids.LIQUID_MANA_STILL, CustomFluids.LIQUID_MANA_FLOWING);
+                RebornFluids.LIQUID_MANA_STILL, RebornFluids.LIQUID_MANA_FLOWING);
 
-        FluidRenderHandlerRegistry.INSTANCE.register(CustomFluids.DESTABILIZED_REDSTONE_STILL, CustomFluids.DESTABILIZED_REDSTONE_FLOWING,
+        FluidRenderHandlerRegistry.INSTANCE.register(RebornFluids.DESTABILIZED_REDSTONE_STILL, RebornFluids.DESTABILIZED_REDSTONE_FLOWING,
                 new SimpleFluidRenderHandler(
                         new Identifier("minecraft:block/water_still"),
                         new Identifier("minecraft:block/water_flow"),
@@ -41,9 +41,9 @@ public class ClientReborn12K implements ClientModInitializer {
                 ));
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
-                CustomFluids.DESTABILIZED_REDSTONE_STILL, CustomFluids.DESTABILIZED_REDSTONE_FLOWING);
+                RebornFluids.DESTABILIZED_REDSTONE_STILL, RebornFluids.DESTABILIZED_REDSTONE_FLOWING);
 
-        FluidRenderHandlerRegistry.INSTANCE.register(CustomFluids.ENERGIZED_GLOWSTONE_STILL, CustomFluids.ENERGIZED_GLOWSTONE_FLOWING,
+        FluidRenderHandlerRegistry.INSTANCE.register(RebornFluids.ENERGIZED_GLOWSTONE_STILL, RebornFluids.ENERGIZED_GLOWSTONE_FLOWING,
                 new SimpleFluidRenderHandler(
                         new Identifier("minecraft:block/water_still"),
                         new Identifier("minecraft:block/water_flow"),
@@ -51,9 +51,9 @@ public class ClientReborn12K implements ClientModInitializer {
                 ));
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
-                CustomFluids.RESONANT_ENDER_STILL, CustomFluids.RESONANT_ENDER_FLOWING);
+                RebornFluids.RESONANT_ENDER_STILL, RebornFluids.RESONANT_ENDER_FLOWING);
 
-        FluidRenderHandlerRegistry.INSTANCE.register(CustomFluids.RESONANT_ENDER_STILL, CustomFluids.RESONANT_ENDER_FLOWING,
+        FluidRenderHandlerRegistry.INSTANCE.register(RebornFluids.RESONANT_ENDER_STILL, RebornFluids.RESONANT_ENDER_FLOWING,
                 new SimpleFluidRenderHandler(
                         new Identifier("minecraft:block/water_still"),
                         new Identifier("minecraft:block/water_flow"),
@@ -61,7 +61,7 @@ public class ClientReborn12K implements ClientModInitializer {
                 ));
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
-                CustomFluids.RESONANT_ENDER_STILL, CustomFluids.RESONANT_ENDER_FLOWING);
+                RebornFluids.RESONANT_ENDER_STILL, RebornFluids.RESONANT_ENDER_FLOWING);
 
     }
 

@@ -6,7 +6,7 @@
             "remainder": { "item": "reborn12k:hammer" }
         },
         {
-            "item": "reborn12k:thelosite_ingot"
+            "tag": "c:thelosite_ingots"
         }
     ],
     "result": {

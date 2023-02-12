@@ -1,0 +1,14 @@
+{
+  "type": "reborn12k:synthesis",
+  "ingredients": [
+    {
+      "item": "reborn12k:squid_ai_module"
+    },
+    {
+      "item": "reborn12k:severing_chip"
+    }
+  ],
+  "output": {
+    "item": "minecraft:ink_sac"
+  }
+}

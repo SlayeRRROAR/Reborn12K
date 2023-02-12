@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "tag": "c:raw_iridium_alloy_ores"
+    },
+    "result": "reborn12k:iridium_alloy_ingot",
+    "experience": 1.5,
+    "cookingtime": 200
+}

@@ -6,7 +6,7 @@
             "remainder": { "item": "reborn12k:hammer" }
         },
         {
-            "item": "reborn12k:tungsten_ingot"
+            "tag": "c:tungsten_ingots"
         }
     ],
     "result": {

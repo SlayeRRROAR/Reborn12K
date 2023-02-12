@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "CDC",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:iridium_ingots"
+        },
+        "B": {
+            "item": "reborn12k:charged_fuel_cell"
+        },
+        "C": {
+            "tag": "c:invar_ingots"
+        },
+        "D": {
+            "item": "reborn12k:basic_laser_focus"
+        }
+    },
+    "result": {
+        "item": "reborn12k:advanced_laser_focus",
+        "count": 1
+    }
+}
