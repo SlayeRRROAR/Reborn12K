@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:cobalt_ingots"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:raw_cobalt"
+    }
+}

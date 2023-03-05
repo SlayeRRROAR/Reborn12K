@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "item": "minecraft:gold_ingot"
+        }
+    ],
+    "output": {
+        "item": "minecraft:raw_gold"
+    }
+}
