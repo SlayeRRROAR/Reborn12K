@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k/root",
+  "display": {
+    "icon": {
+      "item": "reborn12k:mineral_manufactory"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.rock_and_stone.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.rock_and_stone.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_mineral_manufactory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:mineral_manufactory"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_mineral_manufactory"
+    ]
+  ]
+}

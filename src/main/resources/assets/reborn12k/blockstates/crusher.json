@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "reborn12k:block/crusher",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "reborn12k:block/crusher"
+    },
+    "facing=south": {
+      "model": "reborn12k:block/crusher",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "reborn12k:block/crusher",
+      "y": 270
+    }
+  }
+}

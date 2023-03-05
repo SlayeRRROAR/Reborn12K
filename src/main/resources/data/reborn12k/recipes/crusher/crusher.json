@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "B B",
+        "CCC"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:cobblestone"
+        },
+        "B": {
+            "item": "reborn12k:crushing_wheel"
+        },
+        "C": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "reborn12k:crusher",
+        "count": 1
+    }
+}
