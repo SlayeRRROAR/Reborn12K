@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "BCB",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:vanadium_ingots"
+        },
+        "B": {
+            "tag": "c:neodymium_ingots"
+        },
+        "C": {
+            "item": "reborn12k:empty_machine_casing"
+        }
+    },
+    "result": {
+        "item": "reborn12k:synthesis_chamber",
+        "count": 1
+    }
+}

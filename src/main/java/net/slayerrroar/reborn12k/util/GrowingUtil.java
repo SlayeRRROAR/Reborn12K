@@ -12,7 +12,7 @@ public class GrowingUtil
     //  Accelerates growth in area of effect
     public static void growCrops(World world, PlayerEntity playerEntity, int baseTickDelay, int cactusTickDelay, int radius, int height)
     {
-        BlockPos playerPos = new BlockPos(playerEntity.getPos());
+        BlockPos playerPos = new BlockPos(playerEntity.getBlockPos());
 
         if (playerEntity.age % (baseTickDelay) == 0)
         {

@@ -3,7 +3,7 @@ package net.slayerrroar.reborn12k.screen.slots;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.slot.Slot;
-import net.slayerrroar.reborn12k.items.RebornAiItems;
+import net.slayerrroar.reborn12k.items.ItemTechnical;
 
 public class CustomBatterySlot extends Slot {
     public CustomBatterySlot(Inventory inventory, int index, int x, int y) {
@@ -12,9 +12,9 @@ public class CustomBatterySlot extends Slot {
 
     @Override
     public boolean canInsert(ItemStack stack) {
-        return stack.isOf(RebornAiItems.LV_BATTERY) ||
-                stack.isOf(RebornAiItems.MV_BATTERY) ||
-                stack.isOf(RebornAiItems.HV_BATTERY);
+        return stack.isOf(ItemTechnical.LV_BATTERY) ||
+                stack.isOf(ItemTechnical.MV_BATTERY) ||
+                stack.isOf(ItemTechnical.HV_BATTERY);
     }
 
     @Override

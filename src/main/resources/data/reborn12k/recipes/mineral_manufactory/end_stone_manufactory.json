@@ -1,0 +1,17 @@
+{
+  "type": "reborn12k:mineral_manufactory",
+  "ingredients": [
+    {
+      "item": "minecraft:lava_bucket"
+    },
+    {
+      "item": "reborn12k:resonant_ender_bucket"
+    },
+    {
+      "item": "minecraft:end_stone"
+    }
+  ],
+  "output": {
+    "item": "minecraft:end_stone"
+  }
+}

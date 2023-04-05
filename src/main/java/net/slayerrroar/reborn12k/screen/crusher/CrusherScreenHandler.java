@@ -10,7 +10,6 @@ import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
-import net.slayerrroar.reborn12k.screen.slots.CustomBucketSlot;
 import net.slayerrroar.reborn12k.screen.slots.CustomFuelSlot;
 import net.slayerrroar.reborn12k.screen.slots.CustomResultSlot;
 
@@ -51,7 +50,7 @@ public class CrusherScreenHandler extends ScreenHandler {
     public int getScaledProgress() {
         int progress = this.propertyDelegate.get(0);
         int maxProgress = this.propertyDelegate.get(1);
-        int progressArrowSize = 24;
+        int progressArrowSize = 25;
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
@@ -68,7 +67,7 @@ public class CrusherScreenHandler extends ScreenHandler {
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
-        if (slot != null && slot.hasStack()) {
+        if (slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
             if(invSlot < this.inventory.size()) {

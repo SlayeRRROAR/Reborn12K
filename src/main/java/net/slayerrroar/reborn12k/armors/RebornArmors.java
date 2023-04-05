@@ -10,9 +10,11 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.armors.armor_item.MageArmorItem;
-import net.slayerrroar.reborn12k.armors.armor_material.*;
+import net.slayerrroar.reborn12k.armors.custom.MageArmorItem;
+import net.slayerrroar.reborn12k.armors.material.*;
 import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
+
+@SuppressWarnings("unused") //todo: for Magisteel, Orichalcum and Mithril -> adjust values of armor materials
 
 public class RebornArmors {
 
@@ -28,7 +30,10 @@ public class RebornArmors {
     public static final ArmorMaterial THELOSITE_ARMOR = new ThelositeArmor();
     public static final ArmorMaterial ARCHEOSITE_ARMOR = new ArcheositeArmor();
 
-    public static final ArmorMaterial NICHIRIN_ARMOR = new NichirinArmor();
+    public static final ArmorMaterial MAGISTEEL_ARMOR = new MagisteelArmor();
+    public static final ArmorMaterial ORICHALCUM_ARMOR = new OrichalcumArmor();
+    public static final ArmorMaterial MITHRIL_ARMOR = new MithrilArmor();
+
     public static final ArmorMaterial MAGE_ARMOR = new MageArmor();
     public static final ArmorMaterial POWER_ARMOR = new PowerArmor();
 
@@ -88,10 +93,20 @@ public class RebornArmors {
     public static final Item THELOSITE_BOOTS = registerItem("thelosite_boots", new ArmorItem(THELOSITE_ARMOR, EquipmentSlot.FEET, new Item.Settings().fireproof()));
 
 
-    public static final Item NICHIRIN_HELMET = registerItem("nichirin_helmet", new ArmorItem(NICHIRIN_ARMOR, EquipmentSlot.HEAD, new Item.Settings().fireproof()));
-    public static final Item NICHIRIN_CHESTPLATE = registerItem("nichirin_chestplate", new ArmorItem(NICHIRIN_ARMOR, EquipmentSlot.CHEST, new Item.Settings().fireproof()));
-    public static final Item NICHIRIN_LEGGINGS = registerItem("nichirin_leggings", new ArmorItem(NICHIRIN_ARMOR, EquipmentSlot.LEGS, new Item.Settings().fireproof()));
-    public static final Item NICHIRIN_BOOTS = registerItem("nichirin_boots", new ArmorItem(NICHIRIN_ARMOR, EquipmentSlot.FEET, new Item.Settings().fireproof()));
+    public static final Item MAGISTEEL_HELMET = registerItem("magisteel_helmet", new ArmorItem(MAGISTEEL_ARMOR, EquipmentSlot.HEAD, new Item.Settings().fireproof()));
+    public static final Item MAGISTEEL_CHESTPLATE = registerItem("magisteel_chestplate", new ArmorItem(MAGISTEEL_ARMOR, EquipmentSlot.CHEST, new Item.Settings().fireproof()));
+    public static final Item MAGISTEEL_LEGGINGS = registerItem("magisteel_leggings", new ArmorItem(MAGISTEEL_ARMOR, EquipmentSlot.LEGS, new Item.Settings().fireproof()));
+    public static final Item MAGISTEEL_BOOTS = registerItem("magisteel_boots", new ArmorItem(MAGISTEEL_ARMOR, EquipmentSlot.FEET, new Item.Settings().fireproof()));
+
+    public static final Item ORICHALCUM_HELMET = registerItem("orichalcum_helmet", new ArmorItem(ORICHALCUM_ARMOR, EquipmentSlot.HEAD, new Item.Settings().fireproof()));
+    public static final Item ORICHALCUM_CHESTPLATE = registerItem("orichalcum_chestplate", new ArmorItem(ORICHALCUM_ARMOR, EquipmentSlot.CHEST, new Item.Settings().fireproof()));
+    public static final Item ORICHALCUM_LEGGINGS = registerItem("orichalcum_leggings", new ArmorItem(ORICHALCUM_ARMOR, EquipmentSlot.LEGS, new Item.Settings().fireproof()));
+    public static final Item ORICHALCUM_BOOTS = registerItem("orichalcum_boots", new ArmorItem(ORICHALCUM_ARMOR, EquipmentSlot.FEET, new Item.Settings().fireproof()));
+
+    public static final Item MITHRIL_HELMET = registerItem("mithril_helmet", new ArmorItem(MITHRIL_ARMOR, EquipmentSlot.HEAD, new Item.Settings().fireproof()));
+    public static final Item MITHRIL_CHESTPLATE = registerItem("mithril_chestplate", new ArmorItem(MITHRIL_ARMOR, EquipmentSlot.CHEST, new Item.Settings().fireproof()));
+    public static final Item MITHRIL_LEGGINGS = registerItem("mithril_leggings", new ArmorItem(MITHRIL_ARMOR, EquipmentSlot.LEGS, new Item.Settings().fireproof()));
+    public static final Item MITHRIL_BOOTS = registerItem("mithril_boots", new ArmorItem(MITHRIL_ARMOR, EquipmentSlot.FEET, new Item.Settings().fireproof()));
 
     public static final Item MAGE_HELMET = registerItem("mage_helmet", new MageArmorItem(MAGE_ARMOR, EquipmentSlot.HEAD, new Item.Settings().fireproof()));
     public static final Item MAGE_CHESTPLATE = registerItem("mage_chestplate", new MageArmorItem(MAGE_ARMOR, EquipmentSlot.CHEST, new Item.Settings().fireproof()));
@@ -165,10 +180,21 @@ public class RebornArmors {
         addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_LEGGINGS);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, NICHIRIN_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, NICHIRIN_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, NICHIRIN_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, NICHIRIN_BOOTS);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_HELMET);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_CHESTPLATE);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_LEGGINGS);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_BOOTS);
+
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_HELMET);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_CHESTPLATE);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_LEGGINGS);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_BOOTS);
+
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_HELMET);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_CHESTPLATE);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_LEGGINGS);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_BOOTS);
+
 
         addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGE_HELMET);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGE_CHESTPLATE);

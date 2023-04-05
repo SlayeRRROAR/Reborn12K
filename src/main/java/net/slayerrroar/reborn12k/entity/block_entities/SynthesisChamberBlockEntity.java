@@ -18,13 +18,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
-import net.slayerrroar.reborn12k.items.RebornAiItems;
+import net.slayerrroar.reborn12k.items.ItemTechnical;
 import net.slayerrroar.reborn12k.recipe.recipe_types.SynthesisRecipe;
 import net.slayerrroar.reborn12k.screen.synthesis_chamber.SynthesisChamberScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
+
+@SuppressWarnings("OptionalGetWithoutIsPresent")
 
 public class SynthesisChamberBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -130,7 +132,7 @@ public class SynthesisChamberBlockEntity extends BlockEntity implements NamedScr
                 entity.getStack(0).setDamage(entity.getStack(0).getDamage() + 1);
             } if(entity.getStack(0).getDamage() == entity.getStack(0).getMaxDamage()) {
                 entity.removeStack(0);
-                entity.setStack(4, new ItemStack(RebornAiItems.EMPTY_BATTERY,
+                entity.setStack(4, new ItemStack(ItemTechnical.EMPTY_BATTERY,
                         entity.getStack(4).getCount()+1));
             }
 

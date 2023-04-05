@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:raw_neodymium_blocks"
-    },
-    "result": "reborn12k:neodymium_block",
-    "experience": 1.0,
-    "cookingtime": 100
-}

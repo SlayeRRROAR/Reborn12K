@@ -9,6 +9,7 @@ import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
+//import net.slayerrroar.reborn12k.armors.RebornArmors;
 import net.slayerrroar.reborn12k.armors.RebornArmors;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;

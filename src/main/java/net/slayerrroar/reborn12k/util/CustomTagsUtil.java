@@ -7,6 +7,8 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 
+@SuppressWarnings("unused")
+
 public class CustomTagsUtil {
     public static class Blocks {
 

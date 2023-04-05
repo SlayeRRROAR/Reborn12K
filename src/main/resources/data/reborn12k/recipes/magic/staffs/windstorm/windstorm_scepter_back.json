@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:windstorm_scepter"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:windstorm_manatite",
+        "count": 1
+    },
+    "group": "windstorm_manatite"
+}

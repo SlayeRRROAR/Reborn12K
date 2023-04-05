@@ -37,7 +37,7 @@ public class SynthesisChamberScreen extends HandledScreen<SynthesisChamberScreen
 
     private void renderProgressArrow(MatrixStack matrices, int x, int y) {
         if(handler.isCrafting()) {
-            drawTexture(matrices, x + 155, y + 23, 176, 0, 9, handler.getScaledProgress());
+            drawTexture(matrices, x + 108, y + 23, 176, 0, 9, handler.getScaledProgress());
         }
     }
 

@@ -29,9 +29,9 @@ public class SynthesisChamberScreenHandler extends ScreenHandler {
 
         this.addSlot(new CustomBatterySlot(inventory, 0, 44, 22));
         this.addSlot(new CustomAISlot(inventory, 1, 80, 22));
-        this.addSlot(new CustomChipSlot(inventory, 2, 116, 22));
+        this.addSlot(new CustomChipSlot(inventory, 2, 126, 22));
         this.addSlot(new CustomResultSlot(inventory, 3, 80, 54));
-        this.addSlot(new CustomResultSlot(inventory, 4, 44, 54));
+        this.addSlot(new CustomResultSlot(inventory, 4, 44, 48));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
@@ -56,7 +56,7 @@ public class SynthesisChamberScreenHandler extends ScreenHandler {
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
-        if (slot != null && slot.hasStack()) {
+        if (slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
             if(invSlot < this.inventory.size()) {

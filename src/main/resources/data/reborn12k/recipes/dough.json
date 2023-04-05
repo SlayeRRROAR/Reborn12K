@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:flour"
+        },
+        {
+            "item": "reborn12k:flour"
+        },
+        {
+            "item": "reborn12k:flour"
+        },
+        {
+            "item": "reborn12k:flour"
+        },
+        {
+            "item": "minecraft:water_bucket"
+        },
+        {
+            "item": "reborn12k:flour"
+        },
+        {
+            "item": "reborn12k:flour"
+        },
+        {
+            "item": "reborn12k:flour"
+        },
+        {
+            "item": "reborn12k:flour"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:dough",
+        "count": 12
+    }
+}

@@ -13,6 +13,8 @@ public class CustomBlockEntities {
 
     public static BlockEntityType<ArcaneArtifactBlockEntity> ARCANE_ARTIFACT;
 
+    public static BlockEntityType<CrusherBlockEntity> CRUSHER;
+
     public static BlockEntityType<MineralManufactoryBlockEntity> MINERAL_MANUFACTORY;
 
     public static BlockEntityType<MelterBlockEntity> MELTER;
@@ -31,6 +33,11 @@ public class CustomBlockEntities {
                 new Identifier(Reborn12K.MOD_ID, "arcane_artifact"),
                 FabricBlockEntityTypeBuilder.create(ArcaneArtifactBlockEntity::new,
                         AdvancedBlocks.ARCANE_ARTIFACT).build(null));
+
+        CRUSHER = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                new Identifier(Reborn12K.MOD_ID, "crusher"),
+                FabricBlockEntityTypeBuilder.create(CrusherBlockEntity::new,
+                        AdvancedBlocks.CRUSHER).build(null));
 
         MINERAL_MANUFACTORY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 new Identifier(Reborn12K.MOD_ID, "mineral_manufactory"),

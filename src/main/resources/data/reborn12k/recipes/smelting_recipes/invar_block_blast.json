@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:raw_invar_blocks"
-    },
-    "result": "reborn12k:invar_block",
-    "experience": 0.9,
-    "cookingtime": 100
-}

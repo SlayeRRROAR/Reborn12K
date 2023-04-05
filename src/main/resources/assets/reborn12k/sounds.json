@@ -34,5 +34,14 @@
         "stream": true
       }
     ]
+  },
+  "alkatraz": {
+    "subtitle": "subtitles.reborn12k.alkatraz",
+    "sounds": [
+      {
+        "name":"reborn12k:alkatraz",
+        "stream": true
+      }
+    ]
   }
 }

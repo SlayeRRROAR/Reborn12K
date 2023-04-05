@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "reborn12k:nichirin_ore",
     "reborn12k:silver_ore",
     "reborn12k:deepslate_silver_ore",
     "reborn12k:raw_silver_block",
@@ -39,7 +38,6 @@
     "reborn12k:electrum_block",
     "reborn12k:raw_lumium_block",
     "reborn12k:lumium_block",
-    "reborn12k:nichirin_block",
     "reborn12k:melter",
     "reborn12k:basic_laser_quarry",
     "reborn12k:advanced_laser_quarry",

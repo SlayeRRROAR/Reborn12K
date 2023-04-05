@@ -10,6 +10,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.fluids.RebornFluids;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
+import net.slayerrroar.reborn12k.util.RebornKeybinds;
 import net.slayerrroar.reborn12k.util.RebornRenderHelper;
 
 @Environment(EnvType.CLIENT)
@@ -19,8 +20,8 @@ public class ClientReborn12K implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
+        RebornKeybinds.registerClient();
         RebornRenderHelper.setRenderLayers();
-
         RebornScreenRegistry.registerClient();
 
         FluidRenderHandlerRegistry.INSTANCE.register(RebornFluids.LIQUID_MANA_STILL, RebornFluids.LIQUID_MANA_FLOWING,

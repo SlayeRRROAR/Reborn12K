@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:raw_signalum_blocks"
-    },
-    "result": "reborn12k:signalum_block",
-    "experience": 1.4,
-    "cookingtime": 100
-}

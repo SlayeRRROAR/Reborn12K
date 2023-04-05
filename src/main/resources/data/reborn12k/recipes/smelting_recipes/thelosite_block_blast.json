@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:raw_thelosite_blocks"
-    },
-    "result": "reborn12k:thelosite_block",
-    "experience": 3.0,
-    "cookingtime": 100
-}

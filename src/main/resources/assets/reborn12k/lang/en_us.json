@@ -45,8 +45,6 @@
     "item.reborn12k.thelosite_ingot": "Thelosite Ingot",
 
     "item.reborn12k.magisteel_ingot": "Magisteel Ingot",
-
-    "item.reborn12k.nichirin_ingot": "Nichirin Ingot",
     "item.reborn12k.orichalcum_ingot": "Orichalcum Ingot",
     "item.reborn12k.mithril_ingot": "Mithril Ingot",
     "item.reborn12k.demonic_metal_ingot": "Demonic Metal Ingot",
@@ -83,8 +81,6 @@
     "item.reborn12k.raw_archeosite": "Raw Archeosite",
     "item.reborn12k.raw_thelosite": "Raw Thelosite",
 
-    "item.reborn12k.raw_nichirin": "Raw Nichirin",
-
 
     "item.reborn12k.banana": "Banana",
     "item.reborn12k.golden_banana": "Golden Banana",
@@ -94,9 +90,13 @@
     "item.reborn12k.golden_cherry": "Golden Cherry",
     "item.reborn12k.enchanted_golden_cherry": "Enchanted Golden Cherry",
 
+    "item.reborn12k.flour": "Flour",
+    "item.reborn12k.dough": "Dough",
+
     "item.reborn12k.withered_star": "Withered Star",
 
     "item.reborn12k.hammer": "Hammer",
+    "item.reborn12k.crushing_wheel": "Crushing Wheel",
 
 
     "item.reborn12k.windstorm_manatite": "Windstorm Manatite",
@@ -117,8 +117,6 @@
     "item.reborn12k.ice_mirror": "Ice Mirror",
     "item.reborn12k.cell_phone": "Cell Phone",
 
-    "item.reborn12k.magnet": "Magnet",
-
     "item.reborn12k.yggdrasill_branch": "Yggdrasill's Branch",
 
 
@@ -129,6 +127,7 @@
 
     "block.reborn12k.arcane_artifact": "Arcane Artifact",
 
+    "block.reborn12k.crusher": "Crusher",
     "block.reborn12k.mineral_manufactory": "Mineral Manufactory",
     "block.reborn12k.melter": "Melter",
 
@@ -171,8 +170,6 @@
     "block.reborn12k.end_osmium_ore": "End Osmium Ore",
     "block.reborn12k.end_platinum_ore": "End Platinum Ore",
     "block.reborn12k.end_iridium_ore": "End Iridium Ore",
-
-    "block.reborn12k.nichirin_ore": "Nichirin Ore",
 
 
     "block.reborn12k.ash_log": "Ash Log",
@@ -274,8 +271,6 @@
     "block.reborn12k.raw_archeosite_block": "Block of Raw Archeosite",
     "block.reborn12k.raw_thelosite_block": "Block of Raw Thelosite",
 
-    "block.reborn12k.raw_nichirin_block": "Block of Raw Nichirin",
-
     "block.reborn12k.tin_block": "Block of Tin",
     "block.reborn12k.aluminum_block": "Block of Aluminum",
     "block.reborn12k.silver_block": "Block of Silver",
@@ -317,8 +312,6 @@
     "block.reborn12k.thelosite_block": "Block of Thelosite",
 
     "block.reborn12k.magisteel_block": "Block of Magisteel",
-
-    "block.reborn12k.nichirin_block": "Block of Nichirin",
     "block.reborn12k.orichalcum_block": "Block of Orichalcum",
     "block.reborn12k.mithril_block": "Block of Mithril",
     "block.reborn12k.demonic_metal_block": "Block of Demonic Metal",
@@ -522,27 +515,19 @@
     "item.reborn12k.resonant_ender_bucket": "Resonant Ender Bucket",
 
 
-    "item.reborn12k.sturdy_fabric": "Sturdy Fabric",
-
     "item.reborn12k.shades": "Filo's Aviators",
     "item.reborn12k.cat_ears": "Cat Ears",
     "item.reborn12k.cow_ears": "Cow Ears",
     "item.reborn12k.bunny_ears": "Bunny Ears",
-    "item.reborn12k.demon_kings_crown": "Demon King's Crown",
-    "item.reborn12k.magnifier_goggles": "Magnifier Goggles",
-
-    "item.reborn12k.parachute": "Parachute",
-    "item.reborn12k.angel_wings": "Angel Wings",
-    "item.reborn12k.demon_wings": "Demon Wings",
-    "item.reborn12k.bat_wings": "Bat Wings",
+    "item.reborn12k.iron_crown": "Iron Crown",
 
     "item.reborn12k.black_belt": "Black Belt",
     "item.reborn12k.expert_belt": "Expert Belt",
-    "item.reborn12k.champions_belt": "Champion's Belt",
+    "item.reborn12k.champion_belt": "Champion's Belt",
     "item.reborn12k.focus_belt": "Focus Belt",
 
     "item.reborn12k.comfy_shoes": "Comfy Shoes",
-    "item.reborn12k.travelers_shoes": "Traveler's Shoes",
+    "item.reborn12k.traveler_shoes": "Traveler's Shoes",
     "item.reborn12k.running_shoes": "Running Shoes",
     "item.reborn12k.long_fall_boots": "Long Fall Boots",
 
@@ -550,8 +535,9 @@
     "item.reborn12k.golden_necklace": "Golden Necklace",
     "item.reborn12k.bejeweled_necklace": "Bejeweled Necklace",
     "item.reborn12k.heart_pendant": "Heart Pendant",
-    "item.reborn12k.arcane_pendant": "Arcane Pendant",
-    "item.reborn12k.cursed_pendant": "Cursed Pendant",
+    "item.reborn12k.shadowtouched_pendant": "Shadowtouched Pendant",
+    "item.reborn12k.lightbound_pendant": "Lightbound Pendant",
+    "item.reborn12k.flameborn_pendant": "Flameborn Pendant",
 
     "item.reborn12k.golden_ring": "Golden Ring",
     "item.reborn12k.awakened_golden_ring": "Awakened Golden Ring",
@@ -563,13 +549,50 @@
     "item.reborn12k.ring_of_light": "§eRing of Apollo",
     "item.reborn12k.ring_of_darkness": "§5Ring of Artemis",
 
-    "item.reborn12k.ring_of_iron": "§7Ring of Hephaestus",
-    "item.reborn12k.ring_of_nature": "§aRing of Aphrodite",
-    "item.reborn12k.ring_of_ice": "§9Ring of Boreas",
-    "item.reborn12k.ring_of_lightning": "§6Ring of Zeus",
-
     "item.reborn12k.ring_of_strength": "§4Ring of Mars Ultor",
 
+    "item.reborn12k.vague_band_of_fortitude": "Vague Band of Fortitude",
+    "item.reborn12k.minor_band_of_fortitude": "Minor Band of Fortitude",
+    "item.reborn12k.indelible_band_of_fortitude": "Indelible Band of Fortitude",
+    "item.reborn12k.greater_band_of_fortitude": "Greater Band of Fortitude",
+
+    "item.reborn12k.vague_bloody_claw": "Vague Bloody Claw",
+    "item.reborn12k.minor_bloody_claw": "Minor Bloody Claw",
+    "item.reborn12k.indelible_bloody_claw": "Indelible Bloody Claw",
+    "item.reborn12k.greater_bloody_claw": "Greater Bloody Claw",
+
+    "item.reborn12k.vague_war_medallion": "Vague War Medallion",
+    "item.reborn12k.minor_war_medallion": "Minor War Medallion",
+    "item.reborn12k.indelible_war_medallion": "Indelible War Medallion",
+    "item.reborn12k.greater_war_medallion": "Greater War Medallion",
+
+    "item.reborn12k.vague_frenzy_tonic": "Vague Frenzy Tonic",
+    "item.reborn12k.minor_frenzy_tonic": "Minor Frenzy Tonic",
+    "item.reborn12k.indelible_frenzy_tonic": "Indelible Frenzy Tonic",
+    "item.reborn12k.greater_frenzy_tonic": "Greater Frenzy Tonic",
+
+    "item.reborn12k.dark_impulse": "§5Dark Impulse",
+    "item.reborn12k.radiant_impulse": "§eRadiant Impulse",
+    "item.reborn12k.infernal_impulse": "§cInfernal Impulse",
+
+    "item.reborn12k.jetpack": "Jetpack",
+    "item.reborn12k.angel_wings": "Angel Wings",
+    "item.reborn12k.demon_wings": "Demon Wings",
+    "item.reborn12k.bat_wings": "Bat Wings",
+
+    "item.reborn12k.gold_pouch": "Gold Pouch",
+    "item.reborn12k.bloody_rose": "Bloody Rose",
+    "item.reborn12k.magnifying_glass": "Magnifying Glass",
+    "item.reborn12k.magnet": "Magnet",
+    "item.reborn12k.phoenix_plume": "§6Phoenix Plume",
+
+
+    "item.reborn12k.wooden_katana": "Wooden Katana",
+    "item.reborn12k.stone_katana": "Stone Katana",
+    "item.reborn12k.iron_katana": "Iron Katana",
+    "item.reborn12k.diamond_katana": "Diamond Katana",
+    "item.reborn12k.netherite_katana": "Netherite Katana",
+    "item.reborn12k.golden_katana": "Golden Katana",
 
     "item.reborn12k.bronze_helmet": "Bronze Helmet",
     "item.reborn12k.bronze_chestplate": "Bronze Chestplate",
@@ -581,6 +604,7 @@
     "item.reborn12k.bronze_pickaxe": "Bronze Pickaxe",
     "item.reborn12k.bronze_axe": "Bronze Axe",
     "item.reborn12k.bronze_hoe": "Bronze Hoe",
+    "item.reborn12k.bronze_katana": "Bronze Katana",
 
     "item.reborn12k.titanium_helmet": "Titanium Helmet",
     "item.reborn12k.titanium_chestplate": "Titanium Chestplate",
@@ -592,6 +616,7 @@
     "item.reborn12k.titanium_pickaxe": "Titanium Pickaxe",
     "item.reborn12k.titanium_axe": "Titanium Axe",
     "item.reborn12k.titanium_hoe": "Titanium Hoe",
+    "item.reborn12k.titanium_katana": "Titanium Katana",
 
     "item.reborn12k.steel_helmet": "Steel Helmet",
     "item.reborn12k.steel_chestplate": "Steel Chestplate",
@@ -603,6 +628,7 @@
     "item.reborn12k.steel_pickaxe": "Steel Pickaxe",
     "item.reborn12k.steel_axe": "Steel Axe",
     "item.reborn12k.steel_hoe": "Steel Hoe",
+    "item.reborn12k.steel_katana": "Steel Katana",
 
     "item.reborn12k.electrum_helmet": "Electrum Helmet",
     "item.reborn12k.electrum_chestplate": "Electrum Chestplate",
@@ -614,6 +640,7 @@
     "item.reborn12k.electrum_pickaxe": "Electrum Pickaxe",
     "item.reborn12k.electrum_axe": "Electrum Axe",
     "item.reborn12k.electrum_hoe": "Electrum Hoe",
+    "item.reborn12k.electrum_katana": "Electrum Katana",
 
     "item.reborn12k.tungstensteel_helmet": "Tungstensteel Helmet",
     "item.reborn12k.tungstensteel_chestplate": "Tungstensteel Chestplate",
@@ -625,6 +652,7 @@
     "item.reborn12k.tungstensteel_pickaxe": "Tungstensteel Pickaxe",
     "item.reborn12k.tungstensteel_axe": "Tungstensteel Axe",
     "item.reborn12k.tungstensteel_hoe": "Tungstensteel Hoe",
+    "item.reborn12k.tungstensteel_katana": "Tungstensteel Katana",
 
     "item.reborn12k.advanced_alloy_helmet": "Advanced Alloy Helmet",
     "item.reborn12k.advanced_alloy_chestplate": "Advanced Alloy Chestplate",
@@ -636,6 +664,7 @@
     "item.reborn12k.advanced_alloy_pickaxe": "Advanced Alloy Pickaxe",
     "item.reborn12k.advanced_alloy_axe": "Advanced Alloy Axe",
     "item.reborn12k.advanced_alloy_hoe": "Advanced Alloy Hoe",
+    "item.reborn12k.advanced_alloy_katana": "Advanced Alloy Katana",
 
     "item.reborn12k.signalum_helmet": "Signalum Helmet",
     "item.reborn12k.signalum_chestplate": "Signalum Chestplate",
@@ -647,6 +676,7 @@
     "item.reborn12k.signalum_pickaxe": "Signalum Pickaxe",
     "item.reborn12k.signalum_axe": "Signalum Axe",
     "item.reborn12k.signalum_hoe": "Signalum Hoe",
+    "item.reborn12k.signalum_katana": "Signalum Katana",
 
     "item.reborn12k.iridium_alloy_helmet": "Iridium Alloy Helmet",
     "item.reborn12k.iridium_alloy_chestplate": "Iridium Alloy Chestplate",
@@ -658,6 +688,7 @@
     "item.reborn12k.iridium_alloy_pickaxe": "Iridium Alloy Pickaxe",
     "item.reborn12k.iridium_alloy_axe": "Iridium Alloy Axe",
     "item.reborn12k.iridium_alloy_hoe": "Iridium Alloy Hoe",
+    "item.reborn12k.iridium_alloy_katana": "Iridium Alloy Katana",
 
     "item.reborn12k.enderium_helmet": "Enderium Helmet",
     "item.reborn12k.enderium_chestplate": "Enderium Chestplate",
@@ -669,6 +700,7 @@
     "item.reborn12k.enderium_pickaxe": "Enderium Pickaxe",
     "item.reborn12k.enderium_axe": "Enderium Axe",
     "item.reborn12k.enderium_hoe": "Enderium Hoe",
+    "item.reborn12k.enderium_katana": "Enderium Katana",
 
     "item.reborn12k.archeosite_helmet": "Archeosite Helmet",
     "item.reborn12k.archeosite_chestplate": "Archeosite Chestplate",
@@ -680,6 +712,7 @@
     "item.reborn12k.archeosite_pickaxe": "Archeosite Pickaxe",
     "item.reborn12k.archeosite_axe": "Archeosite Axe",
     "item.reborn12k.archeosite_hoe": "Archeosite Hoe",
+    "item.reborn12k.archeosite_katana": "Archeosite Katana",
 
     "item.reborn12k.thelosite_helmet": "Thelosite Helmet",
     "item.reborn12k.thelosite_chestplate": "Thelosite Chestplate",
@@ -691,12 +724,44 @@
     "item.reborn12k.thelosite_pickaxe": "Thelosite Pickaxe",
     "item.reborn12k.thelosite_axe": "Thelosite Axe",
     "item.reborn12k.thelosite_hoe": "Thelosite Hoe",
+    "item.reborn12k.thelosite_katana": "Thelosite Katana",
 
 
-    "item.reborn12k.nichirin_helmet": "Nichirin Helmet",
-    "item.reborn12k.nichirin_chestplate": "Nichirin Chestplate",
-    "item.reborn12k.nichirin_leggings": "Nichirin Leggings",
-    "item.reborn12k.nichirin_boots": "Nichirin Boots",
+    "item.reborn12k.magisteel_helmet": "Magisteel Helmet",
+    "item.reborn12k.magisteel_chestplate": "Magisteel Chestplate",
+    "item.reborn12k.magisteel_leggings": "Magisteel Leggings",
+    "item.reborn12k.magisteel_boots": "Magisteel Boots",
+
+    "item.reborn12k.magisteel_sword": "Magisteel Sword",
+    "item.reborn12k.magisteel_shovel": "Magisteel Shovel",
+    "item.reborn12k.magisteel_pickaxe": "Magisteel Pickaxe",
+    "item.reborn12k.magisteel_axe": "Magisteel Axe",
+    "item.reborn12k.magisteel_hoe": "Magisteel Hoe",
+    "item.reborn12k.magisteel_katana": "Magisteel Katana",
+
+    "item.reborn12k.orichalcum_helmet": "Orichalcum Helmet",
+    "item.reborn12k.orichalcum_chestplate": "Orichalcum Chestplate",
+    "item.reborn12k.orichalcum_leggings": "Orichalcum Leggings",
+    "item.reborn12k.orichalcum_boots": "Orichalcum Boots",
+
+    "item.reborn12k.orichalcum_sword": "Orichalcum Sword",
+    "item.reborn12k.orichalcum_shovel": "Orichalcum Shovel",
+    "item.reborn12k.orichalcum_pickaxe": "Orichalcum Pickaxe",
+    "item.reborn12k.orichalcum_axe": "Orichalcum Axe",
+    "item.reborn12k.orichalcum_hoe": "Orichalcum Hoe",
+    "item.reborn12k.orichalcum_katana": "Orichalcum Katana",
+
+    "item.reborn12k.mithril_helmet": "Mithril Helmet",
+    "item.reborn12k.mithril_chestplate": "Mithril Chestplate",
+    "item.reborn12k.mithril_leggings": "Mithril Leggings",
+    "item.reborn12k.mithril_boots": "Mithril Boots",
+
+    "item.reborn12k.mithril_sword": "Mithril Sword",
+    "item.reborn12k.mithril_shovel": "Mithril Shovel",
+    "item.reborn12k.mithril_pickaxe": "Mithril Pickaxe",
+    "item.reborn12k.mithril_axe": "Mithril Axe",
+    "item.reborn12k.mithril_hoe": "Mithril Hoe",
+    "item.reborn12k.mithril_katana": "Mithril Katana",
 
     "item.reborn12k.mage_helmet": "Mage's Hood",
     "item.reborn12k.mage_chestplate": "Mage's Robes",
@@ -708,22 +773,23 @@
     "item.reborn12k.power_leggings": "Power Armor Leggings",
     "item.reborn12k.power_boots": "Power Armor Boots",
 
+    "item.reborn12k.power_sword": "Power Sword",
+
     "item.reborn12k.red_engine": "Red Engine",
-
     "item.reborn12k.casing_mk237": "Casing Mk.237",
-
     "item.reborn12k.ceramite_plate": "Ceramite Plate",
 
     "item.reborn12k.silver_claymore": "Silver Claymore",
     "item.reborn12k.yamato": "Yamato",
     "item.reborn12k.cutter_237": "Cutter 237",
-    "item.reborn12k.power_sword": "Power Sword",
     "item.reborn12k.murasama": "Murasama",
     "item.reborn12k.bladewolf": "Bladewolf",
     "item.reborn12k.rebellion": "Rebellion",
     "item.reborn12k.red_queen": "Red Queen",
     "item.reborn12k.silence": "Silence",
 
+
+    "item.reborn12k.unrecorded_disc": "Unrecorded Disc",
 
     "item.reborn12k.z115_disc": "115 Disc",
     "item.reborn12k.z115_disc.desc": "Elena Siegman - 115",
@@ -736,6 +802,9 @@
 
     "item.reborn12k.free_bird_disc": "Free Bird Disc",
     "item.reborn12k.free_bird_disc.desc": "Lynyrd Skynyrd - Free Bird",
+
+    "item.reborn12k.alkatraz_disc": "Alkatraz Disc",
+    "item.reborn12k.alkatraz_disc.desc": "DEMONDICE - Alkatraz",
 
     "item.reborn12k.windstorm.tooltip": "§8Nimbles allies",
     "item.reborn12k.viridian.tooltip": "§8Hastens allies",
@@ -756,28 +825,56 @@
     "item.reborn12k.magic_mirror.tooltip3": "§cOnly works in the Overworld",
     "item.reborn12k.magic_mirror.tooltip4": "§cYou're out of charges",
 
-    "item.reborn12k.magnet.tooltip1": "The magnet is §cINACTIVE",
-    "item.reborn12k.magnet.tooltip2": "The magnet is §1ACTIVE",
-
     "item.reborn12k.yggdrasill_branch.tooltip1": "The Yggdrasill's Branch is §2INACTIVE",
     "item.reborn12k.yggdrasill_branch.tooltip2": "The Yggdrasill's Branch is §aACTIVE",
 
-    "item.reborn12k.shades.tooltip1": "§8Might have no effect but",
-    "item.reborn12k.shades.tooltip2": "§8damn they look cool",
+    "item.reborn12k.hat.tooltip": "§9Hat",
+    "item.reborn12k.necklace.tooltip": "§9Necklace",
+    "item.reborn12k.belt.tooltip": "§9Belt",
+    "item.reborn12k.shoes.tooltip": "§9Shoes",
+    "item.reborn12k.ring.tooltip": "§9Ring",
+    "item.reborn12k.trinket.tooltip": "§9Trinket",
+
+    "item.reborn12k.shades.tooltip1": "§8Endermen can't hurt me",
+    "item.reborn12k.shades.tooltip2": "§8this shades are Gucci",
 
     "item.reborn12k.fake_ears.tooltip1": "§8Fake animal ears.",
     "item.reborn12k.fake_ears.tooltip2": "§8They kinda look cute on you.",
 
-    "item.reborn12k.demon_kings_crown.tooltip1": "§8The throne is now",
-    "item.reborn12k.demon_kings_crown.tooltip2": "§8yours to take...",
+    "item.reborn12k.iron_crown.tooltip1": "§8The throne is now",
+    "item.reborn12k.iron_crown.tooltip2": "§8yours to take...",
 
-    "item.reborn12k.parachute.tooltip": "§8Crouch to break your fall",
+    "item.reborn12k.jetpack.tooltip1": "§8Hold the §5Activate Trinket",
+    "item.reborn12k.jetpack.tooltip2": "§8button to move upwards",
 
     "item.reborn12k.angel_wings.tooltip1": "§8You are not a mere",
     "item.reborn12k.angel_wings.tooltip2": "§8mortal anymore...",
 
     "item.reborn12k.long_fall_boots.tooltip1": "§8Property of Aperture",
     "item.reborn12k.long_fall_boots.tooltip2": "§8Laboratories #G14-D05",
+
+    "item.reborn12k.dark_impulse.tooltip1": "§8When equipped unlocks the",
+    "item.reborn12k.dark_impulse.tooltip2": "§8potential of §5Shadowtouched §8Trinkets",
+
+    "item.reborn12k.radiant_impulse.tooltip1": "§8When equipped unlocks the",
+    "item.reborn12k.radiant_impulse.tooltip2": "§8potential of §eLightbound §8Trinkets",
+
+    "item.reborn12k.infernal_impulse.tooltip1": "§8When equipped unlocks the",
+    "item.reborn12k.infernal_impulse.tooltip2": "§8potential of §cFlameborn §8Trinkets",
+
+    "item.reborn12k.bloody_rose.tooltip1": "§8A beautiful rose with its",
+    "item.reborn12k.bloody_rose.tooltip2": "§8thorns covered in blood",
+
+    "item.reborn12k.magnifying_glass.tooltip": "§8Extends your reach",
+
+    "item.reborn12k.magnet.tooltip1": "§8Press the §5Activate Trinket",
+    "item.reborn12k.magnet.tooltip2": "§8button to turn it on or off",
+    "item.reborn12k.magnet.tooltip3": "The magnet is §cINACTIVE",
+    "item.reborn12k.magnet.tooltip4": "The magnet is §1ACTIVE",
+
+    "item.reborn12k.phoenix_plume.tooltip1": "§8When equipped protects from",
+    "item.reborn12k.phoenix_plume.tooltip2": "§8death. Usable once a day",
+    "item.reborn12k.phoenix_plume.tooltip3": "§8A Phoenix feather",
 
 
     "item.reborn12k.red_queen.tooltip1": "§8Exceed is §cOFF",
@@ -844,12 +941,10 @@
     "item.reborn12k.experience_data_card_v237.tooltip": "HIGH §8Experience",
 
 
-    "advancements.reborn12k.root.title": "REBORN12K - Alloying",
-    "advancements.reborn12k.root.description": "Discover the wonders of mixing random metals",
-
-
     "enchantment.reborn12k.kiss_of_death": "Kiss of Death",
     "enchantment.reborn12k.magic_protection": "Magic Protection",
+    "enchantment.reborn12k.toxic_thread": "Toxic Thread",
+    "enchantment.reborn12k.frost_bite": "Frost Bite",
 
 
     "sounds:reborn12k.z115": "Elena Siegman - 115",
@@ -864,11 +959,104 @@
     "sounds:reborn12k.free_bird": "Lynyrd Skynyrd - Free Bird",
     "subtitles.reborn12k.free_bird": "Lynyrd Skynyrd - Free Bird is playing",
 
+    "sounds:reborn12k.alkatraz": "DEMONDICE - Alkatraz",
+    "subtitles.reborn12k.alkatraz": "DEMONDICE - Alkatraz is playing",
+
     "entity.minecraft.villager.jeweler": "Jeweler",
     "entity.minecraft.villager.blacksmith": "Blacksmith",
-    "entity.minecraft.villager.hmble": "Wuk Hmble",
+    "entity.minecraft.villager.manasmith": "Manasmith",
+    "entity.minecraft.villager.hoarder": "Hoarder",
 
 
-    "itemGroup.reborn12k": "Reborn12K"
+    "itemGroup.reborn12k": "Reborn12K",
 
-  }
+
+    "advancements.reborn12k.root.title": "Reborn12K",
+    "advancements.reborn12k.root.description": "Starting your journey",
+
+    "advancements.reborn12k.the_four_cs.title": "The Four C's",
+    "advancements.reborn12k.the_four_cs.description": "Obtain a Diamond",
+    "advancements.reborn12k.reaching_deep.title": "Reaching Deep",
+    "advancements.reborn12k.reaching_deep.description": "Obtain a Netherite Ingot",
+    "advancements.reborn12k.prussian_blue.title": "Prussian Blue",
+    "advancements.reborn12k.prussian_blue.description": "Obtain a Cobalt Ingot",
+    "advancements.reborn12k.a_new_beginning.title": "A New Beginning",
+    "advancements.reborn12k.a_new_beginning.description": "Obtain an Archeosite Ingot",
+    "advancements.reborn12k.envoy_of_creation.title": "Envoy of Creation",
+    "advancements.reborn12k.envoy_of_creation.description": "Craft a complete set of Archeosite Armor",
+
+    "advancements.reborn12k.not_a_browser.title": "Not a Browser",
+    "advancements.reborn12k.not_a_browser.description": "Obtain a Chrome Ingot",
+    "advancements.reborn12k.stainless.title": "Stainless",
+    "advancements.reborn12k.stainless.description": "Obtain a Steel Ingot",
+    "advancements.reborn12k.fearless.title": "Fearless",
+    "advancements.reborn12k.fearless.description": "Obtain a Tungstensteel Ingot",
+    "advancements.reborn12k.the_last_end.title": "The Last End",
+    "advancements.reborn12k.the_last_end.description": "Obtain a Thelosite Ingot",
+    "advancements.reborn12k.envoy_of_destruction.title": "Envoy of Destruction",
+    "advancements.reborn12k.envoy_of_destruction.description": "Craft a complete set of Thelosite Armor",
+
+    "advancements.reborn12k.lightweight.title": "Lightweight",
+    "advancements.reborn12k.lightweight.description": "Obtain an Aluminum Ingot",
+    "advancements.reborn12k.bulletproof.title": "Bulletproof",
+    "advancements.reborn12k.bulletproof.description": "Obtain a Titanium Ingot",
+    "advancements.reborn12k.iridium_disco.title": "Iridium Disco",
+    "advancements.reborn12k.iridium_disco.description": "Obtain an Iridium Ingot",
+    "advancements.reborn12k.alpha_alloy.title": "Alpha Alloy",
+    "advancements.reborn12k.alpha_alloy.description": "Obtain an Advanced Alloy Ingot",
+    "advancements.reborn12k.omega_alloy.title": "Omega Alloy",
+    "advancements.reborn12k.omega_alloy.description": "Obtain an Iridium Alloy Ingot",
+    "advancements.reborn12k.corporate_secret.title": "Corporate Secret",
+    "advancements.reborn12k.corporate_secret.description": "Craft a complete set of Iridium Alloy Armor",
+
+    "advancements.reborn12k.shocking.title": "Shocking",
+    "advancements.reborn12k.shocking.description": "Obtain an Electrum Ingot",
+    "advancements.reborn12k.hyperconductor.title": "Hyperconductor",
+    "advancements.reborn12k.hyperconductor.description": "Obtain a Signalum Ingot",
+    "advancements.reborn12k.illuminating.title": "Illuminating",
+    "advancements.reborn12k.illuminating.description": "Obtain a Lumium Ingot",
+    "advancements.reborn12k.negative_space.title": "Negative Space",
+    "advancements.reborn12k.negative_space.description": "Obtain an Enderium Ingot",
+    "advancements.reborn12k.fishing_in_the_dirac_sea.title": "Fishing in the Dirac Sea",
+    "advancements.reborn12k.fishing_in_the_dirac_sea.description": "Craft a complete set of Enderium Armor",
+
+    "advancements.reborn12k.getting_started.title": "Getting Started",
+    "advancements.reborn12k.getting_started.description": "Obtain a Bronze Ingot",
+    "advancements.reborn12k.if_i_had_a_nickel.title": "If I had a Nickel...",
+    "advancements.reborn12k.if_i_had_a_nickel.description": "Obtain a Nickel Ingot",
+    "advancements.reborn12k.optimal_insulation.title": "Optimal Insulation",
+    "advancements.reborn12k.optimal_insulation.description": "Obtain an Invar Ingot",
+    "advancements.reborn12k.cutting_edge.title": "Cutting Edge",
+    "advancements.reborn12k.cutting_edge.description": "Craft a Basic Laser Quarry",
+    "advancements.reborn12k.ultra_high_frequency_pulse.title": "Ultra-High Frequency Pulse",
+    "advancements.reborn12k.ultra_high_frequency_pulse.description": "Craft an Advanced Laser Quarry",
+    "advancements.reborn12k.collimated_array.title": "Collimated Array",
+    "advancements.reborn12k.collimated_array.description": "Craft an Ultimate Laser Quarry",
+
+    "advancements.reborn12k.thermoelectric_balance.title": "Thermoelectric Balance",
+    "advancements.reborn12k.thermoelectric_balance.description": "Obtain a Constantan Ingot",
+    "advancements.reborn12k.melting_point.title": "Melting Point",
+    "advancements.reborn12k.melting_point.description": "Craft a Melter",
+
+    "advancements.reborn12k.rock_and_stone.title": "Rock and Stone",
+    "advancements.reborn12k.rock_and_stone.description": "Craft a Mineral Manufactory",
+
+    "advancements.reborn12k.iron_tier.title": "Iron Tier",
+    "advancements.reborn12k.iron_tier.description": "Craft a Pickaxe out of Iron or Bronze",
+    "advancements.reborn12k.diamond_tier.title": "Diamond Tier",
+    "advancements.reborn12k.diamond_tier.description": "Craft a Pickaxe out of Diamond, Steel, Electrum or Titanium",
+    "advancements.reborn12k.netherite_tier.title": "Netherite Tier",
+    "advancements.reborn12k.netherite_tier.description": "Craft a Pickaxe out of Netherite, Tungstensteel, Signalum or Advanced Alloy",
+    "advancements.reborn12k.one_step_further.title": "One Step Further",
+    "advancements.reborn12k.one_step_further.description": "Craft a Pickaxe out of Archeosite, Thelosite, Enderium or Iridium Alloy",
+
+
+    "advancements.reborn12k_magic.root.title": "Reborn12K - Magic",
+    "advancements.reborn12k_magic.root.description": "",
+
+
+
+    "category.reborn12k.keybinds": "Reborn12K",
+    "key.reborn12k.trinket": "Activate Trinket"
+
+}

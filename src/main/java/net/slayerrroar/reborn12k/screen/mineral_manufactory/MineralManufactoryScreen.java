@@ -11,7 +11,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 
 public class MineralManufactoryScreen extends HandledScreen<MineralManufactoryScreenHandler> {
     public static final Identifier TEXTURE = new Identifier
-            (Reborn12K.MOD_ID,"textures/gui/quarry_gui.png");
+            (Reborn12K.MOD_ID,"textures/gui/mineral_manufactory_gui.png");
 
     public MineralManufactoryScreen(MineralManufactoryScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -37,7 +37,7 @@ public class MineralManufactoryScreen extends HandledScreen<MineralManufactorySc
 
     private void renderProgressArrow(MatrixStack matrices, int x, int y) {
         if(handler.isCrafting()) {
-            drawTexture(matrices, x + 108, y + 33, 176, 0, 8, handler.getScaledProgress());
+            drawTexture(matrices, x + 62, y + 29, 176, 0, 53, handler.getScaledProgress());
         }
     }
 

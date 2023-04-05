@@ -18,14 +18,17 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.custom_blocks.CrusherBlock;
+import net.slayerrroar.reborn12k.blocks.custom.with_entities.CrusherBlock;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
 import net.slayerrroar.reborn12k.recipe.recipe_types.CrusherRecipe;
 import net.slayerrroar.reborn12k.screen.crusher.CrusherScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
 import java.util.Optional;
+
+@SuppressWarnings("OptionalGetWithoutIsPresent")
 
 public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -195,22 +198,22 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
 
         return switch (localDir) {
             default ->
-                    side.getOpposite() == Direction.DOWN && slot == 1 ||
+                    Objects.requireNonNull(side).getOpposite() == Direction.DOWN && slot == 1 ||
                             side.getOpposite() == Direction.NORTH && slot == 0 ||
                             side.getOpposite() == Direction.EAST && slot == 0 ||
                             side.getOpposite() == Direction.WEST && slot == 0;
             case EAST ->
-                    side.getOpposite() == Direction.DOWN && slot == 1 ||
+                    Objects.requireNonNull(side).getOpposite() == Direction.DOWN && slot == 1 ||
                             side.rotateYClockwise() == Direction.NORTH && slot == 0 ||
                             side.rotateYClockwise() == Direction.EAST && slot == 0 ||
                             side.rotateYClockwise() == Direction.WEST && slot == 0;
             case SOUTH ->
-                    side.getOpposite() == Direction.DOWN && slot == 1 ||
+                    Objects.requireNonNull(side).getOpposite() == Direction.DOWN && slot == 1 ||
                             side == Direction.NORTH && slot == 0 ||
                             side == Direction.EAST && slot == 0 ||
                             side == Direction.WEST && slot == 0;
             case WEST ->
-                    side.getOpposite() == Direction.DOWN && slot == 1 ||
+                    Objects.requireNonNull(side).getOpposite() == Direction.DOWN && slot == 1 ||
                             side.rotateYCounterclockwise() == Direction.NORTH && slot == 0 ||
                             side.rotateYCounterclockwise() == Direction.EAST && slot == 0 ||
                             side.rotateYCounterclockwise() == Direction.WEST && slot == 0;

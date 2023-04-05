@@ -1,0 +1,41 @@
+package net.slayerrroar.reborn12k.tools.material;
+
+import net.minecraft.item.Items;
+import net.minecraft.item.ToolMaterial;
+import net.minecraft.recipe.Ingredient;
+
+public class GoldMaterial implements ToolMaterial{
+
+    public static final GoldMaterial INSTANCE = new GoldMaterial();
+
+    @Override
+    public float getAttackDamage() {
+        return 0.0f;
+    }
+
+    @Override
+    public int getDurability() {
+        return 32;
+    }
+
+    @Override
+    public int getEnchantability() {
+        return 22;
+    }
+
+    @Override
+    public int getMiningLevel() {
+        return 0;
+    }
+
+    @Override
+    public float getMiningSpeedMultiplier() {
+        return 12.0f;
+    }
+
+    @Override
+    public Ingredient getRepairIngredient() {
+        return Ingredient.ofItems(Items.GOLD_INGOT);
+    }
+    
+}

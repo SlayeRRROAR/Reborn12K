@@ -1,16 +1,19 @@
 {
   "replace": false,
   "values": [
+    "reborn12k:archeosite_shovel",
     "reborn12k:bronze_shovel",
-    "reborn12k:titanium_shovel",
-    "reborn12k:electrum_shovel",
     "reborn12k:steel_shovel",
-    "reborn12k:signalum_shovel",
-    "reborn12k:advanced_alloy_shovel",
     "reborn12k:tungstensteel_shovel",
-    "reborn12k:enderium_shovel",
-    "reborn12k:iridium_alloy_shovel",
     "reborn12k:thelosite_shovel",
-    "reborn12k:archeosite_shovel"
+    "reborn12k:titanium_shovel",
+    "reborn12k:advanced_alloy_shovel",
+    "reborn12k:iridium_alloy_shovel",
+    "reborn12k:electrum_shovel",
+    "reborn12k:signalum_shovel",
+    "reborn12k:enderium_shovel",
+    "reborn12k:magisteel_shovel",
+    "reborn12k:orichalcum_shovel",
+    "reborn12k:mithril_shovel"
   ]
 }

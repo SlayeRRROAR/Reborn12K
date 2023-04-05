@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:raw_tungsten_blocks"
-    },
-    "result": "reborn12k:tungsten_block",
-    "experience": 1.0,
-    "cookingtime": 100
-}

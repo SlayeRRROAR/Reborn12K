@@ -1,0 +1,34 @@
+{
+  "replace": false,
+  "values": [
+    "reborn12k:vague_band_of_fortitude",
+    "reborn12k:minor_band_of_fortitude",
+    "reborn12k:indelible_band_of_fortitude",
+    "reborn12k:greater_band_of_fortitude",
+
+    "reborn12k:vague_bloody_claw",
+    "reborn12k:minor_bloody_claw",
+    "reborn12k:indelible_bloody_claw",
+    "reborn12k:greater_bloody_claw",
+
+    "reborn12k:vague_frenzy_tonic",
+    "reborn12k:minor_frenzy_tonic",
+    "reborn12k:indelible_frenzy_tonic",
+    "reborn12k:greater_frenzy_tonic",
+
+    "reborn12k:dark_impulse",
+    "reborn12k:radiant_impulse",
+    "reborn12k:infernal_impulse",
+
+    "reborn12k:jetpack",
+    "reborn12k:angel_wings",
+    "reborn12k:demon_wings",
+    "reborn12k:bat_wings",
+
+    "reborn12k:gold_pouch",
+    "reborn12k:bloody_rose",
+    "reborn12k:magnifying_glass",
+    "reborn12k:magnet",
+    "reborn12k:phoenix_plume"
+  ]
+}

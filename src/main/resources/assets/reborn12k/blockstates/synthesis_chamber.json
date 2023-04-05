@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "reborn12k:block/synthesis_chamber",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "reborn12k:block/synthesis_chamber"
+    },
+    "facing=south": {
+      "model": "reborn12k:block/synthesis_chamber",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "reborn12k:block/synthesis_chamber",
+      "y": 270
+    }
+  }
+}

@@ -3,7 +3,7 @@ package net.slayerrroar.reborn12k.screen.slots;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.slot.Slot;
-import net.slayerrroar.reborn12k.items.RebornAiItems;
+import net.slayerrroar.reborn12k.items.ItemTechnical;
 
 public class CustomAISlot extends Slot {
     public CustomAISlot(Inventory inventory, int index, int x, int y) {
@@ -12,31 +12,31 @@ public class CustomAISlot extends Slot {
 
     @Override
     public boolean canInsert(ItemStack stack) {
-        return stack.isOf(RebornAiItems.BEE_AI_MODULE) ||
-                stack.isOf(RebornAiItems.CHICKEN_AI_MODULE) ||
-                stack.isOf(RebornAiItems.COW_AI_MODULE) ||
-                stack.isOf(RebornAiItems.FISH_AI_MODULE) ||
-                stack.isOf(RebornAiItems.PIG_AI_MODULE) ||
-                stack.isOf(RebornAiItems.RABBIT_AI_MODULE) ||
-                stack.isOf(RebornAiItems.SHEEP_AI_MODULE) ||
-                stack.isOf(RebornAiItems.SQUID_AI_MODULE) ||
-                stack.isOf(RebornAiItems.CREEPER_AI_MODULE) ||
-                stack.isOf(RebornAiItems.ZOMBIE_AI_MODULE) ||
-                stack.isOf(RebornAiItems.SLIME_AI_MODULE) ||
-                stack.isOf(RebornAiItems.SKELETON_AI_MODULE) ||
-                stack.isOf(RebornAiItems.WITCH_AI_MODULE) ||
-                stack.isOf(RebornAiItems.SPIDER_AI_MODULE) ||
-                stack.isOf(RebornAiItems.IRON_GOLEM_AI_MODULE) ||
-                stack.isOf(RebornAiItems.ILLAGER_AI_MODULE) ||
-                stack.isOf(RebornAiItems.GUARDIAN_AI_MODULE) ||
-                stack.isOf(RebornAiItems.ENDERMAN_AI_MODULE) ||
-                stack.isOf(RebornAiItems.SHULKER_AI_MODULE) ||
-                stack.isOf(RebornAiItems.GHAST_AI_MODULE) ||
-                stack.isOf(RebornAiItems.BLAZE_AI_MODULE) ||
-                stack.isOf(RebornAiItems.WITHER_SKELETON_AI_MODULE) ||
-                stack.isOf(RebornAiItems.PHANTOM_AI_MODULE) ||
-                stack.isOf(RebornAiItems.WITHER_AI_MODULE) ||
-                stack.isOf(RebornAiItems.ENDER_DRAGON_AI_MODULE);
+        return stack.isOf(ItemTechnical.BEE_AI_MODULE) ||
+                stack.isOf(ItemTechnical.CHICKEN_AI_MODULE) ||
+                stack.isOf(ItemTechnical.COW_AI_MODULE) ||
+                stack.isOf(ItemTechnical.FISH_AI_MODULE) ||
+                stack.isOf(ItemTechnical.PIG_AI_MODULE) ||
+                stack.isOf(ItemTechnical.RABBIT_AI_MODULE) ||
+                stack.isOf(ItemTechnical.SHEEP_AI_MODULE) ||
+                stack.isOf(ItemTechnical.SQUID_AI_MODULE) ||
+                stack.isOf(ItemTechnical.CREEPER_AI_MODULE) ||
+                stack.isOf(ItemTechnical.ZOMBIE_AI_MODULE) ||
+                stack.isOf(ItemTechnical.SLIME_AI_MODULE) ||
+                stack.isOf(ItemTechnical.SKELETON_AI_MODULE) ||
+                stack.isOf(ItemTechnical.WITCH_AI_MODULE) ||
+                stack.isOf(ItemTechnical.SPIDER_AI_MODULE) ||
+                stack.isOf(ItemTechnical.IRON_GOLEM_AI_MODULE) ||
+                stack.isOf(ItemTechnical.ILLAGER_AI_MODULE) ||
+                stack.isOf(ItemTechnical.GUARDIAN_AI_MODULE) ||
+                stack.isOf(ItemTechnical.ENDERMAN_AI_MODULE) ||
+                stack.isOf(ItemTechnical.SHULKER_AI_MODULE) ||
+                stack.isOf(ItemTechnical.GHAST_AI_MODULE) ||
+                stack.isOf(ItemTechnical.BLAZE_AI_MODULE) ||
+                stack.isOf(ItemTechnical.WITHER_SKELETON_AI_MODULE) ||
+                stack.isOf(ItemTechnical.PHANTOM_AI_MODULE) ||
+                stack.isOf(ItemTechnical.WITHER_AI_MODULE) ||
+                stack.isOf(ItemTechnical.ENDER_DRAGON_AI_MODULE);
     }
 
     @Override

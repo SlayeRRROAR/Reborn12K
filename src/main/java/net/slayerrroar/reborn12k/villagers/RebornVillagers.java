@@ -15,7 +15,7 @@ import net.minecraft.world.poi.PointOfInterestType;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
 
-@SuppressWarnings("deprecation")
+@SuppressWarnings({"deprecation", "unused"})
 
 public class RebornVillagers {
 
@@ -31,9 +31,9 @@ public class RebornVillagers {
     public static final VillagerProfession MANASMITH = registerProfession("manasmith",
             RegistryKey.of(Registries.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(Reborn12K.MOD_ID, "manasmithpoi")));
 
-    public static final PointOfInterestType HMBLE_POI = registerPOI("hmblepoi", Blocks.EMERALD_BLOCK);
-    public static final VillagerProfession HMBLE = registerProfession("hmble",
-            RegistryKey.of(Registries.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(Reborn12K.MOD_ID, "hmblepoi")));
+    public static final PointOfInterestType HOARDER_POI = registerPOI("hoarderpoi", Blocks.EMERALD_BLOCK);
+    public static final VillagerProfession HOARDER = registerProfession("hoarder",
+            RegistryKey.of(Registries.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(Reborn12K.MOD_ID, "hoarderpoi")));
 
     public static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
         return Registry.register(Registries.VILLAGER_PROFESSION, new Identifier(Reborn12K.MOD_ID, name),
@@ -45,6 +45,7 @@ public class RebornVillagers {
         Identifier id = new Identifier(Reborn12K.MOD_ID, name);
         return PointOfInterestHelper.register(id, 1, 1, ImmutableSet.copyOf(block.getStateManager().getStates()));
     }
+
 }
 
 

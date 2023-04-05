@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "C C",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:titanium_ingots"
+        },
+        "B": {
+            "item": "minecraft:redstone"
+        },
+        "C": {
+            "item": "minecraft:glass"
+        }
+    },
+    "result": {
+        "item": "reborn12k:empty_battery",
+        "count": 1
+    }
+}

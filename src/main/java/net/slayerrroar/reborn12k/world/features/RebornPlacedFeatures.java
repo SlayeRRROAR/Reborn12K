@@ -9,9 +9,11 @@ import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.*;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.RebornBlocks;
+import net.slayerrroar.reborn12k.blocks.BlockGenerics;
 
 import java.util.List;
+
+@SuppressWarnings("unused")
 
 public class RebornPlacedFeatures {
 
@@ -53,17 +55,17 @@ public class RebornPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, ASH_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.ASH_KEY),
-                List.of(PlacedFeatures.wouldSurvive(RebornBlocks.ASH_SAPLING)));
+                List.of(PlacedFeatures.wouldSurvive(BlockGenerics.ASH_SAPLING)));
         register(context, ASH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.ASH_KEY),
                 VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
 
         register(context, CHERRY_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.CHERRY_KEY),
-                List.of(PlacedFeatures.wouldSurvive(RebornBlocks.CHERRY_SAPLING)));
+                List.of(PlacedFeatures.wouldSurvive(BlockGenerics.CHERRY_SAPLING)));
         register(context, CHERRY_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.CHERRY_KEY),
                 VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
 
         register(context, SLIMY_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SLIMY_KEY),
-                List.of(PlacedFeatures.wouldSurvive(RebornBlocks.SLIMY_SAPLING)));
+                List.of(PlacedFeatures.wouldSurvive(BlockGenerics.SLIMY_SAPLING)));
         register(context, SLIMY_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SLIMY_KEY),
                 VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 1)));
 
@@ -85,7 +87,7 @@ public class RebornPlacedFeatures {
                         HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-32), YOffset.aboveBottom(32))));
 
         register(context, NICKEL_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.NICKEL_ORE_KEY),
-                modifiersWithCount(4, // VeinsPerChunk
+                modifiersWithCount(5, // VeinsPerChunk
                         HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-64), YOffset.aboveBottom(0))));
 
         register(context, CHROMITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.CHROMITE_ORE_KEY),

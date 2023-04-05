@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:raw_aluminum_blocks"
-    },
-    "result": "reborn12k:aluminum_block",
-    "experience": 0.9,
-    "cookingtime": 100
-}

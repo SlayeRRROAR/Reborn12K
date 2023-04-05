@@ -1,0 +1,17 @@
+{
+  "type": "reborn12k:mineral_manufactory",
+  "ingredients": [
+    {
+      "item": "minecraft:lava_bucket"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "output": {
+    "item": "minecraft:stone"
+  }
+}

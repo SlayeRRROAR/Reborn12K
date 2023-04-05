@@ -3,8 +3,8 @@ package net.slayerrroar.reborn12k;
 import net.fabricmc.api.ModInitializer;
 import net.slayerrroar.reborn12k.armors.RebornArmors;
 import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
-import net.slayerrroar.reborn12k.blocks.RebornBlocks;
-import net.slayerrroar.reborn12k.blocks.RebornOreBlocks;
+import net.slayerrroar.reborn12k.blocks.BlockGenerics;
+import net.slayerrroar.reborn12k.blocks.BlockRebornOres;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
 import net.slayerrroar.reborn12k.fluids.RebornFluids;
@@ -18,6 +18,7 @@ import net.slayerrroar.reborn12k.util.RebornFuelUtil;
 import net.slayerrroar.reborn12k.util.Strippable;
 import net.slayerrroar.reborn12k.villagers.RebornCustomTrades;
 
+import net.slayerrroar.reborn12k.world.generation.RebornWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,36 +29,33 @@ public class Reborn12K implements ModInitializer {
 
     @Override
     public void onInitialize() {
+
         Reborn12KItemGroup.registerItemGroups();
 
         RebornSounds.register();
 
-        RebornOreBlocks.register();
-        RebornBlocks.register();
+        BlockRebornOres.register();
+        BlockGenerics.register();
         AdvancedBlocks.register();
 
-        RebornItems.register();
+        ItemGenerics.register();
 
         RebornFluids.register();
         RebornFuelUtil.register();
 
-        RebornTechItems.register();
-        RebornAiItems.register();
-        MagicItems.register();
+        ItemTechnical.register();
+        ItemMagic.register();
 
-        StaffItems.register();
-        CharmItems.register();
+        ItemTrinkets.register();
 
-        SecretItems.register();
-
-        DiscItems.register();
+        ItemDiscs.register();
 
         RebornTools.register();
         RebornArmors.register();
 
         RebornEnchantments.register();
 
-        //RebornWorldGen.generate();
+        RebornWorldGen.generate();
 
         Strippable.register();
 

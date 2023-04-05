@@ -44,7 +44,7 @@ public class ArcaneArtifactScreenHandler extends ScreenHandler {
     public int getScaledProgress() {
         int progress = this.propertyDelegate.get(0);
         int maxProgress = this.propertyDelegate.get(1);
-        int progressArrowSize = 26;
+        int progressArrowSize = 27;
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
@@ -53,7 +53,7 @@ public class ArcaneArtifactScreenHandler extends ScreenHandler {
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
-        if (slot != null && slot.hasStack()) {
+        if (slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
             if(invSlot < this.inventory.size()) {

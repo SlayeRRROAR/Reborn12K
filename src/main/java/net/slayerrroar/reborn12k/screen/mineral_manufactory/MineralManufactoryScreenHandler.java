@@ -27,10 +27,10 @@ public class MineralManufactoryScreenHandler extends ScreenHandler {
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 
-        this.addSlot(new CustomAgentSlot(inventory, 0, 35, 22));
-        this.addSlot(new CustomReagentSlot(inventory, 1, 80, 22));
-        this.addSlot(new CustomRockSlot(inventory, 2, 80, 54));
-        this.addSlot(new CustomResultSlot(inventory, 3, 125, 54));
+        this.addSlot(new CustomAgentSlot(inventory, 0, 44, 22));
+        this.addSlot(new CustomReagentSlot(inventory, 1, 116, 22));
+        this.addSlot(new CustomRockSlot(inventory, 2, 80, 22));
+        this.addSlot(new CustomResultSlot(inventory, 3, 80, 55));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
@@ -46,7 +46,7 @@ public class MineralManufactoryScreenHandler extends ScreenHandler {
     public int getScaledProgress() {
         int progress = this.propertyDelegate.get(0);
         int maxProgress = this.propertyDelegate.get(1);
-        int progressArrowSize = 26;
+        int progressArrowSize = 23;
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
@@ -55,7 +55,7 @@ public class MineralManufactoryScreenHandler extends ScreenHandler {
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
-        if (slot != null && slot.hasStack()) {
+        if (slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
             if(invSlot < this.inventory.size()) {

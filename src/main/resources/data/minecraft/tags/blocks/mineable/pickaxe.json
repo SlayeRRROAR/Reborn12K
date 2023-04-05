@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "reborn12k:nichirin_ore",
     "reborn12k:tin_ore",
     "reborn12k:deepslate_tin_ore",
     "reborn12k:raw_tin_block",
@@ -63,7 +62,6 @@
     "reborn12k:raw_iridium_block",
     "reborn12k:iridium_block",
     "reborn12k:magisteel_block",
-    "reborn12k:nichirin_block",
     "reborn12k:orichalcum_block",
     "reborn12k:mithril_block",
     "reborn12k:demonic_metal_block",
@@ -121,6 +119,12 @@
     "reborn12k:basic_laser_quarry",
     "reborn12k:advanced_laser_quarry",
     "reborn12k:ultimate_laser_quarry",
-    "reborn12k:arcane_artifact"
+    "reborn12k:arcane_artifact",
+    "reborn12k:air_gem",
+    "reborn12k:earth_gem",
+    "reborn12k:water_gem",
+    "reborn12k:fire_gem",
+    "reborn12k:sun_gem",
+    "reborn12k:moon_gem"
   ]
 }

@@ -18,13 +18,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
-import net.slayerrroar.reborn12k.items.RebornTechItems;
+import net.slayerrroar.reborn12k.items.ItemTechnical;
 import net.slayerrroar.reborn12k.recipe.recipe_types.QuarryRecipe;
 import net.slayerrroar.reborn12k.screen.quarry.QuarryScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
+
+@SuppressWarnings("OptionalGetWithoutIsPresent")
 
 public class AdvancedQuarryBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -130,7 +132,7 @@ public class AdvancedQuarryBlockEntity extends BlockEntity implements NamedScree
                 entity.getStack(0).setDamage(entity.getStack(0).getDamage() + 1);
             } if(entity.getStack(0).getDamage() == entity.getStack(0).getMaxDamage()) {
                 entity.removeStack(0);
-                entity.setStack(3, new ItemStack(RebornTechItems.EMPTY_FUEL_CELL,
+                entity.setStack(3, new ItemStack(ItemTechnical.EMPTY_FUEL_CELL,
                         entity.getStack(3).getCount()+1));
             }
 

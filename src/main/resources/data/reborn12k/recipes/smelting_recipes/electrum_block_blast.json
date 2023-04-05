@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:raw_electrum_blocks"
-    },
-    "result": "reborn12k:electrum_block",
-    "experience": 1.0,
-    "cookingtime": 100
-}

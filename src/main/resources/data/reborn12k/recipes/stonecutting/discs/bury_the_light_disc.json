@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "reborn12k:unrecorded_disc"
+    },
+    "result": "reborn12k:bury_the_light_disc",
+    "count": 1
+}

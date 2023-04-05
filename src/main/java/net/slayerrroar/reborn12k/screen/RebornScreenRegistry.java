@@ -7,6 +7,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.screen.ScreenHandlerType;
 import net.slayerrroar.reborn12k.Reborn12K;
+import net.slayerrroar.reborn12k.screen.crusher.CrusherScreen;
+import net.slayerrroar.reborn12k.screen.crusher.CrusherScreenHandler;
 import net.slayerrroar.reborn12k.screen.melter.MelterScreen;
 import net.slayerrroar.reborn12k.screen.melter.MelterScreenHandler;
 import net.slayerrroar.reborn12k.screen.mineral_manufactory.MineralManufactoryScreen;
@@ -22,6 +24,8 @@ public final class RebornScreenRegistry {
 
     public static final ScreenHandlerType<ArcaneArtifactScreenHandler> ARCANE_ARTIFACT_SCREEN_HANDLER = new ScreenHandlerType<>(
             ArcaneArtifactScreenHandler::new);
+    public static final ScreenHandlerType<CrusherScreenHandler> CRUSHER_SCREEN_HANDLER = new ScreenHandlerType<>(
+            CrusherScreenHandler::new);
     public static final ScreenHandlerType<MineralManufactoryScreenHandler> MINERAL_MANUFACTORY_SCREEN_HANDLER = new ScreenHandlerType<>(
             MineralManufactoryScreenHandler::new);
     public static final ScreenHandlerType<MelterScreenHandler> MELTER_SCREEN_HANDLER = new ScreenHandlerType<>(
@@ -36,6 +40,7 @@ public final class RebornScreenRegistry {
         Reborn12K.LOGGER.info(Reborn12K.MOD_ID + ": Correctly registered Screens");
 
         screens("arcane_artifact", ARCANE_ARTIFACT_SCREEN_HANDLER);
+        screens("crusher", CRUSHER_SCREEN_HANDLER);
         screens("mineral_manufactory", MINERAL_MANUFACTORY_SCREEN_HANDLER);
         screens("melter", MELTER_SCREEN_HANDLER);
         screens("quarry", QUARRY_SCREEN_HANDLER);
@@ -45,6 +50,7 @@ public final class RebornScreenRegistry {
     @Environment(EnvType.CLIENT)
     public static void registerClient() {
         HandledScreens.register(ARCANE_ARTIFACT_SCREEN_HANDLER, ArcaneArtifactScreen::new);
+        HandledScreens.register(CRUSHER_SCREEN_HANDLER, CrusherScreen::new);
         HandledScreens.register(MINERAL_MANUFACTORY_SCREEN_HANDLER, MineralManufactoryScreen::new);
         HandledScreens.register(MELTER_SCREEN_HANDLER, MelterScreen::new);
         HandledScreens.register(QUARRY_SCREEN_HANDLER, QuarryScreen::new);
