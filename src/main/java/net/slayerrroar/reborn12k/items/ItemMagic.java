@@ -44,7 +44,7 @@ public class ItemMagic {
     public static final Item RUNE_OF_WATER = registerItem("rune_of_water", new Item(new FabricItemSettings()));
     public static final Item RUNE_OF_FIRE = registerItem("rune_of_fire", new Item(new FabricItemSettings()));
 
-    public static final Item RUNE_OF_LIGHT = registerItem("rune_of_light", new RuneEthereal(new FabricItemSettings()));
+    public static final Item RUNE_OF_LIGHT = registerItem("rune_of_light", new EtherealRune(new FabricItemSettings()));
     public static final Item RUNE_OF_DARKNESS= registerItem("rune_of_darkness", new Item(new FabricItemSettings()));
 
     public static final Item RUNE_OF_LIGHTNING = registerItem("rune_of_lightning", new Item(new FabricItemSettings()));
@@ -55,8 +55,8 @@ public class ItemMagic {
     public static final Item RUNE_OF_ORDER = registerItem("rune_of_order", new Item(new FabricItemSettings()));
     public static final Item RUNE_OF_CHAOS = registerItem("rune_of_chaos", new Item(new FabricItemSettings()));
 
-    public static final Item ELEMENTAL_RUNE = registerItem("elemental_rune", new Item(new FabricItemSettings()));
-    public static final Item ETHEREAL_RUNE = registerItem("ethereal_rune", new Item(new FabricItemSettings()));
+    public static final Item ELEMENTAL_RUNE = registerItem("elemental_rune", new ElementalRune(new FabricItemSettings()));
+    public static final Item ETHEREAL_RUNE = registerItem("ethereal_rune", new EtherealRune(new FabricItemSettings()));
 
     public static final Item RUNE_OF_STRENGTH = registerItem("rune_of_strength", new Item(new FabricItemSettings()));
 

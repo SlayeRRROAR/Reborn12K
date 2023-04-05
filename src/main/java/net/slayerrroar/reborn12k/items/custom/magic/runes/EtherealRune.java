@@ -13,8 +13,8 @@ import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.blocks.BlockGenerics;
 import net.slayerrroar.reborn12k.items.ItemGenerics;
 
-public class RuneEthereal extends Item {
-    public RuneEthereal(Settings settings) {
+public class EtherealRune extends Item {
+    public EtherealRune(Settings settings) {
         super(settings);
     }
 
