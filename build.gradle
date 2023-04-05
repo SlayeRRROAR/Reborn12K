@@ -12,10 +12,10 @@ group = project.maven_group
 
 repositories {
 
-	maven {
-		name = "Siphalor's Maven"
-		url = "https://maven.siphalor.de"
-	}
+//	maven {
+//		name = "Siphalor's Maven"
+//		url = "https://maven.siphalor.de"
+//	}
 
 	maven {
 		name = "Jitpack"
@@ -53,7 +53,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	//Nbtcrafting
-	modImplementation "de.siphalor:nbtcrafting-1.19:${project.nbtcrafting_version}"
+//	modImplementation "de.siphalor:nbtcrafting-1.19:${project.nbtcrafting_version}"
 
 	//Patchouli
 	modImplementation "vazkii.patchouli:Patchouli:${project.patchouli_version}"
@@ -65,9 +65,9 @@ dependencies {
 	modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
 
 	//Reach Entity Attributes
-	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_ent_att_version}")
-
+	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:2.3.1")
 }
+
 
 processResources {
 	inputs.property "version", project.version
