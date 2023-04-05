@@ -1,15 +1,21 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "ABA",
+        " A "
+    ],
+    "key": {
+        "A": {
             "item": "reborn12k:blank_rune"
         },
-        {
+        "B": {
             "tag": "c:rubies"
         }
-    ],
+    },
     "result": {
         "item": "reborn12k:rune_of_fire",
         "count": 1
-    }
+    },
+    "group": "rune_of_fire"
 }
