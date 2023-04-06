@@ -19,7 +19,8 @@ public class GemBlock extends Block {
         super(settings);
     }
 
-    private static final VoxelShape DEFAULT = java.util.Optional.of(Block.createCuboidShape(3, 3, 3, 13, 13, 13)).get();
+    private static final VoxelShape DEFAULT = java.util.Optional.of
+            (Block.createCuboidShape(5, 5, 5, 11, 11, 11)).get();
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
