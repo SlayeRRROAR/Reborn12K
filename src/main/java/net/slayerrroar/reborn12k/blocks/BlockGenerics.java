@@ -141,7 +141,6 @@ public class BlockGenerics {
     public static final Block RAW_ARCHEOSITE_BLOCK = registerBlock("raw_archeosite_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(50.0f).resistance(1200.0f)), Reborn12KItemGroup.REBORN12K);
     public static final Block RAW_THELOSITE_BLOCK = registerBlock("raw_thelosite_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(50.0f).resistance(1200.0f)), Reborn12KItemGroup.REBORN12K);
 
-    public static final Block RAW_NICHIRIN_BLOCK = registerBlock("raw_nichirin_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f)), Reborn12KItemGroup.REBORN12K);
 
     public static final Block TIN_BLOCK = registerBlock("tin_block", new Block(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(3.0f).resistance(6.0f)), Reborn12KItemGroup.REBORN12K);
     public static final Block ALUMINUM_BLOCK = registerBlock("aluminum_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(3.0f).resistance(6.0f)), Reborn12KItemGroup.REBORN12K);
@@ -184,8 +183,6 @@ public class BlockGenerics {
     public static final Block THELOSITE_BLOCK = registerBlock("thelosite_block", new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).hardness(50.0f).resistance(1200.0f)), Reborn12KItemGroup.REBORN12K);
 
     public static final Block MAGISTEEL_BLOCK = registerBlock("magisteel_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(8.0f).resistance(12.0f)), Reborn12KItemGroup.REBORN12K);
-
-    public static final Block NICHIRIN_BLOCK = registerBlock("nichirin_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(5.0f).resistance(6.0f)), Reborn12KItemGroup.REBORN12K);
     public static final Block ORICHALCUM_BLOCK = registerBlock("orichalcum_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(8.0f).resistance(12.0f)), Reborn12KItemGroup.REBORN12K);
     public static final Block MITHRIL_BLOCK = registerBlock("mithril_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(12.0f).resistance(30.0f)), Reborn12KItemGroup.REBORN12K);
     public static final Block DEMONIC_METAL_BLOCK = registerBlock("demonic_metal_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(12.0f).resistance(30.0f)), Reborn12KItemGroup.REBORN12K);
