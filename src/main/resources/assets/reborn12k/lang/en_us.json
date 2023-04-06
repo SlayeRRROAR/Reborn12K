@@ -123,8 +123,14 @@
     "block.reborn12k.market_table": "Market Table",
     "block.reborn12k.fancy_lamp": "Fancy Lamp",
 
-    "block.reborn12k.arcane_pedestal": "Arcane Pedestal",
+    "block.reborn12k.air_gem": "Air Gem",
+    "block.reborn12k.earth_gem": "Earth Gem",
+    "block.reborn12k.water_gem": "Water Gem",
+    "block.reborn12k.fire_gem": "Fire Gem",
+    "block.reborn12k.sun_gem": "Sun Gem",
+    "block.reborn12k.moon_gem": "Moon Gem",
 
+    "block.reborn12k.arcane_pedestal": "Arcane Pedestal",
     "block.reborn12k.arcane_artifact": "Arcane Artifact",
 
     "block.reborn12k.crusher": "Crusher",
