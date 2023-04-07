@@ -2,84 +2,415 @@
     "item.reborn12k.coal_piece": "Coal Piece",
     "item.reborn12k.coal_dust": "Coal Dust",
 
+    "item.reborn12k.wooden_katana": "Wooden Katana",
+    "item.reborn12k.stone_katana": "Stone Katana",
+    "item.reborn12k.iron_katana": "Iron Katana",
+    "item.reborn12k.diamond_katana": "Diamond Katana",
+    "item.reborn12k.netherite_katana": "Netherite Katana",
+    "item.reborn12k.golden_katana": "Golden Katana",
+
+
     "item.reborn12k.tin_ingot": "Tin Ingot",
+    "item.reborn12k.raw_tin": "Raw Tin",
+    "block.reborn12k.tin_ore": "Tin Ore",
+    "block.reborn12k.deepslate_tin_ore": "Deepslate Tin Ore",
+    "block.reborn12k.raw_tin_block": "Block of Raw Tin",
+    "block.reborn12k.tin_block": "Block of Tin",
+
+
     "item.reborn12k.aluminum_ingot": "Aluminum Ingot",
+    "item.reborn12k.raw_aluminum": "Raw Aluminum",
+    "block.reborn12k.aluminum_ore": "Aluminum Ore",
+    "block.reborn12k.deepslate_aluminum_ore": "Deepslate Aluminum Ore",
+    "block.reborn12k.raw_aluminum_block": "Block of Raw Aluminum",
+    "block.reborn12k.aluminum_block": "Block of Aluminum",
+
+
     "item.reborn12k.silver_ingot": "Silver Ingot",
+    "item.reborn12k.raw_silver": "Raw Silver",
+    "block.reborn12k.silver_ore": "Silver Ore",
+    "block.reborn12k.deepslate_silver_ore": "Deepslate Silver Ore",
+    "block.reborn12k.raw_silver_block": "Block of Raw Silver",
+    "block.reborn12k.silver_block": "Block of Silver",
+
+
     "item.reborn12k.lead_ingot": "Lead Ingot",
+    "item.reborn12k.raw_lead": "Raw Lead",
+    "block.reborn12k.lead_ore": "Lead Ore",
+    "block.reborn12k.deepslate_lead_ore": "Deepslate Lead Ore",
+    "block.reborn12k.raw_lead_block": "Block of Raw Lead",
+    "block.reborn12k.lead_block": "Block of Lead",
+
+
     "item.reborn12k.nickel_ingot": "Nickel Ingot",
+    "item.reborn12k.raw_nickel": "Raw Nickel",
+    "block.reborn12k.nickel_ore": "Nickel Ore",
+    "block.reborn12k.deepslate_nickel_ore": "Deepslate Nickel Ore",
+    "block.reborn12k.raw_nickel_block": "Block of Raw Nickel",
+    "block.reborn12k.nickel_block": "Block of Nickel",
+
+
     "item.reborn12k.chrome_ingot": "Chrome Ingot",
+    "item.reborn12k.raw_chrome": "Raw Chrome",
+    "block.reborn12k.chromite_ore": "Chromite Ore",
+    "block.reborn12k.deepslate_chromite_ore": "Deepslate Chromite Ore",
+    "block.reborn12k.raw_chrome_block": "Block of Raw Chrome",
+    "block.reborn12k.chrome_block": "Block of Chrome",
+
+
     "item.reborn12k.titanium_ingot": "Titanium Ingot",
+    "item.reborn12k.raw_titanium": "Raw Titanium",
+    "block.reborn12k.titanium_ore": "Titanium Ore",
+    "block.reborn12k.deepslate_titanium_ore": "Deepslate Titanium Ore",
+    "block.reborn12k.raw_titanium_block": "Block of Raw Titanium",
+    "block.reborn12k.titanium_block": "Block of Titanium",
 
-    "item.reborn12k.sapphire": "Sapphire",
-    "item.reborn12k.ruby": "Ruby",
+    "item.reborn12k.titanium_helmet": "Titanium Helmet",
+    "item.reborn12k.titanium_chestplate": "Titanium Chestplate",
+    "item.reborn12k.titanium_leggings": "Titanium Leggings",
+    "item.reborn12k.titanium_boots": "Titanium Boots",
 
-    "item.reborn12k.manatite": "Manatite",
-    "item.reborn12k.refined_manatite": "Refined Manatite",
-
-    "item.reborn12k.sunstone": "Sunstone",
-    "item.reborn12k.moonstone": "Moonstone",
+    "item.reborn12k.titanium_sword": "Titanium Sword",
+    "item.reborn12k.titanium_shovel": "Titanium Shovel",
+    "item.reborn12k.titanium_pickaxe": "Titanium Pickaxe",
+    "item.reborn12k.titanium_axe": "Titanium Axe",
+    "item.reborn12k.titanium_hoe": "Titanium Hoe",
+    "item.reborn12k.titanium_katana": "Titanium Katana",
 
 
     "item.reborn12k.tungsten_ingot": "Tungsten Ingot",
+    "item.reborn12k.raw_tungsten": "Raw Tungsten",
+    "block.reborn12k.nether_tungsten_ore": "Nether Tungsten Ore",
+    "block.reborn12k.raw_tungsten_block": "Block of Raw Tungsten",
+    "block.reborn12k.tungsten_block": "Block of Tungsten",
+
+
     "item.reborn12k.vanadium_ingot": "Vanadium Ingot",
-    "item.reborn12k.neodymium_ingot": "Nodymium Ingot",
+    "item.reborn12k.raw_vanadium": "Raw Vanadium",
+    "block.reborn12k.nether_vanadium_ore": "Nether Vanadium Ore",
+    "block.reborn12k.raw_vanadium_block": "Block of Raw Vanadium",
+    "block.reborn12k.vanadium_block": "Block of Vanadium",
+
+
+    "item.reborn12k.neodymium_ingot": "Neodymium Ingot",
+    "item.reborn12k.raw_neodymium": "Raw Neodymium",
+    "block.reborn12k.nether_neodymium_ore": "Nether Neodymium Ore",
+    "block.reborn12k.raw_neodymium_block": "Block of Raw Neodymium",
+    "block.reborn12k.neodymium_block": "Block of Neodymium",
+
+
     "item.reborn12k.uranium_ingot": "Uranium Ingot",
+    "item.reborn12k.raw_uranium": "Raw Uranium",
+    "block.reborn12k.nether_uranium_ore": "Nether Uranium Ore",
+    "block.reborn12k.raw_uranium_block": "Block of Raw Uranium",
+    "block.reborn12k.uranium_block": "Block of Uranium",
+
 
     "item.reborn12k.cobalt_ingot": "Cobalt Ingot",
+    "item.reborn12k.raw_cobalt": "Raw Cobalt",
+    "block.reborn12k.end_cobalt_ore": "End Cobalt Ore",
+    "block.reborn12k.raw_cobalt_block": "Block of Raw Cobalt",
+    "block.reborn12k.cobalt_block": "Block of Cobalt",
+
+
     "item.reborn12k.osmium_ingot": "Osmium Ingot",
+    "item.reborn12k.raw_osmium": "Raw Osmium",
+    "block.reborn12k.end_osmium_ore": "End Osmium Ore",
+    "block.reborn12k.raw_osmium_block": "Block of Raw Osmium",
+    "block.reborn12k.osmium_block": "Block of Osmium",
+
+
     "item.reborn12k.platinum_ingot": "Platinum Ingot",
+    "item.reborn12k.raw_platinum": "Raw Platinum",
+    "block.reborn12k.end_platinum_ore": "End Platinum Ore",
+    "block.reborn12k.raw_platinum_block": "Block of Raw Platinum",
+    "block.reborn12k.platinum_block": "Block of Platinum",
+
+
     "item.reborn12k.iridium_ingot": "Iridium Ingot",
+    "item.reborn12k.raw_iridium": "Raw Iridium",
+    "block.reborn12k.end_iridium_ore": "End Iridium Ore",
+    "block.reborn12k.raw_iridium_block": "Block of Raw Iridium",
+    "block.reborn12k.iridium_block": "Block of Iridium",
+
 
     "item.reborn12k.bronze_ingot": "Bronze Ingot",
+    "item.reborn12k.raw_bronze": "Raw Bronze",
+    "block.reborn12k.raw_bronze_block": "Block of Raw Bronze",
+    "block.reborn12k.bronze_block": "Block of Bronze",
+
+    "item.reborn12k.bronze_helmet": "Bronze Helmet",
+    "item.reborn12k.bronze_chestplate": "Bronze Chestplate",
+    "item.reborn12k.bronze_leggings": "Bronze Leggings",
+    "item.reborn12k.bronze_boots": "Bronze Boots",
+
+    "item.reborn12k.bronze_sword": "Bronze Sword",
+    "item.reborn12k.bronze_shovel": "Bronze Shovel",
+    "item.reborn12k.bronze_pickaxe": "Bronze Pickaxe",
+    "item.reborn12k.bronze_axe": "Bronze Axe",
+    "item.reborn12k.bronze_hoe": "Bronze Hoe",
+    "item.reborn12k.bronze_katana": "Bronze Katana",
+
+
     "item.reborn12k.constantan_ingot": "Constantan Ingot",
+    "item.reborn12k.raw_constantan": "Raw Constantan",
+    "block.reborn12k.raw_constantan_block": "Block of Raw Constantan",
+    "block.reborn12k.constantan_block": "Block of Constantan",
+
+
     "item.reborn12k.invar_ingot": "Invar Ingot",
+    "item.reborn12k.raw_invar": "Raw Invar",
+    "block.reborn12k.raw_invar_block": "Block of Raw Invar",
+    "block.reborn12k.invar_block": "Block of Invar",
+
+
     "item.reborn12k.electrum_ingot": "Electrum Ingot",
+    "item.reborn12k.raw_electrum": "Raw Electrum",
+    "block.reborn12k.raw_electrum_block": "Block of Raw Electrum",
+    "block.reborn12k.electrum_block": "Block of Electrum",
+
+    "item.reborn12k.electrum_helmet": "Electrum Helmet",
+    "item.reborn12k.electrum_chestplate": "Electrum Chestplate",
+    "item.reborn12k.electrum_leggings": "Electrum Leggings",
+    "item.reborn12k.electrum_boots": "Electrum Boots",
+
+    "item.reborn12k.electrum_sword": "Electrum Sword",
+    "item.reborn12k.electrum_shovel": "Electrum Shovel",
+    "item.reborn12k.electrum_pickaxe": "Electrum Pickaxe",
+    "item.reborn12k.electrum_axe": "Electrum Axe",
+    "item.reborn12k.electrum_hoe": "Electrum Hoe",
+    "item.reborn12k.electrum_katana": "Electrum Katana",
+
+
     "item.reborn12k.signalum_ingot": "Signalum Ingot",
+    "item.reborn12k.raw_signalum": "Raw Signalum",
+    "block.reborn12k.raw_signalum_block": "Block of Raw Signalum",
+    "block.reborn12k.signalum_block": "Block of Signalum",
+
+    "item.reborn12k.signalum_helmet": "Signalum Helmet",
+    "item.reborn12k.signalum_chestplate": "Signalum Chestplate",
+    "item.reborn12k.signalum_leggings": "Signalum Leggings",
+    "item.reborn12k.signalum_boots": "Signalum Boots",
+
+    "item.reborn12k.signalum_sword": "Signalum Sword",
+    "item.reborn12k.signalum_shovel": "Signalum Shovel",
+    "item.reborn12k.signalum_pickaxe": "Signalum Pickaxe",
+    "item.reborn12k.signalum_axe": "Signalum Axe",
+    "item.reborn12k.signalum_hoe": "Signalum Hoe",
+    "item.reborn12k.signalum_katana": "Signalum Katana",
+
+
     "item.reborn12k.lumium_ingot": "Lumium Ingot",
+    "item.reborn12k.raw_lumium": "Raw Lumium",
+    "block.reborn12k.raw_lumium_block": "Block of Raw Lumium",
+    "block.reborn12k.lumium_block": "Block of Lumium",
+
+
     "item.reborn12k.enderium_ingot": "Enderium Ingot",
+    "item.reborn12k.raw_enderium": "Raw Enderium",
+    "block.reborn12k.raw_enderium_block": "Block of Raw Enderium",
+    "block.reborn12k.enderium_block": "Block of Enderium",
+
+    "item.reborn12k.enderium_helmet": "Enderium Helmet",
+    "item.reborn12k.enderium_chestplate": "Enderium Chestplate",
+    "item.reborn12k.enderium_leggings": "Enderium Leggings",
+    "item.reborn12k.enderium_boots": "Enderium Boots",
+
+    "item.reborn12k.enderium_sword": "Enderium Sword",
+    "item.reborn12k.enderium_shovel": "Enderium Shovel",
+    "item.reborn12k.enderium_pickaxe": "Enderium Pickaxe",
+    "item.reborn12k.enderium_axe": "Enderium Axe",
+    "item.reborn12k.enderium_hoe": "Enderium Hoe",
+    "item.reborn12k.enderium_katana": "Enderium Katana",
+
+
     "item.reborn12k.steel_ingot": "Steel Ingot",
+    "item.reborn12k.raw_steel": "Raw Steel",
+    "block.reborn12k.raw_steel_block": "Block of Raw Steel",
+    "block.reborn12k.steel_block": "Block of Steel",
+
+    "item.reborn12k.steel_helmet": "Steel Helmet",
+    "item.reborn12k.steel_chestplate": "Steel Chestplate",
+    "item.reborn12k.steel_leggings": "Steel Leggings",
+    "item.reborn12k.steel_boots": "Steel Boots",
+
+    "item.reborn12k.steel_sword": "Steel Sword",
+    "item.reborn12k.steel_shovel": "Steel Shovel",
+    "item.reborn12k.steel_pickaxe": "Steel Pickaxe",
+    "item.reborn12k.steel_axe": "Steel Axe",
+    "item.reborn12k.steel_hoe": "Steel Hoe",
+    "item.reborn12k.steel_katana": "Steel Katana",
+
+
     "item.reborn12k.tungstensteel_ingot": "Tungstensteel Ingot",
+    "item.reborn12k.raw_tungstensteel": "Raw Tungstensteel",
+    "block.reborn12k.raw_tungstensteel_block": "Block of Raw Tungstensteel",
+    "block.reborn12k.tungstensteel_block": "Block of Tungstensteel",
+
+    "item.reborn12k.tungstensteel_helmet": "Tungstensteel Helmet",
+    "item.reborn12k.tungstensteel_chestplate": "Tungstensteel Chestplate",
+    "item.reborn12k.tungstensteel_leggings": "Tungstensteel Leggings",
+    "item.reborn12k.tungstensteel_boots": "Tungstensteel Boots",
+
+    "item.reborn12k.tungstensteel_sword": "Tungstensteel Sword",
+    "item.reborn12k.tungstensteel_shovel": "Tungstensteel Shovel",
+    "item.reborn12k.tungstensteel_pickaxe": "Tungstensteel Pickaxe",
+    "item.reborn12k.tungstensteel_axe": "Tungstensteel Axe",
+    "item.reborn12k.tungstensteel_hoe": "Tungstensteel Hoe",
+    "item.reborn12k.tungstensteel_katana": "Tungstensteel Katana",
+
+
     "item.reborn12k.advanced_alloy_ingot": "Advanced Alloy Ingot",
+    "item.reborn12k.raw_advanced_alloy": "Raw Advanced Alloy",
+    "block.reborn12k.raw_advanced_alloy_block": "Block of Raw Advanced Alloy",
+    "block.reborn12k.advanced_alloy_block": "Block of Advanced Alloy",
+
+    "item.reborn12k.advanced_alloy_helmet": "Advanced Alloy Helmet",
+    "item.reborn12k.advanced_alloy_chestplate": "Advanced Alloy Chestplate",
+    "item.reborn12k.advanced_alloy_leggings": "Advanced Alloy Leggings",
+    "item.reborn12k.advanced_alloy_boots": "Advanced Alloy Boots",
+
+    "item.reborn12k.advanced_alloy_sword": "Advanced Alloy Sword",
+    "item.reborn12k.advanced_alloy_shovel": "Advanced Alloy Shovel",
+    "item.reborn12k.advanced_alloy_pickaxe": "Advanced Alloy Pickaxe",
+    "item.reborn12k.advanced_alloy_axe": "Advanced Alloy Axe",
+    "item.reborn12k.advanced_alloy_hoe": "Advanced Alloy Hoe",
+    "item.reborn12k.advanced_alloy_katana": "Advanced Alloy Katana",
+
+
     "item.reborn12k.iridium_alloy_ingot": "Iridium Alloy Ingot",
+    "item.reborn12k.raw_iridium_alloy": "Raw Iridium Alloy",
+    "block.reborn12k.raw_iridium_alloy_block": "Block of Raw Iridium Alloy",
+    "block.reborn12k.iridium_alloy_block": "Block of Iridium Alloy",
+
+    "item.reborn12k.iridium_alloy_helmet": "Iridium Alloy Helmet",
+    "item.reborn12k.iridium_alloy_chestplate": "Iridium Alloy Chestplate",
+    "item.reborn12k.iridium_alloy_leggings": "Iridium Alloy Leggings",
+    "item.reborn12k.iridium_alloy_boots": "Iridium Alloy Boots",
+
+    "item.reborn12k.iridium_alloy_sword": "Iridium Alloy Sword",
+    "item.reborn12k.iridium_alloy_shovel": "Iridium Alloy Shovel",
+    "item.reborn12k.iridium_alloy_pickaxe": "Iridium Alloy Pickaxe",
+    "item.reborn12k.iridium_alloy_axe": "Iridium Alloy Axe",
+    "item.reborn12k.iridium_alloy_hoe": "Iridium Alloy Hoe",
+    "item.reborn12k.iridium_alloy_katana": "Iridium Alloy Katana",
+
+
     "item.reborn12k.archeosite_ingot": "Archeosite Ingot",
+    "item.reborn12k.raw_archeosite": "Raw Archeosite",
+    "block.reborn12k.raw_archeosite_block": "Block of Raw Archeosite",
+    "block.reborn12k.archeosite_block": "Block of Archeosite",
+
+    "item.reborn12k.archeosite_helmet": "Archeosite Helmet",
+    "item.reborn12k.archeosite_chestplate": "Archeosite Chestplate",
+    "item.reborn12k.archeosite_leggings": "Archeosite Leggings",
+    "item.reborn12k.archeosite_boots": "Archeosite Boots",
+
+    "item.reborn12k.archeosite_sword": "Archeosite Sword",
+    "item.reborn12k.archeosite_shovel": "Archeosite Shovel",
+    "item.reborn12k.archeosite_pickaxe": "Archeosite Pickaxe",
+    "item.reborn12k.archeosite_axe": "Archeosite Axe",
+    "item.reborn12k.archeosite_hoe": "Archeosite Hoe",
+    "item.reborn12k.archeosite_katana": "Archeosite Katana",
+
+
     "item.reborn12k.thelosite_ingot": "Thelosite Ingot",
+    "item.reborn12k.raw_thelosite": "Raw Thelosite",
+    "block.reborn12k.raw_thelosite_block": "Block of Raw Thelosite",
+    "block.reborn12k.thelosite_block": "Block of Thelosite",
+
+    "item.reborn12k.thelosite_helmet": "Thelosite Helmet",
+    "item.reborn12k.thelosite_chestplate": "Thelosite Chestplate",
+    "item.reborn12k.thelosite_leggings": "Thelosite Leggings",
+    "item.reborn12k.thelosite_boots": "Thelosite Boots",
+
+    "item.reborn12k.thelosite_sword": "Thelosite Sword",
+    "item.reborn12k.thelosite_shovel": "Thelosite Shovel",
+    "item.reborn12k.thelosite_pickaxe": "Thelosite Pickaxe",
+    "item.reborn12k.thelosite_axe": "Thelosite Axe",
+    "item.reborn12k.thelosite_hoe": "Thelosite Hoe",
+    "item.reborn12k.thelosite_katana": "Thelosite Katana",
+
 
     "item.reborn12k.magisteel_ingot": "Magisteel Ingot",
+    "block.reborn12k.magisteel_block": "Block of Magisteel",
+
+
+    "item.reborn12k.magisteel_helmet": "Magisteel Helmet",
+    "item.reborn12k.magisteel_chestplate": "Magisteel Chestplate",
+    "item.reborn12k.magisteel_leggings": "Magisteel Leggings",
+    "item.reborn12k.magisteel_boots": "Magisteel Boots",
+
+    "item.reborn12k.magisteel_sword": "Magisteel Sword",
+    "item.reborn12k.magisteel_shovel": "Magisteel Shovel",
+    "item.reborn12k.magisteel_pickaxe": "Magisteel Pickaxe",
+    "item.reborn12k.magisteel_axe": "Magisteel Axe",
+    "item.reborn12k.magisteel_hoe": "Magisteel Hoe",
+    "item.reborn12k.magisteel_katana": "Magisteel Katana",
+
+
     "item.reborn12k.orichalcum_ingot": "Orichalcum Ingot",
+    "block.reborn12k.orichalcum_block": "Block of Orichalcum",
+
+    "item.reborn12k.orichalcum_helmet": "Orichalcum Helmet",
+    "item.reborn12k.orichalcum_chestplate": "Orichalcum Chestplate",
+    "item.reborn12k.orichalcum_leggings": "Orichalcum Leggings",
+    "item.reborn12k.orichalcum_boots": "Orichalcum Boots",
+
+    "item.reborn12k.orichalcum_sword": "Orichalcum Sword",
+    "item.reborn12k.orichalcum_shovel": "Orichalcum Shovel",
+    "item.reborn12k.orichalcum_pickaxe": "Orichalcum Pickaxe",
+    "item.reborn12k.orichalcum_axe": "Orichalcum Axe",
+    "item.reborn12k.orichalcum_hoe": "Orichalcum Hoe",
+    "item.reborn12k.orichalcum_katana": "Orichalcum Katana",
+
+
     "item.reborn12k.mithril_ingot": "Mithril Ingot",
+    "block.reborn12k.mithril_block": "Block of Mithril",
+
+    "item.reborn12k.mithril_helmet": "Mithril Helmet",
+    "item.reborn12k.mithril_chestplate": "Mithril Chestplate",
+    "item.reborn12k.mithril_leggings": "Mithril Leggings",
+    "item.reborn12k.mithril_boots": "Mithril Boots",
+
+    "item.reborn12k.mithril_sword": "Mithril Sword",
+    "item.reborn12k.mithril_shovel": "Mithril Shovel",
+    "item.reborn12k.mithril_pickaxe": "Mithril Pickaxe",
+    "item.reborn12k.mithril_axe": "Mithril Axe",
+    "item.reborn12k.mithril_hoe": "Mithril Hoe",
+    "item.reborn12k.mithril_katana": "Mithril Katana",
+
+
     "item.reborn12k.demonic_metal_ingot": "Demonic Metal Ingot",
+    "block.reborn12k.demonic_metal_block": "Block of Demonic Metal",
 
-    "item.reborn12k.raw_tin": "Raw Tin",
-    "item.reborn12k.raw_aluminum": "Raw Aluminum",
-    "item.reborn12k.raw_silver": "Raw Silver",
-    "item.reborn12k.raw_lead": "Raw Lead",
-    "item.reborn12k.raw_nickel": "Raw Nickel",
-    "item.reborn12k.raw_chrome": "Raw Chrome",
-    "item.reborn12k.raw_titanium": "Raw Titanium",
 
-    "item.reborn12k.raw_tungsten": "Raw Tungsten",
-    "item.reborn12k.raw_vanadium": "Raw Vanadium",
-    "item.reborn12k.raw_neodymium": "Raw Neodymium",
-    "item.reborn12k.raw_uranium": "Raw Uranium",
+    "item.reborn12k.sapphire": "Sapphire",
+    "block.reborn12k.sapphire_ore": "Sapphire Ore",
+    "block.reborn12k.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+    "block.reborn12k.sapphire_block": "Block of Sapphire",
 
-    "item.reborn12k.raw_cobalt": "Raw Cobalt",
-    "item.reborn12k.raw_osmium": "Raw Osmium",
-    "item.reborn12k.raw_platinum": "Raw Platinum",
-    "item.reborn12k.raw_iridium": "Raw Iridium",
 
-    "item.reborn12k.raw_bronze": "Raw Bronze",
-    "item.reborn12k.raw_constantan": "Raw Constantan",
-    "item.reborn12k.raw_invar": "Raw Invar",
-    "item.reborn12k.raw_electrum": "Raw Electrum",
-    "item.reborn12k.raw_signalum": "Raw Signalum",
-    "item.reborn12k.raw_lumium": "Raw Lumium",
-    "item.reborn12k.raw_enderium": "Raw Enderium",
-    "item.reborn12k.raw_steel": "Raw Steel",
-    "item.reborn12k.raw_tungstensteel": "Raw Tungstensteel",
-    "item.reborn12k.raw_advanced_alloy": "Raw Advanced Alloy",
-    "item.reborn12k.raw_iridium_alloy": "Raw Iridium Alloy",
-    "item.reborn12k.raw_archeosite": "Raw Archeosite",
-    "item.reborn12k.raw_thelosite": "Raw Thelosite",
+    "block.reborn12k.ruby_ore": "Ruby Ore",
+    "item.reborn12k.ruby": "Ruby",
+    "block.reborn12k.deepslate_ruby_ore": "Deepslate Ruby Ore",
+    "block.reborn12k.ruby_block": "Block of Ruby",
+
+
+    "item.reborn12k.manatite": "Manatite",
+    "item.reborn12k.refined_manatite": "Refined Manatite",
+    "block.reborn12k.manatite_ore": "Manatite Ore",
+    "block.reborn12k.deepslate_manatite_ore": "Deepslate Manatite Ore",
+    "block.reborn12k.manatite_block": "Block of Manatite",
+
+
+    "item.reborn12k.sunstone": "Sunstone",
+    "block.reborn12k.sunstone_block": "Block of Sunstone",
+
+
+    "item.reborn12k.moonstone": "Moonstone",
+    "block.reborn12k.moonstone_block": "Block of Moonstone",
+
 
 
     "item.reborn12k.banana": "Banana",
@@ -118,209 +449,6 @@
     "item.reborn12k.cell_phone": "Cell Phone",
 
     "item.reborn12k.yggdrasill_branch": "Yggdrasill's Branch",
-
-
-    "block.reborn12k.market_table": "Market Table",
-    "block.reborn12k.fancy_lamp": "Fancy Lamp",
-
-    "block.reborn12k.air_gem": "Air Gem",
-    "block.reborn12k.earth_gem": "Earth Gem",
-    "block.reborn12k.water_gem": "Water Gem",
-    "block.reborn12k.fire_gem": "Fire Gem",
-    "block.reborn12k.sun_gem": "Sun Gem",
-    "block.reborn12k.moon_gem": "Moon Gem",
-
-    "block.reborn12k.arcane_pedestal": "Arcane Pedestal",
-    "block.reborn12k.arcane_artifact": "Arcane Artifact",
-
-    "block.reborn12k.crusher": "Crusher",
-    "block.reborn12k.mineral_manufactory": "Mineral Manufactory",
-    "block.reborn12k.melter": "Melter",
-
-    "block.reborn12k.basic_laser_quarry": "Basic Laser Quarry",
-    "block.reborn12k.advanced_laser_quarry": "Advanced Laser Quarry",
-    "block.reborn12k.ultimate_laser_quarry": "Ultimate Laser Quarry",
-
-    "block.reborn12k.synthesis_chamber": "Synthesis Chamber",
-
-
-    "block.reborn12k.tin_ore": "Tin Ore",
-    "block.reborn12k.deepslate_tin_ore": "Deepslate Tin Ore",
-    "block.reborn12k.silver_ore": "Silver Ore",
-    "block.reborn12k.deepslate_silver_ore": "Deepslate Silver Ore",
-    "block.reborn12k.lead_ore": "Lead Ore",
-    "block.reborn12k.deepslate_lead_ore": "Deepslate Lead Ore",
-    "block.reborn12k.nickel_ore": "Nickel Ore",
-    "block.reborn12k.deepslate_nickel_ore": "Deepslate Nickel Ore",
-    "block.reborn12k.titanium_ore": "Titanium Ore",
-    "block.reborn12k.deepslate_titanium_ore": "Deepslate Titanium Ore",
-    "block.reborn12k.aluminum_ore": "Aluminum Ore",
-    "block.reborn12k.deepslate_aluminum_ore": "Deepslate Aluminum Ore",
-    "block.reborn12k.chromite_ore": "Chromite Ore",
-    "block.reborn12k.deepslate_chromite_ore": "Deepslate Chromite Ore",
-
-    "block.reborn12k.sapphire_ore": "Sapphire Ore",
-    "block.reborn12k.ruby_ore": "Ruby Ore",
-    "block.reborn12k.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
-    "block.reborn12k.deepslate_ruby_ore": "Deepslate Ruby Ore",
-
-    "block.reborn12k.manatite_ore": "Manatite Ore",
-    "block.reborn12k.deepslate_manatite_ore": "Deepslate Manatite Ore",
-
-    "block.reborn12k.nether_tungsten_ore": "Nether Tungsten Ore",
-    "block.reborn12k.nether_vanadium_ore": "Nether Vanadium Ore",
-    "block.reborn12k.nether_neodymium_ore": "Nether Neodymium Ore",
-    "block.reborn12k.nether_uranium_ore": "Nether Uranium Ore",
-
-    "block.reborn12k.end_cobalt_ore": "End Cobalt Ore",
-    "block.reborn12k.end_osmium_ore": "End Osmium Ore",
-    "block.reborn12k.end_platinum_ore": "End Platinum Ore",
-    "block.reborn12k.end_iridium_ore": "End Iridium Ore",
-
-
-    "block.reborn12k.ash_log": "Ash Log",
-    "block.reborn12k.ash_wood": "Ash Wood",
-    "block.reborn12k.stripped_ash_log": "Stripped Ash Log",
-    "block.reborn12k.stripped_ash_wood": "Stripped Ash Wood",
-    "block.reborn12k.ash_planks": "Ash Planks",
-
-    "block.reborn12k.ash_leaves": "Ash Leaves",
-    "block.reborn12k.ash_sapling": "Ash Sapling",
-
-    "block.reborn12k.ash_stairs": "Ash Stairs",
-    "block.reborn12k.ash_slab": "Ash Slab",
-    "block.reborn12k.ash_fence": "Ash Fence",
-    "block.reborn12k.ash_fence_gate": "Ash Fence Gate",
-    "block.reborn12k.ash_button": "Ash Button",
-    "block.reborn12k.ash_pressure_plate": "Ash Pressure Plate",
-    "block.reborn12k.ash_door": "Ash Door",
-    "block.reborn12k.ash_trapdoor": "Ash Trapdoor",
-
-
-    "block.reborn12k.cherry_log": "Cherry Log",
-    "block.reborn12k.cherry_wood": "Cherry Wood",
-    "block.reborn12k.stripped_cherry_log": "Stripped Cherry Log",
-    "block.reborn12k.stripped_cherry_wood": "Stripped Cherry Wood",
-    "block.reborn12k.cherry_planks": "Cherry Planks",
-
-    "block.reborn12k.cherry_leaves": "Cherry Leaves",
-    "block.reborn12k.cherry_sapling": "Cherry Sapling",
-
-    "block.reborn12k.cherry_stairs": "Cherry Stairs",
-    "block.reborn12k.cherry_slab": "Cherry Slab",
-    "block.reborn12k.cherry_fence": "Cherry Fence",
-    "block.reborn12k.cherry_fence_gate": "Cherry Fence Gate",
-    "block.reborn12k.cherry_button": "Cherry Button",
-    "block.reborn12k.cherry_pressure_plate": "Cherry Pressure Plate",
-    "block.reborn12k.cherry_door": "Cherry Door",
-    "block.reborn12k.cherry_trapdoor": "Cherry Trapdoor",
-
-    "block.reborn12k.slimy_log": "Slimy Log",
-    "block.reborn12k.slimy_leaves": "Slimy Leaves",
-    "block.reborn12k.slimy_sapling": "Slimy Sapling",
-
-
-    "block.reborn12k.diorite_bricks": "Diorite Bricks",
-    "block.reborn12k.small_diorite_bricks": "Small Diorite Bricks",
-    "block.reborn12k.granite_bricks": "Granite Bricks",
-    "block.reborn12k.small_granite_bricks": "Small Granite Bricks",
-    "block.reborn12k.andesite_bricks": "Andesite Bricks",
-    "block.reborn12k.small_andesite_bricks": "Small Andesite Bricks",
-    "block.reborn12k.small_stone_bricks": "Small Stone Bricks",
-
-    "block.reborn12k.diorite_bricks_stairs": "Diorite Bricks Stairs",
-    "block.reborn12k.small_diorite_bricks_stairs": "Small Diorite Bricks Stairs",
-    "block.reborn12k.granite_bricks_stairs": "Granite Bricks Stairs",
-    "block.reborn12k.small_granite_bricks_stairs": "Small Granite Bricks Stairs",
-    "block.reborn12k.andesite_bricks_stairs": "Andesite Bricks Stairs",
-    "block.reborn12k.small_andesite_bricks_stairs": "Small Andesite Bricks Stairs",
-    "block.reborn12k.small_stone_bricks_stairs": "Small Stone Bricks Stairs",
-
-    "block.reborn12k.diorite_bricks_slab": "Diorite Bricks Slab",
-    "block.reborn12k.small_diorite_bricks_slab": "Small Diorite Bricks Slab",
-    "block.reborn12k.granite_bricks_slab": "Granite Bricks Slab",
-    "block.reborn12k.small_granite_bricks_slab": "Small Granite Bricks Slab",
-    "block.reborn12k.andesite_bricks_slab": "Andesite Bricks Slab",
-    "block.reborn12k.small_andesite_bricks_slab": "Small Andesite Bricks Slab",
-    "block.reborn12k.small_stone_bricks_slab": "Small Stone Bricks Slab",
-
-
-    "block.reborn12k.raw_tin_block": "Block of Raw Tin",
-    "block.reborn12k.raw_aluminum_block": "Block of Raw Aluminum",
-    "block.reborn12k.raw_silver_block": "Block of Raw Silver",
-    "block.reborn12k.raw_lead_block": "Block of Raw Lead",
-    "block.reborn12k.raw_nickel_block": "Block of Raw Nickel",
-    "block.reborn12k.raw_chrome_block": "Block of Raw Chrome",
-    "block.reborn12k.raw_titanium_block": "Block of Raw Titanium",
-
-    "block.reborn12k.raw_tungsten_block": "Block of Raw Tungsten",
-    "block.reborn12k.raw_vanadium_block": "Block of Raw Vanadium",
-    "block.reborn12k.raw_neodymium_block": "Block of Raw Neodymium",
-    "block.reborn12k.raw_uranium_block": "Block of Raw Uranium",
-
-    "block.reborn12k.raw_cobalt_block": "Block of Raw Cobalt",
-    "block.reborn12k.raw_osmium_block": "Block of Raw Osmium",
-    "block.reborn12k.raw_platinum_block": "Block of Raw Platinum",
-    "block.reborn12k.raw_iridium_block": "Block of Raw Iridium",
-
-    "block.reborn12k.raw_bronze_block": "Block of Raw Bronze",
-    "block.reborn12k.raw_constantan_block": "Block of Raw Constantan",
-    "block.reborn12k.raw_invar_block": "Block of Raw Invar",
-    "block.reborn12k.raw_electrum_block": "Block of Raw Electrum",
-    "block.reborn12k.raw_signalum_block": "Block of Raw Signalum",
-    "block.reborn12k.raw_lumium_block": "Block of Raw Lumium",
-    "block.reborn12k.raw_enderium_block": "Block of Raw Enderium",
-    "block.reborn12k.raw_steel_block": "Block of Raw Steel",
-    "block.reborn12k.raw_tungstensteel_block": "Block of Raw Tungstensteel",
-    "block.reborn12k.raw_advanced_alloy_block": "Block of Raw Advanced Alloy",
-    "block.reborn12k.raw_iridium_alloy_block": "Block of Raw Iridium Alloy",
-    "block.reborn12k.raw_archeosite_block": "Block of Raw Archeosite",
-    "block.reborn12k.raw_thelosite_block": "Block of Raw Thelosite",
-
-    "block.reborn12k.tin_block": "Block of Tin",
-    "block.reborn12k.aluminum_block": "Block of Aluminum",
-    "block.reborn12k.silver_block": "Block of Silver",
-    "block.reborn12k.lead_block": "Block of Lead",
-    "block.reborn12k.nickel_block": "Block of Nickel",
-    "block.reborn12k.chrome_block": "Block of Chrome",
-    "block.reborn12k.titanium_block": "Block of Titanium",
-
-    "block.reborn12k.ruby_block": "Block of Ruby",
-    "block.reborn12k.sapphire_block": "Block of Sapphire",
-
-    "block.reborn12k.manatite_block": "Block of Manatite",
-
-    "block.reborn12k.sunstone_block": "Block of Sunstone",
-    "block.reborn12k.moonstone_block": "Block of Moonstone",
-
-    "block.reborn12k.tungsten_block": "Block of Tungsten",
-    "block.reborn12k.vanadium_block": "Block of Vanadium",
-    "block.reborn12k.neodymium_block": "Block of Neodymium",
-    "block.reborn12k.uranium_block": "Block of Uranium",
-
-    "block.reborn12k.cobalt_block": "Block of Cobalt",
-    "block.reborn12k.osmium_block": "Block of Osmium",
-    "block.reborn12k.platinum_block": "Block of Platinum",
-    "block.reborn12k.iridium_block": "Block of Iridium",
-
-    "block.reborn12k.bronze_block": "Block of Bronze",
-    "block.reborn12k.constantan_block": "Block of Constantan",
-    "block.reborn12k.invar_block": "Block of Invar",
-    "block.reborn12k.electrum_block": "Block of Electrum",
-    "block.reborn12k.signalum_block": "Block of Signalum",
-    "block.reborn12k.lumium_block": "Block of Lumium",
-    "block.reborn12k.enderium_block": "Block of Enderium",
-    "block.reborn12k.steel_block": "Block of Steel",
-    "block.reborn12k.tungstensteel_block": "Block of Tungstensteel",
-    "block.reborn12k.advanced_alloy_block": "Block of Advanced Alloy",
-    "block.reborn12k.iridium_alloy_block": "Block of Iridium Alloy",
-    "block.reborn12k.archeosite_block": "Block of Archeosite",
-    "block.reborn12k.thelosite_block": "Block of Thelosite",
-
-    "block.reborn12k.magisteel_block": "Block of Magisteel",
-    "block.reborn12k.orichalcum_block": "Block of Orichalcum",
-    "block.reborn12k.mithril_block": "Block of Mithril",
-    "block.reborn12k.demonic_metal_block": "Block of Demonic Metal",
 
 
     "item.reborn12k.wooden_wand": "Wooden Wand",
@@ -382,6 +510,7 @@
     "item.reborn12k.crimson_scepter": "Crimson Scepter",
     "item.reborn12k.crimson_rod": "Crimson Rod",
     "item.reborn12k.crimson_staff": "Crimson Staff",
+
 
     "item.reborn12k.empty_machine_casing": "Empty Machine Casing",
 
@@ -593,182 +722,6 @@
     "item.reborn12k.phoenix_plume": "§6Phoenix Plume",
 
 
-    "item.reborn12k.wooden_katana": "Wooden Katana",
-    "item.reborn12k.stone_katana": "Stone Katana",
-    "item.reborn12k.iron_katana": "Iron Katana",
-    "item.reborn12k.diamond_katana": "Diamond Katana",
-    "item.reborn12k.netherite_katana": "Netherite Katana",
-    "item.reborn12k.golden_katana": "Golden Katana",
-
-    "item.reborn12k.bronze_helmet": "Bronze Helmet",
-    "item.reborn12k.bronze_chestplate": "Bronze Chestplate",
-    "item.reborn12k.bronze_leggings": "Bronze Leggings",
-    "item.reborn12k.bronze_boots": "Bronze Boots",
-    
-    "item.reborn12k.bronze_sword": "Bronze Sword",
-    "item.reborn12k.bronze_shovel": "Bronze Shovel",
-    "item.reborn12k.bronze_pickaxe": "Bronze Pickaxe",
-    "item.reborn12k.bronze_axe": "Bronze Axe",
-    "item.reborn12k.bronze_hoe": "Bronze Hoe",
-    "item.reborn12k.bronze_katana": "Bronze Katana",
-
-    "item.reborn12k.titanium_helmet": "Titanium Helmet",
-    "item.reborn12k.titanium_chestplate": "Titanium Chestplate",
-    "item.reborn12k.titanium_leggings": "Titanium Leggings",
-    "item.reborn12k.titanium_boots": "Titanium Boots",
-
-    "item.reborn12k.titanium_sword": "Titanium Sword",
-    "item.reborn12k.titanium_shovel": "Titanium Shovel",
-    "item.reborn12k.titanium_pickaxe": "Titanium Pickaxe",
-    "item.reborn12k.titanium_axe": "Titanium Axe",
-    "item.reborn12k.titanium_hoe": "Titanium Hoe",
-    "item.reborn12k.titanium_katana": "Titanium Katana",
-
-    "item.reborn12k.steel_helmet": "Steel Helmet",
-    "item.reborn12k.steel_chestplate": "Steel Chestplate",
-    "item.reborn12k.steel_leggings": "Steel Leggings",
-    "item.reborn12k.steel_boots": "Steel Boots",
-    
-    "item.reborn12k.steel_sword": "Steel Sword",
-    "item.reborn12k.steel_shovel": "Steel Shovel",
-    "item.reborn12k.steel_pickaxe": "Steel Pickaxe",
-    "item.reborn12k.steel_axe": "Steel Axe",
-    "item.reborn12k.steel_hoe": "Steel Hoe",
-    "item.reborn12k.steel_katana": "Steel Katana",
-
-    "item.reborn12k.electrum_helmet": "Electrum Helmet",
-    "item.reborn12k.electrum_chestplate": "Electrum Chestplate",
-    "item.reborn12k.electrum_leggings": "Electrum Leggings",
-    "item.reborn12k.electrum_boots": "Electrum Boots",
-
-    "item.reborn12k.electrum_sword": "Electrum Sword",
-    "item.reborn12k.electrum_shovel": "Electrum Shovel",
-    "item.reborn12k.electrum_pickaxe": "Electrum Pickaxe",
-    "item.reborn12k.electrum_axe": "Electrum Axe",
-    "item.reborn12k.electrum_hoe": "Electrum Hoe",
-    "item.reborn12k.electrum_katana": "Electrum Katana",
-
-    "item.reborn12k.tungstensteel_helmet": "Tungstensteel Helmet",
-    "item.reborn12k.tungstensteel_chestplate": "Tungstensteel Chestplate",
-    "item.reborn12k.tungstensteel_leggings": "Tungstensteel Leggings",
-    "item.reborn12k.tungstensteel_boots": "Tungstensteel Boots",
-    
-    "item.reborn12k.tungstensteel_sword": "Tungstensteel Sword",
-    "item.reborn12k.tungstensteel_shovel": "Tungstensteel Shovel",
-    "item.reborn12k.tungstensteel_pickaxe": "Tungstensteel Pickaxe",
-    "item.reborn12k.tungstensteel_axe": "Tungstensteel Axe",
-    "item.reborn12k.tungstensteel_hoe": "Tungstensteel Hoe",
-    "item.reborn12k.tungstensteel_katana": "Tungstensteel Katana",
-
-    "item.reborn12k.advanced_alloy_helmet": "Advanced Alloy Helmet",
-    "item.reborn12k.advanced_alloy_chestplate": "Advanced Alloy Chestplate",
-    "item.reborn12k.advanced_alloy_leggings": "Advanced Alloy Leggings",
-    "item.reborn12k.advanced_alloy_boots": "Advanced Alloy Boots",
-
-    "item.reborn12k.advanced_alloy_sword": "Advanced Alloy Sword",
-    "item.reborn12k.advanced_alloy_shovel": "Advanced Alloy Shovel",
-    "item.reborn12k.advanced_alloy_pickaxe": "Advanced Alloy Pickaxe",
-    "item.reborn12k.advanced_alloy_axe": "Advanced Alloy Axe",
-    "item.reborn12k.advanced_alloy_hoe": "Advanced Alloy Hoe",
-    "item.reborn12k.advanced_alloy_katana": "Advanced Alloy Katana",
-
-    "item.reborn12k.signalum_helmet": "Signalum Helmet",
-    "item.reborn12k.signalum_chestplate": "Signalum Chestplate",
-    "item.reborn12k.signalum_leggings": "Signalum Leggings",
-    "item.reborn12k.signalum_boots": "Signalum Boots",
-
-    "item.reborn12k.signalum_sword": "Signalum Sword",
-    "item.reborn12k.signalum_shovel": "Signalum Shovel",
-    "item.reborn12k.signalum_pickaxe": "Signalum Pickaxe",
-    "item.reborn12k.signalum_axe": "Signalum Axe",
-    "item.reborn12k.signalum_hoe": "Signalum Hoe",
-    "item.reborn12k.signalum_katana": "Signalum Katana",
-
-    "item.reborn12k.iridium_alloy_helmet": "Iridium Alloy Helmet",
-    "item.reborn12k.iridium_alloy_chestplate": "Iridium Alloy Chestplate",
-    "item.reborn12k.iridium_alloy_leggings": "Iridium Alloy Leggings",
-    "item.reborn12k.iridium_alloy_boots": "Iridium Alloy Boots",
-
-    "item.reborn12k.iridium_alloy_sword": "Iridium Alloy Sword",
-    "item.reborn12k.iridium_alloy_shovel": "Iridium Alloy Shovel",
-    "item.reborn12k.iridium_alloy_pickaxe": "Iridium Alloy Pickaxe",
-    "item.reborn12k.iridium_alloy_axe": "Iridium Alloy Axe",
-    "item.reborn12k.iridium_alloy_hoe": "Iridium Alloy Hoe",
-    "item.reborn12k.iridium_alloy_katana": "Iridium Alloy Katana",
-
-    "item.reborn12k.enderium_helmet": "Enderium Helmet",
-    "item.reborn12k.enderium_chestplate": "Enderium Chestplate",
-    "item.reborn12k.enderium_leggings": "Enderium Leggings",
-    "item.reborn12k.enderium_boots": "Enderium Boots",
-
-    "item.reborn12k.enderium_sword": "Enderium Sword",
-    "item.reborn12k.enderium_shovel": "Enderium Shovel",
-    "item.reborn12k.enderium_pickaxe": "Enderium Pickaxe",
-    "item.reborn12k.enderium_axe": "Enderium Axe",
-    "item.reborn12k.enderium_hoe": "Enderium Hoe",
-    "item.reborn12k.enderium_katana": "Enderium Katana",
-
-    "item.reborn12k.archeosite_helmet": "Archeosite Helmet",
-    "item.reborn12k.archeosite_chestplate": "Archeosite Chestplate",
-    "item.reborn12k.archeosite_leggings": "Archeosite Leggings",
-    "item.reborn12k.archeosite_boots": "Archeosite Boots",
-
-    "item.reborn12k.archeosite_sword": "Archeosite Sword",
-    "item.reborn12k.archeosite_shovel": "Archeosite Shovel",
-    "item.reborn12k.archeosite_pickaxe": "Archeosite Pickaxe",
-    "item.reborn12k.archeosite_axe": "Archeosite Axe",
-    "item.reborn12k.archeosite_hoe": "Archeosite Hoe",
-    "item.reborn12k.archeosite_katana": "Archeosite Katana",
-
-    "item.reborn12k.thelosite_helmet": "Thelosite Helmet",
-    "item.reborn12k.thelosite_chestplate": "Thelosite Chestplate",
-    "item.reborn12k.thelosite_leggings": "Thelosite Leggings",
-    "item.reborn12k.thelosite_boots": "Thelosite Boots",
-
-    "item.reborn12k.thelosite_sword": "Thelosite Sword",
-    "item.reborn12k.thelosite_shovel": "Thelosite Shovel",
-    "item.reborn12k.thelosite_pickaxe": "Thelosite Pickaxe",
-    "item.reborn12k.thelosite_axe": "Thelosite Axe",
-    "item.reborn12k.thelosite_hoe": "Thelosite Hoe",
-    "item.reborn12k.thelosite_katana": "Thelosite Katana",
-
-
-    "item.reborn12k.magisteel_helmet": "Magisteel Helmet",
-    "item.reborn12k.magisteel_chestplate": "Magisteel Chestplate",
-    "item.reborn12k.magisteel_leggings": "Magisteel Leggings",
-    "item.reborn12k.magisteel_boots": "Magisteel Boots",
-
-    "item.reborn12k.magisteel_sword": "Magisteel Sword",
-    "item.reborn12k.magisteel_shovel": "Magisteel Shovel",
-    "item.reborn12k.magisteel_pickaxe": "Magisteel Pickaxe",
-    "item.reborn12k.magisteel_axe": "Magisteel Axe",
-    "item.reborn12k.magisteel_hoe": "Magisteel Hoe",
-    "item.reborn12k.magisteel_katana": "Magisteel Katana",
-
-    "item.reborn12k.orichalcum_helmet": "Orichalcum Helmet",
-    "item.reborn12k.orichalcum_chestplate": "Orichalcum Chestplate",
-    "item.reborn12k.orichalcum_leggings": "Orichalcum Leggings",
-    "item.reborn12k.orichalcum_boots": "Orichalcum Boots",
-
-    "item.reborn12k.orichalcum_sword": "Orichalcum Sword",
-    "item.reborn12k.orichalcum_shovel": "Orichalcum Shovel",
-    "item.reborn12k.orichalcum_pickaxe": "Orichalcum Pickaxe",
-    "item.reborn12k.orichalcum_axe": "Orichalcum Axe",
-    "item.reborn12k.orichalcum_hoe": "Orichalcum Hoe",
-    "item.reborn12k.orichalcum_katana": "Orichalcum Katana",
-
-    "item.reborn12k.mithril_helmet": "Mithril Helmet",
-    "item.reborn12k.mithril_chestplate": "Mithril Chestplate",
-    "item.reborn12k.mithril_leggings": "Mithril Leggings",
-    "item.reborn12k.mithril_boots": "Mithril Boots",
-
-    "item.reborn12k.mithril_sword": "Mithril Sword",
-    "item.reborn12k.mithril_shovel": "Mithril Shovel",
-    "item.reborn12k.mithril_pickaxe": "Mithril Pickaxe",
-    "item.reborn12k.mithril_axe": "Mithril Axe",
-    "item.reborn12k.mithril_hoe": "Mithril Hoe",
-    "item.reborn12k.mithril_katana": "Mithril Katana",
-
     "item.reborn12k.mage_helmet": "Mage's Hood",
     "item.reborn12k.mage_chestplate": "Mage's Robes",
     "item.reborn12k.mage_leggings": "Mage's Leggings",
@@ -793,6 +746,99 @@
     "item.reborn12k.rebellion": "Rebellion",
     "item.reborn12k.red_queen": "Red Queen",
     "item.reborn12k.silence": "Silence",
+
+
+
+    "block.reborn12k.market_table": "Market Table",
+    "block.reborn12k.fancy_lamp": "Fancy Lamp",
+
+    "block.reborn12k.air_gem": "Aeris",
+    "block.reborn12k.earth_gem": "Telluris",
+    "block.reborn12k.water_gem": "Maris",
+    "block.reborn12k.fire_gem": "Vulcani",
+    "block.reborn12k.sun_gem": "Solis",
+    "block.reborn12k.moon_gem": "Lunae",
+
+    "block.reborn12k.arcane_pedestal": "Arcane Pedestal",
+    "block.reborn12k.arcane_artifact": "Arcane Artifact",
+
+    "block.reborn12k.crusher": "Crusher",
+    "block.reborn12k.mineral_manufactory": "Mineral Manufactory",
+    "block.reborn12k.melter": "Melter",
+
+    "block.reborn12k.basic_laser_quarry": "Basic Laser Quarry",
+    "block.reborn12k.advanced_laser_quarry": "Advanced Laser Quarry",
+    "block.reborn12k.ultimate_laser_quarry": "Ultimate Laser Quarry",
+
+    "block.reborn12k.synthesis_chamber": "Synthesis Chamber",
+
+
+    "block.reborn12k.ash_log": "Ash Log",
+    "block.reborn12k.ash_wood": "Ash Wood",
+    "block.reborn12k.stripped_ash_log": "Stripped Ash Log",
+    "block.reborn12k.stripped_ash_wood": "Stripped Ash Wood",
+    "block.reborn12k.ash_planks": "Ash Planks",
+
+    "block.reborn12k.ash_leaves": "Ash Leaves",
+    "block.reborn12k.ash_sapling": "Ash Sapling",
+
+    "block.reborn12k.ash_stairs": "Ash Stairs",
+    "block.reborn12k.ash_slab": "Ash Slab",
+    "block.reborn12k.ash_fence": "Ash Fence",
+    "block.reborn12k.ash_fence_gate": "Ash Fence Gate",
+    "block.reborn12k.ash_button": "Ash Button",
+    "block.reborn12k.ash_pressure_plate": "Ash Pressure Plate",
+    "block.reborn12k.ash_door": "Ash Door",
+    "block.reborn12k.ash_trapdoor": "Ash Trapdoor",
+
+
+    "block.reborn12k.cherry_log": "Cherry Log",
+    "block.reborn12k.cherry_wood": "Cherry Wood",
+    "block.reborn12k.stripped_cherry_log": "Stripped Cherry Log",
+    "block.reborn12k.stripped_cherry_wood": "Stripped Cherry Wood",
+    "block.reborn12k.cherry_planks": "Cherry Planks",
+
+    "block.reborn12k.cherry_leaves": "Cherry Leaves",
+    "block.reborn12k.cherry_sapling": "Cherry Sapling",
+
+    "block.reborn12k.cherry_stairs": "Cherry Stairs",
+    "block.reborn12k.cherry_slab": "Cherry Slab",
+    "block.reborn12k.cherry_fence": "Cherry Fence",
+    "block.reborn12k.cherry_fence_gate": "Cherry Fence Gate",
+    "block.reborn12k.cherry_button": "Cherry Button",
+    "block.reborn12k.cherry_pressure_plate": "Cherry Pressure Plate",
+    "block.reborn12k.cherry_door": "Cherry Door",
+    "block.reborn12k.cherry_trapdoor": "Cherry Trapdoor",
+
+    "block.reborn12k.slimy_log": "Slimy Log",
+    "block.reborn12k.slimy_leaves": "Slimy Leaves",
+    "block.reborn12k.slimy_sapling": "Slimy Sapling",
+
+
+    "block.reborn12k.diorite_bricks": "Diorite Bricks",
+    "block.reborn12k.small_diorite_bricks": "Small Diorite Bricks",
+    "block.reborn12k.granite_bricks": "Granite Bricks",
+    "block.reborn12k.small_granite_bricks": "Small Granite Bricks",
+    "block.reborn12k.andesite_bricks": "Andesite Bricks",
+    "block.reborn12k.small_andesite_bricks": "Small Andesite Bricks",
+    "block.reborn12k.small_stone_bricks": "Small Stone Bricks",
+
+    "block.reborn12k.diorite_bricks_stairs": "Diorite Bricks Stairs",
+    "block.reborn12k.small_diorite_bricks_stairs": "Small Diorite Bricks Stairs",
+    "block.reborn12k.granite_bricks_stairs": "Granite Bricks Stairs",
+    "block.reborn12k.small_granite_bricks_stairs": "Small Granite Bricks Stairs",
+    "block.reborn12k.andesite_bricks_stairs": "Andesite Bricks Stairs",
+    "block.reborn12k.small_andesite_bricks_stairs": "Small Andesite Bricks Stairs",
+    "block.reborn12k.small_stone_bricks_stairs": "Small Stone Bricks Stairs",
+
+    "block.reborn12k.diorite_bricks_slab": "Diorite Bricks Slab",
+    "block.reborn12k.small_diorite_bricks_slab": "Small Diorite Bricks Slab",
+    "block.reborn12k.granite_bricks_slab": "Granite Bricks Slab",
+    "block.reborn12k.small_granite_bricks_slab": "Small Granite Bricks Slab",
+    "block.reborn12k.andesite_bricks_slab": "Andesite Bricks Slab",
+    "block.reborn12k.small_andesite_bricks_slab": "Small Andesite Bricks Slab",
+    "block.reborn12k.small_stone_bricks_slab": "Small Stone Bricks Slab",
+
 
 
     "item.reborn12k.unrecorded_disc": "Unrecorded Disc",
