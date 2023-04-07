@@ -12,11 +12,16 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
 import net.slayerrroar.reborn12k.blocks.BlockGenerics;
-import net.slayerrroar.reborn12k.items.ItemGenerics;
 
 public class ElementalRune extends Item {
     public ElementalRune(Settings settings) {
         super(settings);
+    }
+
+    private void decreaseStackAndPlaySound(ItemStack stack, World world, PlayerEntity player) {
+        stack.setCount(stack.getCount()-1);
+        world.playSound(null, player.getX(), player.getY(), player.getZ(),
+                SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25F, 0.25F);
     }
 
     @Override
@@ -29,44 +34,31 @@ public class ElementalRune extends Item {
 
         if(block.isOf(Blocks.DIAMOND_BLOCK)) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.AIR_GEM.getDefaultState());
-            stack.setCount(stack.getCount()-1);
-            world.playSound(null, player.getX(), player.getY(), player.getZ(),
-                    SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25F, 0.25F);
+            decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
         if(block.isOf(Blocks.EMERALD_BLOCK)) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.EARTH_GEM.getDefaultState());
-            stack.setCount(stack.getCount()-1);
-            world.playSound(null, player.getX(), player.getY(), player.getZ(),
-                    SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25F, 0.25F);
+            decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
         if(block.isOf(BlockGenerics.SAPPHIRE_BLOCK)) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.WATER_GEM.getDefaultState());
-            stack.setCount(stack.getCount()-1);
-            world.playSound(null, player.getX(), player.getY(), player.getZ(),
-                    SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25F, 0.25F);
             return ActionResult.SUCCESS;
         }
         if(block.isOf(BlockGenerics.RUBY_BLOCK)) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.FIRE_GEM.getDefaultState());
-            stack.setCount(stack.getCount()-1);
-            world.playSound(null, player.getX(), player.getY(), player.getZ(),
-                    SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25F, 0.25F);
+            decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
         if(block.isOf(BlockGenerics.SUNSTONE_BLOCK) && world.isDay()) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.SUN_GEM.getDefaultState());
-            stack.setCount(stack.getCount()-1);
-            world.playSound(null, player.getX(), player.getY(), player.getZ(),
-                    SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25F, 0.25F);
+            decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
         if(block.isOf(BlockGenerics.MOONSTONE_BLOCK) && world.isNight()) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.MOON_GEM.getDefaultState());
-            stack.setCount(stack.getCount()-1);
-            world.playSound(null, player.getX(), player.getY(), player.getZ(),
-                    SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25F, 0.25F);
+            decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
         return ActionResult.FAIL;
