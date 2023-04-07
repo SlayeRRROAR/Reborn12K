@@ -38,21 +38,21 @@ public class ItemGenerics {
     public static final Item COBALT_INGOT = registerItem("cobalt_ingot", new Item(new FabricItemSettings()));
     public static final Item OSMIUM_INGOT = registerItem("osmium_ingot", new Item(new FabricItemSettings()));
     public static final Item PLATINUM_INGOT = registerItem("platinum_ingot", new Item(new FabricItemSettings()));
-
     public static final Item IRIDIUM_INGOT = registerItem("iridium_ingot", new Item(new FabricItemSettings()));
+
+    public static final Item ARCHEOSITE_INGOT = registerItem("archeosite_ingot", new Item(new FabricItemSettings()));
     public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new FabricItemSettings()));
     public static final Item CONSTANTAN_INGOT = registerItem("constantan_ingot", new Item(new FabricItemSettings()));
     public static final Item INVAR_INGOT = registerItem("invar_ingot", new Item(new FabricItemSettings()));
+    public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new FabricItemSettings()));
+    public static final Item TUNGSTENSTEEL_INGOT = registerItem("tungstensteel_ingot", new Item(new FabricItemSettings()));
+    public static final Item THELOSITE_INGOT = registerItem("thelosite_ingot", new Item(new FabricItemSettings()));
+    public static final Item ADVANCED_ALLOY_INGOT = registerItem("advanced_alloy_ingot", new Item(new FabricItemSettings()));
+    public static final Item IRIDIUM_ALLOY_INGOT = registerItem("iridium_alloy_ingot", new Item(new FabricItemSettings()));
     public static final Item ELECTRUM_INGOT = registerItem("electrum_ingot", new Item(new FabricItemSettings()));
     public static final Item SIGNALUM_INGOT = registerItem("signalum_ingot", new Item(new FabricItemSettings()));
     public static final Item LUMIUM_INGOT = registerItem("lumium_ingot", new Item(new FabricItemSettings()));
     public static final Item ENDERIUM_INGOT = registerItem("enderium_ingot", new Item(new FabricItemSettings()));
-    public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new FabricItemSettings()));
-    public static final Item TUNGSTENSTEEL_INGOT = registerItem("tungstensteel_ingot", new Item(new FabricItemSettings()));
-    public static final Item ADVANCED_ALLOY_INGOT = registerItem("advanced_alloy_ingot", new Item(new FabricItemSettings()));
-    public static final Item IRIDIUM_ALLOY_INGOT = registerItem("iridium_alloy_ingot", new Item(new FabricItemSettings()));
-    public static final Item THELOSITE_INGOT = registerItem("thelosite_ingot", new Item(new FabricItemSettings()));
-    public static final Item ARCHEOSITE_INGOT = registerItem("archeosite_ingot", new Item(new FabricItemSettings()));
 
     public static final Item MAGISTEEL_INGOT = registerItem("magisteel_ingot", new Item(new FabricItemSettings()));
     public static final Item ORICHALCUM_INGOT = registerItem("orichalcum_ingot", new Item(new FabricItemSettings()));
@@ -84,19 +84,19 @@ public class ItemGenerics {
     public static final Item RAW_PLATINUM = registerItem("raw_platinum", new Item(new FabricItemSettings()));
     public static final Item RAW_IRIDIUM = registerItem("raw_iridium", new Item(new FabricItemSettings()));
 
+    public static final Item RAW_ARCHEOSITE = registerItem("raw_archeosite", new Item(new FabricItemSettings()));
     public static final Item RAW_BRONZE = registerItem("raw_bronze", new Item(new FabricItemSettings()));
     public static final Item RAW_CONSTANTAN = registerItem("raw_constantan", new Item(new FabricItemSettings()));
     public static final Item RAW_INVAR = registerItem("raw_invar", new Item(new FabricItemSettings()));
+    public static final Item RAW_STEEL = registerItem("raw_steel", new Item(new FabricItemSettings()));
+    public static final Item RAW_TUNGSTENSTEEL = registerItem("raw_tungstensteel", new Item(new FabricItemSettings()));
+    public static final Item RAW_THELOSITE = registerItem("raw_thelosite", new Item(new FabricItemSettings()));
+    public static final Item RAW_ADVANCED_ALLOY = registerItem("raw_advanced_alloy", new Item(new FabricItemSettings()));
+    public static final Item RAW_IRIDIUM_ALLOY = registerItem("raw_iridium_alloy", new Item(new FabricItemSettings()));
     public static final Item RAW_ELECTRUM = registerItem("raw_electrum", new Item(new FabricItemSettings()));
     public static final Item RAW_SIGNALUM = registerItem("raw_signalum", new Item(new FabricItemSettings()));
     public static final Item RAW_LUMIUM = registerItem("raw_lumium", new Item(new FabricItemSettings()));
     public static final Item RAW_ENDERIUM = registerItem("raw_enderium", new Item(new FabricItemSettings()));
-    public static final Item RAW_STEEL = registerItem("raw_steel", new Item(new FabricItemSettings()));
-    public static final Item RAW_TUNGSTENSTEEL = registerItem("raw_tungstensteel", new Item(new FabricItemSettings()));
-    public static final Item RAW_ADVANCED_ALLOY = registerItem("raw_advanced_alloy", new Item(new FabricItemSettings()));
-    public static final Item RAW_IRIDIUM_ALLOY = registerItem("raw_iridium_alloy", new Item(new FabricItemSettings()));
-    public static final Item RAW_ARCHEOSITE = registerItem("raw_archeosite", new Item(new FabricItemSettings()));
-    public static final Item RAW_THELOSITE = registerItem("raw_thelosite", new Item(new FabricItemSettings()));
 
 
     // Food
@@ -184,19 +184,19 @@ public class ItemGenerics {
         addToItemGroup(Reborn12KItemGroup.REBORN12K, PLATINUM_INGOT);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_INGOT);
 
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_INGOT);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_INGOT);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, CONSTANTAN_INGOT);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, INVAR_INGOT);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_INGOT);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_INGOT);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_INGOT);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_INGOT);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_INGOT);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_INGOT);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_INGOT);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, LUMIUM_INGOT);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_INGOT);
 
         addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_INGOT);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_INGOT);
@@ -227,19 +227,19 @@ public class ItemGenerics {
         addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_PLATINUM);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_IRIDIUM);
 
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_ARCHEOSITE);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_BRONZE);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_CONSTANTAN);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_INVAR);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_STEEL);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_TUNGSTENSTEEL);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_THELOSITE);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_ADVANCED_ALLOY);
+        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_IRIDIUM_ALLOY);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_ELECTRUM);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_SIGNALUM);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_LUMIUM);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_ENDERIUM);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_STEEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_TUNGSTENSTEEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_ADVANCED_ALLOY);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_IRIDIUM_ALLOY);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_ARCHEOSITE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_THELOSITE);
 
         addToItemGroup(Reborn12KItemGroup.REBORN12K, BANANA);
         addToItemGroup(Reborn12KItemGroup.REBORN12K, GOLDEN_BANANA);

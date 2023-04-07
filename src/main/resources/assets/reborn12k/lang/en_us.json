@@ -134,6 +134,24 @@
     "block.reborn12k.iridium_block": "Block of Iridium",
 
 
+    "item.reborn12k.archeosite_ingot": "Archeosite Ingot",
+    "item.reborn12k.raw_archeosite": "Raw Archeosite",
+    "block.reborn12k.raw_archeosite_block": "Block of Raw Archeosite",
+    "block.reborn12k.archeosite_block": "Block of Archeosite",
+
+    "item.reborn12k.archeosite_helmet": "Archeosite Helmet",
+    "item.reborn12k.archeosite_chestplate": "Archeosite Chestplate",
+    "item.reborn12k.archeosite_leggings": "Archeosite Leggings",
+    "item.reborn12k.archeosite_boots": "Archeosite Boots",
+
+    "item.reborn12k.archeosite_sword": "Archeosite Sword",
+    "item.reborn12k.archeosite_shovel": "Archeosite Shovel",
+    "item.reborn12k.archeosite_pickaxe": "Archeosite Pickaxe",
+    "item.reborn12k.archeosite_axe": "Archeosite Axe",
+    "item.reborn12k.archeosite_hoe": "Archeosite Hoe",
+    "item.reborn12k.archeosite_katana": "Archeosite Katana",
+
+
     "item.reborn12k.bronze_ingot": "Bronze Ingot",
     "item.reborn12k.raw_bronze": "Raw Bronze",
     "block.reborn12k.raw_bronze_block": "Block of Raw Bronze",
@@ -162,6 +180,96 @@
     "item.reborn12k.raw_invar": "Raw Invar",
     "block.reborn12k.raw_invar_block": "Block of Raw Invar",
     "block.reborn12k.invar_block": "Block of Invar",
+
+
+    "item.reborn12k.steel_ingot": "Steel Ingot",
+    "item.reborn12k.raw_steel": "Raw Steel",
+    "block.reborn12k.raw_steel_block": "Block of Raw Steel",
+    "block.reborn12k.steel_block": "Block of Steel",
+
+    "item.reborn12k.steel_helmet": "Steel Helmet",
+    "item.reborn12k.steel_chestplate": "Steel Chestplate",
+    "item.reborn12k.steel_leggings": "Steel Leggings",
+    "item.reborn12k.steel_boots": "Steel Boots",
+
+    "item.reborn12k.steel_sword": "Steel Sword",
+    "item.reborn12k.steel_shovel": "Steel Shovel",
+    "item.reborn12k.steel_pickaxe": "Steel Pickaxe",
+    "item.reborn12k.steel_axe": "Steel Axe",
+    "item.reborn12k.steel_hoe": "Steel Hoe",
+    "item.reborn12k.steel_katana": "Steel Katana",
+
+
+    "item.reborn12k.tungstensteel_ingot": "Tungstensteel Ingot",
+    "item.reborn12k.raw_tungstensteel": "Raw Tungstensteel",
+    "block.reborn12k.raw_tungstensteel_block": "Block of Raw Tungstensteel",
+    "block.reborn12k.tungstensteel_block": "Block of Tungstensteel",
+
+    "item.reborn12k.tungstensteel_helmet": "Tungstensteel Helmet",
+    "item.reborn12k.tungstensteel_chestplate": "Tungstensteel Chestplate",
+    "item.reborn12k.tungstensteel_leggings": "Tungstensteel Leggings",
+    "item.reborn12k.tungstensteel_boots": "Tungstensteel Boots",
+
+    "item.reborn12k.tungstensteel_sword": "Tungstensteel Sword",
+    "item.reborn12k.tungstensteel_shovel": "Tungstensteel Shovel",
+    "item.reborn12k.tungstensteel_pickaxe": "Tungstensteel Pickaxe",
+    "item.reborn12k.tungstensteel_axe": "Tungstensteel Axe",
+    "item.reborn12k.tungstensteel_hoe": "Tungstensteel Hoe",
+    "item.reborn12k.tungstensteel_katana": "Tungstensteel Katana",
+
+
+    "item.reborn12k.thelosite_ingot": "Thelosite Ingot",
+    "item.reborn12k.raw_thelosite": "Raw Thelosite",
+    "block.reborn12k.raw_thelosite_block": "Block of Raw Thelosite",
+    "block.reborn12k.thelosite_block": "Block of Thelosite",
+
+    "item.reborn12k.thelosite_helmet": "Thelosite Helmet",
+    "item.reborn12k.thelosite_chestplate": "Thelosite Chestplate",
+    "item.reborn12k.thelosite_leggings": "Thelosite Leggings",
+    "item.reborn12k.thelosite_boots": "Thelosite Boots",
+
+    "item.reborn12k.thelosite_sword": "Thelosite Sword",
+    "item.reborn12k.thelosite_shovel": "Thelosite Shovel",
+    "item.reborn12k.thelosite_pickaxe": "Thelosite Pickaxe",
+    "item.reborn12k.thelosite_axe": "Thelosite Axe",
+    "item.reborn12k.thelosite_hoe": "Thelosite Hoe",
+    "item.reborn12k.thelosite_katana": "Thelosite Katana",
+
+
+    "item.reborn12k.advanced_alloy_ingot": "Advanced Alloy Ingot",
+    "item.reborn12k.raw_advanced_alloy": "Raw Advanced Alloy",
+    "block.reborn12k.raw_advanced_alloy_block": "Block of Raw Advanced Alloy",
+    "block.reborn12k.advanced_alloy_block": "Block of Advanced Alloy",
+
+    "item.reborn12k.advanced_alloy_helmet": "Advanced Alloy Helmet",
+    "item.reborn12k.advanced_alloy_chestplate": "Advanced Alloy Chestplate",
+    "item.reborn12k.advanced_alloy_leggings": "Advanced Alloy Leggings",
+    "item.reborn12k.advanced_alloy_boots": "Advanced Alloy Boots",
+
+    "item.reborn12k.advanced_alloy_sword": "Advanced Alloy Sword",
+    "item.reborn12k.advanced_alloy_shovel": "Advanced Alloy Shovel",
+    "item.reborn12k.advanced_alloy_pickaxe": "Advanced Alloy Pickaxe",
+    "item.reborn12k.advanced_alloy_axe": "Advanced Alloy Axe",
+    "item.reborn12k.advanced_alloy_hoe": "Advanced Alloy Hoe",
+    "item.reborn12k.advanced_alloy_katana": "Advanced Alloy Katana",
+
+
+    "item.reborn12k.iridium_alloy_ingot": "Iridium Alloy Ingot",
+    "item.reborn12k.raw_iridium_alloy": "Raw Iridium Alloy",
+    "block.reborn12k.raw_iridium_alloy_block": "Block of Raw Iridium Alloy",
+    "block.reborn12k.iridium_alloy_block": "Block of Iridium Alloy",
+
+    "item.reborn12k.iridium_alloy_helmet": "Iridium Alloy Helmet",
+    "item.reborn12k.iridium_alloy_chestplate": "Iridium Alloy Chestplate",
+    "item.reborn12k.iridium_alloy_leggings": "Iridium Alloy Leggings",
+    "item.reborn12k.iridium_alloy_boots": "Iridium Alloy Boots",
+
+    "item.reborn12k.iridium_alloy_sword": "Iridium Alloy Sword",
+    "item.reborn12k.iridium_alloy_shovel": "Iridium Alloy Shovel",
+    "item.reborn12k.iridium_alloy_pickaxe": "Iridium Alloy Pickaxe",
+    "item.reborn12k.iridium_alloy_axe": "Iridium Alloy Axe",
+    "item.reborn12k.iridium_alloy_hoe": "Iridium Alloy Hoe",
+    "item.reborn12k.iridium_alloy_katana": "Iridium Alloy Katana",
 
 
     "item.reborn12k.electrum_ingot": "Electrum Ingot",
@@ -222,114 +330,6 @@
     "item.reborn12k.enderium_axe": "Enderium Axe",
     "item.reborn12k.enderium_hoe": "Enderium Hoe",
     "item.reborn12k.enderium_katana": "Enderium Katana",
-
-
-    "item.reborn12k.steel_ingot": "Steel Ingot",
-    "item.reborn12k.raw_steel": "Raw Steel",
-    "block.reborn12k.raw_steel_block": "Block of Raw Steel",
-    "block.reborn12k.steel_block": "Block of Steel",
-
-    "item.reborn12k.steel_helmet": "Steel Helmet",
-    "item.reborn12k.steel_chestplate": "Steel Chestplate",
-    "item.reborn12k.steel_leggings": "Steel Leggings",
-    "item.reborn12k.steel_boots": "Steel Boots",
-
-    "item.reborn12k.steel_sword": "Steel Sword",
-    "item.reborn12k.steel_shovel": "Steel Shovel",
-    "item.reborn12k.steel_pickaxe": "Steel Pickaxe",
-    "item.reborn12k.steel_axe": "Steel Axe",
-    "item.reborn12k.steel_hoe": "Steel Hoe",
-    "item.reborn12k.steel_katana": "Steel Katana",
-
-
-    "item.reborn12k.tungstensteel_ingot": "Tungstensteel Ingot",
-    "item.reborn12k.raw_tungstensteel": "Raw Tungstensteel",
-    "block.reborn12k.raw_tungstensteel_block": "Block of Raw Tungstensteel",
-    "block.reborn12k.tungstensteel_block": "Block of Tungstensteel",
-
-    "item.reborn12k.tungstensteel_helmet": "Tungstensteel Helmet",
-    "item.reborn12k.tungstensteel_chestplate": "Tungstensteel Chestplate",
-    "item.reborn12k.tungstensteel_leggings": "Tungstensteel Leggings",
-    "item.reborn12k.tungstensteel_boots": "Tungstensteel Boots",
-
-    "item.reborn12k.tungstensteel_sword": "Tungstensteel Sword",
-    "item.reborn12k.tungstensteel_shovel": "Tungstensteel Shovel",
-    "item.reborn12k.tungstensteel_pickaxe": "Tungstensteel Pickaxe",
-    "item.reborn12k.tungstensteel_axe": "Tungstensteel Axe",
-    "item.reborn12k.tungstensteel_hoe": "Tungstensteel Hoe",
-    "item.reborn12k.tungstensteel_katana": "Tungstensteel Katana",
-
-
-    "item.reborn12k.advanced_alloy_ingot": "Advanced Alloy Ingot",
-    "item.reborn12k.raw_advanced_alloy": "Raw Advanced Alloy",
-    "block.reborn12k.raw_advanced_alloy_block": "Block of Raw Advanced Alloy",
-    "block.reborn12k.advanced_alloy_block": "Block of Advanced Alloy",
-
-    "item.reborn12k.advanced_alloy_helmet": "Advanced Alloy Helmet",
-    "item.reborn12k.advanced_alloy_chestplate": "Advanced Alloy Chestplate",
-    "item.reborn12k.advanced_alloy_leggings": "Advanced Alloy Leggings",
-    "item.reborn12k.advanced_alloy_boots": "Advanced Alloy Boots",
-
-    "item.reborn12k.advanced_alloy_sword": "Advanced Alloy Sword",
-    "item.reborn12k.advanced_alloy_shovel": "Advanced Alloy Shovel",
-    "item.reborn12k.advanced_alloy_pickaxe": "Advanced Alloy Pickaxe",
-    "item.reborn12k.advanced_alloy_axe": "Advanced Alloy Axe",
-    "item.reborn12k.advanced_alloy_hoe": "Advanced Alloy Hoe",
-    "item.reborn12k.advanced_alloy_katana": "Advanced Alloy Katana",
-
-
-    "item.reborn12k.iridium_alloy_ingot": "Iridium Alloy Ingot",
-    "item.reborn12k.raw_iridium_alloy": "Raw Iridium Alloy",
-    "block.reborn12k.raw_iridium_alloy_block": "Block of Raw Iridium Alloy",
-    "block.reborn12k.iridium_alloy_block": "Block of Iridium Alloy",
-
-    "item.reborn12k.iridium_alloy_helmet": "Iridium Alloy Helmet",
-    "item.reborn12k.iridium_alloy_chestplate": "Iridium Alloy Chestplate",
-    "item.reborn12k.iridium_alloy_leggings": "Iridium Alloy Leggings",
-    "item.reborn12k.iridium_alloy_boots": "Iridium Alloy Boots",
-
-    "item.reborn12k.iridium_alloy_sword": "Iridium Alloy Sword",
-    "item.reborn12k.iridium_alloy_shovel": "Iridium Alloy Shovel",
-    "item.reborn12k.iridium_alloy_pickaxe": "Iridium Alloy Pickaxe",
-    "item.reborn12k.iridium_alloy_axe": "Iridium Alloy Axe",
-    "item.reborn12k.iridium_alloy_hoe": "Iridium Alloy Hoe",
-    "item.reborn12k.iridium_alloy_katana": "Iridium Alloy Katana",
-
-
-    "item.reborn12k.archeosite_ingot": "Archeosite Ingot",
-    "item.reborn12k.raw_archeosite": "Raw Archeosite",
-    "block.reborn12k.raw_archeosite_block": "Block of Raw Archeosite",
-    "block.reborn12k.archeosite_block": "Block of Archeosite",
-
-    "item.reborn12k.archeosite_helmet": "Archeosite Helmet",
-    "item.reborn12k.archeosite_chestplate": "Archeosite Chestplate",
-    "item.reborn12k.archeosite_leggings": "Archeosite Leggings",
-    "item.reborn12k.archeosite_boots": "Archeosite Boots",
-
-    "item.reborn12k.archeosite_sword": "Archeosite Sword",
-    "item.reborn12k.archeosite_shovel": "Archeosite Shovel",
-    "item.reborn12k.archeosite_pickaxe": "Archeosite Pickaxe",
-    "item.reborn12k.archeosite_axe": "Archeosite Axe",
-    "item.reborn12k.archeosite_hoe": "Archeosite Hoe",
-    "item.reborn12k.archeosite_katana": "Archeosite Katana",
-
-
-    "item.reborn12k.thelosite_ingot": "Thelosite Ingot",
-    "item.reborn12k.raw_thelosite": "Raw Thelosite",
-    "block.reborn12k.raw_thelosite_block": "Block of Raw Thelosite",
-    "block.reborn12k.thelosite_block": "Block of Thelosite",
-
-    "item.reborn12k.thelosite_helmet": "Thelosite Helmet",
-    "item.reborn12k.thelosite_chestplate": "Thelosite Chestplate",
-    "item.reborn12k.thelosite_leggings": "Thelosite Leggings",
-    "item.reborn12k.thelosite_boots": "Thelosite Boots",
-
-    "item.reborn12k.thelosite_sword": "Thelosite Sword",
-    "item.reborn12k.thelosite_shovel": "Thelosite Shovel",
-    "item.reborn12k.thelosite_pickaxe": "Thelosite Pickaxe",
-    "item.reborn12k.thelosite_axe": "Thelosite Axe",
-    "item.reborn12k.thelosite_hoe": "Thelosite Hoe",
-    "item.reborn12k.thelosite_katana": "Thelosite Katana",
 
 
     "item.reborn12k.magisteel_ingot": "Magisteel Ingot",
