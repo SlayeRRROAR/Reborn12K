@@ -20,14 +20,14 @@ import java.util.UUID;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 
-public class ShadowtouchedPendant extends TrinketItem implements Trinket {
-    public ShadowtouchedPendant(Settings settings) {
+public class EarthPendant extends TrinketItem implements Trinket {
+    public EarthPendant(Settings settings) {
         super(settings);
     }
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.DARK_IMPULSE);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.EARTH_IMPULSE);
     }
 
     @Override
@@ -56,15 +56,14 @@ public class ShadowtouchedPendant extends TrinketItem implements Trinket {
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
             var modifiers = super.getModifiers(stack, slot, entity, uuid);
-            modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "reborn12k:max_health", 0.6, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-            modifiers.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(uuid, "reborn12k:attack_damage", 0.2, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+            modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "reborn12k:max_health", 1.0, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
             return modifiers;
     }
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.shadowtouched_pendant.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.shadowtouched_pendant.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.windwalker_pendant.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.windwalker_pendant.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.necklace.tooltip"));
     }
 

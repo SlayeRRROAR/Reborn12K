@@ -20,20 +20,19 @@ import java.util.UUID;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 
-public class FlamebornPendant extends TrinketItem implements Trinket {
-
-    public FlamebornPendant(Settings settings) {
+public class LightPendant extends TrinketItem implements Trinket {
+    public LightPendant(Settings settings) {
         super(settings);
     }
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.INFERNAL_IMPULSE);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.LIGHT_IMPULSE);
     }
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.setHealth(entity.getHealth() + 16.0f);
+        entity.setHealth(entity.getHealth() + 20.0f);
     }
 
     @Override
@@ -47,7 +46,7 @@ public class FlamebornPendant extends TrinketItem implements Trinket {
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
         if (!world.isClient) {
-            if(!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.INFERNAL_IMPULSE)) {
+            if(!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.LIGHT_IMPULSE)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }
@@ -56,16 +55,15 @@ public class FlamebornPendant extends TrinketItem implements Trinket {
     }
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
-        var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "reborn12k:max_health", 0.7, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(uuid, "reborn12k:movement_speed", 0.2, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-        return modifiers;
+            var modifiers = super.getModifiers(stack, slot, entity, uuid);
+            modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "reborn12k:max_health", 1.0, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+            return modifiers;
     }
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.flameborn_pendant.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.flameborn_pendant.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.lightbound_pendant.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.lightbound_pendant.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.necklace.tooltip"));
     }
 

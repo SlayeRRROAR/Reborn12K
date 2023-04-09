@@ -20,14 +20,14 @@ import java.util.UUID;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 
-public class LightboundPendant extends TrinketItem implements Trinket {
-    public LightboundPendant(Settings settings) {
+public class AirPendant extends TrinketItem implements Trinket {
+    public AirPendant(Settings settings) {
         super(settings);
     }
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.RADIANT_IMPULSE);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.AIR_IMPULSE);
     }
 
     @Override
@@ -46,7 +46,7 @@ public class LightboundPendant extends TrinketItem implements Trinket {
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
         if (!world.isClient) {
-            if(!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.RADIANT_IMPULSE)) {
+            if(!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.DARK_IMPULSE)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }
@@ -62,8 +62,8 @@ public class LightboundPendant extends TrinketItem implements Trinket {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.lightbound_pendant.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.lightbound_pendant.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.windwalker_pendant.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.windwalker_pendant.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.necklace.tooltip"));
     }
 
