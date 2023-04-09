@@ -14,6 +14,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.custom.*;
+import net.slayerrroar.reborn12k.blocks.custom.trinket_boxes.*;
 import net.slayerrroar.reborn12k.blocks.custom.with_entities.*;
 import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
 
@@ -24,7 +25,10 @@ public class AdvancedBlocks {
     public static final Block MARKET_TABLE = registerBlock("market_table", new MarketBlock(FabricBlockSettings.copy(Blocks.CRAFTING_TABLE)), Reborn12KItemGroup.REBORN12K);
     public static final Block FANCY_LAMP = registerBlock("fancy_lamp", new FancyLampBlock(FabricBlockSettings.copy(Blocks.STONE).sounds(BlockSoundGroup.STONE).hardness(5.0f).resistance(6.0f).nonOpaque().luminance(blockstate ->30)), Reborn12KItemGroup.REBORN12K);
 
-    public static final Block LOCKED_STRONGBOX = registerBlock("locked_strongbox", new TrinketBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), Reborn12KItemGroup.REBORN12K);
+    public static final Block LOCKED_STRONGBOX = registerBlock("locked_strongbox", new CommonBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), Reborn12KItemGroup.REBORN12K);
+    public static final Block RARE_STRONGBOX = registerBlock("rare_strongbox", new RareBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), Reborn12KItemGroup.REBORN12K);
+    public static final Block EPIC_STRONGBOX = registerBlock("epic_strongbox", new EpicBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), Reborn12KItemGroup.REBORN12K);
+    public static final Block LEGENDARY_STRONGBOX = registerBlock("legendary_strongbox", new LegendaryBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), Reborn12KItemGroup.REBORN12K);
 
     public static final Block AIR_GEM = registerBlock("air_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), Reborn12KItemGroup.REBORN12K);
     public static final Block EARTH_GEM = registerBlock("earth_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), Reborn12KItemGroup.REBORN12K);
