@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "reborn12k:item/experience_data_card_v2"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "reborn12k:item/experience_data_card_v2"
   }
+}

@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-      "layer0": "reborn12k:item/bronze_sword"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "reborn12k:item/bronze_sword"
   }
+}

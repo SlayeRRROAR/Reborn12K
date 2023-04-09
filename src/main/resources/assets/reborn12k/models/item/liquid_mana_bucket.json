@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "reborn12k:item/liquid_mana_bucket"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "reborn12k:item/liquid_mana_bucket"
   }
+}

@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "reborn12k:item/light_collimator_array"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "reborn12k:item/light_collimator_array"
   }
+}

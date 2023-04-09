@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "reborn12k:item/casing_mk237"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "reborn12k:item/casing_mk237"
   }
+}

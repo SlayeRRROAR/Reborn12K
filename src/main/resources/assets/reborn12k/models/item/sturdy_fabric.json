@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "reborn12k:item/sturdy_fabric"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "reborn12k:item/sturdy_fabric"
   }
+}

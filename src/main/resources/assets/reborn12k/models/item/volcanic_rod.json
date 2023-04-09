@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-      "layer0": "reborn12k:item/volcanic_rod"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "reborn12k:item/volcanic_rod"
   }
+}

@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-      "layer0": "reborn12k:item/golden_rod"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "reborn12k:item/golden_rod"
   }
+}

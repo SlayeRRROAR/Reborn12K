@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "reborn12k:item/uhf_collimated_laser_array"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "reborn12k:item/uhf_collimated_laser_array"
   }
+}

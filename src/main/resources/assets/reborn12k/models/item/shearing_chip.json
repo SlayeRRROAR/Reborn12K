@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "reborn12k:item/shearing_chip"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "reborn12k:item/shearing_chip"
   }
+}
