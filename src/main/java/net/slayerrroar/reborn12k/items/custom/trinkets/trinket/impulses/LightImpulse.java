@@ -10,15 +10,17 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class InfernalImpulse extends TrinketItem implements Trinket {
-    public InfernalImpulse(Settings settings) {
+public class LightImpulse extends TrinketItem implements Trinket {
+
+    public LightImpulse(Settings settings) {
         super(settings);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("item.reborn12k.infernal_impulse.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.infernal_impulse.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.light_impulse.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.light_impulse.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
     }
+
 }
