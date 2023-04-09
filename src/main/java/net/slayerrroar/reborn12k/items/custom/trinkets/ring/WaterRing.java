@@ -12,9 +12,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class RingLIGHT extends TrinketItem {
+public class WaterRing extends TrinketItem {
 
-    public RingLIGHT(Settings settings) {
+    public WaterRing(Settings settings) {
         super(settings);
     }
 
@@ -26,21 +26,24 @@ public class RingLIGHT extends TrinketItem {
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.removeStatusEffect(StatusEffects.SATURATION);
-        entity.removeStatusEffect(StatusEffects.REGENERATION);
+        entity.removeStatusEffect(StatusEffects.DOLPHINS_GRACE);
+        entity.removeStatusEffect(StatusEffects.CONDUIT_POWER);
     }
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 20*20, 0, false, false));
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*20, 0, false, false));
+        if((entity).isSubmergedInWater()) {
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 10, 0, false, false));
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 10, 0, false, false));
+        }
     }
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.ring_of_light.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.ring_of_light.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.ring_of_water.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.ring_of_water.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.ring.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.mythical.tooltip"));
     }
 
 }

@@ -1,6 +1,7 @@
 package net.slayerrroar.reborn12k.items.custom.trinkets.ring;
 
 import dev.emi.trinkets.api.SlotReference;
+import dev.emi.trinkets.api.Trinket;
 import dev.emi.trinkets.api.TrinketItem;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
@@ -12,9 +13,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class RingWATER extends TrinketItem {
+public class DarkRing extends TrinketItem implements Trinket {
 
-    public RingWATER(Settings settings) {
+    public DarkRing(Settings settings) {
         super(settings);
     }
 
@@ -26,23 +27,22 @@ public class RingWATER extends TrinketItem {
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.removeStatusEffect(StatusEffects.DOLPHINS_GRACE);
-        entity.removeStatusEffect(StatusEffects.CONDUIT_POWER);
+        entity.removeStatusEffect(StatusEffects.INVISIBILITY);
+        entity.removeStatusEffect(StatusEffects.NIGHT_VISION);
     }
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if((entity).isSubmergedInWater()) {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 10, 0, false, false));
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 10, 0, false, false));
-        }
+        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 20*20, 0, false, false));
+        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 20*20, 0, false, false));
     }
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.ring_of_water.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.ring_of_water.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.ring_of_darkness.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.ring_of_darkness.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.ring.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.mythical.tooltip"));
     }
 
 }

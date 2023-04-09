@@ -12,9 +12,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class RingFIRE extends TrinketItem {
+public class StrengthRing extends TrinketItem {
 
-    public RingFIRE(Settings settings) {
+    public StrengthRing(Settings settings) {
         super(settings);
     }
 
@@ -26,22 +26,20 @@ public class RingFIRE extends TrinketItem {
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.removeStatusEffect(StatusEffects.FIRE_RESISTANCE);
+        entity.removeStatusEffect(StatusEffects.STRENGTH);
     }
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20*20, 0, false, false));
-        if(entity.isOnFire()) {
-            entity.extinguishWithSound();
-        }
+        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 20*20, 2, false, false));
     }
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.ring_of_fire.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.ring_of_fire.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.ring_of_strength.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.ring_of_strength.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.ring.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.mythical.tooltip"));
     }
 
 }

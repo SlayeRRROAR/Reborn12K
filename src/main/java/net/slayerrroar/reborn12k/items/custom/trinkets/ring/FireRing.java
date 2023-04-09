@@ -12,33 +12,37 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class RingAIR extends TrinketItem {
+public class FireRing extends TrinketItem {
 
-    public RingAIR(Settings settings) {
-        super(settings);   
+    public FireRing(Settings settings) {
+        super(settings);
     }
 
     @Override
-    public boolean hasGlint(ItemStack stack) { 
+
+    public boolean hasGlint(ItemStack stack) {
         return true;
     }
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.removeStatusEffect(StatusEffects.SPEED);
-        entity.removeStatusEffect(StatusEffects.SPEED);
+        entity.removeStatusEffect(StatusEffects.FIRE_RESISTANCE);
     }
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20*20, 2, false, false));
+        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20*20, 0, false, false));
+        if(entity.isOnFire()) {
+            entity.extinguishWithSound();
+        }
     }
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.ring_of_air.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.ring_of_air.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.ring_of_fire.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.ring_of_fire.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.ring.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.mythical.tooltip"));
     }
 
 }
