@@ -16,8 +16,11 @@
     "reborn12k:indelible_frenzy_tonic",
     "reborn12k:greater_frenzy_tonic",
 
-    "reborn12k:infernal_impulse",
-    "reborn12k:radiant_impulse",
+    "reborn12k:air_impulse",
+    "reborn12k:earth_impulse",
+    "reborn12k:water_impulse",
+    "reborn12k:fire_impulse",
+    "reborn12k:light_impulse",
     "reborn12k:dark_impulse",
 
     "reborn12k:jetpack",
