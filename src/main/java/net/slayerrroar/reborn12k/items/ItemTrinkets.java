@@ -65,14 +65,14 @@ public class ItemTrinkets {
     public static final Item GOLDEN_RING = registerItem("golden_ring", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
     public static final Item AWAKENED_GOLDEN_RING = registerItem("awakened_golden_ring", new GlintedItem(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.RARE)));
 
-    public static final Item RING_OF_AIR = registerItem("ring_of_air", new RingAIR(new FabricItemSettings().maxCount(1).fireproof()));
-    public static final Item RING_OF_EARTH = registerItem("ring_of_earth", new RingEARTH(new FabricItemSettings().maxCount(1).fireproof()));
-    public static final Item RING_OF_WATER = registerItem("ring_of_water", new RingWATER(new FabricItemSettings().maxCount(1).fireproof()));
-    public static final Item RING_OF_FIRE = registerItem("ring_of_fire", new RingFIRE(new FabricItemSettings().maxCount(1).fireproof()));
-    public static final Item RING_OF_LIGHT = registerItem("ring_of_light", new RingLIGHT(new FabricItemSettings().maxCount(1).fireproof()));
-    public static final Item RING_OF_DARKNESS = registerItem("ring_of_darkness", new RingDARKNESS(new FabricItemSettings().maxCount(1).fireproof()));
+    public static final Item RING_OF_AIR = registerItem("ring_of_air", new AirRing(new FabricItemSettings().maxCount(1).fireproof()));
+    public static final Item RING_OF_EARTH = registerItem("ring_of_earth", new EarthRing(new FabricItemSettings().maxCount(1).fireproof()));
+    public static final Item RING_OF_WATER = registerItem("ring_of_water", new WaterRing(new FabricItemSettings().maxCount(1).fireproof()));
+    public static final Item RING_OF_FIRE = registerItem("ring_of_fire", new FireRing(new FabricItemSettings().maxCount(1).fireproof()));
+    public static final Item RING_OF_LIGHT = registerItem("ring_of_light", new LightRing(new FabricItemSettings().maxCount(1).fireproof()));
+    public static final Item RING_OF_DARKNESS = registerItem("ring_of_darkness", new DarkRing(new FabricItemSettings().maxCount(1).fireproof()));
 
-    public static final Item RING_OF_STRENGTH = registerItem("ring_of_strength", new RingSTRENGTH(new FabricItemSettings().maxCount(1).fireproof()));
+    public static final Item RING_OF_STRENGTH = registerItem("ring_of_strength", new StrengthRing(new FabricItemSettings().maxCount(1).fireproof()));
 
     //Trinket
 
