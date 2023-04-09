@@ -89,6 +89,7 @@ public class PhoenixPlume extends TrinketItem implements Trinket {
             tooltip.add(Text.translatable("item.reborn12k.phoenix_plume.tooltip3"));
         }
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.mythical.tooltip"));
     }
 
 }

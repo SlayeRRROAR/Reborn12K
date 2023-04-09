@@ -30,9 +30,8 @@ public class RunningShoes extends TrinketItem implements Trinket {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.running_shoes.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.running_shoes.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.shoes.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.epic.tooltip"));
     }
 
 }

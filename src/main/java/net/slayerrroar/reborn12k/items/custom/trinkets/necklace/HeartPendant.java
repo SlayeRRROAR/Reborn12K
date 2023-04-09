@@ -42,9 +42,8 @@ public class HeartPendant extends TrinketItem implements Trinket {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.heart_pendant.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.heart_pendant.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.necklace.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 
 }

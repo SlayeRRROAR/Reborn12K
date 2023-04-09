@@ -43,9 +43,8 @@ public class OldNecklace extends TrinketItem implements Trinket {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.old_necklace.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.old_necklace.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.necklace.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.common.tooltip"));
     }
 
 }

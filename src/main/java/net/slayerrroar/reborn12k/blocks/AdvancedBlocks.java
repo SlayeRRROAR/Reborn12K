@@ -24,6 +24,8 @@ public class AdvancedBlocks {
     public static final Block MARKET_TABLE = registerBlock("market_table", new MarketBlock(FabricBlockSettings.copy(Blocks.CRAFTING_TABLE)), Reborn12KItemGroup.REBORN12K);
     public static final Block FANCY_LAMP = registerBlock("fancy_lamp", new FancyLampBlock(FabricBlockSettings.copy(Blocks.STONE).sounds(BlockSoundGroup.STONE).hardness(5.0f).resistance(6.0f).nonOpaque().luminance(blockstate ->30)), Reborn12KItemGroup.REBORN12K);
 
+    public static final Block LOCKED_STRONGBOX = registerBlock("locked_strongbox", new TrinketBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), Reborn12KItemGroup.REBORN12K);
+
     public static final Block AIR_GEM = registerBlock("air_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), Reborn12KItemGroup.REBORN12K);
     public static final Block EARTH_GEM = registerBlock("earth_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), Reborn12KItemGroup.REBORN12K);
     public static final Block WATER_GEM = registerBlock("water_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), Reborn12KItemGroup.REBORN12K);
@@ -32,6 +34,7 @@ public class AdvancedBlocks {
     public static final Block MOON_GEM = registerBlock("moon_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), Reborn12KItemGroup.REBORN12K);
 
     public static final Block ARCANE_PEDESTAL = registerBlock("arcane_pedestal", new ArcanePedestalBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).hardness(2.0f).resistance(20.0f).nonOpaque()), Reborn12KItemGroup.REBORN12K);
+
     public static final Block ARCANE_ARTIFACT = registerBlock("arcane_artifact", new ArcaneArtifactBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(20.0f).resistance(1200.0f).nonOpaque()), Reborn12KItemGroup.REBORN12K);
 
     public static final Block CRUSHER = registerBlock("crusher", new CrusherBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8.0f).resistance(20.0f)), Reborn12KItemGroup.REBORN12K);

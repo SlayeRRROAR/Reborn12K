@@ -139,6 +139,7 @@ public class MagnetItem extends TrinketItem implements Trinket {
             tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip4"));
         }
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.common.tooltip"));
     }
 
 }

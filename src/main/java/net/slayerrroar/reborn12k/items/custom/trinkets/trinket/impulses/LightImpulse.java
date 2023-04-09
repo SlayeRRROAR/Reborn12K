@@ -21,6 +21,7 @@ public class LightImpulse extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.light_impulse.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.light_impulse.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 
 }

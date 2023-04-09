@@ -40,5 +40,6 @@ public class MagnifyingGlass extends TrinketItem {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.magnifying_glass.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 }

@@ -21,5 +21,6 @@ public class EarthImpulse extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.earth_impulse.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.earth_impulse.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 }

@@ -19,5 +19,6 @@ public class GoldPouchItem extends TrinketItem implements Trinket {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.gold_pouch.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.common.tooltip"));
     }
 }
