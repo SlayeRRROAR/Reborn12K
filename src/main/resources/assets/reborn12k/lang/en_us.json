@@ -758,6 +758,8 @@
     "block.reborn12k.market_table": "Market Table",
     "block.reborn12k.fancy_lamp": "Fancy Lamp",
 
+    "block.reborn12k.locked_strongbox": "Locked Strongbox",
+
     "block.reborn12k.air_gem": "Aeris",
     "block.reborn12k.earth_gem": "Telluris",
     "block.reborn12k.water_gem": "Maris",
@@ -864,6 +866,12 @@
     "item.reborn12k.alkatraz_disc": "Alkatraz Disc",
     "item.reborn12k.alkatraz_disc.desc": "DEMONDICE - Alkatraz",
 
+    "item.reborn12k.locked_strongbox.tooltip": "You need a key to open it",
+    "item.reborn12k.locked_strongbox.common": "You opened a strongbox and found a Common Trinket",
+    "item.reborn12k.locked_strongbox.rare": "You opened a strongbox and found a §bRare §rTrinket",
+    "item.reborn12k.locked_strongbox.epic": "You opened a strongbox and found an §dEpic §rTrinket",
+    "item.reborn12k.locked_strongbox.legendary": "You opened a strongbox and found a §6Legendary §rTrinket",
+
     "item.reborn12k.windstorm.tooltip": "§8Nimbles allies",
     "item.reborn12k.viridian.tooltip": "§8Hastens allies",
     "item.reborn12k.abyss.tooltip": "§8Allies become unaffected by water",
@@ -892,6 +900,18 @@
     "item.reborn12k.shoes.tooltip": "§9Shoes",
     "item.reborn12k.ring.tooltip": "§9Ring",
     "item.reborn12k.trinket.tooltip": "§9Trinket",
+
+    "item.reborn12k.common.tooltip": "§8Common",
+    "item.reborn12k.rare.tooltip": "§bRare",
+    "item.reborn12k.epic.tooltip": "§dEpic",
+    "item.reborn12k.legendary.tooltip": "§6Legendary",
+
+    "item.reborn12k.air.tooltip": "§bStormweaver",
+    "item.reborn12k.earth.tooltip": "§2Earthshaper",
+    "item.reborn12k.water.tooltip": "§1Abyssbound",
+    "item.reborn12k.fire.tooltip": "§cFlameborn",
+    "item.reborn12k.light.tooltip": "§eRadiant",
+    "item.reborn12k.dark.tooltip": "§5Shadowtouched",
 
     "item.reborn12k.shades.tooltip1": "§8Endermen can't hurt me",
     "item.reborn12k.shades.tooltip2": "§8this shades are Gucci",
