@@ -17,6 +17,7 @@ import net.slayerrroar.reborn12k.items.custom.trinkets.ring.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.shoes.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.band.*;
+import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.charm.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.claw.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.impulses.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.medallion.*;
@@ -101,6 +102,11 @@ public class ItemTrinkets {
     public static final Item INDELIBLE_FRENZY_TONIC = registerItem("indelible_frenzy_tonic", new IndelibleTonic(new FabricItemSettings().maxCount(1)));
     public static final Item GREATER_FRENZY_TONIC = registerItem("greater_frenzy_tonic", new GreaterTonic(new FabricItemSettings().maxCount(1)));
 
+    public static final Item VAGUE_LUCKY_CHARM = registerItem("vague_lucky_charm", new VagueLuckyItem(new FabricItemSettings().maxCount(1)));
+    public static final Item MINOR_LUCKY_CHARM = registerItem("minor_lucky_charm", new MinorLuckyItem(new FabricItemSettings().maxCount(1)));
+    public static final Item INDELIBLE_LUCKY_CHARM = registerItem("indelible_lucky_charm", new IndelibleLuckyItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GREATER_LUCKY_CHARM = registerItem("greater_lucky_charm", new GreaterLuckyItem(new FabricItemSettings().maxCount(1)));
+
     public static final Item AIR_IMPULSE = registerItem("air_impulse", new AirImpulse(new FabricItemSettings().maxCount(1)));
     public static final Item EARTH_IMPULSE = registerItem("earth_impulse", new EarthImpulse(new FabricItemSettings().maxCount(1)));
     public static final Item WATER_IMPULSE = registerItem("water_impulse", new WaterImpulse(new FabricItemSettings().maxCount(1)));
@@ -109,12 +115,13 @@ public class ItemTrinkets {
     public static final Item DARK_IMPULSE = registerItem("dark_impulse", new DarkImpulse(new FabricItemSettings().maxCount(1)));
 
     public static final Item JETPACK = registerItem("jetpack", new JetpackItem(new FabricItemSettings().maxCount(1)));
-    public static final Item BAT_WINGS = registerItem("bat_wings", new WingsItem(new FabricItemSettings().maxCount(1)));
     public static final Item ANGEL_WINGS = registerItem("angel_wings", new WingsItem(new FabricItemSettings().maxCount(1)));
     public static final Item DEMON_WINGS = registerItem("demon_wings", new WingsItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BAT_WINGS = registerItem("bat_wings", new WingsItem(new FabricItemSettings().maxCount(1)));
 
     public static final Item GOLD_POUCH = registerItem("gold_pouch", new GoldPouchItem(new FabricItemSettings().maxCount(1)));
     public static final Item BLOODY_ROSE = registerItem("bloody_rose", new BloodyRoseItem(new FabricItemSettings().maxCount(1)));
+    public static final Item ENDLESS_QUIVER = registerItem("endless_quiver", new EndlessQuiverItem(new FabricItemSettings().maxCount(1)));
     public static final Item MAGNIFYING_GLASS = registerItem("magnifying_glass", new MagnifyingGlass(new FabricItemSettings().maxCount(1)));
     public static final Item MAGNET = registerItem("magnet", new MagnetItem(new FabricItemSettings().maxCount(1)));
     public static final Item PHOENIX_PLUME = registerItem("phoenix_plume", new PhoenixPlume(new FabricItemSettings().maxCount(1)));
@@ -188,6 +195,11 @@ public class ItemTrinkets {
         addToItemGroup(ItemGroupUtil.REBORN12K, INDELIBLE_FRENZY_TONIC);
         addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_FRENZY_TONIC);
 
+        addToItemGroup(ItemGroupUtil.REBORN12K, VAGUE_LUCKY_CHARM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MINOR_LUCKY_CHARM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, INDELIBLE_LUCKY_CHARM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_LUCKY_CHARM);
+
         addToItemGroup(ItemGroupUtil.REBORN12K, AIR_IMPULSE);
         addToItemGroup(ItemGroupUtil.REBORN12K, EARTH_IMPULSE);
         addToItemGroup(ItemGroupUtil.REBORN12K, WATER_IMPULSE);
@@ -196,12 +208,13 @@ public class ItemTrinkets {
         addToItemGroup(ItemGroupUtil.REBORN12K, DARK_IMPULSE);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, JETPACK);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BAT_WINGS);
         addToItemGroup(ItemGroupUtil.REBORN12K, ANGEL_WINGS);
         addToItemGroup(ItemGroupUtil.REBORN12K, DEMON_WINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BAT_WINGS);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLD_POUCH);
         addToItemGroup(ItemGroupUtil.REBORN12K, BLOODY_ROSE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDLESS_QUIVER);
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGNIFYING_GLASS);
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGNET);
         addToItemGroup(ItemGroupUtil.REBORN12K, PHOENIX_PLUME);
