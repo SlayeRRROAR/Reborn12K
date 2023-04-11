@@ -12,7 +12,9 @@ import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.tools.material.*;
 import net.slayerrroar.reborn12k.tools.type.*;
 
-@SuppressWarnings("unused") //todo: for Magisteel, Orichalcum and Mithril -> adjust values of tool materials
+@SuppressWarnings("unused")
+                                        //todo: for Magisteel, Orichalcum and Mithril -> adjust values of tool materials
+                                        //todo: add new textures for some katanas
 
 public class RebornTools {
 

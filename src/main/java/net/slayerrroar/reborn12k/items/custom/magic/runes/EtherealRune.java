@@ -10,7 +10,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.BlockGenerics;
+import net.slayerrroar.reborn12k.blocks.GenericBlocks;
 import net.slayerrroar.reborn12k.items.ItemGenerics;
 
 public class EtherealRune extends Item {
@@ -26,7 +26,7 @@ public class EtherealRune extends Item {
         ItemStack stack = context.getStack();
         BlockState block = world.getBlockState(context.getBlockPos());
 
-        if(block.isOf(BlockGenerics.STEEL_BLOCK)) {
+        if(block.isOf(GenericBlocks.STEEL_BLOCK)) {
             world.setBlockState(context.getBlockPos(), Blocks.AIR.getDefaultState());
             stack.setCount(stack.getCount()-1);
             player.dropItem(ItemGenerics.MAGISTEEL_INGOT, 1);

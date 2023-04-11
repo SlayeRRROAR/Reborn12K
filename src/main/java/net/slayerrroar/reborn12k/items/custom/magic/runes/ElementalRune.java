@@ -11,7 +11,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
-import net.slayerrroar.reborn12k.blocks.BlockGenerics;
+import net.slayerrroar.reborn12k.blocks.GenericBlocks;
 
 public class ElementalRune extends Item {
     public ElementalRune(Settings settings) {
@@ -42,21 +42,21 @@ public class ElementalRune extends Item {
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(block.isOf(BlockGenerics.SAPPHIRE_BLOCK)) {
+        if(block.isOf(GenericBlocks.SAPPHIRE_BLOCK)) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.WATER_GEM.getDefaultState());
             return ActionResult.SUCCESS;
         }
-        if(block.isOf(BlockGenerics.RUBY_BLOCK)) {
+        if(block.isOf(GenericBlocks.RUBY_BLOCK)) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.FIRE_GEM.getDefaultState());
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(block.isOf(BlockGenerics.SUNSTONE_BLOCK) && world.isDay()) {
+        if(block.isOf(GenericBlocks.SUNSTONE_BLOCK) && world.isDay()) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.SUN_GEM.getDefaultState());
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(block.isOf(BlockGenerics.MOONSTONE_BLOCK) && world.isNight()) {
+        if(block.isOf(GenericBlocks.MOONSTONE_BLOCK) && world.isNight()) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.MOON_GEM.getDefaultState());
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;

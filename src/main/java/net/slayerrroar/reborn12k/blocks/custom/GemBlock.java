@@ -23,20 +23,6 @@ public class GemBlock extends Block {
             (Block.createCuboidShape(5, 5, 5, 11, 11, 11)).get();
 
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if(player.isSneaking() && player.getStackInHand(Hand.MAIN_HAND).isEmpty()) {
-            if(player.isCreative()) {
-                world.breakBlock(pos, false, player);
-            }
-            if(!player.isCreative()) {
-                world.breakBlock(pos, true, player);
-            }
-            return ActionResult.SUCCESS;
-        }
-        return super.onUse(state, world, pos, player, hand, hit);
-    }
-
-    @Override
     public VoxelShape getOutlineShape(BlockState blockState, BlockView blockView, BlockPos blockPos, ShapeContext shapeContext) {
         return DEFAULT;
     }

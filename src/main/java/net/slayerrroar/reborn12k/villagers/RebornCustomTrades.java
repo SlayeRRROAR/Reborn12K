@@ -6,7 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.BlockGenerics;
+import net.slayerrroar.reborn12k.blocks.GenericBlocks;
 import net.slayerrroar.reborn12k.items.ItemGenerics;
 import net.slayerrroar.reborn12k.items.ItemTrinkets;
 
@@ -109,7 +109,7 @@ public class RebornCustomTrades {
                             new ItemStack(ItemGenerics.SAPPHIRE, 1),
                             12, 1, 0.08f));
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(BlockGenerics.ASH_LOG, 16),
+                            new ItemStack(GenericBlocks.ASH_LOG, 16),
                             new ItemStack(Items.EMERALD, 1),
                             12, 2, 0.03f));
                 });

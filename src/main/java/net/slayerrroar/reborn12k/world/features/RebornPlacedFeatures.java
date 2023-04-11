@@ -9,7 +9,7 @@ import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.*;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.BlockGenerics;
+import net.slayerrroar.reborn12k.blocks.GenericBlocks;
 
 import java.util.List;
 
@@ -55,17 +55,17 @@ public class RebornPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, ASH_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.ASH_KEY),
-                List.of(PlacedFeatures.wouldSurvive(BlockGenerics.ASH_SAPLING)));
+                List.of(PlacedFeatures.wouldSurvive(GenericBlocks.ASH_SAPLING)));
         register(context, ASH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.ASH_KEY),
                 VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
 
         register(context, CHERRY_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.CHERRY_KEY),
-                List.of(PlacedFeatures.wouldSurvive(BlockGenerics.CHERRY_SAPLING)));
+                List.of(PlacedFeatures.wouldSurvive(GenericBlocks.CHERRY_SAPLING)));
         register(context, CHERRY_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.CHERRY_KEY),
                 VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
 
         register(context, SLIMY_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SLIMY_KEY),
-                List.of(PlacedFeatures.wouldSurvive(BlockGenerics.SLIMY_SAPLING)));
+                List.of(PlacedFeatures.wouldSurvive(GenericBlocks.SLIMY_SAPLING)));
         register(context, SLIMY_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SLIMY_KEY),
                 VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 1)));
 

@@ -17,7 +17,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
-public class BlockRebornOres {
+public class OreBlocks {
 
     public static final Block TIN_ORE = registerBlock("tin_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3.0f).resistance(3.0f)), ItemGroupUtil.REBORN12K);
     public static final Block ALUMINUM_ORE = registerBlock("aluminum_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(3.0f).resistance(3.0f)), ItemGroupUtil.REBORN12K);
