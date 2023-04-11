@@ -9,7 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
+import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 import net.slayerrroar.reborn12k.items.custom.RebornDiscItem;
 import net.slayerrroar.reborn12k.sounds.RebornSounds;
 
@@ -35,13 +35,13 @@ public class ItemDiscs {
 
     public static void addItemsToItemGroup() {
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, UNRECORDED_DISC);
+        addToItemGroup(ItemGroupUtil.REBORN12K, UNRECORDED_DISC);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, Z115_DISC);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, DEVIL_TRIGGER_DISC);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BURY_THE_LIGHT_DISC);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, FREE_BIRD_DISC);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ALKATRAZ_DISC);
+        addToItemGroup(ItemGroupUtil.REBORN12K, Z115_DISC);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DEVIL_TRIGGER_DISC);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BURY_THE_LIGHT_DISC);
+        addToItemGroup(ItemGroupUtil.REBORN12K, FREE_BIRD_DISC);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ALKATRAZ_DISC);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

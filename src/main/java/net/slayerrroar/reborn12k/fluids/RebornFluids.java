@@ -9,7 +9,6 @@ import net.minecraft.block.FluidBlock;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -20,7 +19,7 @@ import net.slayerrroar.reborn12k.fluids.fluidtypes.DestabilizedRedstoneFluid;
 import net.slayerrroar.reborn12k.fluids.fluidtypes.EnergizedGlowstoneFluid;
 import net.slayerrroar.reborn12k.fluids.fluidtypes.LiquidManaFluid;
 import net.slayerrroar.reborn12k.fluids.fluidtypes.ResonantEnderFluid;
-import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
+import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class RebornFluids {
     public static FlowableFluid LIQUID_MANA_STILL;
@@ -59,7 +58,7 @@ public class RebornFluids {
                 new BucketItem(RebornFluids.LIQUID_MANA_STILL, new FabricItemSettings()
                         .rarity(Rarity.RARE).recipeRemainder(Items.BUCKET).maxCount(1)));
 
-        ItemGroupEvents.modifyEntriesEvent(Reborn12KItemGroup.REBORN12K).register(entries -> entries.add(LIQUID_MANA_BUCKET));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroupUtil.REBORN12K).register(entries -> entries.add(LIQUID_MANA_BUCKET));
 
 
         DESTABILIZED_REDSTONE_STILL = Registry.register(Registries.FLUID,
@@ -73,7 +72,7 @@ public class RebornFluids {
                 new BucketItem(RebornFluids.DESTABILIZED_REDSTONE_STILL, new FabricItemSettings()
                         .recipeRemainder(Items.BUCKET).maxCount(1)));
 
-        ItemGroupEvents.modifyEntriesEvent(Reborn12KItemGroup.REBORN12K).register(entries -> entries.add(DESTABILIZED_REDSTONE_BUCKET));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroupUtil.REBORN12K).register(entries -> entries.add(DESTABILIZED_REDSTONE_BUCKET));
 
 
         ENERGIZED_GLOWSTONE_STILL = Registry.register(Registries.FLUID,
@@ -87,7 +86,7 @@ public class RebornFluids {
                 new BucketItem(RebornFluids.ENERGIZED_GLOWSTONE_STILL, new FabricItemSettings()
                         .recipeRemainder(Items.BUCKET).maxCount(1)));
 
-        ItemGroupEvents.modifyEntriesEvent(Reborn12KItemGroup.REBORN12K).register(entries -> entries.add(ENERGIZED_GLOWSTONE_BUCKET));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroupUtil.REBORN12K).register(entries -> entries.add(ENERGIZED_GLOWSTONE_BUCKET));
 
 
         RESONANT_ENDER_STILL = Registry.register(Registries.FLUID,
@@ -101,7 +100,7 @@ public class RebornFluids {
                 new BucketItem(RebornFluids.RESONANT_ENDER_STILL, new FabricItemSettings()
                         .recipeRemainder(Items.BUCKET).maxCount(1)));
 
-        ItemGroupEvents.modifyEntriesEvent(Reborn12KItemGroup.REBORN12K).register(entries -> entries.add(RESONANT_ENDER_BUCKET));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroupUtil.REBORN12K).register(entries -> entries.add(RESONANT_ENDER_BUCKET));
 
     }
 

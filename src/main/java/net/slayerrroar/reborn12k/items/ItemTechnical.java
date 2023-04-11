@@ -18,7 +18,7 @@ import net.slayerrroar.reborn12k.items.custom.tech.experience_data_card.ExpCard;
 import net.slayerrroar.reborn12k.items.custom.tech.experience_data_card.ExpCardV2;
 import net.slayerrroar.reborn12k.items.custom.tech.experience_data_card.ExpCardV237;
 import net.slayerrroar.reborn12k.items.custom.tech.experience_data_card.ExpCardV3;
-import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
+import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class ItemTechnical {
 
@@ -143,53 +143,53 @@ public class ItemTechnical {
 
     public static void addItemsToItemGroup() {
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, EMPTY_MACHINE_CASING);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EMPTY_MACHINE_CASING);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, COOLING_ASSEMBLY);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, POWER_SUPPLY_MODULE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, LASER_DIODE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, HIGH_FREQUENCY_RESONANCE_COIL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, LIGHT_COLLIMATOR_ARRAY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, COOLING_ASSEMBLY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, POWER_SUPPLY_MODULE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LASER_DIODE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, HIGH_FREQUENCY_RESONANCE_COIL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LIGHT_COLLIMATOR_ARRAY);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, LASER_EMITTER);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, UHF_LASER_EMITTER);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, UHF_COLLIMATED_LASER_ARRAY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LASER_EMITTER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, UHF_LASER_EMITTER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, UHF_COLLIMATED_LASER_ARRAY);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, EMPTY_FUEL_CELL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, FUEL_CELL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CHARGED_FUEL_CELL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SUPERCHARGED_FUEL_CELL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EMPTY_FUEL_CELL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, FUEL_CELL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CHARGED_FUEL_CELL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERCHARGED_FUEL_CELL);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BASIC_LASER_FOCUS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_LASER_FOCUS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ULTIMATE_LASER_FOCUS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BASIC_LASER_FOCUS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_LASER_FOCUS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ULTIMATE_LASER_FOCUS);
 
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, EMPTY_BATTERY);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, LV_BATTERY);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MV_BATTERY);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, HV_BATTERY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EMPTY_BATTERY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LV_BATTERY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MV_BATTERY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, HV_BATTERY);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, INSTRUCTION_CHIP);
+        addToItemGroup(ItemGroupUtil.REBORN12K, INSTRUCTION_CHIP);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BUTCHERING_CHIP);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SHEARING_CHIP);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SEVERING_CHIP);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, EXTRACTION_CHIP);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, DECAPITATION_CHIP);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RECOMBINATION_CHIP);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, EXP_DRAIN_CHIP);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, S_REP_CHIP);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BUTCHERING_CHIP);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHEARING_CHIP);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SEVERING_CHIP);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EXTRACTION_CHIP);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DECAPITATION_CHIP);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RECOMBINATION_CHIP);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EXP_DRAIN_CHIP);
+        addToItemGroup(ItemGroupUtil.REBORN12K, S_REP_CHIP);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BASIC_AI_MODULE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_AI_MODULE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ULTIMATE_AI_MODULE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SPECIAL_AI_MODULE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BASIC_AI_MODULE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_AI_MODULE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ULTIMATE_AI_MODULE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SPECIAL_AI_MODULE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, EXPERIENCE_DATA_CARD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, EXPERIENCE_DATA_CARD_V2);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, EXPERIENCE_DATA_CARD_V3);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, EXPERIENCE_DATA_CARD_V237);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EXPERIENCE_DATA_CARD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EXPERIENCE_DATA_CARD_V2);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EXPERIENCE_DATA_CARD_V3);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EXPERIENCE_DATA_CARD_V237);
 
     }
 

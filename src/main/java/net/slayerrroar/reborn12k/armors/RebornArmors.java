@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.armors.custom.MageArmorItem;
 import net.slayerrroar.reborn12k.armors.material.*;
-import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
+import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 @SuppressWarnings("unused") //todo: for Magisteel, Orichalcum and Mithril -> adjust values of armor materials
 
@@ -125,86 +125,86 @@ public class RebornArmors {
 
     public static void addItemsToItemGroup() {
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TITANIUM_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TITANIUM_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TITANIUM_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TITANIUM_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_BOOTS);
 
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGE_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGE_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGE_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGE_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGE_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGE_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGE_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGE_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, POWER_HELMET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, POWER_CHESTPLATE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, POWER_LEGGINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, POWER_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, POWER_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, POWER_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, POWER_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, POWER_BOOTS);
 
     }
 

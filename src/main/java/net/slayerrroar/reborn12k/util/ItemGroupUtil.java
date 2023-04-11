@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.ItemGenerics;
 
-public class Reborn12KItemGroup {
+public class ItemGroupUtil {
 
     public static ItemGroup REBORN12K;
 
@@ -17,4 +17,5 @@ public class Reborn12KItemGroup {
                 .displayName(Text.translatable("itemGroup.reborn12k"))
                 .icon(() -> new ItemStack(ItemGenerics.SAPPHIRE)).build();
     }
+
 }

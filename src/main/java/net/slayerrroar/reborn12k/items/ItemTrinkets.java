@@ -9,40 +9,45 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.items.custom.GlintedItem;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.*;
+import net.slayerrroar.reborn12k.items.custom.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.belt.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.hat.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.necklace.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.ring.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.shoes.*;
+import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.band.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.claw.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.impulses.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.medallion.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.tonic.*;
-import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
+import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class ItemTrinkets {
 
+    //Key
+
+    public static final Item STRONGBOX_KEY = registerItem("strongbox_key", new KeyItem(new FabricItemSettings()));
+
     //Hat
 
-    public static final Item SHADES = registerItem("shades", new ShadesCharm(new FabricItemSettings().maxCount(1)));
+    public static final Item SHADES = registerItem("shades", new Shades(new FabricItemSettings().maxCount(1)));
     public static final Item IRON_CROWN = registerItem("iron_crown", new IronCrown(new FabricItemSettings().maxCount(1)));
-    public static final Item CAT_EARS = registerItem("cat_ears", new CatEarsCharm(new FabricItemSettings().maxCount(1)));
-    public static final Item COW_EARS = registerItem("cow_ears", new CowEarsCharm(new FabricItemSettings().maxCount(1)));
-    public static final Item BUNNY_EARS = registerItem("bunny_ears", new BunnyEarsCharm(new FabricItemSettings().maxCount(1)));
+    public static final Item CAT_EARS = registerItem("cat_ears", new CatEars(new FabricItemSettings().maxCount(1)));
+    public static final Item COW_EARS = registerItem("cow_ears", new CowEars(new FabricItemSettings().maxCount(1)));
+    public static final Item BUNNY_EARS = registerItem("bunny_ears", new BunnyEars(new FabricItemSettings().maxCount(1)));
 
     //Belt
 
+    public static final Item GREEN_BELT = registerItem("green_belt", new GreenBelt(new FabricItemSettings().maxCount(1)));
+    public static final Item RED_BELT = registerItem("red_belt", new RedBelt(new FabricItemSettings().maxCount(1)));
     public static final Item BLACK_BELT = registerItem("black_belt", new BlackBelt(new FabricItemSettings().maxCount(1)));
-    public static final Item EXPERT_BELT = registerItem("expert_belt", new ExpertBelt(new FabricItemSettings().maxCount(1)));
-    public static final Item CHAMPION_BELT = registerItem("champion_belt", new ChampionBelt(new FabricItemSettings().maxCount(1)));
     public static final Item FOCUS_BELT = registerItem("focus_belt", new FocusBelt(new FabricItemSettings().maxCount(1)));
+    public static final Item EXPERT_BELT = registerItem("expert_belt", new ExpertBelt(new FabricItemSettings().maxCount(1)));
 
     //Shoes
 
-    public static final Item COMFY_SHOES = registerItem("comfy_shoes", new ComfyShoes(new FabricItemSettings().maxCount(1)));
+    public static final Item COMFY_LOAFERS = registerItem("comfy_loafers", new ComfyLoafers(new FabricItemSettings().maxCount(1)));
     public static final Item TRAVELER_SHOES = registerItem("traveler_shoes", new TravelerShoes(new FabricItemSettings().maxCount(1)));
     public static final Item RUNNING_SHOES = registerItem("running_shoes", new RunningShoes(new FabricItemSettings().maxCount(1)));
     public static final Item LONG_FALL_BOOTS = registerItem("long_fall_boots", new LongFallBoots(new FabricItemSettings().maxCount(1)));
@@ -121,82 +126,85 @@ public class ItemTrinkets {
 
     public static void addItemsToItemGroup() {
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SHADES);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRON_CROWN);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CAT_EARS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, COW_EARS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BUNNY_EARS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STRONGBOX_KEY);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BLACK_BELT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, EXPERT_BELT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CHAMPION_BELT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, FOCUS_BELT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHADES);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRON_CROWN);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CAT_EARS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, COW_EARS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BUNNY_EARS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, COMFY_SHOES);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TRAVELER_SHOES);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNNING_SHOES);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, LONG_FALL_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GREEN_BELT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RED_BELT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BLACK_BELT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, FOCUS_BELT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EXPERT_BELT);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, OLD_NECKLACE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GOLDEN_NECKLACE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BEJEWELED_NECKLACE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, HEART_PENDANT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GRIFFIN_FEATHER);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GOLEM_CORE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, LEVIATHAN_EYE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, DRAGON_FANG);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ANGEL_TEAR);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BASILISK_TOOTH);
+        addToItemGroup(ItemGroupUtil.REBORN12K, COMFY_LOAFERS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TRAVELER_SHOES);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNNING_SHOES);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LONG_FALL_BOOTS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GOLDEN_RING);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, AWAKENED_GOLDEN_RING);
+        addToItemGroup(ItemGroupUtil.REBORN12K, OLD_NECKLACE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_NECKLACE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BEJEWELED_NECKLACE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, HEART_PENDANT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GRIFFIN_FEATHER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GOLEM_CORE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LEVIATHAN_EYE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DRAGON_FANG);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ANGEL_TEAR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BASILISK_TOOTH);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RING_OF_AIR);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RING_OF_EARTH);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RING_OF_WATER);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RING_OF_FIRE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RING_OF_LIGHT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RING_OF_DARKNESS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_RING);
+        addToItemGroup(ItemGroupUtil.REBORN12K, AWAKENED_GOLDEN_RING);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RING_OF_STRENGTH);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_AIR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_EARTH);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_WATER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_FIRE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_LIGHT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_DARKNESS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, VAGUE_BAND_OF_FORTITUDE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MINOR_BAND_OF_FORTITUDE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, INDELIBLE_BAND_OF_FORTITUDE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GREATER_BAND_OF_FORTITUDE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_STRENGTH);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, VAGUE_BLOODY_CLAW);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MINOR_BLOODY_CLAW);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, INDELIBLE_BLOODY_CLAW);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GREATER_BLOODY_CLAW);
+        addToItemGroup(ItemGroupUtil.REBORN12K, VAGUE_BAND_OF_FORTITUDE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MINOR_BAND_OF_FORTITUDE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, INDELIBLE_BAND_OF_FORTITUDE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_BAND_OF_FORTITUDE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, VAGUE_WAR_MEDALLION);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MINOR_WAR_MEDALLION);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, INDELIBLE_WAR_MEDALLION);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GREATER_WAR_MEDALLION);
+        addToItemGroup(ItemGroupUtil.REBORN12K, VAGUE_BLOODY_CLAW);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MINOR_BLOODY_CLAW);
+        addToItemGroup(ItemGroupUtil.REBORN12K, INDELIBLE_BLOODY_CLAW);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_BLOODY_CLAW);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, VAGUE_FRENZY_TONIC);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MINOR_FRENZY_TONIC);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, INDELIBLE_FRENZY_TONIC);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GREATER_FRENZY_TONIC);
+        addToItemGroup(ItemGroupUtil.REBORN12K, VAGUE_WAR_MEDALLION);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MINOR_WAR_MEDALLION);
+        addToItemGroup(ItemGroupUtil.REBORN12K, INDELIBLE_WAR_MEDALLION);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_WAR_MEDALLION);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, AIR_IMPULSE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, EARTH_IMPULSE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, WATER_IMPULSE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, FIRE_IMPULSE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, LIGHT_IMPULSE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, DARK_IMPULSE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, VAGUE_FRENZY_TONIC);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MINOR_FRENZY_TONIC);
+        addToItemGroup(ItemGroupUtil.REBORN12K, INDELIBLE_FRENZY_TONIC);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_FRENZY_TONIC);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, JETPACK);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BAT_WINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ANGEL_WINGS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, DEMON_WINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, AIR_IMPULSE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EARTH_IMPULSE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WATER_IMPULSE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, FIRE_IMPULSE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LIGHT_IMPULSE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DARK_IMPULSE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GOLD_POUCH);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BLOODY_ROSE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGNIFYING_GLASS);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGNET);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, PHOENIX_PLUME);
+        addToItemGroup(ItemGroupUtil.REBORN12K, JETPACK);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BAT_WINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ANGEL_WINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DEMON_WINGS);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, GOLD_POUCH);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BLOODY_ROSE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGNIFYING_GLASS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGNET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, PHOENIX_PLUME);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

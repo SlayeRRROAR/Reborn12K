@@ -2,9 +2,7 @@ package net.slayerrroar.reborn12k;
 
 import net.fabricmc.api.ModInitializer;
 import net.slayerrroar.reborn12k.armors.RebornArmors;
-import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
-import net.slayerrroar.reborn12k.blocks.BlockGenerics;
-import net.slayerrroar.reborn12k.blocks.BlockRebornOres;
+import net.slayerrroar.reborn12k.blocks.*;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
 import net.slayerrroar.reborn12k.fluids.RebornFluids;
@@ -13,9 +11,7 @@ import net.slayerrroar.reborn12k.recipe.RebornCustomRecipes;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
 import net.slayerrroar.reborn12k.sounds.RebornSounds;
 import net.slayerrroar.reborn12k.tools.RebornTools;
-import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
-import net.slayerrroar.reborn12k.util.RebornFuelUtil;
-import net.slayerrroar.reborn12k.util.Strippable;
+import net.slayerrroar.reborn12k.util.*;
 import net.slayerrroar.reborn12k.villagers.RebornCustomTrades;
 
 import net.slayerrroar.reborn12k.world.generation.RebornWorldGen;
@@ -30,7 +26,7 @@ public class Reborn12K implements ModInitializer {
     @Override
     public void onInitialize() {
 
-        Reborn12KItemGroup.registerItemGroups();
+        ItemGroupUtil.registerItemGroups();
 
         RebornSounds.register();
 
@@ -41,7 +37,7 @@ public class Reborn12K implements ModInitializer {
         ItemGenerics.register();
 
         RebornFluids.register();
-        RebornFuelUtil.register();
+        FuelUtil.register();
 
         ItemTechnical.register();
         ItemMagic.register();
@@ -57,7 +53,7 @@ public class Reborn12K implements ModInitializer {
 
         RebornWorldGen.generate();
 
-        Strippable.register();
+        StrippableUtil.register();
 
         RebornCustomTrades.register();
 

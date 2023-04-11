@@ -5,7 +5,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
 import net.slayerrroar.reborn12k.blocks.BlockGenerics;
 
-public class RebornRenderHelper {
+public class RenderHelperUtil {
     public static void setRenderLayers() {
 
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.MARKET_TABLE, RenderLayer.getCutout());

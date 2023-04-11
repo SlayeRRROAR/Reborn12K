@@ -5,7 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
-import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
+import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
@@ -140,121 +140,121 @@ public class RebornTools {
 
     public static void addItemsToItemGroup() {
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, WOODEN_KATANA);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STONE_KATANA);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRON_KATANA);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, DIAMOND_KATANA);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, NETHERITE_KATANA);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GOLDEN_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WOODEN_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STONE_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRON_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DIAMOND_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, NETHERITE_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TITANIUM_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TITANIUM_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TITANIUM_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TITANIUM_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TITANIUM_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TITANIUM_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_KATANA);
 
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_SHOVEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_PICKAXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_AXE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_HOE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_KATANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SILVER_CLAYMORE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CUTTER_237);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, YAMATO);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, POWER_SWORD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MURASAMA);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BLADEWOLF);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, REBELLION);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RED_QUEEN);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SILENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SILVER_CLAYMORE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CUTTER_237);
+        addToItemGroup(ItemGroupUtil.REBORN12K, YAMATO);
+        addToItemGroup(ItemGroupUtil.REBORN12K, POWER_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MURASAMA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BLADEWOLF);
+        addToItemGroup(ItemGroupUtil.REBORN12K, REBELLION);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RED_QUEEN);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SILENCE);
 
     }
 

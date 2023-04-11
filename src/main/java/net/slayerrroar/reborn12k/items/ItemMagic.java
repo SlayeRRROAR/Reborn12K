@@ -22,7 +22,7 @@ import net.slayerrroar.reborn12k.items.custom.staffs.viridian.*;
 import net.slayerrroar.reborn12k.items.custom.staffs.volcanic.*;
 import net.slayerrroar.reborn12k.items.custom.staffs.windstorm.*;
 import net.slayerrroar.reborn12k.items.custom.magic.runes.*;
-import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
+import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 @SuppressWarnings("unused")
 
@@ -146,57 +146,57 @@ public class ItemMagic {
 
     public static void addItemsToItemGroup() {
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MANAWEAVE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, REFINED_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MANAWEAVE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, REFINED_MANATITE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, WOODEN_WAND);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SILVER_SCEPTER );
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GOLDEN_ROD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHMAGE_STAFF);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WOODEN_WAND);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SILVER_SCEPTER );
+        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_ROD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHMAGE_STAFF);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BLANK_RUNE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BLANK_RUNE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_AIR);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_EARTH);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_WATER);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_FIRE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_AIR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_EARTH);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_WATER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_FIRE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_LIGHT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_DARKNESS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_LIGHT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_DARKNESS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_LIGHTNING);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_NATURE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_ICE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_IRON);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_LIGHTNING);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_NATURE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_ICE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_IRON);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_ORDER);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_CHAOS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_ORDER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_CHAOS);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELEMENTAL_RUNE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ETHEREAL_RUNE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELEMENTAL_RUNE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ETHEREAL_RUNE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUNE_OF_STRENGTH);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_STRENGTH);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, WINDSTORM_MANATITE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, VIRIDIAN_MANATITE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ABYSS_MANATITE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, VOLCANIC_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WINDSTORM_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, VIRIDIAN_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ABYSS_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, VOLCANIC_MANATITE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SUNLIGHT_MANATITE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, NOVILUNIUM_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SUNLIGHT_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, NOVILUNIUM_MANATITE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THUNDERBOLT_MANATITE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TERRA_MANATITE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GLACIAL_MANATITE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, FERRUM_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THUNDERBOLT_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TERRA_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GLACIAL_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, FERRUM_MANATITE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CRIMSON_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CRIMSON_MANATITE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGIC_MIRROR);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ICE_MIRROR);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CELL_PHONE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGIC_MIRROR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ICE_MIRROR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CELL_PHONE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, YGGDRASILL_BRANCH);
+        addToItemGroup(ItemGroupUtil.REBORN12K, YGGDRASILL_BRANCH);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

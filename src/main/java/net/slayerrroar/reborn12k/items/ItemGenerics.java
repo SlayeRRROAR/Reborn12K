@@ -13,7 +13,7 @@ import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.slayerrroar.reborn12k.util.Reborn12KItemGroup;
+import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class ItemGenerics {
 
@@ -163,103 +163,103 @@ public class ItemGenerics {
 
     public static void addItemsToItemGroup() {
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, COAL_PIECE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, COAL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, COAL_PIECE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, COAL_DUST);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TIN_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ALUMINUM_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SILVER_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, LEAD_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, NICKEL_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CHROME_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TITANIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TIN_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ALUMINUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SILVER_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LEAD_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, NICKEL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CHROME_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_INGOT);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTEN_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, VANADIUM_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, NEODYMIUM_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, URANIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTEN_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, VANADIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, NEODYMIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, URANIUM_INGOT);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, COBALT_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, OSMIUM_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, PLATINUM_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, COBALT_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, OSMIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, PLATINUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_INGOT);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ARCHEOSITE_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BRONZE_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CONSTANTAN_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, INVAR_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, STEEL_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, TUNGSTENSTEEL_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, THELOSITE_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ADVANCED_ALLOY_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, IRIDIUM_ALLOY_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ELECTRUM_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SIGNALUM_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, LUMIUM_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENDERIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CONSTANTAN_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, INVAR_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LUMIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_INGOT);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MAGISTEEL_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ORICHALCUM_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MITHRIL_INGOT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, DEMONIC_METAL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DEMONIC_METAL_INGOT);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SAPPHIRE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RUBY);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MANATITE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, SUNSTONE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, MOONSTONE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SAPPHIRE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUBY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SUNSTONE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MOONSTONE);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_TIN);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_ALUMINUM);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_SILVER);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_LEAD);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_NICKEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_CHROME);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_TITANIUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_TIN);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ALUMINUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_SILVER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_LEAD);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_NICKEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_CHROME);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_TITANIUM);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_TUNGSTEN);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_VANADIUM);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_NEODYMIUM);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_URANIUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_TUNGSTEN);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_VANADIUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_NEODYMIUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_URANIUM);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_COBALT);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_OSMIUM);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_PLATINUM);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_IRIDIUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_COBALT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_OSMIUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_PLATINUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_IRIDIUM);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_ARCHEOSITE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_BRONZE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_CONSTANTAN);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_INVAR);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_STEEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_TUNGSTENSTEEL);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_THELOSITE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_ADVANCED_ALLOY);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_IRIDIUM_ALLOY);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_ELECTRUM);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_SIGNALUM);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_LUMIUM);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RAW_ENDERIUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ARCHEOSITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_BRONZE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_CONSTANTAN);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_INVAR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_STEEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_TUNGSTENSTEEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_THELOSITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ADVANCED_ALLOY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_IRIDIUM_ALLOY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ELECTRUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_SIGNALUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_LUMIUM);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ENDERIUM);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, BANANA);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GOLDEN_BANANA);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENCHANTED_GOLDEN_BANANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BANANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_BANANA);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENCHANTED_GOLDEN_BANANA);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CHERRY);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, GOLDEN_CHERRY);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, ENCHANTED_GOLDEN_CHERRY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CHERRY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_CHERRY);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENCHANTED_GOLDEN_CHERRY);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, FLOUR);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, DOUGH);
+        addToItemGroup(ItemGroupUtil.REBORN12K, FLOUR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DOUGH);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, WITHERED_STAR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WITHERED_STAR);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, HAMMER);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CRUSHING_WHEEL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, HAMMER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CRUSHING_WHEEL);
 
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, RED_ENGINE);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CASING_MK237);
-        addToItemGroup(Reborn12KItemGroup.REBORN12K, CERAMITE_PLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RED_ENGINE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CASING_MK237);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CERAMITE_PLATE);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

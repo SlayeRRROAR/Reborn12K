@@ -9,7 +9,7 @@ import org.lwjgl.glfw.GLFW;
 
 @Environment(value = EnvType.CLIENT)
 
-public class RebornKeybinds {
+public class KeybindsUtil {
     public static final KeyBinding trinket = new KeyBinding("key.reborn12k.trinket",
             InputUtil.Type.KEYSYM,
             GLFW.GLFW_KEY_C,

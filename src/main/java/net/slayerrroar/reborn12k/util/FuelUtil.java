@@ -3,7 +3,7 @@ package net.slayerrroar.reborn12k.util;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.slayerrroar.reborn12k.items.ItemGenerics;
 
-public class RebornFuelUtil {
+public class FuelUtil {
 
     public static void register() {
         FuelRegistry registry = FuelRegistry.INSTANCE;
