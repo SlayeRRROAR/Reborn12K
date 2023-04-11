@@ -11,6 +11,12 @@ public class RenderHelperUtil {
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.MARKET_TABLE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.FANCY_LAMP, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.COMMON_STRONGBOX, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.RARE_STRONGBOX, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.EPIC_STRONGBOX, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.LEGENDARY_STRONGBOX, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.ELEMENTAL_STRONGBOX, RenderLayer.getCutout());
+
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.AIR_GEM, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.EARTH_GEM, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.WATER_GEM, RenderLayer.getCutout());
