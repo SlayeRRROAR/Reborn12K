@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.enchantments.enchant;
+package net.slayerrroar.reborn12k.enchantments.enchant.weapon;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -10,8 +10,8 @@ import net.minecraft.sound.SoundEvents;
 
 import java.util.Random;
 
-public class KissOfDeath_Ench extends Enchantment {
-    public KissOfDeath_Ench(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
+public class KoDeathEnchantment extends Enchantment {
+    public KoDeathEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
         super(weight, type, slotTypes);
     }
 
@@ -22,7 +22,6 @@ public class KissOfDeath_Ench extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-
         return super.canAccept(other) && other != Enchantments.SHARPNESS && other != Enchantments.SMITE && other != Enchantments.BANE_OF_ARTHROPODS;
     }
 

@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.enchantments.enchant;
+package net.slayerrroar.reborn12k.enchantments.enchant.armor;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -6,8 +6,8 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.damage.DamageSource;
 
-public class MagicProtection_Ench extends Enchantment {
-    public MagicProtection_Ench(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
+public class MagicProtectionEnchantment extends Enchantment {
+    public MagicProtectionEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
         super(weight, type, slotTypes);
     }
 
