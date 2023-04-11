@@ -2,6 +2,7 @@ package net.slayerrroar.reborn12k.blocks.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
@@ -20,9 +21,8 @@ import java.util.stream.Stream;
 
 @SuppressWarnings("deprecation")
 
-public class MarketBlock extends Block {
-    public static final DirectionProperty FACING = Properties.HOPPER_FACING;
-
+public class MarketBlock extends HorizontalFacingBlock {
+    public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     public MarketBlock(Settings settings) {
         super(settings);
     }
@@ -69,20 +69,19 @@ public class MarketBlock extends Block {
         };
     }
 
-    @Nullable
     @Override
-    public BlockState getPlacementState(ItemPlacementContext itemPlacementContext) {
-        return this.getDefaultState().with(FACING, itemPlacementContext.getPlayerLookDirection().getOpposite());
+    public BlockState rotate(BlockState state, BlockRotation rotation) {
+        return state.with(FACING, rotation.rotate(state.get(FACING)));
     }
 
     @Override
-    public BlockState rotate(BlockState blockState, BlockRotation blockRotation) {
-        return blockState.with(FACING, blockRotation.rotate(blockState.get(FACING)));
+    public BlockState mirror(BlockState state, BlockMirror mirror) {
+        return state.rotate(mirror.getRotation(state.get(FACING)));
     }
 
     @Override
-    public BlockState mirror(BlockState blockState, BlockMirror blockMirror) {
-        return blockState.rotate(blockMirror.getRotation(blockState.get(FACING)));
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        return this.getDefaultState().with(FACING, ctx.getPlayerFacing().getOpposite());
     }
 
     @Override
