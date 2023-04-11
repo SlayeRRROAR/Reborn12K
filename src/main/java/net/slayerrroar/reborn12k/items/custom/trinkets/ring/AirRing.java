@@ -36,9 +36,9 @@ public class AirRing extends TrinketItem {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.ring.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.ring_of_air.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.ring_of_air.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.ring.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.mythical.tooltip"));
     }
 

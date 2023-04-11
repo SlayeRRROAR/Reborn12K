@@ -18,7 +18,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.util.RebornKeybinds;
+import net.slayerrroar.reborn12k.util.KeybindsUtil;
 
 public class MagnetItem extends TrinketItem implements Trinket {
 
@@ -124,13 +124,14 @@ public class MagnetItem extends TrinketItem implements Trinket {
         if(getMagnetState(stack) == MagnetState.ON) {
             attractItemAndXp(entity);
         }
-        if(RebornKeybinds.trinket.isPressed() && !player.getItemCooldownManager().isCoolingDown(this)) {
+        if(KeybindsUtil.trinket.isPressed() && !player.getItemCooldownManager().isCoolingDown(this)) {
             toggleMode(stack, player);
         }
     }
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip2"));
         if(getMagnetState(itemStack) != MagnetState.ON){
@@ -138,7 +139,6 @@ public class MagnetItem extends TrinketItem implements Trinket {
         } else {
             tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip4"));
         }
-        tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.common.tooltip"));
     }
 

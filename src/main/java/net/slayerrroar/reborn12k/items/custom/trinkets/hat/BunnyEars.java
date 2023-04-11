@@ -15,8 +15,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class BunnyEarsCharm extends TrinketItem implements Trinket {
-    public BunnyEarsCharm(Settings settings) {
+public class BunnyEars extends TrinketItem implements Trinket {
+    public BunnyEars(Settings settings) {
         super(settings);
     }
 
@@ -37,9 +37,9 @@ public class BunnyEarsCharm extends TrinketItem implements Trinket {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.hat.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.fake_ears.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.fake_ears.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.hat.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.epic.tooltip"));
     }
 

@@ -29,9 +29,9 @@ public class IronCrown extends TrinketItem implements Trinket {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.hat.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.iron_crown_crown.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.iron_crown_crown.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.hat.tooltip"));
     }
 
 }

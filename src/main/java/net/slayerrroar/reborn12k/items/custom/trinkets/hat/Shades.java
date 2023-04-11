@@ -9,16 +9,16 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ShadesCharm extends TrinketItem implements Trinket {
-    public ShadesCharm(Settings settings) {
+public class Shades extends TrinketItem implements Trinket {
+    public Shades(Settings settings) {
         super(settings);
     }
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.hat.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.shades.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.shades.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.hat.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.rare.tooltip"));
     }
 

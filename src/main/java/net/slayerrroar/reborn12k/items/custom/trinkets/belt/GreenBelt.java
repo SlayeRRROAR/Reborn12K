@@ -17,21 +17,22 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.UUID;
 
-public class BlackBelt extends TrinketItem implements Trinket {
+public class GreenBelt extends TrinketItem implements Trinket {
 
-    public BlackBelt(Settings settings) {
+    public GreenBelt(Settings settings) {
         super(settings);
     }
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(uuid, "reborn12k:attack_damage", 0.3, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(uuid, "reborn12k:attack_damage", 0.1, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         return modifiers;
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.belt.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.epic.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.common.tooltip"));
     }
+
 }

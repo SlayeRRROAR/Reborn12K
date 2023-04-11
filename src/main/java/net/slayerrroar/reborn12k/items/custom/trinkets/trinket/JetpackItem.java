@@ -12,7 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.util.RebornKeybinds;
+import net.slayerrroar.reborn12k.util.KeybindsUtil;
 
 import java.util.List;
 
@@ -27,8 +27,8 @@ public class JetpackItem extends TrinketItem implements Trinket {
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if(TrinketsApi.getTrinketComponent(entity).get().isEquipped(this)) {
-            if(RebornKeybinds.trinket.isPressed() && !entity.isSneaking()) {
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 2, 6, false, false));
+            if(KeybindsUtil.trinket.isPressed() && !entity.isSneaking()) {
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 2, 8, false, false));
             }
         }
     }
@@ -40,9 +40,9 @@ public class JetpackItem extends TrinketItem implements Trinket {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.jetpack.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.jetpack.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 
