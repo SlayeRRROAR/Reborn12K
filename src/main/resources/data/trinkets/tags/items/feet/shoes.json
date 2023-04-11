@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "reborn12k:long_fall_boots",
-    "reborn12k:comfy_shoes",
+    "reborn12k:comfy_loafers",
     "reborn12k:traveler_shoes",
-    "reborn12k:running_shoes"
+    "reborn12k:running_shoes",
+    "reborn12k:long_fall_boots"
   ]
 }
