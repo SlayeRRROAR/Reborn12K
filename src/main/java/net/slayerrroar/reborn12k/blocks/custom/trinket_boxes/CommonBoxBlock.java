@@ -3,7 +3,6 @@ package net.slayerrroar.reborn12k.blocks.custom.trinket_boxes;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Items;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -24,7 +23,7 @@ public class CommonBoxBlock extends Block {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if(!player.isSneaking()) {
-            if(player.getStackInHand(Hand.MAIN_HAND).isOf(Items.EMERALD)) {
+            if(player.getStackInHand(Hand.MAIN_HAND).isOf(ItemTrinkets.STRONGBOX_KEY)) {
                 if(player.isCreative()) {
                     world.breakBlock(pos, false, player);
                 }
@@ -71,10 +70,10 @@ public class CommonBoxBlock extends Block {
         int common_int = commonRand.nextInt(upperbound);
 
         if(common_int == 0) {
-            player.dropItem(ItemTrinkets.BLACK_BELT, 1);
+            player.dropItem(ItemTrinkets.GREEN_BELT, 1);
         }
         if(common_int == 1) {
-            player.dropItem(ItemTrinkets.COMFY_SHOES, 1);
+            player.dropItem(ItemTrinkets.COMFY_LOAFERS, 1);
         }
         if(common_int == 2) {
             player.dropItem(ItemTrinkets.OLD_NECKLACE, 1);
@@ -108,7 +107,7 @@ public class CommonBoxBlock extends Block {
             player.dropItem(ItemTrinkets.SHADES, 1);
         }
         if(rare_int == 1) {
-            player.dropItem(ItemTrinkets.EXPERT_BELT, 1);
+            player.dropItem(ItemTrinkets.RED_BELT, 1);
         }
         if(rare_int == 2) {
             player.dropItem(ItemTrinkets.TRAVELER_SHOES, 1);
@@ -145,7 +144,7 @@ public class CommonBoxBlock extends Block {
             player.dropItem(ItemTrinkets.BUNNY_EARS, 1);
         }
         if(epic_int == 3) {
-            player.dropItem(ItemTrinkets.CHAMPION_BELT, 1);
+            player.dropItem(ItemTrinkets.BLACK_BELT, 1);
         }
         if(epic_int == 4) {
             player.dropItem(ItemTrinkets.RUNNING_SHOES, 1);

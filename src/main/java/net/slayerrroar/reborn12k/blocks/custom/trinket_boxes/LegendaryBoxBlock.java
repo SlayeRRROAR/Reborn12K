@@ -3,7 +3,6 @@ package net.slayerrroar.reborn12k.blocks.custom.trinket_boxes;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Items;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -24,7 +23,7 @@ public class LegendaryBoxBlock extends Block {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if(!player.isSneaking()) {
-            if(player.getStackInHand(Hand.MAIN_HAND).isOf(Items.EMERALD)) {
+            if(player.getStackInHand(Hand.MAIN_HAND).isOf(ItemTrinkets.STRONGBOX_KEY)) {
                 if(player.isCreative()) {
                     world.breakBlock(pos, false, player);
                 }
@@ -59,7 +58,7 @@ public class LegendaryBoxBlock extends Block {
 
     private void randomLegendary(PlayerEntity player) {
         Random randLegend = new Random();
-        int upperbound = 13;
+        int upperbound = 15;
         int legend_int = randLegend.nextInt(upperbound);
 
         if(legend_int == 0) {
@@ -96,9 +95,15 @@ public class LegendaryBoxBlock extends Block {
             player.dropItem(ItemTrinkets.HEART_PENDANT, 1);
         }
         if(legend_int == 11) {
-            player.dropItem(ItemTrinkets.JETPACK, 1);
+            player.dropItem(ItemTrinkets.FOCUS_BELT, 1);
         }
         if(legend_int == 12) {
+            player.dropItem(ItemTrinkets.EXPERT_BELT, 1);
+        }
+        if(legend_int == 13) {
+            player.dropItem(ItemTrinkets.JETPACK, 1);
+        }
+        if(legend_int == 14) {
             player.dropItem(ItemTrinkets.MAGNIFYING_GLASS, 1);
         }
     }
