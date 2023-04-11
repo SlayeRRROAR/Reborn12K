@@ -28,6 +28,11 @@
     "reborn12k:ash_door",
     "reborn12k:cherry_door",
     "reborn12k:ash_trapdoor",
-    "reborn12k:cherry_trapdoor"
+    "reborn12k:cherry_trapdoor",
+    "reborn12k:common_strongbox",
+    "reborn12k:rare_strongbox",
+    "reborn12k:epic_strongbox",
+    "reborn12k:legendary_strongbox",
+    "reborn12k:elemental_strongbox"
   ]
 }
