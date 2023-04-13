@@ -45,6 +45,7 @@ public class ItemTrinkets {
     public static final Item BLACK_BELT = registerItem("black_belt", new BlackBelt(new FabricItemSettings().maxCount(1)));
     public static final Item FOCUS_BELT = registerItem("focus_belt", new FocusBelt(new FabricItemSettings().maxCount(1)));
     public static final Item EXPERT_BELT = registerItem("expert_belt", new ExpertBelt(new FabricItemSettings().maxCount(1)));
+    public static final Item ANTIGRAV_BELT = registerItem("antigrav_belt", new AntiGravBelt(new FabricItemSettings().maxCount(1)));
 
     //Shoes
 
@@ -108,26 +109,26 @@ public class ItemTrinkets {
     public static final Item INDELIBLE_LUCKY_CHARM = registerItem("indelible_lucky_charm", new IndelibleLuckyItem(new FabricItemSettings().maxCount(1)));
     public static final Item GREATER_LUCKY_CHARM = registerItem("greater_lucky_charm", new GreaterLuckyItem(new FabricItemSettings().maxCount(1)));
 
-    public static final Item JETPACK = registerItem("jetpack", new JetpackItem(new FabricItemSettings().maxCount(1)));
-    public static final Item ANGEL_WINGS = registerItem("angel_wings", new WingsItem(new FabricItemSettings().maxCount(1)));
-    public static final Item DEMON_WINGS = registerItem("demon_wings", new WingsItem(new FabricItemSettings().maxCount(1)));
-    public static final Item BAT_WINGS = registerItem("bat_wings", new WingsItem(new FabricItemSettings().maxCount(1)));
+    public static final Item JETPACK = registerItem("jetpack", new Jetpack(new FabricItemSettings().maxCount(1)));
+    public static final Item ANGEL_WINGS = registerItem("angel_wings", new AngelWings(new FabricItemSettings().maxCount(1)));
+    public static final Item DEMON_WINGS = registerItem("demon_wings", new AngelWings(new FabricItemSettings().maxCount(1)));
+    public static final Item BAT_WINGS = registerItem("bat_wings", new AngelWings(new FabricItemSettings().maxCount(1)));
 
-    public static final Item GOLD_POUCH = registerItem("gold_pouch", new GoldPouchItem(new FabricItemSettings().maxCount(1)));
-    public static final Item WEAK_SPRING = registerItem("weak_spring", new SpringItem(new FabricItemSettings().maxCount(1)));
-    public static final Item FF_SPRING = registerItem("ff_spring", new FFSpringItem(new FabricItemSettings().maxCount(1)));
-    public static final Item BLOODY_ROSE = registerItem("bloody_rose", new BloodyRoseItem(new FabricItemSettings().maxCount(1)));
-    public static final Item ENDLESS_QUIVER = registerItem("endless_quiver", new EndlessQuiverItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GOLD_POUCH = registerItem("gold_pouch", new GoldPouch(new FabricItemSettings().maxCount(1)));
+    public static final Item WEAK_SPRING = registerItem("weak_spring", new WeakSpring(new FabricItemSettings().maxCount(1)));
+    public static final Item FF_SPRING = registerItem("ff_spring", new FFSpring(new FabricItemSettings().maxCount(1)));
+    public static final Item BLOODY_ROSE = registerItem("bloody_rose", new BloodyRose(new FabricItemSettings().maxCount(1)));
+    public static final Item ENDLESS_QUIVER = registerItem("endless_quiver", new EndlessQuiver(new FabricItemSettings().maxCount(1)));
     public static final Item MAGNIFYING_GLASS = registerItem("magnifying_glass", new MagnifyingGlass(new FabricItemSettings().maxCount(1)));
-    public static final Item MAGNET = registerItem("magnet", new MagnetItem(new FabricItemSettings().maxCount(1)));
+    public static final Item MAGNET = registerItem("magnet", new Magnet(new FabricItemSettings().maxCount(1)));
     public static final Item PHOENIX_PLUME = registerItem("phoenix_plume", new PhoenixPlume(new FabricItemSettings().maxCount(1)));
 
-    public static final Item GRIFFIN_FEATHER = registerItem("griffin_feather", new GriffinFeatherItem(new FabricItemSettings().maxCount(1)));
-    public static final Item GOLEM_CORE = registerItem("golem_core", new GolemCoreItem(new FabricItemSettings().maxCount(1)));
-    public static final Item LEVIATHAN_EYE = registerItem("leviathan_eye", new LeviathanEyeItem(new FabricItemSettings().maxCount(1)));
-    public static final Item DRAGON_FANG = registerItem("dragon_fang", new DragonFangItem(new FabricItemSettings().maxCount(1)));
-    public static final Item ANGEL_TEAR = registerItem("angel_tear", new LightImpItem(new FabricItemSettings().maxCount(1)));
-    public static final Item BASILISK_TOOTH = registerItem("basilisk_tooth", new BasiliskToothItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GRIFFIN_FEATHER = registerItem("griffin_feather", new GriffinFeather(new FabricItemSettings().maxCount(1)));
+    public static final Item GOLEM_CORE = registerItem("golem_core", new GolemCore(new FabricItemSettings().maxCount(1)));
+    public static final Item LEVIATHAN_EYE = registerItem("leviathan_eye", new LeviathanEye(new FabricItemSettings().maxCount(1)));
+    public static final Item DRAGON_FANG = registerItem("dragon_fang", new DragonFang(new FabricItemSettings().maxCount(1)));
+    public static final Item ANGEL_TEAR = registerItem("angel_tear", new RadiantTrinket(new FabricItemSettings().maxCount(1)));
+    public static final Item BASILISK_TOOTH = registerItem("basilisk_tooth", new BasiliskTooth(new FabricItemSettings().maxCount(1)));
 
 
     private static Item registerItem(String name, Item item) {
@@ -149,6 +150,7 @@ public class ItemTrinkets {
         addToItemGroup(ItemGroupUtil.REBORN12K, BLACK_BELT);
         addToItemGroup(ItemGroupUtil.REBORN12K, FOCUS_BELT);
         addToItemGroup(ItemGroupUtil.REBORN12K, EXPERT_BELT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ANTIGRAV_BELT);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, COMFY_LOAFERS);
         addToItemGroup(ItemGroupUtil.REBORN12K, TRAVELER_SHOES);

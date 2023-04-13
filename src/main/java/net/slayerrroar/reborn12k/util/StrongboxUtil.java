@@ -46,7 +46,7 @@ public class StrongboxUtil {
 
     public static void randomRare(PlayerEntity player) {
         Random randRare = new Random();
-        int upperbound = 10;
+        int upperbound = 11;
         int rare_int = randRare.nextInt(upperbound);
 
         if(rare_int == 0) {
@@ -56,27 +56,30 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.RED_BELT, 1);
         }
         if(rare_int == 2) {
-            player.dropItem(ItemTrinkets.TRAVELER_SHOES, 1);
+            player.dropItem(ItemTrinkets.ANTIGRAV_BELT, 1);
         }
         if(rare_int == 3) {
-            player.dropItem(ItemTrinkets.GOLDEN_NECKLACE, 1);
+            player.dropItem(ItemTrinkets.TRAVELER_SHOES, 1);
         }
         if(rare_int == 4) {
-            player.dropItem(ItemTrinkets.MINOR_BAND_OF_FORTITUDE, 1);
+            player.dropItem(ItemTrinkets.GOLDEN_NECKLACE, 1);
         }
         if(rare_int == 5) {
-            player.dropItem(ItemTrinkets.MINOR_BLOODY_CLAW, 1);
+            player.dropItem(ItemTrinkets.MINOR_BAND_OF_FORTITUDE, 1);
         }
         if(rare_int == 6) {
-            player.dropItem(ItemTrinkets.MINOR_MEDALLION, 1);
+            player.dropItem(ItemTrinkets.MINOR_BLOODY_CLAW, 1);
         }
         if(rare_int == 7) {
-            player.dropItem(ItemTrinkets.MINOR_FRENZY_TONIC, 1);
+            player.dropItem(ItemTrinkets.MINOR_MEDALLION, 1);
         }
         if(rare_int == 8) {
-            player.dropItem(ItemTrinkets.MINOR_LUCKY_CHARM, 1);
+            player.dropItem(ItemTrinkets.MINOR_FRENZY_TONIC, 1);
         }
         if(rare_int == 9) {
+            player.dropItem(ItemTrinkets.MINOR_LUCKY_CHARM, 1);
+        }
+        if(rare_int == 10) {
             player.dropItem(ItemTrinkets.WEAK_SPRING, 1);
         }
     }
