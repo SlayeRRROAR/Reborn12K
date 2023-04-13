@@ -19,6 +19,7 @@
     "QuiverMixin",
     "ShadesMixin",
     "SignalumMixin",
+    "SpringMixin",
     "SwordCritMixin",
     "ThelositeMixin",
     "TungstensteelMixin"
