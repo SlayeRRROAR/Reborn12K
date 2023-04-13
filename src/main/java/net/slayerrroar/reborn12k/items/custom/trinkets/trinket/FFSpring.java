@@ -10,15 +10,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class SpringItem extends TrinketItem implements Trinket {
-    public SpringItem(Settings settings) {
+public class FFSpring extends TrinketItem implements Trinket {
+    public FFSpring(Settings settings) {
         super(settings);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.rare.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.epic.tooltip"));
     }
 
 }

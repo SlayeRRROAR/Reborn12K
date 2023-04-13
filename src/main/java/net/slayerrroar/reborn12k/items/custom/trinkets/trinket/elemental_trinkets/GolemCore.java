@@ -20,8 +20,8 @@ import java.util.UUID;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 
-public class GolemCoreItem extends TrinketItem implements Trinket {
-    public GolemCoreItem(Settings settings) {
+public class GolemCore extends TrinketItem implements Trinket {
+    public GolemCore(Settings settings) {
         super(settings);
     }
 

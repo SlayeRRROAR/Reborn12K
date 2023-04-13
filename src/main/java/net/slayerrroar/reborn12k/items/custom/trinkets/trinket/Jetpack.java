@@ -18,9 +18,9 @@ import java.util.List;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 
-public class JetpackItem extends TrinketItem implements Trinket {
+public class Jetpack extends TrinketItem implements Trinket {
 
-    public JetpackItem(Settings settings) {
+    public Jetpack(Settings settings) {
         super(settings);
     }
 

@@ -20,14 +20,14 @@ import java.util.UUID;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 
-public class GriffinFeatherItem extends TrinketItem implements Trinket {
-    public GriffinFeatherItem(Settings settings) {
+public class BasiliskTooth extends TrinketItem implements Trinket {
+    public BasiliskTooth(Settings settings) {
         super(settings);
     }
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.AIR_PENDANT);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.DARK_PENDANT);
     }
 
     @Override
@@ -46,7 +46,7 @@ public class GriffinFeatherItem extends TrinketItem implements Trinket {
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
         if (!world.isClient) {
-            if(!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.AIR_PENDANT)) {
+            if(!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.DARK_PENDANT)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }
@@ -56,14 +56,14 @@ public class GriffinFeatherItem extends TrinketItem implements Trinket {
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(uuid, "reborn12k:movement_speed", 0.5, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(uuid, "reborn12k:attack_damage", 0.75, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         return modifiers;
     }
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.air.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.dark.tooltip"));
     }
 
 }

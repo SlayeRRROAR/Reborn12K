@@ -10,17 +10,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class EndlessQuiverItem extends TrinketItem implements Trinket {
-    public EndlessQuiverItem(Settings settings) {
+public class GoldPouch extends TrinketItem implements Trinket {
+    public GoldPouch(Settings settings) {
         super(settings);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.endless_quiver.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.endless_quiver.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.epic.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.gold_pouch.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.common.tooltip"));
     }
-
 }

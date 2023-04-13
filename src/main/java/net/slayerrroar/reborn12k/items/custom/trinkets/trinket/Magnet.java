@@ -20,12 +20,12 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.util.KeybindsUtil;
 
-public class MagnetItem extends TrinketItem implements Trinket {
+public class Magnet extends TrinketItem implements Trinket {
 
     static int magnetRange = 5;
     static final String MAGNET_STATE = "Magnet State";
 
-    public MagnetItem(Settings settings) {
+    public Magnet(Settings settings) {
         super(settings);
     }
 

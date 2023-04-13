@@ -12,8 +12,8 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class WingsItem extends TrinketItem implements Trinket {
-    public WingsItem(Settings settings) {
+public class AngelWings extends TrinketItem implements Trinket {
+    public AngelWings(Settings settings) {
         super(settings);
     }
 

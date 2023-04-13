@@ -20,14 +20,14 @@ import java.util.UUID;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 
-public class LeviathanEyeItem extends TrinketItem implements Trinket {
-    public LeviathanEyeItem(Settings settings) {
+public class RadiantTrinket extends TrinketItem implements Trinket {
+    public RadiantTrinket(Settings settings) {
         super(settings);
     }
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.WATER_PENDANT);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.LIGHT_PENDANT);
     }
 
     @Override
@@ -46,7 +46,7 @@ public class LeviathanEyeItem extends TrinketItem implements Trinket {
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
         if (!world.isClient) {
-            if(!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.WATER_PENDANT)) {
+            if(!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.LIGHT_PENDANT)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }
@@ -54,19 +54,10 @@ public class LeviathanEyeItem extends TrinketItem implements Trinket {
         super.tick(stack, slot, entity);
     }
 
-    public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
-        var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "reborn12k:max_health", 0.2, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(uuid, "reborn12k:movement_speed", 0.1, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-        modifiers.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(uuid, "reborn12k:attack_damage", 0.1, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-        modifiers.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(uuid, "reborn12k:attack_speed", 0.05, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-        return modifiers;
-    }
-
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.water.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.light.tooltip"));
     }
 
 }

@@ -10,16 +10,16 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class BloodyRoseItem extends TrinketItem implements Trinket {
-    public BloodyRoseItem(Settings settings) {
+public class EndlessQuiver extends TrinketItem implements Trinket {
+    public EndlessQuiver(Settings settings) {
         super(settings);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.bloody_rose.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.bloody_rose.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.endless_quiver.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.endless_quiver.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.epic.tooltip"));
     }
 
