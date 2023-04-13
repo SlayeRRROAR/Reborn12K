@@ -28,7 +28,7 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.VAGUE_BLOODY_CLAW, 1);
         }
         if(common_int == 5) {
-            player.dropItem(ItemTrinkets.VAGUE_WAR_MEDALLION, 1);
+            player.dropItem(ItemTrinkets.VAGUE_MEDALLION, 1);
         }
         if(common_int == 6) {
             player.dropItem(ItemTrinkets.VAGUE_FRENZY_TONIC, 1);
@@ -46,7 +46,7 @@ public class StrongboxUtil {
 
     public static void randomRare(PlayerEntity player) {
         Random randRare = new Random();
-        int upperbound = 9;
+        int upperbound = 10;
         int rare_int = randRare.nextInt(upperbound);
 
         if(rare_int == 0) {
@@ -68,7 +68,7 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.MINOR_BLOODY_CLAW, 1);
         }
         if(rare_int == 6) {
-            player.dropItem(ItemTrinkets.MINOR_WAR_MEDALLION, 1);
+            player.dropItem(ItemTrinkets.MINOR_MEDALLION, 1);
         }
         if(rare_int == 7) {
             player.dropItem(ItemTrinkets.MINOR_FRENZY_TONIC, 1);
@@ -76,11 +76,14 @@ public class StrongboxUtil {
         if(rare_int == 8) {
             player.dropItem(ItemTrinkets.MINOR_LUCKY_CHARM, 1);
         }
+        if(rare_int == 9) {
+            player.dropItem(ItemTrinkets.WEAK_SPRING, 1);
+        }
     }
 
     public static void randomEpic(PlayerEntity player) {
         Random randEpic = new Random();
-        int upperbound = 12;
+        int upperbound = 13;
         int epic_int = randEpic.nextInt(upperbound);
 
         if(epic_int == 0) {
@@ -90,7 +93,7 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.INDELIBLE_BLOODY_CLAW, 1);
         }
         if(epic_int == 2) {
-            player.dropItem(ItemTrinkets.INDELIBLE_WAR_MEDALLION, 1);
+            player.dropItem(ItemTrinkets.INDELIBLE_MEDALLION, 1);
         }
         if(epic_int == 3) {
             player.dropItem(ItemTrinkets.INDELIBLE_FRENZY_TONIC, 1);
@@ -117,6 +120,9 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.BEJEWELED_NECKLACE, 1);
         }
         if(epic_int == 11) {
+            player.dropItem(ItemTrinkets.FF_SPRING, 1);
+        }
+        if(epic_int == 12) {
             player.dropItem(ItemTrinkets.BLOODY_ROSE, 1);
         }
 
@@ -134,34 +140,34 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.GREATER_BLOODY_CLAW, 1);
         }
         if(legend_int == 2) {
-            player.dropItem(ItemTrinkets.GREATER_WAR_MEDALLION, 1);
+            player.dropItem(ItemTrinkets.GREATER_MEDALLION, 1);
         }
         if(legend_int == 3) {
             player.dropItem(ItemTrinkets.GREATER_FRENZY_TONIC, 1);
         }
         if(legend_int == 4) {
-            player.dropItem(ItemTrinkets.GREATER_FRENZY_TONIC, 1);
+            player.dropItem(ItemTrinkets.GREATER_LUCKY_CHARM, 1);
         }
         if(legend_int == 5) {
-            player.dropItem(ItemTrinkets.AIR_IMPULSE, 1);
+            player.dropItem(ItemTrinkets.HEART_PENDANT, 1);
         }
         if(legend_int == 6) {
-            player.dropItem(ItemTrinkets.EARTH_IMPULSE, 1);
+            player.dropItem(ItemTrinkets.AIR_PENDANT, 1);
         }
         if(legend_int == 7) {
-            player.dropItem(ItemTrinkets.WATER_IMPULSE, 1);
+            player.dropItem(ItemTrinkets.EARTH_PENDANT, 1);
         }
         if(legend_int == 8) {
-            player.dropItem(ItemTrinkets.FIRE_IMPULSE, 1);
+            player.dropItem(ItemTrinkets.WATER_PENDANT, 1);
         }
         if(legend_int == 9) {
-            player.dropItem(ItemTrinkets.LIGHT_IMPULSE, 1);
+            player.dropItem(ItemTrinkets.FIRE_PENDANT, 1);
         }
         if(legend_int == 10) {
-            player.dropItem(ItemTrinkets.DARK_IMPULSE, 1);
+            player.dropItem(ItemTrinkets.LIGHT_PENDANT, 1);
         }
         if(legend_int == 11) {
-            player.dropItem(ItemTrinkets.HEART_PENDANT, 1);
+            player.dropItem(ItemTrinkets.DARK_PENDANT, 1);
         }
         if(legend_int == 12) {
             player.dropItem(ItemTrinkets.JETPACK, 1);
@@ -183,6 +189,8 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.PHOENIX_PLUME, 1);
         }
     }
+
+    //todo: add more elemental trinkets
 
     public static void randomAir(PlayerEntity player) {
         Random randAir = new Random();
