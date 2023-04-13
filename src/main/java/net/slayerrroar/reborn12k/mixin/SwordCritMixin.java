@@ -34,7 +34,7 @@ public class SwordCritMixin {
         return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.GREATER_LUCKY_CHARM);
     }
     private boolean hasRadiant(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.LIGHT_IMPULSE);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.ANGEL_TEAR);
     }
 
     @Inject(method = "postHit", at = @At(value = "HEAD"))
@@ -50,7 +50,7 @@ public class SwordCritMixin {
         int minorLuck = hasMinorLuck(attacker) ? 0 : 15;
         int indelibleLuck = hasIndelibleLuck(attacker) ? 0 : 20;
         int greaterLuck = hasGreaterLuck(attacker) ? 0 : 25;
-        int radiant = hasRadiant(attacker) ? 0 : 5;
+        int radiant = hasRadiant(attacker) ? 0 : 30;
 
         int critChance = int_random + vagueLuck + minorLuck + indelibleLuck + greaterLuck + radiant;
 
