@@ -31,8 +31,8 @@ public class FirePendant extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.necklace.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.fire_impulse.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.fire_impulse.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.fire_pendant.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.fire_pendant.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 }
