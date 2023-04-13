@@ -26,13 +26,6 @@
     "reborn12k:indelible_lucky_charm",
     "reborn12k:greater_lucky_charm",
 
-    "reborn12k:air_impulse",
-    "reborn12k:earth_impulse",
-    "reborn12k:water_impulse",
-    "reborn12k:fire_impulse",
-    "reborn12k:light_impulse",
-    "reborn12k:dark_impulse",
-
     "reborn12k:jetpack",
     "reborn12k:angel_wings",
     "reborn12k:demon_wings",
@@ -45,6 +38,13 @@
     "reborn12k:endless_quiver",
     "reborn12k:magnifying_glass",
     "reborn12k:magnet",
-    "reborn12k:phoenix_plume"
+    "reborn12k:phoenix_plume",
+
+    "reborn12k:griffin_feather",
+    "reborn12k:golem_core",
+    "reborn12k:leviathan_eye",
+    "reborn12k:dragon_fang",
+    "reborn12k:angel_tear",
+    "reborn12k:basilisk_tooth"
   ]
 }

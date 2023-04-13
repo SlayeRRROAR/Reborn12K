@@ -5,11 +5,12 @@
     "reborn12k:golden_necklace",
     "reborn12k:bejeweled_necklace",
     "reborn12k:heart_pendant",
-    "reborn12k:griffin_feather",
-    "reborn12k:golem_core",
-    "reborn12k:leviathan_eye",
-    "reborn12k:dragon_fang",
-    "reborn12k:angel_tear",
-    "reborn12k:basilisk_tooth"
+
+    "reborn12k:air_pendant",
+    "reborn12k:earth_pendant",
+    "reborn12k:water_pendant",
+    "reborn12k:fire_pendant",
+    "reborn12k:light_pendant",
+    "reborn12k:dark_pendant"
   ]
 }
