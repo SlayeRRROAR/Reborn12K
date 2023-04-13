@@ -33,6 +33,9 @@ public class SwordCritMixin {
     private boolean hasGreaterLuck(LivingEntity entity) {
         return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.GREATER_LUCKY_CHARM);
     }
+    private boolean hasRadiant(LivingEntity entity) {
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.LIGHT_IMPULSE);
+    }
 
     @Inject(method = "postHit", at = @At(value = "HEAD"))
     public void postHit(ItemStack stack, LivingEntity target, LivingEntity attacker, CallbackInfoReturnable<Boolean> cir) {
@@ -43,20 +46,21 @@ public class SwordCritMixin {
         int upperbound = 101;
         int int_random = rand.nextInt(upperbound);
 
-        int vagueLuck = hasVagueLuck(attacker) ? 0 : 5;
-        int minorLuck = hasMinorLuck(attacker) ? 0 : 10;
-        int indelibleLuck = hasIndelibleLuck(attacker) ? 0 : 15;
-        int greaterLuck = hasGreaterLuck(attacker) ? 0 : 20;
+        int vagueLuck = hasVagueLuck(attacker) ? 0 : 10;
+        int minorLuck = hasMinorLuck(attacker) ? 0 : 15;
+        int indelibleLuck = hasIndelibleLuck(attacker) ? 0 : 20;
+        int greaterLuck = hasGreaterLuck(attacker) ? 0 : 25;
+        int radiant = hasRadiant(attacker) ? 0 : 5;
 
-        int critChance = int_random + vagueLuck + minorLuck + indelibleLuck + greaterLuck;
+        int critChance = int_random + vagueLuck + minorLuck + indelibleLuck + greaterLuck + radiant;
 
-        if(critChance > 90) {
+        if(critChance > 95) {
             float critBonus = 1.5F;
             target.damage(DamageSource.GENERIC, (damage * critBonus));
             target.world.playSound(null, target.getX(), target.getY(), target.getZ(),
                     SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, SoundCategory.PLAYERS, 1.0F, 1.0F);
         }
-        if(critChance <= 90) {
+        if(critChance <= 95) {
             target.damage(DamageSource.GENERIC, (damage));
         }
     }
