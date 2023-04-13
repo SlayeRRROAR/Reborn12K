@@ -34,4 +34,5 @@ public class BlackBelt extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.belt.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.epic.tooltip"));
     }
+
 }
