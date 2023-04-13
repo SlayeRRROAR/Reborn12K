@@ -127,7 +127,7 @@ public class ItemTrinkets {
     public static final Item GOLEM_CORE = registerItem("golem_core", new GolemCore(new FabricItemSettings().maxCount(1)));
     public static final Item LEVIATHAN_EYE = registerItem("leviathan_eye", new LeviathanEye(new FabricItemSettings().maxCount(1)));
     public static final Item DRAGON_FANG = registerItem("dragon_fang", new DragonFang(new FabricItemSettings().maxCount(1)));
-    public static final Item ANGEL_TEAR = registerItem("angel_tear", new RadiantTrinket(new FabricItemSettings().maxCount(1)));
+    public static final Item ANGELIC_HALO = registerItem("angelic_halo", new RadiantTrinket(new FabricItemSettings().maxCount(1)));
     public static final Item BASILISK_TOOTH = registerItem("basilisk_tooth", new BasiliskTooth(new FabricItemSettings().maxCount(1)));
 
 
@@ -224,7 +224,7 @@ public class ItemTrinkets {
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLEM_CORE);
         addToItemGroup(ItemGroupUtil.REBORN12K, LEVIATHAN_EYE);
         addToItemGroup(ItemGroupUtil.REBORN12K, DRAGON_FANG);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ANGEL_TEAR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ANGELIC_HALO);
         addToItemGroup(ItemGroupUtil.REBORN12K, BASILISK_TOOTH);
     }
 

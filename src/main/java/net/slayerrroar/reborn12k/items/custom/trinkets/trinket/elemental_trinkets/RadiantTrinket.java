@@ -1,22 +1,17 @@
 package net.slayerrroar.reborn12k.items.custom.trinkets.trinket.elemental_trinkets;
 
-import com.google.common.collect.Multimap;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.Trinket;
 import dev.emi.trinkets.api.TrinketItem;
 import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.items.ItemTrinkets;
 
 import java.util.List;
-import java.util.UUID;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 

@@ -241,7 +241,7 @@ public class StrongboxUtil {
         int light_int = randLight.nextInt(upperbound);
 
         if(light_int == 0) {
-            player.dropItem(ItemTrinkets.ANGEL_TEAR, 1);
+            player.dropItem(ItemTrinkets.ANGELIC_HALO, 1);
         }
     }
 
