@@ -18,13 +18,14 @@ import java.util.List;
 import java.util.UUID;
 
 public class GreaterMedallion extends TrinketItem implements Trinket {
+
     public GreaterMedallion(Settings settings) {
         super(settings);
     }
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, new EntityAttributeModifier(uuid, "reborn12k:attack_knockback", 0.5, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(uuid, "reborn12k:attack_speed", 0.25, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         return modifiers;
     }
 
