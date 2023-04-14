@@ -20,7 +20,10 @@ public abstract class SpringMixin {
         if(TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.WEAK_SPRING)) {
             cir.setReturnValue(Math.max(cir.getReturnValueI() + 1, 0));
         }
-        if(TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.FF_SPRING)) {
+        if(TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.STRONG_SPRING)) {
+            cir.setReturnValue(Math.max(cir.getReturnValueI() + 2, 0));
+        }
+        if(TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.ENCHANTED_SPRING)) {
             cir.setReturnValue(Math.max(cir.getReturnValueI() + 3, 0));
         }
 
