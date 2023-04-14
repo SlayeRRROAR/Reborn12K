@@ -115,20 +115,27 @@ public class ItemTrinkets {
     public static final Item BAT_WINGS = registerItem("bat_wings", new AngelWings(new FabricItemSettings().maxCount(1)));
 
     public static final Item GOLD_POUCH = registerItem("gold_pouch", new GoldPouch(new FabricItemSettings().maxCount(1)));
+    public static final Item MAGNET = registerItem("magnet", new Magnet(new FabricItemSettings().maxCount(1)));
     public static final Item WEAK_SPRING = registerItem("weak_spring", new WeakSpring(new FabricItemSettings().maxCount(1)));
-    public static final Item FF_SPRING = registerItem("ff_spring", new FFSpring(new FabricItemSettings().maxCount(1)));
+    public static final Item STRONG_SPRING = registerItem("strong_spring", new StrongSpring(new FabricItemSettings().maxCount(1)));
     public static final Item BLOODY_ROSE = registerItem("bloody_rose", new BloodyRose(new FabricItemSettings().maxCount(1)));
     public static final Item ENDLESS_QUIVER = registerItem("endless_quiver", new EndlessQuiver(new FabricItemSettings().maxCount(1)));
+    public static final Item ENCHANTED_SPRING = registerItem("enchanted_spring", new EnchantedSpring(new FabricItemSettings().maxCount(1)));
     public static final Item MAGNIFYING_GLASS = registerItem("magnifying_glass", new MagnifyingGlass(new FabricItemSettings().maxCount(1)));
-    public static final Item MAGNET = registerItem("magnet", new Magnet(new FabricItemSettings().maxCount(1)));
     public static final Item PHOENIX_PLUME = registerItem("phoenix_plume", new PhoenixPlume(new FabricItemSettings().maxCount(1)));
 
     public static final Item GRIFFIN_FEATHER = registerItem("griffin_feather", new GriffinFeather(new FabricItemSettings().maxCount(1)));
+    public static final Item BOTTLE_OF_WIND = registerItem("bottle_of_wind", new BottleOfWind(new FabricItemSettings().maxCount(1)));
     public static final Item GOLEM_CORE = registerItem("golem_core", new GolemCore(new FabricItemSettings().maxCount(1)));
+    public static final Item BLOODFLOWER = registerItem("bloodflower", new Bloodflower(new FabricItemSettings().maxCount(1)));
     public static final Item LEVIATHAN_EYE = registerItem("leviathan_eye", new LeviathanEye(new FabricItemSettings().maxCount(1)));
+    public static final Item FLASK_OF_UNDERTOW = registerItem("flask_of_undertow", new FlaskOfUndertow(new FabricItemSettings().maxCount(1)));
     public static final Item DRAGON_FANG = registerItem("dragon_fang", new DragonFang(new FabricItemSettings().maxCount(1)));
+    public static final Item CRYSTALIZED_FIRE = registerItem("crystalized_fire", new CrystalizedFire(new FabricItemSettings().maxCount(1)));
     public static final Item ANGELIC_HALO = registerItem("angelic_halo", new RadiantTrinket(new FabricItemSettings().maxCount(1)));
+    public static final Item PRAYER_CANDLE = registerItem("prayer_candle", new PrayerCandle(new FabricItemSettings().maxCount(1)));
     public static final Item BASILISK_TOOTH = registerItem("basilisk_tooth", new BasiliskTooth(new FabricItemSettings().maxCount(1)));
+    public static final Item ESSENCE_OF_DECAY = registerItem("essence_of_decay", new EssenceOfDecay(new FabricItemSettings().maxCount(1)));
 
 
     private static Item registerItem(String name, Item item) {
@@ -212,20 +219,27 @@ public class ItemTrinkets {
         addToItemGroup(ItemGroupUtil.REBORN12K, BAT_WINGS);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLD_POUCH);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGNET);
         addToItemGroup(ItemGroupUtil.REBORN12K, WEAK_SPRING);
-        addToItemGroup(ItemGroupUtil.REBORN12K, FF_SPRING);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STRONG_SPRING);
         addToItemGroup(ItemGroupUtil.REBORN12K, BLOODY_ROSE);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDLESS_QUIVER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENCHANTED_SPRING);
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGNIFYING_GLASS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGNET);
         addToItemGroup(ItemGroupUtil.REBORN12K, PHOENIX_PLUME);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, GRIFFIN_FEATHER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BOTTLE_OF_WIND);
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLEM_CORE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BLOODFLOWER);
         addToItemGroup(ItemGroupUtil.REBORN12K, LEVIATHAN_EYE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, FLASK_OF_UNDERTOW);
         addToItemGroup(ItemGroupUtil.REBORN12K, DRAGON_FANG);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CRYSTALIZED_FIRE);
         addToItemGroup(ItemGroupUtil.REBORN12K, ANGELIC_HALO);
+        addToItemGroup(ItemGroupUtil.REBORN12K, PRAYER_CANDLE);
         addToItemGroup(ItemGroupUtil.REBORN12K, BASILISK_TOOTH);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ESSENCE_OF_DECAY);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

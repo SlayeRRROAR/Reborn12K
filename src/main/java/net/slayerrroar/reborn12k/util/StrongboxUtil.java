@@ -123,7 +123,7 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.BEJEWELED_NECKLACE, 1);
         }
         if(epic_int == 11) {
-            player.dropItem(ItemTrinkets.FF_SPRING, 1);
+            player.dropItem(ItemTrinkets.STRONG_SPRING, 1);
         }
         if(epic_int == 12) {
             player.dropItem(ItemTrinkets.BLOODY_ROSE, 1);
@@ -133,7 +133,7 @@ public class StrongboxUtil {
 
     public static void randomLegendary(PlayerEntity player) {
         Random randLegend = new Random();
-        int upperbound = 14;
+        int upperbound = 15;
         int legend_int = randLegend.nextInt(upperbound);
 
         if(legend_int == 0) {
@@ -176,6 +176,9 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.JETPACK, 1);
         }
         if(legend_int == 13) {
+            player.dropItem(ItemTrinkets.ENCHANTED_SPRING, 1);
+        }
+        if(legend_int == 14) {
             player.dropItem(ItemTrinkets.MAGNIFYING_GLASS, 1);
         }
     }
@@ -197,61 +200,79 @@ public class StrongboxUtil {
 
     public static void randomAir(PlayerEntity player) {
         Random randAir = new Random();
-        int upperbound = 1;
+        int upperbound = 2;
         int air_int = randAir.nextInt(upperbound);
 
         if(air_int == 0) {
             player.dropItem(ItemTrinkets.GRIFFIN_FEATHER, 1);
         }
+        if(air_int == 1) {
+            player.dropItem(ItemTrinkets.BOTTLE_OF_WIND, 1);
+        }
     }
 
     public static void randomEarth(PlayerEntity player) {
         Random randEarth = new Random();
-        int upperbound = 1;
+        int upperbound = 2;
         int earth_int = randEarth.nextInt(upperbound);
 
         if(earth_int == 0) {
             player.dropItem(ItemTrinkets.GOLEM_CORE, 1);
         }
+        if(earth_int == 1) {
+            player.dropItem(ItemTrinkets.BLOODFLOWER, 1);
+        }
     }
 
     public static void randomWater(PlayerEntity player) {
         Random randWater = new Random();
-        int upperbound = 1;
+        int upperbound = 2;
         int water_int = randWater.nextInt(upperbound);
 
         if(water_int == 0) {
             player.dropItem(ItemTrinkets.LEVIATHAN_EYE, 1);
         }
+        if(water_int == 1) {
+            player.dropItem(ItemTrinkets.FLASK_OF_UNDERTOW, 1);
+        }
     }
 
     public static void randomFire(PlayerEntity player) {
         Random randFire = new Random();
-        int upperbound = 1;
+        int upperbound = 2;
         int fire_int = randFire.nextInt(upperbound);
 
         if(fire_int == 0) {
             player.dropItem(ItemTrinkets.DRAGON_FANG, 1);
         }
+        if(fire_int == 1) {
+            player.dropItem(ItemTrinkets.CRYSTALIZED_FIRE, 1);
+        }
     }
 
     public static void randomLight(PlayerEntity player) {
         Random randLight = new Random();
-        int upperbound = 1;
+        int upperbound = 2;
         int light_int = randLight.nextInt(upperbound);
 
         if(light_int == 0) {
             player.dropItem(ItemTrinkets.ANGELIC_HALO, 1);
         }
+        if(light_int == 1) {
+            player.dropItem(ItemTrinkets.PRAYER_CANDLE, 1);
+        }
     }
 
     public static void randomDark(PlayerEntity player) {
         Random randDark = new Random();
-        int upperbound = 1;
+        int upperbound = 2;
         int dark_int = randDark.nextInt(upperbound);
 
         if(dark_int == 0) {
             player.dropItem(ItemTrinkets.BASILISK_TOOTH, 1);
+        }
+        if(dark_int == 1) {
+            player.dropItem(ItemTrinkets.ESSENCE_OF_DECAY, 1);
         }
     }
 
