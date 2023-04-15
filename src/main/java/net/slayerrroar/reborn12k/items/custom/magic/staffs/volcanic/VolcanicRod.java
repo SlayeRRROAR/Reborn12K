@@ -41,9 +41,9 @@ public class VolcanicRod extends Item {
 
         world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_FIREWORK_ROCKET_LARGE_BLAST_FAR, SoundCategory.PLAYERS, 0.25f, 1.0f);
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 25, 25, 25))) {
-            if (e instanceof HostileEntity hostileEntity) {
-                if (hostileEntity.distanceTo(playerEntity) < 25) {
+        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 25, 25, 25))) {
+            if(e instanceof HostileEntity hostileEntity) {
+                if(hostileEntity.distanceTo(playerEntity) < 25) {
                     hostileEntity.setOnFireFor(20*15);
                     hostileEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20*10, 2, false, false));
                 }

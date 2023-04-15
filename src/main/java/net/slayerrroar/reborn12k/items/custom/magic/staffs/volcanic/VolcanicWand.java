@@ -42,9 +42,9 @@ public class VolcanicWand extends Item {
 
         world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_FIREWORK_ROCKET_LARGE_BLAST_FAR, SoundCategory.PLAYERS, 0.25f, 1.0f);
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 20, 20, 20))) {
-            if (e instanceof HostileEntity hostileEntity) {
-                if (hostileEntity.distanceTo(playerEntity) < 20) {
+        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 20, 20, 20))) {
+            if(e instanceof HostileEntity hostileEntity) {
+                if(hostileEntity.distanceTo(playerEntity) < 20) {
                     hostileEntity.setOnFireFor(20*5);
                     hostileEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20*10, 0, false, false));
                 }

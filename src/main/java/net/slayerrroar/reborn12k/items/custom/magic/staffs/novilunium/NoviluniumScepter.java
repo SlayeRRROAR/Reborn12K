@@ -43,9 +43,9 @@ public class NoviluniumScepter extends Item {
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 20*30, 0, false, false));
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 20*30));
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 40, 40, 40))) {
-            if (e instanceof MobEntity mobEntity) {
-                if (playerEntity.distanceTo(mobEntity) < 40) {
+        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 40, 40, 40))) {
+            if(e instanceof MobEntity mobEntity) {
+                if(playerEntity.distanceTo(mobEntity) < 40) {
                     mobEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 20*30));
                 }
             }

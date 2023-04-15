@@ -25,6 +25,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
+@SuppressWarnings("OptionalGetWithoutIsPresent")
+
 public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
             DefaultedList.ofSize(2, ItemStack.EMPTY);
@@ -111,7 +113,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
 
     private static void craftItem(ArcaneArtifactBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -130,7 +132,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
 
     private static boolean hasRecipe(ArcaneArtifactBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 

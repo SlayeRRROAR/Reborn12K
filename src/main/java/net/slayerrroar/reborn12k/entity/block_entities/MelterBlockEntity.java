@@ -26,6 +26,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
+@SuppressWarnings("OptionalGetWithoutIsPresent")
+
 public class MelterBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
             DefaultedList.ofSize(7, ItemStack.EMPTY);
@@ -145,7 +147,7 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
 
     private static void craftItem(MelterBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -169,7 +171,7 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
 
     private static boolean hasRecipe(MelterBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 

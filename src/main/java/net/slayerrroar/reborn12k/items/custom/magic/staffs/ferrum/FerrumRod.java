@@ -43,9 +43,9 @@ public class FerrumRod extends Item {
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 20*15, 3, false, false));
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 20*15, 0, false, false));
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 20, 20, 20))) {
-            if (e instanceof PlayerEntity playerEntities) {
-                if (playerEntity.distanceTo(playerEntities) < 20) {
+        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 20, 20, 20))) {
+            if(e instanceof PlayerEntity playerEntities) {
+                if(playerEntity.distanceTo(playerEntities) < 20) {
                     playerEntities.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20*15, 0, false, false));
                     playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 20*15, 3, false, false));
                     playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 20*15, 0, false, false));

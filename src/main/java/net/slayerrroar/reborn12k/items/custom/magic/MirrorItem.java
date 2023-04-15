@@ -31,7 +31,7 @@ public class MirrorItem extends Item {
 
     private void teleport(World world, PlayerEntity player) {
         ServerPlayerEntity serverPlayer = (ServerPlayerEntity) player;
-        if (serverPlayer.getSpawnPointPosition() != null) {
+        if(serverPlayer.getSpawnPointPosition() != null) {
             BlockPos pos = serverPlayer.getSpawnPointPosition();
             serverPlayer.stopRiding();
             setPositionAndUpdate(serverPlayer, pos);
@@ -45,9 +45,9 @@ public class MirrorItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         ItemStack itemStack = player.getStackInHand(hand);
         RegistryKey<World> registryKey = world.getRegistryKey();
-        if (player.getStackInHand(hand) == itemStack && player.getStackInHand(hand).getDamage() < 16) {
-            if (!world.isClient && !player.isSneaking()) {
-                if (registryKey == World.OVERWORLD) {
+        if(player.getStackInHand(hand) == itemStack && player.getStackInHand(hand).getDamage() < 16) {
+            if(!world.isClient && !player.isSneaking()) {
+                if(registryKey == World.OVERWORLD) {
                     teleport(world, player);
                     player.getItemCooldownManager().set(this, 20 * 3);
                     player.getStackInHand(hand).damage(1, world.random, null);

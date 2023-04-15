@@ -117,7 +117,7 @@ public class AdvancedQuarryBlockEntity extends BlockEntity implements NamedScree
 
     private static void craftItem(AdvancedQuarryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -142,7 +142,7 @@ public class AdvancedQuarryBlockEntity extends BlockEntity implements NamedScree
 
     private static boolean hasRecipe(AdvancedQuarryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 

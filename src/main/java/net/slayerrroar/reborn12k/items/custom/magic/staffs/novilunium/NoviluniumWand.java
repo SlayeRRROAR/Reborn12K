@@ -43,9 +43,9 @@ public class NoviluniumWand extends Item {
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 20*20, 0, false, false));
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 20*20));
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 20, 20, 20))) {
-            if (e instanceof MobEntity mobEntity) {
-                if (playerEntity.distanceTo(mobEntity) < 20) {
+        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 20, 20, 20))) {
+            if(e instanceof MobEntity mobEntity) {
+                if(playerEntity.distanceTo(mobEntity) < 20) {
                     mobEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 20*20));
                 }
             }

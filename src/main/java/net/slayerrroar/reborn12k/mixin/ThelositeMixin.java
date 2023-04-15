@@ -33,7 +33,7 @@ public class ThelositeMixin {
     private void constructor(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings, CallbackInfo ci) {
         UUID uUID = MODIFIERS[slot.getEntitySlotId()];
  
-        if (material == RebornArmors.THELOSITE_ARMOR) {
+        if(material == RebornArmors.THELOSITE_ARMOR) {
             ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
  
             this.attributeModifiers.forEach(builder::put);

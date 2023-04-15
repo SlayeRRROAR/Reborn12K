@@ -41,9 +41,9 @@ public class GlacialScepter extends Item {
 
         world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_ILLUSIONER_PREPARE_MIRROR, SoundCategory.PLAYERS, 0.5f, 1.0f);
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 30, 30, 30))) {
-            if (e instanceof MobEntity mobEntity) {
-                if (playerEntity.distanceTo(mobEntity) < 30) {
+        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 30, 30, 30))) {
+            if(e instanceof MobEntity mobEntity) {
+                if(playerEntity.distanceTo(mobEntity) < 30) {
                     mobEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20*30, 2));
                 }
             }

@@ -49,7 +49,7 @@ public abstract class EnderDragonMixin {
      */
     @Overwrite
     public void dragonKilled(EnderDragonEntity dragon) {
-        if (dragon.getUuid().equals(this.dragonUuid)) {
+        if(dragon.getUuid().equals(this.dragonUuid)) {
             this.bossBar.setPercent(0.0f);
             this.bossBar.setVisible(false);
             this.generateEndPortal(true);

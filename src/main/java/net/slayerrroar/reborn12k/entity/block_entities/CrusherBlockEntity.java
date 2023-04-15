@@ -149,7 +149,7 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
 
     private static void craftItem(CrusherBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -169,7 +169,7 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
 
     private static boolean hasRecipe(CrusherBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 

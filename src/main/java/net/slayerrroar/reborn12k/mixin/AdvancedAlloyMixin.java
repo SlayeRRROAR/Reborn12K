@@ -32,7 +32,7 @@ public class AdvancedAlloyMixin {
     private void constructor(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings, CallbackInfo ci) {
         UUID uUID = MODIFIERS[slot.getEntitySlotId()];
  
-        if (material == RebornArmors.ADVANCED_ALLOY_ARMOR) {
+        if(material == RebornArmors.ADVANCED_ALLOY_ARMOR) {
             ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
  
             this.attributeModifiers.forEach(builder::put);

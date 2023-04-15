@@ -31,7 +31,7 @@ public class MagicProtectionEnchantment extends Enchantment {
 
     @Override
     public int getProtectionAmount(int level, DamageSource source) {
-        if (source.bypassesArmor() || source.isUnblockable()) {
+        if(source.bypassesArmor() || source.isUnblockable()) {
             return level;
         } else
             return 0;

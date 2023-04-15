@@ -39,7 +39,7 @@ public class MageArmorItem extends ArmorItem {
     }
 
     private void evaluateArmorEffects(PlayerEntity player) {
-        for (Map.Entry<ArmorMaterial, StatusEffect> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
+        for(Map.Entry<ArmorMaterial, StatusEffect> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
             ArmorMaterial mapArmorMaterial = entry.getKey();
             StatusEffect mapStatusEffect = entry.getValue();
 
@@ -69,7 +69,7 @@ public class MageArmorItem extends ArmorItem {
     }
 
     private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        for (ItemStack armorStack: player.getInventory().armor) {
+        for(ItemStack armorStack: player.getInventory().armor) {
             if(!(armorStack.getItem() instanceof ArmorItem)) {
                 return false;
             }

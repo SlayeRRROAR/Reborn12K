@@ -117,7 +117,7 @@ public class BasicQuarryBlockEntity extends BlockEntity implements NamedScreenHa
 
     private static void craftItem(BasicQuarryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -142,7 +142,7 @@ public class BasicQuarryBlockEntity extends BlockEntity implements NamedScreenHa
 
     private static boolean hasRecipe(BasicQuarryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 

@@ -42,9 +42,9 @@ public class TerraStaff extends Item {
         world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.PLAYERS, 0.25f, 1.0f);
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*30, 1, false, false));
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 40, 40, 40))) {
-            if (e instanceof LivingEntity livingEntity) {
-                if (playerEntity.distanceTo(livingEntity) < 40) {
+        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 40, 40, 40))) {
+            if(e instanceof LivingEntity livingEntity) {
+                if(playerEntity.distanceTo(livingEntity) < 40) {
                     livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*30, 1, false, false));
                 }
             }

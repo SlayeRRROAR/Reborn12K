@@ -43,9 +43,9 @@ public class AbyssScepter extends Item {
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 20*30, 0, false, false));
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20*30, 0, false, false));
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 30, 30, 30))) {
-            if (e instanceof LivingEntity livingEntity) {
-                if (playerEntity.distanceTo(livingEntity) < 30) {
+        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 30, 30, 30))) {
+            if(e instanceof LivingEntity livingEntity) {
+                if(playerEntity.distanceTo(livingEntity) < 30) {
                     livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 20*30, 0, false, false));
                     livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20*30, 0, false, false));
                 }

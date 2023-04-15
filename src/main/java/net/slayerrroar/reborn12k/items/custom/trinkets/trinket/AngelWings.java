@@ -19,8 +19,8 @@ public class AngelWings extends TrinketItem implements Trinket {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity instanceof PlayerEntity player) {
-            if (!player.getAbilities().allowFlying) {
+        if(entity instanceof PlayerEntity player) {
+            if(!player.getAbilities().allowFlying) {
                 allowFlight(player);
             }
         }
@@ -29,7 +29,7 @@ public class AngelWings extends TrinketItem implements Trinket {
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity instanceof PlayerEntity) {
+        if(entity instanceof PlayerEntity) {
             allowFlight((PlayerEntity) entity);
         }
         super.onEquip(stack, slot, entity);
@@ -37,21 +37,21 @@ public class AngelWings extends TrinketItem implements Trinket {
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity instanceof PlayerEntity) {
+        if(entity instanceof PlayerEntity) {
             revokeFlight((PlayerEntity) entity);
         }
         super.onUnequip(stack, slot, entity);
     }
 
     private void allowFlight(PlayerEntity player) {
-        if (!player.isCreative() && !player.isSpectator()) {
+        if(!player.isCreative() && !player.isSpectator()) {
             player.getAbilities().allowFlying = true;
             player.sendAbilitiesUpdate();
         }
     }
 
     private void revokeFlight(PlayerEntity player) {
-        if (!player.isCreative() && !player.isSpectator()) {
+        if(!player.isCreative() && !player.isSpectator()) {
             player.getAbilities().flying = false;
             player.getAbilities().allowFlying = false;
             player.sendAbilitiesUpdate();

@@ -25,6 +25,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
+@SuppressWarnings("OptionalGetWithoutIsPresent")
+
 public class MineralManufactoryBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
             DefaultedList.ofSize(4, ItemStack.EMPTY);
@@ -110,7 +112,7 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
 
     private static void craftItem(MineralManufactoryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -128,7 +130,7 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
 
     private static boolean hasRecipe(MineralManufactoryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for (int i = 0; i < entity.size(); i++) {
+        for(int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 

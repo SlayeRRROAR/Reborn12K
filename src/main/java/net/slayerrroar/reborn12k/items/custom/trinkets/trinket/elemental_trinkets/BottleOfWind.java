@@ -28,7 +28,7 @@ public class BottleOfWind extends TrinketItem implements Trinket {
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
-        if (!world.isClient) {
+        if(!world.isClient) {
             if(!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.AIR_PENDANT)) {
                 stack.decrement(1);
                 entity.dropItem(this);
