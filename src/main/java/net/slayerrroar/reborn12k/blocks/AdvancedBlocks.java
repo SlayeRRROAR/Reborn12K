@@ -48,8 +48,6 @@ public class AdvancedBlocks {
     public static final Block ADVANCED_LASER_QUARRY = registerBlock("advanced_laser_quarry", new AdvancedQuarryBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12.0f).resistance(200.0f)), ItemGroupUtil.REBORN12K);
     public static final Block ULTIMATE_LASER_QUARRY = registerBlock("ultimate_laser_quarry", new UltimateQuarryBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12.0f).resistance(200.0f)), ItemGroupUtil.REBORN12K);
 
-    public static final Block SYNTHESIS_CHAMBER = registerBlock("synthesis_chamber", new SynthesisChamberBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12.0f).resistance(200.0f)), ItemGroupUtil.REBORN12K);
-
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
