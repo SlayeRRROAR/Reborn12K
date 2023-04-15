@@ -17,8 +17,6 @@ import net.slayerrroar.reborn12k.screen.quarry.QuarryScreen;
 import net.slayerrroar.reborn12k.screen.quarry.QuarryScreenHandler;
 import net.slayerrroar.reborn12k.screen.arcane_artifact.ArcaneArtifactScreen;
 import net.slayerrroar.reborn12k.screen.arcane_artifact.ArcaneArtifactScreenHandler;
-import net.slayerrroar.reborn12k.screen.synthesis_chamber.SynthesisChamberScreen;
-import net.slayerrroar.reborn12k.screen.synthesis_chamber.SynthesisChamberScreenHandler;
 
 public final class RebornScreenRegistry {
 
@@ -32,8 +30,6 @@ public final class RebornScreenRegistry {
             MelterScreenHandler::new);
     public static final ScreenHandlerType<QuarryScreenHandler> QUARRY_SCREEN_HANDLER = new ScreenHandlerType<>(
             QuarryScreenHandler::new);
-    public static final ScreenHandlerType<SynthesisChamberScreenHandler> SYNTHESIS_CHAMBER_SCREEN_HANDLER = new ScreenHandlerType<>(
-            SynthesisChamberScreenHandler::new);
 
     public static void register() {
 
@@ -44,7 +40,6 @@ public final class RebornScreenRegistry {
         screens("mineral_manufactory", MINERAL_MANUFACTORY_SCREEN_HANDLER);
         screens("melter", MELTER_SCREEN_HANDLER);
         screens("quarry", QUARRY_SCREEN_HANDLER);
-        screens("synthesis_chamber", SYNTHESIS_CHAMBER_SCREEN_HANDLER);
     }
 
     @Environment(EnvType.CLIENT)
@@ -54,7 +49,6 @@ public final class RebornScreenRegistry {
         HandledScreens.register(MINERAL_MANUFACTORY_SCREEN_HANDLER, MineralManufactoryScreen::new);
         HandledScreens.register(MELTER_SCREEN_HANDLER, MelterScreen::new);
         HandledScreens.register(QUARRY_SCREEN_HANDLER, QuarryScreen::new);
-        HandledScreens.register(SYNTHESIS_CHAMBER_SCREEN_HANDLER, SynthesisChamberScreen::new);
 
     }
 
