@@ -16,6 +16,6 @@ public class KeyItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("item.reborn12k.key.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.strongbox_key.tooltip"));
     }
 }
