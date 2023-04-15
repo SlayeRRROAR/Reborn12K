@@ -10,17 +10,18 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.custom.magic.*;
-import net.slayerrroar.reborn12k.items.custom.staffs.abyss.*;
-import net.slayerrroar.reborn12k.items.custom.staffs.crimson.*;
-import net.slayerrroar.reborn12k.items.custom.staffs.ferrum.*;
-import net.slayerrroar.reborn12k.items.custom.staffs.glacial.*;
-import net.slayerrroar.reborn12k.items.custom.staffs.novilunium.*;
-import net.slayerrroar.reborn12k.items.custom.staffs.sunlight.*;
-import net.slayerrroar.reborn12k.items.custom.staffs.terra.*;
-import net.slayerrroar.reborn12k.items.custom.staffs.thunderbolt.*;
-import net.slayerrroar.reborn12k.items.custom.staffs.viridian.*;
-import net.slayerrroar.reborn12k.items.custom.staffs.volcanic.*;
-import net.slayerrroar.reborn12k.items.custom.staffs.windstorm.*;
+import net.slayerrroar.reborn12k.items.custom.magic.essences.*;
+import net.slayerrroar.reborn12k.items.custom.magic.staffs.abyss.*;
+import net.slayerrroar.reborn12k.items.custom.magic.staffs.crimson.*;
+import net.slayerrroar.reborn12k.items.custom.magic.staffs.ferrum.*;
+import net.slayerrroar.reborn12k.items.custom.magic.staffs.glacial.*;
+import net.slayerrroar.reborn12k.items.custom.magic.staffs.novilunium.*;
+import net.slayerrroar.reborn12k.items.custom.magic.staffs.sunlight.*;
+import net.slayerrroar.reborn12k.items.custom.magic.staffs.terra.*;
+import net.slayerrroar.reborn12k.items.custom.magic.staffs.thunderbolt.*;
+import net.slayerrroar.reborn12k.items.custom.magic.staffs.viridian.*;
+import net.slayerrroar.reborn12k.items.custom.magic.staffs.volcanic.*;
+import net.slayerrroar.reborn12k.items.custom.magic.staffs.windstorm.*;
 import net.slayerrroar.reborn12k.items.custom.magic.runes.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
@@ -139,6 +140,73 @@ public class ItemMagic {
 
     public static final Item YGGDRASILL_BRANCH = registerItem("yggdrasill_branch", new YggdrasillItem(new FabricItemSettings().maxCount(1)));
 
+    public static final Item SOUL_THINGMABOB = registerItem("essence_thingmabob", new SoulThingmabobItem(new FabricItemSettings().maxCount(1)));
+
+    public static final Item CHICKEN_SOUL = registerItem("chicken_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item COW_SOUL = registerItem("cow_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item FISH_SOUL = registerItem("fish_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item MOOSHROOM_SOUL = registerItem("mooshroom_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item PIG_SOUL = registerItem("pig_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item RABBIT_SOUL = registerItem("rabbit_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item SHEEP_SOUL = registerItem("sheep_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item SQUID_SOUL = registerItem("squid_soul", new MobSoulItem(new FabricItemSettings()));
+
+    public static final Item BEE_SOUL = registerItem("bee_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item SPIDER_SOUL = registerItem("spider_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item ENDERMAN_SOUL = registerItem("enderman_soul", new MobSoulItem(new FabricItemSettings()));
+
+    public static final Item BLAZE_SOUL = registerItem("blaze_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item CREEPER_SOUL = registerItem("creeper_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item DROWNED_SOUL = registerItem("drowned_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item GHAST_SOUL = registerItem("ghast_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item GUARDIAN_SOUL = registerItem("guardian_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item ILLAGER_SOUL = registerItem("illager_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item MAGMA_CUBE_SOUL = registerItem("magma_cube_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item PHANTOM_SOUL = registerItem("phantom_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item SHULKER_SOUL = registerItem("shulker_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item SKELETON_SOUL = registerItem("skeleton_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item SLIME_SOUL = registerItem("slime_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item WITCH_SOUL = registerItem("witch_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item WITHER_SKELETON_SOUL = registerItem("wither_skeleton_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item ZOMBIE_SOUL = registerItem("zombie_soul", new MobSoulItem(new FabricItemSettings()));
+
+    public static final Item ENDER_DRAGON_SOUL = registerItem("ender_dragon_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item WARDEN_SOUL = registerItem("warden_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item WITHER_SOUL = registerItem("wither_soul", new MobSoulItem(new FabricItemSettings()));
+
+
+    public static final Item CHICKEN_ESSENCE = registerItem("chicken_essence", new BasicEssenceItem(new FabricItemSettings()));
+    public static final Item COW_ESSENCE = registerItem("cow_essence", new BasicEssenceItem(new FabricItemSettings()));
+    public static final Item FISH_ESSENCE = registerItem("fish_essence", new BasicEssenceItem(new FabricItemSettings()));
+    public static final Item MOOSHROOM_ESSENCE = registerItem("mooshroom_essence", new BasicEssenceItem(new FabricItemSettings()));
+    public static final Item PIG_ESSENCE = registerItem("pig_essence", new BasicEssenceItem(new FabricItemSettings()));
+    public static final Item RABBIT_ESSENCE = registerItem("rabbit_essence", new BasicEssenceItem(new FabricItemSettings()));
+    public static final Item SHEEP_ESSENCE = registerItem("sheep_essence", new BasicEssenceItem(new FabricItemSettings()));
+    public static final Item SQUID_ESSENCE = registerItem("squid_essence", new BasicEssenceItem(new FabricItemSettings()));
+
+    public static final Item BEE_ESSENCE = registerItem("bee_essence", new BasicEssenceItem(new FabricItemSettings()));
+    public static final Item SPIDER_ESSENCE = registerItem("spider_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item ENDERMAN_ESSENCE = registerItem("enderman_essence", new UltimateEssenceItem(new FabricItemSettings()));
+
+    public static final Item BLAZE_ESSENCE = registerItem("blaze_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item CREEPER_ESSENCE = registerItem("creeper_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item DROWNED_ESSENCE = registerItem("drowned_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item GHAST_ESSENCE = registerItem("ghast_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item GUARDIAN_ESSENCE = registerItem("guardian_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item ILLAGER_ESSENCE = registerItem("illager_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item MAGMA_CUBE_ESSENCE = registerItem("magma_cube_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item PHANTOM_ESSENCE = registerItem("phantom_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item SHULKER_ESSENCE = registerItem("shulker_essence", new UltimateEssenceItem(new FabricItemSettings()));
+    public static final Item SKELETON_ESSENCE = registerItem("skeleton_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item SLIME_ESSENCE = registerItem("slime_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item WITCH_ESSENCE = registerItem("witch_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+    public static final Item WITHER_SKELETON_ESSENCE = registerItem("wither_skeleton_essence", new UltimateEssenceItem(new FabricItemSettings()));
+    public static final Item ZOMBIE_ESSENCE = registerItem("zombie_essence", new AdvancedEssenceItem(new FabricItemSettings()));
+
+    public static final Item ENDER_DRAGON_ESSENCE = registerItem("ender_dragon_essence", new SpecialEssenceItem(new FabricItemSettings()));
+    public static final Item WARDEN_ESSENCE = registerItem("warden_essence", new SpecialEssenceItem(new FabricItemSettings()));
+    public static final Item WITHER_ESSENCE = registerItem("wither_essence", new SpecialEssenceItem(new FabricItemSettings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Reborn12K.MOD_ID, name), item);
@@ -197,6 +265,41 @@ public class ItemMagic {
         addToItemGroup(ItemGroupUtil.REBORN12K, CELL_PHONE);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, YGGDRASILL_BRANCH);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, SOUL_THINGMABOB);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, CHICKEN_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, COW_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, FISH_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MOOSHROOM_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, PIG_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RABBIT_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHEEP_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SQUID_ESSENCE);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, BEE_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SPIDER_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERMAN_ESSENCE);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, BLAZE_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CREEPER_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DROWNED_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GHAST_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GUARDIAN_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ILLAGER_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGMA_CUBE_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, PHANTOM_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHULKER_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SKELETON_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SLIME_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WITCH_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_SKELETON_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ZOMBIE_ESSENCE);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDER_DRAGON_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WARDEN_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_ESSENCE);
+
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
