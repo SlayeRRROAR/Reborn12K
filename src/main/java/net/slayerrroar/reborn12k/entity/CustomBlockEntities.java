@@ -23,8 +23,6 @@ public class CustomBlockEntities {
     public static BlockEntityType<AdvancedQuarryBlockEntity> ADVANCED_QUARRY;
     public static BlockEntityType<UltimateQuarryBlockEntity> ULTIMATE_QUARRY;
 
-    public static BlockEntityType<SynthesisChamberBlockEntity> SYNTHESIS_CHAMBER;
-
     public static void register(){
 
         Reborn12K.LOGGER.info(Reborn12K.MOD_ID + ": Correctly registered Block Entities");
@@ -63,11 +61,6 @@ public class CustomBlockEntities {
                 new Identifier(Reborn12K.MOD_ID, "ultimate_laser_quarry"),
                 FabricBlockEntityTypeBuilder.create(UltimateQuarryBlockEntity::new,
                         AdvancedBlocks.ULTIMATE_LASER_QUARRY).build(null));
-
-        SYNTHESIS_CHAMBER = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(Reborn12K.MOD_ID, "synthesis_chamber"),
-                FabricBlockEntityTypeBuilder.create(SynthesisChamberBlockEntity::new,
-                        AdvancedBlocks.SYNTHESIS_CHAMBER).build(null));
 
     }
 
