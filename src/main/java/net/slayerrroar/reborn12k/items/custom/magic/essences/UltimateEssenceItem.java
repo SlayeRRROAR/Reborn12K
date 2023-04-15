@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.items.custom.tech.experience_data_card;
+package net.slayerrroar.reborn12k.items.custom.magic.essences;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,8 +14,8 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ExpCardV237 extends Item {
-    public ExpCardV237(Settings settings) {
+public class UltimateEssenceItem extends Item {
+    public UltimateEssenceItem(Settings settings) {
         super(settings);
     }
 
@@ -23,13 +23,17 @@ public class ExpCardV237 extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
         if(playerEntity.isSneaking()) {
             int currentStack = playerEntity.getStackInHand(hand).getCount();
-            playerEntity.addExperience(currentStack * 18);
-            playerEntity.getStackInHand(hand).decrement(currentStack);
+            playerEntity.addExperience(currentStack * 5);
+            if(!playerEntity.isCreative()) {
+                playerEntity.getStackInHand(hand).decrement(currentStack);
+            }
             world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(),
                     SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
         }
-        playerEntity.addExperience(12);
-        playerEntity.getStackInHand(hand).decrement(1);
+        playerEntity.addExperience(5);
+        if(!playerEntity.isCreative()) {
+            playerEntity.getStackInHand(hand).decrement(1);
+        }
         world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(),
                 SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
         return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
@@ -37,8 +41,7 @@ public class ExpCardV237 extends Item {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.exp_card.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.exp_card.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.experience_data_card_v237.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.essence.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.ultimate_essence.tooltip"));
     }
 }
