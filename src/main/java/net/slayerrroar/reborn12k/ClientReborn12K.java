@@ -27,7 +27,7 @@ public class ClientReborn12K implements ClientModInitializer {
         RenderHelperUtil.setRenderLayers();
         RebornScreenRegistry.registerClient();
 
-        EntityRendererRegistry.register(CustomProjectileEntities.SOUL_THINGMABOB_ENTITY, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(CustomProjectileEntities.SOUL_VESSEL_ENTITY, FlyingItemEntityRenderer::new);
 
         FluidRenderHandlerRegistry.INSTANCE.register(RebornFluids.LIQUID_MANA_STILL, RebornFluids.LIQUID_MANA_FLOWING,
                 new SimpleFluidRenderHandler(
