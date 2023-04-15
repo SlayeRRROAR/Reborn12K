@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.items.custom.tech.ai_module;
+package net.slayerrroar.reborn12k.items.custom.magic;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -10,15 +10,15 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class CompleteAiModule extends Item {
-    public CompleteAiModule(Settings settings) {
+public class MobSoulItem extends Item {
+    public MobSoulItem(Settings settings) {
         super(settings);
     }
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.complete_ai_module.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.complete_ai_module.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.mob_soul.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.mob_soul.tooltip2"));
     }
 
 }
