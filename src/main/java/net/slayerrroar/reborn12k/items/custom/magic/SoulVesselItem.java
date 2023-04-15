@@ -13,12 +13,12 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.entity.projectile_entities.SoulThingmabobEntity;
+import net.slayerrroar.reborn12k.entity.projectile_entities.SoulVesselEntity;
 
 import java.util.List;
 
-public class SoulThingmabobItem extends Item {
-    public SoulThingmabobItem(Settings settings) {
+public class SoulVesselItem extends Item {
+    public SoulVesselItem(Settings settings) {
         super(settings);
     }
 
@@ -29,7 +29,7 @@ public class SoulThingmabobItem extends Item {
 		user.getItemCooldownManager().set(this, 5);
 
         if(!world.isClient) {
-            SoulThingmabobEntity thrownEntity = new SoulThingmabobEntity(world, user);
+            SoulVesselEntity thrownEntity = new SoulVesselEntity(world, user);
             thrownEntity.setItem(itemStack);
             thrownEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 2.0F, 0F);
             world.spawnEntity(thrownEntity);
@@ -44,8 +44,8 @@ public class SoulThingmabobItem extends Item {
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.soul_thingmabob.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.soul_thingmabob.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.soul_vessel.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.soul_vessel.tooltip2"));
     }
 
 }

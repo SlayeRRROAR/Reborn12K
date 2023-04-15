@@ -140,7 +140,7 @@ public class ItemMagic {
 
     public static final Item YGGDRASILL_BRANCH = registerItem("yggdrasill_branch", new YggdrasillItem(new FabricItemSettings().maxCount(1)));
 
-    public static final Item SOUL_THINGMABOB = registerItem("essence_thingmabob", new SoulThingmabobItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SOUL_VESSEL = registerItem("soul_vessel", new SoulVesselItem(new FabricItemSettings().maxCount(1)));
 
     public static final Item CHICKEN_SOUL = registerItem("chicken_soul", new MobSoulItem(new FabricItemSettings()));
     public static final Item COW_SOUL = registerItem("cow_soul", new MobSoulItem(new FabricItemSettings()));
@@ -266,7 +266,7 @@ public class ItemMagic {
 
         addToItemGroup(ItemGroupUtil.REBORN12K, YGGDRASILL_BRANCH);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, SOUL_THINGMABOB);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SOUL_VESSEL);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, CHICKEN_ESSENCE);
         addToItemGroup(ItemGroupUtil.REBORN12K, COW_ESSENCE);

@@ -18,18 +18,18 @@ import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.CustomProjectileEntities;
 import net.slayerrroar.reborn12k.items.ItemMagic;
 
-public class SoulThingmabobEntity extends ThrownItemEntity {
-    public SoulThingmabobEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
+public class SoulVesselEntity extends ThrownItemEntity {
+    public SoulVesselEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
     }
 
-    public SoulThingmabobEntity(World world, LivingEntity owner) {
-        super(CustomProjectileEntities.SOUL_THINGMABOB_ENTITY, owner, world);
+    public SoulVesselEntity(World world, LivingEntity owner) {
+        super(CustomProjectileEntities.SOUL_VESSEL_ENTITY, owner, world);
     }
 
     @Override
     protected Item getDefaultItem() {
-        return ItemMagic.SOUL_THINGMABOB;
+        return ItemMagic.SOUL_VESSEL;
     }
 
     private void removeAndPlaySound(EntityHitResult entityHitResult) {
@@ -173,7 +173,7 @@ public class SoulThingmabobEntity extends ThrownItemEntity {
         if(!this.world.isClient) {
             this.world.sendEntityStatus(this, (byte)3);
             if(hitResult.getType() != HitResult.Type.ENTITY) {
-                world.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.BLOCKS, 0.25f, 0.25f);
+                world.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.BLOCKS, 0.25f, 0.0f);
             }
             this.kill();
         }
