@@ -10,7 +10,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.custom.tech.*;
-import net.slayerrroar.reborn12k.items.custom.magic.experience_data_card.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class ItemTechnical {
@@ -73,12 +72,6 @@ public class ItemTechnical {
     public static final Item IRIDIUM_LASER_FOCUS = registerItem("iridium_laser_focus", new FocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
 
 
-    public static final Item EXPERIENCE_DATA_CARD = registerItem("experience_data_card", new ExpCard(new FabricItemSettings()));
-    public static final Item EXPERIENCE_DATA_CARD_V2 = registerItem("experience_data_card_v2", new ExpCardV2(new FabricItemSettings()));
-    public static final Item EXPERIENCE_DATA_CARD_V3 = registerItem("experience_data_card_v3", new ExpCardV3(new FabricItemSettings()));
-    public static final Item EXPERIENCE_DATA_CARD_V237 = registerItem("experience_data_card_v237", new ExpCardV237(new FabricItemSettings()));
-
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Reborn12K.MOD_ID, name), item);
     }
@@ -105,12 +98,6 @@ public class ItemTechnical {
         addToItemGroup(ItemGroupUtil.REBORN12K, BASIC_LASER_FOCUS);
         addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_LASER_FOCUS);
         addToItemGroup(ItemGroupUtil.REBORN12K, ULTIMATE_LASER_FOCUS);
-
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, EXPERIENCE_DATA_CARD);
-        addToItemGroup(ItemGroupUtil.REBORN12K, EXPERIENCE_DATA_CARD_V2);
-        addToItemGroup(ItemGroupUtil.REBORN12K, EXPERIENCE_DATA_CARD_V3);
-        addToItemGroup(ItemGroupUtil.REBORN12K, EXPERIENCE_DATA_CARD_V237);
 
     }
 
