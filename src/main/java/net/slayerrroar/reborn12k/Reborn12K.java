@@ -5,6 +5,7 @@ import net.slayerrroar.reborn12k.armors.RebornArmors;
 import net.slayerrroar.reborn12k.blocks.*;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.CustomProjectileEntities;
 import net.slayerrroar.reborn12k.fluids.RebornFluids;
 import net.slayerrroar.reborn12k.items.*;
 import net.slayerrroar.reborn12k.recipe.RebornCustomRecipes;
@@ -58,6 +59,7 @@ public class Reborn12K implements ModInitializer {
         RebornCustomTrades.register();
 
         CustomBlockEntities.register();
+        CustomProjectileEntities.register();
 
         RebornScreenRegistry.register();
 

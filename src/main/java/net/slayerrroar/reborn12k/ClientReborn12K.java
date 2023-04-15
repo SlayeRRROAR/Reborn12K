@@ -6,8 +6,11 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.util.Identifier;
+import net.slayerrroar.reborn12k.entity.CustomProjectileEntities;
 import net.slayerrroar.reborn12k.fluids.RebornFluids;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
 import net.slayerrroar.reborn12k.util.KeybindsUtil;
@@ -23,6 +26,8 @@ public class ClientReborn12K implements ClientModInitializer {
         KeybindsUtil.registerClient();
         RenderHelperUtil.setRenderLayers();
         RebornScreenRegistry.registerClient();
+
+        EntityRendererRegistry.register(CustomProjectileEntities.SOUL_THINGMABOB_ENTITY, FlyingItemEntityRenderer::new);
 
         FluidRenderHandlerRegistry.INSTANCE.register(RebornFluids.LIQUID_MANA_STILL, RebornFluids.LIQUID_MANA_FLOWING,
                 new SimpleFluidRenderHandler(
