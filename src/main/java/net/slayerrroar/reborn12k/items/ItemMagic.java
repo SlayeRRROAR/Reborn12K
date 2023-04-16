@@ -268,6 +268,39 @@ public class ItemMagic {
 
         addToItemGroup(ItemGroupUtil.REBORN12K, SOUL_VESSEL);
 
+        addToItemGroup(ItemGroupUtil.REBORN12K, CHICKEN_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, COW_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, FISH_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MOOSHROOM_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, PIG_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RABBIT_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHEEP_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SQUID_SOUL);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, BEE_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SPIDER_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERMAN_SOUL);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, BLAZE_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CREEPER_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DROWNED_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GHAST_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GUARDIAN_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ILLAGER_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGMA_CUBE_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, PHANTOM_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHULKER_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SKELETON_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SLIME_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WITCH_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_SKELETON_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ZOMBIE_SOUL);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDER_DRAGON_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WARDEN_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_SOUL);
+
+
         addToItemGroup(ItemGroupUtil.REBORN12K, CHICKEN_ESSENCE);
         addToItemGroup(ItemGroupUtil.REBORN12K, COW_ESSENCE);
         addToItemGroup(ItemGroupUtil.REBORN12K, FISH_ESSENCE);
