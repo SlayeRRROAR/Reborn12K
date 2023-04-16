@@ -11,7 +11,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 
 public class ManaCondenserScreen extends HandledScreen<ManaCondenserScreenHandler> {
     public static final Identifier TEXTURE = new Identifier
-            (Reborn12K.MOD_ID,"textures/gui/arcane_artifact_gui.png");
+            (Reborn12K.MOD_ID,"textures/gui/mana_condenser_gui.png");
 
     public ManaCondenserScreen(ManaCondenserScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -37,7 +37,7 @@ public class ManaCondenserScreen extends HandledScreen<ManaCondenserScreenHandle
 
     private void renderProgressArrow(MatrixStack matrices, int x, int y) {
         if(handler.isCrafting()) {
-            drawTexture(matrices, x + 103, y + 33, 176, 0, 8, handler.getScaledProgress());
+            drawTexture(matrices, x + 65, y + 23, 176, 0, 48, handler.getScaledProgress());
         }
     }
 
