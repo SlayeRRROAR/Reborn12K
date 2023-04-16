@@ -220,7 +220,7 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.GOLEM_CORE, 1);
         }
         if(earth_int == 1) {
-            player.dropItem(ItemTrinkets.BLOODFLOWER, 1);
+            player.dropItem(ItemTrinkets.NIGHTSHADE, 1);
         }
     }
 

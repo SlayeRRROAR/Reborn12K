@@ -47,7 +47,7 @@ public abstract class OnHitMixin extends Entity {
         if(TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(ItemTrinkets.BOTTLE_OF_WIND) && attacker != null && !(attacker instanceof PlayerEntity)) {
             ((LivingEntity) attacker).addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 20 * 5, 0));
         }
-        if(TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(ItemTrinkets.BLOODFLOWER) && attacker != null && !(attacker instanceof PlayerEntity)) {
+        if(TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(ItemTrinkets.NIGHTSHADE) && attacker != null && !(attacker instanceof PlayerEntity)) {
             ((LivingEntity) attacker).addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 20 * 7, 1));
         }
         if(TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(ItemTrinkets.FLASK_OF_UNDERTOW) && attacker != null && !(attacker instanceof PlayerEntity)) {
