@@ -2,10 +2,10 @@
   "type": "reborn12k:mana_condenser",
   "ingredients": [
     {
-      "item": "reborn12k:cow_soul"
+      "item": "reborn12k:zombie_soul"
     }
   ],
   "output": {
-    "item": "reborn12k:cow_essence"
+    "item": "reborn12k:zombie_essence"
   }
 }
