@@ -20,7 +20,6 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
-import net.slayerrroar.reborn12k.entity.block_entities.ArcaneArtifactBlockEntity;
 import net.slayerrroar.reborn12k.entity.block_entities.ManaCondenserBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
@@ -45,8 +44,8 @@ public class ManaCondenserBlock extends BlockWithEntity implements BlockEntityPr
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if(state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if(blockEntity instanceof ArcaneArtifactBlockEntity) {
-                ItemScatterer.spawn(world, pos, (ArcaneArtifactBlockEntity)blockEntity);
+            if(blockEntity instanceof ManaCondenserBlockEntity) {
+                ItemScatterer.spawn(world, pos, (ManaCondenserBlockEntity)blockEntity);
                 world.updateComparators(pos, this);
             }
             super.onStateReplaced(state, world, pos, newState, moved);
@@ -68,12 +67,12 @@ public class ManaCondenserBlock extends BlockWithEntity implements BlockEntityPr
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new ArcaneArtifactBlockEntity(pos, state);
+        return new ManaCondenserBlockEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, CustomBlockEntities.ARCANE_ARTIFACT, ArcaneArtifactBlockEntity::tick);
+        return checkType(type, CustomBlockEntities.MANA_CONDENSER, ManaCondenserBlockEntity::tick);
     }
 }
