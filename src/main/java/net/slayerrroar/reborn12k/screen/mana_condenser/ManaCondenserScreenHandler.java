@@ -10,8 +10,8 @@ import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
-import net.slayerrroar.reborn12k.screen.slots.CustomSoulSlot;
 import net.slayerrroar.reborn12k.screen.slots.CustomResultSlot;
+import net.slayerrroar.reborn12k.screen.slots.CustomSoulSlot;
 
 public class ManaCondenserScreenHandler extends ScreenHandler {
     private final Inventory inventory;

@@ -10,7 +10,10 @@ import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
-import net.slayerrroar.reborn12k.screen.slots.*;
+import net.slayerrroar.reborn12k.screen.slots.CustomAgentSlot;
+import net.slayerrroar.reborn12k.screen.slots.CustomReagentSlot;
+import net.slayerrroar.reborn12k.screen.slots.CustomResultSlot;
+import net.slayerrroar.reborn12k.screen.slots.CustomRockSlot;
 
 public class MineralManufactoryScreenHandler extends ScreenHandler {
     private final Inventory inventory;

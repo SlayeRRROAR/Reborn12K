@@ -18,9 +18,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
-import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import net.slayerrroar.reborn12k.recipe.recipe_types.ArcaneArtifactRecipe;
 import net.slayerrroar.reborn12k.screen.arcane_artifact.ArcaneArtifactScreenHandler;
+import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;

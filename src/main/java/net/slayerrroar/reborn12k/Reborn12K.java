@@ -2,7 +2,9 @@ package net.slayerrroar.reborn12k;
 
 import net.fabricmc.api.ModInitializer;
 import net.slayerrroar.reborn12k.armors.RebornArmors;
-import net.slayerrroar.reborn12k.blocks.*;
+import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
+import net.slayerrroar.reborn12k.blocks.GenericBlocks;
+import net.slayerrroar.reborn12k.blocks.OreBlocks;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
 import net.slayerrroar.reborn12k.entity.CustomProjectileEntities;
@@ -12,9 +14,10 @@ import net.slayerrroar.reborn12k.recipe.RebornCustomRecipes;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
 import net.slayerrroar.reborn12k.sounds.RebornSounds;
 import net.slayerrroar.reborn12k.tools.RebornTools;
-import net.slayerrroar.reborn12k.util.*;
+import net.slayerrroar.reborn12k.util.FuelUtil;
+import net.slayerrroar.reborn12k.util.ItemGroupUtil;
+import net.slayerrroar.reborn12k.util.StrippableUtil;
 import net.slayerrroar.reborn12k.villagers.RebornCustomTrades;
-
 import net.slayerrroar.reborn12k.world.generation.RebornWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

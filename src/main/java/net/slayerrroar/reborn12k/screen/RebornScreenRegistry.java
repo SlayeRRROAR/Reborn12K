@@ -7,12 +7,18 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.screen.ScreenHandlerType;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.screen.crusher.*;
-import net.slayerrroar.reborn12k.screen.mana_condenser.*;
-import net.slayerrroar.reborn12k.screen.melter.*;
-import net.slayerrroar.reborn12k.screen.mineral_manufactory.*;
-import net.slayerrroar.reborn12k.screen.quarry.*;
-import net.slayerrroar.reborn12k.screen.arcane_artifact.*;
+import net.slayerrroar.reborn12k.screen.arcane_artifact.ArcaneArtifactScreen;
+import net.slayerrroar.reborn12k.screen.arcane_artifact.ArcaneArtifactScreenHandler;
+import net.slayerrroar.reborn12k.screen.crusher.CrusherScreen;
+import net.slayerrroar.reborn12k.screen.crusher.CrusherScreenHandler;
+import net.slayerrroar.reborn12k.screen.mana_condenser.ManaCondenserScreen;
+import net.slayerrroar.reborn12k.screen.mana_condenser.ManaCondenserScreenHandler;
+import net.slayerrroar.reborn12k.screen.melter.MelterScreen;
+import net.slayerrroar.reborn12k.screen.melter.MelterScreenHandler;
+import net.slayerrroar.reborn12k.screen.mineral_manufactory.MineralManufactoryScreen;
+import net.slayerrroar.reborn12k.screen.mineral_manufactory.MineralManufactoryScreenHandler;
+import net.slayerrroar.reborn12k.screen.quarry.QuarryScreen;
+import net.slayerrroar.reborn12k.screen.quarry.QuarryScreenHandler;
 
 public final class RebornScreenRegistry {
 
