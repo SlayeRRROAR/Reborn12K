@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:ghast_essence"
+  },
+  "result": "minecraft:ghast_tear",
+  "count": 1
+}

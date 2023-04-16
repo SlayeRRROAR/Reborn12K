@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:illager_essence"
+  },
+  "result": "minecraft:emerald",
+  "count": 3
+}

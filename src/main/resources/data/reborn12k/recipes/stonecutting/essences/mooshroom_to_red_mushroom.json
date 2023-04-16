@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:mooshroom_essence"
+  },
+  "result": "minecraft:red_mushroom",
+  "count": 5
+}

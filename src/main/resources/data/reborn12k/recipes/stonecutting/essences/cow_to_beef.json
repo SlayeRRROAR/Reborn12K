@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:cow_essence"
+  },
+  "result": "minecraft:beef",
+  "count": 3
+}

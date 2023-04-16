@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:bee_essence"
+  },
+  "result": "minecraft:honey_bottle",
+  "count": 1
+}

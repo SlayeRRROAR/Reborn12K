@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:rabbit_essence"
+  },
+  "result": "minecraft:rabbit_foot",
+  "count": 1
+}

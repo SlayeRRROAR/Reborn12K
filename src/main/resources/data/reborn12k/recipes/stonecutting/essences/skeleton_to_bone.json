@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:skeleton_essence"
+  },
+  "result": "minecraft:bone",
+  "count": 3
+}
