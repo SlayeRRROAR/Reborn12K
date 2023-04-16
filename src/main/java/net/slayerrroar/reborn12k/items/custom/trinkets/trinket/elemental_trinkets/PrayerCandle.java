@@ -40,6 +40,8 @@ public class PrayerCandle extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.prayer_candle.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.prayer_candle.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.light.tooltip"));
     }
 

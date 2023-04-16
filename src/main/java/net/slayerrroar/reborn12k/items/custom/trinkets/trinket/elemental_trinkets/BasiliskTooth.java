@@ -63,6 +63,7 @@ public class BasiliskTooth extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.basilisk_tooth.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.dark.tooltip"));
     }
 

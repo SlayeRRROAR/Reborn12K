@@ -63,6 +63,8 @@ public class DragonFang extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.dragon_fang.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.dragon_fang.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.fire.tooltip"));
     }
 

@@ -40,6 +40,7 @@ public class EssenceOfDecay extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.essence_of_decay.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.dark.tooltip"));
     }
 

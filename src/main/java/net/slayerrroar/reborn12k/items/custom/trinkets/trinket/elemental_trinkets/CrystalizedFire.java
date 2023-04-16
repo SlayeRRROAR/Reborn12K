@@ -40,6 +40,7 @@ public class CrystalizedFire extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.crystalized_fire.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.fire.tooltip"));
     }
 

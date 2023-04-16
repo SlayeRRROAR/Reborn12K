@@ -40,6 +40,8 @@ public class BottleOfWind extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.bottle_of_wind.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.bottle_of_wind.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.air.tooltip"));
     }
 

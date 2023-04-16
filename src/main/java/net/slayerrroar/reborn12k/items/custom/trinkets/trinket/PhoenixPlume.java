@@ -84,10 +84,9 @@ public class PhoenixPlume extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         if(getCooldownState(stack) == CooldownState.OFF) {
             tooltip.add(Text.translatable("item.reborn12k.phoenix_plume.tooltip1"));
-            tooltip.add(Text.translatable("item.reborn12k.phoenix_plume.tooltip2"));
         }
         if(getCooldownState(stack) == CooldownState.ON) {
-            tooltip.add(Text.translatable("item.reborn12k.phoenix_plume.tooltip3"));
+            tooltip.add(Text.translatable("item.reborn12k.phoenix_plume.tooltip2"));
         }
         tooltip.add(Text.translatable("item.reborn12k.mythical.tooltip"));
     }

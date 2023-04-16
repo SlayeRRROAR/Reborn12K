@@ -66,6 +66,8 @@ public class LeviathanEye extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.leviathan_eye.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.leviathan_eye.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.water.tooltip"));
     }
 
