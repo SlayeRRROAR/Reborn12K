@@ -118,6 +118,9 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
         if(isConsumingFuel(entity)) {
             entity.fuelTime--;
         }
+        if(!isConsumingFuel(entity) && entity.progress > 0) {
+            entity.progress--;
+        }
         if(hasRecipe(entity)) {
             if(hasFuelInFuelSlot(entity) && !isConsumingFuel(entity)) {
                 entity.consumeFuel();

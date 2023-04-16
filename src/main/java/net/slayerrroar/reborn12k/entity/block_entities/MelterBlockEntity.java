@@ -116,6 +116,9 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
         if(isConsumingFuel(entity)) {
             entity.fuelTime--;
         }
+        if(!isConsumingFuel(entity) && entity.progress > 0) {
+            entity.progress--;
+        }
         if(hasRecipe(entity)) {
             if(hasFuelInFuelSlot(entity) && !isConsumingFuel(entity)) {
                 entity.consumeFuel();
