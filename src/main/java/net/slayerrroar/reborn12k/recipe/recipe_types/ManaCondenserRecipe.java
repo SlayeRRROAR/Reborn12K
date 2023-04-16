@@ -65,12 +65,12 @@ public class ManaCondenserRecipe implements Recipe<SimpleInventory> {
     public static class Type implements RecipeType<ManaCondenserRecipe> {
         private Type() { }
         public static final Type INSTANCE = new Type();
-        public static final String ID = "arcane_artifact";
+        public static final String ID = "mana_condenser";
     }
 
     public static class Serializer implements RecipeSerializer<ManaCondenserRecipe> {
         public static final Serializer INSTANCE = new Serializer();
-        public static final String ID = "arcane_artifact";
+        public static final String ID = "mana_condenser";
 
         @Override
         public ManaCondenserRecipe read(Identifier id, JsonObject json) {
