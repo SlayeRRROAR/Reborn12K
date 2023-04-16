@@ -9,9 +9,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 import net.slayerrroar.reborn12k.items.custom.RebornDiscItem;
 import net.slayerrroar.reborn12k.sounds.RebornSounds;
+import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class ItemDiscs {
 

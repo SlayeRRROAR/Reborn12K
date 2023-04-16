@@ -14,7 +14,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.custom.*;
+import net.slayerrroar.reborn12k.blocks.custom.UraniumBlocks;
 import net.slayerrroar.reborn12k.blocks.custom.minecraft.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 import net.slayerrroar.reborn12k.world.features.tree.AshSaplingGenerator;

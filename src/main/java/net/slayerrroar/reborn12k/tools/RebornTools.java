@@ -5,12 +5,12 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
-import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.tools.material.*;
 import net.slayerrroar.reborn12k.tools.type.*;
+import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 @SuppressWarnings("unused")
                                         //todo: for Magisteel, Orichalcum and Mithril -> adjust values of tool materials

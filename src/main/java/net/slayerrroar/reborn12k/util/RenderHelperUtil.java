@@ -11,6 +11,8 @@ public class RenderHelperUtil {
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.MARKET_TABLE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.FANCY_LAMP, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.MANA_CONDENSER, RenderLayer.getCutout());
+
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.COMMON_STRONGBOX, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.RARE_STRONGBOX, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.EPIC_STRONGBOX, RenderLayer.getCutout());

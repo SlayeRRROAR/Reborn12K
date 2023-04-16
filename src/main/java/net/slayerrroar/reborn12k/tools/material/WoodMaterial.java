@@ -3,7 +3,6 @@ package net.slayerrroar.reborn12k.tools.material;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.ItemTags;
-import net.slayerrroar.reborn12k.items.ItemGenerics;
 
 public class WoodMaterial implements ToolMaterial{
 

@@ -2,7 +2,6 @@ package net.slayerrroar.reborn12k.mixin;
 
 import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.EndermanEntity;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.player.PlayerEntity;

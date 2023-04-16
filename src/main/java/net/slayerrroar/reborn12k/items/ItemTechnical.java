@@ -9,7 +9,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.items.custom.tech.*;
+import net.slayerrroar.reborn12k.items.custom.tech.FocusItem;
+import net.slayerrroar.reborn12k.items.custom.tech.FuelCell;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class ItemTechnical {

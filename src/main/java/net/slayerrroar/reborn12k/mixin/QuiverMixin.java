@@ -1,8 +1,6 @@
 package net.slayerrroar.reborn12k.mixin;
 
 import dev.emi.trinkets.api.TrinketsApi;
-import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;

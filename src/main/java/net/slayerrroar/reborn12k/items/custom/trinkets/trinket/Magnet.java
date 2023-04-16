@@ -1,7 +1,5 @@
 package net.slayerrroar.reborn12k.items.custom.trinkets.trinket;
 
-import java.util.List;
-
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.Trinket;
 import dev.emi.trinkets.api.TrinketItem;
@@ -19,6 +17,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.util.KeybindsUtil;
+
+import java.util.List;
 
 public class Magnet extends TrinketItem implements Trinket {
 
