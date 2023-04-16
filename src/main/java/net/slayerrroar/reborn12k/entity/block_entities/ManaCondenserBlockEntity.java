@@ -33,7 +33,7 @@ public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreen
 
     protected final PropertyDelegate propertyDelegate;
     private int progress= 0;
-    private int maxProgress = 1200;
+    private int maxProgress = 600;
 
     public ManaCondenserBlockEntity(BlockPos pos, BlockState state) {
         super(CustomBlockEntities.MANA_CONDENSER, pos, state);
