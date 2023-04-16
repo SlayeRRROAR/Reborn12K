@@ -127,12 +127,12 @@ public class ItemTrinkets {
     public static final Item GRIFFIN_FEATHER = registerItem("griffin_feather", new GriffinFeather(new FabricItemSettings().maxCount(1)));
     public static final Item BOTTLE_OF_WIND = registerItem("bottle_of_wind", new BottleOfWind(new FabricItemSettings().maxCount(1)));
     public static final Item GOLEM_CORE = registerItem("golem_core", new GolemCore(new FabricItemSettings().maxCount(1)));
-    public static final Item BLOODFLOWER = registerItem("bloodflower", new Bloodflower(new FabricItemSettings().maxCount(1)));
+    public static final Item NIGHTSHADE = registerItem("nightshade", new Nightshade(new FabricItemSettings().maxCount(1)));
     public static final Item LEVIATHAN_EYE = registerItem("leviathan_eye", new LeviathanEye(new FabricItemSettings().maxCount(1)));
     public static final Item FLASK_OF_UNDERTOW = registerItem("flask_of_undertow", new FlaskOfUndertow(new FabricItemSettings().maxCount(1)));
     public static final Item DRAGON_FANG = registerItem("dragon_fang", new DragonFang(new FabricItemSettings().maxCount(1)));
     public static final Item CRYSTALIZED_FIRE = registerItem("crystalized_fire", new CrystalizedFire(new FabricItemSettings().maxCount(1)));
-    public static final Item ANGELIC_HALO = registerItem("angelic_halo", new RadiantTrinket(new FabricItemSettings().maxCount(1)));
+    public static final Item ANGELIC_HALO = registerItem("angelic_halo", new AngelicHalo(new FabricItemSettings().maxCount(1)));
     public static final Item PRAYER_CANDLE = registerItem("prayer_candle", new PrayerCandle(new FabricItemSettings().maxCount(1)));
     public static final Item BASILISK_TOOTH = registerItem("basilisk_tooth", new BasiliskTooth(new FabricItemSettings().maxCount(1)));
     public static final Item ESSENCE_OF_DECAY = registerItem("essence_of_decay", new EssenceOfDecay(new FabricItemSettings().maxCount(1)));
@@ -231,7 +231,7 @@ public class ItemTrinkets {
         addToItemGroup(ItemGroupUtil.REBORN12K, GRIFFIN_FEATHER);
         addToItemGroup(ItemGroupUtil.REBORN12K, BOTTLE_OF_WIND);
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLEM_CORE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BLOODFLOWER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, NIGHTSHADE);
         addToItemGroup(ItemGroupUtil.REBORN12K, LEVIATHAN_EYE);
         addToItemGroup(ItemGroupUtil.REBORN12K, FLASK_OF_UNDERTOW);
         addToItemGroup(ItemGroupUtil.REBORN12K, DRAGON_FANG);

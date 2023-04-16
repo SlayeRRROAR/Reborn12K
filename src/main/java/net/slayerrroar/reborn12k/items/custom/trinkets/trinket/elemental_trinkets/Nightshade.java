@@ -15,8 +15,8 @@ import java.util.List;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 
-public class Bloodflower extends TrinketItem implements Trinket {
-    public Bloodflower(Settings settings) {
+public class Nightshade extends TrinketItem implements Trinket {
+    public Nightshade(Settings settings) {
         super(settings);
     }
 
@@ -40,6 +40,8 @@ public class Bloodflower extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.nightshade.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.nightshade.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.earth.tooltip"));
     }
 

@@ -15,8 +15,8 @@ import java.util.List;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 
-public class RadiantTrinket extends TrinketItem implements Trinket {
-    public RadiantTrinket(Settings settings) {
+public class AngelicHalo extends TrinketItem implements Trinket {
+    public AngelicHalo(Settings settings) {
         super(settings);
     }
 
@@ -52,6 +52,7 @@ public class RadiantTrinket extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.angelic_halo.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.light.tooltip"));
     }
 
