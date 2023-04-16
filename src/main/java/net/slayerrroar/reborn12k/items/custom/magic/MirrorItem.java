@@ -1,10 +1,5 @@
 package net.slayerrroar.reborn12k.items.custom.magic;
 
-import dev.emi.trinkets.api.SlotReference;
-import dev.emi.trinkets.api.Trinket;
-import dev.emi.trinkets.api.TrinketItem;
-import dev.emi.trinkets.api.TrinketsApi;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -38,7 +33,9 @@ public class MirrorItem extends Item {
             world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 0.25F, 0.25F);
             player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip1"), true);   //tp to last bed
         }
-        player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip2"), true);  //bed not set
+        if(serverPlayer.getSpawnPointPosition() == null) {
+            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip2"), true);  //bed not set
+        }
     }
 
     @Override
@@ -46,7 +43,7 @@ public class MirrorItem extends Item {
         ItemStack itemStack = player.getStackInHand(hand);
         RegistryKey<World> registryKey = world.getRegistryKey();
         if(player.getStackInHand(hand) == itemStack && player.getStackInHand(hand).getDamage() < 16) {
-            if(!world.isClient && !player.isSneaking()) {
+            if(!world.isClient) {
                 if(registryKey == World.OVERWORLD) {
                     teleport(world, player);
                     player.getItemCooldownManager().set(this, 20 * 3);
@@ -56,7 +53,9 @@ public class MirrorItem extends Item {
                 player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip3"), true);  //works only in the overworld
             }
         }
-        player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip4"), true);  //no uses left
+        if(player.getStackInHand(hand) == itemStack && player.getStackInHand(hand).getDamage() == 16) {
+            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip4"), true);  //no uses left
+        }
         return new TypedActionResult<>(ActionResult.FAIL, player.getStackInHand(hand));
     }
 
