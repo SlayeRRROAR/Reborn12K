@@ -28,7 +28,7 @@ public class ManaCondenserScreenHandler extends ScreenHandler {
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 
-        this.addSlot(new CustomSoulSlot(inventory, 0, 80, 17));
+        this.addSlot(new CustomSoulSlot(inventory, 0, 80, 19));
         this.addSlot(new CustomResultSlot(inventory, 1, 80, 58));
 
         addPlayerInventory(playerInventory);
@@ -45,7 +45,7 @@ public class ManaCondenserScreenHandler extends ScreenHandler {
     public int getScaledProgress() {
         int progress = this.propertyDelegate.get(0);
         int maxProgress = this.propertyDelegate.get(1);
-        int progressArrowSize = 34;
+        int progressArrowSize = 32;
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
