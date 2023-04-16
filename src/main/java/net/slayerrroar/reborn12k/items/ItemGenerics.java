@@ -143,7 +143,9 @@ public class ItemGenerics {
 
     // Mob Drops
 
+    public static final Item WITHER_SKULL_FRAGMENT = registerItem("wither_skull_fragment", new Item(new FabricItemSettings()));
     public static final Item WITHERED_STAR = registerItem("withered_star", new Item(new FabricItemSettings()));
+    public static final Item HEART_OF_DARKNESS = registerItem("heart_of_darkness", new Item(new FabricItemSettings()));
 
 
     // Other
@@ -253,6 +255,8 @@ public class ItemGenerics {
         addToItemGroup(ItemGroupUtil.REBORN12K, DOUGH);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, WITHERED_STAR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_SKULL_FRAGMENT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, HEART_OF_DARKNESS);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, HAMMER);
         addToItemGroup(ItemGroupUtil.REBORN12K, CRUSHING_WHEEL);
