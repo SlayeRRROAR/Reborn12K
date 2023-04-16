@@ -17,6 +17,11 @@ public class RebornCustomRecipes {
         Registry.register(Registries.RECIPE_TYPE, new Identifier(Reborn12K.MOD_ID, ArcaneArtifactRecipe.Type.ID),
                 ArcaneArtifactRecipe.Type.INSTANCE);
 
+        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(Reborn12K.MOD_ID, ManaCondenserRecipe.Serializer.ID),
+                ManaCondenserRecipe.Serializer.INSTANCE);
+        Registry.register(Registries.RECIPE_TYPE, new Identifier(Reborn12K.MOD_ID, ManaCondenserRecipe.Type.ID),
+                ManaCondenserRecipe.Type.INSTANCE);
+
         Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(Reborn12K.MOD_ID, CrusherRecipe.Serializer.ID),
                 CrusherRecipe.Serializer.INSTANCE);
         Registry.register(Registries.RECIPE_TYPE, new Identifier(Reborn12K.MOD_ID, CrusherRecipe.Type.ID),
