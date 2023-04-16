@@ -12,6 +12,7 @@ import net.slayerrroar.reborn12k.entity.block_entities.*;
 public class CustomBlockEntities {
 
     public static BlockEntityType<ArcaneArtifactBlockEntity> ARCANE_ARTIFACT;
+    public static BlockEntityType<ManaCondenserBlockEntity> MANA_CONDENSER;
 
     public static BlockEntityType<CrusherBlockEntity> CRUSHER;
 
@@ -31,6 +32,11 @@ public class CustomBlockEntities {
                 new Identifier(Reborn12K.MOD_ID, "arcane_artifact"),
                 FabricBlockEntityTypeBuilder.create(ArcaneArtifactBlockEntity::new,
                         AdvancedBlocks.ARCANE_ARTIFACT).build(null));
+
+        MANA_CONDENSER = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                new Identifier(Reborn12K.MOD_ID, "mana_condenser"),
+                FabricBlockEntityTypeBuilder.create(ManaCondenserBlockEntity::new,
+                        AdvancedBlocks.MANA_CONDENSER).build(null));
 
         CRUSHER = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 new Identifier(Reborn12K.MOD_ID, "crusher"),

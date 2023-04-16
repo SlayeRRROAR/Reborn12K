@@ -39,6 +39,7 @@ public class AdvancedBlocks {
     public static final Block ARCANE_PEDESTAL = registerBlock("arcane_pedestal", new ArcanePedestalBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).hardness(2.0f).resistance(20.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
 
     public static final Block ARCANE_ARTIFACT = registerBlock("arcane_artifact", new ArcaneArtifactBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(20.0f).resistance(1200.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block MANA_CONDENSER = registerBlock("mana_condenser", new ManaCondenserBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8.0f).resistance(20.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
 
     public static final Block CRUSHER = registerBlock("crusher", new CrusherBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8.0f).resistance(20.0f)), ItemGroupUtil.REBORN12K);
     public static final Block MINERAL_MANUFACTORY = registerBlock("mineral_manufactory", new MineralManufactoryBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8.0f).resistance(20.0f)), ItemGroupUtil.REBORN12K);
