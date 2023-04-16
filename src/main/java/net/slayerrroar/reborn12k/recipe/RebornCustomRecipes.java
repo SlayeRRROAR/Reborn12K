@@ -42,11 +42,6 @@ public class RebornCustomRecipes {
         Registry.register(Registries.RECIPE_TYPE, new Identifier(Reborn12K.MOD_ID, QuarryRecipe.Type.ID),
                 QuarryRecipe.Type.INSTANCE);
 
-        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(Reborn12K.MOD_ID, SynthesisRecipe.Serializer.ID),
-                SynthesisRecipe.Serializer.INSTANCE);
-        Registry.register(Registries.RECIPE_TYPE, new Identifier(Reborn12K.MOD_ID, SynthesisRecipe.Type.ID),
-                SynthesisRecipe.Type.INSTANCE);
-
     }
 
 }
