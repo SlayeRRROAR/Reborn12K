@@ -33,10 +33,10 @@ public class RebornPlacedFeatures {
     public static final RegistryKey<PlacedFeature> NICKEL_ORE_PLACED_KEY = registerKey("nickel_ore_placed");
     public static final RegistryKey<PlacedFeature> CHROMITE_ORE_PLACED_KEY = registerKey("chromite_ore_placed");
     public static final RegistryKey<PlacedFeature> TITANIUM_ORE_PLACED_KEY = registerKey("titanium_ore_placed");
-    public static final RegistryKey<PlacedFeature> RUBY_ORE_PLACED_KEY = registerKey("ruby_ore_placed");
-    public static final RegistryKey<PlacedFeature> RUBY_ORE_LARGE_PLACED_KEY = registerKey("ruby_ore_large_placed");
     public static final RegistryKey<PlacedFeature> SAPPHIRE_ORE_PLACED_KEY = registerKey("sapphire_ore_placed");
     public static final RegistryKey<PlacedFeature> SAPPHIRE_ORE_LARGE_PLACED_KEY = registerKey("sapphire_ore_large_placed");
+    public static final RegistryKey<PlacedFeature> RUBY_ORE_PLACED_KEY = registerKey("ruby_ore_placed");
+    public static final RegistryKey<PlacedFeature> RUBY_ORE_LARGE_PLACED_KEY = registerKey("ruby_ore_large_placed");
     public static final RegistryKey<PlacedFeature> MANATITE_ORE_PLACED_KEY = registerKey("manatite_ore_placed");
     public static final RegistryKey<PlacedFeature> MANATITE_ORE_LARGE_PLACED_KEY = registerKey("manatite_ore_large_placed");
 
@@ -98,19 +98,19 @@ public class RebornPlacedFeatures {
                 modifiersWithCount(6, // VeinsPerChunk
                         HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-72), YOffset.aboveBottom(24))));
 
-        register(context, RUBY_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.RUBY_ORE_KEY),
-                modifiersWithCount(2, // VeinsPerChunk
-                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-16), YOffset.aboveBottom(16))));
-
-        register(context, RUBY_ORE_LARGE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.RUBY_ORE_LARGE_KEY),
-                modifiersWithCount(5, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
-
         register(context, SAPPHIRE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SAPPHIRE_ORE_KEY),
                 modifiersWithCount(2, // VeinsPerChunk
                         HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-16), YOffset.aboveBottom(16))));
 
         register(context, SAPPHIRE_ORE_LARGE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SAPPHIRE_ORE_LARGE_KEY),
+                modifiersWithCount(5, // VeinsPerChunk
+                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
+
+        register(context, RUBY_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.RUBY_ORE_KEY),
+                modifiersWithCount(2, // VeinsPerChunk
+                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-16), YOffset.aboveBottom(16))));
+
+        register(context, RUBY_ORE_LARGE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.RUBY_ORE_LARGE_KEY),
                 modifiersWithCount(5, // VeinsPerChunk
                         HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
 

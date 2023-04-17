@@ -132,19 +132,19 @@ public class RebornCustomTrades {
     private static TradeOffer jewelerLight5() {
 
         TradeOffer band = new TradeOffer(
-                new ItemStack(ItemTrinkets.ANGEL_TEAR, 1),
+                new ItemStack(ItemTrinkets.ANGELIC_HALO, 1),
                 new ItemStack(ItemTrinkets.GREATER_BAND_OF_FORTITUDE, 1),
                 1, 30, 0f);
         TradeOffer claw = new TradeOffer(
-                new ItemStack(ItemTrinkets.ANGEL_TEAR, 1),
+                new ItemStack(ItemTrinkets.ANGELIC_HALO, 1),
                 new ItemStack(ItemTrinkets.GREATER_BLOODY_CLAW, 1),
                 1, 30, 0f);
         TradeOffer medallion = new TradeOffer(
-                new ItemStack(ItemTrinkets.ANGEL_TEAR, 1),
-                new ItemStack(ItemTrinkets.GREATER_WAR_MEDALLION, 1),
+                new ItemStack(ItemTrinkets.ANGELIC_HALO, 1),
+                new ItemStack(ItemTrinkets.GREATER_MEDALLION, 1),
                 1, 30, 0f);
         TradeOffer tonic = new TradeOffer(
-                new ItemStack(ItemTrinkets.ANGEL_TEAR, 1),
+                new ItemStack(ItemTrinkets.ANGELIC_HALO, 1),
                 new ItemStack(ItemTrinkets.GREATER_FRENZY_TONIC, 1),
                 1, 30, 0f);
 
@@ -176,7 +176,7 @@ public class RebornCustomTrades {
                 1, 30, 0f);
         TradeOffer medallion = new TradeOffer(
                 new ItemStack(ItemTrinkets.BASILISK_TOOTH, 1),
-                new ItemStack(ItemTrinkets.GREATER_WAR_MEDALLION, 1),
+                new ItemStack(ItemTrinkets.GREATER_MEDALLION, 1),
                 1, 30, 0f);
         TradeOffer tonic = new TradeOffer(
                 new ItemStack(ItemTrinkets.BASILISK_TOOTH, 1),

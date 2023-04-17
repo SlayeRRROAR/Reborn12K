@@ -1,10 +1,14 @@
 package net.slayerrroar.reborn12k;
 
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.slayerrroar.reborn12k.armors.RebornArmors;
 import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
 import net.slayerrroar.reborn12k.blocks.GenericBlocks;
 import net.slayerrroar.reborn12k.blocks.OreBlocks;
+import net.slayerrroar.reborn12k.config.RebornConfig;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
 import net.slayerrroar.reborn12k.entity.CustomProjectileEntities;
@@ -26,9 +30,14 @@ public class Reborn12K implements ModInitializer {
 
     public static final String MOD_ID = "reborn12k";
     public static final Logger LOGGER = LoggerFactory.getLogger("reborn12k");
+    public static RebornConfig CONFIG;
 
     @Override
     public void onInitialize() {
+
+        AutoConfig.register(RebornConfig.class, GsonConfigSerializer::new);
+        CONFIG = AutoConfig.getConfigHolder(RebornConfig.class).getConfig();
+        ServerLifecycleEvents.SERVER_STARTED.register(server->server.setFlightEnabled(true));
 
         ItemGroupUtil.registerItemGroups();
 

@@ -40,10 +40,10 @@ public class RebornConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> NICKEL_ORE_KEY = registerKey("nickel_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> CHROMITE_ORE_KEY = registerKey("chromite_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> TITANIUM_ORE_KEY = registerKey("titanium_ore");
-    public static final RegistryKey<ConfiguredFeature<?,?>> RUBY_ORE_KEY = registerKey("ruby_ore");
-    public static final RegistryKey<ConfiguredFeature<?,?>> RUBY_ORE_LARGE_KEY = registerKey("ruby_ore_large");
     public static final RegistryKey<ConfiguredFeature<?,?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> SAPPHIRE_ORE_LARGE_KEY = registerKey("sapphire_ore_large");
+    public static final RegistryKey<ConfiguredFeature<?,?>> RUBY_ORE_KEY = registerKey("ruby_ore");
+    public static final RegistryKey<ConfiguredFeature<?,?>> RUBY_ORE_LARGE_KEY = registerKey("ruby_ore_large");
     public static final RegistryKey<ConfiguredFeature<?,?>> MANATITE_ORE_KEY = registerKey("manatite_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> MANATITE_ORE_LARGE_KEY = registerKey("manatite_ore_large");
 
@@ -89,11 +89,11 @@ public class RebornConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldTitaniumOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.TITANIUM_ORE.getDefaultState()),
                 OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_TITANIUM_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldRubyOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.RUBY_ORE.getDefaultState()),
-                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_RUBY_ORE.getDefaultState()));
-
         List<OreFeatureConfig.Target> overworldSapphireOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.SAPPHIRE_ORE.getDefaultState()),
                 OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_SAPPHIRE_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldRubyOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.RUBY_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_RUBY_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> overworldManatiteOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.MANATITE_ORE.getDefaultState()),
                 OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_MANATITE_ORE.getDefaultState()));

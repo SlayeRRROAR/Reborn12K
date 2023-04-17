@@ -27,6 +27,9 @@
     ],
     "fabric-datagen": [
       "net.slayerrroar.reborn12k.Reborn12KDataGen"
+    ],
+    "modmenu": [
+      "net.slayerrroar.reborn12k.config.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -40,7 +43,8 @@
     "java": ">=17",
     "patchouli": "*",
     "trinkets": "*",
-    "reach-entity-attributes": "*"
+    "reach-entity-attributes": "*",
+    "cloth-config": "*"
   },
   "suggests": {
     "modmenu": "*"
