@@ -15,10 +15,7 @@ import net.slayerrroar.reborn12k.items.custom.trinkets.belt.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.hat.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.necklace.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.ring.*;
-import net.slayerrroar.reborn12k.items.custom.trinkets.shoes.ComfyLoafers;
-import net.slayerrroar.reborn12k.items.custom.trinkets.shoes.LongFallBoots;
-import net.slayerrroar.reborn12k.items.custom.trinkets.shoes.RunningShoes;
-import net.slayerrroar.reborn12k.items.custom.trinkets.shoes.TravelerShoes;
+import net.slayerrroar.reborn12k.items.custom.trinkets.shoes.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.band.GreaterBand;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.band.IndelibleBand;
@@ -72,6 +69,7 @@ public class ItemTrinkets {
     public static final Item TRAVELER_SHOES = registerItem("traveler_shoes", new TravelerShoes(new FabricItemSettings().maxCount(1)));
     public static final Item RUNNING_SHOES = registerItem("running_shoes", new RunningShoes(new FabricItemSettings().maxCount(1)));
     public static final Item LONG_FALL_BOOTS = registerItem("long_fall_boots", new LongFallBoots(new FabricItemSettings().maxCount(1)));
+    public static final Item WINGED_SHOES = registerItem("winged_shoes", new WingedShoes(new FabricItemSettings().maxCount(1)));
 
     //Necklace
 
@@ -182,6 +180,7 @@ public class ItemTrinkets {
         addToItemGroup(ItemGroupUtil.REBORN12K, TRAVELER_SHOES);
         addToItemGroup(ItemGroupUtil.REBORN12K, RUNNING_SHOES);
         addToItemGroup(ItemGroupUtil.REBORN12K, LONG_FALL_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WINGED_SHOES);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, OLD_NECKLACE);
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_NECKLACE);
