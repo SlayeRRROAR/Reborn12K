@@ -7,10 +7,8 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
 
@@ -21,10 +19,21 @@ public class AntiGravBelt extends TrinketItem implements Trinket {
         super(settings);
     }
 
+    private int tickDelay = 15;
+
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(!entity.isOnGround() && !entity.isSubmergedIn(FluidTags.WATER) && !entity.isSubmergedIn(FluidTags.LAVA)) {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 5, 0, false, false));
+        PlayerEntity player = (PlayerEntity) entity;
+
+        if(player.isOnGround() || player.isSubmergedInWater() || player.hasVehicle()) {
+            tickDelay = 15;
+        }
+        if(!player.isOnGround() && !player.isSubmergedInWater() && !player.isFallFlying() && !player.getAbilities().flying) {
+            tickDelay--;
+            if(tickDelay <= 0) {
+                player.addVelocity(0, 0.03, 0);
+                player.fallDistance *= 0.5;
+            }
         }
         super.tick(stack, slot, entity);
     }
