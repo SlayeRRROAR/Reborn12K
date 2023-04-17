@@ -6,8 +6,7 @@ import dev.emi.trinkets.api.TrinketItem;
 import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
@@ -26,16 +25,12 @@ public class Jetpack extends TrinketItem implements Trinket {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(TrinketsApi.getTrinketComponent(entity).get().isEquipped(this)) {
-            if(KeybindsUtil.trinket.isPressed() && !entity.isSneaking()) {
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 2, 8, false, false));
+        PlayerEntity player = (PlayerEntity) entity;
+        if(TrinketsApi.getTrinketComponent(player).get().isEquipped(this)) {
+            if(KeybindsUtil.trinket.isPressed() && !player.isSneaking() && player.getVelocity().y < 0.7) {
+                player.addVelocity(0, 0.12, 0);
             }
         }
-    }
-
-    @Override
-    public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.playSound(SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.5f, 1.0f);
     }
 
     @Override
