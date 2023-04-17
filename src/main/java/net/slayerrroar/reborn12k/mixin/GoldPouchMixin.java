@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 @Mixin(PiglinBrain.class)
-public class PiglinAggroMixin {
+public class GoldPouchMixin {
 
         @Inject(method = "wearsGoldArmor", at = @At("HEAD"), cancellable = true)
         private static void wearsGoldArmor(LivingEntity entity, CallbackInfoReturnable<Boolean> ci) {
