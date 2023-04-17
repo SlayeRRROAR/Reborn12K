@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "reborn12k:warde_essence"
+    "item": "reborn12k:warden_essence"
   },
   "result": "minecraft:sculk_catalyst",
   "count": 1
