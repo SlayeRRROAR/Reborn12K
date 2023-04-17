@@ -86,7 +86,7 @@ public class StrongboxUtil {
 
     public static void randomEpic(PlayerEntity player) {
         Random randEpic = new Random();
-        int upperbound = 13;
+        int upperbound = 14;
         int epic_int = randEpic.nextInt(upperbound);
 
         if(epic_int == 0) {
@@ -120,12 +120,15 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.RUNNING_SHOES, 1);
         }
         if(epic_int == 10) {
-            player.dropItem(ItemTrinkets.BEJEWELED_NECKLACE, 1);
+            player.dropItem(ItemTrinkets.WINGED_SHOES, 1);
         }
         if(epic_int == 11) {
-            player.dropItem(ItemTrinkets.STRONG_SPRING, 1);
+            player.dropItem(ItemTrinkets.BEJEWELED_NECKLACE, 1);
         }
         if(epic_int == 12) {
+            player.dropItem(ItemTrinkets.STRONG_SPRING, 1);
+        }
+        if(epic_int == 13) {
             player.dropItem(ItemTrinkets.BLOODY_ROSE, 1);
         }
 
@@ -133,52 +136,40 @@ public class StrongboxUtil {
 
     public static void randomLegendary(PlayerEntity player) {
         Random randLegend = new Random();
-        int upperbound = 15;
+        int upperbound = 11;
         int legend_int = randLegend.nextInt(upperbound);
 
         if(legend_int == 0) {
-            player.dropItem(ItemTrinkets.GREATER_BAND_OF_FORTITUDE, 1);
+            player.dropItem(ItemTrinkets.FOCUS_BELT, 1);
         }
         if(legend_int == 1) {
-            player.dropItem(ItemTrinkets.GREATER_BLOODY_CLAW, 1);
+            player.dropItem(ItemTrinkets.EXPERT_BELT, 1);
         }
         if(legend_int == 2) {
-            player.dropItem(ItemTrinkets.GREATER_MEDALLION, 1);
+            player.dropItem(ItemTrinkets.GREATER_BAND_OF_FORTITUDE, 1);
         }
         if(legend_int == 3) {
-            player.dropItem(ItemTrinkets.GREATER_FRENZY_TONIC, 1);
+            player.dropItem(ItemTrinkets.GREATER_BLOODY_CLAW, 1);
         }
         if(legend_int == 4) {
-            player.dropItem(ItemTrinkets.GREATER_LUCKY_CHARM, 1);
+            player.dropItem(ItemTrinkets.GREATER_MEDALLION, 1);
         }
         if(legend_int == 5) {
-            player.dropItem(ItemTrinkets.HEART_PENDANT, 1);
+            player.dropItem(ItemTrinkets.GREATER_FRENZY_TONIC, 1);
         }
         if(legend_int == 6) {
-            player.dropItem(ItemTrinkets.AIR_PENDANT, 1);
+            player.dropItem(ItemTrinkets.GREATER_LUCKY_CHARM, 1);
         }
         if(legend_int == 7) {
-            player.dropItem(ItemTrinkets.EARTH_PENDANT, 1);
+            player.dropItem(ItemTrinkets.HEART_PENDANT, 1);
         }
         if(legend_int == 8) {
-            player.dropItem(ItemTrinkets.WATER_PENDANT, 1);
-        }
-        if(legend_int == 9) {
-            player.dropItem(ItemTrinkets.FIRE_PENDANT, 1);
-        }
-        if(legend_int == 10) {
-            player.dropItem(ItemTrinkets.LIGHT_PENDANT, 1);
-        }
-        if(legend_int == 11) {
-            player.dropItem(ItemTrinkets.DARK_PENDANT, 1);
-        }
-        if(legend_int == 12) {
             player.dropItem(ItemTrinkets.JETPACK, 1);
         }
-        if(legend_int == 13) {
+        if(legend_int == 9) {
             player.dropItem(ItemTrinkets.ENCHANTED_SPRING, 1);
         }
-        if(legend_int == 14) {
+        if(legend_int == 10) {
             player.dropItem(ItemTrinkets.MAGNIFYING_GLASS, 1);
         }
     }
