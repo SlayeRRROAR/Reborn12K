@@ -9,7 +9,7 @@ public class StrongboxUtil {
 
     public static void randomCommon(PlayerEntity player) {
         Random commonRand = new Random();
-        int upperbound = 10;
+        int upperbound = 9;
         int common_int = commonRand.nextInt(upperbound);
 
         if(common_int == 0) {
@@ -40,7 +40,7 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.GOLD_POUCH, 1);
         }
         if(common_int == 9) {
-            player.dropItem(ItemTrinkets.MAGNET, 1);
+            player.dropItem(ItemTrinkets.MAGNET, 1);        //TODO: fix magnet
         }
     }
 
