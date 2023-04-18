@@ -19,6 +19,7 @@ public class KeybindsUtil {
 
     public static KeyBinding trinketKey;
 
+
     public static void registerClient() {
 
         trinketKey = KeyBindingHelper.registerKeyBinding(new KeyBinding("key.reborn12k.trinket",
