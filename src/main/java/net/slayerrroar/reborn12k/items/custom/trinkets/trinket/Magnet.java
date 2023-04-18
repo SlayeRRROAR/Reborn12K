@@ -3,6 +3,7 @@ package net.slayerrroar.reborn12k.items.custom.trinkets.trinket;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.Trinket;
 import dev.emi.trinkets.api.TrinketItem;
+import dev.emi.trinkets.api.TrinketsApi;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
@@ -19,6 +20,8 @@ import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.util.KeybindsUtil;
 
 import java.util.List;
+
+@SuppressWarnings("OptionalGetWithoutIsPresent")
 
 public class Magnet extends TrinketItem implements Trinket {
 
@@ -121,11 +124,16 @@ public class Magnet extends TrinketItem implements Trinket {
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         PlayerEntity player = (PlayerEntity) entity;
-        if(getMagnetState(stack) == MagnetState.ON) {
-            attractItemAndXp(entity);
-        }
-        if(KeybindsUtil.trinket.isPressed() && !player.getItemCooldownManager().isCoolingDown(this)) {
-            toggleMode(stack, player);
+        World world = player.getWorld();
+        if(world.isClient()) {
+            if(TrinketsApi.getTrinketComponent(player).get().isEquipped(this)) {
+                if (getMagnetState(stack) == MagnetState.ON) {
+                    attractItemAndXp(entity);
+                }
+                if (KeybindsUtil.trinketKey.isPressed() && !player.getItemCooldownManager().isCoolingDown(this)) {
+                    toggleMode(stack, player);
+                }
+            }
         }
     }
 
