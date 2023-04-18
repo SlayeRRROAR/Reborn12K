@@ -424,7 +424,9 @@
     "item.reborn12k.flour": "Flour",
     "item.reborn12k.dough": "Dough",
 
+    "item.reborn12k.wither_skull_fragment": "Wither Skull Fragment",
     "item.reborn12k.withered_star": "Withered Star",
+    "item.reborn12k.heart_of_darkness": "Heart of Darkness",
 
     "item.reborn12k.hammer": "Hammer",
     "item.reborn12k.crushing_wheel": "Crushing Wheel",
@@ -574,52 +576,72 @@
     "item.reborn12k.mv_battery": "MV Battery",
     "item.reborn12k.hv_battery": "HV Battery",
 
-    "item.reborn12k.basic_ai_module": "Basic AI Module",
-    "item.reborn12k.advanced_ai_module": "Advanced AI Module",
-    "item.reborn12k.ultimate_ai_module": "Ultimate AI Module",
-    "item.reborn12k.special_ai_module": "Special AI Module",
+    "item.reborn12k.soul_vessel": "Soul Vessel",
 
-    "item.reborn12k.instruction_chip": "Instruction Chip",
+    "item.reborn12k.chicken_soul": "Chicken Soul",
+    "item.reborn12k.cow_soul": "Cow Soul",
+    "item.reborn12k.fish_soul": "Fish Soul",
+    "item.reborn12k.mooshroom_soul": "Mooshroom Soul",
+    "item.reborn12k.pig_soul": "Pig Soul",
+    "item.reborn12k.rabbit_soul": "Rabbit Soul",
+    "item.reborn12k.sheep_soul": "Sheep Soul",
+    "item.reborn12k.squid_soul": "Squid Soul",
 
-    "item.reborn12k.butchering_chip": "Butchering Chip",
-    "item.reborn12k.shearing_chip": "Shearing Chip",
-    "item.reborn12k.severing_chip": "Severing Chip",
-    "item.reborn12k.decapitation_chip": "Decapitation Chip",
-    "item.reborn12k.extraction_chip": "Extraction Chip",
-    "item.reborn12k.recombination_chip": "Recombination Chip",
-    "item.reborn12k.exp_drain_chip": "EXP-Drain Chip",
-    "item.reborn12k.s_rep_chip": "S-ReP Chip",
+    "item.reborn12k.bee_soul": "Bee Soul",
+    "item.reborn12k.enderman_soul": "Enderman Soul",
+    "item.reborn12k.spider_soul": "Spider Soul",
+
+    "item.reborn12k.blaze_soul": "Blaze Soul",
+    "item.reborn12k.creeper_soul": "Creeper Soul",
+    "item.reborn12k.drowned_soul": "Drowned Soul",
+    "item.reborn12k.ghast_soul": "Ghast Soul",
+    "item.reborn12k.guardian_soul": "Guardian Soul",
+    "item.reborn12k.magma_cube_soul": "Magma Cube Soul",
+    "item.reborn12k.illager_soul": "Illager Soul",
+    "item.reborn12k.phantom_soul": "Phantom Soul",
+    "item.reborn12k.shulker_soul": "Shulker Soul",
+    "item.reborn12k.skeleton_soul": "Skeleton Soul",
+    "item.reborn12k.slime_soul": "Slime Soul",
+    "item.reborn12k.witch_soul": "Witch Soul",
+    "item.reborn12k.wither_skeleton_soul": "Wither Skeleton Soul",
+    "item.reborn12k.zombie_soul": "Zombie Soul",
+
+    "item.reborn12k.ender_dragon_soul": "Ender Dragon Soul",
+    "item.reborn12k.warden_soul": "Warden Soul",
+    "item.reborn12k.wither_soul": "Wither Soul",
 
 
-    "item.reborn12k.bee_ai_module": "Bee AI Module",
-    "item.reborn12k.chicken_ai_module": "Chicken AI Module",
-    "item.reborn12k.cow_ai_module": "Cow AI Module",
-    "item.reborn12k.fish_ai_module": "Fish AI Module",
-    "item.reborn12k.pig_ai_module": "Pig AI Module",
-    "item.reborn12k.rabbit_ai_module": "Rabbit AI Module",
-    "item.reborn12k.sheep_ai_module": "Sheep AI Module",
-    "item.reborn12k.squid_ai_module": "Squid AI Module",
-    "item.reborn12k.creeper_ai_module": "Creeper AI Module",
-    "item.reborn12k.zombie_ai_module": "Zombie AI Module",
-    "item.reborn12k.slime_ai_module": "Slime AI Module",
-    "item.reborn12k.skeleton_ai_module": "Skeleton AI Module",
-    "item.reborn12k.witch_ai_module": "Witch AI Module",
-    "item.reborn12k.spider_ai_module": "Spider AI Module",
-    "item.reborn12k.iron_golem_ai_module": "Iron Golem AI Module",
-    "item.reborn12k.illager_ai_module": "Illager AI Module",
-    "item.reborn12k.guardian_ai_module": "Guardian AI Module",
-    "item.reborn12k.enderman_ai_module": "Enderman AI Module",
-    "item.reborn12k.shulker_ai_module": "Shulker AI Module",
-    "item.reborn12k.ghast_ai_module": "Ghast AI Module",
-    "item.reborn12k.blaze_ai_module": "Blaze AI Module",
-    "item.reborn12k.wither_skeleton_ai_module": "Wither Skeleton AI Module",
-    "item.reborn12k.phantom_ai_module": "Phantom AI Module",
-    "item.reborn12k.wither_ai_module": "Wither AI Module",
-    "item.reborn12k.ender_dragon_ai_module": "Ender Dragon AI Module",
-    "item.reborn12k.experience_data_card": "Experience Data Card",
-    "item.reborn12k.experience_data_card_v2": "Experience Data Card v2",
-    "item.reborn12k.experience_data_card_v3": "Experience Data Card v3",
-    "item.reborn12k.experience_data_card_v237": "Experience Data Card v23.7",
+    "item.reborn12k.chicken_essence": "Chicken Essence",
+    "item.reborn12k.cow_essence": "Cow Essence",
+    "item.reborn12k.fish_essence": "Fish Essence",
+    "item.reborn12k.mooshroom_essence": "Mooshroom Essence",
+    "item.reborn12k.pig_essence": "Pig Essence",
+    "item.reborn12k.rabbit_essence": "Rabbit Essence",
+    "item.reborn12k.sheep_essence": "Sheep Essence",
+    "item.reborn12k.squid_essence": "Squid Essence",
+
+    "item.reborn12k.bee_essence": "Bee Essence",
+    "item.reborn12k.enderman_essence": "Enderman Essence",
+    "item.reborn12k.spider_essence": "Spider Essence",
+
+    "item.reborn12k.blaze_essence": "Blaze Essence",
+    "item.reborn12k.creeper_essence": "Creeper Essence",
+    "item.reborn12k.drowned_essence": "Drowned Essence",
+    "item.reborn12k.ghast_essence": "Ghast Essence",
+    "item.reborn12k.guardian_essence": "Guardian Essence",
+    "item.reborn12k.magma_cube_essence": "Magma Cube Essence",
+    "item.reborn12k.illager_essence": "Illager Essence",
+    "item.reborn12k.phantom_essence": "Phantom Essence",
+    "item.reborn12k.shulker_essence": "Shulker Essence",
+    "item.reborn12k.skeleton_essence": "Skeleton Essence",
+    "item.reborn12k.slime_essence": "Slime Essence",
+    "item.reborn12k.witch_essence": "Witch Essence",
+    "item.reborn12k.wither_skeleton_essence": "Wither Skeleton Essence",
+    "item.reborn12k.zombie_essence": "Zombie Essence",
+
+    "item.reborn12k.ender_dragon_essence": "Ender Dragon Essence",
+    "item.reborn12k.warden_essence": "Warden Essence",
+    "item.reborn12k.wither_essence": "Wither Essence",
 
 
     "item.reborn12k.manaweave": "Manaweave",
@@ -649,6 +671,7 @@
     "item.reborn12k.energized_glowstone_bucket": "Energized Glowstone Bucket",
     "item.reborn12k.resonant_ender_bucket": "Resonant Ender Bucket",
 
+    "item.reborn12k.strongbox_key": "Strongbox Key",
 
     "item.reborn12k.shades": "Filo's Aviators",
     "item.reborn12k.cat_ears": "Cat Ears",
@@ -656,26 +679,31 @@
     "item.reborn12k.bunny_ears": "Bunny Ears",
     "item.reborn12k.iron_crown": "Iron Crown",
 
+    "item.reborn12k.green_belt": "Green Belt",
+    "item.reborn12k.red_belt": "Red Belt",
     "item.reborn12k.black_belt": "Black Belt",
     "item.reborn12k.expert_belt": "Expert Belt",
     "item.reborn12k.champion_belt": "Champion's Belt",
     "item.reborn12k.focus_belt": "Focus Belt",
+    "item.reborn12k.antigrav_belt": "AntiGrav Belt",
 
-    "item.reborn12k.comfy_shoes": "Comfy Shoes",
+    "item.reborn12k.comfy_loafers": "Comfy Loafers",
     "item.reborn12k.traveler_shoes": "Traveler's Shoes",
     "item.reborn12k.running_shoes": "Running Shoes",
     "item.reborn12k.long_fall_boots": "Long Fall Boots",
+    "item.reborn12k.winged_shoes": "Winged Shoes",
 
     "item.reborn12k.old_necklace": "Old Necklace",
     "item.reborn12k.golden_necklace": "Golden Necklace",
     "item.reborn12k.bejeweled_necklace": "Bejeweled Necklace",
     "item.reborn12k.heart_pendant": "Heart Pendant",
-    "item.reborn12k.griffin_feather": "Griffin Feather",
-    "item.reborn12k.golem_core": "Golem Core",
-    "item.reborn12k.leviathan_eye": "Leviathan Eye",
-    "item.reborn12k.dragon_fang": "Dragon Fang",
-    "item.reborn12k.angel_tear": "Angel Tear",
-    "item.reborn12k.basilisk_tooth": "Basilisk Tooth",
+
+    "item.reborn12k.air_pendant": "§bStormweaver Pendant",
+    "item.reborn12k.earth_pendant": "§2Earthshaper Pendant",
+    "item.reborn12k.water_pendant": "§1Abyssbound Pendant",
+    "item.reborn12k.fire_pendant": "§cInfernal Pendant",
+    "item.reborn12k.light_pendant": "§eRadiant Pendant",
+    "item.reborn12k.dark_pendant": "§5Shadowtouched Pendant",
 
     "item.reborn12k.golden_ring": "Golden Ring",
     "item.reborn12k.awakened_golden_ring": "Awakened Golden Ring",
@@ -699,22 +727,33 @@
     "item.reborn12k.indelible_bloody_claw": "Indelible Bloody Claw",
     "item.reborn12k.greater_bloody_claw": "Greater Bloody Claw",
 
-    "item.reborn12k.vague_war_medallion": "Vague War Medallion",
-    "item.reborn12k.minor_war_medallion": "Minor War Medallion",
-    "item.reborn12k.indelible_war_medallion": "Indelible War Medallion",
-    "item.reborn12k.greater_war_medallion": "Greater War Medallion",
+    "item.reborn12k.vague_medallion": "Vague Medallion",
+    "item.reborn12k.minor_medallion": "Minor Medallion",
+    "item.reborn12k.indelible_medallion": "Indelible Medallion",
+    "item.reborn12k.greater_medallion": "Greater Medallion",
 
     "item.reborn12k.vague_frenzy_tonic": "Vague Frenzy Tonic",
     "item.reborn12k.minor_frenzy_tonic": "Minor Frenzy Tonic",
     "item.reborn12k.indelible_frenzy_tonic": "Indelible Frenzy Tonic",
     "item.reborn12k.greater_frenzy_tonic": "Greater Frenzy Tonic",
 
-    "item.reborn12k.air_impulse": "§bAir Impulse",
-    "item.reborn12k.earth_impulse": "§2Air Impulse",
-    "item.reborn12k.water_impulse": "§1Water Impulse",
-    "item.reborn12k.fire_impulse": "§cInfernal Impulse",
-    "item.reborn12k.light_impulse": "§eRadiant Impulse",
-    "item.reborn12k.dark_impulse": "§5Dark Impulse",
+    "item.reborn12k.vague_lucky_charm": "Vague Lucky Charm",
+    "item.reborn12k.minor_lucky_charm": "Minor Lucky Charm",
+    "item.reborn12k.indelible_lucky_charm": "Indelible Lucky Charm",
+    "item.reborn12k.greater_lucky_charm": "Greater Lucky Charm",
+
+    "item.reborn12k.griffin_feather": "Griffin Feather",
+    "item.reborn12k.bottle_of_wind": "Bottle of Wind",
+    "item.reborn12k.golem_core": "Golem Core",
+    "item.reborn12k.nightshade": "Deadly Nightshade",
+    "item.reborn12k.leviathan_eye": "Leviathan Eye",
+    "item.reborn12k.flask_of_undertow": "Flask of Undertow",
+    "item.reborn12k.dragon_fang": "Dragon Fang",
+    "item.reborn12k.crystalized_fire": "Crystalized Fire",
+    "item.reborn12k.angelic_halo": "Angelic Halo",
+    "item.reborn12k.prayer_candle": "Prayer Candle",
+    "item.reborn12k.basilisk_tooth": "Basilisk Tooth",
+    "item.reborn12k.essence_of_decay": "Essence of Decay",
 
     "item.reborn12k.jetpack": "Jetpack",
     "item.reborn12k.angel_wings": "Angel Wings",
@@ -722,9 +761,13 @@
     "item.reborn12k.bat_wings": "Bat Wings",
 
     "item.reborn12k.gold_pouch": "Gold Pouch",
-    "item.reborn12k.bloody_rose": "Bloody Rose",
-    "item.reborn12k.magnifying_glass": "Magnifying Glass",
     "item.reborn12k.magnet": "Magnet",
+    "item.reborn12k.bloody_rose": "Bloody Rose",
+    "item.reborn12k.weak_spring": "Weak Spring",
+    "item.reborn12k.strong_spring": "Strong Spring",
+    "item.reborn12k.endless_quiver": "Endless Quiver",
+    "item.reborn12k.enchanted_spring": "Enchanted Spring",
+    "item.reborn12k.magnifying_glass": "Magnifying Glass",
     "item.reborn12k.phoenix_plume": "§6Phoenix Plume",
 
 
@@ -758,17 +801,23 @@
     "block.reborn12k.market_table": "Market Table",
     "block.reborn12k.fancy_lamp": "Fancy Lamp",
 
-    "block.reborn12k.locked_strongbox": "Locked Strongbox",
+    "block.reborn12k.common_strongbox": "Locked Strongbox",
+    "block.reborn12k.rare_strongbox": "§bLocked Strongbox",
+    "block.reborn12k.epic_strongbox": "§dLocked Strongbox",
+    "block.reborn12k.legendary_strongbox": "§6Locked Strongbox",
+    "block.reborn12k.elemental_strongbox": "§4Locked Strongbox",
 
-    "block.reborn12k.air_gem": "Aeris",
+    "block.reborn12k.air_gem": "Aëris",
     "block.reborn12k.earth_gem": "Telluris",
-    "block.reborn12k.water_gem": "Maris",
-    "block.reborn12k.fire_gem": "Vulcani",
+    "block.reborn12k.water_gem": "Aquae",
+    "block.reborn12k.fire_gem": "Ignis",
     "block.reborn12k.sun_gem": "Solis",
     "block.reborn12k.moon_gem": "Lunae",
 
     "block.reborn12k.arcane_pedestal": "Arcane Pedestal",
+
     "block.reborn12k.arcane_artifact": "Arcane Artifact",
+    "block.reborn12k.mana_condenser": "Mana Condenser",
 
     "block.reborn12k.crusher": "Crusher",
     "block.reborn12k.mineral_manufactory": "Mineral Manufactory",
@@ -777,8 +826,6 @@
     "block.reborn12k.basic_laser_quarry": "Basic Laser Quarry",
     "block.reborn12k.advanced_laser_quarry": "Advanced Laser Quarry",
     "block.reborn12k.ultimate_laser_quarry": "Ultimate Laser Quarry",
-
-    "block.reborn12k.synthesis_chamber": "Synthesis Chamber",
 
 
     "block.reborn12k.ash_log": "Ash Log",
@@ -871,6 +918,14 @@
     "item.reborn12k.locked_strongbox.rare": "You opened a strongbox and found a §bRare §rTrinket",
     "item.reborn12k.locked_strongbox.epic": "You opened a strongbox and found an §dEpic §rTrinket",
     "item.reborn12k.locked_strongbox.legendary": "You opened a strongbox and found a §6Legendary §rTrinket",
+    "item.reborn12k.locked_strongbox.mythical": "You opened a strongbox and found a §4Mythical §rTrinket",
+
+    "item.reborn12k.elemental_strongbox.air": "You opened a strongbox and found a §bStormweaver §rItem",
+    "item.reborn12k.elemental_strongbox.earth": "You opened a strongbox and found an §2Earthshaper §rItem",
+    "item.reborn12k.elemental_strongbox.water": "You opened a strongbox and found an §1Abyssbound §rTrinket",
+    "item.reborn12k.elemental_strongbox.fire": "You opened a strongbox and found a §cFlameborn §rItem",
+    "item.reborn12k.elemental_strongbox.light": "You opened a strongbox and found a §eRadiant §rItem",
+    "item.reborn12k.elemental_strongbox.dark": "You opened a strongbox and found a §5Shadowtouched §rItem",
 
     "item.reborn12k.windstorm.tooltip": "§8Nimbles allies",
     "item.reborn12k.viridian.tooltip": "§8Hastens allies",
@@ -891,8 +946,10 @@
     "item.reborn12k.magic_mirror.tooltip3": "§cOnly works in the Overworld",
     "item.reborn12k.magic_mirror.tooltip4": "§cYou're out of charges",
 
-    "item.reborn12k.yggdrasill_branch.tooltip1": "The Yggdrasill's Branch is §2INACTIVE",
-    "item.reborn12k.yggdrasill_branch.tooltip2": "The Yggdrasill's Branch is §aACTIVE",
+    "item.reborn12k.yggdrasill_branch.tooltip1": "§8The Yggdrasill's Branch is §2INACTIVE",
+    "item.reborn12k.yggdrasill_branch.tooltip2": "§8The Yggdrasill's Branch is §aACTIVE",
+
+    "item.reborn12k.strongbox_key.tooltip": "§8A key. What did you expect?",
 
     "item.reborn12k.hat.tooltip": "§9Hat",
     "item.reborn12k.necklace.tooltip": "§9Necklace",
@@ -901,10 +958,11 @@
     "item.reborn12k.ring.tooltip": "§9Ring",
     "item.reborn12k.trinket.tooltip": "§9Trinket",
 
-    "item.reborn12k.common.tooltip": "§8Common",
+    "item.reborn12k.common.tooltip": "Common",
     "item.reborn12k.rare.tooltip": "§bRare",
     "item.reborn12k.epic.tooltip": "§dEpic",
     "item.reborn12k.legendary.tooltip": "§6Legendary",
+    "item.reborn12k.mythical.tooltip": "§4Mythical",
 
     "item.reborn12k.air.tooltip": "§bStormweaver",
     "item.reborn12k.earth.tooltip": "§2Earthshaper",
@@ -916,43 +974,113 @@
     "item.reborn12k.shades.tooltip1": "§8Endermen can't hurt me",
     "item.reborn12k.shades.tooltip2": "§8this shades are Gucci",
 
-    "item.reborn12k.fake_ears.tooltip1": "§8Fake animal ears.",
-    "item.reborn12k.fake_ears.tooltip2": "§8They kinda look cute on you.",
+    "item.reborn12k.fake_ears.tooltip1": "§8Fake animal ears. They",
+    "item.reborn12k.fake_ears.tooltip2": "§8kinda look cute on you.",
 
     "item.reborn12k.iron_crown.tooltip1": "§8The throne is now",
     "item.reborn12k.iron_crown.tooltip2": "§8yours to take...",
 
-    "item.reborn12k.jetpack.tooltip1": "§8Hold the §5Activate Trinket",
-    "item.reborn12k.jetpack.tooltip2": "§8button to move upwards",
+    "item.reborn12k.air_pendant.tooltip1": "§8When equipped unlocks the",
+    "item.reborn12k.air_pendant.tooltip2": "§8potential of §bStormweaver §8Trinkets",
 
-    "item.reborn12k.angel_wings.tooltip1": "§8You are not a mere",
-    "item.reborn12k.angel_wings.tooltip2": "§8mortal anymore...",
+    "item.reborn12k.antigrav_belt.tooltip1": "§8Slows the fall of the wearer",
+    "item.reborn12k.antigrav_belt.tooltip2": "§8when detects downward motion",
 
     "item.reborn12k.long_fall_boots.tooltip1": "§8Property of Aperture",
     "item.reborn12k.long_fall_boots.tooltip2": "§8Laboratories #G14-D05",
 
-    "item.reborn12k.dark_impulse.tooltip1": "§8When equipped unlocks the",
-    "item.reborn12k.dark_impulse.tooltip2": "§8potential of §5Shadowtouched §8Trinkets",
+    "item.reborn12k.earth_pendant.tooltip1": "§8When equipped unlocks the",
+    "item.reborn12k.earth_pendant.tooltip2": "§8potential of §2Earthshaper §8Trinkets",
 
-    "item.reborn12k.radiant_impulse.tooltip1": "§8When equipped unlocks the",
-    "item.reborn12k.radiant_impulse.tooltip2": "§8potential of §eLightbound §8Trinkets",
+    "item.reborn12k.water_pendant.tooltip1": "§8When equipped unlocks the",
+    "item.reborn12k.water_pendant.tooltip2": "§8potential of §1Abyssbound §8Trinkets",
 
-    "item.reborn12k.infernal_impulse.tooltip1": "§8When equipped unlocks the",
-    "item.reborn12k.infernal_impulse.tooltip2": "§8potential of §cFlameborn §8Trinkets",
+    "item.reborn12k.fire_pendant.tooltip1": "§8When equipped unlocks the",
+    "item.reborn12k.fire_pendant.tooltip2": "§8potential of §cFlameborn §8Trinkets",
+
+    "item.reborn12k.light_pendant.tooltip1": "§8When equipped unlocks the",
+    "item.reborn12k.light_pendant.tooltip2": "§8potential of §eRadiant §8Trinkets",
+
+    "item.reborn12k.dark_pendant.tooltip1": "§8When equipped unlocks the",
+    "item.reborn12k.dark_pendant.tooltip2": "§8potential of §5Shadowtouched §8Trinkets",
+
+    "item.reborn12k.ring_of_air.tooltip1": "§8Ring of air",
+    "item.reborn12k.ring_of_air.tooltip2": "§8Ring of air",
+
+    "item.reborn12k.ring_of_earth.tooltip1": "§8Ring of earth",
+    "item.reborn12k.ring_of_earth.tooltip2": "§8Ring of earth",
+
+    "item.reborn12k.ring_of_water.tooltip1": "§8Ring of water",
+    "item.reborn12k.ring_of_water.tooltip2": "§8Ring of water",
+
+    "item.reborn12k.ring_of_fire.tooltip1": "§8Ring of fire",
+    "item.reborn12k.ring_of_fire.tooltip2": "§8Ring of fire",
+
+    "item.reborn12k.ring_of_light.tooltip1": "§8Ring of light",
+    "item.reborn12k.ring_of_light.tooltip2": "§8Ring of light",
+
+    "item.reborn12k.ring_of_dark.tooltip1": "§8Ring of dark",
+    "item.reborn12k.ring_of_dark.tooltip2": "§8Ring of dark",
+
+    "item.reborn12k.ring_of_strength.tooltip1": "§8Ring of strength",
+    "item.reborn12k.ring_of_strength.tooltip2": "§8Ring of strength",
+
+    "item.reborn12k.lucky_charm.tooltip": "§8No crits? Skill issue",
+
+    "item.reborn12k.gold_pouch.tooltip": "§8A symbol of trust for some",
 
     "item.reborn12k.bloody_rose.tooltip1": "§8A beautiful rose with its",
     "item.reborn12k.bloody_rose.tooltip2": "§8thorns covered in blood",
 
-    "item.reborn12k.magnifying_glass.tooltip": "§8Extends your reach",
+    "item.reborn12k.weak_spring.tooltip1": "§8An oversized spring, a bit",
+    "item.reborn12k.weak_spring.tooltip2": "§8weak but will work anyways",
+
+    "item.reborn12k.strong_spring.tooltip1": "§8A very tough and",
+    "item.reborn12k.strong_spring.tooltip2": "§8oversized spring",
+
+    "item.reborn12k.enchanted_spring.tooltip1": "§8A soft, iridescent spring. Packs",
+    "item.reborn12k.enchanted_spring.tooltip2": "§8an unnaturally strong punch",
+
+    "item.reborn12k.endless_quiver.tooltip1": "§8A quiver that is always",
+    "item.reborn12k.endless_quiver.tooltip2": "§8filled with arrows",
+
+    "item.reborn12k.magnifying_glass.tooltip1": "§8Objects in the lens may appear",
+    "item.reborn12k.magnifying_glass.tooltip2": "§8closer than they really are",
+
+    "item.reborn12k.jetpack.tooltip1": "§8Hold the §5Activate Trinket",
+    "item.reborn12k.jetpack.tooltip2": "§8button to move upwards",
+
+    "item.reborn12k.wings.tooltip1": "§8Fly me to the moon",
+    "item.reborn12k.wings.tooltip2": "§8Let me play among the stars",
 
     "item.reborn12k.magnet.tooltip1": "§8Press the §5Activate Trinket",
     "item.reborn12k.magnet.tooltip2": "§8button to turn it on or off",
-    "item.reborn12k.magnet.tooltip3": "The magnet is §cINACTIVE",
-    "item.reborn12k.magnet.tooltip4": "The magnet is §1ACTIVE",
+    "item.reborn12k.magnet.tooltip3": "§8The magnet is §cINACTIVE",
+    "item.reborn12k.magnet.tooltip4": "§8The magnet is §1ACTIVE",
+    "item.reborn12k.magnet.tooltip5": "§cINACTIVE",
+    "item.reborn12k.magnet.tooltip6": "§1ACTIVE",
 
-    "item.reborn12k.phoenix_plume.tooltip1": "§8When equipped protects from",
-    "item.reborn12k.phoenix_plume.tooltip2": "§8death. Usable once a day",
-    "item.reborn12k.phoenix_plume.tooltip3": "§8A Phoenix feather",
+    "item.reborn12k.phoenix_plume.tooltip1": "§8Protects from death",
+    "item.reborn12k.phoenix_plume.tooltip2": "§8A Phoenix feather",
+
+
+    "item.reborn12k.griffin_feather.tooltip": "§8The feather of mythical winged beast",
+    "item.reborn12k.bottle_of_wind.tooltip1": "§8The nature of a thing's more",
+    "item.reborn12k.bottle_of_wind.tooltip2": "§8important than the form of a thing.",
+    "item.reborn12k.golem_core.tooltip": "§8The core of a Golem",
+    "item.reborn12k.nightshade.tooltip1": "§8Its taste is as sweet as",
+    "item.reborn12k.nightshade.tooltip2": "§8the death that soon follows",
+    "item.reborn12k.leviathan_eye.tooltip1": "§8They must be made to see that",
+    "item.reborn12k.leviathan_eye.tooltip2": "§8their monstrous god is mortal",
+    "item.reborn12k.flask_of_undertow.tooltip": "§8Pocket sea!",
+    "item.reborn12k.dragon_fang.tooltip1": "§8A fire dragon's fang,",
+    "item.reborn12k.dragon_fang.tooltip2": "§8still as hot as lava",
+    "item.reborn12k.crystalized_fire.tooltip": "§8A paradox made reality",
+    "item.reborn12k.angelic_halo.tooltip": "§8a",
+    "item.reborn12k.prayer_candle.tooltip1": "§8While the Flame still",
+    "item.reborn12k.prayer_candle.tooltip2": "§8burns, hope remains",
+    "item.reborn12k.basilisk_tooth.tooltip": "§8Not only its gaze can kill...",
+    "item.reborn12k.essence_of_decay.tooltip": "§8Destruction made manifest",
 
 
     "item.reborn12k.red_queen.tooltip1": "§8Exceed is §cOFF",
@@ -967,62 +1095,29 @@
     "item.reborn12k.laser_focus1.tooltip": "§8Can be used in",
     "item.reborn12k.laser_focus2.tooltip": "§8a §4Laser Quarry",
 
-    "item.reborn12k.rechargeable_battery.tooltip": "§4Remaining charge: %s",
+    "item.reborn12k.soul_vessel.tooltip1": "§8Throw it to a mob to",
+    "item.reborn12k.soul_vessel.tooltip2": "§8capture its soul",
 
-    "item.reborn12k.basic_ai_module.tooltip": "For animals",
-    "item.reborn12k.advanced_ai_module.tooltip": "For most mobs",
-    "item.reborn12k.ultimate_ai_module.tooltip": "For stronger mobs",
-    "item.reborn12k.special_ai_module.tooltip1": "For Bosses",
-    "item.reborn12k.special_ai_module.tooltip2": "§8Punch a Boss",
-    "item.reborn12k.special_ai_module.tooltip3": "§8and don't die",
+    "item.reborn12k.mob_soul.tooltip1": "§8A soul trapped in",
+    "item.reborn12k.mob_soul.tooltip2": "§8a glass-like container",
 
-    "item.reborn12k.ai_module.tooltip1": "§8Right-click a mob",
-    "item.reborn12k.ai_module.tooltip2": "§aAI Module has been set",
-    "item.reborn12k.ai_module.tooltip3": "§cInvalid DNA Detected!",
+    "item.reborn12k.essence.tooltip": "§8Can be consumed for exp",
 
-    "item.reborn12k.complete_ai_module.tooltip1": "AI Module: §2Online",
-    "item.reborn12k.complete_ai_module.tooltip2": "§8Instruction Chip Missing",
+    "item.reborn12k.basic_essence.tooltip": "NEGLIGIBLE §8Experience Amount",
+    "item.reborn12k.advanced_essence.tooltip": "MINIMAL §8Experience Amount",
+    "item.reborn12k.ultimate_essence.tooltip": "MODERATE §8Experience Amount",
+    "item.reborn12k.special_essence.tooltip": "HIGH §8Experience Amount",
 
-    "item.reborn12k.instruction_chip.tooltip1": "Essential Chip for AI Modules",
-    "item.reborn12k.instruction_chip.tooltip2": "§8Specification not set",
 
-    "item.reborn12k.butchering_chip.tooltip1": "§8Chip that mimicks the",
-    "item.reborn12k.butchering_chip.tooltip2": "§8act of gathering flesh",
-
-    "item.reborn12k.shearing_chip.tooltip1": "§8Chip that mimicks the",
-    "item.reborn12k.shearing_chip.tooltip2": "§8act of cutting",
-
-    "item.reborn12k.severing_chip.tooltip1": "§8Chip that mimicks a",
-    "item.reborn12k.severing_chip.tooltip2": "§8sword strike",
-
-    "item.reborn12k.decapitation_chip.tooltip1": "§8Chip that mimicks a",
-    "item.reborn12k.decapitation_chip.tooltip2": "§8cut to the head",
-
-    "item.reborn12k.extraction_chip.tooltip1": "§8Chip that mimicks the",
-    "item.reborn12k.extraction_chip.tooltip2": "§8extraction of resources",
-
-    "item.reborn12k.recombination_chip.tooltip1": "§8Chip that allows DNA",
-    "item.reborn12k.recombination_chip.tooltip2": "§8reconstruction",
-
-    "item.reborn12k.exp_drain_chip.tooltip1": "§8Chip for the convertion",
-    "item.reborn12k.exp_drain_chip.tooltip2": "§8to experience points",
-
-    "item.reborn12k.s_rep_chip.tooltip1": "§8Self-Replication Protocol",
-    "item.reborn12k.s_rep_chip.tooltip2": "§8Forces the AI to clone itself",
-
-    "item.reborn12k.exp_card.tooltip1": "§8Can be consumed for experience",
-    "item.reborn12k.exp_card.tooltip2": "SNEAK §8to consume the whole stack",
-
-    "item.reborn12k.experience_data_card.tooltip": "NEGLIGIBLE §8Experience",
-    "item.reborn12k.experience_data_card_v2.tooltip": "MINIMAL §8Experience",
-    "item.reborn12k.experience_data_card_v3.tooltip": "MODERATE §8Experience",
-    "item.reborn12k.experience_data_card_v237.tooltip": "HIGH §8Experience",
-
+    "enchantment.reborn12k.magic_protection": "Magic Protection",
 
     "enchantment.reborn12k.kiss_of_death": "Kiss of Death",
-    "enchantment.reborn12k.magic_protection": "Magic Protection",
-    "enchantment.reborn12k.toxic_thread": "Toxic Thread",
+
+    "enchantment.reborn12k.toxic_edge": "Toxic Edge",
     "enchantment.reborn12k.frost_bite": "Frost Bite",
+
+    "enchantment.reborn12k.venom": "Venom",
+    "enchantment.reborn12k.wounding": "Wounding",
 
 
     "sounds:reborn12k.z115": "Elena Siegman - 115",
@@ -1135,6 +1230,46 @@
 
 
     "category.reborn12k.keybinds": "Reborn12K",
-    "key.reborn12k.trinket": "Activate Trinket"
+    "key.reborn12k.trinket": "Activate Trinket",
 
+
+
+    "text.autoconfig.reborn12k.title": "Reborn12K",
+
+    "text.autoconfig.reborn12k.category.ore_generation": "Ore Generation",
+
+    "text.autoconfig.reborn12k.option.enableOreGeneration": "Enable Ore Generation",
+
+    "text.autoconfig.reborn12k.option.enableOverworldGeneration": "Enable Overworld Ores",
+    "text.autoconfig.reborn12k.option.enableNetherGeneration": "Enable Nether Ores",
+    "text.autoconfig.reborn12k.option.enableEndGeneration": "Enable End Ores",
+
+    "text.autoconfig.reborn12k.option.enableTinOreGeneration": "Enable Tin Ore",
+    "text.autoconfig.reborn12k.option.enableAluminumOreGeneration": "Enable Aluminum Ore",
+    "text.autoconfig.reborn12k.option.enableSilverOreGeneration": "Enable Silver Ore",
+    "text.autoconfig.reborn12k.option.enableLeadOreGeneration": "Enable Lead Ore",
+    "text.autoconfig.reborn12k.option.enableNickelOreGeneration": "Enable Nickel Ore",
+    "text.autoconfig.reborn12k.option.enableChromiteOreGeneration": "Enable Chromite Ore",
+    "text.autoconfig.reborn12k.option.enableTitaniumOreGeneration": "Enable Titanium Ore",
+    "text.autoconfig.reborn12k.option.enableSapphireOreGeneration": "Enable Sapphire Ore",
+    "text.autoconfig.reborn12k.option.enableRubyOreGeneration": "Enable Ruby Ore",
+    "text.autoconfig.reborn12k.option.enableManatiteOreGeneration": "Enable Manatite Ore",
+
+    "text.autoconfig.reborn12k.option.enableTungstenOreGeneration": "Enable Tungsten Ore",
+    "text.autoconfig.reborn12k.option.enableVanadiumOreGeneration": "Enable Vanadium Ore",
+    "text.autoconfig.reborn12k.option.enableNeodymiumOreGeneration": "Enable Neodymium Ore",
+    "text.autoconfig.reborn12k.option.enableUraniumOreGeneration": "Enable Uranium Ore",
+
+    "text.autoconfig.reborn12k.option.enableCobaltOreGeneration": "Enable Cobalt Ore",
+    "text.autoconfig.reborn12k.option.enableOsmiumOreGeneration": "Enable Osmium Ore",
+    "text.autoconfig.reborn12k.option.enablePlatinumOreGeneration": "Enable Platinum Ore",
+    "text.autoconfig.reborn12k.option.enableIridiumOreGeneration": "Enable Iridium Ore",
+
+
+    "text.autoconfig.reborn12k.category.tree_generation": "Tree Generation",
+
+    "text.autoconfig.reborn12k.option.enableTreeGeneration": "Enable Tree Generation",
+    "text.autoconfig.reborn12k.option.enableCherryTreeGeneration": "Enable Cherry Tree",
+    "text.autoconfig.reborn12k.option.enableAshTreeGeneration": "Enable Ash Tree",
+    "text.autoconfig.reborn12k.option.enableSlimyTreeGeneration": "Enable Slimy Tree"
 }
