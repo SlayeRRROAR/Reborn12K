@@ -11,7 +11,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.armors.custom.MageArmorItem;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
-@SuppressWarnings("unused") //todo: for Magisteel, Orichalcum and Mithril -> adjust values of armor materials
+@SuppressWarnings("unused")
 
 public class RebornArmors {
 
