@@ -23,9 +23,10 @@ import net.slayerrroar.reborn12k.screen.mana_condenser.ManaCondenserScreenHandle
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
 import java.util.Optional;
 
-@SuppressWarnings("OptionalGetWithoutIsPresent")
+@SuppressWarnings({"OptionalGetWithoutIsPresent", "deprecation"})
 
 public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -117,7 +118,7 @@ public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreen
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<ManaCondenserRecipe> recipe = entity.getWorld().getRecipeManager()
+        Optional<ManaCondenserRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(ManaCondenserRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         if(hasRecipe(entity)) {
@@ -135,7 +136,7 @@ public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreen
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<ManaCondenserRecipe> match = entity.getWorld().getRecipeManager()
+        Optional<ManaCondenserRecipe> match = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(ManaCondenserRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)

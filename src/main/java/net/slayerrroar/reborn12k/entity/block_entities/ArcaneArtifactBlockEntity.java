@@ -23,9 +23,10 @@ import net.slayerrroar.reborn12k.screen.arcane_artifact.ArcaneArtifactScreenHand
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
 import java.util.Optional;
 
-@SuppressWarnings("OptionalGetWithoutIsPresent")
+@SuppressWarnings({"OptionalGetWithoutIsPresent", "deprecation"})
 
 public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -117,7 +118,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<ArcaneArtifactRecipe> recipe = entity.getWorld().getRecipeManager()
+        Optional<ArcaneArtifactRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(ArcaneArtifactRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         if(hasRecipe(entity)) {
@@ -136,7 +137,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<ArcaneArtifactRecipe> match = entity.getWorld().getRecipeManager()
+        Optional<ArcaneArtifactRecipe> match = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(ArcaneArtifactRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)

@@ -24,9 +24,10 @@ import net.slayerrroar.reborn12k.screen.quarry.QuarryScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
 import java.util.Optional;
 
-@SuppressWarnings("OptionalGetWithoutIsPresent")
+@SuppressWarnings({"OptionalGetWithoutIsPresent", "deprecation"})
 
 public class BasicQuarryBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -121,7 +122,7 @@ public class BasicQuarryBlockEntity extends BlockEntity implements NamedScreenHa
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<QuarryRecipe> recipe = entity.getWorld().getRecipeManager()
+        Optional<QuarryRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(QuarryRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         if(hasRecipe(entity)) {
@@ -146,7 +147,7 @@ public class BasicQuarryBlockEntity extends BlockEntity implements NamedScreenHa
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<QuarryRecipe> match = entity.getWorld().getRecipeManager()
+        Optional<QuarryRecipe> match = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(QuarryRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)

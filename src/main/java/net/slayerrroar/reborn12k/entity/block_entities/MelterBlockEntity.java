@@ -24,9 +24,10 @@ import net.slayerrroar.reborn12k.screen.melter.MelterScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
 import java.util.Optional;
 
-@SuppressWarnings("OptionalGetWithoutIsPresent")
+@SuppressWarnings({"OptionalGetWithoutIsPresent", "deprecation"})
 
 public class MelterBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -154,7 +155,7 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<MelterRecipe> recipe = entity.getWorld().getRecipeManager()
+        Optional<MelterRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(MelterRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         if(hasRecipe(entity)) {
@@ -178,7 +179,7 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<MelterRecipe> match = entity.getWorld().getRecipeManager()
+        Optional<MelterRecipe> match = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(MelterRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)

@@ -23,9 +23,10 @@ import net.slayerrroar.reborn12k.screen.mineral_manufactory.MineralManufactorySc
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
 import java.util.Optional;
 
-@SuppressWarnings("OptionalGetWithoutIsPresent")
+@SuppressWarnings({"OptionalGetWithoutIsPresent", "deprecation"})
 
 public class MineralManufactoryBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -116,7 +117,7 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<MineralManufactoryRecipe> recipe = entity.getWorld().getRecipeManager()
+        Optional<MineralManufactoryRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(MineralManufactoryRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         if(hasRecipe(entity)) {
@@ -134,7 +135,7 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<MineralManufactoryRecipe> match = entity.getWorld().getRecipeManager()
+        Optional<MineralManufactoryRecipe> match = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(MineralManufactoryRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)

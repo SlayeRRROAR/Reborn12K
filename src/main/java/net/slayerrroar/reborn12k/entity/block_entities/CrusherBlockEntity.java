@@ -28,7 +28,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Objects;
 import java.util.Optional;
 
-@SuppressWarnings("OptionalGetWithoutIsPresent")
+@SuppressWarnings({"OptionalGetWithoutIsPresent", "deprecation"})
 
 public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -156,7 +156,7 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<CrusherRecipe> recipe = entity.getWorld().getRecipeManager()
+        Optional<CrusherRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(CrusherRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         if(hasRecipe(entity)) {
@@ -176,7 +176,7 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<CrusherRecipe> match = entity.getWorld().getRecipeManager()
+        Optional<CrusherRecipe> match = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(CrusherRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
@@ -193,7 +193,7 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
 
     @Override
     public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
-        Direction localDir = this.getWorld().getBlockState(this.pos).get(CrusherBlock.FACING);
+        Direction localDir = Objects.requireNonNull(this.getWorld()).getBlockState(this.pos).get(CrusherBlock.FACING);
 
         if(side == Direction.DOWN) {
             return false;
