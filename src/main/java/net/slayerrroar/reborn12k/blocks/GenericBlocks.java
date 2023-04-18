@@ -10,8 +10,6 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.custom.UraniumBlocks;
@@ -24,13 +22,6 @@ import net.slayerrroar.reborn12k.world.features.tree.SlimySaplingGenerator;
 @SuppressWarnings("unused")
 
 public class GenericBlocks {
-
-    private static ButtonBlock createWoodenButtonBlock() {
-        SoundEvent clickOffSound = SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_OFF;
-        SoundEvent clickOnSound = SoundEvents.BLOCK_WOODEN_BUTTON_CLICK_ON;
-        BlockSoundGroup soundGroup = BlockSoundGroup.WOOD;
-        return new ButtonBlock(AbstractBlock.Settings.of(Material.DECORATION).noCollision().strength(0.5F).sounds(soundGroup), 30, true, clickOffSound, clickOnSound);
-    }
 
     public static final Block ASH_LOG = registerBlock("ash_log", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)), ItemGroupUtil.REBORN12K);
     public static final Block CHERRY_LOG = registerBlock("cherry_log", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)), ItemGroupUtil.REBORN12K);
@@ -65,20 +56,20 @@ public class GenericBlocks {
     public static final Block ASH_FENCE = registerBlock("ash_fence", new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)), ItemGroupUtil.REBORN12K);
     public static final Block CHERRY_FENCE = registerBlock("cherry_fence", new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)), ItemGroupUtil.REBORN12K);
 
-    public static final Block ASH_FENCE_GATE = registerBlock("ash_fence_gate", new FenceGateBlocks(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE)), ItemGroupUtil.REBORN12K);
-    public static final Block CHERRY_FENCE_GATE = registerBlock("cherry_fence_gate", new FenceGateBlocks(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE)), ItemGroupUtil.REBORN12K);
+    public static final Block ASH_FENCE_GATE = registerBlock("ash_fence_gate", new FenceGateBlocks(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK), ItemGroupUtil.REBORN12K);
+    public static final Block CHERRY_FENCE_GATE = registerBlock("cherry_fence_gate", new FenceGateBlocks(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK), ItemGroupUtil.REBORN12K);
 
-    public static final Block ASH_BUTTON = registerBlock("ash_button", new WoodenButtonBlocks(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)), ItemGroupUtil.REBORN12K);
-    public static final Block CHERRY_BUTTON = registerBlock("cherry_button", createWoodenButtonBlock(), ItemGroupUtil.REBORN12K);
+    public static final Block ASH_BUTTON = registerBlock("ash_button", new WoodenButtonBlocks(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 30, true), ItemGroupUtil.REBORN12K);
+    public static final Block CHERRY_BUTTON = registerBlock("cherry_button", new WoodenButtonBlocks(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 30, true), ItemGroupUtil.REBORN12K);
 
-    public static final Block ASH_PRESSURE_PLATE = registerBlock("ash_pressure_plate", new WoodenPressurePlateBlocks(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE)), ItemGroupUtil.REBORN12K);
-    public static final Block CHERRY_PRESSURE_PLATE = registerBlock("cherry_pressure_plate", new WoodenPressurePlateBlocks(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE)), ItemGroupUtil.REBORN12K);
+    public static final Block ASH_PRESSURE_PLATE = registerBlock("ash_pressure_plate", new WoodenPressurePlateBlocks(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
+    public static final Block CHERRY_PRESSURE_PLATE = registerBlock("cherry_pressure_plate", new WoodenPressurePlateBlocks(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
 
-    public static final Block ASH_DOOR = registerBlock("ash_door", new DoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque()), ItemGroupUtil.REBORN12K);
-    public static final Block CHERRY_DOOR = registerBlock("cherry_door", new DoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block ASH_DOOR = registerBlock("ash_door", new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque(), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
+    public static final Block CHERRY_DOOR = registerBlock("cherry_door", new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque(), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
 
-    public static final Block ASH_TRAPDOOR = registerBlock("ash_trapdoor", new WoodenTrapdoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque()), ItemGroupUtil.REBORN12K);
-    public static final Block CHERRY_TRAPDOOR = registerBlock("cherry_trapdoor", new WoodenTrapdoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block ASH_TRAPDOOR = registerBlock("ash_trapdoor", new WoodenTrapdoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque(), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
+    public static final Block CHERRY_TRAPDOOR = registerBlock("cherry_trapdoor", new WoodenTrapdoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque(), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
 
 
     public static final Block DIORITE_BRICKS = registerBlock("diorite_bricks", new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);

@@ -5,6 +5,7 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.damage.DamageTypes;
 
 public class MagicProtectionEnchantment extends Enchantment {
     public MagicProtectionEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
@@ -31,7 +32,7 @@ public class MagicProtectionEnchantment extends Enchantment {
 
     @Override
     public int getProtectionAmount(int level, DamageSource source) {
-        if(source.bypassesArmor() || source.isUnblockable()) {
+        if(source.isOf(DamageTypes.MAGIC) || source.isOf(DamageTypes.DRAGON_BREATH) || source.isOf(DamageTypes.INDIRECT_MAGIC) || source.isOf(DamageTypes.WITHER_SKULL)) {
             return level;
         } else
             return 0;

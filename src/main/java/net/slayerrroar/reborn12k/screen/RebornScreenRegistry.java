@@ -5,6 +5,7 @@ import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.screen.ScreenHandlerType;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.screen.arcane_artifact.ArcaneArtifactScreen;
@@ -23,17 +24,17 @@ import net.slayerrroar.reborn12k.screen.quarry.QuarryScreenHandler;
 public final class RebornScreenRegistry {
 
     public static final ScreenHandlerType<ArcaneArtifactScreenHandler> ARCANE_ARTIFACT_SCREEN_HANDLER = new ScreenHandlerType<>(
-            ArcaneArtifactScreenHandler::new);
+            ArcaneArtifactScreenHandler::new, FeatureFlags.DEFAULT_ENABLED_FEATURES);
     public static final ScreenHandlerType<ManaCondenserScreenHandler> MANA_CONDENSER_SCREEN_HANDLER = new ScreenHandlerType<>(
-            ManaCondenserScreenHandler::new);
+            ManaCondenserScreenHandler::new, FeatureFlags.DEFAULT_ENABLED_FEATURES);
     public static final ScreenHandlerType<CrusherScreenHandler> CRUSHER_SCREEN_HANDLER = new ScreenHandlerType<>(
-            CrusherScreenHandler::new);
+            CrusherScreenHandler::new, FeatureFlags.DEFAULT_ENABLED_FEATURES);
     public static final ScreenHandlerType<MineralManufactoryScreenHandler> MINERAL_MANUFACTORY_SCREEN_HANDLER = new ScreenHandlerType<>(
-            MineralManufactoryScreenHandler::new);
+            MineralManufactoryScreenHandler::new, FeatureFlags.DEFAULT_ENABLED_FEATURES);
     public static final ScreenHandlerType<MelterScreenHandler> MELTER_SCREEN_HANDLER = new ScreenHandlerType<>(
-            MelterScreenHandler::new);
+            MelterScreenHandler::new, FeatureFlags.DEFAULT_ENABLED_FEATURES);
     public static final ScreenHandlerType<QuarryScreenHandler> QUARRY_SCREEN_HANDLER = new ScreenHandlerType<>(
-            QuarryScreenHandler::new);
+            QuarryScreenHandler::new, FeatureFlags.DEFAULT_ENABLED_FEATURES);
 
     public static void register() {
 

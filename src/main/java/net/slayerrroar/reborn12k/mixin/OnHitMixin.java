@@ -10,7 +10,6 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.items.ItemTrinkets;
-import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -20,14 +19,12 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 import java.util.Random;
 
-@SuppressWarnings("OptionalGetWithoutIsPresent")
+@SuppressWarnings({"OptionalGetWithoutIsPresent", "Unused"})
 
 @Mixin(LivingEntity.class)
 public abstract class OnHitMixin extends Entity {
 
     @Shadow public abstract boolean addStatusEffect(StatusEffectInstance effect);
-
-    @Shadow private @Nullable LivingEntity attacker;
 
     public OnHitMixin(EntityType<?> type, World world) {
         super(type, world);
@@ -42,7 +39,7 @@ public abstract class OnHitMixin extends Entity {
         int int_random = rand.nextInt(upperbound);
 
         if(TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(ItemTrinkets.BLOODY_ROSE) && attacker != null && !(attacker instanceof PlayerEntity)) {
-            attacker.damage(DamageSource.thorns((LivingEntity) ((Object) this)), 2);
+            attacker.damage(((LivingEntity) ((Object) this)).getDamageSources().thorns(attacker), 2);
         }
         if(TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(ItemTrinkets.BOTTLE_OF_WIND) && attacker != null && !(attacker instanceof PlayerEntity)) {
             ((LivingEntity) attacker).addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 20 * 5, 0));

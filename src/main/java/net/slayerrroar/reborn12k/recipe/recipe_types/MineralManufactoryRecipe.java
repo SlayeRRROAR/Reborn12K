@@ -6,6 +6,7 @@ import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.recipe.*;
+import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
 import net.minecraft.util.collection.DefaultedList;
@@ -34,8 +35,10 @@ public class MineralManufactoryRecipe implements Recipe<SimpleInventory> {
                 recipeItems.get(2).test(inventory.getStack(2));
     }
 
+
+
     @Override
-    public ItemStack craft(SimpleInventory inventory) {
+    public ItemStack craft(SimpleInventory inventory, DynamicRegistryManager dynamicRegistryManager) {
         return output;
     }
 
@@ -45,8 +48,14 @@ public class MineralManufactoryRecipe implements Recipe<SimpleInventory> {
     }
 
     @Override
+    @Deprecated
+    public ItemStack getOutput(DynamicRegistryManager registryManager) {
+        return null;
+    }
+
+    @Deprecated
     public ItemStack getOutput() {
-        return output.copy();
+        return this.output;
     }
 
     @Override

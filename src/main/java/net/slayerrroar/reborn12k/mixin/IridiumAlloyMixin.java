@@ -2,14 +2,13 @@ package net.slayerrroar.reborn12k.mixin;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
-import net.slayerrroar.reborn12k.armors.RebornArmors;
+import net.slayerrroar.reborn12k.armors.CustomArmorMaterials;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
@@ -28,10 +27,10 @@ public class IridiumAlloyMixin {
     @Shadow @Final protected float knockbackResistance;
  
     @Inject(method = "<init>", at = @At(value = "RETURN"))
-    private void constructor(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings, CallbackInfo ci) {
-        UUID uUID = MODIFIERS[slot.getEntitySlotId()];
+    private void constructor(ArmorMaterial material, ArmorItem.Type type, Item.Settings settings, CallbackInfo ci) {
+        UUID uUID = MODIFIERS[type.getEquipmentSlot().getEntitySlotId()];
  
-        if(material == RebornArmors.IRIDIUM_ALLOY_ARMOR) {
+        if(material == CustomArmorMaterials.IRIDIUM_ALLOY) {
             ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
  
             this.attributeModifiers.forEach(builder::put);

@@ -57,17 +57,20 @@ public class RebornPlacedFeatures {
         register(context, ASH_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.ASH_KEY),
                 List.of(PlacedFeatures.wouldSurvive(GenericBlocks.ASH_SAPLING)));
         register(context, ASH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.ASH_KEY),
-                VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2),
+                        GenericBlocks.ASH_SAPLING));
 
         register(context, CHERRY_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.CHERRY_KEY),
                 List.of(PlacedFeatures.wouldSurvive(GenericBlocks.CHERRY_SAPLING)));
         register(context, CHERRY_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.CHERRY_KEY),
-                VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2)));
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2),
+                        GenericBlocks.CHERRY_SAPLING));
 
         register(context, SLIMY_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SLIMY_KEY),
                 List.of(PlacedFeatures.wouldSurvive(GenericBlocks.SLIMY_SAPLING)));
         register(context, SLIMY_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SLIMY_KEY),
-                VegetationPlacedFeatures.modifiers(PlacedFeatures.createCountExtraModifier(1, 0.1f, 1)));
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.1f, 1),
+                        GenericBlocks.SLIMY_SAPLING));
 
 
         register(context, TIN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.TIN_ORE_KEY),

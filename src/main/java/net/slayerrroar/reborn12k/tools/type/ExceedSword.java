@@ -6,7 +6,6 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -75,7 +74,7 @@ public class ExceedSword extends SwordItem {
         if(currentmode != ExceedState.INACTIVE && target instanceof MobEntity) {
             float damage = (float) attacker.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
             float critBonus = 2.0F;
-            target.damage(DamageSource.GENERIC, (damage * critBonus));
+            target.damage(attacker.getDamageSources().generic(), (damage * critBonus));
             DeactivateExceed(red_queen);
         }
         red_queen.damage(1, attacker, livingEntity -> livingEntity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));

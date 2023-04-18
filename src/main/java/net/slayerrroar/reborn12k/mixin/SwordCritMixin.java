@@ -3,7 +3,6 @@ package net.slayerrroar.reborn12k.mixin;
 import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.sound.SoundCategory;
@@ -56,12 +55,12 @@ public class SwordCritMixin {
 
         if(critChance > 95) {
             float critBonus = 1.5F;
-            target.damage(DamageSource.GENERIC, (damage * critBonus));
+            target.damage(attacker.getDamageSources().generic(), (damage * critBonus));
             target.world.playSound(null, target.getX(), target.getY(), target.getZ(),
                     SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, SoundCategory.PLAYERS, 1.0F, 1.0F);
         }
         if(critChance <= 95) {
-            target.damage(DamageSource.GENERIC, (damage));
+            target.damage(attacker.getDamageSources().generic(), (damage));
         }
     }
 }

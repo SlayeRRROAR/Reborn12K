@@ -2,7 +2,6 @@ package net.slayerrroar.reborn12k.armors.custom;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -11,17 +10,17 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.armors.RebornArmors;
+import net.slayerrroar.reborn12k.armors.CustomArmorMaterials;
 
 import java.util.Map;
 
 public class MageArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffect> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffect>())
-                    .put(RebornArmors.MAGE_ARMOR, StatusEffects.REGENERATION).build();
+                    .put(CustomArmorMaterials.MAGE, StatusEffects.REGENERATION).build();
 
-    public MageArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
-        super(material, slot, settings);
+    public MageArmorItem(ArmorMaterial material, ArmorItem.Type type, Settings settings) {
+        super(material, type, settings);
     }
 
     @Override
