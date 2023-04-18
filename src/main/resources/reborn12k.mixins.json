@@ -4,25 +4,16 @@
   "package": "net.slayerrroar.reborn12k.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "AdvancedAlloyMixin",
-    "ArcheositeMixin",
     "EggEntityMixin",
     "EnderDragonMixin",
-    "EnderiumMixin",
     "GoldPouchMixin",
-    "IridiumAlloyMixin",
     "LongFallBootsMixin",
-    "MageMixin",
     "OnHitMixin",
     "PhoenixPlumeMixin",
-    "PowerArmorMixin",
     "QuiverMixin",
     "ShadesMixin",
-    "SignalumMixin",
     "SpringMixin",
-    "SwordCritMixin",
-    "ThelositeMixin",
-    "TungstensteelMixin"
+    "SwordCritMixin"
   ],
   "client": [
   ],
