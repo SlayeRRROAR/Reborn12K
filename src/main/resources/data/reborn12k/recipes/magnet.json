@@ -10,14 +10,14 @@
       "item": "minecraft:lapis"
     },
     "B": {
-      "tag": "c:neodymium_ingots"
+      "item": "minecraft:iron_ingot"
     },
     "C": {
       "item": "minecraft:redstone"
     }
   },
   "result": {
-    "item": "reborn12k:ceramite_plate",
+    "item": "reborn12k:magnet",
     "count": 1
   }
 }
