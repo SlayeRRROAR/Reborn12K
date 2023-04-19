@@ -3,11 +3,9 @@ package net.slayerrroar.reborn12k.items.custom.tech;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ExperienceOrbEntity;
-import net.minecraft.entity.ItemEntity;
+import net.minecraft.entity.*;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Equipment;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
@@ -23,13 +21,18 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class Magnet extends Item {
+public class Magnet extends Item implements Equipment {
 
     static int magnetRange = 7;
     static final String MAGNET_STATE = "Magnet State";
 
     public Magnet(Settings settings) {
         super(settings);
+    }
+
+    @Override
+    public EquipmentSlot getSlotType() {
+        return EquipmentSlot.OFFHAND;
     }
 
     public boolean hasGlint(ItemStack stack) {
@@ -73,13 +76,13 @@ public class Magnet extends Item {
             setMagnetState(stack, MagnetState.OFF);
             world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
             player.getItemCooldownManager().set(this, 10);
-            player.sendMessage(Text.translatable("item.reborn12k.magnet.tooltip3"), true);
+            player.sendMessage(Text.translatable("item.reborn12k.magnet.tooltip4"), true);
             return;
         }
         setMagnetState(stack, MagnetState.ON);
         world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
         player.getItemCooldownManager().set(this, 10);
-        player.sendMessage(Text.translatable("item.reborn12k.magnet.tooltip4"), true);
+        player.sendMessage(Text.translatable("item.reborn12k.magnet.tooltip5"), true);
     }
 
     private void checkTag(ItemStack stack) {
@@ -123,8 +126,12 @@ public class Magnet extends Item {
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+        PlayerEntity player = (PlayerEntity) entity;
+
         if(!world.isClient && isActive(stack)) {
-            attractItemAndXp(entity);
+            if(player.getStackInHand(Hand.OFF_HAND) == stack || player.getStackInHand(Hand.MAIN_HAND) == stack) {
+                attractItemAndXp(entity);
+            }
         }
     }
 
@@ -143,10 +150,11 @@ public class Magnet extends Item {
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip3"));
         if (getMagnetState(itemStack) != MagnetState.ON){
-            tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip5"));
-        } else {
             tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip6"));
+        } else {
+            tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip7"));
         }
     }
 
