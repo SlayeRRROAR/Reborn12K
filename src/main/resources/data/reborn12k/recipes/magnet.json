@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A B",
+    "C C",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:lapis"
+    },
+    "B": {
+      "tag": "c:neodymium_ingots"
+    },
+    "C": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "reborn12k:ceramite_plate",
+    "count": 1
+  }
+}
