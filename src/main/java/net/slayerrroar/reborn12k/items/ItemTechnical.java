@@ -11,9 +11,12 @@ import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.custom.tech.FocusItem;
 import net.slayerrroar.reborn12k.items.custom.tech.FuelCell;
+import net.slayerrroar.reborn12k.items.custom.tech.Magnet;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class ItemTechnical {
+
+    public static final Item MAGNET = registerItem("magnet", new Magnet(new FabricItemSettings().maxCount(1)));
 
     public static final Item EMPTY_MACHINE_CASING = registerItem("empty_machine_casing", new Item(new FabricItemSettings()));
 
@@ -78,6 +81,8 @@ public class ItemTechnical {
     }
 
     public static void addItemsToItemGroup() {
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGNET);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, EMPTY_MACHINE_CASING);
 

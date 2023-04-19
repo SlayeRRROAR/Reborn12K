@@ -1,31 +1,31 @@
-package net.slayerrroar.reborn12k.items.custom.trinkets.trinket;
+package net.slayerrroar.reborn12k.items.custom.tech;
 
-import dev.emi.trinkets.api.SlotReference;
-import dev.emi.trinkets.api.Trinket;
-import dev.emi.trinkets.api.TrinketItem;
-import dev.emi.trinkets.api.TrinketsApi;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.*;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.ExperienceOrbEntity;
+import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.predicate.entity.EntityPredicates;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.util.KeybindsUtil;
 
 import java.util.List;
 
-@SuppressWarnings("OptionalGetWithoutIsPresent")
+public class Magnet extends Item {
 
-public class Magnet extends TrinketItem implements Trinket {
-
-    static int magnetRange = 5;
+    static int magnetRange = 7;
     static final String MAGNET_STATE = "Magnet State";
 
     public Magnet(Settings settings) {
@@ -58,7 +58,7 @@ public class Magnet extends TrinketItem implements Trinket {
     }
 
     private MagnetState getMagnetState(ItemStack stack) {
-        if(!stack.isEmpty()) {
+        if (!stack.isEmpty()) {
             checkTag(stack);
             assert stack.getNbt() != null;
             return stack.getNbt().getBoolean(MAGNET_STATE) ? MagnetState.ON : MagnetState.OFF;
@@ -66,10 +66,10 @@ public class Magnet extends TrinketItem implements Trinket {
         return MagnetState.OFF;
     }
 
-    private void toggleMode(ItemStack stack, PlayerEntity player) {
+    private void toggleMagnet(ItemStack stack, PlayerEntity player) {
         World world = player.getWorld();
-        MagnetState currentMode = getMagnetState(stack);
-        if(currentMode.getBoolean()) {
+
+        if (getMagnetState(stack).getBoolean()) {
             setMagnetState(stack, MagnetState.OFF);
             world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
             player.getItemCooldownManager().set(this, 10);
@@ -83,13 +83,13 @@ public class Magnet extends TrinketItem implements Trinket {
     }
 
     private void checkTag(ItemStack stack) {
-        if(!stack.isEmpty()) {
-            if(!stack.hasNbt()) {
+        if (!stack.isEmpty()) {
+            if (!stack.hasNbt()) {
                 stack.setNbt(new NbtCompound());
             }
             NbtCompound nbt = stack.getNbt();
             assert nbt != null;
-            if(!nbt.contains(MAGNET_STATE)) {
+            if (!nbt.contains(MAGNET_STATE)) {
                 nbt.putBoolean(MAGNET_STATE, false);
             }
         }
@@ -107,13 +107,13 @@ public class Magnet extends TrinketItem implements Trinket {
                 entity.getBoundingBox().expand(magnetRange),
                 EntityPredicates.VALID_ENTITY);
 
-        for(ItemEntity item : itemNearby) {
+        for (ItemEntity item : itemNearby) {
             item.setPickupDelay(0);
             Vec3d itemVector = new Vec3d(item.getX(), item.getY(), item.getZ());
             Vec3d playerVector = new Vec3d(x, y + 0.03, z);
             item.move(null, playerVector.subtract(itemVector).multiply(0.5));
         }
-        for(Entity xp : xpNearby) {
+        for (Entity xp : xpNearby) {
             Vec3d itemVector = new Vec3d(xp.getX(), xp.getY(), xp.getZ());
             Vec3d playerVector = new Vec3d(x, y + 0.03, z);
             xp.move(null, playerVector.subtract(itemVector).multiply(0.5));
@@ -122,32 +122,32 @@ public class Magnet extends TrinketItem implements Trinket {
     }
 
     @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        PlayerEntity player = (PlayerEntity) entity;
-        World world = player.getWorld();
-        if(world.isClient()) {
-            if(TrinketsApi.getTrinketComponent(player).get().isEquipped(this)) {
-                if (getMagnetState(stack) == MagnetState.ON) {
-                    attractItemAndXp(entity);
-                }
-                if (KeybindsUtil.trinketKey.isPressed() && !player.getItemCooldownManager().isCoolingDown(this)) {
-                    toggleMode(stack, player);
-                }
-            }
+    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+        if(!world.isClient && isActive(stack)) {
+            attractItemAndXp(entity);
         }
+    }
+
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+        ItemStack stack = player.getStackInHand(hand);
+
+        if(!world.isClient && !player.isSneaking()) {
+            toggleMagnet(stack, player);
+            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
+        }
+        return new TypedActionResult<>(ActionResult.SUCCESS, stack);
     }
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip2"));
-        if(getMagnetState(itemStack) != MagnetState.ON){
+        if (getMagnetState(itemStack) != MagnetState.ON){
             tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip5"));
         } else {
             tooltip.add(Text.translatable("item.reborn12k.magnet.tooltip6"));
         }
-        tooltip.add(Text.translatable("item.reborn12k.common.tooltip"));
     }
 
 }

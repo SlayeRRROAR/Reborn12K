@@ -132,7 +132,6 @@ public class ItemTrinkets {
     public static final Item BAT_WINGS = registerItem("bat_wings", new AngelWings(new FabricItemSettings().maxCount(1)));
 
     public static final Item GOLD_POUCH = registerItem("gold_pouch", new GoldPouch(new FabricItemSettings().maxCount(1)));
-    public static final Item MAGNET = registerItem("magnet", new Magnet(new FabricItemSettings().maxCount(1)));
     public static final Item WEAK_SPRING = registerItem("weak_spring", new WeakSpring(new FabricItemSettings().maxCount(1)));
     public static final Item STRONG_SPRING = registerItem("strong_spring", new StrongSpring(new FabricItemSettings().maxCount(1)));
     public static final Item BLOODY_ROSE = registerItem("bloody_rose", new BloodyRose(new FabricItemSettings().maxCount(1)));
@@ -237,7 +236,6 @@ public class ItemTrinkets {
         addToItemGroup(ItemGroupUtil.REBORN12K, BAT_WINGS);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLD_POUCH);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGNET);
         addToItemGroup(ItemGroupUtil.REBORN12K, WEAK_SPRING);
         addToItemGroup(ItemGroupUtil.REBORN12K, STRONG_SPRING);
         addToItemGroup(ItemGroupUtil.REBORN12K, BLOODY_ROSE);
