@@ -32,9 +32,6 @@ public class FireRing extends TrinketItem {
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20*20, 0, false, false));
-        if (entity.isOnFire()) {
-            entity.extinguishWithSound();
-        }
     }
 
     @Override
