@@ -132,11 +132,11 @@ public class Magnet extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         ItemStack stack = player.getStackInHand(hand);
 
-        if(!world.isClient && !player.isSneaking()) {
+        if(!world.isClient && player.isSneaking()) {
             toggleMagnet(stack, player);
-            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
+            return new TypedActionResult<>(ActionResult.SUCCESS, stack);
         }
-        return new TypedActionResult<>(ActionResult.SUCCESS, stack);
+        return new TypedActionResult<>(ActionResult.FAIL, stack);
     }
 
     @Environment(EnvType.CLIENT)
