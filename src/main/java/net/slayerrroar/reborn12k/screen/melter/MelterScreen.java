@@ -33,7 +33,7 @@ public class MelterScreen extends HandledScreen<MelterScreenHandler> {
         drawTexture(matrices, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
         if (handler.isCrafting()) {
-            drawTexture(matrices, x + 130, y + 38, 176, 14, 8, handler.getScaledProgress());
+            drawTexture(matrices, x + 130, y + 38, 176, 14, 8, handler.getScaledProgress() + 1);
         }
 
         if (handler.hasFuel()) {
