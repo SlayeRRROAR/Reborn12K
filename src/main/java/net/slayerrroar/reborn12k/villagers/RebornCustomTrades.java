@@ -152,13 +152,13 @@ public class RebornCustomTrades {
         int upperbound = 4;
         int int_random = rand.nextInt(upperbound);
 
-        if(int_random == 0) {
+        if (int_random == 0) {
             return band;
         }
-        if(int_random == 1) {
+        if (int_random == 1) {
             return claw;
         }
-        if(int_random == 2) {
+        if (int_random == 2) {
             return medallion;
         }
         return tonic;
@@ -187,13 +187,13 @@ public class RebornCustomTrades {
         int upperbound = 4;
         int int_random = rand.nextInt(upperbound);
 
-        if(int_random == 0) {
+        if (int_random == 0) {
             return band;
         }
-        if(int_random == 1) {
+        if (int_random == 1) {
             return claw;
         }
-        if(int_random == 2) {
+        if (int_random == 2) {
             return medallion;
         }
         return tonic;

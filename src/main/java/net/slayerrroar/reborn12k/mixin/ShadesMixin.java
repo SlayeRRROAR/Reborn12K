@@ -23,7 +23,7 @@ public abstract class ShadesMixin extends HostileEntity {
 
     @Inject(method = "isPlayerStaring", at = @At(value = "RETURN", target = "Lnet/minecraft/entity/mob/EndermanEntity;isPlayerStaring(Lnet/minecraft/entity/player/PlayerEntity;)Z"), cancellable = true)
     public void isPlayerStaring(PlayerEntity player, CallbackInfoReturnable<Boolean> cir) {
-        if(TrinketsApi.getTrinketComponent(player).get().isEquipped(ItemTrinkets.SHADES)) {
+        if (TrinketsApi.getTrinketComponent(player).get().isEquipped(ItemTrinkets.SHADES)) {
             cir.setReturnValue(false);
         }
     }

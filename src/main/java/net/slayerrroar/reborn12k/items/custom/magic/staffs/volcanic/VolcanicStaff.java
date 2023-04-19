@@ -41,9 +41,9 @@ public class VolcanicStaff extends Item {
 
         world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_FIREWORK_ROCKET_LARGE_BLAST_FAR, SoundCategory.PLAYERS, 0.25f, 1.0f);
 
-        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 40, 40, 40))) {
-            if(e instanceof HostileEntity hostileEntity) {
-                if(hostileEntity.distanceTo(playerEntity) < 40) {
+        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 40, 40, 40))) {
+            if (e instanceof HostileEntity hostileEntity) {
+                if (hostileEntity.distanceTo(playerEntity) < 40) {
                     hostileEntity.setOnFireFor(20*10);
                     hostileEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20*10, 2, false, false));
                 }

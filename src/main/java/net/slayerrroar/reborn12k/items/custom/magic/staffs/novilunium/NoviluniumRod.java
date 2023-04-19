@@ -44,9 +44,9 @@ public class NoviluniumRod extends Item {
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 20*50, 0, false, false));
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 20*50));
 
-        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 25, 25, 25))) {
-            if(e instanceof MobEntity mobEntity) {
-                if(playerEntity.distanceTo(mobEntity) < 25) {
+        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 25, 25, 25))) {
+            if (e instanceof MobEntity mobEntity) {
+                if (playerEntity.distanceTo(mobEntity) < 25) {
                     mobEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 20*50));
                 }
             }

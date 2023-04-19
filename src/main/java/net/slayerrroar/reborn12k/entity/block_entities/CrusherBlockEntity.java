@@ -105,30 +105,30 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
     }
 
     private void consumeFuel() {
-        if(!getStack(0).isEmpty()) {
+        if (!getStack(0).isEmpty()) {
             this.fuelTime = FuelRegistry.INSTANCE.get(this.removeStack(0, 1).getItem());
             this.maxFuelTime = this.fuelTime;
         }
     }
 
     public static void tick(World world, BlockPos blockPos, BlockState state, CrusherBlockEntity entity) {
-        if(world.isClient()) {
+        if (world.isClient()) {
             return;
         }
-        if(isConsumingFuel(entity)) {
+        if (isConsumingFuel(entity)) {
             entity.fuelTime--;
         }
-        if(!isConsumingFuel(entity) && entity.progress > 0) {
+        if (!isConsumingFuel(entity) && entity.progress > 0) {
             entity.progress--;
         }
-        if(hasRecipe(entity)) {
-            if(hasFuelInFuelSlot(entity) && !isConsumingFuel(entity)) {
+        if (hasRecipe(entity)) {
+            if (hasFuelInFuelSlot(entity) && !isConsumingFuel(entity)) {
                 entity.consumeFuel();
             }
-            if(isConsumingFuel(entity)) {
+            if (isConsumingFuel(entity)) {
                 entity.progress++;
                 markDirty(world, blockPos, state);
-                if(entity.progress >= entity.maxProgress) {
+                if (entity.progress >= entity.maxProgress) {
                     craftItem(entity);
                 }
             }
@@ -152,14 +152,14 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
 
     private static void craftItem(CrusherBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
         Optional<CrusherRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(CrusherRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
-        if(hasRecipe(entity)) {
+        if (hasRecipe(entity)) {
 
             entity.removeStack(1,1);
 
@@ -172,7 +172,7 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
 
     private static boolean hasRecipe(CrusherBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -195,7 +195,7 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
     public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
         Direction localDir = Objects.requireNonNull(this.getWorld()).getBlockState(this.pos).get(CrusherBlock.FACING);
 
-        if(side == Direction.DOWN) {
+        if (side == Direction.DOWN) {
             return false;
         }
 
@@ -226,7 +226,7 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
-        if(side == Direction.DOWN) {
+        if (side == Direction.DOWN) {
             return slot == 2;
         }
         return false;

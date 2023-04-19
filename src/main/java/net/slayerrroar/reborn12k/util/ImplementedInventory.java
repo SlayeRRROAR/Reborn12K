@@ -65,7 +65,7 @@ public interface ImplementedInventory extends SidedInventory {
     @Override
     default int[] getAvailableSlots(Direction side) {
         int[] result = new int[getItems().size()];
-        for(int i = 0; i < result.length; i++) {
+        for (int i = 0; i < result.length; i++) {
             result[i] = i;
         }
 
@@ -121,9 +121,9 @@ public interface ImplementedInventory extends SidedInventory {
      */
     @Override
     default boolean isEmpty() {
-        for(int i = 0; i < size(); i++) {
+        for (int i = 0; i < size(); i++) {
             ItemStack stack = getStack(i);
-            if(!stack.isEmpty()) {
+            if (!stack.isEmpty()) {
                 return false;
             }
         }
@@ -155,7 +155,7 @@ public interface ImplementedInventory extends SidedInventory {
     @Override
     default ItemStack removeStack(int slot, int count) {
         ItemStack result = Inventories.splitStack(getItems(), slot, count);
-        if(!result.isEmpty()) {
+        if (!result.isEmpty()) {
             markDirty();
         }
 
@@ -187,7 +187,7 @@ public interface ImplementedInventory extends SidedInventory {
     @Override
     default void setStack(int slot, ItemStack stack) {
         getItems().set(slot, stack);
-        if(stack.getCount() > getMaxCountPerStack()) {
+        if (stack.getCount() > getMaxCountPerStack()) {
             stack.setCount(getMaxCountPerStack());
         }
     }

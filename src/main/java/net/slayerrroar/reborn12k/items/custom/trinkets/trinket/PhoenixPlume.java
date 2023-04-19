@@ -33,13 +33,13 @@ public class PhoenixPlume extends TrinketItem implements Trinket {
     }
 
     private void checkTag(ItemStack stack) {
-        if(!stack.isEmpty()) {
-            if(!stack.hasNbt()) {
+        if (!stack.isEmpty()) {
+            if (!stack.hasNbt()) {
                 stack.setNbt(new NbtCompound());
             }
             NbtCompound nbt = stack.getNbt();
             assert nbt != null;
-            if(!nbt.contains(COOLDOWN)) {
+            if (!nbt.contains(COOLDOWN)) {
                 nbt.putBoolean(COOLDOWN, false);
             }
         }
@@ -47,15 +47,15 @@ public class PhoenixPlume extends TrinketItem implements Trinket {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity instanceof PlayerEntity player) {
-            if(!player.getItemCooldownManager().isCoolingDown(stack.getItem())) {
+        if (entity instanceof PlayerEntity player) {
+            if (!player.getItemCooldownManager().isCoolingDown(stack.getItem())) {
                 this.setCooldownState(stack, CooldownState.OFF);
             }
         }
     }
 
     private CooldownState getCooldownState(ItemStack stack) {
-        if(!stack.isEmpty()) {
+        if (!stack.isEmpty()) {
             checkTag(stack);
             assert stack.getNbt() != null;
             return stack.getNbt().getBoolean(COOLDOWN) ? CooldownState.ON : CooldownState.OFF;
@@ -82,10 +82,10 @@ public class PhoenixPlume extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        if(getCooldownState(stack) == CooldownState.OFF) {
+        if (getCooldownState(stack) == CooldownState.OFF) {
             tooltip.add(Text.translatable("item.reborn12k.phoenix_plume.tooltip1"));
         }
-        if(getCooldownState(stack) == CooldownState.ON) {
+        if (getCooldownState(stack) == CooldownState.ON) {
             tooltip.add(Text.translatable("item.reborn12k.phoenix_plume.tooltip2"));
         }
         tooltip.add(Text.translatable("item.reborn12k.mythical.tooltip"));

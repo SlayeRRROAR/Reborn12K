@@ -72,9 +72,9 @@ public class ArcaneArtifactBlock extends BlockWithEntity implements BlockEntityP
 
     @Override
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
-        if(state.getBlock() != newState.getBlock()) {
+        if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if(blockEntity instanceof ArcaneArtifactBlockEntity) {
+            if (blockEntity instanceof ArcaneArtifactBlockEntity) {
                 ItemScatterer.spawn(world, pos, (ArcaneArtifactBlockEntity)blockEntity);
                 world.updateComparators(pos, this);
             }
@@ -84,10 +84,10 @@ public class ArcaneArtifactBlock extends BlockWithEntity implements BlockEntityP
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if(!world.isClient) {
+        if (!world.isClient) {
             NamedScreenHandlerFactory screenHandlerFactory = state.createScreenHandlerFactory(world, pos);
 
-            if(screenHandlerFactory != null) {
+            if (screenHandlerFactory != null) {
                 player.openHandledScreen(screenHandlerFactory);
             }
         }

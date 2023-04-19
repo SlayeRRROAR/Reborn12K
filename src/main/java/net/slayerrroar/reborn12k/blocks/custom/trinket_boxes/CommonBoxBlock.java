@@ -36,12 +36,12 @@ public class CommonBoxBlock extends HorizontalFacingBlock {
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if(!player.isSneaking()) {
-            if(player.getStackInHand(Hand.MAIN_HAND).isOf(ItemTrinkets.STRONGBOX_KEY)) {
-                if(player.isCreative()) {
+        if (!player.isSneaking()) {
+            if (player.getStackInHand(Hand.MAIN_HAND).isOf(ItemTrinkets.STRONGBOX_KEY)) {
+                if (player.isCreative()) {
                     world.breakBlock(pos, false, player);
                 }
-                if(!player.isCreative()) {
+                if (!player.isCreative()) {
                     world.breakBlock(pos, false, player);
                     player.getStackInHand(Hand.MAIN_HAND).decrement(1);
                 }
@@ -59,19 +59,19 @@ public class CommonBoxBlock extends HorizontalFacingBlock {
         int upperbound = 101;
         int rarity_int = rarityRand.nextInt(upperbound);
 
-        if(rarity_int < 80) {
+        if (rarity_int < 80) {
             StrongboxUtil.randomCommon(player);
             player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.common"), true);
         }
-        if(rarity_int < 95 && rarity_int > 79) {
+        if (rarity_int < 95 && rarity_int > 79) {
             StrongboxUtil.randomRare(player);
             player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.rare"), true);
         }
-        if(rarity_int < 99 && rarity_int > 94) {
+        if (rarity_int < 99 && rarity_int > 94) {
             StrongboxUtil.randomEpic(player);
             player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.epic"), true);
         }
-        if(rarity_int == 100) {
+        if (rarity_int == 100) {
             StrongboxUtil.randomLegendary(player);
             player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.legendary"), true);
         }

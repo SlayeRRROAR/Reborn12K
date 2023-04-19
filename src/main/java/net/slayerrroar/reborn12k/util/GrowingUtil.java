@@ -14,14 +14,14 @@ public class GrowingUtil
     {
         BlockPos playerPos = new BlockPos(playerEntity.getBlockPos());
 
-        if(playerEntity.age % (baseTickDelay) == 0)
+        if (playerEntity.age % (baseTickDelay) == 0)
         {
-            for(BlockPos targetPos : BlockPos.iterateOutwards(playerPos, radius, height, radius))
+            for (BlockPos targetPos : BlockPos.iterateOutwards(playerPos, radius, height, radius))
             {
                 BlockState blockstate = world.getBlockState(targetPos);
                 Block block = blockstate.getBlock();
 
-                if((    block instanceof CropBlock) ||
+                if ((    block instanceof CropBlock) ||
                         block instanceof BambooSaplingBlock ||
                         block instanceof BambooBlock ||
                         block instanceof CocoaBlock ||
@@ -35,11 +35,11 @@ public class GrowingUtil
                 )
                 {
                     Fertilizable fertilizable = (Fertilizable)blockstate.getBlock();
-                    if(fertilizable.isFertilizable(world, targetPos, blockstate, world.isClient))
+                    if (fertilizable.isFertilizable(world, targetPos, blockstate, world.isClient))
                     {
-                        if(world instanceof ServerWorld)
+                        if (world instanceof ServerWorld)
                         {
-                            if(fertilizable.canGrow(world, world.random, targetPos, blockstate))
+                            if (fertilizable.canGrow(world, world.random, targetPos, blockstate))
                             {
                                 fertilizable.grow((ServerWorld)world, world.random, targetPos, blockstate);
                             }
@@ -49,14 +49,14 @@ public class GrowingUtil
             }
         }
 
-        if(world.getTime() % (cactusTickDelay) == 0)
+        if (world.getTime() % (cactusTickDelay) == 0)
         {
-            for(BlockPos tickTarget : BlockPos.iterateOutwards(playerPos, radius, height, radius))
+            for (BlockPos tickTarget : BlockPos.iterateOutwards(playerPos, radius, height, radius))
             {
                 BlockState blockstate2 = world.getBlockState(tickTarget);
                 Block blockToTick = blockstate2.getBlock();
 
-                if(blockToTick instanceof SugarCaneBlock ||
+                if (blockToTick instanceof SugarCaneBlock ||
                         blockToTick instanceof CactusBlock ||
                         blockToTick instanceof ChorusFlowerBlock)
                 {
@@ -65,14 +65,14 @@ public class GrowingUtil
             }
         }
 
-        if(world.getTime() % (baseTickDelay) == 0)
+        if (world.getTime() % (baseTickDelay) == 0)
         {
-            for(BlockPos tickTarget : BlockPos.iterateOutwards(playerPos, radius, height, radius))
+            for (BlockPos tickTarget : BlockPos.iterateOutwards(playerPos, radius, height, radius))
             {
                 BlockState blockstate2 = world.getBlockState(tickTarget);
                 Block blockToTick = blockstate2.getBlock();
 
-                if(blockToTick instanceof PointedDripstoneBlock)
+                if (blockToTick instanceof PointedDripstoneBlock)
                 {
                     blockToTick.randomTick(blockstate2, (ServerWorld) world, tickTarget, world.random);
                     PointedDripstoneBlock.dripTick(blockstate2, (ServerWorld) world, tickTarget,.9f);

@@ -16,7 +16,7 @@ public class EggEntityMixin {
     @Inject(method = "onEntityHit", at = @At("HEAD"), cancellable = true)
     public void onEntityHit(EntityHitResult entityHitResult, CallbackInfo ci) {
         Entity entity = entityHitResult.getEntity();
-        if(entity instanceof FrogEntity) {
+        if (entity instanceof FrogEntity) {
             entityHitResult.getEntity().kill();
             entity.dropItem(ItemTrinkets.BASILISK_TOOTH, 1);
             ci.cancel();

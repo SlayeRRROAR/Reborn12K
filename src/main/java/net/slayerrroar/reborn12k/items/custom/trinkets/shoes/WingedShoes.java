@@ -31,14 +31,14 @@ public class WingedShoes extends TrinketItem implements Trinket {
         PlayerEntity player = (PlayerEntity) entity;
         World world = entity.world;
 
-        if(world.isClient()) {
-            if(player.isOnGround() || player.isSubmergedInWater() || player.hasVehicle()) {
+        if (world.isClient()) {
+            if (player.isOnGround() || player.isSubmergedInWater() || player.hasVehicle()) {
                 additionalJumps = 1;
                 timesJumped = 0;
                 player.getItemCooldownManager().set(this, 6);
             }
-            if(MinecraftClient.getInstance().options.jumpKey.isPressed() && timesJumped < additionalJumps) {
-                if(!player.isOnGround() && !player.isSubmergedInWater() && !player.isFallFlying() && !player.getAbilities().flying && !isOnCooldown(player, stack)) {
+            if (MinecraftClient.getInstance().options.jumpKey.isPressed() && timesJumped < additionalJumps) {
+                if (!player.isOnGround() && !player.isSubmergedInWater() && !player.isFallFlying() && !player.getAbilities().flying && !isOnCooldown(player, stack)) {
                     player.jump();
                     timesJumped++;
                     player.getItemCooldownManager().set(this, 6);

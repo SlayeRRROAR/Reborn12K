@@ -28,8 +28,8 @@ public class PrayerCandle extends TrinketItem implements Trinket {
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
-        if(!world.isClient) {
-            if(!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.LIGHT_PENDANT)) {
+        if (!world.isClient) {
+            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.LIGHT_PENDANT)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }

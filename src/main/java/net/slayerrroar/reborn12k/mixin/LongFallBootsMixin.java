@@ -21,7 +21,7 @@ public abstract class LongFallBootsMixin {
     @Inject(method = "tick()V", at = @At("TAIL"))
     private void tick(CallbackInfo info) {
         ServerPlayerEntity player = this.networkHandler.player;
-        if(TrinketsApi.getTrinketComponent(player).get().isEquipped(ItemTrinkets.LONG_FALL_BOOTS)){
+        if (TrinketsApi.getTrinketComponent(player).get().isEquipped(ItemTrinkets.LONG_FALL_BOOTS)){
             player.handleFall(0, true);
         }
     }

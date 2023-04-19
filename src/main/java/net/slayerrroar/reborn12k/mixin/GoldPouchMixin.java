@@ -15,7 +15,7 @@ public class GoldPouchMixin {
 
         @Inject(method = "wearsGoldArmor", at = @At("HEAD"), cancellable = true)
         private static void wearsGoldArmor(LivingEntity entity, CallbackInfoReturnable<Boolean> ci) {
-            if(TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.GOLD_POUCH)) ci.setReturnValue(true);
+            if (TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.GOLD_POUCH)) ci.setReturnValue(true);
         }
 
 }

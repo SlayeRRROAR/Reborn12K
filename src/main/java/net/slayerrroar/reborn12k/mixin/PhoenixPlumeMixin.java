@@ -25,21 +25,21 @@ public class PhoenixPlumeMixin {
     @Inject(at = @At("HEAD"), method = "tryUseTotem", cancellable = true)
     private void tryUseTotem(DamageSource source, CallbackInfoReturnable<Boolean> info) {
         LivingEntity entity = (LivingEntity) (Object) this;
-        if(entity instanceof ServerPlayerEntity player) {
+        if (entity instanceof ServerPlayerEntity player) {
             ItemStack stack = null;
-            if(TrinketsApi.getTrinketComponent(player).isPresent()) {
+            if (TrinketsApi.getTrinketComponent(player).isPresent()) {
                 List<Pair<SlotReference, ItemStack>> hasPlume = TrinketsApi.getTrinketComponent(player).get().getEquipped(ItemTrinkets.PHOENIX_PLUME);
-                if(hasPlume.size() > 0) stack = hasPlume.get(0).getRight();
+                if (hasPlume.size() > 0) stack = hasPlume.get(0).getRight();
             }
-            if(stack != null && stack.getItem() instanceof PhoenixPlume) {
-                if(!player.getItemCooldownManager().isCoolingDown(stack.getItem())) {
+            if (stack != null && stack.getItem() instanceof PhoenixPlume) {
+                if (!player.getItemCooldownManager().isCoolingDown(stack.getItem())) {
                     ((PhoenixPlume) stack.getItem()).setCooldown(player, stack);
                     player.setHealth(1.0f);
                     player.clearStatusEffects();
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 4));
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 60 * 20, 0));
                     player.world.sendEntityStatus(player, (byte) 35);
-                    if(player.world.isClient) TotemRenderUtil.renderTotem(stack);
+                    if (player.world.isClient) TotemRenderUtil.renderTotem(stack);
                     info.setReturnValue(true);
                 }
             }

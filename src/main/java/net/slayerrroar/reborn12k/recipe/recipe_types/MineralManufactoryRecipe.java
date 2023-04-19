@@ -26,7 +26,7 @@ public class MineralManufactoryRecipe implements Recipe<SimpleInventory> {
 
     @Override
     public boolean matches(SimpleInventory inventory, World world) {
-        if(world.isClient()) {
+        if (world.isClient()) {
             return false;
         }
 
@@ -90,7 +90,7 @@ public class MineralManufactoryRecipe implements Recipe<SimpleInventory> {
             JsonArray ingredients = JsonHelper.getArray(json, "ingredients");
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(3, Ingredient.EMPTY);
 
-            for(int i = 0; i < inputs.size(); i++) {
+            for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
@@ -101,7 +101,7 @@ public class MineralManufactoryRecipe implements Recipe<SimpleInventory> {
         public MineralManufactoryRecipe read(Identifier id, PacketByteBuf buf) {
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
 
-            for(int i = 0; i < inputs.size(); i++) {
+            for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromPacket(buf));
             }
 
@@ -112,7 +112,7 @@ public class MineralManufactoryRecipe implements Recipe<SimpleInventory> {
         @Override
         public void write(PacketByteBuf buf, MineralManufactoryRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
-            for(Ingredient ing : recipe.getIngredients()) {
+            for (Ingredient ing : recipe.getIngredients()) {
                 ing.write(buf);
             }
             buf.writeItemStack(recipe.getOutput());

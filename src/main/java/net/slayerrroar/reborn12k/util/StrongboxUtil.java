@@ -12,35 +12,32 @@ public class StrongboxUtil {
         int upperbound = 9;
         int common_int = commonRand.nextInt(upperbound);
 
-        if(common_int == 0) {
+        if (common_int == 0) {
             player.dropItem(ItemTrinkets.GREEN_BELT, 1);
         }
-        if(common_int == 1) {
+        if (common_int == 1) {
             player.dropItem(ItemTrinkets.COMFY_LOAFERS, 1);
         }
-        if(common_int == 2) {
+        if (common_int == 2) {
             player.dropItem(ItemTrinkets.OLD_NECKLACE, 1);
         }
-        if(common_int == 3) {
+        if (common_int == 3) {
             player.dropItem(ItemTrinkets.VAGUE_BAND_OF_FORTITUDE, 1);
         }
-        if(common_int == 4) {
+        if (common_int == 4) {
             player.dropItem(ItemTrinkets.VAGUE_BLOODY_CLAW, 1);
         }
-        if(common_int == 5) {
+        if (common_int == 5) {
             player.dropItem(ItemTrinkets.VAGUE_MEDALLION, 1);
         }
-        if(common_int == 6) {
+        if (common_int == 6) {
             player.dropItem(ItemTrinkets.VAGUE_FRENZY_TONIC, 1);
         }
-        if(common_int == 7) {
+        if (common_int == 7) {
             player.dropItem(ItemTrinkets.VAGUE_LUCKY_CHARM, 1);
         }
-        if(common_int == 8) {
+        if (common_int == 8) {
             player.dropItem(ItemTrinkets.GOLD_POUCH, 1);
-        }
-        if(common_int == 9) {
-            player.dropItem(ItemTrinkets.MAGNET, 1);        //TODO: fix magnet
         }
     }
 
@@ -49,37 +46,37 @@ public class StrongboxUtil {
         int upperbound = 11;
         int rare_int = randRare.nextInt(upperbound);
 
-        if(rare_int == 0) {
+        if (rare_int == 0) {
             player.dropItem(ItemTrinkets.SHADES, 1);
         }
-        if(rare_int == 1) {
+        if (rare_int == 1) {
             player.dropItem(ItemTrinkets.RED_BELT, 1);
         }
-        if(rare_int == 2) {
+        if (rare_int == 2) {
             player.dropItem(ItemTrinkets.ANTIGRAV_BELT, 1);
         }
-        if(rare_int == 3) {
+        if (rare_int == 3) {
             player.dropItem(ItemTrinkets.TRAVELER_SHOES, 1);
         }
-        if(rare_int == 4) {
+        if (rare_int == 4) {
             player.dropItem(ItemTrinkets.GOLDEN_NECKLACE, 1);
         }
-        if(rare_int == 5) {
+        if (rare_int == 5) {
             player.dropItem(ItemTrinkets.MINOR_BAND_OF_FORTITUDE, 1);
         }
-        if(rare_int == 6) {
+        if (rare_int == 6) {
             player.dropItem(ItemTrinkets.MINOR_BLOODY_CLAW, 1);
         }
-        if(rare_int == 7) {
+        if (rare_int == 7) {
             player.dropItem(ItemTrinkets.MINOR_MEDALLION, 1);
         }
-        if(rare_int == 8) {
+        if (rare_int == 8) {
             player.dropItem(ItemTrinkets.MINOR_FRENZY_TONIC, 1);
         }
-        if(rare_int == 9) {
+        if (rare_int == 9) {
             player.dropItem(ItemTrinkets.MINOR_LUCKY_CHARM, 1);
         }
-        if(rare_int == 10) {
+        if (rare_int == 10) {
             player.dropItem(ItemTrinkets.WEAK_SPRING, 1);
         }
     }
@@ -89,46 +86,46 @@ public class StrongboxUtil {
         int upperbound = 14;
         int epic_int = randEpic.nextInt(upperbound);
 
-        if(epic_int == 0) {
+        if (epic_int == 0) {
             player.dropItem(ItemTrinkets.INDELIBLE_BAND_OF_FORTITUDE, 1);
         }
-        if(epic_int == 1) {
+        if (epic_int == 1) {
             player.dropItem(ItemTrinkets.INDELIBLE_BLOODY_CLAW, 1);
         }
-        if(epic_int == 2) {
+        if (epic_int == 2) {
             player.dropItem(ItemTrinkets.INDELIBLE_MEDALLION, 1);
         }
-        if(epic_int == 3) {
+        if (epic_int == 3) {
             player.dropItem(ItemTrinkets.INDELIBLE_FRENZY_TONIC, 1);
         }
-        if(epic_int == 4) {
+        if (epic_int == 4) {
             player.dropItem(ItemTrinkets.INDELIBLE_LUCKY_CHARM, 1);
         }
-        if(epic_int == 5) {
+        if (epic_int == 5) {
             player.dropItem(ItemTrinkets.CAT_EARS, 1);
         }
-        if(epic_int == 6) {
+        if (epic_int == 6) {
             player.dropItem(ItemTrinkets.COW_EARS, 1);
         }
-        if(epic_int == 7) {
+        if (epic_int == 7) {
             player.dropItem(ItemTrinkets.BUNNY_EARS, 1);
         }
-        if(epic_int == 8) {
+        if (epic_int == 8) {
             player.dropItem(ItemTrinkets.BLACK_BELT, 1);
         }
-        if(epic_int == 9) {
+        if (epic_int == 9) {
             player.dropItem(ItemTrinkets.RUNNING_SHOES, 1);
         }
-        if(epic_int == 10) {
+        if (epic_int == 10) {
             player.dropItem(ItemTrinkets.WINGED_SHOES, 1);
         }
-        if(epic_int == 11) {
+        if (epic_int == 11) {
             player.dropItem(ItemTrinkets.BEJEWELED_NECKLACE, 1);
         }
-        if(epic_int == 12) {
+        if (epic_int == 12) {
             player.dropItem(ItemTrinkets.STRONG_SPRING, 1);
         }
-        if(epic_int == 13) {
+        if (epic_int == 13) {
             player.dropItem(ItemTrinkets.BLOODY_ROSE, 1);
         }
 
@@ -139,37 +136,37 @@ public class StrongboxUtil {
         int upperbound = 11;
         int legend_int = randLegend.nextInt(upperbound);
 
-        if(legend_int == 0) {
+        if (legend_int == 0) {
             player.dropItem(ItemTrinkets.FOCUS_BELT, 1);
         }
-        if(legend_int == 1) {
+        if (legend_int == 1) {
             player.dropItem(ItemTrinkets.EXPERT_BELT, 1);
         }
-        if(legend_int == 2) {
+        if (legend_int == 2) {
             player.dropItem(ItemTrinkets.GREATER_BAND_OF_FORTITUDE, 1);
         }
-        if(legend_int == 3) {
+        if (legend_int == 3) {
             player.dropItem(ItemTrinkets.GREATER_BLOODY_CLAW, 1);
         }
-        if(legend_int == 4) {
+        if (legend_int == 4) {
             player.dropItem(ItemTrinkets.GREATER_MEDALLION, 1);
         }
-        if(legend_int == 5) {
+        if (legend_int == 5) {
             player.dropItem(ItemTrinkets.GREATER_FRENZY_TONIC, 1);
         }
-        if(legend_int == 6) {
+        if (legend_int == 6) {
             player.dropItem(ItemTrinkets.GREATER_LUCKY_CHARM, 1);
         }
-        if(legend_int == 7) {
+        if (legend_int == 7) {
             player.dropItem(ItemTrinkets.HEART_PENDANT, 1);
         }
-        if(legend_int == 8) {
+        if (legend_int == 8) {
             player.dropItem(ItemTrinkets.JETPACK, 1);
         }
-        if(legend_int == 9) {
+        if (legend_int == 9) {
             player.dropItem(ItemTrinkets.ENCHANTED_SPRING, 1);
         }
-        if(legend_int == 10) {
+        if (legend_int == 10) {
             player.dropItem(ItemTrinkets.MAGNIFYING_GLASS, 1);
         }
     }
@@ -179,10 +176,10 @@ public class StrongboxUtil {
         int upperbound = 2;
         int mythic_int = randMythic.nextInt(upperbound);
 
-        if(mythic_int == 0) {
+        if (mythic_int == 0) {
             player.dropItem(ItemTrinkets.ANGEL_WINGS, 1);
         }
-        if(mythic_int == 1) {
+        if (mythic_int == 1) {
             player.dropItem(ItemTrinkets.PHOENIX_PLUME, 1);
         }
     }
@@ -194,10 +191,10 @@ public class StrongboxUtil {
         int upperbound = 2;
         int air_int = randAir.nextInt(upperbound);
 
-        if(air_int == 0) {
+        if (air_int == 0) {
             player.dropItem(ItemTrinkets.GRIFFIN_FEATHER, 1);
         }
-        if(air_int == 1) {
+        if (air_int == 1) {
             player.dropItem(ItemTrinkets.BOTTLE_OF_WIND, 1);
         }
     }
@@ -207,10 +204,10 @@ public class StrongboxUtil {
         int upperbound = 2;
         int earth_int = randEarth.nextInt(upperbound);
 
-        if(earth_int == 0) {
+        if (earth_int == 0) {
             player.dropItem(ItemTrinkets.GOLEM_CORE, 1);
         }
-        if(earth_int == 1) {
+        if (earth_int == 1) {
             player.dropItem(ItemTrinkets.NIGHTSHADE, 1);
         }
     }
@@ -220,10 +217,10 @@ public class StrongboxUtil {
         int upperbound = 2;
         int water_int = randWater.nextInt(upperbound);
 
-        if(water_int == 0) {
+        if (water_int == 0) {
             player.dropItem(ItemTrinkets.LEVIATHAN_EYE, 1);
         }
-        if(water_int == 1) {
+        if (water_int == 1) {
             player.dropItem(ItemTrinkets.FLASK_OF_UNDERTOW, 1);
         }
     }
@@ -233,10 +230,10 @@ public class StrongboxUtil {
         int upperbound = 2;
         int fire_int = randFire.nextInt(upperbound);
 
-        if(fire_int == 0) {
+        if (fire_int == 0) {
             player.dropItem(ItemTrinkets.DRAGON_FANG, 1);
         }
-        if(fire_int == 1) {
+        if (fire_int == 1) {
             player.dropItem(ItemTrinkets.CRYSTALIZED_FIRE, 1);
         }
     }
@@ -246,10 +243,10 @@ public class StrongboxUtil {
         int upperbound = 2;
         int light_int = randLight.nextInt(upperbound);
 
-        if(light_int == 0) {
+        if (light_int == 0) {
             player.dropItem(ItemTrinkets.ANGELIC_HALO, 1);
         }
-        if(light_int == 1) {
+        if (light_int == 1) {
             player.dropItem(ItemTrinkets.PRAYER_CANDLE, 1);
         }
     }
@@ -259,10 +256,10 @@ public class StrongboxUtil {
         int upperbound = 2;
         int dark_int = randDark.nextInt(upperbound);
 
-        if(dark_int == 0) {
+        if (dark_int == 0) {
             player.dropItem(ItemTrinkets.BASILISK_TOOTH, 1);
         }
-        if(dark_int == 1) {
+        if (dark_int == 1) {
             player.dropItem(ItemTrinkets.ESSENCE_OF_DECAY, 1);
         }
     }

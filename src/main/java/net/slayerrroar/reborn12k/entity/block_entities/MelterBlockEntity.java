@@ -104,30 +104,30 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
     }
 
     private void consumeFuel() {
-        if(!getStack(0).isEmpty()) {
+        if (!getStack(0).isEmpty()) {
             this.fuelTime = FuelRegistry.INSTANCE.get(this.removeStack(0, 1).getItem());
             this.maxFuelTime = this.fuelTime;
         }
     }
 
     public static void tick(World world, BlockPos blockPos, BlockState state, MelterBlockEntity entity) {
-        if(world.isClient()) {
+        if (world.isClient()) {
             return;
         }
-        if(isConsumingFuel(entity)) {
+        if (isConsumingFuel(entity)) {
             entity.fuelTime--;
         }
-        if(!isConsumingFuel(entity) && entity.progress > 0) {
+        if (!isConsumingFuel(entity) && entity.progress > 0) {
             entity.progress--;
         }
-        if(hasRecipe(entity)) {
-            if(hasFuelInFuelSlot(entity) && !isConsumingFuel(entity)) {
+        if (hasRecipe(entity)) {
+            if (hasFuelInFuelSlot(entity) && !isConsumingFuel(entity)) {
                 entity.consumeFuel();
             }
-            if(isConsumingFuel(entity)) {
+            if (isConsumingFuel(entity)) {
                 entity.progress++;
                 markDirty(world, blockPos, state);
-                if(entity.progress >= entity.maxProgress) {
+                if (entity.progress >= entity.maxProgress) {
                     craftItem(entity);
                 }
             }
@@ -151,14 +151,14 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
 
     private static void craftItem(MelterBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
         Optional<MelterRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(MelterRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
-        if(hasRecipe(entity)) {
+        if (hasRecipe(entity)) {
 
             entity.removeStack(1,1);
             entity.removeStack(2,1);
@@ -175,7 +175,7 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
 
     private static boolean hasRecipe(MelterBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -199,7 +199,7 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
-        if(side == Direction.DOWN) {
+        if (side == Direction.DOWN) {
             return slot == 6;
         }
         return false;

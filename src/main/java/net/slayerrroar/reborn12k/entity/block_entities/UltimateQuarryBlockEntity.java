@@ -96,14 +96,14 @@ public class UltimateQuarryBlockEntity extends BlockEntity implements NamedScree
     }
 
     public static void tick(World world, BlockPos blockPos, BlockState state, UltimateQuarryBlockEntity entity) {
-        if(world.isClient()) {
+        if (world.isClient()) {
             return;
         }
 
-        if(hasRecipe(entity) && hasFuelInFuelSlot(entity)) {
+        if (hasRecipe(entity) && hasFuelInFuelSlot(entity)) {
             entity.progress++;
             markDirty(world, blockPos, state);
-            if(entity.progress >= entity.maxProgress) {
+            if (entity.progress >= entity.maxProgress) {
                 craftItem(entity);
             }
         } else {
@@ -118,20 +118,20 @@ public class UltimateQuarryBlockEntity extends BlockEntity implements NamedScree
 
     private static void craftItem(UltimateQuarryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
         Optional<QuarryRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(QuarryRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
-        if(hasRecipe(entity)) {
+        if (hasRecipe(entity)) {
 
             entity.setStack(2, new ItemStack(recipe.get().getOutput().getItem(),
                     entity.getStack(2).getCount() + 1));
-            if(entity.getStack(0).getDamage() < entity.getStack(0).getMaxDamage()) {
+            if (entity.getStack(0).getDamage() < entity.getStack(0).getMaxDamage()) {
                 entity.getStack(0).setDamage(entity.getStack(0).getDamage() + 1);
-            } if(entity.getStack(0).getDamage() == entity.getStack(0).getMaxDamage()) {
+            } if (entity.getStack(0).getDamage() == entity.getStack(0).getMaxDamage()) {
                 entity.removeStack(0);
                 entity.setStack(3, new ItemStack(ItemTechnical.EMPTY_FUEL_CELL,
                         entity.getStack(3).getCount()+1));
@@ -143,7 +143,7 @@ public class UltimateQuarryBlockEntity extends BlockEntity implements NamedScree
 
     private static boolean hasRecipe(UltimateQuarryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -165,7 +165,7 @@ public class UltimateQuarryBlockEntity extends BlockEntity implements NamedScree
     @Override
     public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
 
-        if(side == Direction.DOWN) {
+        if (side == Direction.DOWN) {
             return false;
         }
         return slot == 0;
@@ -174,7 +174,7 @@ public class UltimateQuarryBlockEntity extends BlockEntity implements NamedScree
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
-        if(side == Direction.DOWN) {
+        if (side == Direction.DOWN) {
             return slot == 2;
         }
         return slot == 3;

@@ -41,7 +41,7 @@ public class CrimsonRod extends Item {
 
         HitResult hit = playerEntity.raycast(28f, 0, false);
 
-        if(hit.getType() == HitResult.Type.ENTITY) {
+        if (hit.getType() == HitResult.Type.ENTITY) {
             EntityHitResult entityHit = (EntityHitResult) hit;
             Entity entity = entityHit.getEntity();
 
@@ -50,8 +50,7 @@ public class CrimsonRod extends Item {
             playerEntity.getItemCooldownManager().set(this, 12*20);
 
         }
-
-        else if(hit.getType() == HitResult.Type.BLOCK) {
+ else if (hit.getType() == HitResult.Type.BLOCK) {
 
             BlockPos blockPos = ((BlockHitResult) hit).getBlockPos();
 

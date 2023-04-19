@@ -39,7 +39,7 @@ public class ThunderboltWand extends Item {
 
         HitResult hit = playerEntity.raycast(12f, 0, false);
 
-        if(hit.getType() == HitResult.Type.BLOCK) {
+        if (hit.getType() == HitResult.Type.BLOCK) {
 
             BlockPos blockPos = ((BlockHitResult) hit).getBlockPos();
 

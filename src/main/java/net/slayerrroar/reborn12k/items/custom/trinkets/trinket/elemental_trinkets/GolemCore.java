@@ -37,7 +37,7 @@ public class GolemCore extends TrinketItem implements Trinket {
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.getMaxHealth() > 20.0f) {
+        if (entity.getMaxHealth() > 20.0f) {
             entity.setHealth(20.0f);
         }
     }
@@ -45,8 +45,8 @@ public class GolemCore extends TrinketItem implements Trinket {
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
-        if(!world.isClient) {
-            if(!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.EARTH_PENDANT)) {
+        if (!world.isClient) {
+            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.EARTH_PENDANT)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }

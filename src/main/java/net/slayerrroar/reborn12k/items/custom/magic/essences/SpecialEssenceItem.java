@@ -21,17 +21,17 @@ public class SpecialEssenceItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
-        if(playerEntity.isSneaking()) {
+        if (playerEntity.isSneaking()) {
             int currentStack = playerEntity.getStackInHand(hand).getCount();
             playerEntity.addExperience(currentStack * 9);
-            if(!playerEntity.isCreative()) {
+            if (!playerEntity.isCreative()) {
                 playerEntity.getStackInHand(hand).decrement(currentStack);
             }
             world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(),
                     SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
         }
         playerEntity.addExperience(9);
-        if(!playerEntity.isCreative()) {
+        if (!playerEntity.isCreative()) {
             playerEntity.getStackInHand(hand).decrement(1);
         }
         world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(),

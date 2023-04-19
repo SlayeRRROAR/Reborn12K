@@ -32,7 +32,7 @@ public class WaterRing extends TrinketItem {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if((entity).isSubmergedInWater()) {
+        if ((entity).isSubmergedInWater()) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 10, 0, false, false));
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 10, 0, false, false));
         }

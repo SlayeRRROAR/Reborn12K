@@ -36,7 +36,7 @@ public class QuarryScreen extends HandledScreen<QuarryScreenHandler> {
     }
 
     private void renderProgressArrow(MatrixStack matrices, int x, int y) {
-        if(handler.isCrafting()) {
+        if (handler.isCrafting()) {
             drawTexture(matrices, x + 108, y + 33, 176, 0, 8, handler.getScaledProgress());
         }
     }

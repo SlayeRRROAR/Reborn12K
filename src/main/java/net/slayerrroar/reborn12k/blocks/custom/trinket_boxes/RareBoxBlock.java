@@ -36,12 +36,12 @@ public class RareBoxBlock extends Block {
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if(!player.isSneaking()) {
-            if(player.getStackInHand(Hand.MAIN_HAND).isOf(ItemTrinkets.STRONGBOX_KEY)) {
-                if(player.isCreative()) {
+        if (!player.isSneaking()) {
+            if (player.getStackInHand(Hand.MAIN_HAND).isOf(ItemTrinkets.STRONGBOX_KEY)) {
+                if (player.isCreative()) {
                     world.breakBlock(pos, false, player);
                 }
-                if(!player.isCreative()) {
+                if (!player.isCreative()) {
                     world.breakBlock(pos, false, player);
                     player.getStackInHand(Hand.MAIN_HAND).decrement(1);
                 }
@@ -59,15 +59,15 @@ public class RareBoxBlock extends Block {
         int upperbound = 21;
         int rarity_int = rarityRand.nextInt(upperbound);
 
-        if(rarity_int < 14) {
+        if (rarity_int < 14) {
             StrongboxUtil.randomRare(player);
             player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.rare"), true);
         }
-        if(rarity_int < 19 && rarity_int > 13) {
+        if (rarity_int < 19 && rarity_int > 13) {
             StrongboxUtil.randomEpic(player);
             player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.epic"), true);
         }
-        if(rarity_int == 20) {
+        if (rarity_int == 20) {
             StrongboxUtil.randomLegendary(player);
             player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.legendary"), true);
         }

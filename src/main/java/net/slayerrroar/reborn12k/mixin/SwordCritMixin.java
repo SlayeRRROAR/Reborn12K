@@ -53,13 +53,13 @@ public class SwordCritMixin {
 
         int critChance = int_random + vagueLuck + minorLuck + indelibleLuck + greaterLuck + radiant;
 
-        if(critChance > 95) {
+        if (critChance > 95) {
             float critBonus = 1.5F;
             target.damage(attacker.getDamageSources().generic(), (damage * critBonus));
             target.world.playSound(null, target.getX(), target.getY(), target.getZ(),
                     SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, SoundCategory.PLAYERS, 1.0F, 1.0F);
         }
-        if(critChance <= 95) {
+        if (critChance <= 95) {
             target.damage(attacker.getDamageSources().generic(), (damage));
         }
     }

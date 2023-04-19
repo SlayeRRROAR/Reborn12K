@@ -28,14 +28,14 @@ public class SoulVesselItem extends Item {
         world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SPLASH_POTION_THROW, SoundCategory.NEUTRAL, 0.5F, 1F);
 		user.getItemCooldownManager().set(this, 5);
 
-        if(!world.isClient) {
+        if (!world.isClient) {
             SoulVesselEntity thrownEntity = new SoulVesselEntity(world, user);
             thrownEntity.setItem(itemStack);
             thrownEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 2.0F, 0F);
             world.spawnEntity(thrownEntity);
         }
         user.incrementStat(Stats.USED.getOrCreateStat(this));
-        if(!user.isCreative()) {
+        if (!user.isCreative()) {
             itemStack.decrement(1);
         }
 

@@ -32,31 +32,31 @@ public class ElementalRune extends Item {
         ItemStack stack = context.getStack();
         BlockState block = world.getBlockState(context.getBlockPos());
 
-        if(block.isOf(Blocks.DIAMOND_BLOCK)) {
+        if (block.isOf(Blocks.DIAMOND_BLOCK)) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.AIR_GEM.getDefaultState());
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(block.isOf(Blocks.EMERALD_BLOCK)) {
+        if (block.isOf(Blocks.EMERALD_BLOCK)) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.EARTH_GEM.getDefaultState());
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(block.isOf(GenericBlocks.SAPPHIRE_BLOCK)) {
+        if (block.isOf(GenericBlocks.SAPPHIRE_BLOCK)) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.WATER_GEM.getDefaultState());
             return ActionResult.SUCCESS;
         }
-        if(block.isOf(GenericBlocks.RUBY_BLOCK)) {
+        if (block.isOf(GenericBlocks.RUBY_BLOCK)) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.FIRE_GEM.getDefaultState());
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(block.isOf(GenericBlocks.SUNSTONE_BLOCK) && world.isDay()) {
+        if (block.isOf(GenericBlocks.SUNSTONE_BLOCK) && world.isDay()) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.SUN_GEM.getDefaultState());
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(block.isOf(GenericBlocks.MOONSTONE_BLOCK) && world.isNight()) {
+        if (block.isOf(GenericBlocks.MOONSTONE_BLOCK) && world.isNight()) {
             world.setBlockState(context.getBlockPos(), AdvancedBlocks.MOON_GEM.getDefaultState());
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;

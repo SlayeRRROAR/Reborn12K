@@ -91,14 +91,14 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
     }
 
     public static void tick(World world, BlockPos blockPos, BlockState state, MineralManufactoryBlockEntity entity) {
-        if(world.isClient()) {
+        if (world.isClient()) {
             return;
         }
 
-        if(hasRecipe(entity)) {
+        if (hasRecipe(entity)) {
             entity.progress++;
             markDirty(world, blockPos, state);
-            if(entity.progress >= entity.maxProgress) {
+            if (entity.progress >= entity.maxProgress) {
                 craftItem(entity);
             }
         } else {
@@ -113,14 +113,14 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
 
     private static void craftItem(MineralManufactoryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
         Optional<MineralManufactoryRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(MineralManufactoryRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
-        if(hasRecipe(entity)) {
+        if (hasRecipe(entity)) {
 
             entity.setStack(3, new ItemStack(recipe.get().getOutput().getItem(),
                     entity.getStack(3).getCount() + 1));
@@ -131,7 +131,7 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
 
     private static boolean hasRecipe(MineralManufactoryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -158,7 +158,7 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
-        if(side == Direction.DOWN) {
+        if (side == Direction.DOWN) {
             return slot == 3;
         }
         return false;

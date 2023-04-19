@@ -36,12 +36,12 @@ public class ElementalBoxBlock extends Block {
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if(!player.isSneaking()) {
-            if(player.getStackInHand(Hand.MAIN_HAND).isOf(ItemTrinkets.STRONGBOX_KEY)) {
-                if(player.isCreative()) {
+        if (!player.isSneaking()) {
+            if (player.getStackInHand(Hand.MAIN_HAND).isOf(ItemTrinkets.STRONGBOX_KEY)) {
+                if (player.isCreative()) {
                     world.breakBlock(pos, false, player);
                 }
-                if(!player.isCreative()) {
+                if (!player.isCreative()) {
                     world.breakBlock(pos, false, player);
                     player.getStackInHand(Hand.MAIN_HAND).decrement(1);
                 }
@@ -59,27 +59,27 @@ public class ElementalBoxBlock extends Block {
         int upperbound = 6;
         int element_int = elementRand.nextInt(upperbound);
 
-        if(element_int == 0) {
+        if (element_int == 0) {
             StrongboxUtil.randomAir(player);
             player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.air"), true);
         }
-        if(element_int == 1) {
+        if (element_int == 1) {
             StrongboxUtil.randomEarth(player);
             player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.earth"), true);
         }
-        if(element_int == 2) {
+        if (element_int == 2) {
             StrongboxUtil.randomWater(player);
             player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.water"), true);
         }
-        if(element_int == 3) {
+        if (element_int == 3) {
             StrongboxUtil.randomFire(player);
             player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.fire"), true);
         }
-        if(element_int == 4) {
+        if (element_int == 4) {
             StrongboxUtil.randomLight(player);
             player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.light"), true);
         }
-        if(element_int == 5) {
+        if (element_int == 5) {
             StrongboxUtil.randomDark(player);
             player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.dark"), true);
         }

@@ -43,9 +43,9 @@ public class AbyssRod extends Item {
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 20*50, 0, false, false));
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20*50, 0, false, false));
 
-        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 15, 15, 15))) {
-            if(e instanceof LivingEntity livingEntity) {
-                if(playerEntity.distanceTo(livingEntity) < 15) {
+        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 15, 15, 15))) {
+            if (e instanceof LivingEntity livingEntity) {
+                if (playerEntity.distanceTo(livingEntity) < 15) {
                     livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 20*50, 0, false, false));
                     livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20*50, 0, false, false));
                 }

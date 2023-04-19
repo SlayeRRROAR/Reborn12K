@@ -63,7 +63,7 @@ public class YggdrasillItem extends Item {
     }
 
     private NatureState getNatureState(ItemStack stack) {
-        if(!stack.isEmpty()) {
+        if (!stack.isEmpty()) {
             checkTag(stack);
             assert stack.getNbt() != null;
             return stack.getNbt().getBoolean(NATURE_STATE) ? NatureState.ON : NatureState.OFF;
@@ -73,7 +73,7 @@ public class YggdrasillItem extends Item {
 
     private void toggleMode(ItemStack stack, PlayerEntity player) {
         NatureState currentMode = getNatureState(stack);
-        if(currentMode.getBoolean()) {
+        if (currentMode.getBoolean()) {
             setNatureState(stack, NatureState.OFF);
             player.sendMessage(Text.translatable("item.reborn12k.yggdrasill_branch.tooltip1"), true);
             return;
@@ -83,13 +83,13 @@ public class YggdrasillItem extends Item {
     }
 
     private void checkTag(ItemStack stack) {
-        if(!stack.isEmpty()) {
-            if(!stack.hasNbt()) {
+        if (!stack.isEmpty()) {
+            if (!stack.hasNbt()) {
                 stack.setNbt(new NbtCompound());
             }
             NbtCompound nbt = stack.getNbt();
             assert nbt != null;
-            if(!nbt.contains(NATURE_STATE)) {
+            if (!nbt.contains(NATURE_STATE)) {
                 nbt.putBoolean(NATURE_STATE, false);
             }
         }
@@ -97,10 +97,10 @@ public class YggdrasillItem extends Item {
 
     @Override
     public void inventoryTick(ItemStack itemStack, World world, Entity entity, int par4, boolean par5) {
-        if(!(entity instanceof PlayerEntity player) || world.isClient) {
+        if (!(entity instanceof PlayerEntity player) || world.isClient) {
             return;
         }
-        if(isActive(itemStack)) {
+        if (isActive(itemStack)) {
             GrowingUtil.growCrops(world, player, range, rangeVertical, interval, intervalCactus);
         }
     }
@@ -108,7 +108,7 @@ public class YggdrasillItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         ItemStack stack = player.getStackInHand(hand);
-        if(!world.isClient && !player.isSneaking()) {
+        if (!world.isClient && !player.isSneaking()) {
             toggleMode(stack, player);
             world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
         }
@@ -118,7 +118,7 @@ public class YggdrasillItem extends Item {
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext)
     {
-        if(getNatureState(itemStack) != NatureState.ON) {
+        if (getNatureState(itemStack) != NatureState.ON) {
             tooltip.add(Text.translatable("item.reborn12k.yggdrasill_branch.tooltip1"));
         } else {
             tooltip.add(Text.translatable("item.reborn12k.yggdrasill_branch.tooltip2"));

@@ -92,14 +92,14 @@ public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreen
     }
 
     public static void tick(World world, BlockPos blockPos, BlockState state, ManaCondenserBlockEntity entity) {
-        if(world.isClient()) {
+        if (world.isClient()) {
             return;
         }
 
-        if(hasRecipe(entity)) {
+        if (hasRecipe(entity)) {
             entity.progress++;
             markDirty(world, blockPos, state);
-            if(entity.progress >= entity.maxProgress) {
+            if (entity.progress >= entity.maxProgress) {
                 craftItem(entity);
             }
         } else {
@@ -114,14 +114,14 @@ public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreen
 
     private static void craftItem(ManaCondenserBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
         Optional<ManaCondenserRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(ManaCondenserRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
-        if(hasRecipe(entity)) {
+        if (hasRecipe(entity)) {
 
             entity.setStack(1, new ItemStack(recipe.get().getOutput().getItem(),
                     entity.getStack(1).getCount() + 1));
@@ -132,7 +132,7 @@ public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreen
 
     private static boolean hasRecipe(ManaCondenserBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -154,7 +154,7 @@ public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreen
     @Override
     public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
 
-        if(side == Direction.DOWN) {
+        if (side == Direction.DOWN) {
             return false;
         }
         return slot == 0;
@@ -163,7 +163,7 @@ public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreen
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
-        if(side == Direction.DOWN) {
+        if (side == Direction.DOWN) {
             return slot == 1;
         }
         return false;

@@ -25,12 +25,12 @@ public class AntiGravBelt extends TrinketItem implements Trinket {
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         PlayerEntity player = (PlayerEntity) entity;
 
-        if(player.isOnGround() || player.isSubmergedInWater() || player.hasVehicle()) {
+        if (player.isOnGround() || player.isSubmergedInWater() || player.hasVehicle()) {
             tickDelay = 15;
         }
-        if(!player.isOnGround() && !player.isSubmergedInWater() && !player.isFallFlying() && !player.getAbilities().flying) {
+        if (!player.isOnGround() && !player.isSubmergedInWater() && !player.isFallFlying() && !player.getAbilities().flying) {
             tickDelay--;
-            if(tickDelay <= 0) {
+            if (tickDelay <= 0) {
                 player.addVelocity(0, 0.03, 0);
                 player.fallDistance *= 0.5;
             }

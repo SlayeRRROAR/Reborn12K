@@ -41,9 +41,9 @@ public class GlacialStaff extends Item {
 
         world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_ILLUSIONER_PREPARE_MIRROR, SoundCategory.PLAYERS, 0.5f, 1.0f);
 
-        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 40, 40, 40))) {
-            if(e instanceof MobEntity mobEntity) {
-                if(playerEntity.distanceTo(mobEntity) < 40) {
+        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 40, 40, 40))) {
+            if (e instanceof MobEntity mobEntity) {
+                if (playerEntity.distanceTo(mobEntity) < 40) {
                     mobEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20*30, 4));
                 }
             }

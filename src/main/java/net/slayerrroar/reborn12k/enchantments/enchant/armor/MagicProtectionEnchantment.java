@@ -32,7 +32,7 @@ public class MagicProtectionEnchantment extends Enchantment {
 
     @Override
     public int getProtectionAmount(int level, DamageSource source) {
-        if(source.isOf(DamageTypes.MAGIC) || source.isOf(DamageTypes.DRAGON_BREATH) || source.isOf(DamageTypes.INDIRECT_MAGIC) || source.isOf(DamageTypes.WITHER_SKULL)) {
+        if (source.isOf(DamageTypes.MAGIC) || source.isOf(DamageTypes.DRAGON_BREATH) || source.isOf(DamageTypes.INDIRECT_MAGIC) || source.isOf(DamageTypes.WITHER_SKULL)) {
             return level;
         } else
             return 0;

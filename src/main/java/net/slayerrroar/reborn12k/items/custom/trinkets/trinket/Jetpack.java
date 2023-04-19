@@ -26,9 +26,9 @@ public class Jetpack extends TrinketItem implements Trinket {
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         PlayerEntity player = (PlayerEntity) entity;
         World world = player.getWorld();
-        if(world.isClient()) {
-            if(TrinketsApi.getTrinketComponent(player).get().isEquipped(this)) {
-                if(KeybindsUtil.trinketKey.isPressed() && !player.isSneaking() && player.getVelocity().y < 0.7) {
+        if (world.isClient()) {
+            if (TrinketsApi.getTrinketComponent(player).get().isEquipped(this)) {
+                if (KeybindsUtil.trinketKey.isPressed() && !player.isSneaking() && player.getVelocity().y < 0.7) {
                     player.addVelocity(0, 0.12, 0);
                 }
             }

@@ -43,9 +43,9 @@ public class AbyssWand extends Item {
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 20*20, 0, false, false));
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20*20, 0, false, false));
 
-        for(Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 20, 20, 20))) {
-            if(e instanceof LivingEntity livingEntity) {
-                if(playerEntity.distanceTo(livingEntity) < 20) {
+        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 20, 20, 20))) {
+            if (e instanceof LivingEntity livingEntity) {
+                if (playerEntity.distanceTo(livingEntity) < 20) {
                     livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 20*20, 0, false, false));
                     livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20*20, 0, false, false));
                 }

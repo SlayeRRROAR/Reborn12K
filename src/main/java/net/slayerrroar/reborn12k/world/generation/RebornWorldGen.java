@@ -6,10 +6,10 @@ public class RebornWorldGen {
 
     public static void generate() {
 
-        if(!Reborn12K.CONFIG.enableOreGeneration) {
+        if (!Reborn12K.CONFIG.enableOreGeneration) {
             RebornOreGen.generateOres();
         }
-        if(!Reborn12K.CONFIG.enableTreeGeneration) {
+        if (!Reborn12K.CONFIG.enableTreeGeneration) {
             RebornTreeGen.generateTrees();
         }
 

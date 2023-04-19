@@ -16,8 +16,8 @@ public class UraniumBlocks extends Block {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if(!world.isClient()) {
-            if(entity instanceof LivingEntity livingEntity) {
+        if (!world.isClient()) {
+            if (entity instanceof LivingEntity livingEntity) {
                 livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 7*20, 0, true, true));
             }
         }

@@ -30,7 +30,7 @@ public class GreaterBand extends TrinketItem implements Trinket {
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.getMaxHealth() > 20.0f) {
+        if (entity.getMaxHealth() > 20.0f) {
             entity.setHealth(20.0f);
         }
     }

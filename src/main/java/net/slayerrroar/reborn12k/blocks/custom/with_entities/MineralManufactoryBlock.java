@@ -56,9 +56,9 @@ public class MineralManufactoryBlock extends BlockWithEntity implements BlockEnt
 
     @Override
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
-        if(state.getBlock() != newState.getBlock()) {
+        if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if(blockEntity instanceof MineralManufactoryBlockEntity) {
+            if (blockEntity instanceof MineralManufactoryBlockEntity) {
                 ItemScatterer.spawn(world, pos, (MineralManufactoryBlockEntity)blockEntity);
                 world.updateComparators(pos, this);
             }
@@ -68,10 +68,10 @@ public class MineralManufactoryBlock extends BlockWithEntity implements BlockEnt
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if(!world.isClient) {
+        if (!world.isClient) {
             NamedScreenHandlerFactory screenHandlerFactory = state.createScreenHandlerFactory(world, pos);
 
-            if(screenHandlerFactory != null) {
+            if (screenHandlerFactory != null) {
                 player.openHandledScreen(screenHandlerFactory);
             }
         }

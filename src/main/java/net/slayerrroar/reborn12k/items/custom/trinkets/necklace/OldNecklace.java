@@ -24,14 +24,14 @@ public class OldNecklace extends TrinketItem implements Trinket {
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.getHealth() == entity.getMaxHealth()) {
+        if (entity.getHealth() == entity.getMaxHealth()) {
             entity.setHealth(entity.getHealth() + 4.0f);
         }
     }
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.getHealth() > 20.0f) {
+        if (entity.getHealth() > 20.0f) {
             entity.setHealth(20.0f);
         }
     }

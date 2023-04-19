@@ -26,7 +26,7 @@ public class EtherealRune extends Item {
         ItemStack stack = context.getStack();
         BlockState block = world.getBlockState(context.getBlockPos());
 
-        if(block.isOf(GenericBlocks.STEEL_BLOCK)) {
+        if (block.isOf(GenericBlocks.STEEL_BLOCK)) {
             world.setBlockState(context.getBlockPos(), Blocks.AIR.getDefaultState());
             stack.setCount(stack.getCount()-1);
             player.dropItem(ItemGenerics.MAGISTEEL_INGOT, 1);

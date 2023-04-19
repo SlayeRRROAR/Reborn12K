@@ -36,7 +36,7 @@ public class MineralManufactoryScreen extends HandledScreen<MineralManufactorySc
     }
 
     private void renderProgressArrow(MatrixStack matrices, int x, int y) {
-        if(handler.isCrafting()) {
+        if (handler.isCrafting()) {
             drawTexture(matrices, x + 62, y + 29, 176, 0, 53, handler.getScaledProgress());
         }
     }

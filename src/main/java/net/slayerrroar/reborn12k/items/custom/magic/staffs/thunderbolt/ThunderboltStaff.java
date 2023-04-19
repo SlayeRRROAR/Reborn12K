@@ -39,7 +39,7 @@ public class ThunderboltStaff extends Item {
 
         HitResult hit = playerEntity.raycast(32f, 0, false);
 
-        if(hit.getType() == HitResult.Type.BLOCK) {
+        if (hit.getType() == HitResult.Type.BLOCK) {
 
             BlockPos blockPos = ((BlockHitResult) hit).getBlockPos();
 

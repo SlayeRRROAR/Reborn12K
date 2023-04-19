@@ -32,32 +32,32 @@ public class BlankRune extends Item {
         BlockState catalyst = world.getBlockState(context.getBlockPos());
         BlockState pedestal = world.getBlockState(context.getBlockPos().down());
 
-        if(catalyst.isOf(AdvancedBlocks.AIR_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
+        if (catalyst.isOf(AdvancedBlocks.AIR_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
             player.dropItem(ItemMagic.RUNE_OF_AIR, 1);
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(catalyst.isOf(AdvancedBlocks.EARTH_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
+        if (catalyst.isOf(AdvancedBlocks.EARTH_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
             player.dropItem(ItemMagic.RUNE_OF_EARTH, 1);
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(catalyst.isOf(AdvancedBlocks.WATER_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
+        if (catalyst.isOf(AdvancedBlocks.WATER_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
             player.dropItem(ItemMagic.RUNE_OF_WATER, 1);
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(catalyst.isOf(AdvancedBlocks.FIRE_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
+        if (catalyst.isOf(AdvancedBlocks.FIRE_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
             player.dropItem(ItemMagic.RUNE_OF_FIRE, 1);
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(catalyst.isOf(AdvancedBlocks.SUN_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
+        if (catalyst.isOf(AdvancedBlocks.SUN_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
             player.dropItem(ItemMagic.RUNE_OF_LIGHT, 1);
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        if(catalyst.isOf(AdvancedBlocks.MOON_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
+        if (catalyst.isOf(AdvancedBlocks.MOON_GEM) && pedestal.isOf(AdvancedBlocks.ARCANE_PEDESTAL)) {
             player.dropItem(ItemMagic.RUNE_OF_DARKNESS, 1);
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;

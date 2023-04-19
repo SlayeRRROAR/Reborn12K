@@ -17,13 +17,13 @@ public abstract class SpringMixin {
     @Inject(method = "getKnockback", at = @At("RETURN"), cancellable = true)
     private static void getKnockback(LivingEntity entity, CallbackInfoReturnable<Integer> cir) {
 
-        if(TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.WEAK_SPRING)) {
+        if (TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.WEAK_SPRING)) {
             cir.setReturnValue(Math.max(cir.getReturnValueI() + 1, 0));
         }
-        if(TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.STRONG_SPRING)) {
+        if (TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.STRONG_SPRING)) {
             cir.setReturnValue(Math.max(cir.getReturnValueI() + 2, 0));
         }
-        if(TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.ENCHANTED_SPRING)) {
+        if (TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.ENCHANTED_SPRING)) {
             cir.setReturnValue(Math.max(cir.getReturnValueI() + 3, 0));
         }
 

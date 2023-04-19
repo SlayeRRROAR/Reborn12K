@@ -92,14 +92,14 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
     }
 
     public static void tick(World world, BlockPos blockPos, BlockState state, ArcaneArtifactBlockEntity entity) {
-        if(world.isClient()) {
+        if (world.isClient()) {
             return;
         }
 
-        if(hasRecipe(entity)) {
+        if (hasRecipe(entity)) {
             entity.progress++;
             markDirty(world, blockPos, state);
-            if(entity.progress >= entity.maxProgress) {
+            if (entity.progress >= entity.maxProgress) {
                 craftItem(entity);
             }
         } else {
@@ -114,14 +114,14 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
 
     private static void craftItem(ArcaneArtifactBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
         Optional<ArcaneArtifactRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
                 .getFirstMatch(ArcaneArtifactRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
-        if(hasRecipe(entity)) {
+        if (hasRecipe(entity)) {
 
             entity.removeStack(0,1);
             entity.setStack(1, new ItemStack(recipe.get().getOutput().getItem(),
@@ -133,7 +133,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
 
     private static boolean hasRecipe(ArcaneArtifactBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
-        for(int i = 0; i < entity.size(); i++) {
+        for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -155,7 +155,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
     @Override
     public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
 
-        if(side == Direction.DOWN) {
+        if (side == Direction.DOWN) {
             return false;
         }
         return slot == 0;
@@ -164,7 +164,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
-        if(side == Direction.DOWN) {
+        if (side == Direction.DOWN) {
             return slot == 1;
         }
         return false;

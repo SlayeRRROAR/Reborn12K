@@ -36,7 +36,7 @@ public class ManaCondenserScreen extends HandledScreen<ManaCondenserScreenHandle
     }
 
     private void renderProgressArrow(MatrixStack matrices, int x, int y) {
-        if(handler.isCrafting()) {
+        if (handler.isCrafting()) {
             drawTexture(matrices, x + 65, y + 25, 176, 0, 48, handler.getScaledProgress());
         }
     }

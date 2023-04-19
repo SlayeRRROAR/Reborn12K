@@ -49,7 +49,7 @@ public class ExceedSword extends SwordItem {
     }
 
     private ExceedState getExceedState(ItemStack red_queen) {
-        if(!red_queen.isEmpty()) {
+        if (!red_queen.isEmpty()) {
             checkTag(red_queen);
 
             assert red_queen.getNbt() != null;
@@ -71,7 +71,7 @@ public class ExceedSword extends SwordItem {
     @Override
     public boolean postHit(ItemStack red_queen, LivingEntity target, LivingEntity attacker) {
         ExceedState currentmode = getExceedState(red_queen);
-        if(currentmode != ExceedState.INACTIVE && target instanceof MobEntity) {
+        if (currentmode != ExceedState.INACTIVE && target instanceof MobEntity) {
             float damage = (float) attacker.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
             float critBonus = 2.0F;
             target.damage(attacker.getDamageSources().generic(), (damage * critBonus));
@@ -82,16 +82,16 @@ public class ExceedSword extends SwordItem {
     }
 
     private void checkTag(ItemStack red_queen) {
-        if(!red_queen.isEmpty()) {
+        if (!red_queen.isEmpty()) {
 
-            if(!red_queen.hasNbt()) {
+            if (!red_queen.hasNbt()) {
                 red_queen.setNbt(new NbtCompound());
             }
             NbtCompound nbt = red_queen.getNbt();
 
             assert nbt != null;
 
-            if(!nbt.contains(EXCEED_STATE)) {
+            if (!nbt.contains(EXCEED_STATE)) {
                 nbt.putBoolean(EXCEED_STATE, false);
             }
         }
@@ -104,13 +104,13 @@ public class ExceedSword extends SwordItem {
         ItemStack red_queen = playerEntity.getStackInHand(hand);
         ExceedState currentMode = getExceedState(red_queen);
 
-        if(!world.isClient && !playerEntity.isSneaking()) {
-            if(currentMode!= ExceedState.ACTIVE) {
+        if (!world.isClient && !playerEntity.isSneaking()) {
+            if (currentMode!= ExceedState.ACTIVE) {
                 Random rand = new Random();
                 int upperbound = 21;
                 int int_random = rand.nextInt(upperbound);
 
-                if(int_random < 6) {
+                if (int_random < 6) {
                     ActivateExceed(red_queen);
                     world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.15F, 0.0F);
                     playerEntity.sendMessage(Text.translatable("item.reborn12k.red_queen.tooltip3"), true);
@@ -127,11 +127,10 @@ public class ExceedSword extends SwordItem {
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        if(getExceedState(itemStack) != ExceedState.ACTIVE){
+        if (getExceedState(itemStack) != ExceedState.ACTIVE){
             tooltip.add(Text.translatable("item.reborn12k.red_queen.tooltip1"));
         }
-
-        else {
+ else {
             tooltip.add(Text.translatable("item.reborn12k.red_queen.tooltip2"));
         }
     }

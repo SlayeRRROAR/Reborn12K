@@ -32,11 +32,11 @@ public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
         int y = (height - backgroundHeight) / 2;
         drawTexture(matrices, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
-        if(handler.isCrafting()) {
+        if (handler.isCrafting()) {
             drawTexture(matrices, x + 79, y + 34, 176, 14, handler.getScaledProgress(), 17);
         }
 
-        if(handler.hasFuel()) {
+        if (handler.hasFuel()) {
             drawTexture(matrices, x + 57, y + 36 + 14 - handler.getScaledFuelProgress(), 176,
                     14 - handler.getScaledFuelProgress(), 14, handler.getScaledFuelProgress());
         }
