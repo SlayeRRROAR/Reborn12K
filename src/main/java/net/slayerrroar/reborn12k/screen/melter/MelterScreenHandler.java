@@ -30,8 +30,8 @@ public class MelterScreenHandler extends ScreenHandler {
         this.propertyDelegate = delegate;
 
         this.addSlot(new CustomFuelSlot(inventory, 0, 31, 53));
-        this.addSlot(new Slot(inventory, 1, 31, 17));
-        this.addSlot(new CustomBucketSlot(inventory, 2, 64, 35));
+        this.addSlot(new CustomBucketSlot(inventory, 1, 64, 35));
+        this.addSlot(new Slot(inventory, 2, 31, 17));
         this.addSlot(new CustomResultSlot(inventory, 3, 125, 35));
 
         addPlayerInventory(playerInventory);
@@ -52,7 +52,7 @@ public class MelterScreenHandler extends ScreenHandler {
     public int getScaledProgress() {
         int progress = this.propertyDelegate.get(0);
         int maxProgress = this.propertyDelegate.get(1);
-        int progressArrowSize = 17;
+        int progressArrowSize = 22;
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
@@ -80,7 +80,7 @@ public class MelterScreenHandler extends ScreenHandler {
                 if (!this.insertItem(originalStack,this.inventory.size(), this.slots.size()-1, true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (!this.insertItem(originalStack, 0, this.inventory.size()-1, false)) {
+            } else if (!this.insertItem(originalStack, 0, this.inventory.size(), false)) {
                 return ItemStack.EMPTY;
             }
 
