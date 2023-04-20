@@ -31,7 +31,7 @@ import java.util.Optional;
 
 public class MelterBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
-            DefaultedList.ofSize(7, ItemStack.EMPTY);
+            DefaultedList.ofSize(4, ItemStack.EMPTY);
 
     protected final PropertyDelegate propertyDelegate;
     private int progress= 0;
@@ -162,12 +162,9 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
 
             entity.removeStack(1,1);
             entity.removeStack(2,1);
-            entity.removeStack(3,1);
-            entity.removeStack(4,1);
-            entity.removeStack(5,1);
 
-            entity.setStack(6, new ItemStack(recipe.get().getOutput().getItem(),
-                    entity.getStack(6).getCount() + 1));
+            entity.setStack(3, new ItemStack(recipe.get().getOutput().getItem(),
+                    entity.getStack(3).getCount() + 1));
 
             entity.resetProgress();
         }
@@ -187,11 +184,11 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
     }
 
     private static boolean canInsertItemIntoOutputSlot(SimpleInventory inventory, Item output) {
-        return inventory.getStack(6).getItem() == output || inventory.getStack(6).isEmpty();
+        return inventory.getStack(3).getItem() == output || inventory.getStack(3).isEmpty();
     }
 
     private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory) {
-        return inventory.getStack(6).getMaxCount() > inventory.getStack(6).getCount();
+        return inventory.getStack(3).getMaxCount() > inventory.getStack(3).getCount();
     }
 
 
@@ -200,7 +197,7 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
         if (side == Direction.DOWN) {
-            return slot == 6;
+            return slot == 3;
         }
         return false;
     }

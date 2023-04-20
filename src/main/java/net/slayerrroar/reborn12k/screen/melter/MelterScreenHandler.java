@@ -24,18 +24,15 @@ public class MelterScreenHandler extends ScreenHandler {
 
     public MelterScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
         super(RebornScreenRegistry.MELTER_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 7);
+        checkSize(inventory, 4);
         this.inventory = inventory;
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 
-        this.addSlot(new CustomFuelSlot(inventory, 0, 35, 47));
-        this.addSlot(new CustomBucketSlot(inventory, 1, 125, 18));
-        this.addSlot(new Slot(inventory, 2, 70, 27));
-        this.addSlot(new Slot(inventory, 3, 90, 27));
-        this.addSlot(new Slot(inventory, 4, 70, 47));
-        this.addSlot(new Slot(inventory, 5, 90, 47));
-        this.addSlot(new CustomResultSlot(inventory, 6, 125, 58));
+        this.addSlot(new CustomFuelSlot(inventory, 0, 31, 53));
+        this.addSlot(new Slot(inventory, 1, 31, 17));
+        this.addSlot(new CustomBucketSlot(inventory, 2, 64, 35));
+        this.addSlot(new CustomResultSlot(inventory, 3, 125, 35));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
@@ -74,14 +71,16 @@ public class MelterScreenHandler extends ScreenHandler {
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
+
         if (slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
-            if (invSlot < this.inventory.size()) {
-                if (!this.insertItem(originalStack,this.inventory.size(), this.slots.size(), true)) {
+
+            if (invSlot < this.inventory.size()-1) {
+                if (!this.insertItem(originalStack,this.inventory.size(), this.slots.size()-1, true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (!this.insertItem(originalStack, 0, this.inventory.size(), false)) {
+            } else if (!this.insertItem(originalStack, 0, this.inventory.size()-1, false)) {
                 return ItemStack.EMPTY;
             }
 
@@ -102,14 +101,14 @@ public class MelterScreenHandler extends ScreenHandler {
     private void addPlayerInventory(PlayerInventory playerInventory) {
         for (int i = 0; i < 3; ++i) {
             for (int l = 0; l < 9; ++l) {
-                this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 8 + l * 18, 86 + i * 18));
+                this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 8 + l * 18, 84 + i * 18));
             }
         }
     }
 
     private void addPlayerHotbar(PlayerInventory playerInventory) {
         for (int i = 0; i < 9; ++i) {
-            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 144));
+            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
         }
     }
 
