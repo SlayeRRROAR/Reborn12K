@@ -98,6 +98,10 @@ public class ItemGenerics {
     public static final Item RAW_LUMIUM = registerItem("raw_lumium", new Item(new FabricItemSettings()));
     public static final Item RAW_ENDERIUM = registerItem("raw_enderium", new Item(new FabricItemSettings()));
 
+    public static final Item DESTABILIZED_MIXTURE = registerItem("destabilized_mixture", new Item(new FabricItemSettings()));
+    public static final Item ENERGIZED_MIXTURE = registerItem("energized_mixture", new Item(new FabricItemSettings()));
+    public static final Item RESONANT_MIXTURE = registerItem("resonant_mixture", new Item(new FabricItemSettings()));
+
 
     // Food
 
@@ -242,6 +246,10 @@ public class ItemGenerics {
         addToItemGroup(ItemGroupUtil.REBORN12K, RAW_SIGNALUM);
         addToItemGroup(ItemGroupUtil.REBORN12K, RAW_LUMIUM);
         addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ENDERIUM);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, DESTABILIZED_MIXTURE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENERGIZED_MIXTURE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RESONANT_MIXTURE);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, BANANA);
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_BANANA);
