@@ -69,14 +69,16 @@ public class CrusherScreenHandler extends ScreenHandler {
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
+
         if (slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
-            if (invSlot < this.inventory.size()) {
-                if (!this.insertItem(originalStack,this.inventory.size(), this.slots.size(), true)) {
+
+            if (invSlot < this.inventory.size()-1) {
+                if (!this.insertItem(originalStack,this.inventory.size(), this.slots.size()-1, true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (!this.insertItem(originalStack, 0, this.inventory.size(), false)) {
+            } else if (!this.insertItem(originalStack, 0, this.inventory.size()-1, false)) {
                 return ItemStack.EMPTY;
             }
 
