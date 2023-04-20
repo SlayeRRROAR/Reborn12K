@@ -13,12 +13,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.custom.ArcanePedestalBlock;
-import net.slayerrroar.reborn12k.blocks.custom.FancyLampBlock;
-import net.slayerrroar.reborn12k.blocks.custom.GemBlock;
-import net.slayerrroar.reborn12k.blocks.custom.MarketBlock;
+import net.slayerrroar.reborn12k.blocks.custom.*;
+import net.slayerrroar.reborn12k.blocks.custom.block_entities.*;
 import net.slayerrroar.reborn12k.blocks.custom.trinket_boxes.*;
-import net.slayerrroar.reborn12k.blocks.custom.with_entities.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class AdvancedBlocks {

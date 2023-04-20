@@ -13,11 +13,8 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.custom.UraniumBlocks;
-import net.slayerrroar.reborn12k.blocks.custom.minecraft.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
-import net.slayerrroar.reborn12k.world.features.tree.AshSaplingGenerator;
-import net.slayerrroar.reborn12k.world.features.tree.CherrySaplingGenerator;
-import net.slayerrroar.reborn12k.world.features.tree.SlimySaplingGenerator;
+import net.slayerrroar.reborn12k.world.features.tree.*;
 
 @SuppressWarnings("unused")
 
@@ -43,12 +40,12 @@ public class GenericBlocks {
     public static final Block CHERRY_LEAVES = registerBlock("cherry_leaves", new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)), ItemGroupUtil.REBORN12K);
     public static final Block SLIMY_LEAVES = registerBlock("slimy_leaves", new LeavesBlock(FabricBlockSettings.copyOf(Blocks.SLIME_BLOCK).hardness(0.2f).resistance(0.2f)), ItemGroupUtil.REBORN12K);
 
-    public static final Block ASH_SAPLING = registerBlock("ash_sapling", new CustomSaplingBlock(new AshSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly()), ItemGroupUtil.REBORN12K);
-    public static final Block CHERRY_SAPLING = registerBlock("cherry_sapling", new CustomSaplingBlock(new CherrySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly()), ItemGroupUtil.REBORN12K);
-    public static final Block SLIMY_SAPLING = registerBlock("slimy_sapling", new CustomSaplingBlock(new SlimySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly()), ItemGroupUtil.REBORN12K);
+    public static final Block ASH_SAPLING = registerBlock("ash_sapling", new SaplingBlock(new AshSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly()), ItemGroupUtil.REBORN12K);
+    public static final Block CHERRY_SAPLING = registerBlock("cherry_sapling", new SaplingBlock(new CherrySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly()), ItemGroupUtil.REBORN12K);
+    public static final Block SLIMY_SAPLING = registerBlock("slimy_sapling", new SaplingBlock(new SlimySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly()), ItemGroupUtil.REBORN12K);
 
-    public static final Block ASH_STAIRS = registerBlock("ash_stairs", new StairBlock(GenericBlocks.ASH_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)), ItemGroupUtil.REBORN12K);
-    public static final Block CHERRY_STAIRS = registerBlock("cherry_stairs", new StairBlock(GenericBlocks.CHERRY_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)), ItemGroupUtil.REBORN12K);
+    public static final Block ASH_STAIRS = registerBlock("ash_stairs", new StairsBlock(GenericBlocks.ASH_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)), ItemGroupUtil.REBORN12K);
+    public static final Block CHERRY_STAIRS = registerBlock("cherry_stairs", new StairsBlock(GenericBlocks.CHERRY_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)), ItemGroupUtil.REBORN12K);
 
     public static final Block ASH_SLAB = registerBlock("ash_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB)), ItemGroupUtil.REBORN12K);
     public static final Block CHERRY_SLAB = registerBlock("cherry_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB)), ItemGroupUtil.REBORN12K);
@@ -56,20 +53,20 @@ public class GenericBlocks {
     public static final Block ASH_FENCE = registerBlock("ash_fence", new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)), ItemGroupUtil.REBORN12K);
     public static final Block CHERRY_FENCE = registerBlock("cherry_fence", new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)), ItemGroupUtil.REBORN12K);
 
-    public static final Block ASH_FENCE_GATE = registerBlock("ash_fence_gate", new FenceGateBlocks(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK), ItemGroupUtil.REBORN12K);
-    public static final Block CHERRY_FENCE_GATE = registerBlock("cherry_fence_gate", new FenceGateBlocks(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK), ItemGroupUtil.REBORN12K);
+    public static final Block ASH_FENCE_GATE = registerBlock("ash_fence_gate", new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK), ItemGroupUtil.REBORN12K);
+    public static final Block CHERRY_FENCE_GATE = registerBlock("cherry_fence_gate", new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK), ItemGroupUtil.REBORN12K);
 
-    public static final Block ASH_BUTTON = registerBlock("ash_button", new WoodenButtonBlocks(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 30, true), ItemGroupUtil.REBORN12K);
-    public static final Block CHERRY_BUTTON = registerBlock("cherry_button", new WoodenButtonBlocks(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 30, true), ItemGroupUtil.REBORN12K);
+    public static final Block ASH_BUTTON = registerBlock("ash_button", new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 30, true), ItemGroupUtil.REBORN12K);
+    public static final Block CHERRY_BUTTON = registerBlock("cherry_button", new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 30, true), ItemGroupUtil.REBORN12K);
 
-    public static final Block ASH_PRESSURE_PLATE = registerBlock("ash_pressure_plate", new WoodenPressurePlateBlocks(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
-    public static final Block CHERRY_PRESSURE_PLATE = registerBlock("cherry_pressure_plate", new WoodenPressurePlateBlocks(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
+    public static final Block ASH_PRESSURE_PLATE = registerBlock("ash_pressure_plate", new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
+    public static final Block CHERRY_PRESSURE_PLATE = registerBlock("cherry_pressure_plate", new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
 
     public static final Block ASH_DOOR = registerBlock("ash_door", new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque(), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
     public static final Block CHERRY_DOOR = registerBlock("cherry_door", new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque(), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
 
-    public static final Block ASH_TRAPDOOR = registerBlock("ash_trapdoor", new WoodenTrapdoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque(), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
-    public static final Block CHERRY_TRAPDOOR = registerBlock("cherry_trapdoor", new WoodenTrapdoorBlocks(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque(), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
+    public static final Block ASH_TRAPDOOR = registerBlock("ash_trapdoor", new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque(), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
+    public static final Block CHERRY_TRAPDOOR = registerBlock("cherry_trapdoor", new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque(), BlockSetType.OAK), ItemGroupUtil.REBORN12K);
 
 
     public static final Block DIORITE_BRICKS = registerBlock("diorite_bricks", new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
@@ -81,14 +78,14 @@ public class GenericBlocks {
     public static final Block SMALL_GRANITE_BRICKS = registerBlock("small_granite_bricks", new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
     public static final Block SMALL_ANDESITE_BRICKS = registerBlock("small_andesite_bricks", new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
 
-    public static final Block DIORITE_BRICKS_STAIRS = registerBlock("diorite_bricks_stairs", new StairBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
-    public static final Block GRANITE_BRICKS_STAIRS = registerBlock("granite_bricks_stairs", new StairBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
-    public static final Block ANDESITE_BRICKS_STAIRS = registerBlock("andesite_bricks_stairs", new StairBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
+    public static final Block DIORITE_BRICKS_STAIRS = registerBlock("diorite_bricks_stairs", new StairsBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
+    public static final Block GRANITE_BRICKS_STAIRS = registerBlock("granite_bricks_stairs", new StairsBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
+    public static final Block ANDESITE_BRICKS_STAIRS = registerBlock("andesite_bricks_stairs", new StairsBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
 
-    public static final Block SMALL_STONE_BRICKS_STAIRS = registerBlock("small_stone_bricks_stairs", new StairBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
-    public static final Block SMALL_DIORITE_BRICKS_STAIRS = registerBlock("small_diorite_bricks_stairs", new StairBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
-    public static final Block SMALL_GRANITE_BRICKS_STAIRS = registerBlock("small_granite_bricks_stairs", new StairBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
-    public static final Block SMALL_ANDESITE_BRICKS_STAIRS = registerBlock("small_andesite_bricks_stairs", new StairBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
+    public static final Block SMALL_STONE_BRICKS_STAIRS = registerBlock("small_stone_bricks_stairs", new StairsBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
+    public static final Block SMALL_DIORITE_BRICKS_STAIRS = registerBlock("small_diorite_bricks_stairs", new StairsBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
+    public static final Block SMALL_GRANITE_BRICKS_STAIRS = registerBlock("small_granite_bricks_stairs", new StairsBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
+    public static final Block SMALL_ANDESITE_BRICKS_STAIRS = registerBlock("small_andesite_bricks_stairs", new StairsBlock(GenericBlocks.DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
 
     public static final Block DIORITE_BRICKS_SLAB = registerBlock("diorite_bricks_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
     public static final Block GRANITE_BRICKS_SLAB = registerBlock("granite_bricks_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).requiresTool().sounds(BlockSoundGroup.STONE).hardness(1.5f).resistance(6.0f)), ItemGroupUtil.REBORN12K);
