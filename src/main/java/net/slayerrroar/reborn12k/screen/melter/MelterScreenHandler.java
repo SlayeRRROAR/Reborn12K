@@ -12,6 +12,7 @@ import net.minecraft.screen.slot.Slot;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
 import net.slayerrroar.reborn12k.screen.slots.CustomBucketSlot;
 import net.slayerrroar.reborn12k.screen.slots.CustomFuelSlot;
+import net.slayerrroar.reborn12k.screen.slots.CustomMelterSlot;
 import net.slayerrroar.reborn12k.screen.slots.CustomResultSlot;
 
 public class MelterScreenHandler extends ScreenHandler {
@@ -30,8 +31,8 @@ public class MelterScreenHandler extends ScreenHandler {
         this.propertyDelegate = delegate;
 
         this.addSlot(new CustomFuelSlot(inventory, 0, 31, 53));
-        this.addSlot(new CustomBucketSlot(inventory, 1, 64, 35));
-        this.addSlot(new Slot(inventory, 2, 31, 17));
+        this.addSlot(new CustomMelterSlot(inventory, 1, 31, 17));
+        this.addSlot(new CustomBucketSlot(inventory, 2, 64, 35));
         this.addSlot(new CustomResultSlot(inventory, 3, 125, 35));
 
         addPlayerInventory(playerInventory);
