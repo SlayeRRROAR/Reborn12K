@@ -50,21 +50,67 @@ public class ArcaneArtifactScreenHandler extends ScreenHandler {
     }
 
     @Override
-    public ItemStack quickMove(PlayerEntity player, int invSlot) {          //todo: fix quickmove into output slots
+    public ItemStack quickMove(PlayerEntity player, int invSlot) {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
+
+        int entitySize = 2;
+        int resultSlots = 1;
+        int inventorySize = entitySize + 27;
+        int hotbarSize = entitySize + 36;
 
         if(slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
 
-            if(invSlot < this.inventory.size()) {
-                if(!this.insertItem(originalStack,this.inventory.size(), this.slots.size(), true)) {
+            /*
+            invSlots are all the slots avaible starting from 0 to (x + 36),
+            where x is the number of slots in the blockentity
+
+            blockentity slots are 0 to (x - 1)
+            inventory slots are x to (x + inventory slots - 1)
+            hotbar slots are (x + inventory slots) to (x + inventory slots + hotbar slots - 1)
+            */
+
+            //transfers from blockentity to inventory and hotbar
+            if (invSlot < entitySize) {
+                if (invSlot == 1) {
+                    //results go from last to first slot
+                    if (!this.insertItem(originalStack, entitySize, hotbarSize, true)) {
+                        return ItemStack.EMPTY;
+                    }
+
+                    slot.onQuickTransfer(originalStack, newStack);
+                }
+                //all rest goest from first to last slot
+                else if (!this.insertItem(originalStack, entitySize, hotbarSize, false)) {
                     return ItemStack.EMPTY;
                 }
-            } else if(!this.insertItem(originalStack, 0, this.inventory.size(), false)) {
-                return ItemStack.EMPTY;
+            } else {
+                //transfers from inventory to blockentity or hotbar
+                if (invSlot < inventorySize) {
+                    //checks if blockentity avaible
+                    if (!this.insertItem(originalStack, 0, entitySize - resultSlots, false)) {
+                        return ItemStack.EMPTY;
+                    }
+                    //checks if hotbar avaible
+                    if (!this.insertItem(originalStack, inventorySize, hotbarSize, false)) {
+                        return ItemStack.EMPTY;
+                    }
+                }
+                //transfers from hotbar to blockentity or inventory
+                else if (invSlot < hotbarSize) {
+                    //checks if blockentity avaible
+                    if (!this.insertItem(originalStack, 0, entitySize - resultSlots, false)) {
+                        return ItemStack.EMPTY;
+                    }
+                    //checks if inventory avaible
+                    if (!this.insertItem(originalStack, entitySize, inventorySize, false)) {
+                        return ItemStack.EMPTY;
+                    }
+                }
             }
+
             if(originalStack.isEmpty()) {
                 slot.setStack(ItemStack.EMPTY);
             } else {
