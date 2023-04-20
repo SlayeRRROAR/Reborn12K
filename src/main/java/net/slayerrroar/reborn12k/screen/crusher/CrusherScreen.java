@@ -37,8 +37,8 @@ public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
         }
 
         if(handler.hasFuel()) {
-            drawTexture(matrices, x + 57, y + 36 + 14 - handler.getScaledFuelProgress(), 176,
-                    14 - handler.getScaledFuelProgress(), 14, handler.getScaledFuelProgress());
+            drawTexture(matrices, x + 57, y + 36 + 12 - handler.getScaledFuelProgress(), 176,
+                    12 - handler.getScaledFuelProgress(), 14, handler.getScaledFuelProgress() + 1);
         }
 
     }

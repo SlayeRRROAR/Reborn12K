@@ -37,8 +37,8 @@ public class MelterScreen extends HandledScreen<MelterScreenHandler> {
         }
 
         if (handler.hasFuel()) {
-            drawTexture(matrices, x + 35, y + 30 + 14 - handler.getScaledFuelProgress(), 176,
-                    14 - handler.getScaledFuelProgress(), 14, handler.getScaledFuelProgress());
+            drawTexture(matrices, x + 35, y + 30 + 12 - handler.getScaledFuelProgress(), 176,
+                    12 - handler.getScaledFuelProgress(), 14, handler.getScaledFuelProgress() + 1);
         }
 
     }

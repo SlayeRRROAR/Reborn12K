@@ -61,11 +61,13 @@ public class MelterScreenHandler extends ScreenHandler {
     }
 
     public int getScaledFuelProgress() {
-        int fuelProgress = this.propertyDelegate.get(2);
-        int maxFuelProgress = this.propertyDelegate.get(3);
-        int fuelProgressSize = 14;
+        int fuelProgress = this.propertyDelegate.get(3);
+        int fuelProgressSize = 13;
 
-        return maxFuelProgress != 0 ? (int)(((float)fuelProgress / (float)maxFuelProgress) * fuelProgressSize) : 0;
+        if (fuelProgress == 0) {
+            fuelProgress = 200;
+        }
+        return this.propertyDelegate.get(2) * fuelProgressSize / fuelProgress;
     }
 
     @Override
