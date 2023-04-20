@@ -54,23 +54,22 @@ public class QuarryScreenHandler extends ScreenHandler {
     }
 
     @Override
-    public ItemStack quickMove(PlayerEntity player, int invSlot) {
+    public ItemStack quickMove(PlayerEntity player, int invSlot) {          //todo: fix quickmove into output slots
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
 
-        if (slot.hasStack()) {
+        if(slot.hasStack()) {
             ItemStack originalStack = slot.getStack();
             newStack = originalStack.copy();
 
-            if (invSlot < this.inventory.size()-2) {
-                if (!this.insertItem(originalStack,this.inventory.size(), this.slots.size()-2, true)) {
+            if(invSlot < this.inventory.size()) {
+                if(!this.insertItem(originalStack,this.inventory.size(), this.slots.size(), true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (!this.insertItem(originalStack, 0, this.inventory.size()-2, false)) {
+            } else if(!this.insertItem(originalStack, 0, this.inventory.size(), false)) {
                 return ItemStack.EMPTY;
             }
-
-            if (originalStack.isEmpty()) {
+            if(originalStack.isEmpty()) {
                 slot.setStack(ItemStack.EMPTY);
             } else {
                 slot.markDirty();
