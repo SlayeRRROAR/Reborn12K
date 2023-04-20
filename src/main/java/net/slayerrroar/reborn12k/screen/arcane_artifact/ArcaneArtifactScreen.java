@@ -30,15 +30,13 @@ public class ArcaneArtifactScreen extends HandledScreen<ArcaneArtifactScreenHand
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
+
         drawTexture(matrices, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
-        renderProgressArrow(matrices, x, y);
-    }
-
-    private void renderProgressArrow(MatrixStack matrices, int x, int y) {
         if (handler.isCrafting()) {
             drawTexture(matrices, x + 103, y + 33, 176, 0, 8, handler.getScaledProgress());
         }
+
     }
 
     @Override

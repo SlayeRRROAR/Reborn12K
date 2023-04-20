@@ -30,15 +30,13 @@ public class ManaCondenserScreen extends HandledScreen<ManaCondenserScreenHandle
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
+
         drawTexture(matrices, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
-        renderProgressArrow(matrices, x, y);
-    }
-
-    private void renderProgressArrow(MatrixStack matrices, int x, int y) {
         if (handler.isCrafting()) {
             drawTexture(matrices, x + 65, y + 25, 176, 0, 48, handler.getScaledProgress());
         }
+
     }
 
     @Override

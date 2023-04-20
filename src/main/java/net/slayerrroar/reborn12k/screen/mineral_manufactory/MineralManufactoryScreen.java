@@ -30,15 +30,16 @@ public class MineralManufactoryScreen extends HandledScreen<MineralManufactorySc
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
+
         drawTexture(matrices, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
-        renderProgressArrow(matrices, x, y);
-    }
-
-    private void renderProgressArrow(MatrixStack matrices, int x, int y) {
         if (handler.isCrafting()) {
             drawTexture(matrices, x + 62, y + 29, 176, 0, 53, handler.getScaledProgress());
         }
+    }
+
+    private void renderProgressArrow(MatrixStack matrices, int x, int y) {
+
     }
 
     @Override
