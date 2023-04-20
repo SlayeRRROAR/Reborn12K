@@ -5,16 +5,7 @@
       "item": "minecraft:bucket"
     },
     {
-      "item": "minecraft:redstone_block"
-    },
-    {
-      "item": "minecraft:redstone_block"
-    },
-    {
-      "item": "minecraft:redstone_block"
-    },
-    {
-      "item": "minecraft:redstone_block"
+      "item": "reborn12k:destabilized_mixture"
     }
   ],
   "output": {

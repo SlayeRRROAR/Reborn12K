@@ -5,16 +5,7 @@
       "item": "minecraft:bucket"
     },
     {
-      "item": "minecraft:glowstone"
-    },
-    {
-      "item": "minecraft:glowstone"
-    },
-    {
-      "item": "minecraft:glowstone"
-    },
-    {
-      "item": "minecraft:glowstone"
+      "item": "reborn12k:energized_mixture"
     }
   ],
   "output": {
