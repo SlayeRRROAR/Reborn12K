@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.blocks.custom.with_entities;
+package net.slayerrroar.reborn12k.blocks.custom.block_entities;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -15,14 +15,14 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
-import net.slayerrroar.reborn12k.entity.block_entities.MineralManufactoryBlockEntity;
+import net.slayerrroar.reborn12k.entity.block_entities.AdvancedQuarryBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("deprecation")
-public class MineralManufactoryBlock extends BlockWithEntity implements BlockEntityProvider {
+public class AdvancedQuarryBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public MineralManufactoryBlock(Settings settings) {
+    public AdvancedQuarryBlock(Settings settings) {
         super(settings);
     }
 
@@ -58,8 +58,8 @@ public class MineralManufactoryBlock extends BlockWithEntity implements BlockEnt
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof MineralManufactoryBlockEntity) {
-                ItemScatterer.spawn(world, pos, (MineralManufactoryBlockEntity)blockEntity);
+            if (blockEntity instanceof AdvancedQuarryBlockEntity) {
+                ItemScatterer.spawn(world, pos, (AdvancedQuarryBlockEntity)blockEntity);
                 world.updateComparators(pos, this);
             }
             super.onStateReplaced(state, world, pos, newState, moved);
@@ -81,12 +81,12 @@ public class MineralManufactoryBlock extends BlockWithEntity implements BlockEnt
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new MineralManufactoryBlockEntity(pos, state);
+        return new AdvancedQuarryBlockEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, CustomBlockEntities.MINERAL_MANUFACTORY, MineralManufactoryBlockEntity::tick);
+        return checkType(type, CustomBlockEntities.ADVANCED_QUARRY, AdvancedQuarryBlockEntity::tick);
     }
 }

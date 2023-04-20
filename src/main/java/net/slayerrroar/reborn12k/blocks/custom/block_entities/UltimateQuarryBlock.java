@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.blocks.custom.with_entities;
+package net.slayerrroar.reborn12k.blocks.custom.block_entities;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;

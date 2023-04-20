@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.blocks.custom.with_entities;
+package net.slayerrroar.reborn12k.blocks.custom.block_entities;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -15,14 +15,14 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
-import net.slayerrroar.reborn12k.entity.block_entities.BasicQuarryBlockEntity;
+import net.slayerrroar.reborn12k.entity.block_entities.CrusherBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("deprecation")
-public class BasicQuarryBlock extends BlockWithEntity implements BlockEntityProvider {
+public class CrusherBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public BasicQuarryBlock(Settings settings) {
+    public CrusherBlock(Settings settings) {
         super(settings);
     }
 
@@ -58,8 +58,8 @@ public class BasicQuarryBlock extends BlockWithEntity implements BlockEntityProv
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof BasicQuarryBlockEntity) {
-                ItemScatterer.spawn(world, pos, (BasicQuarryBlockEntity)blockEntity);
+            if (blockEntity instanceof CrusherBlockEntity) {
+                ItemScatterer.spawn(world, pos, (CrusherBlockEntity)blockEntity);
                 world.updateComparators(pos, this);
             }
             super.onStateReplaced(state, world, pos, newState, moved);
@@ -81,12 +81,12 @@ public class BasicQuarryBlock extends BlockWithEntity implements BlockEntityProv
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new BasicQuarryBlockEntity(pos, state);
+        return new CrusherBlockEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, CustomBlockEntities.BASIC_QUARRY, BasicQuarryBlockEntity::tick);
+        return checkType(type, CustomBlockEntities.CRUSHER, CrusherBlockEntity::tick);
     }
 }

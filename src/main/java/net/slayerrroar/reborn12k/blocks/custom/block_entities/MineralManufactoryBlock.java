@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.blocks.custom.with_entities;
+package net.slayerrroar.reborn12k.blocks.custom.block_entities;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -11,36 +11,20 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.*;
-import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
-import net.slayerrroar.reborn12k.entity.block_entities.ArcaneArtifactBlockEntity;
+import net.slayerrroar.reborn12k.entity.block_entities.MineralManufactoryBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.stream.Stream;
-
 @SuppressWarnings("deprecation")
-public class ArcaneArtifactBlock extends BlockWithEntity implements BlockEntityProvider {
+public class MineralManufactoryBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public ArcaneArtifactBlock(Settings settings) {
+    public MineralManufactoryBlock(Settings settings) {
         super(settings);
     }
-
-    private static final VoxelShape DEFAULT = Stream.of(
-            Block.createCuboidShape(9, 0, 0, 16, 7, 7),
-            Block.createCuboidShape(0, 9, 0, 7, 16, 7),
-            Block.createCuboidShape(0, 0, 0, 7, 7, 7),
-            Block.createCuboidShape(9, 9, 9, 16, 16, 16),
-            Block.createCuboidShape(9, 0, 9, 16, 7, 16),
-            Block.createCuboidShape(0, 9, 9, 7, 16, 16),
-            Block.createCuboidShape(0, 0, 9, 7, 7, 16),
-            Block.createCuboidShape(9, 9, 0, 16, 16, 7)
-    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     @Nullable
     @Override
@@ -74,8 +58,8 @@ public class ArcaneArtifactBlock extends BlockWithEntity implements BlockEntityP
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof ArcaneArtifactBlockEntity) {
-                ItemScatterer.spawn(world, pos, (ArcaneArtifactBlockEntity)blockEntity);
+            if (blockEntity instanceof MineralManufactoryBlockEntity) {
+                ItemScatterer.spawn(world, pos, (MineralManufactoryBlockEntity)blockEntity);
                 world.updateComparators(pos, this);
             }
             super.onStateReplaced(state, world, pos, newState, moved);
@@ -97,12 +81,12 @@ public class ArcaneArtifactBlock extends BlockWithEntity implements BlockEntityP
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new ArcaneArtifactBlockEntity(pos, state);
+        return new MineralManufactoryBlockEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, CustomBlockEntities.ARCANE_ARTIFACT, ArcaneArtifactBlockEntity::tick);
+        return checkType(type, CustomBlockEntities.MINERAL_MANUFACTORY, MineralManufactoryBlockEntity::tick);
     }
 }

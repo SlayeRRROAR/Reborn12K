@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.blocks.custom.with_entities;
+package net.slayerrroar.reborn12k.blocks.custom.block_entities;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
@@ -15,14 +15,14 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
-import net.slayerrroar.reborn12k.entity.block_entities.AdvancedQuarryBlockEntity;
+import net.slayerrroar.reborn12k.entity.block_entities.MelterBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("deprecation")
-public class AdvancedQuarryBlock extends BlockWithEntity implements BlockEntityProvider {
+public class MelterBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public AdvancedQuarryBlock(Settings settings) {
+    public MelterBlock(Settings settings) {
         super(settings);
     }
 
@@ -58,8 +58,8 @@ public class AdvancedQuarryBlock extends BlockWithEntity implements BlockEntityP
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof AdvancedQuarryBlockEntity) {
-                ItemScatterer.spawn(world, pos, (AdvancedQuarryBlockEntity)blockEntity);
+            if (blockEntity instanceof MelterBlockEntity) {
+                ItemScatterer.spawn(world, pos, (MelterBlockEntity)blockEntity);
                 world.updateComparators(pos, this);
             }
             super.onStateReplaced(state, world, pos, newState, moved);
@@ -81,12 +81,12 @@ public class AdvancedQuarryBlock extends BlockWithEntity implements BlockEntityP
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new AdvancedQuarryBlockEntity(pos, state);
+        return new MelterBlockEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, CustomBlockEntities.ADVANCED_QUARRY, AdvancedQuarryBlockEntity::tick);
+        return checkType(type, CustomBlockEntities.MELTER, MelterBlockEntity::tick);
     }
 }
