@@ -18,7 +18,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.custom.with_entities.CrusherBlock;
+import net.slayerrroar.reborn12k.blocks.custom.block_entities.CrusherBlock;
 import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
 import net.slayerrroar.reborn12k.recipe.recipe_types.CrusherRecipe;
 import net.slayerrroar.reborn12k.screen.crusher.CrusherScreenHandler;
