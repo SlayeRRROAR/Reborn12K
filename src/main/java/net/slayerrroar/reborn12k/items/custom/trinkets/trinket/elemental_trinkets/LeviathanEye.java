@@ -32,12 +32,14 @@ public class LeviathanEye extends TrinketItem implements Trinket {
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.setHealth(entity.getHealth() + 20.0f);
+        if (entity.getHealth() == entity.getMaxHealth()) {
+            entity.setHealth(entity.getHealth() + 4.0f);
+        }
     }
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity.getMaxHealth() > 20.0f) {
+        if (entity.getHealth() > 20.0f) {
             entity.setHealth(20.0f);
         }
     }

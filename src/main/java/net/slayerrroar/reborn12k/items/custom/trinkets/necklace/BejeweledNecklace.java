@@ -26,14 +26,16 @@ public class BejeweledNecklace extends TrinketItem implements Trinket {
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.getMaxHealth() == entity.getHealth()) {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 4, 5, false, true));
+        if (entity.getHealth() == entity.getMaxHealth()) {
+            entity.setHealth(entity.getHealth() + 8.0f);
         }
     }
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.damage((entity).getDamageSources().outOfWorld(), 0);
+        if (entity.getHealth() > 20.0f) {
+            entity.setHealth(20.0f);
+        }
     }
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
