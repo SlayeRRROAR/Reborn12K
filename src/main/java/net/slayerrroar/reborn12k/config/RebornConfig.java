@@ -98,6 +98,7 @@ public class RebornConfig implements ConfigData {
     @Comment("When enabled, Iridium Ores will generate")
     public boolean enableIridiumOreGeneration = true;
 
+
     @ConfigEntry.Category("tree_generation")
     @Comment("When disabled, no Tree will spawn, regardless of other settings")
     public boolean enableTreeGeneration = true;
@@ -113,5 +114,26 @@ public class RebornConfig implements ConfigData {
     @ConfigEntry.Category("tree_generation")
     @Comment("When enabled, Slimy Trees will generate")
     public boolean enableSlimyTreeGeneration = true;
+
+
+    @ConfigEntry.Category("loot_generation")
+    @Comment("When enabled, vanilla chest have additional loot")
+    public boolean enableChests = true;
+
+    @ConfigEntry.Category("loot_generation")
+    @Comment("When disabled, mobs will not drop additional loot, regardless of other settings")
+    public boolean enableMobDrops = true;
+
+    @ConfigEntry.Category("loot_generation")
+    @Comment("When enabled, Ender Dragons will drop additional loot")
+    public boolean enableEnderDragonDrops = true;
+
+    @ConfigEntry.Category("loot_generation")
+    @Comment("When enabled, Wardens will drop additional loot")
+    public boolean enableWardenDrops = true;
+
+    @ConfigEntry.Category("loot_generation")
+    @Comment("When enabled, Withers will drop additional loot")
+    public boolean enableWitherDrops = true;
 
 }
