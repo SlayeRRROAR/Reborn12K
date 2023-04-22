@@ -14,6 +14,7 @@ import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
 import net.slayerrroar.reborn12k.entity.CustomProjectileEntities;
 import net.slayerrroar.reborn12k.fluids.RebornFluids;
 import net.slayerrroar.reborn12k.items.*;
+import net.slayerrroar.reborn12k.loot.CustomLootTable;
 import net.slayerrroar.reborn12k.recipe.RebornCustomRecipes;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
 import net.slayerrroar.reborn12k.sounds.RebornSounds;
@@ -76,6 +77,8 @@ public class Reborn12K implements ModInitializer {
         RebornScreenRegistry.register();
 
         RebornCustomRecipes.register();
+
+        CustomLootTable.register();
 
     }
 }
