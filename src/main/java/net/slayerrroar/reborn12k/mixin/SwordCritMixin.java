@@ -21,19 +21,19 @@ import java.util.Random;
 public class SwordCritMixin {
 
     private boolean hasVagueLuck(LivingEntity entity) {
-        return !TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.VAGUE_LUCKY_CHARM);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.VAGUE_LUCKY_CHARM);
     }
     private boolean hasMinorLuck(LivingEntity entity) {
-        return !TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.MINOR_LUCKY_CHARM);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.MINOR_LUCKY_CHARM);
     }
     private boolean hasIndelibleLuck(LivingEntity entity) {
-        return !TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.INDELIBLE_LUCKY_CHARM);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.INDELIBLE_LUCKY_CHARM);
     }
     private boolean hasGreaterLuck(LivingEntity entity) {
-        return !TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.GREATER_LUCKY_CHARM);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.GREATER_LUCKY_CHARM);
     }
     private boolean hasRadiant(LivingEntity entity) {
-        return !TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.ANGELIC_HALO);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.ANGELIC_HALO);
     }
 
     @Inject(method = "postHit", at = @At(value = "HEAD"))
@@ -45,11 +45,11 @@ public class SwordCritMixin {
         int upperbound = 101;
         int int_random = rand.nextInt(upperbound);
 
-        int vagueLuck = hasVagueLuck(attacker) ? 0 : 10;
-        int minorLuck = hasMinorLuck(attacker) ? 0 : 15;
-        int indelibleLuck = hasIndelibleLuck(attacker) ? 0 : 20;
-        int greaterLuck = hasGreaterLuck(attacker) ? 0 : 25;
-        int radiant = hasRadiant(attacker) ? 0 : 30;
+        int vagueLuck = hasVagueLuck(attacker) ? 10 : 0;
+        int minorLuck = hasMinorLuck(attacker) ? 15 : 0;
+        int indelibleLuck = hasIndelibleLuck(attacker) ? 20 : 0;
+        int greaterLuck = hasGreaterLuck(attacker) ? 25 : 0;
+        int radiant = hasRadiant(attacker) ? 30 : 0;
 
         int critChance = int_random + vagueLuck + minorLuck + indelibleLuck + greaterLuck + radiant;
 
