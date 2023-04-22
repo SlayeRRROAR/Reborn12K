@@ -59,7 +59,7 @@ public abstract class EnderDragonMixin {
             if (!this.previouslyKilled) {
                 this.world.setBlockState(this.world.getTopPosition(Heightmap.Type.MOTION_BLOCKING, EndPortalFeature.ORIGIN), Blocks.DRAGON_EGG.getDefaultState());
             } else {
-                if (Reborn12K.CONFIG.enableEnderDragonDrops) {
+                if (Reborn12K.CONFIG.enableMobDrops && Reborn12K.CONFIG.enableEnderDragonDrops) {
                     this.world.setBlockState(this.world.getTopPosition(Heightmap.Type.MOTION_BLOCKING, EndPortalFeature.ORIGIN), AdvancedBlocks.LEGENDARY_STRONGBOX.getDefaultState());
                 }
             }
