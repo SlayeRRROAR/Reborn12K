@@ -12,15 +12,15 @@ public class RebornTreeGen {
 
     public static void generateTrees() {
 
-        if (!Reborn12K.CONFIG.enableCherryTreeGeneration) {
+        if (Reborn12K.CONFIG.enableCherryTreeGeneration) {
             BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FOREST),
                     GenerationStep.Feature.VEGETAL_DECORATION, RebornPlacedFeatures.CHERRY_PLACED_KEY);
         }
-        if (!Reborn12K.CONFIG.enableAshTreeGeneration) {
+        if (Reborn12K.CONFIG.enableAshTreeGeneration) {
             BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SWAMP),
                     GenerationStep.Feature.VEGETAL_DECORATION, RebornPlacedFeatures.SLIMY_PLACED_KEY);
         }
-        if (!Reborn12K.CONFIG.enableSlimyTreeGeneration) {
+        if (Reborn12K.CONFIG.enableSlimyTreeGeneration) {
             BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SNOWY_TAIGA, BiomeKeys.TAIGA),
                     GenerationStep.Feature.VEGETAL_DECORATION, RebornPlacedFeatures.ASH_PLACED_KEY);
         }

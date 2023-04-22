@@ -21,19 +21,19 @@ import java.util.Random;
 public class SwordCritMixin {
 
     private boolean hasVagueLuck(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.VAGUE_LUCKY_CHARM);
+        return !TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.VAGUE_LUCKY_CHARM);
     }
     private boolean hasMinorLuck(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.MINOR_LUCKY_CHARM);
+        return !TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.MINOR_LUCKY_CHARM);
     }
     private boolean hasIndelibleLuck(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.INDELIBLE_LUCKY_CHARM);
+        return !TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.INDELIBLE_LUCKY_CHARM);
     }
     private boolean hasGreaterLuck(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.GREATER_LUCKY_CHARM);
+        return !TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.GREATER_LUCKY_CHARM);
     }
     private boolean hasRadiant(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.ANGELIC_HALO);
+        return !TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.ANGELIC_HALO);
     }
 
     @Inject(method = "postHit", at = @At(value = "HEAD"))
@@ -58,8 +58,7 @@ public class SwordCritMixin {
             target.damage(attacker.getDamageSources().generic(), (damage * critBonus));
             target.world.playSound(null, target.getX(), target.getY(), target.getZ(),
                     SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, SoundCategory.PLAYERS, 1.0F, 1.0F);
-        }
-        if (critChance <= 95) {
+        } else {
             target.damage(attacker.getDamageSources().generic(), (damage));
         }
     }
