@@ -184,7 +184,7 @@ public class StrongboxUtil {
         }
     }
 
-    //todo: add more elemental trinkets
+    //Elemental
 
     public static void randomAir(PlayerEntity player) {
         Random randAir = new Random();
@@ -195,7 +195,7 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.GRIFFIN_FEATHER, 1);
         }
         if (air_int == 1) {
-            player.dropItem(ItemTrinkets.BOTTLE_OF_WIND, 1);
+            player.dropItem(ItemTrinkets.AIR_PENDANT, 1);
         }
     }
 
@@ -205,10 +205,10 @@ public class StrongboxUtil {
         int earth_int = randEarth.nextInt(upperbound);
 
         if (earth_int == 0) {
-            player.dropItem(ItemTrinkets.GOLEM_CORE, 1);
+            player.dropItem(ItemTrinkets.NIGHTSHADE, 1);
         }
         if (earth_int == 1) {
-            player.dropItem(ItemTrinkets.NIGHTSHADE, 1);
+            player.dropItem(ItemTrinkets.EARTH_PENDANT, 1);
         }
     }
 
@@ -221,7 +221,7 @@ public class StrongboxUtil {
             player.dropItem(ItemTrinkets.LEVIATHAN_EYE, 1);
         }
         if (water_int == 1) {
-            player.dropItem(ItemTrinkets.FLASK_OF_UNDERTOW, 1);
+            player.dropItem(ItemTrinkets.WATER_PENDANT, 1);
         }
     }
 
@@ -231,10 +231,10 @@ public class StrongboxUtil {
         int fire_int = randFire.nextInt(upperbound);
 
         if (fire_int == 0) {
-            player.dropItem(ItemTrinkets.DRAGON_FANG, 1);
+            player.dropItem(ItemTrinkets.CRYSTALIZED_FIRE, 1);
         }
         if (fire_int == 1) {
-            player.dropItem(ItemTrinkets.CRYSTALIZED_FIRE, 1);
+            player.dropItem(ItemTrinkets.FIRE_PENDANT, 1);
         }
     }
 
@@ -244,10 +244,10 @@ public class StrongboxUtil {
         int light_int = randLight.nextInt(upperbound);
 
         if (light_int == 0) {
-            player.dropItem(ItemTrinkets.ANGELIC_HALO, 1);
+            player.dropItem(ItemTrinkets.PRAYER_CANDLE, 1);
         }
         if (light_int == 1) {
-            player.dropItem(ItemTrinkets.PRAYER_CANDLE, 1);
+            player.dropItem(ItemTrinkets.LIGHT_PENDANT, 1);
         }
     }
 
@@ -257,10 +257,10 @@ public class StrongboxUtil {
         int dark_int = randDark.nextInt(upperbound);
 
         if (dark_int == 0) {
-            player.dropItem(ItemTrinkets.BASILISK_TOOTH, 1);
+            player.dropItem(ItemTrinkets.BASILISK_FANG, 1);
         }
         if (dark_int == 1) {
-            player.dropItem(ItemTrinkets.ESSENCE_OF_DECAY, 1);
+            player.dropItem(ItemTrinkets.DARK_PENDANT, 1);
         }
     }
 
