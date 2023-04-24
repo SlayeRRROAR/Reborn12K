@@ -20,33 +20,21 @@ import java.util.UUID;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 
-public class DragonFang extends TrinketItem implements Trinket {
-    public DragonFang(Settings settings) {
+public class BasiliskFang extends TrinketItem implements Trinket {
+    public BasiliskFang(Settings settings) {
         super(settings);
     }
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.FIRE_PENDANT);
-    }
-
-    @Override
-    public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.setHealth(entity.getHealth() + 20.0f);
-    }
-
-    @Override
-    public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity.getMaxHealth() > 20.0f) {
-            entity.setHealth(20.0f);
-        }
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.DARK_PENDANT);
     }
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
         if (!world.isClient) {
-            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.FIRE_PENDANT)) {
+            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.DARK_PENDANT)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }
@@ -56,7 +44,7 @@ public class DragonFang extends TrinketItem implements Trinket {
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(uuid, "generic.attack_speed", 0.5, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(uuid, "generic.attack_damage", 0.5, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         return modifiers;
     }
 
@@ -65,7 +53,7 @@ public class DragonFang extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.dragon_fang.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.dragon_fang.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.fire.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.dark.tooltip"));
     }
 
 }

@@ -33,7 +33,7 @@ public class SwordCritMixin {
         return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.GREATER_LUCKY_CHARM);
     }
     private boolean hasRadiant(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.ANGELIC_HALO);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.PRAYER_CANDLE);
     }
 
     @Inject(method = "postHit", at = @At(value = "HEAD"))

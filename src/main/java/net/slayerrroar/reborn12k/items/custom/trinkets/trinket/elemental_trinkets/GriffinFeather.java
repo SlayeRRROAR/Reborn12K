@@ -31,18 +31,6 @@ public class GriffinFeather extends TrinketItem implements Trinket {
     }
 
     @Override
-    public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.setHealth(entity.getHealth() + 20.0f);
-    }
-
-    @Override
-    public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity.getMaxHealth() > 20.0f) {
-            entity.setHealth(20.0f);
-        }
-    }
-
-    @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
         if (!world.isClient) {
@@ -56,7 +44,7 @@ public class GriffinFeather extends TrinketItem implements Trinket {
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(uuid, "generic.movement_speed", 0.5, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(uuid, "generic.movement_speed", 0.3, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         return modifiers;
     }
 
