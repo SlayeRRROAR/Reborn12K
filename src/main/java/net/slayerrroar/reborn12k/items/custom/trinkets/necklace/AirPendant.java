@@ -23,12 +23,6 @@ public class AirPendant extends TrinketItem implements Trinket {
         super(settings);
     }
 
-    public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
-        var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(uuid, "generic.movement_speed", 0.1, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-        return modifiers;
-    }
-
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.necklace.tooltip"));
