@@ -7,6 +7,8 @@ import java.util.Random;
 
 public class StrongboxUtil {
 
+    //Rarities
+
     public static void randomCommon(PlayerEntity player) {
         Random commonRand = new Random();
         int upperbound = 9;
@@ -205,7 +207,7 @@ public class StrongboxUtil {
         int earth_int = randEarth.nextInt(upperbound);
 
         if (earth_int == 0) {
-            player.dropItem(ItemTrinkets.NIGHTSHADE, 1);
+            player.dropItem(ItemTrinkets.DEADLY_NIGHTSHADE, 1);
         }
         if (earth_int == 1) {
             player.dropItem(ItemTrinkets.EARTH_PENDANT, 1);
