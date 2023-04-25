@@ -18,7 +18,7 @@ public class EggEntityMixin {
         Entity entity = entityHitResult.getEntity();
         if (entity instanceof FrogEntity) {
             entityHitResult.getEntity().kill();
-            entity.dropItem(ItemTrinkets.BASILISK_TOOTH, 1);
+            entity.dropItem(ItemTrinkets.BASILISK_FANG, 1);
             ci.cancel();
         }
     }
