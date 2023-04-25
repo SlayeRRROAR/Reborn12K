@@ -48,7 +48,8 @@ public class GreaterBand extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.common.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.band.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.band.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 
