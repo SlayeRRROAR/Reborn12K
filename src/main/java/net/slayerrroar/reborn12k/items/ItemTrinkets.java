@@ -9,35 +9,19 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.items.custom.GlintedItem;
-import net.slayerrroar.reborn12k.items.custom.KeyItem;
+import net.slayerrroar.reborn12k.items.custom.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.belt.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.hat.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.necklace.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.ring.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.shoes.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.*;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.band.GreaterBand;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.band.IndelibleBand;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.band.MinorBand;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.band.VagueBand;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.charm.GreaterLuckyItem;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.charm.IndelibleLuckyItem;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.charm.MinorLuckyItem;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.charm.VagueLuckyItem;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.claw.GreaterClaw;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.claw.IndelibleClaw;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.claw.MinorClaw;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.claw.VagueClaw;
+import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.band.*;
+import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.charm.*;
+import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.claw.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.elemental_trinkets.*;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.medallion.GreaterMedallion;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.medallion.IndelibleMedallion;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.medallion.MinorMedallion;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.medallion.VagueMedallion;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.tonic.GreaterTonic;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.tonic.IndelibleTonic;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.tonic.MinorTonic;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.tonic.VagueTonic;
+import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.medallion.*;
+import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.tonic.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class ItemTrinkets {
@@ -121,10 +105,10 @@ public class ItemTrinkets {
     public static final Item INDELIBLE_FRENZY_TONIC = registerItem("indelible_frenzy_tonic", new IndelibleTonic(new FabricItemSettings().maxCount(1)));
     public static final Item GREATER_FRENZY_TONIC = registerItem("greater_frenzy_tonic", new GreaterTonic(new FabricItemSettings().maxCount(1)));
 
-    public static final Item VAGUE_LUCKY_CHARM = registerItem("vague_lucky_charm", new VagueLuckyItem(new FabricItemSettings().maxCount(1)));
-    public static final Item MINOR_LUCKY_CHARM = registerItem("minor_lucky_charm", new MinorLuckyItem(new FabricItemSettings().maxCount(1)));
-    public static final Item INDELIBLE_LUCKY_CHARM = registerItem("indelible_lucky_charm", new IndelibleLuckyItem(new FabricItemSettings().maxCount(1)));
-    public static final Item GREATER_LUCKY_CHARM = registerItem("greater_lucky_charm", new GreaterLuckyItem(new FabricItemSettings().maxCount(1)));
+    public static final Item VAGUE_LUCKY_CHARM = registerItem("vague_lucky_charm", new VagueCharm(new FabricItemSettings().maxCount(1)));
+    public static final Item MINOR_LUCKY_CHARM = registerItem("minor_lucky_charm", new MinorCharm(new FabricItemSettings().maxCount(1)));
+    public static final Item INDELIBLE_LUCKY_CHARM = registerItem("indelible_lucky_charm", new IndelibleCharm(new FabricItemSettings().maxCount(1)));
+    public static final Item GREATER_LUCKY_CHARM = registerItem("greater_lucky_charm", new GreaterCharm(new FabricItemSettings().maxCount(1)));
 
     public static final Item JETPACK = registerItem("jetpack", new Jetpack(new FabricItemSettings().maxCount(1)));
     public static final Item ANGEL_WINGS = registerItem("angel_wings", new AngelWings(new FabricItemSettings().maxCount(1)));
