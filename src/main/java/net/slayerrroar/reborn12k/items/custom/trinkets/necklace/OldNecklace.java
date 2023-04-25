@@ -9,8 +9,6 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
@@ -23,8 +21,6 @@ public class OldNecklace extends TrinketItem implements Trinket {
     public OldNecklace(Settings settings) {
         super(settings);
     }
-
-
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
@@ -42,8 +38,7 @@ public class OldNecklace extends TrinketItem implements Trinket {
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 0.2, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-        modifiers.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(uuid, "generic.attack_damage", -0.1, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 0.2, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));modifiers.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(uuid, "generic.attack_damage", -0.1, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         return modifiers;
     }
 
