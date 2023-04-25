@@ -10,8 +10,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class GreaterLuckyItem extends TrinketItem implements Trinket {
-    public GreaterLuckyItem(Settings settings) {
+public class GreaterCharm extends TrinketItem implements Trinket {
+    public GreaterCharm(Settings settings) {
         super(settings);
     }
 
