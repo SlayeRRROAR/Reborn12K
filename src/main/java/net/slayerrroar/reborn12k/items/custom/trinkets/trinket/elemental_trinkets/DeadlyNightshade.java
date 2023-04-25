@@ -20,8 +20,8 @@ import java.util.UUID;
 
 @SuppressWarnings("OptionalGetWithoutIsPresent")
 
-public class Nightshade extends TrinketItem implements Trinket {
-    public Nightshade(Settings settings) {
+public class DeadlyNightshade extends TrinketItem implements Trinket {
+    public DeadlyNightshade(Settings settings) {
         super(settings);
     }
 
@@ -63,8 +63,8 @@ public class Nightshade extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.nightshade.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.nightshade.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.deadly_nightshade.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.deadly_nightshade.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.earth.tooltip"));
     }
 

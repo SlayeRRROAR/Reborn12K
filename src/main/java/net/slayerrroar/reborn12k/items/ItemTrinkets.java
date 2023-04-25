@@ -125,7 +125,7 @@ public class ItemTrinkets {
     public static final Item PHOENIX_PLUME = registerItem("phoenix_plume", new PhoenixPlume(new FabricItemSettings().maxCount(1)));
 
     public static final Item GRIFFIN_FEATHER = registerItem("griffin_feather", new GriffinFeather(new FabricItemSettings().maxCount(1)));
-    public static final Item DEADLY_NIGHTSHADE = registerItem("deadly_nightshade", new Nightshade(new FabricItemSettings().maxCount(1)));
+    public static final Item DEADLY_NIGHTSHADE = registerItem("deadly_nightshade", new DeadlyNightshade(new FabricItemSettings().maxCount(1)));
     public static final Item LEVIATHAN_EYE = registerItem("leviathan_eye", new LeviathanEye(new FabricItemSettings().maxCount(1)));
     public static final Item CRYSTALIZED_FIRE = registerItem("crystalized_fire", new CrystalizedFire(new FabricItemSettings().maxCount(1)));
     public static final Item PRAYER_CANDLE = registerItem("prayer_candle", new PrayerCandle(new FabricItemSettings().maxCount(1)));
