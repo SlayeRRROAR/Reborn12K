@@ -10,17 +10,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class IndelibleLuckyItem extends TrinketItem implements Trinket {
-    public IndelibleLuckyItem(Settings settings) {
+public class MinorCharm extends TrinketItem implements Trinket {
+    public MinorCharm(Settings settings) {
         super(settings);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.lucky_charm.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.lucky_charm.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.epic.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.rare.tooltip"));
     }
 
 }
