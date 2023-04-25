@@ -125,7 +125,7 @@ public class ItemTrinkets {
     public static final Item PHOENIX_PLUME = registerItem("phoenix_plume", new PhoenixPlume(new FabricItemSettings().maxCount(1)));
 
     public static final Item GRIFFIN_FEATHER = registerItem("griffin_feather", new GriffinFeather(new FabricItemSettings().maxCount(1)));
-    public static final Item NIGHTSHADE = registerItem("nightshade", new Nightshade(new FabricItemSettings().maxCount(1)));
+    public static final Item DEADLY_NIGHTSHADE = registerItem("deadly_nightshade", new Nightshade(new FabricItemSettings().maxCount(1)));
     public static final Item LEVIATHAN_EYE = registerItem("leviathan_eye", new LeviathanEye(new FabricItemSettings().maxCount(1)));
     public static final Item CRYSTALIZED_FIRE = registerItem("crystalized_fire", new CrystalizedFire(new FabricItemSettings().maxCount(1)));
     public static final Item PRAYER_CANDLE = registerItem("prayer_candle", new PrayerCandle(new FabricItemSettings().maxCount(1)));
@@ -223,7 +223,7 @@ public class ItemTrinkets {
         addToItemGroup(ItemGroupUtil.REBORN12K, PHOENIX_PLUME);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, GRIFFIN_FEATHER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, NIGHTSHADE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DEADLY_NIGHTSHADE);
         addToItemGroup(ItemGroupUtil.REBORN12K, LEVIATHAN_EYE);
         addToItemGroup(ItemGroupUtil.REBORN12K, CRYSTALIZED_FIRE);
         addToItemGroup(ItemGroupUtil.REBORN12K, PRAYER_CANDLE);
