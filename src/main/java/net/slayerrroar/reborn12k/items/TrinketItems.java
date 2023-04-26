@@ -24,7 +24,7 @@ import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.medallion.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.tonic.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
-public class ItemTrinkets {
+public class TrinketItems {
 
     //Key
 

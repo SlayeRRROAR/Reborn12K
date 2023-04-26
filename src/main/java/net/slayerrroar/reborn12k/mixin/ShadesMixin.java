@@ -6,7 +6,7 @@ import net.minecraft.entity.mob.EndermanEntity;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.items.ItemTrinkets;
+import net.slayerrroar.reborn12k.items.TrinketItems;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -23,7 +23,7 @@ public abstract class ShadesMixin extends HostileEntity {
 
     @Inject(method = "isPlayerStaring", at = @At(value = "RETURN", target = "Lnet/minecraft/entity/mob/EndermanEntity;isPlayerStaring(Lnet/minecraft/entity/player/PlayerEntity;)Z"), cancellable = true)
     public void isPlayerStaring(PlayerEntity player, CallbackInfoReturnable<Boolean> cir) {
-        if (TrinketsApi.getTrinketComponent(player).get().isEquipped(ItemTrinkets.SHADES)) {
+        if (TrinketsApi.getTrinketComponent(player).get().isEquipped(TrinketItems.SHADES)) {
             cir.setReturnValue(false);
         }
     }

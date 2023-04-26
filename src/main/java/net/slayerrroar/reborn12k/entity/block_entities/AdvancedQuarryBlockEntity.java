@@ -17,8 +17,8 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
-import net.slayerrroar.reborn12k.items.ItemTechnical;
+import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
+import net.slayerrroar.reborn12k.items.TechnicalItems;
 import net.slayerrroar.reborn12k.recipe.recipe_types.QuarryRecipe;
 import net.slayerrroar.reborn12k.screen.quarry.QuarryScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
@@ -38,7 +38,7 @@ public class AdvancedQuarryBlockEntity extends BlockEntity implements NamedScree
     private int maxProgress = 200;
 
     public AdvancedQuarryBlockEntity(BlockPos pos, BlockState state) {
-        super(CustomBlockEntities.ADVANCED_QUARRY, pos, state);
+        super(RebornBlockEntities.ADVANCED_QUARRY, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {
@@ -133,7 +133,7 @@ public class AdvancedQuarryBlockEntity extends BlockEntity implements NamedScree
                 entity.getStack(0).setDamage(entity.getStack(0).getDamage() + 1);
             } if (entity.getStack(0).getDamage() == entity.getStack(0).getMaxDamage()) {
                 entity.removeStack(0);
-                entity.setStack(3, new ItemStack(ItemTechnical.EMPTY_FUEL_CELL,
+                entity.setStack(3, new ItemStack(TechnicalItems.EMPTY_FUEL_CELL,
                         entity.getStack(3).getCount()+1));
             }
 

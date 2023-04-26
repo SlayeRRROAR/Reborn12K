@@ -19,7 +19,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.blocks.custom.block_entities.CrusherBlock;
-import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.recipe.recipe_types.CrusherRecipe;
 import net.slayerrroar.reborn12k.screen.crusher.CrusherScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
@@ -41,7 +41,7 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
     private int maxFuelTime= 0;
 
     public CrusherBlockEntity(BlockPos pos, BlockState state) {
-        super(CustomBlockEntities.CRUSHER, pos, state);
+        super(RebornBlockEntities.CRUSHER, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {

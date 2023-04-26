@@ -9,7 +9,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.items.ItemTrinkets;
+import net.slayerrroar.reborn12k.items.TrinketItems;
 
 import java.util.List;
 
@@ -22,14 +22,14 @@ public class PrayerCandle extends TrinketItem implements Trinket {
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.LIGHT_PENDANT);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.LIGHT_PENDANT);
     }
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
         if (!world.isClient) {
-            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.LIGHT_PENDANT)) {
+            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.LIGHT_PENDANT)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }

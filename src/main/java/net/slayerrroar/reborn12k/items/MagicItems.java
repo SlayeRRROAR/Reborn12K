@@ -68,7 +68,7 @@ import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 @SuppressWarnings("unused")
 
-public class ItemMagic {
+public class MagicItems {
 
     public static final Item MANAWEAVE = registerItem("manaweave", new Item(new FabricItemSettings()));
     public static final Item REFINED_MANATITE = registerItem("refined_manatite", new Item(new FabricItemSettings().rarity(Rarity.RARE)));

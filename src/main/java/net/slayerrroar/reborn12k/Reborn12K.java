@@ -10,19 +10,19 @@ import net.slayerrroar.reborn12k.blocks.GenericBlocks;
 import net.slayerrroar.reborn12k.blocks.OreBlocks;
 import net.slayerrroar.reborn12k.config.RebornConfig;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
-import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
-import net.slayerrroar.reborn12k.entity.CustomProjectileEntities;
+import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
+import net.slayerrroar.reborn12k.entity.RebornProjectileEntities;
 import net.slayerrroar.reborn12k.fluids.RebornFluids;
 import net.slayerrroar.reborn12k.items.*;
-import net.slayerrroar.reborn12k.loot.CustomLootTable;
-import net.slayerrroar.reborn12k.recipe.RebornCustomRecipes;
+import net.slayerrroar.reborn12k.loot.RebornLootTable;
+import net.slayerrroar.reborn12k.recipe.RebornRecipes;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
 import net.slayerrroar.reborn12k.sounds.RebornSounds;
 import net.slayerrroar.reborn12k.tools.RebornTools;
 import net.slayerrroar.reborn12k.util.FuelUtil;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 import net.slayerrroar.reborn12k.util.StrippableUtil;
-import net.slayerrroar.reborn12k.villagers.RebornCustomTrades;
+import net.slayerrroar.reborn12k.villagers.RebornTrades;
 import net.slayerrroar.reborn12k.world.generation.RebornWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,17 +48,17 @@ public class Reborn12K implements ModInitializer {
         GenericBlocks.register();
         AdvancedBlocks.register();
 
-        ItemGenerics.register();
+        GenericItems.register();
 
         RebornFluids.register();
         FuelUtil.register();
 
-        ItemTechnical.register();
-        ItemMagic.register();
+        TechnicalItems.register();
+        MagicItems.register();
 
-        ItemTrinkets.register();
+        TrinketItems.register();
 
-        ItemDiscs.register();
+        DiscItems.register();
 
         RebornTools.register();
         RebornArmors.register();
@@ -69,16 +69,16 @@ public class Reborn12K implements ModInitializer {
 
         StrippableUtil.register();
 
-        RebornCustomTrades.register();
+        RebornTrades.register();
 
-        CustomBlockEntities.register();
-        CustomProjectileEntities.register();
+        RebornBlockEntities.register();
+        RebornProjectileEntities.register();
 
         RebornScreenRegistry.register();
 
-        RebornCustomRecipes.register();
+        RebornRecipes.register();
 
-        CustomLootTable.register();
+        RebornLootTable.register();
 
     }
 }

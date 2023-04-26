@@ -5,7 +5,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.slayerrroar.reborn12k.items.ItemTrinkets;
+import net.slayerrroar.reborn12k.items.TrinketItems;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -18,7 +18,7 @@ public class QuiverMixin {
 
     @Inject(method = "getProjectileType", at = @At(value = "FIELD", target = "Lnet/minecraft/entity/player/PlayerEntity;abilities:Lnet/minecraft/entity/player/PlayerAbilities;"), cancellable = true)
     private void getProjectileType(ItemStack weapon, CallbackInfoReturnable<ItemStack> cir) {
-        if (TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(ItemTrinkets.ENDLESS_QUIVER)) {
+        if (TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(TrinketItems.ENDLESS_QUIVER)) {
             cir.setReturnValue(new ItemStack(Items.ARROW));
         }
     }

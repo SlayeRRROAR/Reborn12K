@@ -14,7 +14,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.entity.block_entities.MineralManufactoryBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
@@ -87,6 +87,6 @@ public class MineralManufactoryBlock extends BlockWithEntity implements BlockEnt
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, CustomBlockEntities.MINERAL_MANUFACTORY, MineralManufactoryBlockEntity::tick);
+        return checkType(type, RebornBlockEntities.MINERAL_MANUFACTORY, MineralManufactoryBlockEntity::tick);
     }
 }

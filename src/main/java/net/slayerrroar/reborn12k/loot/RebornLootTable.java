@@ -15,7 +15,7 @@ import net.slayerrroar.reborn12k.items.*;
 
 @SuppressWarnings("unused")
 
-public class CustomLootTable {
+public class RebornLootTable {
 
     //Blocks
 
@@ -67,7 +67,7 @@ public class CustomLootTable {
                                 0.00625f,
                                 0.008333334f,
                                 0.025f))
-                        .with(ItemEntry.builder(ItemGenerics.BANANA))
+                        .with(ItemEntry.builder(GenericItems.BANANA))
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                 tableBuilder.pool(poolBuilder.build());
             }

@@ -17,7 +17,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.recipe.recipe_types.ManaCondenserRecipe;
 import net.slayerrroar.reborn12k.screen.mana_condenser.ManaCondenserScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
@@ -37,7 +37,7 @@ public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreen
     private int maxProgress = 600;
 
     public ManaCondenserBlockEntity(BlockPos pos, BlockState state) {
-        super(CustomBlockEntities.MANA_CONDENSER, pos, state);
+        super(RebornBlockEntities.MANA_CONDENSER, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {

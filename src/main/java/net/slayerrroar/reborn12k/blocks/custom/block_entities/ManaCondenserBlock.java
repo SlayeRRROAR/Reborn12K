@@ -17,7 +17,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.entity.block_entities.ManaCondenserBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
@@ -101,6 +101,6 @@ public class ManaCondenserBlock extends BlockWithEntity implements BlockEntityPr
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, CustomBlockEntities.MANA_CONDENSER, ManaCondenserBlockEntity::tick);
+        return checkType(type, RebornBlockEntities.MANA_CONDENSER, ManaCondenserBlockEntity::tick);
     }
 }

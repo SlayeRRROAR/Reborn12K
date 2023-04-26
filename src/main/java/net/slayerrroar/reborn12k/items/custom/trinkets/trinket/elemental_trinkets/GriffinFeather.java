@@ -13,7 +13,7 @@ import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.items.ItemTrinkets;
+import net.slayerrroar.reborn12k.items.TrinketItems;
 
 import java.util.List;
 import java.util.UUID;
@@ -27,14 +27,14 @@ public class GriffinFeather extends TrinketItem implements Trinket {
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.AIR_PENDANT);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.AIR_PENDANT);
     }
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
         if (!world.isClient) {
-            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.AIR_PENDANT)) {
+            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.AIR_PENDANT)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }

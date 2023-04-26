@@ -20,7 +20,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.items.ItemTrinkets;
+import net.slayerrroar.reborn12k.items.TrinketItems;
 import net.slayerrroar.reborn12k.util.StrongboxUtil;
 
 import java.util.Random;
@@ -37,7 +37,7 @@ public class EpicBoxBlock extends Block {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!player.isSneaking()) {
-            if (player.getStackInHand(Hand.MAIN_HAND).isOf(ItemTrinkets.STRONGBOX_KEY)) {
+            if (player.getStackInHand(Hand.MAIN_HAND).isOf(TrinketItems.STRONGBOX_KEY)) {
                 if (player.isCreative()) {
                     world.breakBlock(pos, false, player);
                 }

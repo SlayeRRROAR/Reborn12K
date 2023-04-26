@@ -17,7 +17,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.entity.block_entities.ArcaneArtifactBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
@@ -103,6 +103,6 @@ public class ArcaneArtifactBlock extends BlockWithEntity implements BlockEntityP
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, CustomBlockEntities.ARCANE_ARTIFACT, ArcaneArtifactBlockEntity::tick);
+        return checkType(type, RebornBlockEntities.ARCANE_ARTIFACT, ArcaneArtifactBlockEntity::tick);
     }
 }

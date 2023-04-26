@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.slayerrroar.reborn12k.items.ItemTrinkets;
+import net.slayerrroar.reborn12k.items.TrinketItems;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -21,19 +21,19 @@ import java.util.Random;
 public class SwordCritMixin {
 
     private boolean hasVagueLuck(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.VAGUE_LUCKY_CHARM);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.VAGUE_LUCKY_CHARM);
     }
     private boolean hasMinorLuck(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.MINOR_LUCKY_CHARM);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.MINOR_LUCKY_CHARM);
     }
     private boolean hasIndelibleLuck(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.INDELIBLE_LUCKY_CHARM);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.INDELIBLE_LUCKY_CHARM);
     }
     private boolean hasGreaterLuck(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.GREATER_LUCKY_CHARM);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.GREATER_LUCKY_CHARM);
     }
     private boolean hasRadiant(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.PRAYER_CANDLE);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.PRAYER_CANDLE);
     }
 
     @Inject(method = "postHit", at = @At(value = "HEAD"))

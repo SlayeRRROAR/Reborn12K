@@ -9,7 +9,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Pair;
-import net.slayerrroar.reborn12k.items.ItemTrinkets;
+import net.slayerrroar.reborn12k.items.TrinketItems;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.PhoenixPlume;
 import net.slayerrroar.reborn12k.util.TotemRenderUtil;
 import org.spongepowered.asm.mixin.Mixin;
@@ -28,7 +28,7 @@ public class PhoenixPlumeMixin {
         if (entity instanceof ServerPlayerEntity player) {
             ItemStack stack = null;
             if (TrinketsApi.getTrinketComponent(player).isPresent()) {
-                List<Pair<SlotReference, ItemStack>> hasPlume = TrinketsApi.getTrinketComponent(player).get().getEquipped(ItemTrinkets.PHOENIX_PLUME);
+                List<Pair<SlotReference, ItemStack>> hasPlume = TrinketsApi.getTrinketComponent(player).get().getEquipped(TrinketItems.PHOENIX_PLUME);
                 if (hasPlume.size() > 0) stack = hasPlume.get(0).getRight();
             }
             if (stack != null && stack.getItem() instanceof PhoenixPlume) {
