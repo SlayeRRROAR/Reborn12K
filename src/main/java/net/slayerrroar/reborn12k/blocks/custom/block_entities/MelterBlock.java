@@ -14,7 +14,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.entity.block_entities.MelterBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
@@ -87,6 +87,6 @@ public class MelterBlock extends BlockWithEntity implements BlockEntityProvider 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, CustomBlockEntities.MELTER, MelterBlockEntity::tick);
+        return checkType(type, RebornBlockEntities.MELTER, MelterBlockEntity::tick);
     }
 }

@@ -17,7 +17,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.recipe.recipe_types.MineralManufactoryRecipe;
 import net.slayerrroar.reborn12k.screen.mineral_manufactory.MineralManufactoryScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
@@ -37,7 +37,7 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
     private int maxProgress = 160;
 
     public MineralManufactoryBlockEntity(BlockPos pos, BlockState state) {
-        super(CustomBlockEntities.MINERAL_MANUFACTORY, pos, state);
+        super(RebornBlockEntities.MINERAL_MANUFACTORY, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {

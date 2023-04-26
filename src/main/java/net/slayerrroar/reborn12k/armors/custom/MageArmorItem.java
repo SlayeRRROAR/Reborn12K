@@ -10,14 +10,14 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.armors.CustomArmorMaterials;
+import net.slayerrroar.reborn12k.armors.RebornArmorMaterials;
 
 import java.util.Map;
 
 public class MageArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffect> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffect>())
-                    .put(CustomArmorMaterials.MAGE, StatusEffects.REGENERATION).build();
+                    .put(RebornArmorMaterials.MAGE, StatusEffects.REGENERATION).build();
 
     public MageArmorItem(ArmorMaterial material, ArmorItem.Type type, Settings settings) {
         super(material, type, settings);

@@ -14,7 +14,7 @@ import net.slayerrroar.reborn12k.items.custom.tech.FuelCell;
 import net.slayerrroar.reborn12k.items.custom.tech.Magnet;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
-public class ItemTechnical {
+public class TechnicalItems {
 
     public static final Item MAGNET = registerItem("magnet", new Magnet(new FabricItemSettings().maxCount(1)));
 

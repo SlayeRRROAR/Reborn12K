@@ -13,7 +13,7 @@ import net.slayerrroar.reborn12k.items.custom.RebornDiscItem;
 import net.slayerrroar.reborn12k.sounds.RebornSounds;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
-public class ItemDiscs {
+public class DiscItems {
 
     public static final Item UNRECORDED_DISC = registerItem("unrecorded_disc", new Item(new FabricItemSettings()));
 

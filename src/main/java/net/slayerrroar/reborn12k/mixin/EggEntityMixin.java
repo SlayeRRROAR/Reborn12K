@@ -4,7 +4,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.passive.FrogEntity;
 import net.minecraft.entity.projectile.thrown.EggEntity;
 import net.minecraft.util.hit.EntityHitResult;
-import net.slayerrroar.reborn12k.items.ItemTrinkets;
+import net.slayerrroar.reborn12k.items.TrinketItems;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -18,7 +18,7 @@ public class EggEntityMixin {
         Entity entity = entityHitResult.getEntity();
         if (entity instanceof FrogEntity) {
             entityHitResult.getEntity().kill();
-            entity.dropItem(ItemTrinkets.BASILISK_FANG, 1);
+            entity.dropItem(TrinketItems.BASILISK_FANG, 1);
             ci.cancel();
         }
     }

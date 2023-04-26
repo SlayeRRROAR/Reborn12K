@@ -15,7 +15,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.custom.GlintedItem;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
-public class ItemGenerics {
+public class GenericItems {
 
     // Resources
 
@@ -154,11 +154,10 @@ public class ItemGenerics {
 
     // Other
 
-    public static final Item HAMMER = registerItem("hammer", new Item(new FabricItemSettings().recipeRemainder(ItemGenerics.HAMMER).maxCount(1)));
+    public static final Item HAMMER = registerItem("hammer", new Item(new FabricItemSettings().recipeRemainder(GenericItems.HAMMER).maxCount(1)));
 
     public static final Item CRUSHING_WHEEL = registerItem("crushing_wheel", new Item(new FabricItemSettings()));
 
-    public static final Item RED_ENGINE = registerItem("red_engine", new Item(new FabricItemSettings()));
     public static final Item CASING_MK237 = registerItem("casing_mk237", new Item(new FabricItemSettings()));
     public static final Item CERAMITE_PLATE = registerItem("ceramite_plate", new Item(new FabricItemSettings()));
 
@@ -269,7 +268,6 @@ public class ItemGenerics {
         addToItemGroup(ItemGroupUtil.REBORN12K, HAMMER);
         addToItemGroup(ItemGroupUtil.REBORN12K, CRUSHING_WHEEL);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, RED_ENGINE);
         addToItemGroup(ItemGroupUtil.REBORN12K, CASING_MK237);
         addToItemGroup(ItemGroupUtil.REBORN12K, CERAMITE_PLATE);
     }

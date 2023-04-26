@@ -7,12 +7,12 @@ import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.GenericBlocks;
-import net.slayerrroar.reborn12k.items.ItemGenerics;
-import net.slayerrroar.reborn12k.items.ItemTrinkets;
+import net.slayerrroar.reborn12k.items.GenericItems;
+import net.slayerrroar.reborn12k.items.TrinketItems;
 
 import java.util.Random;
 
-public class RebornCustomTrades {
+public class RebornTrades {
 
     public static void register() {     //todo: Finish adding trade offers
 
@@ -26,7 +26,7 @@ public class RebornCustomTrades {
                             12, 1, 0.08f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 1),
-                            new ItemStack(ItemGenerics.SILVER_INGOT, 2),
+                            new ItemStack(GenericItems.SILVER_INGOT, 2),
                             16, 2, 0.08f));
                 });
 
@@ -34,11 +34,11 @@ public class RebornCustomTrades {
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 5),
-                            new ItemStack(ItemGenerics.RUBY, 5),
+                            new ItemStack(GenericItems.RUBY, 5),
                             9, 10, 0.03f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 5),
-                            new ItemStack(ItemGenerics.SAPPHIRE, 1),
+                            new ItemStack(GenericItems.SAPPHIRE, 1),
                             9, 10, 0.03f));
                 });
 
@@ -50,7 +50,7 @@ public class RebornCustomTrades {
                             9, 20, 0.03f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 9),
-                            new ItemStack(ItemGenerics.MANATITE, 1),
+                            new ItemStack(GenericItems.MANATITE, 1),
                             12, 20, 0.05f));
                 });
 
@@ -58,19 +58,19 @@ public class RebornCustomTrades {
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 41),
-                            new ItemStack(ItemGenerics.PLATINUM_INGOT, 1),
+                            new ItemStack(GenericItems.PLATINUM_INGOT, 1),
                             9, 30, 0f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 35),
-                            new ItemStack(ItemGenerics.COBALT_INGOT, 1),
+                            new ItemStack(GenericItems.COBALT_INGOT, 1),
                             9, 30, 0f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 41),
-                            new ItemStack(ItemGenerics.PLATINUM_INGOT, 1),
+                            new ItemStack(GenericItems.PLATINUM_INGOT, 1),
                             9, 30, 0f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 35),
-                            new ItemStack(ItemGenerics.COBALT_INGOT, 1),
+                            new ItemStack(GenericItems.COBALT_INGOT, 1),
                             9, 30, 0f));
                 });
 
@@ -96,7 +96,7 @@ public class RebornCustomTrades {
                             new ItemStack(Items.EMERALD, 1),
                             16, 2, 0.08f));
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(ItemGenerics.TIN_INGOT, 7),
+                            new ItemStack(GenericItems.TIN_INGOT, 7),
                             new ItemStack(Items.EMERALD, 1),
                             12, 2, 0.08f));
                 });
@@ -106,7 +106,7 @@ public class RebornCustomTrades {
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 3),
-                            new ItemStack(ItemGenerics.SAPPHIRE, 1),
+                            new ItemStack(GenericItems.SAPPHIRE, 1),
                             12, 1, 0.08f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(GenericBlocks.ASH_LOG, 16),
@@ -132,20 +132,20 @@ public class RebornCustomTrades {
     private static TradeOffer jewelerLight5() {
 
         TradeOffer band = new TradeOffer(
-                new ItemStack(ItemTrinkets.ANGELIC_HALO, 1),
-                new ItemStack(ItemTrinkets.GREATER_BAND_OF_FORTITUDE, 1),
+                new ItemStack(TrinketItems.PRAYER_CANDLE, 1),
+                new ItemStack(TrinketItems.GREATER_BAND_OF_FORTITUDE, 1),
                 1, 30, 0f);
         TradeOffer claw = new TradeOffer(
-                new ItemStack(ItemTrinkets.ANGELIC_HALO, 1),
-                new ItemStack(ItemTrinkets.GREATER_BLOODY_CLAW, 1),
+                new ItemStack(TrinketItems.PRAYER_CANDLE, 1),
+                new ItemStack(TrinketItems.GREATER_BLOODY_CLAW, 1),
                 1, 30, 0f);
         TradeOffer medallion = new TradeOffer(
-                new ItemStack(ItemTrinkets.ANGELIC_HALO, 1),
-                new ItemStack(ItemTrinkets.GREATER_MEDALLION, 1),
+                new ItemStack(TrinketItems.PRAYER_CANDLE, 1),
+                new ItemStack(TrinketItems.GREATER_MEDALLION, 1),
                 1, 30, 0f);
         TradeOffer tonic = new TradeOffer(
-                new ItemStack(ItemTrinkets.ANGELIC_HALO, 1),
-                new ItemStack(ItemTrinkets.GREATER_FRENZY_TONIC, 1),
+                new ItemStack(TrinketItems.PRAYER_CANDLE, 1),
+                new ItemStack(TrinketItems.GREATER_FRENZY_TONIC, 1),
                 1, 30, 0f);
 
         Random rand = new Random();
@@ -167,20 +167,20 @@ public class RebornCustomTrades {
     private static TradeOffer jewelerShadow5() {
 
         TradeOffer band = new TradeOffer(
-                new ItemStack(ItemTrinkets.BASILISK_TOOTH, 1),
-                new ItemStack(ItemTrinkets.GREATER_BAND_OF_FORTITUDE, 1),
+                new ItemStack(TrinketItems.BASILISK_FANG, 1),
+                new ItemStack(TrinketItems.GREATER_BAND_OF_FORTITUDE, 1),
                 1, 30, 0f);
         TradeOffer claw = new TradeOffer(
-                new ItemStack(ItemTrinkets.BASILISK_TOOTH, 1),
-                new ItemStack(ItemTrinkets.GREATER_BLOODY_CLAW, 1),
+                new ItemStack(TrinketItems.BASILISK_FANG, 1),
+                new ItemStack(TrinketItems.GREATER_BLOODY_CLAW, 1),
                 1, 30, 0f);
         TradeOffer medallion = new TradeOffer(
-                new ItemStack(ItemTrinkets.BASILISK_TOOTH, 1),
-                new ItemStack(ItemTrinkets.GREATER_MEDALLION, 1),
+                new ItemStack(TrinketItems.BASILISK_FANG, 1),
+                new ItemStack(TrinketItems.GREATER_MEDALLION, 1),
                 1, 30, 0f);
         TradeOffer tonic = new TradeOffer(
-                new ItemStack(ItemTrinkets.BASILISK_TOOTH, 1),
-                new ItemStack(ItemTrinkets.GREATER_FRENZY_TONIC, 1),
+                new ItemStack(TrinketItems.BASILISK_FANG, 1),
+                new ItemStack(TrinketItems.GREATER_FRENZY_TONIC, 1),
                 1, 30, 0f);
 
         Random rand = new Random();

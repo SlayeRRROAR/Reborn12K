@@ -9,7 +9,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 
 @SuppressWarnings("unused")
 
-public class CustomTagsUtil {
+public class RebornTagsUtil {
     public static class Blocks {
 
         private static TagKey<Block> createCommonTag(String name) {

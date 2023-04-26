@@ -6,7 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.items.ItemGenerics;
+import net.slayerrroar.reborn12k.items.GenericItems;
 
 public class ItemGroupUtil {
 
@@ -15,7 +15,7 @@ public class ItemGroupUtil {
     public static void registerItemGroups() {
         REBORN12K = FabricItemGroup.builder(new Identifier(Reborn12K.MOD_ID, "reborn12k"))
                 .displayName(Text.translatable("itemGroup.reborn12k"))
-                .icon(() -> new ItemStack(ItemGenerics.SAPPHIRE)).build();
+                .icon(() -> new ItemStack(GenericItems.SAPPHIRE)).build();
     }
 
 }

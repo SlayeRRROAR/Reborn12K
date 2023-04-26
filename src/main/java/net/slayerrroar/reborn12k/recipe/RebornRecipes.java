@@ -6,7 +6,7 @@ import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.recipe.recipe_types.*;
 
-public class RebornCustomRecipes {
+public class RebornRecipes {
 
     public static void register() {
 

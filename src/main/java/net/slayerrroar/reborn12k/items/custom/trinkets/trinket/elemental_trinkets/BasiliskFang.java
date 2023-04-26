@@ -13,7 +13,7 @@ import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.items.ItemTrinkets;
+import net.slayerrroar.reborn12k.items.TrinketItems;
 
 import java.util.List;
 import java.util.UUID;
@@ -27,14 +27,14 @@ public class BasiliskFang extends TrinketItem implements Trinket {
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.DARK_PENDANT);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.DARK_PENDANT);
     }
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
         if (!world.isClient) {
-            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(ItemTrinkets.DARK_PENDANT)) {
+            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.DARK_PENDANT)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }
@@ -51,8 +51,7 @@ public class BasiliskFang extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.dragon_fang.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.dragon_fang.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.basilisk_fang.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.dark.tooltip"));
     }
 

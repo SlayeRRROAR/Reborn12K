@@ -14,7 +14,7 @@ import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.entity.CustomBlockEntities;
+import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.entity.block_entities.UltimateQuarryBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
@@ -87,6 +87,6 @@ public class UltimateQuarryBlock extends BlockWithEntity implements BlockEntityP
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, CustomBlockEntities.ULTIMATE_QUARRY, UltimateQuarryBlockEntity::tick);
+        return checkType(type, RebornBlockEntities.ULTIMATE_QUARRY, UltimateQuarryBlockEntity::tick);
     }
 }

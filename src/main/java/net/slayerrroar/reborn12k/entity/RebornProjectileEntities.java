@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.entity.projectile_entities.SoulVesselEntity;
 
-public class CustomProjectileEntities {
+public class RebornProjectileEntities {
 
     public static EntityType<SoulVesselEntity> SOUL_VESSEL_ENTITY;
 

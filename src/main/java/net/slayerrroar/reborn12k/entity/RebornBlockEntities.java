@@ -9,7 +9,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
 import net.slayerrroar.reborn12k.entity.block_entities.*;
 
-public class CustomBlockEntities {
+public class RebornBlockEntities {
 
     public static BlockEntityType<ArcaneArtifactBlockEntity> ARCANE_ARTIFACT;
     public static BlockEntityType<ManaCondenserBlockEntity> MANA_CONDENSER;
