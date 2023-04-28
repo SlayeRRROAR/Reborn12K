@@ -1,12 +1,14 @@
-package net.slayerrroar.reborn12k.util;
+package net.slayerrroar.reborn12k.client;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
+import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
 import net.slayerrroar.reborn12k.blocks.GenericBlocks;
 
-public class RenderHelperUtil {
-    public static void setRenderLayers() {
+public class RebornBlockRender {
+
+    public static void registerClient() {
 
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.MARKET_TABLE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.FANCY_LAMP, RenderLayer.getCutout());

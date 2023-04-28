@@ -8,11 +8,13 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
+import net.slayerrroar.reborn12k.entity.projectile_entities.GlacialEntity;
 import net.slayerrroar.reborn12k.entity.projectile_entities.SoulVesselEntity;
 
 public class RebornProjectileEntities {
 
     public static EntityType<SoulVesselEntity> SOUL_VESSEL_ENTITY;
+    public static EntityType<GlacialEntity> GLACIAL_ENTITY;
 
 
     public static void register() {
@@ -21,6 +23,10 @@ public class RebornProjectileEntities {
 
         SOUL_VESSEL_ENTITY =  Registry.register(Registries.ENTITY_TYPE, new Identifier(Reborn12K.MOD_ID, "soul_vessel"), FabricEntityTypeBuilder
                 .<SoulVesselEntity>create(SpawnGroup.MISC, SoulVesselEntity::new).dimensions(EntityDimensions.fixed(0.25F, 0.25F))
+                .trackRangeBlocks(4).trackedUpdateRate(10).build());
+
+        GLACIAL_ENTITY =  Registry.register(Registries.ENTITY_TYPE, new Identifier(Reborn12K.MOD_ID, "slow_entity"), FabricEntityTypeBuilder
+                .<GlacialEntity>create(SpawnGroup.MISC, GlacialEntity::new).dimensions(EntityDimensions.fixed(0.5F, 0.5F))
                 .trackRangeBlocks(4).trackedUpdateRate(10).build());
 
     }
