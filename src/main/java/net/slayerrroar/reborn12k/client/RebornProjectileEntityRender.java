@@ -13,7 +13,11 @@ public class RebornProjectileEntityRender {
 
         EntityRendererRegistry.register(RebornProjectileEntities.SOUL_VESSEL_ENTITY, FlyingItemEntityRenderer::new);
 
+        EntityRendererRegistry.register(RebornProjectileEntities.VOLCANIC_ENTITY, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(RebornProjectileEntities.THUNDERBOLT_ENTITY, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(RebornProjectileEntities.TERRA_ENTITY, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(RebornProjectileEntities.GLACIAL_ENTITY, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(RebornProjectileEntities.CRIMSON_ENTITY, FlyingItemEntityRenderer::new);
 
     }
 }
