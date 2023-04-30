@@ -10,12 +10,14 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
+import net.slayerrroar.reborn12k.entity.projectile_entities.TerraEntity;
 
 import java.util.List;
 
@@ -26,33 +28,27 @@ public class TerraWand extends Item {
     }
 
     @Override
-    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-
-        tooltip.add(Text.translatable("item.reborn12k.terra.tooltip"));
-    }
-
-    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
 
-    @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+        ItemStack stack = player.getStackInHand(hand);
 
-        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.PLAYERS, 0.25f, 1.0f);
-        playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*20, 0, false, false));
+        if (!world.isClient) {
+            TerraEntity thrownEntity = new TerraEntity(world, player);
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 20, 20, 20))) {
-            if (e instanceof LivingEntity livingEntity) {
-                if (playerEntity.distanceTo(livingEntity) < 20) {
-                    livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*20, 0, false, false));
-                }
-            }
+            thrownEntity.setVelocity(player, player.getPitch(), player.getYaw(), 0f, 3f, 0f);
+            world.spawnEntity(thrownEntity);
         }
-
-        playerEntity.getItemCooldownManager().set(this, 20*25);
-
-        return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
-
+        player.getItemCooldownManager().set(this, 20*15);
+        player.incrementStat(Stats.USED.getOrCreateStat(this));
+        return TypedActionResult.success(stack, world.isClient());
     }
+
+    @Override
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.terra.tooltip"));
+    }
+
 }
