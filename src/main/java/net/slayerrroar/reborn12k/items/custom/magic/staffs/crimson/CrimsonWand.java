@@ -1,21 +1,15 @@
 package net.slayerrroar.reborn12k.items.custom.magic.staffs.crimson;
 
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
+import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
-import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.util.hit.EntityHitResult;
-import net.minecraft.util.hit.HitResult;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.slayerrroar.reborn12k.entity.projectile_entities.CrimsonEntity;
 
 import java.util.List;
 
@@ -26,40 +20,27 @@ public class CrimsonWand extends Item {
     }
 
     @Override
-    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-
-        tooltip.add(Text.translatable("item.reborn12k.crimson.tooltip"));
-    }
-
-    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
 
-    @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+        ItemStack stack = player.getStackInHand(hand);
 
-        HitResult hit = playerEntity.raycast(12f, 0, false);
+        if (!world.isClient) {
+            CrimsonEntity thrownEntity = new CrimsonEntity(world, player);
 
-        if (hit.getType() == HitResult.Type.ENTITY) {
-            EntityHitResult entityHit = (EntityHitResult) hit;
-            Entity entity = entityHit.getEntity();
-
-            world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(),SoundEvents.ENTITY_LIGHTNING_BOLT_THUNDER, SoundCategory.PLAYERS, 1.0f, 1.0f);
-            playerEntity.world.createExplosion(playerEntity, entity.getX(), entity.getY(), entity.getZ(), 2.0F, World.ExplosionSourceType.NONE);
-            playerEntity.getItemCooldownManager().set(this, 9*20);
-
+            thrownEntity.setVelocity(player, player.getPitch(), player.getYaw(), 0f, 3f, 0f);
+            world.spawnEntity(thrownEntity);
         }
- else if (hit.getType() == HitResult.Type.BLOCK) {
-
-            BlockPos blockPos = ((BlockHitResult) hit).getBlockPos();
-
-            world.playSound(null, blockPos,SoundEvents.ENTITY_LIGHTNING_BOLT_IMPACT, SoundCategory.PLAYERS, 0.5f, 1.0f);
-            playerEntity.world.createExplosion(playerEntity, blockPos.getX()+.5, blockPos.getY()+1.1, blockPos.getZ()+.5, 2.0F, World.ExplosionSourceType.NONE);
-            playerEntity.getItemCooldownManager().set(this, 9*20);
-        }
-
-        return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
-
+        player.getItemCooldownManager().set(this, 20*30);
+        player.incrementStat(Stats.USED.getOrCreateStat(this));
+        return TypedActionResult.success(stack, world.isClient());
     }
+
+    @Override
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.crimson.tooltip"));
+    }
+
 }
