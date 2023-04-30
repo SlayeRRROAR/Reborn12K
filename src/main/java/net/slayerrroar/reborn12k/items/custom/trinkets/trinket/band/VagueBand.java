@@ -27,21 +27,21 @@ public class VagueBand extends TrinketItem implements Trinket {
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity.getHealth() == entity.getMaxHealth()) {
-            entity.setHealth(entity.getHealth() + 2.0f);
+        if (entity.getHealth() >= 20f) {
+            entity.setHealth(entity.getHealth() + 2f);
         }
     }
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity.getHealth() > 20.0f) {
-            entity.setHealth(20.0f);
+        if (entity.getHealth() > 20f) {
+            entity.setHealth(entity.getMaxHealth());
         }
     }
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 0.1, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 2, EntityAttributeModifier.Operation.ADDITION));
         return modifiers;
     }
 

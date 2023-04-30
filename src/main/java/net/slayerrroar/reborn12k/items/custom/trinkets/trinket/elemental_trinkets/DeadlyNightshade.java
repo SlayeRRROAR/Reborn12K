@@ -44,19 +44,21 @@ public class DeadlyNightshade extends TrinketItem implements Trinket {
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.setHealth(entity.getHealth() + 14.0f);
+        if (entity.getHealth() >= 20f) {
+            entity.setHealth(entity.getHealth() + 14f);
+        }
     }
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity.getMaxHealth() > 20.0f) {
-            entity.setHealth(20.0f);
+        if (entity.getMaxHealth() > 20f) {
+            entity.setHealth(entity.getMaxHealth());
         }
     }
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 0.7, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 14, EntityAttributeModifier.Operation.ADDITION));
         return modifiers;
     }
 
