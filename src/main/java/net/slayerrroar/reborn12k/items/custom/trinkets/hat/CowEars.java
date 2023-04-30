@@ -29,7 +29,7 @@ public class CowEars extends TrinketItem implements Trinket {
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.playSound(SoundEvents.ENTITY_COW_AMBIENT, 0.1f, 1.0f);
+        entity.playSound(SoundEvents.ENTITY_COW_AMBIENT, 0.1f, 1f);
     }
 
     private void cleanseNegativeEffects(LivingEntity entity) {

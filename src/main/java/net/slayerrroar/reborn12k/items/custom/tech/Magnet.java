@@ -74,13 +74,13 @@ public class Magnet extends Item implements Equipment {
 
         if (getMagnetState(stack).getBoolean()) {
             setMagnetState(stack, MagnetState.OFF);
-            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
+            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25f, 0.25f);
             player.getItemCooldownManager().set(this, 10);
             player.sendMessage(Text.translatable("item.reborn12k.magnet.tooltip4"), true);
             return;
         }
         setMagnetState(stack, MagnetState.ON);
-        world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
+        world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25f, 0.25f);
         player.getItemCooldownManager().set(this, 10);
         player.sendMessage(Text.translatable("item.reborn12k.magnet.tooltip5"), true);
     }

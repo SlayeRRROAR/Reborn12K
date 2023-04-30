@@ -73,7 +73,7 @@ public class ExceedSword extends SwordItem {
         ExceedState currentmode = getExceedState(red_queen);
         if (currentmode != ExceedState.INACTIVE && target instanceof MobEntity) {
             float damage = (float) attacker.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
-            float critBonus = 2.0F;
+            float critBonus = 2f;
             target.damage(attacker.getDamageSources().generic(), (damage * critBonus));
             DeactivateExceed(red_queen);
         }
@@ -112,7 +112,7 @@ public class ExceedSword extends SwordItem {
 
                 if (int_random < 6) {
                     ActivateExceed(red_queen);
-                    world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.15F, 0.0F);
+                    world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.15f, 0f);
                     playerEntity.sendMessage(Text.translatable("item.reborn12k.red_queen.tooltip3"), true);
                 }
                 else {

@@ -25,13 +25,13 @@ public class SoulVesselItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
 
-        world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SPLASH_POTION_THROW, SoundCategory.NEUTRAL, 0.5F, 1F);
+        world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SPLASH_POTION_THROW, SoundCategory.NEUTRAL, 0.5f, 1f);
 		user.getItemCooldownManager().set(this, 5);
 
         if (!world.isClient) {
             SoulVesselEntity thrownEntity = new SoulVesselEntity(world, user);
             thrownEntity.setItem(itemStack);
-            thrownEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 2.0F, 0F);
+            thrownEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0f, 2f, 0f);
             world.spawnEntity(thrownEntity);
         }
         user.incrementStat(Stats.USED.getOrCreateStat(this));

@@ -110,7 +110,7 @@ public class YggdrasillItem extends Item {
         ItemStack stack = player.getStackInHand(hand);
         if (!world.isClient && !player.isSneaking()) {
             toggleMode(stack, player);
-            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
+            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25f, 0.25f);
         }
             return new TypedActionResult<>(ActionResult.SUCCESS, stack);
     }

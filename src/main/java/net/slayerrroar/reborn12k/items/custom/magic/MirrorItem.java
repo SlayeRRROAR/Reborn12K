@@ -20,7 +20,7 @@ public class MirrorItem extends Item {
     }
 
     public void setPositionAndUpdate(ServerPlayerEntity player, BlockPos pos) {
-        player.teleport(pos.getX() + 0.5F, pos.getY() + 0.6F, pos.getZ() + 0.5F);
+        player.teleport(pos.getX() + 0.5f, pos.getY() + 0.6F, pos.getZ() + 0.5f);
         player.fallDistance = 0;
     }
 
@@ -30,7 +30,7 @@ public class MirrorItem extends Item {
             BlockPos pos = serverPlayer.getSpawnPointPosition();
             serverPlayer.stopRiding();
             setPositionAndUpdate(serverPlayer, pos);
-            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 0.25F, 0.25F);
+            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 0.25f, 0.25f);
             player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip1"), true);   //tp to last bed
         }
         if (serverPlayer.getSpawnPointPosition() == null) {

@@ -34,7 +34,7 @@ public class PhoenixPlumeMixin {
             if (stack != null && stack.getItem() instanceof PhoenixPlume) {
                 if (!player.getItemCooldownManager().isCoolingDown(stack.getItem())) {
                     ((PhoenixPlume) stack.getItem()).setCooldown(player, stack);
-                    player.setHealth(1.0f);
+                    player.setHealth(1f);
                     player.clearStatusEffects();
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 4));
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 60 * 20, 0));

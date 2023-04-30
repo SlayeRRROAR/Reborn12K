@@ -28,14 +28,14 @@ public class SpecialEssenceItem extends Item {
                 playerEntity.getStackInHand(hand).decrement(currentStack);
             }
             world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(),
-                    SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
+                    SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25f, 0.25f);
         }
         playerEntity.addExperience(9);
         if (!playerEntity.isCreative()) {
             playerEntity.getStackInHand(hand).decrement(1);
         }
         world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(),
-                SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25F, 0.25F);
+                SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25f, 0.25f);
         return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
     }
 

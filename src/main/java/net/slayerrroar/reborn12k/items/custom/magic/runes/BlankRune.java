@@ -20,7 +20,7 @@ public class BlankRune extends Item {
     private void decreaseStackAndPlaySound(ItemStack stack, World world, PlayerEntity player) {
         stack.setCount(stack.getCount()-1);
         world.playSound(null, player.getX(), player.getY(), player.getZ(),
-                SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25F, 0.25F);
+                SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25f, 0.25f);
     }
 
     @Override

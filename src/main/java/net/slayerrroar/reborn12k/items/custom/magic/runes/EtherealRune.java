@@ -30,7 +30,7 @@ public class EtherealRune extends Item {
             world.setBlockState(context.getBlockPos(), Blocks.AIR.getDefaultState());
             stack.setCount(stack.getCount()-1);
             player.dropItem(GenericItems.MAGISTEEL_INGOT, 1);
-            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25F, 0.25F);
+            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25f, 0.25f);
             return ActionResult.SUCCESS;
         }
         return ActionResult.FAIL;
