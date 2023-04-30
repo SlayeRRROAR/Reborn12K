@@ -27,7 +27,7 @@ public class RebornVillagers {
     public static final VillagerProfession BLACKSMITH = registerProfession("blacksmith",
             RegistryKey.of(Registries.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(Reborn12K.MOD_ID, "blacksmithpoi")));
 
-    public static final PointOfInterestType MANASMITH_POI = registerPOI("manasmithpoi", AdvancedBlocks.ARCANE_ARTIFACT);
+    public static final PointOfInterestType MANASMITH_POI = registerPOI("manasmithpoi", AdvancedBlocks.ALCHEMIC_TABLE);
     public static final VillagerProfession MANASMITH = registerProfession("manasmith",
             RegistryKey.of(Registries.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(Reborn12K.MOD_ID, "manasmithpoi")));
 
