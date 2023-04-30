@@ -21,10 +21,7 @@ public class WingedShoes extends TrinketItem implements Trinket {
 
     private static int additionalJumps = 1;
     private static int timesJumped = 0;
-
-    private boolean isOnCooldown(PlayerEntity player, ItemStack stack) {
-        return player.getItemCooldownManager().isCoolingDown(stack.getItem());
-    }
+    private static int cooldown = 6;
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
@@ -35,13 +32,15 @@ public class WingedShoes extends TrinketItem implements Trinket {
             if (player.isOnGround() || player.isSubmergedInWater() || player.hasVehicle()) {
                 additionalJumps = 1;
                 timesJumped = 0;
-                player.getItemCooldownManager().set(this, 6);
+                cooldown = 6;
+            } else if (cooldown > 0) {
+                cooldown--;
             }
             if (MinecraftClient.getInstance().options.jumpKey.isPressed() && timesJumped < additionalJumps) {
-                if (!player.isOnGround() && !player.isSubmergedInWater() && !player.isFallFlying() && !player.getAbilities().flying && !isOnCooldown(player, stack)) {
+                if (!player.isOnGround() && !player.isSubmergedInWater() && !player.isFallFlying() && !player.getAbilities().flying && cooldown == 0) {
                     player.jump();
                     timesJumped++;
-                    player.getItemCooldownManager().set(this, 6);
+                    cooldown = 6;
                 }
             }
         }
