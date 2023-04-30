@@ -21,7 +21,8 @@ import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 public class AdvancedBlocks {
 
     public static final Block MARKET_TABLE = registerBlock("market_table", new MarketBlock(FabricBlockSettings.copy(Blocks.CRAFTING_TABLE)), ItemGroupUtil.REBORN12K);
-    public static final Block FANCY_LAMP = registerBlock("fancy_lamp", new FancyLampBlock(FabricBlockSettings.copy(Blocks.STONE).sounds(BlockSoundGroup.STONE).hardness(5.0f).resistance(6.0f).nonOpaque().luminance(blockstate ->30)), ItemGroupUtil.REBORN12K);
+    public static final Block ALCHEMIC_TABLE = registerBlock("alchemic_table", new AlchemicBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroupUtil.REBORN12K);
+    public static final Block FANCY_LAMP = registerBlock("fancy_lamp", new FancyLampBlock(FabricBlockSettings.copy(Blocks.STONE).sounds(BlockSoundGroup.STONE).hardness(5f).resistance(6f).nonOpaque().luminance(blockstate ->30)), ItemGroupUtil.REBORN12K);
 
     public static final Block COMMON_STRONGBOX = registerBlock("common_strongbox", new CommonBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
     public static final Block RARE_STRONGBOX = registerBlock("rare_strongbox", new RareBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
@@ -29,25 +30,25 @@ public class AdvancedBlocks {
     public static final Block LEGENDARY_STRONGBOX = registerBlock("legendary_strongbox", new LegendaryBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
     public static final Block ELEMENTAL_STRONGBOX = registerBlock("elemental_strongbox", new ElementalBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
 
-    public static final Block AIR_GEM = registerBlock("air_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
-    public static final Block EARTH_GEM = registerBlock("earth_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
-    public static final Block WATER_GEM = registerBlock("water_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
-    public static final Block FIRE_GEM = registerBlock("fire_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
-    public static final Block SUN_GEM = registerBlock("sun_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
-    public static final Block MOON_GEM = registerBlock("moon_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1.0f).resistance(20.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block AIR_GEM = registerBlock("air_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block EARTH_GEM = registerBlock("earth_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block WATER_GEM = registerBlock("water_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block FIRE_GEM = registerBlock("fire_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block SUN_GEM = registerBlock("sun_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block MOON_GEM = registerBlock("moon_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
 
-    public static final Block ARCANE_PEDESTAL = registerBlock("arcane_pedestal", new ArcanePedestalBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).hardness(2.0f).resistance(20.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block ARCANE_PEDESTAL = registerBlock("arcane_pedestal", new ArcanePedestalBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).hardness(2f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
 
-    public static final Block ARCANE_ARTIFACT = registerBlock("arcane_artifact", new ArcaneArtifactBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(20.0f).resistance(1200.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
-    public static final Block MANA_CONDENSER = registerBlock("mana_condenser", new ManaCondenserBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8.0f).resistance(20.0f).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block ARCANE_ARTIFACT = registerBlock("arcane_artifact", new ArcaneArtifactBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(20f).resistance(1200f).nonOpaque()), ItemGroupUtil.REBORN12K);
+    public static final Block MANA_CONDENSER = registerBlock("mana_condenser", new ManaCondenserBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
 
-    public static final Block CRUSHER = registerBlock("crusher", new CrusherBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8.0f).resistance(20.0f)), ItemGroupUtil.REBORN12K);
-    public static final Block MINERAL_MANUFACTORY = registerBlock("mineral_manufactory", new MineralManufactoryBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8.0f).resistance(20.0f)), ItemGroupUtil.REBORN12K);
-    public static final Block MELTER = registerBlock("melter", new MelterBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8.0f).resistance(20.0f)), ItemGroupUtil.REBORN12K);
+    public static final Block CRUSHER = registerBlock("crusher", new CrusherBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8f).resistance(20f)), ItemGroupUtil.REBORN12K);
+    public static final Block MINERAL_MANUFACTORY = registerBlock("mineral_manufactory", new MineralManufactoryBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8f).resistance(20f)), ItemGroupUtil.REBORN12K);
+    public static final Block MELTER = registerBlock("melter", new MelterBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8f).resistance(20f)), ItemGroupUtil.REBORN12K);
 
-    public static final Block BASIC_LASER_QUARRY = registerBlock("basic_laser_quarry", new BasicQuarryBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12.0f).resistance(200.0f)), ItemGroupUtil.REBORN12K);
-    public static final Block ADVANCED_LASER_QUARRY = registerBlock("advanced_laser_quarry", new AdvancedQuarryBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12.0f).resistance(200.0f)), ItemGroupUtil.REBORN12K);
-    public static final Block ULTIMATE_LASER_QUARRY = registerBlock("ultimate_laser_quarry", new UltimateQuarryBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12.0f).resistance(200.0f)), ItemGroupUtil.REBORN12K);
+    public static final Block BASIC_LASER_QUARRY = registerBlock("basic_laser_quarry", new BasicQuarryBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12f).resistance(200f)), ItemGroupUtil.REBORN12K);
+    public static final Block ADVANCED_LASER_QUARRY = registerBlock("advanced_laser_quarry", new AdvancedQuarryBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12f).resistance(200f)), ItemGroupUtil.REBORN12K);
+    public static final Block ULTIMATE_LASER_QUARRY = registerBlock("ultimate_laser_quarry", new UltimateQuarryBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12f).resistance(200f)), ItemGroupUtil.REBORN12K);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
