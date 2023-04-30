@@ -25,12 +25,6 @@ public class ViridianWand extends Item {
     }
 
     @Override
-    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-
-        tooltip.add(Text.translatable("item.reborn12k.viridian.tooltip"));
-    }
-
-    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
@@ -38,20 +32,23 @@ public class ViridianWand extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
 
-        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.PLAYERS, 0.25f, 1.0f);
+        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.PLAYERS, 0.25f, 1f);
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 20*30, 2));
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 25, 25, 25))) {
+        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 20, 20, 20))) {
             if (e instanceof PlayerEntity playerEntities) {
-                if (playerEntity.distanceTo(playerEntities) < 25) {
+                if (playerEntity.distanceTo(playerEntities) < 20) {
                     playerEntities.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 20*30, 2));
                 }
             }
         }
-
-        playerEntity.getItemCooldownManager().set(this, 20*35);
-
+        playerEntity.getItemCooldownManager().set(this, 20*40);
         return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
-
     }
+
+    @Override
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.viridian.tooltip"));
+    }
+
 }

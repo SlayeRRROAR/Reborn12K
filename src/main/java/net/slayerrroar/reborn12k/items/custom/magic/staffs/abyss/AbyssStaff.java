@@ -26,12 +26,6 @@ public class AbyssStaff extends Item {
     }
 
     @Override
-    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-
-        tooltip.add(Text.translatable("item.reborn12k.abyss.tooltip"));
-    }
-
-    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
@@ -39,22 +33,26 @@ public class AbyssStaff extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
 
-        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.PLAYERS, 0.25f, 1.0f);
-        playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 20*60, 0, false, false));
-        playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20*60, 0, false, false));
+        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.PLAYERS, 0.25f, 1f);
+        playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 20*30, 0, false, false));
+        playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20*30, 0, false, false));
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 40, 40, 40))) {
+        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 10, 10, 10))) {
             if (e instanceof LivingEntity livingEntity) {
-                if (playerEntity.distanceTo(livingEntity) < 40) {
-                    livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 20*60, 0, false, false));
-                    livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20*60, 0, false, false));
+                if (playerEntity.distanceTo(livingEntity) < 10) {
+                    livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 20*30, 0, false, false));
+                    livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 20*30, 0, false, false));
                 }
             }
         }
-
-        playerEntity.getItemCooldownManager().set(this, 20*60);
-
+        playerEntity.getItemCooldownManager().set(this, 20*20);
         return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
-
     }
+
+    @Override
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.abyss.tooltip"));
+    }
+
 }
+

@@ -26,34 +26,32 @@ public class NoviluniumStaff extends Item {
     }
 
     @Override
-    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-
-        tooltip.add(Text.translatable("item.reborn12k.novilunium.tooltip"));
-    }
-
-    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
-    
+
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
 
-        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_ILLUSIONER_PREPARE_BLINDNESS, SoundCategory.PLAYERS, 0.5f, 1.0f);
-        playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 20*60, 0, false, false));
-        playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 20*60));
 
-        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 40, 40, 40))) {
+        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_ILLUSIONER_PREPARE_BLINDNESS, SoundCategory.PLAYERS, 0.5f, 1f);
+        playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 20*30, 0, false, false));
+        playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 20*30));
+
+        for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 30, 30, 30))) {
             if (e instanceof MobEntity mobEntity) {
-                if (playerEntity.distanceTo(mobEntity) < 40) {
-                    mobEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 20*60));
+                if (playerEntity.distanceTo(mobEntity) < 30) {
+                    mobEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 20*30));
                 }
             }
         }
-
-        playerEntity.getItemCooldownManager().set(this, 20*60);
-
+        playerEntity.getItemCooldownManager().set(this, 20*20);
         return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
-
     }
+
+    @Override
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.novilunium.tooltip"));
+    }
+
 }
