@@ -22,14 +22,14 @@ public class PrayerCandle extends TrinketItem implements Trinket {
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.LIGHT_PENDANT);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.LIGHT_SIGIL);
     }
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
         if (!world.isClient) {
-            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.LIGHT_PENDANT)) {
+            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.LIGHT_SIGIL)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }

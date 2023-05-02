@@ -27,14 +27,14 @@ public class BasiliskFang extends TrinketItem implements Trinket {
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.DARK_PENDANT);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.DARK_SIGIL);
     }
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         World world = entity.world;
         if (!world.isClient) {
-            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.DARK_PENDANT)) {
+            if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.DARK_SIGIL)) {
                 stack.decrement(1);
                 entity.dropItem(this);
             }
