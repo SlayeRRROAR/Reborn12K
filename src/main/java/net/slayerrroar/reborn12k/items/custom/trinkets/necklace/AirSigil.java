@@ -17,8 +17,9 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.UUID;
 
-public class FirePendant extends TrinketItem implements Trinket {
-    public FirePendant(Settings settings) {
+public class AirSigil extends TrinketItem implements Trinket {
+
+    public AirSigil(Settings settings) {
         super(settings);
     }
 
@@ -45,8 +46,8 @@ public class FirePendant extends TrinketItem implements Trinket {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("item.reborn12k.necklace.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.fire_pendant.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.fire_pendant.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.air_sigil.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.air_sigil.tooltip2"));
         tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 }
