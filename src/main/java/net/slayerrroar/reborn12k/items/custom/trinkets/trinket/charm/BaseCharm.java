@@ -10,8 +10,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class MinorCharm extends TrinketItem implements Trinket {
-    public MinorCharm(Settings settings) {
+public class BaseCharm extends TrinketItem implements Trinket {
+    public BaseCharm(Settings settings) {
         super(settings);
     }
 

@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.items.custom.trinkets.trinket.claw;
+package net.slayerrroar.reborn12k.items.custom.trinkets.trinket.medallion;
 
 import com.google.common.collect.Multimap;
 import dev.emi.trinkets.api.SlotReference;
@@ -17,14 +17,15 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.UUID;
 
-public class MinorClaw extends TrinketItem implements Trinket {
-    public MinorClaw(Settings settings) {
+public class BaseMedallion extends TrinketItem implements Trinket {
+
+    public BaseMedallion(Settings settings) {
         super(settings);
     }
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(uuid, "generic.attack_damage", 0.2, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(uuid, "generic.attack_speed", 0.2, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         return modifiers;
     }
 
@@ -33,5 +34,5 @@ public class MinorClaw extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.rare.tooltip"));
     }
-    
+
 }
