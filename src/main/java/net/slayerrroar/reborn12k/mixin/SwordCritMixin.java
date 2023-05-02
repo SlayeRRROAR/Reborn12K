@@ -20,11 +20,8 @@ import java.util.Random;
 @Mixin(SwordItem.class)
 public class SwordCritMixin {
 
-    private boolean hasVagueLuck(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.VAGUE_LUCKY_CHARM);
-    }
     private boolean hasMinorLuck(LivingEntity entity) {
-        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.MINOR_LUCKY_CHARM);
+        return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.LUCKY_CHARM);
     }
     private boolean hasIndelibleLuck(LivingEntity entity) {
         return TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.INDELIBLE_LUCKY_CHARM);
@@ -45,13 +42,12 @@ public class SwordCritMixin {
         int upperbound = 101;
         int int_random = rand.nextInt(upperbound);
 
-        int vagueLuck = hasVagueLuck(attacker) ? 10 : 0;
-        int minorLuck = hasMinorLuck(attacker) ? 15 : 0;
-        int indelibleLuck = hasIndelibleLuck(attacker) ? 20 : 0;
-        int greaterLuck = hasGreaterLuck(attacker) ? 25 : 0;
-        int radiant = hasRadiant(attacker) ? 30 : 0;
+        int minorLuck = hasMinorLuck(attacker) ? 5 : 0;
+        int indelibleLuck = hasIndelibleLuck(attacker) ? 10 : 0;
+        int greaterLuck = hasGreaterLuck(attacker) ? 20 : 0;
+        int radiant = hasRadiant(attacker) ? 25 : 0;
 
-        int critChance = int_random + vagueLuck + minorLuck + indelibleLuck + greaterLuck + radiant;
+        int critChance = int_random + minorLuck + indelibleLuck + greaterLuck + radiant;
 
         if (critChance > 95) {
             float critBonus = 1.5f;

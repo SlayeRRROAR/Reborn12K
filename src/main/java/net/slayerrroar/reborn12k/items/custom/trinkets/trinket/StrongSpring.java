@@ -20,7 +20,7 @@ public class StrongSpring extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.strong_spring.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.strong_spring.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.epic.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.common.tooltip"));
     }
 
 }

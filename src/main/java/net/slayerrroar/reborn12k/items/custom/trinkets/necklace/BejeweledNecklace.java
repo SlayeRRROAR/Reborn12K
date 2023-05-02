@@ -25,7 +25,7 @@ public class BejeweledNecklace extends TrinketItem implements Trinket {
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity.getHealth() >= 20f) {
-            entity.setHealth(entity.getHealth() + 8f);
+            entity.setHealth(entity.getHealth() + 6f);
         }
     }
 
@@ -38,7 +38,7 @@ public class BejeweledNecklace extends TrinketItem implements Trinket {
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 8, EntityAttributeModifier.Operation.ADDITION));
+        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 6, EntityAttributeModifier.Operation.ADDITION));
         return modifiers;
     }
 
