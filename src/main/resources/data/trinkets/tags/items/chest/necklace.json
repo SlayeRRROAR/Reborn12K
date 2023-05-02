@@ -1,16 +1,15 @@
 {
   "replace": false,
   "values": [
-    "reborn12k:old_necklace",
     "reborn12k:golden_necklace",
     "reborn12k:bejeweled_necklace",
     "reborn12k:heart_pendant",
 
-    "reborn12k:air_pendant",
-    "reborn12k:earth_pendant",
-    "reborn12k:water_pendant",
-    "reborn12k:fire_pendant",
-    "reborn12k:light_pendant",
-    "reborn12k:dark_pendant"
+    "reborn12k:air_sigil",
+    "reborn12k:earth_sigil",
+    "reborn12k:water_sigil",
+    "reborn12k:fire_sigil",
+    "reborn12k:light_sigil",
+    "reborn12k:dark_sigil"
   ]
 }
