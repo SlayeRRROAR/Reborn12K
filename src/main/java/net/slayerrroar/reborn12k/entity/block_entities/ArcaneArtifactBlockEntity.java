@@ -17,6 +17,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.slayerrroar.reborn12k.blocks.custom.block_entities.ArcaneArtifactBlock;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.recipe.recipe_types.ArcaneArtifactRecipe;
 import net.slayerrroar.reborn12k.screen.arcane_artifact.ArcaneArtifactScreenHandler;
@@ -33,7 +34,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
             DefaultedList.ofSize(2, ItemStack.EMPTY);
 
     protected final PropertyDelegate propertyDelegate;
-    private int progress= 0;
+    private int progress = 0;
     private int maxProgress = 200;
 
     public ArcaneArtifactBlockEntity(BlockPos pos, BlockState state) {
@@ -95,6 +96,9 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
         if (world.isClient()) {
             return;
         }
+
+        state = state.with(ArcaneArtifactBlock.LIT, hasRecipe(entity));
+        world.setBlockState(blockPos, state,3);
 
         if (hasRecipe(entity)) {
             entity.progress++;

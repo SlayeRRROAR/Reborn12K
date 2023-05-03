@@ -17,6 +17,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.slayerrroar.reborn12k.blocks.custom.block_entities.BasicQuarryBlock;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.items.TechnicalItems;
 import net.slayerrroar.reborn12k.recipe.recipe_types.QuarryRecipe;
@@ -34,8 +35,8 @@ public class BasicQuarryBlockEntity extends BlockEntity implements NamedScreenHa
             DefaultedList.ofSize(4, ItemStack.EMPTY);
 
     protected final PropertyDelegate propertyDelegate;
-    private int progress= 0;
-    private int maxProgress = 400;
+    private int progress = 0;
+    private int maxProgress = 320;
 
     public BasicQuarryBlockEntity(BlockPos pos, BlockState state) {
         super(RebornBlockEntities.BASIC_QUARRY, pos, state);
@@ -99,6 +100,11 @@ public class BasicQuarryBlockEntity extends BlockEntity implements NamedScreenHa
         if (world.isClient()) {
             return;
         }
+
+        boolean isCrafting = hasRecipe(entity) && hasFuelInFuelSlot(entity);
+
+        state = state.with(BasicQuarryBlock.LIT, isCrafting);
+        world.setBlockState(blockPos, state,3);
 
         if (hasRecipe(entity) && hasFuelInFuelSlot(entity)) {
             entity.progress++;

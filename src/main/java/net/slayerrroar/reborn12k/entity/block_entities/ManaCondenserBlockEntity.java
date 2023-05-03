@@ -17,6 +17,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.slayerrroar.reborn12k.blocks.custom.block_entities.ManaCondenserBlock;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.recipe.recipe_types.ManaCondenserRecipe;
 import net.slayerrroar.reborn12k.screen.mana_condenser.ManaCondenserScreenHandler;
@@ -33,7 +34,7 @@ public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreen
             DefaultedList.ofSize(2, ItemStack.EMPTY);
 
     protected final PropertyDelegate propertyDelegate;
-    private int progress= 0;
+    private int progress = 0;
     private int maxProgress = 600;
 
     public ManaCondenserBlockEntity(BlockPos pos, BlockState state) {
@@ -95,6 +96,9 @@ public class ManaCondenserBlockEntity extends BlockEntity implements NamedScreen
         if (world.isClient()) {
             return;
         }
+
+        state = state.with(ManaCondenserBlock.LIT, hasRecipe(entity));
+        world.setBlockState(blockPos, state,3);
 
         if (hasRecipe(entity)) {
             entity.progress++;

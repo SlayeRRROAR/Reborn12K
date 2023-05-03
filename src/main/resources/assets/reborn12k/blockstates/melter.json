@@ -1,18 +1,33 @@
 {
   "variants": {
-    "facing=east": {
+    "facing=east,lit=false": {
       "model": "reborn12k:block/melter",
       "y": 90
     },
-    "facing=north": {
+    "facing=east,lit=true": {
+      "model": "reborn12k:block/melter_on",
+      "y": 90
+    },
+    "facing=north,lit=false": {
       "model": "reborn12k:block/melter"
     },
-    "facing=south": {
+    "facing=north,lit=true": {
+      "model": "reborn12k:block/melter_on"
+    },
+    "facing=south,lit=false": {
       "model": "reborn12k:block/melter",
       "y": 180
     },
-    "facing=west": {
+    "facing=south,lit=true": {
+      "model": "reborn12k:block/melter_on",
+      "y": 180
+    },
+    "facing=west,lit=false": {
       "model": "reborn12k:block/melter",
+      "y": 270
+    },
+    "facing=west,lit=true": {
+      "model": "reborn12k:block/melter_on",
       "y": 270
     }
   }

@@ -7,6 +7,7 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.state.StateManager;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.*;
@@ -26,9 +27,11 @@ import java.util.stream.Stream;
 @SuppressWarnings("deprecation")
 public class ManaCondenserBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
+    public static BooleanProperty LIT = AbstractFurnaceBlock.LIT;
 
     public ManaCondenserBlock(Settings settings) {
         super(settings);
+        this.setDefaultState(this.getDefaultState().with(LIT, false));
     }
 
     private static final VoxelShape DEFAULT = Stream.of(
@@ -58,7 +61,7 @@ public class ManaCondenserBlock extends BlockWithEntity implements BlockEntityPr
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+        builder.add(FACING, LIT);
     }
 
     /* BLOCK ENTITY STUFF */

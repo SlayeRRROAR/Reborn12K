@@ -17,6 +17,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.slayerrroar.reborn12k.blocks.custom.block_entities.MineralManufactoryBlock;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.recipe.recipe_types.MineralManufactoryRecipe;
 import net.slayerrroar.reborn12k.screen.mineral_manufactory.MineralManufactoryScreenHandler;
@@ -33,7 +34,7 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
             DefaultedList.ofSize(4, ItemStack.EMPTY);
 
     protected final PropertyDelegate propertyDelegate;
-    private int progress= 0;
+    private int progress = 0;
     private int maxProgress = 160;
 
     public MineralManufactoryBlockEntity(BlockPos pos, BlockState state) {
@@ -94,6 +95,9 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
         if (world.isClient()) {
             return;
         }
+
+        state = state.with(MineralManufactoryBlock.LIT, hasRecipe(entity));
+        world.setBlockState(blockPos, state,3);
 
         if (hasRecipe(entity)) {
             entity.progress++;

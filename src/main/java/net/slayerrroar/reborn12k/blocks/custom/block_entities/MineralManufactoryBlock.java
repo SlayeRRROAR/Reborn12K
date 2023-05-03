@@ -1,18 +1,26 @@
 package net.slayerrroar.reborn12k.blocks.custom.block_entities;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.screen.NamedScreenHandlerFactory;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.entity.block_entities.MineralManufactoryBlockEntity;
@@ -21,9 +29,11 @@ import org.jetbrains.annotations.Nullable;
 @SuppressWarnings("deprecation")
 public class MineralManufactoryBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
+    public static BooleanProperty LIT = AbstractFurnaceBlock.LIT;
 
     public MineralManufactoryBlock(Settings settings) {
         super(settings);
+        this.setDefaultState(this.getDefaultState().with(LIT, false));
     }
 
     @Nullable
@@ -44,7 +54,7 @@ public class MineralManufactoryBlock extends BlockWithEntity implements BlockEnt
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+        builder.add(FACING, LIT);
     }
 
     /* BLOCK ENTITY STUFF */
@@ -76,6 +86,20 @@ public class MineralManufactoryBlock extends BlockWithEntity implements BlockEnt
             }
         }
         return ActionResult.SUCCESS;
+    }
+
+    @Environment(EnvType.CLIENT)
+    @Override
+    public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
+        if (state.get(LIT)) {
+            double x = (double) pos.getX() + 0.5D;
+            double y = pos.getY();
+            double z = (double) pos.getZ() + 0.5D;
+
+            if (random.nextDouble() < 0.1D) {
+                world.playSound(x, y, z, SoundEvents.BLOCK_FURNACE_FIRE_CRACKLE, SoundCategory.BLOCKS, 1.0F, 1.0F, false);
+            }
+        }
     }
 
     @Nullable

@@ -2,9 +2,9 @@
   "parent": "minecraft:block/orientable",
   "credit": "Made with Blockbench",
   "textures": {
-    "1": "reborn12k:block/arcane_artifact_runes_bottom_off",
-    "2": "reborn12k:block/arcane_artifact_runes_top_off",
-    "particle": "reborn12k:block/arcane_artifact_runes_top_off"
+    "1": "reborn12k:block/arcane_artifact_runes_bottom_on",
+    "2": "reborn12k:block/arcane_artifact_runes_top_on",
+    "particle": "reborn12k:block/arcane_artifact_runes_top_on"
   },
   "elements": [
     {

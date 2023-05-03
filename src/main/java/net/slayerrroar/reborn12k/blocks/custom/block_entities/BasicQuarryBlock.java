@@ -8,6 +8,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.state.StateManager;
+import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.*;
@@ -21,9 +22,11 @@ import org.jetbrains.annotations.Nullable;
 @SuppressWarnings("deprecation")
 public class BasicQuarryBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
+    public static BooleanProperty LIT = AbstractFurnaceBlock.LIT;
 
     public BasicQuarryBlock(Settings settings) {
         super(settings);
+        this.setDefaultState(this.getDefaultState().with(LIT, false));
     }
 
     @Nullable
@@ -44,7 +47,7 @@ public class BasicQuarryBlock extends BlockWithEntity implements BlockEntityProv
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+        builder.add(FACING, LIT);
     }
 
     /* BLOCK ENTITY STUFF */

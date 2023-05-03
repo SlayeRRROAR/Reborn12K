@@ -35,10 +35,10 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
             DefaultedList.ofSize(3, ItemStack.EMPTY);
 
     protected final PropertyDelegate propertyDelegate;
-    private int progress= 0;
-    private int maxProgress = 199;
-    private int fuelTime= 0;
-    private int maxFuelTime= 0;
+    private int progress = 0;
+    private int maxProgress = 200;
+    private int fuelTime = 0;
+    private int maxFuelTime = 0;
 
     public CrusherBlockEntity(BlockPos pos, BlockState state) {
         super(RebornBlockEntities.CRUSHER, pos, state);
@@ -115,6 +115,10 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
         if (world.isClient()) {
             return;
         }
+
+        state = state.with(CrusherBlock.LIT, isConsumingFuel(entity));
+        world.setBlockState(blockPos, state,3);
+
         if (isConsumingFuel(entity)) {
             entity.fuelTime--;
         }

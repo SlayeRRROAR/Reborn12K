@@ -18,6 +18,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.slayerrroar.reborn12k.blocks.custom.block_entities.MelterBlock;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.recipe.recipe_types.MelterRecipe;
 import net.slayerrroar.reborn12k.screen.melter.MelterScreenHandler;
@@ -34,10 +35,10 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
             DefaultedList.ofSize(4, ItemStack.EMPTY);
 
     protected final PropertyDelegate propertyDelegate;
-    private int progress= 0;
-    private int maxProgress = 1600;
-    private int fuelTime= 0;
-    private int maxFuelTime= 0;
+    private int progress = 0;
+    private int maxProgress = 199;
+    private int fuelTime = 0;
+    private int maxFuelTime = 0;
 
     public MelterBlockEntity(BlockPos pos, BlockState state) {
         super(RebornBlockEntities.MELTER, pos, state);
@@ -114,6 +115,10 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
         if (world.isClient()) {
             return;
         }
+
+        state = state.with(MelterBlock.LIT, isConsumingFuel(entity));
+        world.setBlockState(blockPos, state,3);
+
         if (isConsumingFuel(entity)) {
             entity.fuelTime--;
         }
