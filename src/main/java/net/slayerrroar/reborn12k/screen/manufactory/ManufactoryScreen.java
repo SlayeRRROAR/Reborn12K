@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.screen.mineral_manufactory;
+package net.slayerrroar.reborn12k.screen.manufactory;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
@@ -9,11 +9,11 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 
-public class MineralManufactoryScreen extends HandledScreen<MineralManufactoryScreenHandler> {
+public class ManufactoryScreen extends HandledScreen<ManufactoryScreenHandler> {
     public static final Identifier TEXTURE = new Identifier
-            (Reborn12K.MOD_ID,"textures/gui/mineral_manufactory_gui.png");
+            (Reborn12K.MOD_ID,"textures/gui/manufactory_gui.png");
 
-    public MineralManufactoryScreen(MineralManufactoryScreenHandler handler, PlayerInventory inventory, Text title) {
+    public ManufactoryScreen(ManufactoryScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }
 

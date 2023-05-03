@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.screen.mineral_manufactory;
+package net.slayerrroar.reborn12k.screen.manufactory;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -15,16 +15,16 @@ import net.slayerrroar.reborn12k.screen.slots.CustomReagentSlot;
 import net.slayerrroar.reborn12k.screen.slots.CustomResultSlot;
 import net.slayerrroar.reborn12k.screen.slots.CustomRockSlot;
 
-public class MineralManufactoryScreenHandler extends ScreenHandler {
+public class ManufactoryScreenHandler extends ScreenHandler {
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
 
-    public MineralManufactoryScreenHandler(int syncId, PlayerInventory inventory) {
+    public ManufactoryScreenHandler(int syncId, PlayerInventory inventory) {
         this(syncId, inventory, new SimpleInventory(4), new ArrayPropertyDelegate(2));
     }
 
-    public MineralManufactoryScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
-        super(RebornScreenRegistry.MINERAL_MANUFACTORY_SCREEN_HANDLER, syncId);
+    public ManufactoryScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
+        super(RebornScreenRegistry.MANUFACTORY_SCREEN_HANDLER, syncId);
         checkSize(inventory, 4);
         this.inventory = inventory;
         inventory.onOpen(playerInventory.player);

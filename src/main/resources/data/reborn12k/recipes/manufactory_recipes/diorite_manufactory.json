@@ -1,5 +1,5 @@
 {
-  "type": "reborn12k:mineral_manufactory",
+  "type": "reborn12k:manufactory",
   "ingredients": [
     {
       "item": "minecraft:lava_bucket"
@@ -8,10 +8,10 @@
       "item": "minecraft:water_bucket"
     },
     {
-      "item": "minecraft:andesite"
+      "item": "minecraft:diorite"
     }
   ],
   "output": {
-    "item": "minecraft:andesite"
+    "item": "minecraft:diorite"
   }
 }

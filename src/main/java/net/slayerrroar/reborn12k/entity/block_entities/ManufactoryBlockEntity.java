@@ -17,10 +17,10 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.custom.block_entities.MineralManufactoryBlock;
+import net.slayerrroar.reborn12k.blocks.custom.block_entities.ManufactoryBlock;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
-import net.slayerrroar.reborn12k.recipe.recipe_types.MineralManufactoryRecipe;
-import net.slayerrroar.reborn12k.screen.mineral_manufactory.MineralManufactoryScreenHandler;
+import net.slayerrroar.reborn12k.recipe.recipe_types.ManufactoryRecipe;
+import net.slayerrroar.reborn12k.screen.manufactory.ManufactoryScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
@@ -29,7 +29,7 @@ import java.util.Optional;
 
 @SuppressWarnings({"OptionalGetWithoutIsPresent", "deprecation"})
 
-public class MineralManufactoryBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
+public class ManufactoryBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
             DefaultedList.ofSize(4, ItemStack.EMPTY);
 
@@ -37,22 +37,22 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
     private int progress = 0;
     private int maxProgress = 160;
 
-    public MineralManufactoryBlockEntity(BlockPos pos, BlockState state) {
-        super(RebornBlockEntities.MINERAL_MANUFACTORY, pos, state);
+    public ManufactoryBlockEntity(BlockPos pos, BlockState state) {
+        super(RebornBlockEntities.MANUFACTORY, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {
                 return switch (index) {
-                    case 0 -> MineralManufactoryBlockEntity.this.progress;
-                    case 1 -> MineralManufactoryBlockEntity.this.maxProgress;
+                    case 0 -> ManufactoryBlockEntity.this.progress;
+                    case 1 -> ManufactoryBlockEntity.this.maxProgress;
                     default -> 0;
                 };
             }
 
             public void set(int index, int value) {
                 switch (index) {
-                    case 0 -> MineralManufactoryBlockEntity.this.progress = value;
-                    case 1 -> MineralManufactoryBlockEntity.this.maxProgress = value;
+                    case 0 -> ManufactoryBlockEntity.this.progress = value;
+                    case 1 -> ManufactoryBlockEntity.this.maxProgress = value;
                 }
             }
 
@@ -68,35 +68,35 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
     }
     @Override
     public Text getDisplayName() {
-        return Text.translatable("block.reborn12k.mineral_manufactory");
+        return Text.translatable("block.reborn12k.manufactory");
     }
 
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory inv, PlayerEntity player) {
-        return new MineralManufactoryScreenHandler(syncId, inv, this, this.propertyDelegate);
+        return new ManufactoryScreenHandler(syncId, inv, this, this.propertyDelegate);
     }
 
     @Override
     protected void writeNbt(NbtCompound nbt) {
         Inventories.writeNbt(nbt, inventory);
         super.writeNbt(nbt);
-        nbt.putInt("mineral_manufactory.progress", progress);
+        nbt.putInt("manufactory.progress", progress);
     }
 
     @Override
     public void readNbt(NbtCompound nbt) {
         Inventories.readNbt(nbt,inventory);
         super.readNbt(nbt);
-        progress = nbt.getInt("mineral_manufactory.progress");
+        progress = nbt.getInt("manufactory.progress");
     }
 
-    public static void tick(World world, BlockPos blockPos, BlockState state, MineralManufactoryBlockEntity entity) {
+    public static void tick(World world, BlockPos blockPos, BlockState state, ManufactoryBlockEntity entity) {
         if (world.isClient()) {
             return;
         }
 
-        state = state.with(MineralManufactoryBlock.LIT, hasRecipe(entity));
+        state = state.with(ManufactoryBlock.LIT, hasRecipe(entity));
         world.setBlockState(blockPos, state,3);
 
         if (hasRecipe(entity)) {
@@ -115,14 +115,14 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
         this.progress = 0;
     }
 
-    private static void craftItem(MineralManufactoryBlockEntity entity) {
+    private static void craftItem(ManufactoryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
         for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<MineralManufactoryRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
-                .getFirstMatch(MineralManufactoryRecipe.Type.INSTANCE, inventory, entity.getWorld());
+        Optional<ManufactoryRecipe> recipe = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
+                .getFirstMatch(ManufactoryRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         if (hasRecipe(entity)) {
 
@@ -133,14 +133,14 @@ public class MineralManufactoryBlockEntity extends BlockEntity implements NamedS
         }
     }
 
-    private static boolean hasRecipe(MineralManufactoryBlockEntity entity) {
+    private static boolean hasRecipe(ManufactoryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
         for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
-        Optional<MineralManufactoryRecipe> match = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
-                .getFirstMatch(MineralManufactoryRecipe.Type.INSTANCE, inventory, entity.getWorld());
+        Optional<ManufactoryRecipe> match = Objects.requireNonNull(entity.getWorld()).getRecipeManager()
+                .getFirstMatch(ManufactoryRecipe.Type.INSTANCE, inventory, entity.getWorld());
 
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
                 && canInsertItemIntoOutputSlot(inventory, match.get().getOutput().getItem());

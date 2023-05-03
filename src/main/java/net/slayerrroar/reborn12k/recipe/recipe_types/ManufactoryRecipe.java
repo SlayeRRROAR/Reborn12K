@@ -12,13 +12,13 @@ import net.minecraft.util.JsonHelper;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 
-public class MineralManufactoryRecipe implements Recipe<SimpleInventory> {
+public class ManufactoryRecipe implements Recipe<SimpleInventory> {
 
     private final Identifier id;
     private final ItemStack output;
     private final DefaultedList<Ingredient> recipeItems;
 
-    public MineralManufactoryRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems) {
+    public ManufactoryRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems) {
         this.id = id;
         this.output = output;
         this.recipeItems = recipeItems;
@@ -73,18 +73,18 @@ public class MineralManufactoryRecipe implements Recipe<SimpleInventory> {
         return Type.INSTANCE;
     }
 
-    public static class Type implements RecipeType<MineralManufactoryRecipe> {
+    public static class Type implements RecipeType<ManufactoryRecipe> {
         private Type() { }
         public static final Type INSTANCE = new Type();
-        public static final String ID = "mineral_manufactory";
+        public static final String ID = "manufactory";
     }
 
-    public static class Serializer implements RecipeSerializer<MineralManufactoryRecipe> {
+    public static class Serializer implements RecipeSerializer<ManufactoryRecipe> {
         public static final Serializer INSTANCE = new Serializer();
-        public static final String ID = "mineral_manufactory";
+        public static final String ID = "manufactory";
 
         @Override
-        public MineralManufactoryRecipe read(Identifier id, JsonObject json) {
+        public ManufactoryRecipe read(Identifier id, JsonObject json) {
             ItemStack output = ShapedRecipe.outputFromJson(JsonHelper.getObject(json, "output"));
 
             JsonArray ingredients = JsonHelper.getArray(json, "ingredients");
@@ -94,11 +94,11 @@ public class MineralManufactoryRecipe implements Recipe<SimpleInventory> {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new MineralManufactoryRecipe(id, output, inputs);
+            return new ManufactoryRecipe(id, output, inputs);
         }
 
         @Override
-        public MineralManufactoryRecipe read(Identifier id, PacketByteBuf buf) {
+        public ManufactoryRecipe read(Identifier id, PacketByteBuf buf) {
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
@@ -106,11 +106,11 @@ public class MineralManufactoryRecipe implements Recipe<SimpleInventory> {
             }
 
             ItemStack output = buf.readItemStack();
-            return new MineralManufactoryRecipe(id, output, inputs);
+            return new ManufactoryRecipe(id, output, inputs);
         }
 
         @Override
-        public void write(PacketByteBuf buf, MineralManufactoryRecipe recipe) {
+        public void write(PacketByteBuf buf, ManufactoryRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
             for (Ingredient ing : recipe.getIngredients()) {
                 ing.write(buf);

@@ -1,5 +1,5 @@
 {
-  "type": "reborn12k:mineral_manufactory",
+  "type": "reborn12k:manufactory",
   "ingredients": [
     {
       "item": "minecraft:lava_bucket"
@@ -8,10 +8,10 @@
       "item": "reborn12k:energized_glowstone_bucket"
     },
     {
-      "item": "minecraft:blackstone"
+      "item": "minecraft:netherrack"
     }
   ],
   "output": {
-    "item": "minecraft:blackstone"
+    "item": "minecraft:netherrack"
   }
 }
