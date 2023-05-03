@@ -1,28 +1,23 @@
 {
   "replace": false,
   "values": [
-    "reborn12k:vague_band_of_fortitude",
-    "reborn12k:minor_band_of_fortitude",
+    "reborn12k:band_of_fortitude",
     "reborn12k:indelible_band_of_fortitude",
     "reborn12k:greater_band_of_fortitude",
 
-    "reborn12k:vague_bloody_claw",
-    "reborn12k:minor_bloody_claw",
+    "reborn12k:bloody_claw",
     "reborn12k:indelible_bloody_claw",
     "reborn12k:greater_bloody_claw",
 
-    "reborn12k:vague_medallion",
-    "reborn12k:minor_medallion",
+    "reborn12k:medallion",
     "reborn12k:indelible_medallion",
     "reborn12k:greater_medallion",
 
-    "reborn12k:vague_frenzy_tonic",
-    "reborn12k:minor_frenzy_tonic",
+    "reborn12k:frenzy_tonic",
     "reborn12k:indelible_frenzy_tonic",
     "reborn12k:greater_frenzy_tonic",
 
-    "reborn12k:vague_lucky_charm",
-    "reborn12k:minor_lucky_charm",
+    "reborn12k:lucky_charm",
     "reborn12k:indelible_lucky_charm",
     "reborn12k:greater_lucky_charm",
 
@@ -32,11 +27,10 @@
     "reborn12k:bat_wings",
 
     "reborn12k:gold_pouch",
-    "reborn12k:weak_spring",
     "reborn12k:strong_spring",
+    "reborn12k:enchanted_spring",
     "reborn12k:bloody_rose",
     "reborn12k:endless_quiver",
-    "reborn12k:enchanted_spring",
     "reborn12k:magnifying_glass",
     "reborn12k:phoenix_plume",
 
