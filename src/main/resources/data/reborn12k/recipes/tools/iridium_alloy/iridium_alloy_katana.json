@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:advanced_alloy_katana"
+    },
+    "addition": {
+        "tag": "c:iridium_alloy_ingots"
+    },
+    "result": {
+        "item": "reborn12k:iridium_alloy_katana"
+    }
+}

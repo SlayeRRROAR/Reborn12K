@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  A",
+        " A ",
+        "B  "
+    ],
+    "key": {
+        "A": {
+            "tag": "minecraft:stone_tool_materials"
+        },
+        "B": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "reborn12k:stone_katana",
+        "count": 1
+    }
+}

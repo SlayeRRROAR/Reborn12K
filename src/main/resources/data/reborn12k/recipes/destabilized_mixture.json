@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:redstone_block"
+        },
+        {
+            "item": "minecraft:redstone"
+        },
+        {
+            "tag": "c:raw_copper_ores"
+        },
+        {
+            "tag": "c:raw_copper_ores"
+        },
+        {
+            "tag": "c:raw_copper_ores"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:destabilized_mixture",
+        "count": 1
+    }
+}
