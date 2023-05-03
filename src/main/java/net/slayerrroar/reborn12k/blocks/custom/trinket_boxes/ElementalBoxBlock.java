@@ -23,7 +23,6 @@ import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.items.TrinketItems;
 import net.slayerrroar.reborn12k.util.StrongboxUtil;
 
-import java.util.Random;
 import java.util.stream.Stream;
 
 @SuppressWarnings("deprecation")
@@ -55,34 +54,8 @@ public class ElementalBoxBlock extends Block {
     }
 
     private void randomLootElement(PlayerEntity player) {
-        Random elementRand = new Random();
-        int upperbound = 6;
-        int element_int = elementRand.nextInt(upperbound);
-
-        if (element_int == 0) {
-            StrongboxUtil.randomAir(player);
-            player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.air"), true);
-        }
-        if (element_int == 1) {
-            StrongboxUtil.randomEarth(player);
-            player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.earth"), true);
-        }
-        if (element_int == 2) {
-            StrongboxUtil.randomWater(player);
-            player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.water"), true);
-        }
-        if (element_int == 3) {
-            StrongboxUtil.randomFire(player);
-            player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.fire"), true);
-        }
-        if (element_int == 4) {
-            StrongboxUtil.randomLight(player);
-            player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.light"), true);
-        }
-        if (element_int == 5) {
-            StrongboxUtil.randomDark(player);
-            player.sendMessage(Text.translatable("item.reborn12k.elemental_strongbox.dark"), true);
-        }
+        StrongboxUtil.randomElemental(player);
+        player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.elemental"), true);
     }
 
     private static final VoxelShape SHAPE_N = Stream.of(
