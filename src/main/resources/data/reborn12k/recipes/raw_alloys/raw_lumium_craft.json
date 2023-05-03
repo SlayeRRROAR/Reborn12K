@@ -2,19 +2,10 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_tin_ores"
-        },
-        {
-            "tag":  "c:raw_tin_ores"
-        },
-        {
-            "tag":  "c:raw_tin_ores"
-        },
-        {
             "tag": "c:raw_silver_ores"
         },
         {
-            "tag": "sand"
+            "tag":  "sand"
         },
         {
             "item": "reborn12k:energized_glowstone_bucket"

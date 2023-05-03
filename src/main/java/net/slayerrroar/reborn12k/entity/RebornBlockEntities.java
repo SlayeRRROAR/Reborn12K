@@ -15,9 +15,7 @@ public class RebornBlockEntities {
     public static BlockEntityType<ManaCondenserBlockEntity> MANA_CONDENSER;
 
     public static BlockEntityType<CrusherBlockEntity> CRUSHER;
-
-    public static BlockEntityType<MineralManufactoryBlockEntity> MINERAL_MANUFACTORY;
-
+    public static BlockEntityType<ManufactoryBlockEntity> MANUFACTORY;
     public static BlockEntityType<MelterBlockEntity> MELTER;
 
     public static BlockEntityType<BasicQuarryBlockEntity> BASIC_QUARRY;
@@ -43,10 +41,10 @@ public class RebornBlockEntities {
                 FabricBlockEntityTypeBuilder.create(CrusherBlockEntity::new,
                         AdvancedBlocks.CRUSHER).build(null));
 
-        MINERAL_MANUFACTORY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(Reborn12K.MOD_ID, "mineral_manufactory"),
-                FabricBlockEntityTypeBuilder.create(MineralManufactoryBlockEntity::new,
-                        AdvancedBlocks.MINERAL_MANUFACTORY).build(null));
+        MANUFACTORY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                new Identifier(Reborn12K.MOD_ID, "manufactory"),
+                FabricBlockEntityTypeBuilder.create(ManufactoryBlockEntity::new,
+                        AdvancedBlocks.MANUFACTORY).build(null));
 
         MELTER = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 new Identifier(Reborn12K.MOD_ID, "melter"),
