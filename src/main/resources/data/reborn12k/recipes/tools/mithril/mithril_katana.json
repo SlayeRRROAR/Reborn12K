@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:orichalcum_katana"
+    },
+    "addition": {
+       "item": "reborn12k:mithril_ingot"
+    },
+    "result": {
+        "item": "reborn12k:mithril_katana"
+    }
+}

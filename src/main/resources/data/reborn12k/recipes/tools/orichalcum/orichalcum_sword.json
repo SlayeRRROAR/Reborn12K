@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:magisteel_sword"
+    },
+    "addition": {
+       "item": "reborn12k:orichalcum_ingot"
+    },
+    "result": {
+        "item": "reborn12k:orichalcum_sword"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:steel_sword"
+    },
+    "addition": {
+       "item": "reborn12k:magisteel_ingot"
+    },
+    "result": {
+        "item": "reborn12k:magisteel_sword"
+    }
+}

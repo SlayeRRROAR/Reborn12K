@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "reborn12k:orichalcum_ingot"
+    },
+    "B": {
+      "item": "reborn12k:manaweave"
+    },
+    "C": {
+      "item": "reborn12k:rune_of_strength"
+    }
+  },
+  "result": {
+    "item": "reborn12k:mithril_ingot",
+    "count": 1
+  },
+  "group": "mithril_ingot"
+}
