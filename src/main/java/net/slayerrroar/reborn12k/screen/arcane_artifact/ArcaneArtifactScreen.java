@@ -34,7 +34,7 @@ public class ArcaneArtifactScreen extends HandledScreen<ArcaneArtifactScreenHand
         drawTexture(matrices, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
         if (handler.isCrafting()) {
-            drawTexture(matrices, x + 103, y + 33, 176, 0, 8, handler.getScaledProgress());
+            drawTexture(matrices, x + 65, y + 34, 176, 0, handler.getScaledProgress(), 17);
         }
 
     }
