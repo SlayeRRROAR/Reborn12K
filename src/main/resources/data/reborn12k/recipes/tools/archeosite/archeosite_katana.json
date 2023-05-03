@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:netherite_katana"
+    },
+    "addition": {
+        "tag": "c:archeosite_ingots"
+    },
+    "result": {
+        "item": "reborn12k:archeosite_katana"
+    }
+}

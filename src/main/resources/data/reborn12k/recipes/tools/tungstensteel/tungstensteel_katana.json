@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "reborn12k:steel_katana"
+    },
+    "addition": {
+        "tag": "c:tungstensteel_ingots"
+    },
+    "result": {
+        "item": "reborn12k:tungstensteel_katana"
+    }
+}
