@@ -43,7 +43,7 @@ public class AdvancedBlocks {
     public static final Block MANA_CONDENSER = registerBlock("mana_condenser", new ManaCondenserBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
 
     public static final Block CRUSHER = registerBlock("crusher", new CrusherBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8f).resistance(20f)), ItemGroupUtil.REBORN12K);
-    public static final Block MINERAL_MANUFACTORY = registerBlock("mineral_manufactory", new MineralManufactoryBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8f).resistance(20f)), ItemGroupUtil.REBORN12K);
+    public static final Block MANUFACTORY = registerBlock("manufactory", new ManufactoryBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8f).resistance(20f)), ItemGroupUtil.REBORN12K);
     public static final Block MELTER = registerBlock("melter", new MelterBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8f).resistance(20f)), ItemGroupUtil.REBORN12K);
 
     public static final Block BASIC_LASER_QUARRY = registerBlock("basic_laser_quarry", new BasicQuarryBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12f).resistance(200f)), ItemGroupUtil.REBORN12K);

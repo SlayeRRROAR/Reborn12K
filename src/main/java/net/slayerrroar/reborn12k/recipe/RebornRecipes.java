@@ -27,10 +27,10 @@ public class RebornRecipes {
         Registry.register(Registries.RECIPE_TYPE, new Identifier(Reborn12K.MOD_ID, CrusherRecipe.Type.ID),
                 CrusherRecipe.Type.INSTANCE);
 
-        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(Reborn12K.MOD_ID, MineralManufactoryRecipe.Serializer.ID),
-                MineralManufactoryRecipe.Serializer.INSTANCE);
-        Registry.register(Registries.RECIPE_TYPE, new Identifier(Reborn12K.MOD_ID, MineralManufactoryRecipe.Type.ID),
-                MineralManufactoryRecipe.Type.INSTANCE);
+        Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(Reborn12K.MOD_ID, ManufactoryRecipe.Serializer.ID),
+                ManufactoryRecipe.Serializer.INSTANCE);
+        Registry.register(Registries.RECIPE_TYPE, new Identifier(Reborn12K.MOD_ID, ManufactoryRecipe.Type.ID),
+                ManufactoryRecipe.Type.INSTANCE);
 
         Registry.register(Registries.RECIPE_SERIALIZER, new Identifier(Reborn12K.MOD_ID, MelterRecipe.Serializer.ID),
                 MelterRecipe.Serializer.INSTANCE);
