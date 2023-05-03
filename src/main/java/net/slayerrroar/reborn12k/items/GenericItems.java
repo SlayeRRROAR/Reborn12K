@@ -156,8 +156,7 @@ public class GenericItems {
 
     public static final Item HAMMER = registerItem("hammer", new Item(new FabricItemSettings().recipeRemainder(GenericItems.HAMMER).maxCount(1)));
 
-    public static final Item CRUSHING_WHEEL = registerItem("crushing_wheel", new Item(new FabricItemSettings()));
-
+    public static final Item ENDER_DUST = registerItem("ender_dust", new Item(new FabricItemSettings()));
     public static final Item CASING_MK237 = registerItem("casing_mk237", new Item(new FabricItemSettings()));
     public static final Item CERAMITE_PLATE = registerItem("ceramite_plate", new Item(new FabricItemSettings()));
 
@@ -266,8 +265,8 @@ public class GenericItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, HEART_OF_DARKNESS);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, HAMMER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CRUSHING_WHEEL);
 
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDER_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, CASING_MK237);
         addToItemGroup(ItemGroupUtil.REBORN12K, CERAMITE_PLATE);
     }

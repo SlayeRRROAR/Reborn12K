@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "reborn12k:item/crushing_wheel"
+    "layer0": "reborn12k:item/ender_dust"
   }
 }

@@ -323,6 +323,7 @@ public class RebornTagsUtil {
 
         public static final TagKey<Item> MANATITE_ORES = createCommonTag("manatite_ores");
 
+        public static final TagKey<Item> ENDER_PEARL_DUST = createCommonTag("ender_pearl_dust");
 
 
         public static final TagKey<Item> ASH_LOGS = createTag("ash_logs");
