@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:glowstone_dust"
+        },
+        {
+            "item": "minecraft:glowstone_dust"
+        },
+        {
+            "item": "minecraft:glowstone_dust"
+        },
+        {
+            "item": "minecraft:glowstone_dust"
+        },
+        {
+            "tag": "c:raw_tin_ores"
+        },
+        {
+            "tag": "c:raw_tin_ores"
+        },
+        {
+            "tag": "c:raw_tin_ores"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:energized_mixture",
+        "count": 1
+    }
+}

@@ -10,7 +10,7 @@
             "tag": "c:raw_cobalt_ores"
         },
         "B": {
-            "tag": "c:raw_platinum_ores"
+            "tag": "c:raw_osmium_ores"
         },
         "C": {
             "item": "minecraft:netherite_ingot"

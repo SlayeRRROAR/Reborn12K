@@ -2,15 +2,6 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "minecraft:raw_copper"
-        },
-        {
-            "item": "minecraft:raw_copper"
-        },
-        {
-            "item": "minecraft:raw_copper"
-        },
-        {
             "tag": "c:raw_silver_ores"
         },
         {

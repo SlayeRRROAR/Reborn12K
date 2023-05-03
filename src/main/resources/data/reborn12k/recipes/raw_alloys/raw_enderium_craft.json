@@ -2,19 +2,10 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_lead_ores"
-        },
-        {
-            "tag": "c:raw_lead_ores"
-        },
-        {
-            "tag": "c:raw_lead_ores"
+            "tag": "c:raw_lumium_ores"
         },
         {
             "tag": "c:raw_platinum_ores"
-        },
-        {
-            "tag": "sand"
         },
         {
             "item": "reborn12k:resonant_ender_bucket"

@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:ender_pearl_dust"
+        },
+        {
+            "tag": "c:ender_pearl_dust"
+        },
+        {
+            "tag": "c:ender_pearl_dust"
+        },
+        {
+            "tag": "c:ender_pearl_dust"
+        },
+        {
+            "tag": "c:raw_lead_ores"
+        },
+        {
+            "tag": "c:raw_lead_ores"
+        },
+        {
+            "tag": "c:raw_lead_ores"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:resonant_mixture",
+        "count": 1
+    }
+}
