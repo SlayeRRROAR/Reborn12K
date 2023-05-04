@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:raw_advanced_alloy_block"
+        "reborn12k:into_blocks/raw/raw_advanced_alloy_block"
       ]
     },
     "criteria": {

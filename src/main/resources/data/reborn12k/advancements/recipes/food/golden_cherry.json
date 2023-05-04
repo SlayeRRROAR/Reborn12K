@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "reborn12k:golden_cherry"
+      "reborn12k:food/golden_cherry"
     ]
   },
   "criteria": {

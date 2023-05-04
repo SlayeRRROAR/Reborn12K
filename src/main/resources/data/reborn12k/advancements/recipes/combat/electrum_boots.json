@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:electrum_boots"
+        "reborn12k:armors/electrum/electrum_boots"
       ]
     },
     "criteria": {

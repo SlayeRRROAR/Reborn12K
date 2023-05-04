@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:into_blocks/vanadium_block"
+      ]
+    },
+    "criteria": {
+      "has_vanadium": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:vanadium_ingots"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:vanadium_block"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_vanadium",
+        "has_the_recipe"
+      ]
+    ]
+  }

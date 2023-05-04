@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:magic/manaweave"
+      ]
+    },
+    "criteria": {
+      "has_wool": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "wool"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:manaweave"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_wool",
+        "has_the_recipe"
+      ]
+    ]
+  }

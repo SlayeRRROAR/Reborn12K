@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:cobalt_block"
+        "reborn12k:into_blocks/cobalt_block"
       ]
     },
     "criteria": {

@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:titanium_sword"
+        "reborn12k:tools/titanium/titanium_sword"
       ]
     },
     "criteria": {

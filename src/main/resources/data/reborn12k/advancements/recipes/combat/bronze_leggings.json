@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:bronze_leggings"
+        "reborn12k:armors/bronze/bronze_leggings"
       ]
     },
     "criteria": {

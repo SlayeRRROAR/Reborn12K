@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:ruby_block"
+        "reborn12k:into_blocks/ruby_block"
       ]
     },
     "criteria": {

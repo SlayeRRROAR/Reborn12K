@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:titanium_helmet"
+        "reborn12k:armors/titanium/titanium_helmet"
       ]
     },
     "criteria": {

@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:electrum_hoe"
+        "reborn12k:tools/electrum/electrum_hoe"
       ]
     },
     "criteria": {

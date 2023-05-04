@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:enchanted_golden_banana"
+        "reborn12k:food/enchanted_golden_banana"
       ]
     },
     "criteria": {

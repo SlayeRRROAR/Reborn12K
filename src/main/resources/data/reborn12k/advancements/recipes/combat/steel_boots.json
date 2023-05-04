@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:steel_boots"
+        "reborn12k:armors/steel/steel_boots"
       ]
     },
     "criteria": {

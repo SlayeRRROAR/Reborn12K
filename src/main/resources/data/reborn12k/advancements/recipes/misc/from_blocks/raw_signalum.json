@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:from_blocks/raw/raw_signalum"
+      ]
+    },
+    "criteria": {
+      "has_raw_signalum_block": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:raw_signalum_blocks"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:raw_signalum"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_raw_signalum_block",
+        "has_the_recipe"
+      ]
+    ]
+  }

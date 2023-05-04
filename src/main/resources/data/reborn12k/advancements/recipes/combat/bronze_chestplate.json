@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:bronze_chestplate"
+        "reborn12k:armors/bronze/bronze_chestplate"
       ]
     },
     "criteria": {

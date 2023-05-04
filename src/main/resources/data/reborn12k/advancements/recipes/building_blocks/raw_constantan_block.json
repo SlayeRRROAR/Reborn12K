@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:raw_constantan_block"
+        "reborn12k:into_blocks/raw/raw_constantan_block"
       ]
     },
     "criteria": {

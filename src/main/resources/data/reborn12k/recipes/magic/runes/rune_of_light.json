@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "ABA",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:blank_rune"
+        },
+        "B": {
+            "item": "reborn12k:sunstone"
+        }
+    },
+    "result": {
+        "item": "reborn12k:rune_of_light",
+        "count": 1
+    },
+    "group": "rune_of_light"
+}

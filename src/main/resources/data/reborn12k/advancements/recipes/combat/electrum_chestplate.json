@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:electrum_chestplate"
+        "reborn12k:armors/electrum/electrum_chestplate"
       ]
     },
     "criteria": {

@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:steel_shovel"
+        "reborn12k:tools/steel/steel_shovel"
       ]
     },
     "criteria": {

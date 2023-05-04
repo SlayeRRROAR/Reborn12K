@@ -1,0 +1,34 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:from_blocks/raw/raw_bronze_craft"
+      ]
+    },
+    "criteria": {
+      "has_raw_bronze_block": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": [
+                "c:raw_bronze_blocks"
+              ]
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:raw_bronze"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_raw_bronze_block",
+        "has_the_recipe"
+      ]
+    ]
+  }

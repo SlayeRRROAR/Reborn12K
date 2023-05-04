@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:steel_sword"
+        "reborn12k:tools/steel/steel_sword"
       ]
     },
     "criteria": {

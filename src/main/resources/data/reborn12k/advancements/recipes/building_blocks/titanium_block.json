@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:titanium_block"
+        "reborn12k:into_blocks/titanium_block"
       ]
     },
     "criteria": {

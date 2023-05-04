@@ -7,7 +7,7 @@
     ],
     "key": {
         "A": {
-            "tag": "minecraft:stone_tool_materials"
+            "tag": "stone_tool_materials"
         },
         "B": {
             "item": "minecraft:stick"

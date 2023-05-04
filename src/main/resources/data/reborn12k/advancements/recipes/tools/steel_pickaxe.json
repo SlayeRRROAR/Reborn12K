@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:steel_pickaxe"
+        "reborn12k:tools/steel/steel_pickaxe"
       ]
     },
     "criteria": {
