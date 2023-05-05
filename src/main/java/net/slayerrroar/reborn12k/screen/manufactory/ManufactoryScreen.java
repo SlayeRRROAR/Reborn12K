@@ -34,12 +34,8 @@ public class ManufactoryScreen extends HandledScreen<ManufactoryScreenHandler> {
         drawTexture(matrices, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
         if (handler.isCrafting()) {
-            drawTexture(matrices, x + 62, y + 29, 176, 0, 53, handler.getScaledProgress());
+            drawTexture(matrices, x + 64, y + 29, 176, 0, 49, handler.getScaledProgress());
         }
-    }
-
-    private void renderProgressArrow(MatrixStack matrices, int x, int y) {
-
     }
 
     @Override
