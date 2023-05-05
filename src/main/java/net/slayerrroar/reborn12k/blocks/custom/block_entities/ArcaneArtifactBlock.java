@@ -17,6 +17,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.entity.block_entities.ArcaneArtifactBlockEntity;
@@ -35,15 +36,13 @@ public class ArcaneArtifactBlock extends BlockWithEntity implements BlockEntityP
     }
 
     private static final VoxelShape DEFAULT = Stream.of(
-            Block.createCuboidShape(9, 0, 0, 16, 7, 7),
-            Block.createCuboidShape(0, 9, 0, 7, 16, 7),
-            Block.createCuboidShape(0, 0, 0, 7, 7, 7),
-            Block.createCuboidShape(9, 9, 9, 16, 16, 16),
-            Block.createCuboidShape(9, 0, 9, 16, 7, 16),
-            Block.createCuboidShape(0, 9, 9, 7, 16, 16),
-            Block.createCuboidShape(0, 0, 9, 7, 7, 16),
-            Block.createCuboidShape(9, 9, 0, 16, 16, 7)
+            Block.createCuboidShape(0.5, 0.5, 0.5, 15.5, 15.5, 15.5)
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
+
+    @Override
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return DEFAULT;
+    }
 
     @Nullable
     @Override
