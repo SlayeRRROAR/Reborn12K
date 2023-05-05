@@ -13,6 +13,7 @@ public class RebornBlockRender {
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.MARKET_TABLE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.FANCY_LAMP, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.ARCANE_ARTIFACT, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.MANA_CONDENSER, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.COMMON_STRONGBOX, RenderLayer.getCutout());
