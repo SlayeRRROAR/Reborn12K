@@ -11,7 +11,9 @@
         "conditions": {
           "items": [
             {
-              "item": "reborn12k:sunstone"
+              "item": [
+                "reborn12k:sunstone"
+              ]
             }
           ]
         }

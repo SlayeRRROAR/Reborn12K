@@ -25,7 +25,7 @@
     },
     "requirements": [
       [
-        "has_raw_advanced_alloy",
+        "has_raw_advanced_alloy_block",
         "has_the_recipe"
       ]
     ]

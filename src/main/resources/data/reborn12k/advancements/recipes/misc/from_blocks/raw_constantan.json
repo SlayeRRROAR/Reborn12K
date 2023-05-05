@@ -11,9 +11,7 @@
         "conditions": {
           "items": [
             {
-              "tag": [
-                "c:raw_constantan_blocks"
-              ]
+              "tag": "c:raw_constantan_blocks"
             }
           ]
         }

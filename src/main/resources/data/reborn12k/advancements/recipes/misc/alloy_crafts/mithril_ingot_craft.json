@@ -11,7 +11,9 @@
         "conditions": {
           "items": [
             {
-              "item": "reborn12k:orichalcum_ingot"
+              "item": [
+                "reborn12k:orichalcum_ingot"
+              ]
             }
           ]
         }

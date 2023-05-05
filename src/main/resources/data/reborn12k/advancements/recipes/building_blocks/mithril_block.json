@@ -11,7 +11,9 @@
         "conditions": {
           "items": [
             {
-              "item": "reborn12k:mithril_ingot"
+              "item": [
+                "reborn12k:mithril_ingot"
+              ]
             }
           ]
         }

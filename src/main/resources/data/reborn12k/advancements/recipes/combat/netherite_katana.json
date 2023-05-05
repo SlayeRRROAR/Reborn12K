@@ -11,7 +11,9 @@
         "conditions": {
           "items": [
             {
-              "item": "minecraft:netherite_ingot"
+              "item": [
+                "minecraft:netherite_ingot"
+              ]
             }
           ]
         }

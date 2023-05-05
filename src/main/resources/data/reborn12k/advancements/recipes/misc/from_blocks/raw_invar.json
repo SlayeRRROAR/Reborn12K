@@ -11,9 +11,7 @@
         "conditions": {
           "items": [
             {
-              "tag": [
-                "c:raw_invar_blocks"
-              ]
+              "tag": "c:raw_invar_blocks"
             }
           ]
         }
