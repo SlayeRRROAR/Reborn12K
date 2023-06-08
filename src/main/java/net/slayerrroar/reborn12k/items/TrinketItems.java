@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
@@ -28,7 +29,7 @@ public class TrinketItems {
 
     //Key
 
-    public static final Item STRONGBOX_KEY = registerItem("strongbox_key", new KeyItem(new FabricItemSettings()));
+    public static final Item STRONGBOX_KEY = registerItem("common_strongbox_key", new KeyItem(new FabricItemSettings()));
 
     //Hat
 
@@ -216,7 +217,7 @@ public class TrinketItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, BASILISK_FANG);
     }
 
-    private static void addToItemGroup(ItemGroup group, Item item) {
+    private static void addToItemGroup(RegistryKey<ItemGroup> group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
     }
 

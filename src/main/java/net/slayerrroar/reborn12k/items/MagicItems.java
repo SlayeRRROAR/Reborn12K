@@ -6,13 +6,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.custom.magic.MirrorItem;
 import net.slayerrroar.reborn12k.items.custom.magic.MobSoulItem;
 import net.slayerrroar.reborn12k.items.custom.magic.SoulVesselItem;
-import net.slayerrroar.reborn12k.items.custom.magic.YggdrasillItem;
 import net.slayerrroar.reborn12k.items.custom.magic.essences.AdvancedEssenceItem;
 import net.slayerrroar.reborn12k.items.custom.magic.essences.BasicEssenceItem;
 import net.slayerrroar.reborn12k.items.custom.magic.essences.SpecialEssenceItem;
@@ -179,8 +179,6 @@ public class MagicItems {
     public static final Item ICE_MIRROR = registerItem("ice_mirror", new MirrorItem(new FabricItemSettings().maxCount(1).maxDamage(16)));
     public static final Item CELL_PHONE = registerItem("cell_phone", new MirrorItem(new FabricItemSettings().maxCount(1).maxDamage(16)));
 
-    public static final Item YGGDRASILL_BRANCH = registerItem("yggdrasill_branch", new YggdrasillItem(new FabricItemSettings().maxCount(1)));
-
     public static final Item SOUL_VESSEL = registerItem("soul_vessel", new SoulVesselItem(new FabricItemSettings().maxCount(1)));
 
     public static final Item CHICKEN_SOUL = registerItem("chicken_soul", new MobSoulItem(new FabricItemSettings()));
@@ -305,8 +303,6 @@ public class MagicItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, ICE_MIRROR);
         addToItemGroup(ItemGroupUtil.REBORN12K, CELL_PHONE);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, YGGDRASILL_BRANCH);
-
         addToItemGroup(ItemGroupUtil.REBORN12K, SOUL_VESSEL);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, CHICKEN_SOUL);
@@ -376,7 +372,7 @@ public class MagicItems {
 
     }
 
-    private static void addToItemGroup(ItemGroup group, Item item) {
+    private static void addToItemGroup(RegistryKey<ItemGroup> group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
     }
     public static void register() {

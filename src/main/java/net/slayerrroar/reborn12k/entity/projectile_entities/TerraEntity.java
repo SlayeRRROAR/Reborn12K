@@ -35,7 +35,7 @@ public class TerraEntity extends ThrownItemEntity {
 
         ((LivingEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 10, 1));
         ((LivingEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*10, 4));
-        world.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_ALLAY_ITEM_THROWN, SoundCategory.NEUTRAL, 1f, 0f);
+        entity.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_ALLAY_ITEM_THROWN, SoundCategory.NEUTRAL, 1f, 0f);
     }
 
     protected void onEntityHit(EntityHitResult entityHitResult) {
@@ -48,16 +48,16 @@ public class TerraEntity extends ThrownItemEntity {
 
     protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
-        if (!this.world.isClient) {
-            this.world.sendEntityStatus(this, (byte)3);
+        if (!this.getWorld().isClient) {
+            this.getWorld().sendEntityStatus(this, (byte)3);
             if (hitResult.getType() != HitResult.Type.ENTITY) {
-                for (Entity e : world.getOtherEntities(null, Box.of(hitResult.getPos(), 10,10,10))) {
+                for (Entity e : getWorld().getOtherEntities(null, Box.of(hitResult.getPos(), 10,10,10))) {
                     if (e instanceof LivingEntity entity) {
                         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 10, 0));
                         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*10, 2));
                     }
                 }
-                world.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_ALLAY_ITEM_THROWN, SoundCategory.BLOCKS, 1f, 0f);
+                getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_ALLAY_ITEM_THROWN, SoundCategory.BLOCKS, 1f, 0f);
             }
             this.kill();
         }

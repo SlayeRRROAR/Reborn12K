@@ -38,8 +38,8 @@ public class PhoenixPlumeMixin {
                     player.clearStatusEffects();
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 4));
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 60 * 20, 0));
-                    player.world.sendEntityStatus(player, (byte) 35);
-                    if (player.world.isClient) TotemRenderUtil.renderTotem(stack);
+                    player.getWorld().sendEntityStatus(player, (byte) 35);
+                    if (player.getWorld().isClient) TotemRenderUtil.renderTotem(stack);
                     info.setReturnValue(true);
                 }
             }

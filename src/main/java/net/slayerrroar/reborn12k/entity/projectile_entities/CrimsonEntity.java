@@ -27,7 +27,7 @@ public class CrimsonEntity extends ThrownItemEntity {
     }
 
     private void explode(EntityHitResult entityHitResult) {
-        World world = entityHitResult.getEntity().world;
+        World world = entityHitResult.getEntity().getWorld();
         Vec3d pos = entityHitResult.getEntity().getPos();
 
         world.createExplosion(this.getOwner(), pos.getX(), pos.getY(), pos.getZ(), 6f, false, World.ExplosionSourceType.NONE);
@@ -43,12 +43,12 @@ public class CrimsonEntity extends ThrownItemEntity {
 
     protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
-        if (!this.world.isClient) {
-            this.world.sendEntityStatus(this, (byte)3);
+        if (!this.getWorld().isClient) {
+            this.getWorld().sendEntityStatus(this, (byte)3);
             if (hitResult.getType() != HitResult.Type.ENTITY) {
                 Vec3d pos = hitResult.getPos();
 
-                world.createExplosion(this.getOwner(), pos.getX(), pos.getY(), pos.getZ(), 3f, false, World.ExplosionSourceType.NONE);
+                getWorld().createExplosion(this.getOwner(), pos.getX(), pos.getY(), pos.getZ(), 3f, false, World.ExplosionSourceType.NONE);
             }
             this.kill();
         }

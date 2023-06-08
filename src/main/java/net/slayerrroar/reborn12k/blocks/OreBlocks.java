@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
@@ -56,12 +57,12 @@ public class OreBlocks {
     public static final Block END_IRIDIUM_ORE = registerBlock("end_iridium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(10f).resistance(9f), UniformIntProvider.create(3, 7)), ItemGroupUtil.REBORN12K);
 
 
-    private static Block registerBlock(String name, Block block, ItemGroup group) {
+    private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registries.BLOCK, new Identifier(Reborn12K.MOD_ID, name), block);
     }
 
-    private static void registerBlockItem(String name, Block block, ItemGroup group) {
+    private static void registerBlockItem(String name, Block block, RegistryKey<ItemGroup> group) {
         Item item = Registry.register(Registries.ITEM, new Identifier(Reborn12K.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));

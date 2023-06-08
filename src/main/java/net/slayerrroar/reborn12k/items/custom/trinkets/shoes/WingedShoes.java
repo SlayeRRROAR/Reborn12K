@@ -26,7 +26,7 @@ public class WingedShoes extends TrinketItem implements Trinket {
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         PlayerEntity player = (PlayerEntity) entity;
-        World world = entity.world;
+        World world = entity.getWorld();
 
         if (world.isClient()) {
             if (player.isOnGround() || player.isSubmergedInWater() || player.hasVehicle()) {

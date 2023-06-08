@@ -32,7 +32,7 @@ public class DeadlyNightshade extends TrinketItem implements Trinket {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        World world = entity.world;
+        World world = entity.getWorld();
         if (!world.isClient) {
             if (!TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.EARTH_SIGIL)) {
                 stack.decrement(1);

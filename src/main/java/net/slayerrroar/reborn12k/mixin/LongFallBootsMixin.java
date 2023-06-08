@@ -22,7 +22,7 @@ public abstract class LongFallBootsMixin {
     private void tick(CallbackInfo info) {
         ServerPlayerEntity player = this.networkHandler.player;
         if (TrinketsApi.getTrinketComponent(player).get().isEquipped(TrinketItems.LONG_FALL_BOOTS)){
-            player.handleFall(0, true);
+            player.handleFall(0, 0, 0, true);
         }
     }
 }

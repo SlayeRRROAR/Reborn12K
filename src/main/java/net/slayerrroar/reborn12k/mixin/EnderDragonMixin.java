@@ -5,6 +5,7 @@ import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.boss.dragon.EnderDragonEntity;
 import net.minecraft.entity.boss.dragon.EnderDragonFight;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.gen.feature.EndPortalFeature;
 import net.slayerrroar.reborn12k.Reborn12K;
@@ -27,6 +28,10 @@ public abstract class EnderDragonMixin {
 
     @Shadow
     private UUID dragonUuid;
+
+    @Final
+    @Shadow
+    private BlockPos origin;
 
     @Shadow
     protected abstract void generateEndPortal(boolean previouslyKilled);
@@ -57,10 +62,10 @@ public abstract class EnderDragonMixin {
             this.generateEndPortal(true);
             this.generateNewEndGateway();
             if (!this.previouslyKilled) {
-                this.world.setBlockState(this.world.getTopPosition(Heightmap.Type.MOTION_BLOCKING, EndPortalFeature.ORIGIN), Blocks.DRAGON_EGG.getDefaultState());
+                this.world.setBlockState(this.world.getTopPosition(Heightmap.Type.MOTION_BLOCKING, EndPortalFeature.offsetOrigin(this.origin)), Blocks.DRAGON_EGG.getDefaultState());
             } else {
                 if (Reborn12K.CONFIG.enableMobDrops && Reborn12K.CONFIG.enableEnderDragonDrops) {
-                    this.world.setBlockState(this.world.getTopPosition(Heightmap.Type.MOTION_BLOCKING, EndPortalFeature.ORIGIN), AdvancedBlocks.LEGENDARY_STRONGBOX.getDefaultState());
+                    this.world.setBlockState(this.world.getTopPosition(Heightmap.Type.MOTION_BLOCKING, EndPortalFeature.offsetOrigin(this.origin)), AdvancedBlocks.LEGENDARY_STRONGBOX.getDefaultState());
                 }
             }
             this.previouslyKilled = true;

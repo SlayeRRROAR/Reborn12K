@@ -30,7 +30,7 @@ public class ThunderboltEntity extends ThrownItemEntity {
     }
 
     private void summonLightning(EntityHitResult entityHitResult) {
-        World world = entityHitResult.getEntity().world;
+        World world = entityHitResult.getEntity().getWorld();
         Vec3d entity = entityHitResult.getEntity().getPos();
 
         LightningEntity lightningEntity = EntityType.LIGHTNING_BOLT.create(world);
@@ -50,16 +50,16 @@ public class ThunderboltEntity extends ThrownItemEntity {
 
     protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
-        if (!this.world.isClient) {
-            this.world.sendEntityStatus(this, (byte)3);
+        if (!this.getWorld().isClient) {
+            this.getWorld().sendEntityStatus(this, (byte)3);
             if (hitResult.getType() != HitResult.Type.ENTITY) {
                 Vec3d pos = hitResult.getPos();
 
-                LightningEntity lightningEntity = EntityType.LIGHTNING_BOLT.create(world);
+                LightningEntity lightningEntity = EntityType.LIGHTNING_BOLT.create(getWorld());
                 assert lightningEntity != null;
 
                 lightningEntity.refreshPositionAfterTeleport(pos.getX(), pos.getY(), pos.getZ());
-                world.spawnEntity(lightningEntity);
+                getWorld().spawnEntity(lightningEntity);
             }
             this.kill();
         }

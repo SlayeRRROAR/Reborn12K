@@ -1,6 +1,7 @@
 package net.slayerrroar.reborn12k.screen.quarry;
 
 import com.mojang.blaze3d.systems.RenderSystem;
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.util.math.MatrixStack;
@@ -12,6 +13,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 public class QuarryScreen extends HandledScreen<QuarryScreenHandler> {
     public static final Identifier TEXTURE = new Identifier
             (Reborn12K.MOD_ID,"textures/gui/quarry_gui.png");
+    private Identifier background;
 
     public QuarryScreen(QuarryScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -24,24 +26,24 @@ public class QuarryScreen extends HandledScreen<QuarryScreenHandler> {
     }
 
     @Override
-    protected void drawBackground(MatrixStack matrices, float delta, int mouseX, int mouseY) {
+    protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
         RenderSystem.setShader(GameRenderer::getPositionTexProgram);
         RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
 
-        drawTexture(matrices, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
+        context.drawTexture(this.background, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
         if (handler.isCrafting()) {
-            drawTexture(matrices, x + 88, y + 34, 176, 0, handler.getScaledProgress(), 15);
+            context.drawTexture(this.background, x + 88, y + 34, 176, 0, handler.getScaledProgress(), 15);
         }
     }
 
     @Override
-    public void render(MatrixStack matrices, int mouseX, int mouseY, float delta) {
-        renderBackground(matrices);
-        super.render(matrices, mouseX, mouseY, delta);
-        drawMouseoverTooltip(matrices, mouseX, mouseY);
+    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
+        renderBackground(context);
+        super.render(context, mouseX, mouseY, delta);
+        drawMouseoverTooltip(context, mouseX, mouseY);
     }
 }

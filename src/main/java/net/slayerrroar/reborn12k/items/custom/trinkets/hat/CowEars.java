@@ -20,7 +20,7 @@ public class CowEars extends TrinketItem implements Trinket {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        World world = entity.world;
+        World world = entity.getWorld();
         if (!world.isClient) {
             cleanseNegativeEffects(entity);
         }

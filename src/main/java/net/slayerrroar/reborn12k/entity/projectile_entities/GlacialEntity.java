@@ -3,14 +3,8 @@ package net.slayerrroar.reborn12k.entity.projectile_entities;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.boss.WitherEntity;
-import net.minecraft.entity.boss.dragon.EnderDragonEntity;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.entity.mob.*;
-import net.minecraft.entity.passive.*;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.sound.SoundCategory;
@@ -39,7 +33,7 @@ public class GlacialEntity extends ThrownItemEntity {
     private void slowTarget(EntityHitResult entityHitResult) {
         Entity entity = entityHitResult.getEntity();
         ((LivingEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20*10, 2));
-        world.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_PLAYER_HURT_FREEZE, SoundCategory.NEUTRAL, 1f, 0f);
+        entity.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_PLAYER_HURT_FREEZE, SoundCategory.NEUTRAL, 1f, 0f);
     }
 
     protected void onEntityHit(EntityHitResult entityHitResult) {
@@ -52,15 +46,15 @@ public class GlacialEntity extends ThrownItemEntity {
 
     protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
-        if (!this.world.isClient) {
-            this.world.sendEntityStatus(this, (byte)3);
+        if (!this.getWorld().isClient) {
+            this.getWorld().sendEntityStatus(this, (byte)3);
             if (hitResult.getType() != HitResult.Type.ENTITY) {
-                for (Entity e : world.getOtherEntities(null, Box.of(hitResult.getPos(), 10,10,10))) {
+                for (Entity e : getWorld().getOtherEntities(null, Box.of(hitResult.getPos(), 10,10,10))) {
                     if (e instanceof LivingEntity entity) {
                         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20*20, 0));
                     }
                 }
-                world.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_PLAYER_HURT_FREEZE, SoundCategory.BLOCKS, 1f, 0f);
+                getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_PLAYER_HURT_FREEZE, SoundCategory.BLOCKS, 1f, 0f);
             }
             this.kill();
         }

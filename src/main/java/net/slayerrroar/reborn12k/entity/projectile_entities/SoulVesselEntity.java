@@ -35,7 +35,7 @@ public class SoulVesselEntity extends ThrownItemEntity {
     private void removeAndPlaySound(EntityHitResult entityHitResult) {
         Entity entity = entityHitResult.getEntity();
         entity.remove(RemovalReason.DISCARDED);
-        world.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.NEUTRAL, 0.25f, 0.25f);
+        entity.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.NEUTRAL, 0.25f, 0.25f);
     }
 
     protected void onEntityHit(EntityHitResult entityHitResult) {
@@ -170,10 +170,10 @@ public class SoulVesselEntity extends ThrownItemEntity {
 
     protected void onCollision(HitResult hitResult) {
         super.onCollision(hitResult);
-        if (!this.world.isClient) {
-            this.world.sendEntityStatus(this, (byte)3);
+        if (!this.getWorld().isClient) {
+            this.getWorld().sendEntityStatus(this, (byte)3);
             if (hitResult.getType() != HitResult.Type.ENTITY) {
-                world.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.BLOCKS, 0.25f, 0f);
+                getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.BLOCKS, 0.25f, 0f);
             }
             this.kill();
         }
