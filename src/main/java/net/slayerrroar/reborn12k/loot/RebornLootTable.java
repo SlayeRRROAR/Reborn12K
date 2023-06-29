@@ -72,21 +72,6 @@ public class RebornLootTable {
                 tableBuilder.pool(poolBuilder.build());
             }
 
-            /*if (CHERRY_LEAVES_LEAVES_ID.equals(id)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(TableBonusLootCondition.builder(Enchantments.FORTUNE,
-                                0.005f,
-                                0.0055555557f,
-                                0.00625f,
-                                0.008333334f,
-                                0.025f))
-                        .with(ItemEntry.builder(ItemGenerics.CHERRY))
-                        .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
-                tableBuilder.pool(poolBuilder.build());
-            }*/
-
-
 
             if (Reborn12K.CONFIG.enableChests) {
 
