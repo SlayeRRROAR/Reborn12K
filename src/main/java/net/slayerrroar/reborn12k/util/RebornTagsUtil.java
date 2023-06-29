@@ -135,9 +135,6 @@ public class RebornTagsUtil {
         public static final TagKey<Block> ASH_LOGS = createTag("ash_logs");
         public static final TagKey<Block> ASH_PLANKS = createTag("ash_logs");
 
-        public static final TagKey<Block> CHERRY_LOGS = createTag("cherry_logs");
-        public static final TagKey<Block> CHERRY_PLANKS = createTag("cherry_logs");
-
 
     }
 
@@ -328,9 +325,6 @@ public class RebornTagsUtil {
 
         public static final TagKey<Item> ASH_LOGS = createTag("ash_logs");
         public static final TagKey<Item> ASH_PLANKS = createTag("ash_logs");
-
-        public static final TagKey<Item> CHERRY_LOGS = createTag("cherry_logs");
-        public static final TagKey<Item> CHERRY_PLANKS = createTag("cherry_logs");
 
 
         public static final TagKey<Item> MANA_GEMS = createTag("mana_gem");
