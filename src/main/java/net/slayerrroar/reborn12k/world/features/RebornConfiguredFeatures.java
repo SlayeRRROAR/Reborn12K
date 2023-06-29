@@ -26,9 +26,6 @@ public class RebornConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> ASH_KEY = registerKey("ash");
     public static final RegistryKey<ConfiguredFeature<?,?>> ASH_SPAWN_KEY = registerKey("ash_spawn");
 
-    public static final RegistryKey<ConfiguredFeature<?,?>> CHERRY_KEY = registerKey("cherry");
-    public static final RegistryKey<ConfiguredFeature<?,?>> CHERRY_SPAWN_KEY = registerKey("cherry_spawn");
-
     public static final RegistryKey<ConfiguredFeature<?,?>> SLIMY_KEY = registerKey("slimy");
     public static final RegistryKey<ConfiguredFeature<?,?>> SLIMY_SPAWN_KEY = registerKey("slimy_spawn");
 
@@ -131,17 +128,6 @@ public class RebornConfiguredFeatures {
         register(context, ASH_SPAWN_KEY, Feature.RANDOM_SELECTOR,
                 new RandomFeatureConfig(List.of(new RandomFeatureEntry(placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.ASH_PLACED_KEY),
                         0.5f)), placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.ASH_PLACED_KEY)));
-
-        register(context, CHERRY_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(GenericBlocks.CHERRY_LOG),
-                new StraightTrunkPlacer(5, 2, 1),
-                BlockStateProvider.of(GenericBlocks.CHERRY_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-                new TwoLayersFeatureSize(1, 0, 2)).build());
-
-        register(context, CHERRY_SPAWN_KEY, Feature.RANDOM_SELECTOR,
-                new RandomFeatureConfig(List.of(new RandomFeatureEntry(placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.CHERRY_PLACED_KEY),
-                        0.5f)), placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.CHERRY_PLACED_KEY)));
 
         register(context, SLIMY_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(GenericBlocks.SLIMY_LOG),

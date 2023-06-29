@@ -12,10 +12,6 @@ public class RebornTreeGen {
 
     public static void generateTrees() {
 
-        if (Reborn12K.CONFIG.enableCherryTreeGeneration) {
-            BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FOREST),
-                    GenerationStep.Feature.VEGETAL_DECORATION, RebornPlacedFeatures.CHERRY_PLACED_KEY);
-        }
         if (Reborn12K.CONFIG.enableAshTreeGeneration) {
             BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SWAMP),
                     GenerationStep.Feature.VEGETAL_DECORATION, RebornPlacedFeatures.SLIMY_PLACED_KEY);

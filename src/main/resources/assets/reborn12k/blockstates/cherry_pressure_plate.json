@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "powered=false": { "model": "reborn12k:block/cherry_pressure_plate" },
-    "powered=true": { "model": "reborn12k:block/cherry_pressure_plate_down" }
-  }
-}

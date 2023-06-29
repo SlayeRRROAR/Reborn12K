@@ -120,23 +120,6 @@ public class GenericItems {
             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 20*180, 5), 1f)
             .alwaysEdible().build()).rarity(Rarity.EPIC)));
 
-    public static final Item CHERRY = registerItem("cherry", new Item(new FabricItemSettings().food(new FoodComponent
-            .Builder().snack().hunger(2).saturationModifier(0.2f).build())
-    ));
-    public static final Item GOLDEN_CHERRY = registerItem("golden_cherry", new Item(new FabricItemSettings().food(new FoodComponent
-            .Builder().snack().hunger(3).saturationModifier(0.8f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 20, 1), 1f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*10, 0), 0.7f)
-            .alwaysEdible().build()).rarity(Rarity.RARE)));
-    public static final Item ENCHANTED_GOLDEN_CHERRY = registerItem("enchanted_golden_cherry", new GlintedItem(new FabricItemSettings().food(new FoodComponent
-            .Builder().snack().hunger(3).saturationModifier(0.8f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 20, 4), 1f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*30, 2), 1f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 20*240, 2), 0.5f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 20*240, 3), 0.25f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 20*120, 1), 0.1f)
-            .alwaysEdible().build()).rarity(Rarity.EPIC)));
-
     public static final Item FLOUR = registerItem("flour", new Item(new FabricItemSettings().food(new FoodComponent
             .Builder().snack().hunger(1).saturationModifier(0.2f).build())
     ));
@@ -253,10 +236,6 @@ public class GenericItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, BANANA);
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_BANANA);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENCHANTED_GOLDEN_BANANA);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, CHERRY);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_CHERRY);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENCHANTED_GOLDEN_CHERRY);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, FLOUR);
         addToItemGroup(ItemGroupUtil.REBORN12K, DOUGH);

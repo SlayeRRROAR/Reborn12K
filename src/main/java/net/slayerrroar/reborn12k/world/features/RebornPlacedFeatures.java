@@ -20,9 +20,6 @@ public class RebornPlacedFeatures {
     public static final RegistryKey<PlacedFeature> ASH_CHECKED_KEY = registerKey("ash_checked");
     public static final RegistryKey<PlacedFeature> ASH_PLACED_KEY = registerKey("ash_placed");
 
-    public static final RegistryKey<PlacedFeature> CHERRY_CHECKED_KEY = registerKey("cherry_checked");
-    public static final RegistryKey<PlacedFeature> CHERRY_PLACED_KEY = registerKey("cherry_placed");
-
     public static final RegistryKey<PlacedFeature> SLIMY_CHECKED_KEY = registerKey("slimy_checked");
     public static final RegistryKey<PlacedFeature> SLIMY_PLACED_KEY = registerKey("slimy_placed");
 
@@ -59,12 +56,6 @@ public class RebornPlacedFeatures {
         register(context, ASH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.ASH_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2),
                         GenericBlocks.ASH_SAPLING));
-
-        register(context, CHERRY_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.CHERRY_KEY),
-                List.of(PlacedFeatures.wouldSurvive(GenericBlocks.CHERRY_SAPLING)));
-        register(context, CHERRY_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.CHERRY_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2),
-                        GenericBlocks.CHERRY_SAPLING));
 
         register(context, SLIMY_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SLIMY_KEY),
                 List.of(PlacedFeatures.wouldSurvive(GenericBlocks.SLIMY_SAPLING)));
