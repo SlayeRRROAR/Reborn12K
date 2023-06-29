@@ -29,7 +29,7 @@ public class TrinketItems {
 
     //Key
 
-    public static final Item STRONGBOX_KEY = registerItem("common_strongbox_key", new KeyItem(new FabricItemSettings()));
+    public static final Item STRONGBOX_KEY = registerItem("strongbox_key", new KeyItem(new FabricItemSettings()));
 
     //Hat
 
@@ -115,7 +115,6 @@ public class TrinketItems {
     public static final Item ENCHANTED_SPRING = registerItem("enchanted_spring", new EnchantedSpring(new FabricItemSettings().maxCount(1)));
     public static final Item BLOODY_ROSE = registerItem("bloody_rose", new BloodyRose(new FabricItemSettings().maxCount(1)));
     public static final Item ENDLESS_QUIVER = registerItem("endless_quiver", new EndlessQuiver(new FabricItemSettings().maxCount(1)));
-    public static final Item MAGNIFYING_GLASS = registerItem("magnifying_glass", new MagnifyingGlass(new FabricItemSettings().maxCount(1)));
     public static final Item PHOENIX_PLUME = registerItem("phoenix_plume", new PhoenixPlume(new FabricItemSettings().maxCount(1)));
 
     public static final Item GRIFFIN_FEATHER = registerItem("griffin_feather", new GriffinFeather(new FabricItemSettings().maxCount(1)));
@@ -206,7 +205,6 @@ public class TrinketItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, ENCHANTED_SPRING);
         addToItemGroup(ItemGroupUtil.REBORN12K, BLOODY_ROSE);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDLESS_QUIVER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGNIFYING_GLASS);
         addToItemGroup(ItemGroupUtil.REBORN12K, PHOENIX_PLUME);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, GRIFFIN_FEATHER);

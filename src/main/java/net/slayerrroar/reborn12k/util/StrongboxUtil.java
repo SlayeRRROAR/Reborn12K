@@ -114,7 +114,7 @@ public class StrongboxUtil {
 
     public static void randomLegendary(PlayerEntity player) {
         Random randLegend = new Random();
-        int upperboundLegend = 10;
+        int upperboundLegend = 9;
         int legend_int = randLegend.nextInt(upperboundLegend);
 
         if (legend_int == 0) {
@@ -143,9 +143,6 @@ public class StrongboxUtil {
         }
         if (legend_int == 8) {
             player.dropItem(TrinketItems.JETPACK, 1);
-        }
-        if (legend_int == 9) {
-            player.dropItem(TrinketItems.MAGNIFYING_GLASS, 1);
         }
     }
 
