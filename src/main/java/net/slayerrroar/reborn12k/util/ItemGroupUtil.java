@@ -18,7 +18,7 @@ public class ItemGroupUtil {
 
     public static void registerItemGroups() {
         Registry.register(Registries.ITEM_GROUP, REBORN12K, FabricItemGroup.builder()
-                .displayName(Text.translatable("reborn12k.reborn12k"))
+                .displayName(Text.translatable("itemgroup.reborn12k"))
                 .icon(() -> new ItemStack(GenericItems.SAPPHIRE)).build()
         );
     }
