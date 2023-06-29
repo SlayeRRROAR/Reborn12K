@@ -40,11 +40,6 @@ repositories {
 		url = "https://maven.blamejared.com"
 	}
 
-	maven {
-		url = "https://maven.jamieswhiteshirt.com/libs-release"
-		content {includeGroup "com.jamieswhiteshirt"}
-	}
-
 }
 
 dependencies {
@@ -71,9 +66,6 @@ dependencies {
 
 	//Modmenu
 	modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
-
-	//Reach Entity Attributes
-	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_entity_attributes_version}")
 
 	//Cloth Config
 	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}") {
