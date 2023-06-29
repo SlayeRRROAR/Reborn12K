@@ -13,7 +13,6 @@ import net.slayerrroar.reborn12k.Reborn12K;
 public class ArcaneArtifactScreen extends HandledScreen<ArcaneArtifactScreenHandler> {
     public static final Identifier TEXTURE = new Identifier
             (Reborn12K.MOD_ID,"textures/gui/arcane_artifact_gui.png");
-    private Identifier background;
 
     public ArcaneArtifactScreen(ArcaneArtifactScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -33,10 +32,10 @@ public class ArcaneArtifactScreen extends HandledScreen<ArcaneArtifactScreenHand
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
 
-        context.drawTexture(this.background, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
+        context.drawTexture(TEXTURE, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
         if (handler.isCrafting()) {
-            context.drawTexture(this.background, x + 65, y + 34, 176, 0, handler.getScaledProgress(), 17);
+            context.drawTexture(TEXTURE, x + 65, y + 34, 176, 0, handler.getScaledProgress(), 17);
         }
 
     }

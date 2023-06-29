@@ -13,7 +13,6 @@ import net.slayerrroar.reborn12k.Reborn12K;
 public class ManaCondenserScreen extends HandledScreen<ManaCondenserScreenHandler> {
     public static final Identifier TEXTURE = new Identifier
             (Reborn12K.MOD_ID,"textures/gui/mana_condenser_gui.png");
-    private Identifier background;
 
     public ManaCondenserScreen(ManaCondenserScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -33,10 +32,10 @@ public class ManaCondenserScreen extends HandledScreen<ManaCondenserScreenHandle
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
 
-        context.drawTexture(this.background, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
+        context.drawTexture(TEXTURE, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
         if (handler.isCrafting()) {
-            context.drawTexture(this.background, x + 65, y + 25, 176, 0, 48, handler.getScaledProgress());
+            context.drawTexture(TEXTURE, x + 65, y + 25, 176, 0, 48, handler.getScaledProgress());
         }
 
     }

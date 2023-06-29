@@ -13,7 +13,6 @@ import net.slayerrroar.reborn12k.Reborn12K;
 public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
     public static final Identifier TEXTURE = new Identifier
             (Reborn12K.MOD_ID,"textures/gui/crusher_gui.png");
-    private Identifier background;
 
     public CrusherScreen(CrusherScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -32,14 +31,14 @@ public class CrusherScreen extends HandledScreen<CrusherScreenHandler> {
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
-        context.drawTexture(this.background, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
+        context.drawTexture(TEXTURE, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
         if (handler.isCrafting()) {
-            context.drawTexture(this.background, x + 84, y + 35, 176, 14, handler.getScaledProgress() + 1, 19);
+            context.drawTexture(TEXTURE, x + 84, y + 35, 176, 14, handler.getScaledProgress() + 1, 19);
         }
 
         if (handler.hasFuel()) {
-            context.drawTexture(this.background, x + 57, y + 36 + 12 - handler.getScaledFuelProgress(), 176,
+            context.drawTexture(TEXTURE, x + 57, y + 36 + 12 - handler.getScaledFuelProgress(), 176,
                     12 - handler.getScaledFuelProgress(), 14, handler.getScaledFuelProgress() + 1);
         }
 

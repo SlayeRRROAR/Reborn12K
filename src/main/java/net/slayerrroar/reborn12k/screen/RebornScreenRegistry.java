@@ -21,8 +21,6 @@ import net.slayerrroar.reborn12k.screen.manufactory.ManufactoryScreenHandler;
 import net.slayerrroar.reborn12k.screen.quarry.QuarryScreen;
 import net.slayerrroar.reborn12k.screen.quarry.QuarryScreenHandler;
 
-//TODO: fix screen crash
-
 public final class RebornScreenRegistry {
 
     public static final ScreenHandlerType<ArcaneArtifactScreenHandler> ARCANE_ARTIFACT_SCREEN_HANDLER = new ScreenHandlerType<>(

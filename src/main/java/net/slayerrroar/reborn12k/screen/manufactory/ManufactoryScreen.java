@@ -13,7 +13,6 @@ import net.slayerrroar.reborn12k.Reborn12K;
 public class ManufactoryScreen extends HandledScreen<ManufactoryScreenHandler> {
     public static final Identifier TEXTURE = new Identifier
             (Reborn12K.MOD_ID,"textures/gui/manufactory_gui.png");
-    private Identifier background;
 
     public ManufactoryScreen(ManufactoryScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -33,10 +32,10 @@ public class ManufactoryScreen extends HandledScreen<ManufactoryScreenHandler> {
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
 
-        context.drawTexture(this.background, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
+        context.drawTexture(TEXTURE, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
         if (handler.isCrafting()) {
-            context.drawTexture(this.background, x + 64, y + 29, 176, 0, 49, handler.getScaledProgress());
+            context.drawTexture(TEXTURE, x + 64, y + 29, 176, 0, 49, handler.getScaledProgress());
         }
     }
 

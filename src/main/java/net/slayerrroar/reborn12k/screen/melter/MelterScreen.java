@@ -13,7 +13,6 @@ import net.slayerrroar.reborn12k.Reborn12K;
 public class MelterScreen extends HandledScreen<MelterScreenHandler> {
     public static final Identifier TEXTURE = new Identifier
             (Reborn12K.MOD_ID,"textures/gui/melter_gui.png");
-    private Identifier background;
 
     public MelterScreen(MelterScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -32,14 +31,14 @@ public class MelterScreen extends HandledScreen<MelterScreenHandler> {
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
-        context.drawTexture(this.background, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
+        context.drawTexture(TEXTURE, x ,y ,0 ,0, backgroundWidth, backgroundHeight);
 
         if (handler.isCrafting()) {
-            context.drawTexture(this.background, x + 89, y + 34, 176, 14, handler.getScaledProgress() + 1, 15);
+            context.drawTexture(TEXTURE, x + 89, y + 34, 176, 14, handler.getScaledProgress() + 1, 15);
         }
 
         if (handler.hasFuel()) {
-            context.drawTexture(this.background, x + 32, y + 36 + 12 - handler.getScaledFuelProgress(), 176,
+            context.drawTexture(TEXTURE, x + 32, y + 36 + 12 - handler.getScaledFuelProgress(), 176,
                     12 - handler.getScaledFuelProgress(), 14, handler.getScaledFuelProgress() + 1);
         }
     }
