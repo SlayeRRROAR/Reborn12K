@@ -104,10 +104,6 @@ public class RebornConfig implements ConfigData {
     public boolean enableTreeGeneration = true;
 
     @ConfigEntry.Category("tree_generation")
-    @Comment("When enabled, Cherry Trees will generate")
-    public boolean enableCherryTreeGeneration = true;
-
-    @ConfigEntry.Category("tree_generation")
     @Comment("When enabled, Ash Trees will generate")
     public boolean enableAshTreeGeneration = true;
 
