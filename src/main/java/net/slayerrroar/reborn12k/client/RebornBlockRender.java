@@ -32,17 +32,11 @@ public class RebornBlockRender {
         BlockRenderLayerMap.INSTANCE.putBlock(GenericBlocks.ASH_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(GenericBlocks.ASH_SAPLING, RenderLayer.getCutout());
 
-        BlockRenderLayerMap.INSTANCE.putBlock(GenericBlocks.CHERRY_LEAVES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(GenericBlocks.CHERRY_SAPLING, RenderLayer.getCutout());
-
         BlockRenderLayerMap.INSTANCE.putBlock(GenericBlocks.SLIMY_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(GenericBlocks.SLIMY_SAPLING, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(GenericBlocks.ASH_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(GenericBlocks.ASH_TRAPDOOR, RenderLayer.getCutout());
-
-        BlockRenderLayerMap.INSTANCE.putBlock(GenericBlocks.CHERRY_DOOR, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(GenericBlocks.CHERRY_TRAPDOOR, RenderLayer.getCutout());
 
     }
 }
