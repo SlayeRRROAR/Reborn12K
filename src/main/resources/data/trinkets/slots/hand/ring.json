@@ -1,5 +1,5 @@
 {
-  "icon": "trinkets:gui/slots/belt",
+  "icon": "trinkets:gui/slots/hand",
   "drop_rule": "default",
   "validator_predicates": [
   ],
