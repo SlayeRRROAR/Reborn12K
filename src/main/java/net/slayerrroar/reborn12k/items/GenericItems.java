@@ -13,7 +13,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.items.custom.GlintedItem;
+import net.slayerrroar.reborn12k.items.custom.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class GenericItems {
@@ -138,6 +138,8 @@ public class GenericItems {
 
     // Other
 
+    public static final Item UNIVERSAL_SMITHING_TEMPLATE = registerItem("universal_smithing_template", new UniversalTemplate(new FabricItemSettings()));
+
     public static final Item HAMMER = registerItem("hammer", new Item(new FabricItemSettings().recipeRemainder(GenericItems.HAMMER).maxCount(1)));
 
     public static final Item ENDER_DUST = registerItem("ender_dust", new Item(new FabricItemSettings()));
@@ -243,6 +245,8 @@ public class GenericItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, WITHERED_STAR);
         addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_SKULL_FRAGMENT);
         addToItemGroup(ItemGroupUtil.REBORN12K, HEART_OF_DARKNESS);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, UNIVERSAL_SMITHING_TEMPLATE);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, HAMMER);
 

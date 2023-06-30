@@ -1,5 +1,8 @@
 {
-    "type": "minecraft:smithing",
+    "type": "minecraft:smithing_transform",
+    "template": {
+        "item": "reborn12k:universal_smithing_template"
+    },
     "base": {
         "item": "minecraft:netherite_axe"
     },
