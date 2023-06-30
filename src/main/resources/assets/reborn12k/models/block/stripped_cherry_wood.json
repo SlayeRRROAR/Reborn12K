@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "reborn12k:block/stripped_cherry_log"
-  }
-}
