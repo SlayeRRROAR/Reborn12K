@@ -16,9 +16,9 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.UUID;
 
-public class HeartLocket extends TrinketItem implements Trinket {
+public class HeartPendant extends TrinketItem implements Trinket {
 
-    public HeartLocket(Settings settings) {
+    public HeartPendant(Settings settings) {
         super(settings);
     }
 

@@ -61,7 +61,7 @@ public class TrinketItems {
     public static final Item IRON_NECKLACE = registerItem("iron_necklace", new IronNecklace(new FabricItemSettings().maxCount(1)));
     public static final Item GOLDEN_NECKLACE = registerItem("golden_necklace", new GoldenNecklace(new FabricItemSettings().maxCount(1)));
     public static final Item BEJEWELED_NECKLACE = registerItem("bejeweled_necklace", new BejeweledNecklace(new FabricItemSettings().maxCount(1)));
-    public static final Item HEART_LOCKET = registerItem("heart_locket", new HeartLocket(new FabricItemSettings().maxCount(1)));
+    public static final Item HEART_PENDANT = registerItem("heart_pendant", new HeartPendant(new FabricItemSettings().maxCount(1)));
 
     //Ring
 
@@ -153,7 +153,7 @@ public class TrinketItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_NECKLACE);
         addToItemGroup(ItemGroupUtil.REBORN12K, BEJEWELED_NECKLACE);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, HEART_LOCKET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, HEART_PENDANT);
 
 
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_RING);

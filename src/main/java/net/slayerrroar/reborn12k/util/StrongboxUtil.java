@@ -139,7 +139,7 @@ public class StrongboxUtil {
             player.dropItem(TrinketItems.GREATER_LUCKY_CHARM, 1);
         }
         if (legend_int == 6) {
-            player.dropItem(TrinketItems.HEART_LOCKET, 1);
+            player.dropItem(TrinketItems.HEART_PENDANT, 1);
         }
         if (legend_int == 7) {
             player.dropItem(TrinketItems.JADE_ANKLET, 1);
