@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.items.custom.trinkets.necklace;
+package net.slayerrroar.reborn12k.items.custom.trinkets.trinket;
 
 import com.google.common.collect.Multimap;
 import dev.emi.trinkets.api.SlotReference;
@@ -12,42 +12,40 @@ import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.UUID;
 
-public class AirSigil extends TrinketItem implements Trinket {
-
-    public AirSigil(Settings settings) {
+public class DeadlyNightshade extends TrinketItem implements Trinket {
+    public DeadlyNightshade(Settings settings) {
         super(settings);
     }
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity.getHealth() >= 20f) {
-            entity.setHealth(entity.getHealth() + 6f);
+            entity.setHealth(entity.getHealth() + 14f);
         }
     }
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity.getHealth() > 20f) {
+        if (entity.getMaxHealth() > 20f) {
             entity.setHealth(entity.getMaxHealth());
         }
     }
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 6, EntityAttributeModifier.Operation.ADDITION));
+        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 14, EntityAttributeModifier.Operation.ADDITION));
         return modifiers;
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("item.reborn12k.necklace.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.air_sigil.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.air_sigil.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.deadly_nightshade.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.deadly_nightshade.tooltip2"));
     }
+
 }

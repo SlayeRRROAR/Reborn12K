@@ -20,7 +20,6 @@ public class EnchantedSpring extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.enchanted_spring.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.enchanted_spring.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.rare.tooltip"));
     }
 
 }

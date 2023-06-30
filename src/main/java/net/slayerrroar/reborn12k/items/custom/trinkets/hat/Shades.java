@@ -19,7 +19,6 @@ public class Shades extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.hat.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.shades.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.shades.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.rare.tooltip"));
     }
 
 }

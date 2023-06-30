@@ -20,7 +20,6 @@ import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.band.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.charm.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.claw.*;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.elemental_trinkets.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.medallion.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.tonic.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
@@ -44,7 +43,6 @@ public class TrinketItems {
     public static final Item GREEN_BELT = registerItem("green_belt", new GreenBelt(new FabricItemSettings().maxCount(1)));
     public static final Item RED_BELT = registerItem("red_belt", new RedBelt(new FabricItemSettings().maxCount(1)));
     public static final Item BLACK_BELT = registerItem("black_belt", new BlackBelt(new FabricItemSettings().maxCount(1)));
-    public static final Item FOCUS_BELT = registerItem("focus_belt", new FocusBelt(new FabricItemSettings().maxCount(1)));
     public static final Item EXPERT_BELT = registerItem("expert_belt", new ExpertBelt(new FabricItemSettings().maxCount(1)));
     public static final Item ANTIGRAV_BELT = registerItem("antigrav_belt", new AntiGravBelt(new FabricItemSettings().maxCount(1)));
 
@@ -56,18 +54,14 @@ public class TrinketItems {
     public static final Item LONG_FALL_BOOTS = registerItem("long_fall_boots", new LongFallBoots(new FabricItemSettings().maxCount(1)));
     public static final Item WINGED_SHOES = registerItem("winged_shoes", new WingedShoes(new FabricItemSettings().maxCount(1)));
 
+    public static final Item JADE_ANKLET = registerItem("jade_anklet", new JadeAnklet(new FabricItemSettings().maxCount(1)));
+
     //Necklace
 
+    public static final Item IRON_NECKLACE = registerItem("iron_necklace", new IronNecklace(new FabricItemSettings().maxCount(1)));
     public static final Item GOLDEN_NECKLACE = registerItem("golden_necklace", new GoldenNecklace(new FabricItemSettings().maxCount(1)));
     public static final Item BEJEWELED_NECKLACE = registerItem("bejeweled_necklace", new BejeweledNecklace(new FabricItemSettings().maxCount(1)));
-    public static final Item HEART_PENDANT = registerItem("heart_pendant", new HeartPendant(new FabricItemSettings().maxCount(1)));
-
-    public static final Item AIR_SIGIL = registerItem("air_sigil", new AirSigil(new FabricItemSettings().maxCount(1)));
-    public static final Item EARTH_SIGIL = registerItem("earth_sigil", new EarthSigil(new FabricItemSettings().maxCount(1)));
-    public static final Item WATER_SIGIL = registerItem("water_sigil", new WaterSigil(new FabricItemSettings().maxCount(1)));
-    public static final Item FIRE_SIGIL = registerItem("fire_sigil", new FireSigil(new FabricItemSettings().maxCount(1)));
-    public static final Item LIGHT_SIGIL = registerItem("light_sigil", new LightSigil(new FabricItemSettings().maxCount(1)));
-    public static final Item DARK_SIGIL = registerItem("dark_sigil", new DarkSigil(new FabricItemSettings().maxCount(1)));
+    public static final Item HEART_LOCKET = registerItem("heart_locket", new HeartLocket(new FabricItemSettings().maxCount(1)));
 
     //Ring
 
@@ -121,7 +115,7 @@ public class TrinketItems {
     public static final Item DEADLY_NIGHTSHADE = registerItem("deadly_nightshade", new DeadlyNightshade(new FabricItemSettings().maxCount(1)));
     public static final Item LEVIATHAN_EYE = registerItem("leviathan_eye", new LeviathanEye(new FabricItemSettings().maxCount(1)));
     public static final Item CRYSTALIZED_FIRE = registerItem("crystalized_fire", new CrystalizedFire(new FabricItemSettings().maxCount(1)));
-    public static final Item PRAYER_CANDLE = registerItem("prayer_candle", new PrayerCandle(new FabricItemSettings().maxCount(1)));
+    public static final Item LOADED_DICE = registerItem("loaded_dice", new LoadedDice(new FabricItemSettings().maxCount(1)));
     public static final Item BASILISK_FANG = registerItem("basilisk_fang", new BasiliskFang(new FabricItemSettings().maxCount(1)));
 
 
@@ -142,9 +136,9 @@ public class TrinketItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, GREEN_BELT);
         addToItemGroup(ItemGroupUtil.REBORN12K, RED_BELT);
         addToItemGroup(ItemGroupUtil.REBORN12K, BLACK_BELT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, FOCUS_BELT);
         addToItemGroup(ItemGroupUtil.REBORN12K, EXPERT_BELT);
         addToItemGroup(ItemGroupUtil.REBORN12K, ANTIGRAV_BELT);
+
 
         addToItemGroup(ItemGroupUtil.REBORN12K, COMFY_LOAFERS);
         addToItemGroup(ItemGroupUtil.REBORN12K, TRAVELER_SHOES);
@@ -152,16 +146,15 @@ public class TrinketItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, LONG_FALL_BOOTS);
         addToItemGroup(ItemGroupUtil.REBORN12K, WINGED_SHOES);
 
+        addToItemGroup(ItemGroupUtil.REBORN12K, JADE_ANKLET);
+
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRON_NECKLACE);
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_NECKLACE);
         addToItemGroup(ItemGroupUtil.REBORN12K, BEJEWELED_NECKLACE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, HEART_PENDANT);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, AIR_SIGIL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, EARTH_SIGIL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, WATER_SIGIL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, FIRE_SIGIL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LIGHT_SIGIL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, DARK_SIGIL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, HEART_LOCKET);
+
 
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_RING);
         addToItemGroup(ItemGroupUtil.REBORN12K, AWAKENED_GOLDEN_RING);
@@ -211,7 +204,7 @@ public class TrinketItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, DEADLY_NIGHTSHADE);
         addToItemGroup(ItemGroupUtil.REBORN12K, LEVIATHAN_EYE);
         addToItemGroup(ItemGroupUtil.REBORN12K, CRYSTALIZED_FIRE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, PRAYER_CANDLE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LOADED_DICE);
         addToItemGroup(ItemGroupUtil.REBORN12K, BASILISK_FANG);
     }
 

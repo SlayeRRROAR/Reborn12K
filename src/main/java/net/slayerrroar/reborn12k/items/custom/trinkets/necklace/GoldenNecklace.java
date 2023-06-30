@@ -25,7 +25,7 @@ public class GoldenNecklace extends TrinketItem implements Trinket {
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity.getHealth() >= 20f) {
-            entity.setHealth(entity.getHealth() + 2f);
+            entity.setHealth(entity.getHealth() + 4f);
         }
     }
 
@@ -38,14 +38,13 @@ public class GoldenNecklace extends TrinketItem implements Trinket {
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 2, EntityAttributeModifier.Operation.ADDITION));
+        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 4, EntityAttributeModifier.Operation.ADDITION));
         return modifiers;
     }
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.necklace.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.rare.tooltip"));
     }
 
 }

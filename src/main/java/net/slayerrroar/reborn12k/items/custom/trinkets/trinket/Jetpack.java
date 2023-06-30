@@ -40,7 +40,6 @@ public class Jetpack extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.jetpack.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.jetpack.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 
 }

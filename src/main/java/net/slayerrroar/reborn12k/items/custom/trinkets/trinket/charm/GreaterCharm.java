@@ -20,7 +20,6 @@ public class GreaterCharm extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.lucky_charm.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.lucky_charm.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 
 }

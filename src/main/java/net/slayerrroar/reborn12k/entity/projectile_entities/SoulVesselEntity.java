@@ -57,6 +57,10 @@ public class SoulVesselEntity extends ThrownItemEntity {
                 removeAndPlaySound(entityHitResult);
                 entity.dropItem(MagicItems.FISH_SOUL);
             }
+            if (entity instanceof FrogEntity) {
+                removeAndPlaySound(entityHitResult);
+                entity.dropItem(MagicItems.FROG_SOUL);
+            }
             if (entity instanceof MooshroomEntity) {
                 removeAndPlaySound(entityHitResult);
                 entity.dropItem(MagicItems.MOOSHROOM_SOUL);

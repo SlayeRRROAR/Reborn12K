@@ -20,7 +20,6 @@ public class EndlessQuiver extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.endless_quiver.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.endless_quiver.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.epic.tooltip"));
     }
 
 }

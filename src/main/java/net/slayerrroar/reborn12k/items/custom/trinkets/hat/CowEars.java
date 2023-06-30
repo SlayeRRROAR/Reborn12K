@@ -47,7 +47,6 @@ public class CowEars extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.hat.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.fake_ears.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.fake_ears.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.epic.tooltip"));
     }
 
 }

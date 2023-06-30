@@ -43,7 +43,6 @@ public class AntiGravBelt extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.belt.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.antigrav_belt.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.antigrav_belt.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.rare.tooltip"));
     }
 
 }

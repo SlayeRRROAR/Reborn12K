@@ -29,7 +29,6 @@ public class AdvancedBlocks {
     public static final Block RARE_STRONGBOX = registerBlock("rare_strongbox", new RareBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
     public static final Block EPIC_STRONGBOX = registerBlock("epic_strongbox", new EpicBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
     public static final Block LEGENDARY_STRONGBOX = registerBlock("legendary_strongbox", new LegendaryBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
-    public static final Block ELEMENTAL_STRONGBOX = registerBlock("elemental_strongbox", new ElementalBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
 
     public static final Block AIR_GEM = registerBlock("air_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
     public static final Block EARTH_GEM = registerBlock("earth_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);

@@ -11,7 +11,7 @@ public class StrongboxUtil {
 
     public static void randomCommon(PlayerEntity player) {
         Random commonRand = new Random();
-        int upperboundCommon = 4;
+        int upperboundCommon = 5;
         int common_int = commonRand.nextInt(upperboundCommon);
 
         if (common_int == 0) {
@@ -21,9 +21,12 @@ public class StrongboxUtil {
             player.dropItem(TrinketItems.COMFY_LOAFERS, 1);
         }
         if (common_int == 2) {
-            player.dropItem(TrinketItems.GOLD_POUCH, 1);
+            player.dropItem(TrinketItems.IRON_NECKLACE, 1);
         }
         if (common_int == 3) {
+            player.dropItem(TrinketItems.GOLD_POUCH, 1);
+        }
+        if (common_int == 4) {
             player.dropItem(TrinketItems.STRONG_SPRING, 1);
         }
     }
@@ -114,105 +117,56 @@ public class StrongboxUtil {
 
     public static void randomLegendary(PlayerEntity player) {
         Random randLegend = new Random();
-        int upperboundLegend = 9;
+        int upperboundLegend = 16;
         int legend_int = randLegend.nextInt(upperboundLegend);
 
         if (legend_int == 0) {
-            player.dropItem(TrinketItems.FOCUS_BELT, 1);
-        }
-        if (legend_int == 1) {
             player.dropItem(TrinketItems.EXPERT_BELT, 1);
         }
-        if (legend_int == 2) {
+        if (legend_int == 1) {
             player.dropItem(TrinketItems.GREATER_BAND_OF_FORTITUDE, 1);
         }
-        if (legend_int == 3) {
+        if (legend_int == 2) {
             player.dropItem(TrinketItems.GREATER_BLOODY_CLAW, 1);
         }
-        if (legend_int == 4) {
+        if (legend_int == 3) {
             player.dropItem(TrinketItems.GREATER_MEDALLION, 1);
         }
-        if (legend_int == 5) {
+        if (legend_int == 4) {
             player.dropItem(TrinketItems.GREATER_FRENZY_TONIC, 1);
         }
-        if (legend_int == 6) {
+        if (legend_int == 5) {
             player.dropItem(TrinketItems.GREATER_LUCKY_CHARM, 1);
         }
+        if (legend_int == 6) {
+            player.dropItem(TrinketItems.HEART_LOCKET, 1);
+        }
         if (legend_int == 7) {
-            player.dropItem(TrinketItems.HEART_PENDANT, 1);
+            player.dropItem(TrinketItems.JADE_ANKLET, 1);
         }
         if (legend_int == 8) {
             player.dropItem(TrinketItems.JETPACK, 1);
         }
-    }
-
-    public static void randomMythical(PlayerEntity player) {
-        Random randMythic = new Random();
-        int upperboundMyhtical = 8;
-        int mythic_int = randMythic.nextInt(upperboundMyhtical);
-
-        if (mythic_int == 0) {
-            player.dropItem(TrinketItems.ANGEL_WINGS, 1);
-        }
-        if (mythic_int == 1) {
-            player.dropItem(TrinketItems.AIR_SIGIL, 1);
-        }
-        if (mythic_int == 2) {
-            player.dropItem(TrinketItems.EARTH_SIGIL, 1);
-        }
-        if (mythic_int == 3) {
-            player.dropItem(TrinketItems.WATER_SIGIL, 1);
-        }
-        if (mythic_int == 4) {
-            player.dropItem(TrinketItems.FIRE_SIGIL, 1);
-        }
-        if (mythic_int == 5) {
-            player.dropItem(TrinketItems.LIGHT_SIGIL, 1);
-        }
-        if (mythic_int == 6) {
-            player.dropItem(TrinketItems.DARK_SIGIL, 1);
-        }
-        if (mythic_int == 7) {
-            player.dropItem(TrinketItems.PHOENIX_PLUME, 1);
-        }
-    }
-
-    //Elemental
-
-    public static void randomElemental(PlayerEntity player) {
-        Random randElem = new Random();
-        int upperboundElem = 2;
-        int elemental_int = randElem.nextInt(upperboundElem);
-
-        if (elemental_int == 0) {
+        if (legend_int == 9) {
             player.dropItem(TrinketItems.GRIFFIN_FEATHER, 1);
         }
-        if (elemental_int == 1) {
-            player.dropItem(TrinketItems.AIR_SIGIL, 1);
-        }
-        if (elemental_int == 0) {
+        if (legend_int == 10) {
             player.dropItem(TrinketItems.DEADLY_NIGHTSHADE, 1);
         }
-        if (elemental_int == 1) {
-            player.dropItem(TrinketItems.EARTH_SIGIL, 1);
-        }
-        if (elemental_int == 0) {
+        if (legend_int == 11) {
             player.dropItem(TrinketItems.LEVIATHAN_EYE, 1);
         }
-        if (elemental_int == 1) {
-            player.dropItem(TrinketItems.WATER_SIGIL, 1);
+        if (legend_int == 12) {
+            player.dropItem(TrinketItems.CRYSTALIZED_FIRE, 1);
         }
-        if (elemental_int == 0) {
-            player.dropItem(TrinketItems.PRAYER_CANDLE, 1);
-        }
-        if (elemental_int == 1) {
-            player.dropItem(TrinketItems.LIGHT_SIGIL, 1);
-        }
-        if (elemental_int == 0) {
+        if (legend_int == 13) {
             player.dropItem(TrinketItems.BASILISK_FANG, 1);
         }
-        if (elemental_int == 1) {
-            player.dropItem(TrinketItems.DARK_SIGIL, 1);
+        if (legend_int == 14) {
+            player.dropItem(TrinketItems.LOADED_DICE, 1);
+        }
+        if (legend_int == 15) {
+            player.dropItem(TrinketItems.PHOENIX_PLUME, 1);
         }
     }
 

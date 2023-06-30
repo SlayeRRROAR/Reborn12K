@@ -63,7 +63,6 @@ public class AngelWings extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.wings.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.wings.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.mythical.tooltip"));
     }
 
 }

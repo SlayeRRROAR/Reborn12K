@@ -6,20 +6,19 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class BloodyRose extends TrinketItem implements Trinket {
-    public BloodyRose(Settings settings) {
+public class LoadedDice extends TrinketItem implements Trinket {
+    public LoadedDice(Settings settings) {
         super(settings);
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.bloody_rose.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.bloody_rose.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.loaded_dice.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.loaded_dice.tooltip2"));
     }
 
 }

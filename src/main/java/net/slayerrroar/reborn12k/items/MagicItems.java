@@ -184,6 +184,7 @@ public class MagicItems {
     public static final Item CHICKEN_SOUL = registerItem("chicken_soul", new MobSoulItem(new FabricItemSettings()));
     public static final Item COW_SOUL = registerItem("cow_soul", new MobSoulItem(new FabricItemSettings()));
     public static final Item FISH_SOUL = registerItem("fish_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item FROG_SOUL = registerItem("frog_soul", new MobSoulItem(new FabricItemSettings()));
     public static final Item MOOSHROOM_SOUL = registerItem("mooshroom_soul", new MobSoulItem(new FabricItemSettings()));
     public static final Item PIG_SOUL = registerItem("pig_soul", new MobSoulItem(new FabricItemSettings()));
     public static final Item RABBIT_SOUL = registerItem("rabbit_soul", new MobSoulItem(new FabricItemSettings()));
@@ -217,6 +218,7 @@ public class MagicItems {
     public static final Item CHICKEN_ESSENCE = registerItem("chicken_essence", new BasicEssenceItem(new FabricItemSettings()));
     public static final Item COW_ESSENCE = registerItem("cow_essence", new BasicEssenceItem(new FabricItemSettings()));
     public static final Item FISH_ESSENCE = registerItem("fish_essence", new BasicEssenceItem(new FabricItemSettings()));
+    public static final Item FROG_ESSENCE = registerItem("frog_essence", new BasicEssenceItem(new FabricItemSettings()));
     public static final Item MOOSHROOM_ESSENCE = registerItem("mooshroom_essence", new BasicEssenceItem(new FabricItemSettings()));
     public static final Item PIG_ESSENCE = registerItem("pig_essence", new BasicEssenceItem(new FabricItemSettings()));
     public static final Item RABBIT_ESSENCE = registerItem("rabbit_essence", new BasicEssenceItem(new FabricItemSettings()));
@@ -308,6 +310,7 @@ public class MagicItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, CHICKEN_SOUL);
         addToItemGroup(ItemGroupUtil.REBORN12K, COW_SOUL);
         addToItemGroup(ItemGroupUtil.REBORN12K, FISH_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, FROG_SOUL);
         addToItemGroup(ItemGroupUtil.REBORN12K, MOOSHROOM_SOUL);
         addToItemGroup(ItemGroupUtil.REBORN12K, PIG_SOUL);
         addToItemGroup(ItemGroupUtil.REBORN12K, RABBIT_SOUL);
@@ -341,6 +344,7 @@ public class MagicItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, CHICKEN_ESSENCE);
         addToItemGroup(ItemGroupUtil.REBORN12K, COW_ESSENCE);
         addToItemGroup(ItemGroupUtil.REBORN12K, FISH_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, FROG_ESSENCE);
         addToItemGroup(ItemGroupUtil.REBORN12K, MOOSHROOM_ESSENCE);
         addToItemGroup(ItemGroupUtil.REBORN12K, PIG_ESSENCE);
         addToItemGroup(ItemGroupUtil.REBORN12K, RABBIT_ESSENCE);

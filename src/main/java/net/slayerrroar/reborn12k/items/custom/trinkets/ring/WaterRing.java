@@ -44,7 +44,6 @@ public class WaterRing extends TrinketItem {
         tooltip.add(Text.translatable("item.reborn12k.ring.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.ring_of_water.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.ring_of_water.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.mythical.tooltip"));
     }
 
 }

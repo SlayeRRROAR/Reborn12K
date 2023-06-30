@@ -34,7 +34,6 @@ public class GreaterMedallion extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.medallion.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.medallion.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 
 }

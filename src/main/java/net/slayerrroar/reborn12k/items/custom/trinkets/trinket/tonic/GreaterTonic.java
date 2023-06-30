@@ -34,7 +34,6 @@ public class GreaterTonic extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.tonic.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.tonic.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
     
 }

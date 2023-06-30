@@ -42,7 +42,6 @@ public class DarkRing extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.ring.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.ring_of_dark.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.ring_of_dark.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.mythical.tooltip"));
     }
 
 }

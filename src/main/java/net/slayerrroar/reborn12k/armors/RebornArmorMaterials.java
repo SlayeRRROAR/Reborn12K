@@ -20,7 +20,7 @@ public enum RebornArmorMaterials implements ArmorMaterial {
             3f, 0f, GenericItems.STEEL_INGOT),
     TUNGSTENSTEEL("tungstensteel", 37, new int[] {3, 6, 8, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
             4f, 0.2f, GenericItems.TUNGSTENSTEEL_INGOT),
-    THELOSITE("bronze", 42, new int[] {5, 9, 11, 6}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+    THELOSITE("thelosite", 42, new int[] {5, 9, 11, 6}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
             6f, 0.2f, GenericItems.THELOSITE_INGOT),
     TITANIUM("titanium", 36, new int[] {3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
             0f, 0f, GenericItems.TITANIUM_INGOT),

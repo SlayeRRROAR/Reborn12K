@@ -22,7 +22,6 @@ public class LongFallBoots extends TrinketItem implements Trinket {
         tooltip.add(Text.translatable("item.reborn12k.shoes.tooltip"));
         tooltip.add(Text.translatable("item.reborn12k.long_fall_boots.tooltip1"));
         tooltip.add(Text.translatable("item.reborn12k.long_fall_boots.tooltip2"));
-        tooltip.add(Text.translatable("item.reborn12k.legendary.tooltip"));
     }
 
 }

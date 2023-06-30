@@ -21,8 +21,6 @@ public class RebornLootTable {
 
     private static final Identifier JUNGLE_LEAVES_ID
             = new Identifier("minecraft", "blocks/jungle_leaves");
-    private static final Identifier CHERRY_LEAVES_ID
-            = new Identifier("minecraft", "blocks/cherry_leaves");
 
     //Chests
 
@@ -129,7 +127,6 @@ public class RebornLootTable {
                             .rolls(UniformLootNumberProvider.create(1, 2))
                             .with(ItemEntry.builder(AdvancedBlocks.EPIC_STRONGBOX).weight(8))
                             .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(5))
-                            .with(ItemEntry.builder(AdvancedBlocks.ELEMENTAL_STRONGBOX).weight(1))
                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                     tableBuilder.pool(poolBuilder.build());
                 }
@@ -184,7 +181,6 @@ public class RebornLootTable {
                                 .rolls(ConstantLootNumberProvider.create(1))
                                 .with(ItemEntry.builder(AdvancedBlocks.EPIC_STRONGBOX).weight(10))
                                 .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(4))
-                                .with(ItemEntry.builder(AdvancedBlocks.ELEMENTAL_STRONGBOX).weight(1))
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                         tableBuilder.pool(poolBuilder.build());
                     }
@@ -196,7 +192,6 @@ public class RebornLootTable {
                                 .rolls(ConstantLootNumberProvider.create(1))
                                 .with(ItemEntry.builder(AdvancedBlocks.EPIC_STRONGBOX).weight(10))
                                 .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(4))
-                                .with(ItemEntry.builder(AdvancedBlocks.ELEMENTAL_STRONGBOX).weight(1))
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                         tableBuilder.pool(poolBuilder.build());
                     }
