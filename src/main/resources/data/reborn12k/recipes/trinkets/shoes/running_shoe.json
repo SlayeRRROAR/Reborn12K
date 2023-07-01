@@ -4,12 +4,12 @@
         "item": "reborn12k:universal_smithing_template"
     },
     "base": {
-        "item": "reborn12k:diamond_katana"
+        "item": "reborn12k:traveler_shoes"
     },
     "addition": {
-        "item": "minecraft:netherite_ingot"
+        "item": "reborn12k:arcane_dust"
     },
     "result": {
-        "item": "reborn12k:netherite_katana"
+        "item": "reborn12k:running_shoes"
     }
 }

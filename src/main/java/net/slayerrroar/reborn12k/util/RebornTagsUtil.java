@@ -335,5 +335,9 @@ public class RebornTagsUtil {
         public static final TagKey<Item> ADVANCED_LASER_FOCI = createTag("advanced_laser_foci");
         public static final TagKey<Item> ULTIMATE_LASER_FOCI = createTag("ultimate_laser_foci");
 
+        public static final TagKey<Item> SPARK_TRINKETS = createTag("spark_trinkets");
+        public static final TagKey<Item> FRAGMENT_TRINKETS = createTag("fragment_trinkets");
+        public static final TagKey<Item> DUST_TRINKETS = createTag("dust_trinkets");
+
     }
 }
