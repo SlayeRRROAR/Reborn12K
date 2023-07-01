@@ -23,14 +23,13 @@ import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.items.TrinketItems;
 import net.slayerrroar.reborn12k.util.StrongboxUtil;
 
-import java.util.Random;
 import java.util.stream.Stream;
 
 @SuppressWarnings("deprecation")
 
-public class RareBoxBlock extends Block {
+public class LegendaryStrongboxBlock extends Block {
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
-    public RareBoxBlock(Settings settings) {
+    public LegendaryStrongboxBlock(Settings settings) {
         super(settings);
     }
 
@@ -45,32 +44,14 @@ public class RareBoxBlock extends Block {
                     world.breakBlock(pos, false, player);
                     player.getStackInHand(Hand.MAIN_HAND).decrement(1);
                 }
-                randomRarityLoot(player);
+                StrongboxUtil.randomLegendary(player);
+                player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.opened"), true);
                 return ActionResult.SUCCESS;
             }
             player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.tooltip"), true);
             return ActionResult.FAIL;
         }
         return super.onUse(state, world, pos, player, hand, hit);
-    }
-
-    private void randomRarityLoot(PlayerEntity player) {
-        Random rarityRand = new Random();
-        int upperbound = 21;
-        int rarity_int = rarityRand.nextInt(upperbound);
-
-        if (rarity_int < 14) {
-            StrongboxUtil.randomRare(player);
-            player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.rare"), true);
-        }
-        if (rarity_int < 19 && rarity_int > 13) {
-            StrongboxUtil.randomEpic(player);
-            player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.epic"), true);
-        }
-        if (rarity_int == 20) {
-            StrongboxUtil.randomLegendary(player);
-            player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.legendary"), true);
-        }
     }
 
     private static final VoxelShape SHAPE_N = Stream.of(

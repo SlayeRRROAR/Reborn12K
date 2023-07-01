@@ -25,10 +25,10 @@ public class AdvancedBlocks {
     public static final Block ALCHEMIC_TABLE = registerBlock("alchemic_table", new AlchemicBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroupUtil.REBORN12K);
     public static final Block FANCY_LAMP = registerBlock("fancy_lamp", new FancyLampBlock(FabricBlockSettings.copy(Blocks.STONE).sounds(BlockSoundGroup.STONE).hardness(5f).resistance(6f).nonOpaque().luminance(blockstate ->30)), ItemGroupUtil.REBORN12K);
 
-    public static final Block COMMON_STRONGBOX = registerBlock("common_strongbox", new CommonBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
-    public static final Block RARE_STRONGBOX = registerBlock("rare_strongbox", new RareBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
-    public static final Block EPIC_STRONGBOX = registerBlock("epic_strongbox", new EpicBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
-    public static final Block LEGENDARY_STRONGBOX = registerBlock("legendary_strongbox", new LegendaryBoxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
+    public static final Block WORN_STRONGBOX = registerBlock("worn_strongbox", new WornStrongboxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
+    public static final Block STRONGBOX = registerBlock("strongbox", new StrongboxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
+    public static final Block PRISTINE_STRONGBOX = registerBlock("pristine_strongbox", new PristineStrongboxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
+    public static final Block LEGENDARY_STRONGBOX = registerBlock("legendary_strongbox", new LegendaryStrongboxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);
 
     public static final Block AIR_GEM = registerBlock("air_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
     public static final Block EARTH_GEM = registerBlock("earth_gem", new GemBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK).hardness(1f).resistance(20f).nonOpaque()), ItemGroupUtil.REBORN12K);
