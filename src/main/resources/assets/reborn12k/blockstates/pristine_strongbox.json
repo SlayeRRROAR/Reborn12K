@@ -1,8 +1,8 @@
 {
   "variants": {
-    "facing=north": { "model": "reborn12k:block/epic_strongbox" },
-    "facing=east": { "model": "reborn12k:block/epic_strongbox", "y": 90 },
-    "facing=south": { "model": "reborn12k:block/epic_strongbox", "y": 180 },
-    "facing=west": { "model": "reborn12k:block/epic_strongbox", "y": 270 }
+    "facing=north": { "model": "reborn12k:block/pristine_strongbox" },
+    "facing=east": { "model": "reborn12k:block/pristine_strongbox", "y": 90 },
+    "facing=south": { "model": "reborn12k:block/pristine_strongbox", "y": 180 },
+    "facing=west": { "model": "reborn12k:block/pristine_strongbox", "y": 270 }
   }
 }
