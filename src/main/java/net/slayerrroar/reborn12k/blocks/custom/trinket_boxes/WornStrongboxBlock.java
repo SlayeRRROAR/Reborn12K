@@ -45,7 +45,7 @@ public class WornStrongboxBlock extends HorizontalFacingBlock {
                     world.breakBlock(pos, false, player);
                     player.getStackInHand(Hand.MAIN_HAND).decrement(1);
                 }
-                randomRarityLoot(player);
+                randomRarityLoot(player, world, pos);
                 return ActionResult.SUCCESS;
             }
             player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.tooltip"), true);
@@ -54,22 +54,22 @@ public class WornStrongboxBlock extends HorizontalFacingBlock {
         return super.onUse(state, world, pos, player, hand, hit);
     }
 
-    private void randomRarityLoot(PlayerEntity player) {
+    private void randomRarityLoot(PlayerEntity player, World world, BlockPos pos) {
         Random rarityRand = new Random();
         int upperbound = 100;
         int rarity_int = rarityRand.nextInt(upperbound);
 
         if (rarity_int < 80) {
-            StrongboxUtil.randomCommon(player);
+            StrongboxUtil.randomCommon(world, pos);
         }
         if (rarity_int < 95 && rarity_int > 79) {
-            StrongboxUtil.randomRare(player);
+            StrongboxUtil.randomRare(world, pos);
         }
         if (rarity_int < 99 && rarity_int > 94) {
-            StrongboxUtil.randomEpic(player);
+            StrongboxUtil.randomEpic(world, pos);
         }
         if (rarity_int == 99) {
-            StrongboxUtil.randomLegendary(player);
+            StrongboxUtil.randomLegendary(world, pos);
         }
         player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.opened"), true);
     }

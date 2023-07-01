@@ -44,7 +44,7 @@ public class LegendaryStrongboxBlock extends Block {
                     world.breakBlock(pos, false, player);
                     player.getStackInHand(Hand.MAIN_HAND).decrement(1);
                 }
-                StrongboxUtil.randomLegendary(player);
+                StrongboxUtil.randomLegendary(world, pos);
                 player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.opened"), true);
                 return ActionResult.SUCCESS;
             }
