@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "block/polished_andesite",
-		"2": "reborn12k:block/ash_planks"
+		"2": "reborn12k:block/ash_planks",
+		"particle": "reborn12k:block/ash_planks"
 	},
 	"elements": [
 		{
