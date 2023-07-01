@@ -28,9 +28,9 @@ import java.util.stream.Stream;
 
 @SuppressWarnings("deprecation")
 
-public class EpicBoxBlock extends Block {
+public class StrongboxBlock extends Block {
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
-    public EpicBoxBlock(Settings settings) {
+    public StrongboxBlock(Settings settings) {
         super(settings);
     }
 
@@ -56,17 +56,19 @@ public class EpicBoxBlock extends Block {
 
     private void randomRarityLoot(PlayerEntity player) {
         Random rarityRand = new Random();
-        int upperbound = 6;
+        int upperbound = 100;
         int rarity_int = rarityRand.nextInt(upperbound);
 
-        if (rarity_int != 0) {
+        if (rarity_int < 80) {
+            StrongboxUtil.randomRare(player);
+        }
+        if (rarity_int < 95 && rarity_int > 79) {
             StrongboxUtil.randomEpic(player);
-            player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.epic"), true);
         }
-        if (rarity_int == 0) {
+        if (rarity_int > 94) {
             StrongboxUtil.randomLegendary(player);
-            player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.legendary"), true);
         }
+        player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.opened"), true);
     }
 
     private static final VoxelShape SHAPE_N = Stream.of(

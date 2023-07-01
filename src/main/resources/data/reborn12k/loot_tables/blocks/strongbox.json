@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "reborn12k:common_strongbox"
+          "name": "reborn12k:strongbox"
         }
       ],
       "conditions": [

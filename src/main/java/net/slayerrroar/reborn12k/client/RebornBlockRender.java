@@ -16,9 +16,9 @@ public class RebornBlockRender {
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.ARCANE_ARTIFACT, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.MANA_CONDENSER, RenderLayer.getCutout());
 
-        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.COMMON_STRONGBOX, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.RARE_STRONGBOX, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.EPIC_STRONGBOX, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.WORN_STRONGBOX, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.STRONGBOX, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.PRISTINE_STRONGBOX, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.LEGENDARY_STRONGBOX, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.AIR_GEM, RenderLayer.getCutout());

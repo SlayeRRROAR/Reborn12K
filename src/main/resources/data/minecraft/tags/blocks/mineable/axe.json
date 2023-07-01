@@ -17,9 +17,9 @@
     "reborn12k:ash_pressure_plate",
     "reborn12k:ash_door",
     "reborn12k:ash_trapdoor",
-    "reborn12k:common_strongbox",
-    "reborn12k:rare_strongbox",
-    "reborn12k:epic_strongbox",
+    "reborn12k:worn_strongbox",
+    "reborn12k:strongbox",
+    "reborn12k:pristine_strongbox",
     "reborn12k:legendary_strongbox"
   ]
 }

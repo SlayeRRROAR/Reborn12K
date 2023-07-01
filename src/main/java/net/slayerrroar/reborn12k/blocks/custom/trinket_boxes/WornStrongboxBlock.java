@@ -28,9 +28,9 @@ import java.util.stream.Stream;
 
 @SuppressWarnings("deprecation")
 
-public class CommonBoxBlock extends HorizontalFacingBlock {
+public class WornStrongboxBlock extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
-    public CommonBoxBlock(Settings settings) {
+    public WornStrongboxBlock(Settings settings) {
         super(settings);
     }
 
@@ -56,25 +56,22 @@ public class CommonBoxBlock extends HorizontalFacingBlock {
 
     private void randomRarityLoot(PlayerEntity player) {
         Random rarityRand = new Random();
-        int upperbound = 101;
+        int upperbound = 100;
         int rarity_int = rarityRand.nextInt(upperbound);
 
         if (rarity_int < 80) {
             StrongboxUtil.randomCommon(player);
-            player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.common"), true);
         }
         if (rarity_int < 95 && rarity_int > 79) {
             StrongboxUtil.randomRare(player);
-            player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.rare"), true);
         }
         if (rarity_int < 99 && rarity_int > 94) {
             StrongboxUtil.randomEpic(player);
-            player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.epic"), true);
         }
-        if (rarity_int == 100) {
+        if (rarity_int == 99) {
             StrongboxUtil.randomLegendary(player);
-            player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.legendary"), true);
         }
+        player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.opened"), true);
     }
 
     private static final VoxelShape SHAPE_N = Stream.of(
