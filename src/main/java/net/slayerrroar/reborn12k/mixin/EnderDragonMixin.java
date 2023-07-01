@@ -1,5 +1,6 @@
 package net.slayerrroar.reborn12k.mixin;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.boss.dragon.EnderDragonEntity;
@@ -15,6 +16,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
 
+import java.util.Random;
 import java.util.UUID;
 
 @SuppressWarnings("JavaDoc")
@@ -65,12 +67,29 @@ public abstract class EnderDragonMixin {
                 this.world.setBlockState(this.world.getTopPosition(Heightmap.Type.MOTION_BLOCKING, EndPortalFeature.offsetOrigin(this.origin)), Blocks.DRAGON_EGG.getDefaultState());
             } else {
                 if (Reborn12K.CONFIG.enableMobDrops && Reborn12K.CONFIG.enableEnderDragonDrops) {
-                    this.world.setBlockState(this.world.getTopPosition(Heightmap.Type.MOTION_BLOCKING, EndPortalFeature.offsetOrigin(this.origin)), AdvancedBlocks.LEGENDARY_STRONGBOX.getDefaultState());
+                    this.world.setBlockState(this.world.getTopPosition(Heightmap.Type.MOTION_BLOCKING, EndPortalFeature.offsetOrigin(this.origin)), randomStrongbox());
                 }
             }
             this.previouslyKilled = true;
             this.dragonKilled = true;
         }
+    }
+
+    private BlockState randomStrongbox() {
+        Random Rand = new Random();
+        int upperbound = 10;
+        int random_int = Rand.nextInt(upperbound);
+
+        if (random_int == 0) {
+            return AdvancedBlocks.LEGENDARY_STRONGBOX.getDefaultState();
+        }
+        if (random_int < 3) {
+            return AdvancedBlocks.PRISTINE_STRONGBOX.getDefaultState();
+        }
+        if (random_int < 6) {
+            return AdvancedBlocks.STRONGBOX.getDefaultState();
+        }
+        return AdvancedBlocks.WORN_STRONGBOX.getDefaultState();
     }
 
 }
