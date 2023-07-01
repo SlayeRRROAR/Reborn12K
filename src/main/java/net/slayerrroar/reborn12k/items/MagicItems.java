@@ -72,6 +72,9 @@ public class MagicItems {
 
     public static final Item MANAWEAVE = registerItem("manaweave", new Item(new FabricItemSettings()));
     public static final Item REFINED_MANATITE = registerItem("refined_manatite", new Item(new FabricItemSettings().rarity(Rarity.RARE)));
+    public static final Item MANA_SPARK = registerItem("mana_spark", new Item(new FabricItemSettings()));
+    public static final Item MAGICAL_FRAGMENT = registerItem("magical_fragment", new Item(new FabricItemSettings()));
+    public static final Item ARCANE_DUST = registerItem("arcane_dust", new Item(new FabricItemSettings()));
 
     public static final Item WOODEN_WAND = registerItem ("wooden_wand", new Item(new FabricItemSettings()));
     public static final Item SILVER_SCEPTER = registerItem ("silver_scepter", new Item(new FabricItemSettings()));
@@ -257,6 +260,9 @@ public class MagicItems {
 
         addToItemGroup(ItemGroupUtil.REBORN12K, MANAWEAVE);
         addToItemGroup(ItemGroupUtil.REBORN12K, REFINED_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MANA_SPARK);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGICAL_FRAGMENT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCANE_DUST);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, WOODEN_WAND);
         addToItemGroup(ItemGroupUtil.REBORN12K, SILVER_SCEPTER );
