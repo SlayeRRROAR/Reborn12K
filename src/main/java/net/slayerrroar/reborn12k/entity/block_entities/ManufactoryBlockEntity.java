@@ -156,7 +156,7 @@ public class ManufactoryBlockEntity extends BlockEntity implements NamedScreenHa
 
     @Override
     public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
-        return false;
+            return false;
     }
 
     @Override

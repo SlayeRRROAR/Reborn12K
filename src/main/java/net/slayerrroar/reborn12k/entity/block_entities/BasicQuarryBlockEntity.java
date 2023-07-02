@@ -174,6 +174,9 @@ public class BasicQuarryBlockEntity extends BlockEntity implements NamedScreenHa
         if (side == Direction.DOWN) {
             return false;
         }
+        if (side == Direction.UP) {
+            return slot == 1;
+        }
         return slot == 0;
     }
 
@@ -183,6 +186,7 @@ public class BasicQuarryBlockEntity extends BlockEntity implements NamedScreenHa
         if (side == Direction.DOWN) {
             return slot == 2;
         }
-        return slot == 3;
+        return false;
     }
+
 }

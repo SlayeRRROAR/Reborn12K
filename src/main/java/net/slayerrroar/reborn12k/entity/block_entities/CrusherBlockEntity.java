@@ -9,6 +9,7 @@ import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
@@ -127,7 +128,10 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
         }
         if (hasRecipe(entity)) {
             if (hasFuelInFuelSlot(entity) && !isConsumingFuel(entity)) {
-                entity.consumeFuel();
+                if (entity.getStack(0).isOf(Items.LAVA_BUCKET)) {
+                    entity.consumeFuel();
+                    entity.setStack(0, new ItemStack(Items.BUCKET, 1));
+                } else entity.consumeFuel();
             }
             if (isConsumingFuel(entity)) {
                 entity.progress++;
@@ -197,41 +201,24 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
 
     @Override
     public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
-        Direction localDir = Objects.requireNonNull(this.getWorld()).getBlockState(this.pos).get(CrusherBlock.FACING);
 
         if (side == Direction.DOWN) {
             return false;
         }
-
-        return switch (localDir) {
-            default ->
-                    Objects.requireNonNull(side).getOpposite() == Direction.DOWN && slot == 1 ||
-                            side.getOpposite() == Direction.NORTH && slot == 0 ||
-                            side.getOpposite() == Direction.EAST && slot == 0 ||
-                            side.getOpposite() == Direction.WEST && slot == 0;
-            case EAST ->
-                    Objects.requireNonNull(side).getOpposite() == Direction.DOWN && slot == 1 ||
-                            side.rotateYClockwise() == Direction.NORTH && slot == 0 ||
-                            side.rotateYClockwise() == Direction.EAST && slot == 0 ||
-                            side.rotateYClockwise() == Direction.WEST && slot == 0;
-            case SOUTH ->
-                    Objects.requireNonNull(side).getOpposite() == Direction.DOWN && slot == 1 ||
-                            side == Direction.NORTH && slot == 0 ||
-                            side == Direction.EAST && slot == 0 ||
-                            side == Direction.WEST && slot == 0;
-            case WEST ->
-                    Objects.requireNonNull(side).getOpposite() == Direction.DOWN && slot == 1 ||
-                            side.rotateYCounterclockwise() == Direction.NORTH && slot == 0 ||
-                            side.rotateYCounterclockwise() == Direction.EAST && slot == 0 ||
-                            side.rotateYCounterclockwise() == Direction.WEST && slot == 0;
-        };
+        if (side == Direction.UP) {
+            return slot == 1;
+        }
+        return slot == 0;
     }
 
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
         if (side == Direction.DOWN) {
-            return slot == 2;
+            if (slot == 0) {
+                return stack.isOf(Items.BUCKET);
+            }
+            return slot == 3;
         }
         return false;
     }

@@ -163,6 +163,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements NamedScree
             return false;
         }
         return slot == 0;
+
     }
 
     @Override

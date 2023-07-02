@@ -9,6 +9,7 @@ import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
@@ -127,7 +128,10 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
         }
         if (hasRecipe(entity)) {
             if (hasFuelInFuelSlot(entity) && !isConsumingFuel(entity)) {
-                entity.consumeFuel();
+                if (entity.getStack(0).isOf(Items.LAVA_BUCKET)) {
+                    entity.consumeFuel();
+                    entity.setStack(0, new ItemStack(Items.BUCKET, 1));
+                } else entity.consumeFuel();
             }
             if (isConsumingFuel(entity)) {
                 entity.progress++;
@@ -196,12 +200,26 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
         return inventory.getStack(3).getMaxCount() > inventory.getStack(3).getCount();
     }
 
+    @Override
+    public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
 
+        if (side == Direction.DOWN) {
+            return false;
+        }
+        if (side == Direction.UP) {
+            return slot == 1 || slot == 2;
+        }
+        return slot == 0;
+
+    }
 
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
         if (side == Direction.DOWN) {
+            if (slot == 0) {
+                return stack.isOf(Items.BUCKET);
+            }
             return slot == 3;
         }
         return false;
