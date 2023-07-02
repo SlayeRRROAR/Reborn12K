@@ -28,8 +28,8 @@ public class ManaCondenserScreenHandler extends ScreenHandler {
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 
-        this.addSlot(new CustomSoulSlot(inventory, 0, 80, 19));
-        this.addSlot(new CustomResultSlot(inventory, 1, 80, 58));
+        this.addSlot(new CustomSoulSlot(inventory, 0, 80, 17));
+        this.addSlot(new CustomResultSlot(inventory, 1, 80, 56));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);

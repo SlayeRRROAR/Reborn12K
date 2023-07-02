@@ -36,7 +36,7 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 199;
+    private int maxProgress = 200;
     private int fuelTime = 0;
     private int maxFuelTime = 0;
 

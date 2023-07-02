@@ -12,9 +12,10 @@ public class CustomSoulSlot extends Slot {
 
     @Override
     public boolean canInsert(ItemStack stack) {
-        return stack.isOf(MagicItems.CHICKEN_SOUL) ||
+        return  stack.isOf(MagicItems.CHICKEN_SOUL) ||
                 stack.isOf(MagicItems.COW_SOUL) ||
                 stack.isOf(MagicItems.FISH_SOUL) ||
+                stack.isOf(MagicItems.FROG_SOUL) ||
                 stack.isOf(MagicItems.MOOSHROOM_SOUL) ||
                 stack.isOf(MagicItems.PIG_SOUL) ||
                 stack.isOf(MagicItems.RABBIT_SOUL) ||
