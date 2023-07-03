@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "reborn12k:item/bee_ai_module"
+    "layer0": "reborn12k:item/shulker_soul"
   }
 }
