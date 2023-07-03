@@ -32,7 +32,7 @@ public class SunlightScepter extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
 
-        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.PLAYERS, 0.25f, 1f);
+        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.PLAYERS, 0.25f, 0f);
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 20*20, 0, false, false));
 
         for (Entity e : world.getOtherEntities(playerEntity, Box.of(playerEntity.getPos(), 15, 15, 15))) {

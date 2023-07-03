@@ -31,7 +31,7 @@ public class BunnyEars extends TrinketItem implements Trinket {
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.playSound(SoundEvents.ENTITY_RABBIT_AMBIENT, 1f, 1f);
+        entity.playSound(SoundEvents.ENTITY_RABBIT_AMBIENT, 1f, 0f);
     }
 
     @Override

@@ -31,7 +31,7 @@ public class CatEars extends TrinketItem implements Trinket {
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.playSound(SoundEvents.ENTITY_CAT_PURREOW, 0.75f, 1f);
+        entity.playSound(SoundEvents.ENTITY_CAT_PURREOW, 0.75f, 0f);
     }
 
     @Override

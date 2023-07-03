@@ -43,7 +43,7 @@ public class KoDeathEnchantment extends Enchantment {
             int upperbound = 100 - (15 * (level - 1));
             int int_random = rand.nextInt(upperbound);
             if (int_random == 0) {
-                target.playSound(SoundEvents.ENTITY_WITHER_AMBIENT , 0.25f, 1f);
+                target.playSound(SoundEvents.ENTITY_WITHER_AMBIENT , 0.25f, 0f);
                 target.kill();
             }
         }

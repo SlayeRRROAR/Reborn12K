@@ -32,7 +32,7 @@ public class FerrumScepter extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
 
-        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.PLAYERS, 0.25f, 1f);
+        world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EVOKER_PREPARE_SUMMON, SoundCategory.PLAYERS, 0.25f, 0f);
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20*30, 0, false, false));
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 20*30, 2, false, false));
         playerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 20*30, 0, false, false));

@@ -7,7 +7,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.items.TrinketItems;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -54,7 +53,7 @@ public class SwordCritMixin {
             float critBonus = 1.5f;
             target.damage(attacker.getDamageSources().generic(), (damage * critBonus));
             target.getWorld().playSound(null, target.getX(), target.getY(), target.getZ(),
-                    SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, SoundCategory.PLAYERS, 1f, 1f);
+                    SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, SoundCategory.PLAYERS, 1f, 0f);
         } else {
             target.damage(attacker.getDamageSources().generic(), (damage));
         }
