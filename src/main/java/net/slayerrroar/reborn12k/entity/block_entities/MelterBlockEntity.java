@@ -2,6 +2,7 @@ package net.slayerrroar.reborn12k.entity.block_entities;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -40,6 +41,9 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
     private int maxProgress = 200;
     private int fuelTime = 0;
     private int maxFuelTime = 0;
+    private static final int[] TOP_SLOTS = new int[]{1, 2};
+    private static final int[] BOTTOM_SLOTS = new int[]{3, 0};
+    private static final int[] SIDE_SLOTS = new int[]{0};
 
     public MelterBlockEntity(BlockPos pos, BlockState state) {
         super(RebornBlockEntities.MELTER, pos, state);
@@ -200,17 +204,18 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
         return inventory.getStack(3).getMaxCount() > inventory.getStack(3).getCount();
     }
 
+    public int[] getAvailableSlots(Direction side) {
+        if (side == Direction.DOWN) {
+            return BOTTOM_SLOTS;
+        }
+        else {
+            return side == Direction.UP ? TOP_SLOTS : SIDE_SLOTS;
+        }
+    }
+
     @Override
     public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
-
-        if (side == Direction.DOWN) {
-            return false;
-        }
-        if (side == Direction.UP) {
-            return slot == 1 || slot == 2;
-        }
-        return slot == 0;
-
+        return this.isValid(slot, stack);
     }
 
     @Override
@@ -224,4 +229,20 @@ public class MelterBlockEntity extends BlockEntity implements NamedScreenHandler
         }
         return false;
     }
+
+    public static boolean canUseAsFuel(ItemStack stack) {
+        return AbstractFurnaceBlockEntity.canUseAsFuel(stack);
+    }
+
+    public boolean isValid(int slot, ItemStack stack) {
+        if (slot == 3) {
+            return false;
+        } else if (slot != 0) {
+            return true;
+        } else {
+            ItemStack itemStack = this.inventory.get(0);
+            return canUseAsFuel(stack) || stack.isOf(Items.BUCKET) && !itemStack.isOf(Items.BUCKET);
+        }
+    }
+
 }
