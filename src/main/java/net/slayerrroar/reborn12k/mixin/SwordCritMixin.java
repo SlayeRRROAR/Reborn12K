@@ -53,7 +53,7 @@ public class SwordCritMixin {
             float critBonus = 1.5f;
             target.damage(attacker.getDamageSources().generic(), (damage * critBonus));
             target.getWorld().playSound(null, target.getX(), target.getY(), target.getZ(),
-                    SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, SoundCategory.PLAYERS, 1f, 0f);
+                    SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, SoundCategory.PLAYERS, 1f, 1f);
         } else {
             target.damage(attacker.getDamageSources().generic(), (damage));
         }

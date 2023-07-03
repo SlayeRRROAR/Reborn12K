@@ -33,7 +33,7 @@ public class GlacialEntity extends ThrownItemEntity {
     private void slowTarget(EntityHitResult entityHitResult) {
         Entity entity = entityHitResult.getEntity();
         ((LivingEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20*10, 2));
-        entity.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_PLAYER_HURT_FREEZE, SoundCategory.NEUTRAL, 1f, 0f);
+        entity.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_PLAYER_HURT_FREEZE, SoundCategory.NEUTRAL, 1f, 1f);
     }
 
     protected void onEntityHit(EntityHitResult entityHitResult) {
@@ -54,7 +54,7 @@ public class GlacialEntity extends ThrownItemEntity {
                         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20*20, 0));
                     }
                 }
-                getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_PLAYER_HURT_FREEZE, SoundCategory.BLOCKS, 1f, 0f);
+                getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_PLAYER_HURT_FREEZE, SoundCategory.BLOCKS, 1f, 1f);
             }
             this.kill();
         }

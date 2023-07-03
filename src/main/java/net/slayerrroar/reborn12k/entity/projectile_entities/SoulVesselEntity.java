@@ -177,7 +177,7 @@ public class SoulVesselEntity extends ThrownItemEntity {
         if (!this.getWorld().isClient) {
             this.getWorld().sendEntityStatus(this, (byte)3);
             if (hitResult.getType() != HitResult.Type.ENTITY) {
-                getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.BLOCKS, 0.25f, 0f);
+                getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.BLOCK_GLASS_BREAK, SoundCategory.BLOCKS, 0.25f, 1f);
             }
             this.kill();
         }

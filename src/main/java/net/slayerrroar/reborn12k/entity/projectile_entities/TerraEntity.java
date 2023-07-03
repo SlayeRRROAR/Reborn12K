@@ -35,7 +35,7 @@ public class TerraEntity extends ThrownItemEntity {
 
         ((LivingEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 10, 1));
         ((LivingEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*10, 4));
-        entity.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_ALLAY_ITEM_THROWN, SoundCategory.NEUTRAL, 1f, 0f);
+        entity.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_ALLAY_ITEM_THROWN, SoundCategory.NEUTRAL, 1f, 1f);
     }
 
     protected void onEntityHit(EntityHitResult entityHitResult) {
@@ -57,7 +57,7 @@ public class TerraEntity extends ThrownItemEntity {
                         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*10, 2));
                     }
                 }
-                getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_ALLAY_ITEM_THROWN, SoundCategory.BLOCKS, 1f, 0f);
+                getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_ALLAY_ITEM_THROWN, SoundCategory.BLOCKS, 1f, 1f);
             }
             this.kill();
         }

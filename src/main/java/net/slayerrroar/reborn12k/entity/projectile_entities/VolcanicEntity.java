@@ -35,7 +35,7 @@ public class VolcanicEntity extends ThrownItemEntity {
         entity.setOnFireFor(10);
 
         ((LivingEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20*10, 2));
-        entity.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_BLAZE_SHOOT, SoundCategory.NEUTRAL, 0.75f, 0f);
+        entity.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_BLAZE_SHOOT, SoundCategory.NEUTRAL, 0.75f, 1f);
     }
 
     protected void onEntityHit(EntityHitResult entityHitResult) {
@@ -57,7 +57,7 @@ public class VolcanicEntity extends ThrownItemEntity {
                         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20*20, 0));
                     }
                 }
-                getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_BLAZE_SHOOT, SoundCategory.BLOCKS, 0.75f, 0f);
+                getWorld().playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_BLAZE_SHOOT, SoundCategory.BLOCKS, 0.75f, 1f);
             }
             this.kill();
         }

@@ -112,7 +112,7 @@ public class ExceedSword extends SwordItem {
 
                 if (int_random < 6) {
                     ActivateExceed(red_queen);
-                    world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.15f, 0f);
+                    world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.15f, 1f);
                     playerEntity.sendMessage(Text.translatable("item.reborn12k.red_queen.tooltip3"), true);
                 }
                 else {
