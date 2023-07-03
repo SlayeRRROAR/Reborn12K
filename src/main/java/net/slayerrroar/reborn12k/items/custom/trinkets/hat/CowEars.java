@@ -29,16 +29,20 @@ public class CowEars extends TrinketItem implements Trinket {
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.playSound(SoundEvents.ENTITY_COW_AMBIENT, 0.1f, 1f);
+        entity.playSound(SoundEvents.ENTITY_COW_AMBIENT, 0.1f, 0f);
     }
 
     private void cleanseNegativeEffects(LivingEntity entity) {
         entity.removeStatusEffect(StatusEffects.SLOWNESS);
-        entity.removeStatusEffect(StatusEffects.POISON);
         entity.removeStatusEffect(StatusEffects.MINING_FATIGUE);
-        entity.removeStatusEffect(StatusEffects.HUNGER);
         entity.removeStatusEffect(StatusEffects.NAUSEA);
+        entity.removeStatusEffect(StatusEffects.BLINDNESS);
+        entity.removeStatusEffect(StatusEffects.HUNGER);
+        entity.removeStatusEffect(StatusEffects.WEAKNESS);
+        entity.removeStatusEffect(StatusEffects.POISON);
+        entity.removeStatusEffect(StatusEffects.WITHER);
         entity.removeStatusEffect(StatusEffects.BAD_OMEN);
+        entity.removeStatusEffect(StatusEffects.DARKNESS);
 
     }
 
