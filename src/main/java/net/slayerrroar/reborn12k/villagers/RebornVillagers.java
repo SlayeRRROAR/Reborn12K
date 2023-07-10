@@ -31,7 +31,7 @@ public class RebornVillagers {
     public static final VillagerProfession MANASMITH = registerProfession("manasmith",
             RegistryKey.of(Registries.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(Reborn12K.MOD_ID, "manasmithpoi")));
 
-    public static final PointOfInterestType HOARDER_POI = registerPOI("hoarderpoi", Blocks.EMERALD_BLOCK);
+    public static final PointOfInterestType HOARDER_POI = registerPOI("hoarderpoi", AdvancedBlocks.SHADY_TABLE);
     public static final VillagerProfession HOARDER = registerProfession("hoarder",
             RegistryKey.of(Registries.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(Reborn12K.MOD_ID, "hoarderpoi")));
 

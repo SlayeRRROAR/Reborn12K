@@ -11,6 +11,8 @@ public class RebornBlockRender {
     public static void registerClient() {
 
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.MARKET_TABLE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.ALCHEMIC_TABLE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.SHADY_TABLE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.FANCY_LAMP, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(AdvancedBlocks.ARCANE_ARTIFACT, RenderLayer.getCutout());
