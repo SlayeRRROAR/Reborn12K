@@ -22,7 +22,8 @@ import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 public class AdvancedBlocks {
 
     public static final Block MARKET_TABLE = registerBlock("market_table", new MarketBlock(FabricBlockSettings.copy(Blocks.CRAFTING_TABLE)), ItemGroupUtil.REBORN12K);
-    public static final Block ALCHEMIC_TABLE = registerBlock("alchemic_table", new AlchemicBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroupUtil.REBORN12K);
+    public static final Block ALCHEMIC_TABLE = registerBlock("alchemic_table", new AlchemicTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroupUtil.REBORN12K);
+    public static final Block SHADY_TABLE = registerBlock("shady_table", new BlackTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)), ItemGroupUtil.REBORN12K);
     public static final Block FANCY_LAMP = registerBlock("fancy_lamp", new FancyLampBlock(FabricBlockSettings.copy(Blocks.STONE).sounds(BlockSoundGroup.STONE).hardness(5f).resistance(6f).nonOpaque().luminance(blockstate ->30)), ItemGroupUtil.REBORN12K);
 
     public static final Block WORN_STRONGBOX = registerBlock("worn_strongbox", new WornStrongboxBlock(FabricBlockSettings.copy(Blocks.CHEST)), ItemGroupUtil.REBORN12K);

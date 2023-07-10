@@ -2,13 +2,7 @@ package net.slayerrroar.reborn12k.blocks.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.state.StateManager;
-import net.minecraft.state.property.DirectionProperty;
-import net.minecraft.util.BlockMirror;
-import net.minecraft.util.BlockRotation;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
@@ -19,8 +13,8 @@ import java.util.stream.Stream;
 
 @SuppressWarnings("deprecation")
 
-public class AlchemicBlock extends Block {
-    public AlchemicBlock(Settings settings) {
+public class AlchemicTableBlock extends Block {
+    public AlchemicTableBlock(Settings settings) {
         super(settings);
     }
 
