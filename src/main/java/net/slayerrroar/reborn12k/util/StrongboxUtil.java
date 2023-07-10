@@ -105,13 +105,13 @@ public class StrongboxUtil {
             dropStack(world, pos, new ItemStack(TrinketItems.GRIFFIN_FEATHER, 1));
         }
         if (epic_int == 4) {
-            dropStack(world, pos, new ItemStack(TrinketItems.DEADLY_NIGHTSHADE, 1));
+            dropStack(world, pos, new ItemStack(TrinketItems.ACONITUM, 1));
         }
         if (epic_int == 5) {
             dropStack(world, pos, new ItemStack(TrinketItems.LEVIATHAN_EYE, 1));
         }
         if (epic_int == 6) {
-            dropStack(world, pos, new ItemStack(TrinketItems.CRYSTALIZED_FIRE, 1));
+            dropStack(world, pos, new ItemStack(TrinketItems.CRYSTALIZED_EMBER, 1));
         }
         if (epic_int == 7) {
             dropStack(world, pos, new ItemStack(TrinketItems.LOADED_DICE, 1));

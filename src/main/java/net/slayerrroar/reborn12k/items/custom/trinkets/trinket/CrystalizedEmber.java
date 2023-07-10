@@ -16,36 +16,21 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.UUID;
 
-public class DeadlyNightshade extends TrinketItem implements Trinket {
-    public DeadlyNightshade(Settings settings) {
+public class CrystalizedEmber extends TrinketItem implements Trinket {
+    public CrystalizedEmber(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity.getHealth() >= 20f) {
-            entity.setHealth(entity.getHealth() + 14f);
-        }
-    }
-
-    @Override
-    public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity.getMaxHealth() > 20f) {
-            entity.setHealth(entity.getMaxHealth());
-        }
     }
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 14, EntityAttributeModifier.Operation.ADDITION));
+        modifiers.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(uuid, "generic.attack_speed", 0.3, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         return modifiers;
     }
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.trinket.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.deadly_nightshade.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.deadly_nightshade.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.crystalized_ember.tooltip"));
     }
 
 }

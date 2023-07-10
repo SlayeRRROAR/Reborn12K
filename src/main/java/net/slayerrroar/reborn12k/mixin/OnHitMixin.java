@@ -44,13 +44,13 @@ public abstract class OnHitMixin extends Entity {
         if (TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(TrinketItems.GRIFFIN_FEATHER) && attacker != null && !(attacker instanceof PlayerEntity)) {
             ((LivingEntity) attacker).addStatusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 20 * 5, 0));
         }
-        if (TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(TrinketItems.DEADLY_NIGHTSHADE) && attacker != null && !(attacker instanceof PlayerEntity)) {
+        if (TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(TrinketItems.ACONITUM) && attacker != null && !(attacker instanceof PlayerEntity)) {
             ((LivingEntity) attacker).addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 20 * 7, 0));
         }
         if (TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(TrinketItems.LEVIATHAN_EYE) && attacker != null && !(attacker instanceof PlayerEntity)) {
             ((LivingEntity) attacker).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 7, 0));
         }
-        if (TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(TrinketItems.CRYSTALIZED_FIRE) && attacker != null && !(attacker instanceof PlayerEntity)) {
+        if (TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(TrinketItems.CRYSTALIZED_EMBER) && attacker != null && !(attacker instanceof PlayerEntity)) {
             attacker.setOnFireFor(4 + int_random);
         }
         if (TrinketsApi.getTrinketComponent((LivingEntity) ((Object) this)).get().isEquipped(TrinketItems.LOADED_DICE) && attacker != null && !(attacker instanceof PlayerEntity)) {

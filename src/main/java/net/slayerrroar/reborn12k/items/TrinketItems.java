@@ -111,9 +111,9 @@ public class TrinketItems {
     public static final Item PHOENIX_PLUME = registerItem("phoenix_plume", new PhoenixPlume(new FabricItemSettings().maxCount(1)));
 
     public static final Item GRIFFIN_FEATHER = registerItem("griffin_feather", new GriffinFeather(new FabricItemSettings().maxCount(1)));
-    public static final Item DEADLY_NIGHTSHADE = registerItem("deadly_nightshade", new DeadlyNightshade(new FabricItemSettings().maxCount(1)));
+    public static final Item ACONITUM = registerItem("aconitum", new Aconitum(new FabricItemSettings().maxCount(1)));
     public static final Item LEVIATHAN_EYE = registerItem("leviathan_eye", new LeviathanEye(new FabricItemSettings().maxCount(1)));
-    public static final Item CRYSTALIZED_FIRE = registerItem("crystalized_fire", new CrystalizedFire(new FabricItemSettings().maxCount(1)));
+    public static final Item CRYSTALIZED_EMBER = registerItem("crystalized_ember", new CrystalizedEmber(new FabricItemSettings().maxCount(1)));
     public static final Item LOADED_DICE = registerItem("loaded_dice", new LoadedDice(new FabricItemSettings().maxCount(1)));
     public static final Item BASILISK_FANG = registerItem("basilisk_fang", new BasiliskFang(new FabricItemSettings().maxCount(1)));
 
@@ -198,9 +198,9 @@ public class TrinketItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, PHOENIX_PLUME);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, GRIFFIN_FEATHER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, DEADLY_NIGHTSHADE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ACONITUM);
         addToItemGroup(ItemGroupUtil.REBORN12K, LEVIATHAN_EYE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CRYSTALIZED_FIRE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CRYSTALIZED_EMBER);
         addToItemGroup(ItemGroupUtil.REBORN12K, LOADED_DICE);
         addToItemGroup(ItemGroupUtil.REBORN12K, BASILISK_FANG);
     }
