@@ -16,15 +16,15 @@ import net.minecraft.world.World;
 import java.util.List;
 import java.util.UUID;
 
-public class ComfyLoafers extends TrinketItem implements Trinket {
+public class Loafers extends TrinketItem implements Trinket {
 
-    public ComfyLoafers(Settings settings) {
+    public Loafers(Settings settings) {
         super(settings);
     }
 
-    public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
+   public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(uuid, "generic.movement_speed", 0.1, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(uuid, "generic.movement_speed", 0.2, EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         return modifiers;
     }
 

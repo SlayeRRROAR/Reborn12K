@@ -21,6 +21,8 @@ public class RebornLootTable {
 
     private static final Identifier JUNGLE_LEAVES_ID
             = new Identifier("minecraft", "blocks/jungle_leaves");
+    private static final Identifier CHERRY_LEAVES_ID
+            = new Identifier("minecraft", "blocks/cherry_leaves");
 
     //Chests
 
@@ -66,6 +68,20 @@ public class RebornLootTable {
                                 0.008333334f,
                                 0.025f))
                         .with(ItemEntry.builder(GenericItems.BANANA))
+                        .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if (CHERRY_LEAVES_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(TableBonusLootCondition.builder(Enchantments.FORTUNE,
+                                0.008f,
+                                0.0088888889f,
+                                0.0095f,
+                                0.011111112f,
+                                0.033f))
+                        .with(ItemEntry.builder(GenericItems.CHERRY))
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                 tableBuilder.pool(poolBuilder.build());
             }

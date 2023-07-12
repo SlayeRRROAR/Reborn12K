@@ -48,8 +48,8 @@ public class TrinketItems {
 
     //Shoes
 
-    public static final Item COMFY_LOAFERS = registerItem("comfy_loafers", new ComfyLoafers(new FabricItemSettings().maxCount(1)));
-    public static final Item BRANDED_BOOTS = registerItem("branded_boots", new BrandedBoots(new FabricItemSettings().maxCount(1)));
+    public static final Item COMFY_SLIPPERS = registerItem("comfy_slippers", new ComfySlippers(new FabricItemSettings().maxCount(1)));
+    public static final Item LOAFERS = registerItem("loafers", new Loafers(new FabricItemSettings().maxCount(1)));
     public static final Item TRAVELER_SHOES = registerItem("traveler_shoes", new TravelerShoes(new FabricItemSettings().maxCount(1)));
     public static final Item RUNNING_SHOES = registerItem("running_shoes", new RunningShoes(new FabricItemSettings().maxCount(1)));
     public static final Item LONG_FALL_BOOTS = registerItem("long_fall_boots", new LongFallBoots(new FabricItemSettings().maxCount(1)));
@@ -139,8 +139,8 @@ public class TrinketItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, ANTIGRAV_BELT);
 
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, COMFY_LOAFERS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BRANDED_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, COMFY_SLIPPERS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LOAFERS);
         addToItemGroup(ItemGroupUtil.REBORN12K, TRAVELER_SHOES);
         addToItemGroup(ItemGroupUtil.REBORN12K, RUNNING_SHOES);
         addToItemGroup(ItemGroupUtil.REBORN12K, LONG_FALL_BOOTS);
