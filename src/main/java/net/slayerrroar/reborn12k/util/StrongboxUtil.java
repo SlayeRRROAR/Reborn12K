@@ -124,7 +124,7 @@ public class StrongboxUtil {
 
     public static void randomLegendary(World world, BlockPos pos) {
         Random randLegend = new Random();
-        int upperboundLegend = 8;
+        int upperboundLegend = 9;
         int legend_int = randLegend.nextInt(upperboundLegend);
 
         if (legend_int == 0) {
@@ -149,6 +149,9 @@ public class StrongboxUtil {
             dropStack(world, pos, new ItemStack(TrinketItems.JETPACK, 1));
         }
         if (legend_int == 7) {
+            dropStack(world, pos, new ItemStack(TrinketItems.MAGNIFYING_GLASS, 1));
+        }
+        if (legend_int == 8) {
             dropStack(world, pos, new ItemStack(TrinketItems.PHOENIX_PLUME, 1));
         }
     }

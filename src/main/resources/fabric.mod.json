@@ -42,6 +42,7 @@
     "minecraft": "~1.20.1",
     "java": ">=17",
     "trinkets": "*",
+    "reach_entity_attributes": "2.4.0",
     "cloth-config": "*"
   },
   "suggests": {
