@@ -412,6 +412,12 @@
     "block.reborn12k.moonstone_block": "Block of Moonstone",
 
 
+    "item.reborn12k.destabilized_mixture": "Destabilized Mixture",
+    "item.reborn12k.energized_mixture": "Energized Mixture",
+    "item.reborn12k.resonant_mixture": "Resonant Mixture",
+
+    "item.reborn12k.ender_dust": "Ender Dust",
+
 
     "item.reborn12k.banana": "Banana",
     "item.reborn12k.golden_banana": "Golden Banana",
@@ -426,10 +432,10 @@
 
     "item.reborn12k.wither_skull_fragment": "Wither Skull Fragment",
     "item.reborn12k.withered_star": "Withered Star",
-    "item.reborn12k.heart_of_darkness": "Heart of Darkness",
+
+    "item.reborn12k.universal_smithing_template": "Universal Smithing Template",
 
     "item.reborn12k.hammer": "Hammer",
-    "item.reborn12k.crushing_wheel": "Crushing Wheel",
 
 
     "item.reborn12k.windstorm_manatite": "Windstorm Manatite",
@@ -449,8 +455,6 @@
     "item.reborn12k.magic_mirror": "Magic Mirror",
     "item.reborn12k.ice_mirror": "Ice Mirror",
     "item.reborn12k.cell_phone": "Cell Phone",
-
-    "item.reborn12k.yggdrasill_branch": "Yggdrasill's Branch",
 
 
     "item.reborn12k.wooden_wand": "Wooden Wand",
@@ -646,6 +650,10 @@
 
     "item.reborn12k.manaweave": "Manaweave",
 
+    "item.reborn12k.mana_spark": "Mana Spark",
+    "item.reborn12k.magical_fragment": "Magical Fragment",
+    "item.reborn12k.arcane_dust": "Arcane Dust",
+
     "item.reborn12k.blank_rune": "Blank Rune",
     "item.reborn12k.rune_of_air": "Rune of Air",
     "item.reborn12k.rune_of_earth": "Rune of Earth",
@@ -717,43 +725,32 @@
 
     "item.reborn12k.ring_of_strength": "§4Ring of Mars Ultor",
 
-    "item.reborn12k.vague_band_of_fortitude": "Vague Band of Fortitude",
-    "item.reborn12k.minor_band_of_fortitude": "Minor Band of Fortitude",
+    "item.reborn12k.band_of_fortitude": "Band of Fortitude",
     "item.reborn12k.indelible_band_of_fortitude": "Indelible Band of Fortitude",
     "item.reborn12k.greater_band_of_fortitude": "Greater Band of Fortitude",
 
-    "item.reborn12k.vague_bloody_claw": "Vague Bloody Claw",
-    "item.reborn12k.minor_bloody_claw": "Minor Bloody Claw",
+    "item.reborn12k.bloody_claw": "Bloody Claw",
     "item.reborn12k.indelible_bloody_claw": "Indelible Bloody Claw",
     "item.reborn12k.greater_bloody_claw": "Greater Bloody Claw",
 
-    "item.reborn12k.vague_medallion": "Vague Medallion",
-    "item.reborn12k.minor_medallion": "Minor Medallion",
+    "item.reborn12k.medallion": "Medallion",
     "item.reborn12k.indelible_medallion": "Indelible Medallion",
     "item.reborn12k.greater_medallion": "Greater Medallion",
 
-    "item.reborn12k.vague_frenzy_tonic": "Vague Frenzy Tonic",
-    "item.reborn12k.minor_frenzy_tonic": "Minor Frenzy Tonic",
+    "item.reborn12k.frenzy_tonic": "Frenzy Tonic",
     "item.reborn12k.indelible_frenzy_tonic": "Indelible Frenzy Tonic",
     "item.reborn12k.greater_frenzy_tonic": "Greater Frenzy Tonic",
 
-    "item.reborn12k.vague_lucky_charm": "Vague Lucky Charm",
-    "item.reborn12k.minor_lucky_charm": "Minor Lucky Charm",
+    "item.reborn12k.lucky_charm": "Lucky Charm",
     "item.reborn12k.indelible_lucky_charm": "Indelible Lucky Charm",
     "item.reborn12k.greater_lucky_charm": "Greater Lucky Charm",
 
     "item.reborn12k.griffin_feather": "Griffin Feather",
-    "item.reborn12k.bottle_of_wind": "Bottle of Wind",
-    "item.reborn12k.golem_core": "Golem Core",
-    "item.reborn12k.nightshade": "Deadly Nightshade",
+    "item.reborn12k.aconitum": "Aconitum",
     "item.reborn12k.leviathan_eye": "Leviathan Eye",
-    "item.reborn12k.flask_of_undertow": "Flask of Undertow",
-    "item.reborn12k.dragon_fang": "Dragon Fang",
-    "item.reborn12k.crystalized_fire": "Crystalized Fire",
-    "item.reborn12k.angelic_halo": "Angelic Halo",
-    "item.reborn12k.prayer_candle": "Prayer Candle",
-    "item.reborn12k.basilisk_tooth": "Basilisk Tooth",
-    "item.reborn12k.essence_of_decay": "Essence of Decay",
+    "item.reborn12k.crystalized_ember": "Crystalized Ember",
+    "item.reborn12k.loaded_dice": "Loaded Dice",
+    "item.reborn12k.basilisk_fang": "Basilisk Fang",
 
     "item.reborn12k.jetpack": "Jetpack",
     "item.reborn12k.angel_wings": "Angel Wings",
@@ -763,7 +760,6 @@
     "item.reborn12k.gold_pouch": "Gold Pouch",
     "item.reborn12k.magnet": "Magnet",
     "item.reborn12k.bloody_rose": "Bloody Rose",
-    "item.reborn12k.weak_spring": "Weak Spring",
     "item.reborn12k.strong_spring": "Strong Spring",
     "item.reborn12k.endless_quiver": "Endless Quiver",
     "item.reborn12k.enchanted_spring": "Enchanted Spring",
@@ -799,13 +795,14 @@
 
 
     "block.reborn12k.market_table": "Market Table",
+    "block.reborn12k.alchemic_table": "Alchemic Table",
+    "block.reborn12k.shady_table": "Shady Table",
     "block.reborn12k.fancy_lamp": "Fancy Lamp",
 
-    "block.reborn12k.common_strongbox": "Locked Strongbox",
-    "block.reborn12k.rare_strongbox": "§bLocked Strongbox",
-    "block.reborn12k.epic_strongbox": "§dLocked Strongbox",
-    "block.reborn12k.legendary_strongbox": "§6Locked Strongbox",
-    "block.reborn12k.elemental_strongbox": "§4Locked Strongbox",
+    "block.reborn12k.worn_strongbox": "Worn Strongbox",
+    "block.reborn12k.strongbox": "§bStrongbox",
+    "block.reborn12k.pristine_strongbox": "§dPristine Strongbox",
+    "block.reborn12k.legendary_strongbox": "§6Legendary Strongbox",
 
     "block.reborn12k.air_gem": "Aëris",
     "block.reborn12k.earth_gem": "Telluris",
@@ -820,7 +817,7 @@
     "block.reborn12k.mana_condenser": "Mana Condenser",
 
     "block.reborn12k.crusher": "Crusher",
-    "block.reborn12k.mineral_manufactory": "Mineral Manufactory",
+    "block.reborn12k.manufactory": "Manufactory",
     "block.reborn12k.melter": "Melter",
 
     "block.reborn12k.basic_laser_quarry": "Basic Laser Quarry",
@@ -846,24 +843,6 @@
     "block.reborn12k.ash_door": "Ash Door",
     "block.reborn12k.ash_trapdoor": "Ash Trapdoor",
 
-
-    "block.reborn12k.cherry_log": "Cherry Log",
-    "block.reborn12k.cherry_wood": "Cherry Wood",
-    "block.reborn12k.stripped_cherry_log": "Stripped Cherry Log",
-    "block.reborn12k.stripped_cherry_wood": "Stripped Cherry Wood",
-    "block.reborn12k.cherry_planks": "Cherry Planks",
-
-    "block.reborn12k.cherry_leaves": "Cherry Leaves",
-    "block.reborn12k.cherry_sapling": "Cherry Sapling",
-
-    "block.reborn12k.cherry_stairs": "Cherry Stairs",
-    "block.reborn12k.cherry_slab": "Cherry Slab",
-    "block.reborn12k.cherry_fence": "Cherry Fence",
-    "block.reborn12k.cherry_fence_gate": "Cherry Fence Gate",
-    "block.reborn12k.cherry_button": "Cherry Button",
-    "block.reborn12k.cherry_pressure_plate": "Cherry Pressure Plate",
-    "block.reborn12k.cherry_door": "Cherry Door",
-    "block.reborn12k.cherry_trapdoor": "Cherry Trapdoor",
 
     "block.reborn12k.slimy_log": "Slimy Log",
     "block.reborn12k.slimy_leaves": "Slimy Leaves",
@@ -914,18 +893,11 @@
     "item.reborn12k.alkatraz_disc.desc": "DEMONDICE - Alkatraz",
 
     "item.reborn12k.locked_strongbox.tooltip": "You need a key to open it",
-    "item.reborn12k.locked_strongbox.common": "You opened a strongbox and found a Common Trinket",
-    "item.reborn12k.locked_strongbox.rare": "You opened a strongbox and found a §bRare §rTrinket",
-    "item.reborn12k.locked_strongbox.epic": "You opened a strongbox and found an §dEpic §rTrinket",
-    "item.reborn12k.locked_strongbox.legendary": "You opened a strongbox and found a §6Legendary §rTrinket",
-    "item.reborn12k.locked_strongbox.mythical": "You opened a strongbox and found a §4Mythical §rTrinket",
+    "item.reborn12k.locked_strongbox.opened": "You opened a strongbox and found a Trinket",
 
-    "item.reborn12k.elemental_strongbox.air": "You opened a strongbox and found a §bStormweaver §rItem",
-    "item.reborn12k.elemental_strongbox.earth": "You opened a strongbox and found an §2Earthshaper §rItem",
-    "item.reborn12k.elemental_strongbox.water": "You opened a strongbox and found an §1Abyssbound §rTrinket",
-    "item.reborn12k.elemental_strongbox.fire": "You opened a strongbox and found a §cFlameborn §rItem",
-    "item.reborn12k.elemental_strongbox.light": "You opened a strongbox and found a §eRadiant §rItem",
-    "item.reborn12k.elemental_strongbox.dark": "You opened a strongbox and found a §5Shadowtouched §rItem",
+    "item.reborn12k.universal_smithing_template.tooltip1": "§7Can be used to upgrade",
+    "item.reborn12k.universal_smithing_template.tooltip2": "§7anything in a smithing table",
+    "item.reborn12k.universal_smithing_template.tooltip3": "§4TRADABLE ONLY!",
 
     "item.reborn12k.windstorm.tooltip": "§8Nimbles allies",
     "item.reborn12k.viridian.tooltip": "§8Hastens allies",
@@ -958,19 +930,6 @@
     "item.reborn12k.ring.tooltip": "§9Ring",
     "item.reborn12k.trinket.tooltip": "§9Trinket",
 
-    "item.reborn12k.common.tooltip": "Common",
-    "item.reborn12k.rare.tooltip": "§bRare",
-    "item.reborn12k.epic.tooltip": "§dEpic",
-    "item.reborn12k.legendary.tooltip": "§6Legendary",
-    "item.reborn12k.mythical.tooltip": "§4Mythical",
-
-    "item.reborn12k.air.tooltip": "§bStormweaver",
-    "item.reborn12k.earth.tooltip": "§2Earthshaper",
-    "item.reborn12k.water.tooltip": "§1Abyssbound",
-    "item.reborn12k.fire.tooltip": "§cFlameborn",
-    "item.reborn12k.light.tooltip": "§eRadiant",
-    "item.reborn12k.dark.tooltip": "§5Shadowtouched",
-
     "item.reborn12k.shades.tooltip1": "§8Endermen can't hurt me",
     "item.reborn12k.shades.tooltip2": "§8this shades are Gucci",
 
@@ -980,8 +939,18 @@
     "item.reborn12k.iron_crown.tooltip1": "§8The throne is now",
     "item.reborn12k.iron_crown.tooltip2": "§8yours to take...",
 
-    "item.reborn12k.air_pendant.tooltip1": "§8When equipped unlocks the",
-    "item.reborn12k.air_pendant.tooltip2": "§8potential of §bStormweaver §8Trinkets",
+    "item.reborn12k.upgradable.tooltip": "§7Upgradable",
+
+    "item.reborn12k.upgradable_belt.tooltip1": "§8Increases strength",
+    "item.reborn12k.upgradable_belt.tooltip2": "§8Unlocks your full strength",
+
+    "item.reborn12k.upgradable_necklace.tooltip1": "§8Increases vitality",
+    "item.reborn12k.upgradable_necklace.tooltip2": "§8Unlocks your full vitality",
+
+    "item.reborn12k.upgradable_shoes.tooltip1": "§8Increases speed",
+    "item.reborn12k.upgradable_shoes.tooltip2": "§8Unlocks your full speed",
+
+    "item.reborn12k.winged_shoes.tooltip": "§8Double jump anyone?",
 
     "item.reborn12k.antigrav_buckle.tooltip1": "§8Slows the fall of the wearer",
     "item.reborn12k.antigrav_buckle.tooltip2": "§8when detects downward motion",
@@ -989,51 +958,31 @@
     "item.reborn12k.long_fall_boots.tooltip1": "§8Property of Aperture",
     "item.reborn12k.long_fall_boots.tooltip2": "§8Laboratories #G14-D05",
 
-    "item.reborn12k.earth_pendant.tooltip1": "§8When equipped unlocks the",
-    "item.reborn12k.earth_pendant.tooltip2": "§8potential of §2Earthshaper §8Trinkets",
+    "item.reborn12k.ring_of_air.tooltip1": "§8Boosts the speed",
+    "item.reborn12k.ring_of_air.tooltip2": "§8of the wearer",
 
-    "item.reborn12k.water_pendant.tooltip1": "§8When equipped unlocks the",
-    "item.reborn12k.water_pendant.tooltip2": "§8potential of §1Abyssbound §8Trinkets",
+    "item.reborn12k.ring_of_earth.tooltip1": "§8Boost the resistance and",
+    "item.reborn12k.ring_of_earth.tooltip2": "§8hastiness of the wearer",
 
-    "item.reborn12k.fire_pendant.tooltip1": "§8When equipped unlocks the",
-    "item.reborn12k.fire_pendant.tooltip2": "§8potential of §cFlameborn §8Trinkets",
+    "item.reborn12k.ring_of_water.tooltip1": "§8Improves the underwater",
+    "item.reborn12k.ring_of_water.tooltip2": "§8abilities of the wearer",
 
-    "item.reborn12k.light_pendant.tooltip1": "§8When equipped unlocks the",
-    "item.reborn12k.light_pendant.tooltip2": "§8potential of §eRadiant §8Trinkets",
+    "item.reborn12k.ring_of_fire.tooltip1": "§8Grants the wearer",
+    "item.reborn12k.ring_of_fire.tooltip2": "§8resistance to fire",
 
-    "item.reborn12k.dark_pendant.tooltip1": "§8When equipped unlocks the",
-    "item.reborn12k.dark_pendant.tooltip2": "§8potential of §5Shadowtouched §8Trinkets",
+    "item.reborn12k.ring_of_light.tooltip1": "§Grants saturation and",
+    "item.reborn12k.ring_of_light.tooltip2": "§8regeneration to the wearer",
 
-    "item.reborn12k.ring_of_air.tooltip1": "§8Ring of air",
-    "item.reborn12k.ring_of_air.tooltip2": "§8Ring of air",
+    "item.reborn12k.ring_of_dark.tooltip1": "§8Grants invisibility and",
+    "item.reborn12k.ring_of_dark.tooltip2": "§8night vision to the wearer",
 
-    "item.reborn12k.ring_of_earth.tooltip1": "§8Ring of earth",
-    "item.reborn12k.ring_of_earth.tooltip2": "§8Ring of earth",
-
-    "item.reborn12k.ring_of_water.tooltip1": "§8Ring of water",
-    "item.reborn12k.ring_of_water.tooltip2": "§8Ring of water",
-
-    "item.reborn12k.ring_of_fire.tooltip1": "§8Ring of fire",
-    "item.reborn12k.ring_of_fire.tooltip2": "§8Ring of fire",
-
-    "item.reborn12k.ring_of_light.tooltip1": "§8Ring of light",
-    "item.reborn12k.ring_of_light.tooltip2": "§8Ring of light",
-
-    "item.reborn12k.ring_of_dark.tooltip1": "§8Ring of dark",
-    "item.reborn12k.ring_of_dark.tooltip2": "§8Ring of dark",
-
-    "item.reborn12k.ring_of_strength.tooltip1": "§8Ring of strength",
-    "item.reborn12k.ring_of_strength.tooltip2": "§8Ring of strength",
-
-    "item.reborn12k.lucky_charm.tooltip": "§8No crits? Skill issue",
+    "item.reborn12k.ring_of_strength.tooltip1": "§8Boosts the strength",
+    "item.reborn12k.ring_of_strength.tooltip2": "§8of the wearer",
 
     "item.reborn12k.gold_pouch.tooltip": "§8A symbol of trust for some",
 
     "item.reborn12k.bloody_rose.tooltip1": "§8A beautiful rose with its",
     "item.reborn12k.bloody_rose.tooltip2": "§8thorns covered in blood",
-
-    "item.reborn12k.weak_spring.tooltip1": "§8An oversized spring, a bit",
-    "item.reborn12k.weak_spring.tooltip2": "§8weak but will work anyways",
 
     "item.reborn12k.strong_spring.tooltip1": "§8A very tough and",
     "item.reborn12k.strong_spring.tooltip2": "§8oversized spring",
@@ -1065,22 +1014,14 @@
 
 
     "item.reborn12k.griffin_feather.tooltip": "§8The feather of mythical winged beast",
-    "item.reborn12k.bottle_of_wind.tooltip1": "§8The nature of a thing's more",
-    "item.reborn12k.bottle_of_wind.tooltip2": "§8important than the form of a thing.",
-    "item.reborn12k.golem_core.tooltip": "§8The core of a Golem",
-    "item.reborn12k.nightshade.tooltip1": "§8Its taste is as sweet as",
-    "item.reborn12k.nightshade.tooltip2": "§8the death that soon follows",
+    "item.reborn12k.aconitum.tooltip1": "§8A beautiful flower,",
+    "item.reborn12k.aconitum.tooltip2": "§8an agonizing death",
     "item.reborn12k.leviathan_eye.tooltip1": "§8They must be made to see that",
     "item.reborn12k.leviathan_eye.tooltip2": "§8their monstrous god is mortal",
-    "item.reborn12k.flask_of_undertow.tooltip": "§8Pocket sea!",
-    "item.reborn12k.dragon_fang.tooltip1": "§8A fire dragon's fang,",
-    "item.reborn12k.dragon_fang.tooltip2": "§8still as hot as lava",
-    "item.reborn12k.crystalized_fire.tooltip": "§8A paradox made reality",
-    "item.reborn12k.angelic_halo.tooltip": "§8a",
-    "item.reborn12k.prayer_candle.tooltip1": "§8While the Flame still",
-    "item.reborn12k.prayer_candle.tooltip2": "§8burns, hope remains",
-    "item.reborn12k.basilisk_tooth.tooltip": "§8Not only its gaze can kill...",
-    "item.reborn12k.essence_of_decay.tooltip": "§8Destruction made manifest",
+    "item.reborn12k.crystalized_ember.tooltip": "§8A paradox made reality",
+    "item.reborn12k.loaded_dice.tooltip1": "§8Not even the Devil",
+    "item.reborn12k.loaded_dice.tooltip2": "§8can match this luck",
+    "item.reborn12k.basilisk_fang.tooltip": "§8Not only its gaze can kill...",
 
 
     "item.reborn12k.red_queen.tooltip1": "§8Exceed is §cOFF",

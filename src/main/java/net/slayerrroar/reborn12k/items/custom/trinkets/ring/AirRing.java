@@ -26,7 +26,6 @@ public class AirRing extends TrinketItem {
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         entity.removeStatusEffect(StatusEffects.SPEED);
-        entity.removeStatusEffect(StatusEffects.SPEED);
     }
 
     @Override
