@@ -1,7 +1,6 @@
 package net.slayerrroar.reborn12k.villagers;
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
-import net.minecraft.block.AbstractBannerBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -13,7 +12,6 @@ import net.slayerrroar.reborn12k.items.GenericItems;
 import net.slayerrroar.reborn12k.items.MagicItems;
 import net.slayerrroar.reborn12k.items.TrinketItems;
 
-import java.awt.*;
 import java.util.Random;
 
 public class RebornTrades {
@@ -243,9 +241,9 @@ public class RebornTrades {
                 factories -> {
                     factories.add((entity, random) -> strongbox());
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(GenericItems.HEART_OF_DARKNESS, 1),
-                            new ItemStack(Items.EMERALD, 44),
-                            5, 30, 0f));
+                            new ItemStack(Items.EMERALD, 39),
+                            new ItemStack(Items.NETHERITE_SCRAP, 1),
+                            3, 30, 0f));
                 });
 
     }
@@ -289,9 +287,9 @@ public class RebornTrades {
                     new ItemStack(Items.EMERALD, giveEmeralds),
                     new ItemStack(TrinketItems.BLACK_BELT, 1),
                     maxUses, merchantExperience, 0f);
-            case "antigrav_belt" -> new TradeOffer(
+            case "antigravBuckle" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.ANTIGRAV_BELT, 1),
+                    new ItemStack(TrinketItems.ANTIGRAV_BUCKLE, 1),
                     maxUses, merchantExperience, 0f);
             case "expertBelt" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
@@ -420,6 +418,10 @@ public class RebornTrades {
             case "endlessQuiver" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
                     new ItemStack(TrinketItems.ENDLESS_QUIVER, 1),
+                    maxUses, merchantExperience, 0f);
+            case "magnifyingGlass" -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, giveEmeralds),
+                    new ItemStack(TrinketItems.MAGNIFYING_GLASS, 1),
                     maxUses, merchantExperience, 0f);
             default -> new TradeOffer(
                     new ItemStack(Items.EMERALD, 1),
