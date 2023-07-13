@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BBB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:nether_star"
+        },
+        "B": {
+            "tag": "c:iridium_alloy_ingots"
+        }
+    },
+    "result": {
+        "item": "reborn12k:light_collimator_array",
+        "count": 1
+    }
+}

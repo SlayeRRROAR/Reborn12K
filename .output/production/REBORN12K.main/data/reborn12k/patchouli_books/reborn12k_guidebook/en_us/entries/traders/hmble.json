@@ -1,0 +1,19 @@
+{
+  "name": "Hmble",
+  "icon": "minecraft:emerald_block",
+  "category": "reborn12k:traders",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Hmble",
+        "text": "This villager is a complete enigma. He trades random stuff only in his interest, and has a collection of extremely powerful artifacts. Always wears a team jersey for some reason..."
+      },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:'reborn12k:hmble',level:1,type:'minecraft:plains'}}",
+      "name": "Hmble",
+      "text": "An unemployed villager can become a Hmble when standing near an Emerald block."
+    }
+  ],
+  "sortnum": 603
+}

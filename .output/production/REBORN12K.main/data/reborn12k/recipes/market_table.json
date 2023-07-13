@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "C C",
+        "C C"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:planks"
+        },
+        "B": {
+            "item": "minecraft:crafting_table"
+        },
+        "C": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "reborn12k:market_table",
+        "count": 1
+    }
+}

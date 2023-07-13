@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:thunderbolt_manatite"
+        },
+        {
+            "item": "reborn12k:silver_scepter"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:thunderbolt_scepter",
+        "count": 1
+    }
+}

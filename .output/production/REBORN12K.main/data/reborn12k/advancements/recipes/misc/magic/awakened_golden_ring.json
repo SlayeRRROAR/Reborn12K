@@ -1,0 +1,34 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:magic/ring/golden_ring"
+      ]
+    },
+    "criteria": {
+      "has_manaweave": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "reborn12k:manaweave"
+              ]
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:golden_ring"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_manaweave",
+        "has_the_recipe"
+      ]
+    ]
+  }

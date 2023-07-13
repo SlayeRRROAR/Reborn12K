@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A A",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:steel_ingots"
+        }
+    },
+    "result": {
+        "item": "reborn12k:steel_chestplate",
+        "count": 1
+    }
+}

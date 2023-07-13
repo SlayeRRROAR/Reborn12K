@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k/root",
+  "display": {
+    "icon": {
+      "item": "reborn12k:aluminum_ingot"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.lightweight.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.lightweight.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_aluminum_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:aluminum_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_aluminum_ingot"
+    ]
+  ]
+}

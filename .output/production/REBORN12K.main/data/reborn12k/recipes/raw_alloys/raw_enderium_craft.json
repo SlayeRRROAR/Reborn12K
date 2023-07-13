@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:raw_lumium_ores"
+        },
+        {
+            "tag": "c:raw_platinum_ores"
+        },
+        {
+            "item": "reborn12k:resonant_ender_bucket"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_enderium",
+        "count": 2
+    },
+    "group": "raw_enderium"
+}

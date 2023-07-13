@@ -1,0 +1,34 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:magic/runes/rune_of_water"
+      ]
+    },
+    "criteria": {
+      "has_blank_rune": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "reborn12k:blank_rune"
+              ]
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:rune_of_water"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_blank_rune",
+        "has_the_recipe"
+      ]
+    ]
+  }

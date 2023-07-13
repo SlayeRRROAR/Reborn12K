@@ -1,0 +1,34 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:magic/staffs/wooden_wand"
+      ]
+    },
+    "criteria": {
+      "has_manatite": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "reborn12k:manatite"
+              ]
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:wooden_wand"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_manatite",
+        "has_the_recipe"
+      ]
+    ]
+  }

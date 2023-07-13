@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:steel_ingots"
+        },
+        {
+            "tag": "c:silver_ingots"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:magisteel_ingot",
+        "count": 1
+    },
+    "group": "magisteel_ingot"
+}

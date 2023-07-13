@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k/thermoelectric_balance",
+  "display": {
+    "icon": {
+      "item": "reborn12k:melter"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.melting_point.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.melting_point.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_melter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:melter"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_melter"
+    ]
+  ]
+}

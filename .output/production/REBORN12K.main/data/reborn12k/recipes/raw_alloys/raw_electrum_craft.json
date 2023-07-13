@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:raw_gold"
+        },
+        {
+            "tag": "c:raw_silver_ores"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_electrum",
+        "count": 2
+    },
+    "group": "raw_electrum"
+}

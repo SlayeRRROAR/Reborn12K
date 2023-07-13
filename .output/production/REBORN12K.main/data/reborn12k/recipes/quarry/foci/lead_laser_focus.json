@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:basic_laser_focus"
+        },
+        {
+            "tag": "c:raw_lead_ores"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:lead_laser_focus",
+        "count": 1
+    }
+}

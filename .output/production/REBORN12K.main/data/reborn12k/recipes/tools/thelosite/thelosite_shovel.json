@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": {
+        "item": "reborn12k:universal_smithing_template"
+    },
+    "base": {
+        "item": "reborn12k:tungstensteel_shovel"
+    },
+    "addition": {
+        "tag": "c:thelosite_ingots"
+    },
+    "result": {
+        "item": "reborn12k:thelosite_shovel"
+    }
+}

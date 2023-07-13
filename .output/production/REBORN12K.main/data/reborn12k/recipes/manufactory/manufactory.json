@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "C C",
+        "BBB"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:bucket"
+        },
+        "B": {
+            "item": "minecraft:smooth_stone"
+        },
+        "C": {
+            "item": "minecraft:hopper"
+        }
+    },
+    "result": {
+        "item": "reborn12k:manufactory",
+        "count": 1
+    }
+}

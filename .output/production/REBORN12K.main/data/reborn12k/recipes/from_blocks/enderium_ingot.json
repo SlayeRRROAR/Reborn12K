@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:enderium_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:enderium_ingot",
+        "count": 9
+    },
+    "group": "enderium_ingot"
+}

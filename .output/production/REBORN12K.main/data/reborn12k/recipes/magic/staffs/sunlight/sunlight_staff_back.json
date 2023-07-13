@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:sunlight_staff"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:sunlight_manatite",
+        "count": 1
+    },
+    "group": "sunlight_manatite"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:creeper_essence"
+  },
+  "result": "minecraft:gunpowder",
+  "count": 2
+}

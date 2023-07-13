@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:clay"
+      ]
+    },
+    "criteria": {
+      "has_sand": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "sand"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:clay"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_sand",
+        "has_the_recipe"
+      ]
+    ]
+  }

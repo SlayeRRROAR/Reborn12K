@@ -1,0 +1,34 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "minecraft:slime_ball"
+      ]
+    },
+    "criteria": {
+      "has_slimy_log": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "reborn12k:slimy_log"
+              ]
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "minecraft:slime_ball"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_slimy_log",
+        "has_the_recipe"
+      ]
+    ]
+  }

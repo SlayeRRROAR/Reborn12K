@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:raw_thelosite_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_thelosite",
+        "count": 9
+    },
+    "group": "raw_thelosite"
+}

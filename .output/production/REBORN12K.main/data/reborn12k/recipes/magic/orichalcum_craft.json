@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "reborn12k:magisteel_ingot"
+    },
+    "B": {
+      "item": "reborn12k:rune_of_iron"
+    }
+  },
+  "result": {
+    "item": "reborn12k:orichalcum_ingot",
+    "count": 1
+  },
+  "group": "orichalcum_ingot"
+}

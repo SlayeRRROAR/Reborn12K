@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:into_blocks/raw/raw_tungsten_block"
+      ]
+    },
+    "criteria": {
+      "has_raw_tungsten": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:raw_tungsten_ores"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:raw_tungsten_block"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_raw_tungsten",
+        "has_the_recipe"
+      ]
+    ]
+  }

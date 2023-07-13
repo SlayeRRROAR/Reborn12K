@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k/the_four_cs",
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.reaching_deep.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.reaching_deep.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_netherite_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_netherite_ingot"
+    ]
+  ]
+}

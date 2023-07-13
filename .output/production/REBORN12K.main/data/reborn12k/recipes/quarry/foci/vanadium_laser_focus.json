@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:advanced_laser_focus"
+        },
+        {
+            "tag": "c:raw_vanadium_ores"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:vanadium_laser_focus",
+        "count": 1
+    }
+}

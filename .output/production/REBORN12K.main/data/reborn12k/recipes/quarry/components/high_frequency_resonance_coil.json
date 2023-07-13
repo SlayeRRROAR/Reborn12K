@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "ABA",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:osmium_ingots"
+        },
+        "B": {
+            "tag": "c:enderium_ingots"
+        }
+    },
+    "result": {
+        "item": "reborn12k:high_frequency_resonance_coil",
+        "count": 1
+    }
+}

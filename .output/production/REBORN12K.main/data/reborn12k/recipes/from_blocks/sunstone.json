@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:sunstone_block"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:sunstone",
+        "count": 9
+    }
+}

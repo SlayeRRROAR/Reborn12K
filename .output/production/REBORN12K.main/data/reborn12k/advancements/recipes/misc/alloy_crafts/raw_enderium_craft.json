@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:raw_alloys/raw_enderium_craft"
+      ]
+    },
+    "criteria": {
+      "has_raw_platinum": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:raw_platinum_ores"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:raw_enderium"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_raw_platinum",
+        "has_the_recipe"
+      ]
+    ]
+  }

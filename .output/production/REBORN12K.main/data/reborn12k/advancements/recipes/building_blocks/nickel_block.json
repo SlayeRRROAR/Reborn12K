@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:into_blocks/nickel_block"
+      ]
+    },
+    "criteria": {
+      "has_nickel_ingot": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:nickel_ingots"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:nickel_block"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_nickel_ingot",
+        "has_the_recipe"
+      ]
+    ]
+  }

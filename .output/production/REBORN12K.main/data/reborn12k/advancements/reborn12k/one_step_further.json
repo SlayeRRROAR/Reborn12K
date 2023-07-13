@@ -1,0 +1,76 @@
+{
+  "parent": "reborn12k:reborn12k/netherite_tier",
+  "display": {
+    "icon": {
+      "item": "reborn12k:thelosite_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.one_step_further.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.one_step_further.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_archeosite_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:archeosite_pickaxe"
+            ]
+          }
+        ]
+      }
+    },
+    "get_thelosite_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:thelosite_pickaxe"
+            ]
+          }
+        ]
+      }
+    },
+    "get_enderium_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:enderium_pickaxe"
+            ]
+          }
+        ]
+      }
+    },
+    "get_iridium_alloy_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:iridium_alloy_pickaxe"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_archeosite_pickaxe",
+      "get_thelosite_pickaxe",
+      "get_enderium_pickaxe",
+      "get_iridium_alloy_pickaxe"
+    ]
+  ]
+}

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": {
+        "item": "reborn12k:universal_smithing_template"
+    },
+    "base": {
+        "item": "reborn12k:orichalcum_hoe"
+    },
+    "addition": {
+       "item": "reborn12k:mithril_ingot"
+    },
+    "result": {
+        "item": "reborn12k:mithril_hoe"
+    }
+}

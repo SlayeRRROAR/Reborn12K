@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:small_granite_bricks"
+  },
+  "result": "reborn12k:small_granite_bricks_slab",
+  "count": 2
+}

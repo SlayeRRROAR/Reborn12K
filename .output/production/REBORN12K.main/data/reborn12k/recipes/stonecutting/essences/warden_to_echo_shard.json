@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:warden_essence"
+  },
+  "result": "reborn12k:echo_shard",
+  "count": 2
+}

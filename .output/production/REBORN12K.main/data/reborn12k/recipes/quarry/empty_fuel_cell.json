@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "ACA",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:titanium_ingots"
+        },
+        "B": {
+            "item": "minecraft:gold_ingot"
+        },
+        "C": {
+            "tag": "c:glass_panes"
+        }
+    },
+    "result": {
+        "item": "reborn12k:empty_fuel_cell",
+        "count": 1
+    }
+}

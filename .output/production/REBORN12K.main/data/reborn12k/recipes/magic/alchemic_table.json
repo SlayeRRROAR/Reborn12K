@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AA",
+        "BB",
+        "BB"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:gold_ingot"
+        },
+        "B": {
+            "item": "reborn12k:ash_planks"
+        }
+    },
+    "result": {
+        "item": "reborn12k:alchemic_table",
+        "count": 1
+    }
+}

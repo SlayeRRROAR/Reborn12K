@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "reborn12k:market_table",
+    "reborn12k:alchemic_table",
+    "reborn12k:shady_table",
+    "reborn12k:ash_log",
+    "reborn12k:slimy_log",
+    "reborn12k:ash_wood",
+    "reborn12k:stripped_ash_log",
+    "reborn12k:stripped_ash_wood",
+    "reborn12k:ash_planks",
+    "reborn12k:ash_stairs",
+    "reborn12k:ash_slab",
+    "reborn12k:ash_fence",
+    "reborn12k:ash_fence_gate",
+    "reborn12k:ash_button",
+    "reborn12k:ash_pressure_plate",
+    "reborn12k:ash_door",
+    "reborn12k:ash_trapdoor",
+    "reborn12k:worn_strongbox",
+    "reborn12k:strongbox",
+    "reborn12k:pristine_strongbox",
+    "reborn12k:legendary_strongbox"
+  ]
+}

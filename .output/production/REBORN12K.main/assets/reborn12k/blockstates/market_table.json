@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "reborn12k:block/market_table" },
+    "facing=east": { "model": "reborn12k:block/market_table", "y": 90 },
+    "facing=south": { "model": "reborn12k:block/market_table", "y": 180 },
+    "facing=west": { "model": "reborn12k:block/market_table", "y": 270 }
+  }
+}

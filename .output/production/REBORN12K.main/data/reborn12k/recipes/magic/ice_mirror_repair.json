@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "reborn12k:ice_mirror"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "result": {
+    "item": "reborn12k:ice_mirror",
+    "count": 1
+  },
+  "group": "ice_mirror"
+}

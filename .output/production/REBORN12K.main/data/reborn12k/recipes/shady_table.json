@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AA",
+        "BB",
+        "BB"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:black_carpet"
+        },
+        "B": {
+            "item": "minecraft:dark_oak_planks"
+        }
+    },
+    "result": {
+        "item": "reborn12k:shady_table",
+        "count": 1
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "reborn12k:block/worn_strongbox" },
+    "facing=east": { "model": "reborn12k:block/worn_strongbox", "y": 90 },
+    "facing=south": { "model": "reborn12k:block/worn_strongbox", "y": 180 },
+    "facing=west": { "model": "reborn12k:block/worn_strongbox", "y": 270 }
+  }
+}

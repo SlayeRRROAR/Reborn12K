@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABC"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:raw_titanium_ores"
+        },
+        "B": {
+            "tag": "c:raw_vanadium_ores"
+        },
+        "C": {
+            "tag": "c:raw_aluminum_ores"
+        }
+    },
+    "result": {
+        "item": "reborn12k:raw_advanced_alloy",
+        "count": 1
+    },
+    "group": "raw_advanced_alloy"
+}

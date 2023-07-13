@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:raw_cobalt_ores"
+        },
+        "B": {
+            "tag": "c:raw_osmium_ores"
+        },
+        "C": {
+            "tag": "c:raw_tungstensteel_ores"
+        }
+    },
+    "result": {
+        "item": "reborn12k:raw_thelosite",
+        "count": 1
+    },
+    "group": "raw_thelosite"
+}

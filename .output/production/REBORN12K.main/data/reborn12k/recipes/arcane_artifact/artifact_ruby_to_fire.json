@@ -1,0 +1,11 @@
+{
+  "type": "reborn12k:arcane_artifact",
+  "ingredients": [
+    {
+      "tag": "c:rubies"
+    }
+  ],
+  "output": {
+    "item": "reborn12k:rune_of_fire"
+  }
+}

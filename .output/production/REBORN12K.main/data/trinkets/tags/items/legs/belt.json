@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "reborn12k:green_belt",
+    "reborn12k:red_belt",
+    "reborn12k:black_belt",
+    "reborn12k:expert_belt",
+    "reborn12k:antigrav_belt"
+  ]
+}

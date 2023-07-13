@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:neodymium_ingots"
+        }
+    },
+    "result": {
+        "item": "reborn12k:neodymium_block",
+        "count": 1
+    }
+}

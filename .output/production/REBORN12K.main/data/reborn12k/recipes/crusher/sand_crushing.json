@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "item": "minecraft:gravel"
+        }
+    ],
+    "output": {
+        "item": "minecraft:sand"
+    }
+}

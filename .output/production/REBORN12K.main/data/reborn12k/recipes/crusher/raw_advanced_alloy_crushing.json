@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:advanced_alloy_ingots"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:raw_advanced_alloy"
+    }
+}

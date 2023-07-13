@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:lead_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:lead_ingot",
+        "count": 9
+    },
+    "group": "lead_ingot"
+}

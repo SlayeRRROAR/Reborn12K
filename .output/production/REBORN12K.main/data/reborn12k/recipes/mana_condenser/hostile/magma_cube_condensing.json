@@ -1,0 +1,11 @@
+{
+  "type": "reborn12k:mana_condenser",
+  "ingredients": [
+    {
+      "item": "reborn12k:magma_cube_soul"
+    }
+  ],
+  "output": {
+    "item": "reborn12k:magma_cube_essence"
+  }
+}

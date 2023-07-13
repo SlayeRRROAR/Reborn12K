@@ -1,0 +1,11 @@
+{
+  "type": "reborn12k:arcane_artifact",
+  "ingredients": [
+    {
+      "tag": "c:quartz_blocks"
+    }
+  ],
+  "output": {
+    "item": "reborn12k:sunstone"
+  }
+}

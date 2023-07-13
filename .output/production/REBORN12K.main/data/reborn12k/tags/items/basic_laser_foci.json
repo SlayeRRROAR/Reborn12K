@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "reborn12k:coal_laser_focus",
+    "reborn12k:copper_laser_focus",
+    "reborn12k:iron_laser_focus",
+    "reborn12k:gold_laser_focus",
+    "reborn12k:tin_laser_focus",
+    "reborn12k:aluminum_laser_focus",
+    "reborn12k:silver_laser_focus",
+    "reborn12k:lead_laser_focus",
+    "reborn12k:chrome_laser_focus",
+    "reborn12k:nickel_laser_focus"
+  ]
+}

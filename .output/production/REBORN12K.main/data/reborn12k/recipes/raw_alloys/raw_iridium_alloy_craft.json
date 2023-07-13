@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:raw_iridium_ores"
+        },
+        "B": {
+            "tag": "c:raw_advanced_alloy_ores"
+        },
+        "C": {
+            "item": "minecraft:diamond"
+        }
+    },
+    "result": {
+        "item": "reborn12k:raw_iridium_alloy",
+        "count": 1
+    },
+    "group": "raw_iridium_alloy"
+}

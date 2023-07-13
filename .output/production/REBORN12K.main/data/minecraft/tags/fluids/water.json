@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "reborn12k:liquid_mana_still",
+    "reborn12k:liquid_mana_flowing",
+    "reborn12k:destabilized_redstone_still",
+    "reborn12k:destabilized_redstone_flowing",
+    "reborn12k:energized_glowstone_still",
+    "reborn12k:energized_glowstone_flowing",
+    "reborn12k:resonant_ender_still",
+    "reborn12k:resonant_ender_flowing"
+  ]
+}

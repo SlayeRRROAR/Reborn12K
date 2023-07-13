@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:enderium_ingots"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:raw_enderium"
+    }
+}

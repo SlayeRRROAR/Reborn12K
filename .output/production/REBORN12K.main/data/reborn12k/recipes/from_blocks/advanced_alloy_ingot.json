@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:advanced_alloy_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:advanced_alloy_ingot",
+        "count": 9
+    },
+    "group": "advanced_alloy_ingot"
+}

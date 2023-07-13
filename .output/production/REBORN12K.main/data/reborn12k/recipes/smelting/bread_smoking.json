@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+        "item": "reborn12k:dough"
+    },
+    "result": "minecraft:bread",
+    "experience": 0.2,
+    "cookingtime": 100
+}

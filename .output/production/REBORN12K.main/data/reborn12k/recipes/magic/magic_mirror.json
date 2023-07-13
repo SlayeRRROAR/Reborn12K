@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "CDC",
+    "AEA"
+  ],
+  "key": {
+    "A": {
+      "tag": "reborn12k:precious_gems"
+    },
+    "B": {
+      "item": "reborn12k:rune_of_order"
+    },
+    "C": {
+      "tag": "c:silver_ingots"
+    },
+    "D": {
+      "item": "minecraft:ender_pearl"
+    },
+    "E": {
+      "item": "reborn12k:rune_of_chaos"
+    }
+  },
+  "result": {
+    "item": "reborn12k:magic_mirror",
+    "count": 1
+  },
+  "group": "magic_mirror"
+}

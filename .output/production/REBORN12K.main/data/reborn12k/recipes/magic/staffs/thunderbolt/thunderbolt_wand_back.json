@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:thunderbolt_wand"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:thunderbolt_manatite",
+        "count": 1
+    },
+    "group": "thunderbolt_manatite"
+}

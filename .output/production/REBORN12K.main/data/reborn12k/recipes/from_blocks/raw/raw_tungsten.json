@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:raw_tungsten_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_tungsten",
+
+        "count": 9
+    },
+    "group": "raw_tungsten"
+}

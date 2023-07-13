@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:osmium_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:osmium_ingot",
+        "count": 9
+    },
+    "group": "osmium_ingot"
+}

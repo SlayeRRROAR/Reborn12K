@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "BCD",
+        " E "
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:rune_of_light"
+        },
+        "B": {
+            "item": "reborn12k:rune_of_order"
+        },
+        "C": {
+            "item": "reborn12k:blank_rune"
+        },
+        "D": {
+            "item": "reborn12k:rune_of_chaos"
+        },
+        "E": {
+            "item": "reborn12k:rune_of_darkness"
+        }
+    },
+    "result": {
+        "item": "reborn12k:ethereal_rune",
+        "count": 1
+    }
+}

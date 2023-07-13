@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "tag": "c:sapphire_ores"
+    },
+    "result": "reborn12k:sapphire",
+    "experience": 1,
+    "cookingtime": 100
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        " B ",
+        "CBC"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:elemental_rune"
+        },
+        "B": {
+            "item": "reborn12k:ash_planks"
+        },
+        "C": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "reborn12k:arcane_pedestal",
+        "count": 1
+    }
+}
