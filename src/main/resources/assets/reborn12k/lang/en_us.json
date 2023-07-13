@@ -685,7 +685,7 @@
     "item.reborn12k.expert_belt": "Expert Belt",
     "item.reborn12k.champion_belt": "Champion's Belt",
     "item.reborn12k.focus_belt": "Focus Belt",
-    "item.reborn12k.antigrav_belt": "AntiGrav Belt",
+    "item.reborn12k.antigrav_buckle": "AntiGrav Buckle",
 
     "item.reborn12k.comfy_loafers": "Comfy Loafers",
     "item.reborn12k.traveler_shoes": "Traveler's Shoes",
@@ -983,8 +983,8 @@
     "item.reborn12k.air_pendant.tooltip1": "§8When equipped unlocks the",
     "item.reborn12k.air_pendant.tooltip2": "§8potential of §bStormweaver §8Trinkets",
 
-    "item.reborn12k.antigrav_belt.tooltip1": "§8Slows the fall of the wearer",
-    "item.reborn12k.antigrav_belt.tooltip2": "§8when detects downward motion",
+    "item.reborn12k.antigrav_buckle.tooltip1": "§8Slows the fall of the wearer",
+    "item.reborn12k.antigrav_buckle.tooltip2": "§8when detects downward motion",
 
     "item.reborn12k.long_fall_boots.tooltip1": "§8Property of Aperture",
     "item.reborn12k.long_fall_boots.tooltip2": "§8Laboratories #G14-D05",
@@ -1141,7 +1141,7 @@
     "entity.minecraft.villager.hoarder": "Hoarder",
 
 
-    "itemGroup.reborn12k": "Reborn12K",
+    "itemgroup.reborn12k": "Reborn12K",
 
 
     "advancements.reborn12k.root.title": "Reborn12K",

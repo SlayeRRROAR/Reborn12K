@@ -196,7 +196,6 @@ public class TrinketItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, ENCHANTED_SPRING);
         addToItemGroup(ItemGroupUtil.REBORN12K, BLOODY_ROSE);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDLESS_QUIVER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGNIFYING_GLASS);
         addToItemGroup(ItemGroupUtil.REBORN12K, PHOENIX_PLUME);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, GRIFFIN_FEATHER);
