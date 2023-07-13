@@ -44,7 +44,7 @@ public class TrinketItems {
     public static final Item RED_BELT = registerItem("red_belt", new RedBelt(new FabricItemSettings().maxCount(1)));
     public static final Item BLACK_BELT = registerItem("black_belt", new BlackBelt(new FabricItemSettings().maxCount(1)));
     public static final Item EXPERT_BELT = registerItem("expert_belt", new ExpertBelt(new FabricItemSettings().maxCount(1)));
-    public static final Item ANTIGRAV_BELT = registerItem("antigrav_belt", new AntiGravBelt(new FabricItemSettings().maxCount(1)));
+    public static final Item ANTIGRAV_BUCKLE = registerItem("antigrav_buckle", new AntiGravBuckle(new FabricItemSettings().maxCount(1)));
 
     //Shoes
 
@@ -137,7 +137,7 @@ public class TrinketItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, RED_BELT);
         addToItemGroup(ItemGroupUtil.REBORN12K, BLACK_BELT);
         addToItemGroup(ItemGroupUtil.REBORN12K, EXPERT_BELT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ANTIGRAV_BELT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ANTIGRAV_BUCKLE);
 
 
         addToItemGroup(ItemGroupUtil.REBORN12K, COMFY_SLIPPERS);

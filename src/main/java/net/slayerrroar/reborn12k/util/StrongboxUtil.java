@@ -62,7 +62,7 @@ public class StrongboxUtil {
             dropStack(world, pos, new ItemStack(TrinketItems.IRON_CROWN, 1));
         }
         if (rare_int == 1) {
-            dropStack(world, pos, new ItemStack(TrinketItems.ANTIGRAV_BELT, 1));
+            dropStack(world, pos, new ItemStack(TrinketItems.ANTIGRAV_BUCKLE, 1));
         }
         if (rare_int == 2) {
             dropStack(world, pos, new ItemStack(TrinketItems.INDELIBLE_BAND_OF_FORTITUDE, 1));

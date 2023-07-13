@@ -14,8 +14,8 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class AntiGravBelt extends TrinketItem implements Trinket {
-    public AntiGravBelt(Settings settings) {
+public class AntiGravBuckle extends TrinketItem implements Trinket {
+    public AntiGravBuckle(Settings settings) {
         super(settings);
     }
 
@@ -41,8 +41,8 @@ public class AntiGravBelt extends TrinketItem implements Trinket {
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add(Text.translatable("item.reborn12k.belt.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.antigrav_belt.tooltip1"));
-        tooltip.add(Text.translatable("item.reborn12k.antigrav_belt.tooltip2"));
+        tooltip.add(Text.translatable("item.reborn12k.antigrav_buckle.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.antigrav_buckle.tooltip2"));
     }
 
 }
