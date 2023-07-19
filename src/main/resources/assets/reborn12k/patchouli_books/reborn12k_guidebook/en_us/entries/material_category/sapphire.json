@@ -1,0 +1,20 @@
+{
+  "name": "Sapphire",
+  "icon": "reborn12k:sapphire",
+  "advancement": "reborn12k:reborn12k/iron_tier",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Sapphire",
+      "item": "reborn12k:sapphire",
+      "text": "Corundum gems, or Sapphires, can have lots of different colors. However the blue one will always be step above in beauty. A natural conduit of mana, particularly attuned to the water and the sea."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:sapphire_ore",
+      "text": "Sapphire can be found in the Overworld between Y level -64 and 16, in decent-sized clusters that tend to be higher or bigger clusters that tend to be deeper and not exposed to air."
+    }
+  ],
+  "sortnum": 120
+}

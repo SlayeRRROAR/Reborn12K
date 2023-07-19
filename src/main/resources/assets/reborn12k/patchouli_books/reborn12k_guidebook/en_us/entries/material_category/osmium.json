@@ -1,0 +1,20 @@
+{
+  "name": "Osmium",
+  "icon": "reborn12k:osmium_ingot",
+  "advancement": "minecraft:story/enter_the_end",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Osmium",
+      "item": "reborn12k:osmium_ingot",
+      "text": "Part of the Platinum group of elements, Osmium is the densest natural occurring material known in existance. Volatile and toxic in its pure state, is mostly used in combination with other elements."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:end_osmium_ore",
+      "text": "Osmium can be found in the End, in small clusters."
+    }
+  ],
+  "sortnum": 161
+}

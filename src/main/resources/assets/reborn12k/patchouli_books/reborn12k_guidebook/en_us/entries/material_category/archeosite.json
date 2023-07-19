@@ -1,0 +1,19 @@
+{
+  "name": "Archeosite",
+  "icon": "reborn12k:archeosite_ingot",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Archeosite",
+      "item": "reborn12k:archeosite_ingot",
+      "text": "Archeosite is a strong alloy and an upgrade to Netherite."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:raw_alloys/raw_archeosite_craft",
+      "text": "Raw Archeosite can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 200
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Melter",
+  "icon": "reborn12k:melter",
+  "advancement": "reborn12k:reborn12k/thermoelectric_balance",
+  "category": "reborn12k:block_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Melter",
+      "text": "The Melter is a block required for progression. When given a bucket and a mixture it will heat and mix them into a liquid bucket, very useful in the creation of strong alloys. Don't worry, the bucket isn't that hot when you take it out. This block requires fuel to work."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:melter/melter",
+      "recipe2": "reborn12k:melter/destabilized_mixture"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:melter/energized_mixture",
+      "recipe2": "reborn12k:melter/resonant_mixture"
+    }
+  ],
+  "sortnum": 503
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Electrum",
+  "icon": "reborn12k:electrum_ingot",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Electrum",
+      "item": "reborn12k:electrum_ingot",
+      "text": "Electrum is an alloy obtained with Silver and Gold.$(br)An alternative to Diamond, Electrum tools and armor are more enchantable and just as strong than their counterpart, but not as durable."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:raw_alloys/raw_electrum_craft",
+      "text": "Raw Electrum can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 209
+}

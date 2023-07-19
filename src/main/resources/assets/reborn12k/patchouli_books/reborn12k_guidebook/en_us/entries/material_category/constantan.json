@@ -1,0 +1,19 @@
+{
+  "name": "Constantan",
+  "icon": "reborn12k:constantan_ingot",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Constantan",
+      "item": "reborn12k:constantan_ingot",
+      "text": "Constantan is an alloy obtained with Copper and Nickel."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:raw_alloys/raw_constantan_craft",
+      "text": "Raw Constantan can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 202
+}

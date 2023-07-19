@@ -1,12 +1,12 @@
 {
   "name": "Jeweler",
   "icon": "reborn12k:market_table",
-  "category": "reborn12k:traders",
+  "category": "reborn12k:villager_category",
   "pages": [
       {
         "type": "patchouli:text",
         "title": "Jeweler",
-        "text": "This guy is all about precious stuff: silver, gold, gems, crystals... name it, he got it. He'll show rare stuff should you prove yourself to be trustworthy."
+        "text": "This guy is all about precious stuff: silver, gold, gems, crystals... name it, he got it. He'll show rare stuff should you prove yourself to be trustworthy. As a specialist in vanity, he can be a valuable source of armor trims."
       },
     {
       "type": "patchouli:entity",
@@ -15,5 +15,5 @@
       "text": "An unemployed villager can become a Jeweler when standing near a Market Table."
     }
   ],
-  "sortnum": 600
+  "sortnum": 601
 }

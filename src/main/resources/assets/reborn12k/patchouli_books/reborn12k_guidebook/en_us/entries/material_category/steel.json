@@ -1,0 +1,19 @@
+{
+  "name": "Steel",
+  "icon": "reborn12k:steel_ingot",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Steel",
+      "item": "reborn12k:steel_ingot",
+      "text": "Steel is an alloy obtained with Iron, Coal and Chrome.$(br)An alternative to Diamond, Steel tools and armor are stronger and just as durable than their counterpart, but not as enchantable."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:raw_alloys/raw_steel_craft",
+      "text": "Raw Steel can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 204
+}

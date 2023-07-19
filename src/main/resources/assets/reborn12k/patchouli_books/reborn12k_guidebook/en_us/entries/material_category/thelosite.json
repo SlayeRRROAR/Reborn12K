@@ -1,0 +1,19 @@
+{
+  "name": "Thelosite",
+  "icon": "reborn12k:thelosite_ingot",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Thelosite",
+      "item": "reborn12k:thelosite_ingot",
+      "text": "Thelosite is an alloy obtained with Tungestensteel, Cobalt and Osmium.$(br)An alternative to Archeosite, Thelosite tools and armor are stronger and just as durable than their counterpart, but not as enchantable."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:raw_alloys/raw_thelosite_craft",
+      "text": "Raw Thelosite can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 206
+}

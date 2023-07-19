@@ -1,0 +1,19 @@
+{
+  "name": "Coal Piece",
+  "icon": "reborn12k:coal_piece",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Coal Piece",
+      "item": "reborn12k:coal_piece",
+      "text": "A piece of Coal. Can only smelt one item. Can be crafted from and into Coal."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:coal_piece",
+      "recipe2": "reborn12k:coal"
+    }
+  ],
+  "sortnum": 301
+}

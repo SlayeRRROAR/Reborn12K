@@ -1,0 +1,17 @@
+{
+  "name": "Mana Condenser",
+  "icon": "reborn12k:mana_condenser",
+  "category": "reborn12k:block_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Mana Condenser",
+      "text": "The Mana Condenser is a utility block. It doesn't need any type of fuel since it uses the mana in the air, so it's fairly slow. When give a soul, it condenses mana around it to create an essence. That essence can be shaped (using a stonecutter) into something else."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:mana_condenser/mana_condenser"
+    }
+  ],
+  "sortnum": 506
+}

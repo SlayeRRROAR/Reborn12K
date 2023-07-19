@@ -1,0 +1,19 @@
+{
+  "name": "Invar",
+  "icon": "reborn12k:invar_ingot",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Invar",
+      "item": "reborn12k:invar_ingot",
+      "text": "Invar is an alloy obtained with Iron and Nickel."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:raw_alloys/raw_invar_craft",
+      "text": "Raw Invar can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 203
+}
