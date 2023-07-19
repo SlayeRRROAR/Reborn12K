@@ -11,8 +11,8 @@
       "translate": "advancements.reborn12k.one_step_further.description"
     },
     "frame": "challenge",
-    "show_toast": true,
-    "announce_to_chat": true,
+    "show_toast": false,
+    "announce_to_chat": false,
     "hidden": false
   },
   "criteria": {
