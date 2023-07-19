@@ -1,0 +1,20 @@
+{
+  "name": "Vanadium",
+  "icon": "reborn12k:vanadium_ingot",
+  "advancement": "minecraft:story/enter_the_nether",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Vanadium",
+      "item": "reborn12k:vanadium_ingot",
+      "text": "Vanadium is a hard but ductile metal. Very resistant to corrosion and acidic agents, it's mostly used as an additive in mechanically intensive and critical components."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:nether_vanadium_ore",
+      "text": "Vanadium can be plentifully found in the Nether between Y level 10 and 60 with a tendency to be in the middle, in small clusters."
+    }
+  ],
+  "sortnum": 141
+}

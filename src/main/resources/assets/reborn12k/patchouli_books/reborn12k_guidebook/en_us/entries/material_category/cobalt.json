@@ -1,0 +1,20 @@
+{
+  "name": "Cobalt",
+  "icon": "reborn12k:cobalt_ingot",
+  "advancement": "minecraft:story/enter_the_end",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Cobalt",
+      "item": "reborn12k:cobalt_ingot",
+      "text": "Basically inexistant if not for some traces in other materials, Cobalt can be easily found in low oxygen environments as a byproduct of supernovae. Most of its uses are as an alloy component or dye."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:end_cobalt_ore",
+      "text": "Cobalt can be found in the End, in decent-sized clusters."
+    }
+  ],
+  "sortnum": 160
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Crusher",
+  "icon": "reborn12k:crusher",
+  "category": "reborn12k:block_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Crusher",
+      "text": "The Crusher is a utility block. It can grind items to their respective raw forms (for metals) or dusts (other items). It can also grind cobblestone into gravel and gravel into sand. This block requires fuel to work."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:crusher/crusher",
+      "name": "Crusher"
+    }
+  ],
+  "sortnum": 501
+}

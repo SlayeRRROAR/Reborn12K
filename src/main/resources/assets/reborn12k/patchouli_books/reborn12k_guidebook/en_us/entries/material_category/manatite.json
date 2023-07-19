@@ -1,0 +1,20 @@
+{
+  "name": "Manatite",
+  "icon": "reborn12k:manatite",
+  "advancement": "reborn12k:reborn12k/diamond_tier",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Manatite",
+      "item": "reborn12k:manatite",
+      "text": "A sky blue semi-translucent gem, that shouldn't exist in any way shape or form. It's held togheter by pure Mana, to which it acts as a battery of sorts."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:manatite_ore",
+      "text": "Manatite can rarely be found in the Overworld between Y level -64 and 16, in decent-sized clusters that tend to be higher or bigger clusters that tend to be deeper, both mostly not exposed to air."
+    }
+  ],
+  "sortnum": 122
+}

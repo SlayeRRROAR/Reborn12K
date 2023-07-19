@@ -1,0 +1,19 @@
+{
+  "name": "Tin",
+  "icon": "reborn12k:tin_ingot",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Tin",
+      "item": "reborn12k:tin_ingot",
+      "text": "Tin is a common metal, easily found in high Y levels. Not strong enough to be used by itself, is mostrly used as an element for alloys."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:tin_ore",
+      "text": "Tin can be plentifully found in the Overworld anywhere between Y level 24 and 124, in decent-sized clusters."
+    }
+  ],
+  "sortnum": 101
+}

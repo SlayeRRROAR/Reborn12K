@@ -1,0 +1,20 @@
+{
+  "name": "Iridium",
+  "icon": "reborn12k:iridium_ingot",
+  "advancement": "minecraft:story/enter_the_end",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Iridium",
+      "item": "reborn12k:iridium_ingot",
+      "text": "Also part of the Platinum group, Iridium is a dense metal(actually the second densest behind Osmium) with high chemical resistances. Very similar to Platinum in all of its forms, finds its niche in applications where a material must retain mechanical resistance at high temperatures."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:end_iridium_ore",
+      "text": "Iridium can be found in the End, in decent-sized clusters."
+    }
+  ],
+  "sortnum": 163
+}
