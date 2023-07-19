@@ -10,14 +10,14 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class FocusItem extends Item {
-    public FocusItem(Settings settings) {
+public class SetFocusItem extends Item {
+    public SetFocusItem(Settings settings) {
         super(settings);
     }
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add(Text.translatable("item.reborn12k.laser_focus1.tooltip"));
-        tooltip.add(Text.translatable("item.reborn12k.laser_focus2.tooltip"));
+        tooltip.add(Text.translatable("item.reborn12k.laser_focus.tooltip1"));
+        tooltip.add(Text.translatable("item.reborn12k.laser_focus.tooltip2"));
     }
 }

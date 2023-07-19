@@ -523,12 +523,12 @@
     "item.reborn12k.cooling_assembly": "Cooling Assembly",
     "item.reborn12k.power_supply_module": "Power Supply Module",
     "item.reborn12k.laser_diode": "Laser Diode",
-    "item.reborn12k.high_frequency_resonance_coil": "High Frequency Resonance Coil",
+    "item.reborn12k.hfr_coil": "HFR Coil",
     "item.reborn12k.light_collimator_array": "Light Collimator Array",
 
     "item.reborn12k.laser_emitter": "Laser Emitter",
     "item.reborn12k.uhf_laser_emitter": "UHF Laser Emitter",
-    "item.reborn12k.uhf_collimated_laser_array": "UHF Collimated Laser Array",
+    "item.reborn12k.collimated_laser_array": "Collimated Laser Array",
 
     "item.reborn12k.empty_fuel_cell": "Empty Fuel Cell",
     "item.reborn12k.fuel_cell": "Fuel Cell",
@@ -1033,8 +1033,9 @@
 
     "item.reborn12k.fuel_cell.tooltip": "§4Remaining uses: %s",
 
-    "item.reborn12k.laser_focus1.tooltip": "§8Can be used in",
-    "item.reborn12k.laser_focus2.tooltip": "§8a §4Laser Quarry",
+    "item.reborn12k.laser_focus.tooltip1": "§8Can be used in",
+    "item.reborn12k.laser_focus.tooltip2": "§8a §4Laser Quarry",
+    "item.reborn12k.laser_focus.tooltip3": "§§4Must be set before use",
 
     "item.reborn12k.soul_vessel.tooltip1": "§8Throw it to a mob to",
     "item.reborn12k.soul_vessel.tooltip2": "§8capture its soul",
