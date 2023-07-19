@@ -7,12 +7,7 @@
       "type": "patchouli:spotlight",
       "title": "Coal Dust",
       "item": "reborn12k:coal_dust",
-      "text": "Coal Dust is just crushed coal. Can still be used as a fuel, but its far more useful as an alloy component."
-    },
-    {
-      "type": "patchouli:spotlight",
-      "item": "reborn12k:coal_dust",
-      "text": "Coal Dust can only be obtained by grinding Coal in a Crusher."
+      "text": "Coal Dust is just crushed coal. Can still be used as a fuel, but its far more useful as an alloy component. Coal Dust can only be obtained by grinding Coal in a Crusher."
     }
   ],
   "sortnum": 301
