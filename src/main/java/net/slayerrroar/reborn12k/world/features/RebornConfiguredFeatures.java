@@ -147,10 +147,10 @@ public class RebornConfiguredFeatures {
         register(context, NICKEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldNickelOres, 9));
         register(context, CHROMITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldChromiteOres, 9));
         register(context, TITANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTitaniumOres, 9));
-        register(context, RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRubyOres, 7, 0.5f));
-        register(context, RUBY_ORE_LARGE_KEY, Feature.ORE, new OreFeatureConfig(overworldRubyOres, 12, 0.3f));
         register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 7, 0.5f));
         register(context, SAPPHIRE_ORE_LARGE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 12, 0.3f));
+        register(context, RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRubyOres, 7, 0.5f));
+        register(context, RUBY_ORE_LARGE_KEY, Feature.ORE, new OreFeatureConfig(overworldRubyOres, 12, 0.3f));
         register(context, MANATITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldManatiteOres, 9, 0.5f));
         register(context, MANATITE_ORE_LARGE_KEY, Feature.ORE, new OreFeatureConfig(overworldManatiteOres, 12, 0.7f));
 
