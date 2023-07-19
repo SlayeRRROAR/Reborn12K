@@ -1,5 +1,7 @@
 {
   "name": "REBORN12K",
   "landing_text": "Hello $(playername)! Thank you for playing with Reborn12K. You can use this book as your personal guide to progress in the mod. Not everything will be displayed right from the get go though, you'll have to work for it.",
-  "version": 1
+  "version": 1,
+  "creative_tab": "reborn12k:reborn12k",
+  "use_resource_pack": true
 }
