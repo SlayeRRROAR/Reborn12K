@@ -21,11 +21,8 @@ public class TechnicalItems {
 
     public static final Item COOLING_ASSEMBLY = registerItem("cooling_assembly", new Item(new FabricItemSettings()));
     public static final Item POWER_SUPPLY_MODULE = registerItem("power_supply_module", new Item(new FabricItemSettings()));
-    public static final Item LASER_DIODE = registerItem("laser_diode", new Item(new FabricItemSettings()));
     public static final Item HFR_COIL = registerItem("hfr_coil", new Item(new FabricItemSettings()));
     public static final Item LIGHT_COLLIMATOR_ARRAY = registerItem("light_collimator_array", new Item(new FabricItemSettings()));
-
-    public static final Item LASER_EMITTER = registerItem("laser_emitter", new Item(new FabricItemSettings()));
     public static final Item UHF_LASER_EMITTER = registerItem("uhf_laser_emitter", new Item(new FabricItemSettings()));
     public static final Item COLLIMATED_LASER_ARRAY = registerItem("collimated_laser_array", new Item(new FabricItemSettings()));
 
@@ -87,11 +84,8 @@ public class TechnicalItems {
 
         addToItemGroup(ItemGroupUtil.REBORN12K, COOLING_ASSEMBLY);
         addToItemGroup(ItemGroupUtil.REBORN12K, POWER_SUPPLY_MODULE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LASER_DIODE);
         addToItemGroup(ItemGroupUtil.REBORN12K, HFR_COIL);
         addToItemGroup(ItemGroupUtil.REBORN12K, LIGHT_COLLIMATOR_ARRAY);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, LASER_EMITTER);
         addToItemGroup(ItemGroupUtil.REBORN12K, UHF_LASER_EMITTER);
         addToItemGroup(ItemGroupUtil.REBORN12K, COLLIMATED_LASER_ARRAY);
 

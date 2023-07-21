@@ -15,8 +15,6 @@
     "reborn12k:mana_condenser",
     "reborn12k:melter",
     "reborn12k:crusher",
-    "reborn12k:basic_laser_quarry",
-    "reborn12k:advanced_laser_quarry",
-    "reborn12k:ultimate_laser_quarry"
+    "reborn12k:laser_quarry"
   ]
 }

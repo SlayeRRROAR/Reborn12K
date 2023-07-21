@@ -17,7 +17,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.custom.block_entities.AdvancedQuarryBlock;
+import net.slayerrroar.reborn12k.blocks.custom.block_entities.LaserQuarryBlock;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.items.TechnicalItems;
 import net.slayerrroar.reborn12k.recipe.recipe_types.QuarryRecipe;
@@ -30,30 +30,30 @@ import java.util.Optional;
 
 @SuppressWarnings({"OptionalGetWithoutIsPresent", "deprecation"})
 
-public class AdvancedQuarryBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
+public class LaserQuarryBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
             DefaultedList.ofSize(4, ItemStack.EMPTY);
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 160;
+    private int maxProgress = 120;
 
-    public AdvancedQuarryBlockEntity(BlockPos pos, BlockState state) {
-        super(RebornBlockEntities.ADVANCED_QUARRY, pos, state);
+    public LaserQuarryBlockEntity(BlockPos pos, BlockState state) {
+        super(RebornBlockEntities.LASER_QUARRY, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {
                 return switch (index) {
-                    case 0 -> AdvancedQuarryBlockEntity.this.progress;
-                    case 1 -> AdvancedQuarryBlockEntity.this.maxProgress;
+                    case 0 -> LaserQuarryBlockEntity.this.progress;
+                    case 1 -> LaserQuarryBlockEntity.this.maxProgress;
                     default -> 0;
                 };
             }
 
             public void set(int index, int value) {
                 switch (index) {
-                    case 0 -> AdvancedQuarryBlockEntity.this.progress = value;
-                    case 1 -> AdvancedQuarryBlockEntity.this.maxProgress = value;
+                    case 0 -> LaserQuarryBlockEntity.this.progress = value;
+                    case 1 -> LaserQuarryBlockEntity.this.maxProgress = value;
                 }
             }
 
@@ -69,7 +69,7 @@ public class AdvancedQuarryBlockEntity extends BlockEntity implements NamedScree
     }
     @Override
     public Text getDisplayName() {
-        return Text.translatable("block.reborn12k.advanced_laser_quarry");
+        return Text.translatable("block.reborn12k.laser_quarry");
     }
 
     @Nullable
@@ -82,29 +82,30 @@ public class AdvancedQuarryBlockEntity extends BlockEntity implements NamedScree
     protected void writeNbt(NbtCompound nbt) {
         Inventories.writeNbt(nbt, inventory);
         super.writeNbt(nbt);
-        nbt.putInt("advanced_quarry.progress", progress);
+        nbt.putInt("quarry.progress", progress);
     }
 
     @Override
     public void readNbt(NbtCompound nbt) {
         Inventories.readNbt(nbt,inventory);
         super.readNbt(nbt);
-        progress = nbt.getInt("advanced_quarry.progress");
+        progress = nbt.getInt("quarry.progress");
     }
 
-    private static boolean hasFuelInFuelSlot(AdvancedQuarryBlockEntity entity) {
+    private static boolean hasFuelInFuelSlot(LaserQuarryBlockEntity entity) {
         return !entity.getStack(0).isEmpty();
     }
 
-    public static void tick(World world, BlockPos blockPos, BlockState state, AdvancedQuarryBlockEntity entity) {
+    public static void tick(World world, BlockPos blockPos, BlockState state, LaserQuarryBlockEntity entity) {
         if (world.isClient()) {
             return;
         }
 
         boolean isCrafting = hasRecipe(entity) && hasFuelInFuelSlot(entity);
 
-        state = state.with(AdvancedQuarryBlock.LIT, isCrafting);
+        state = state.with(LaserQuarryBlock.LIT, isCrafting);
         world.setBlockState(blockPos, state,3);
+
 
         if (hasRecipe(entity) && hasFuelInFuelSlot(entity)) {
             entity.progress++;
@@ -122,7 +123,7 @@ public class AdvancedQuarryBlockEntity extends BlockEntity implements NamedScree
         this.progress = 0;
     }
 
-    private static void craftItem(AdvancedQuarryBlockEntity entity) {
+    private static void craftItem(LaserQuarryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
         for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
@@ -147,7 +148,7 @@ public class AdvancedQuarryBlockEntity extends BlockEntity implements NamedScree
         }
     }
 
-    private static boolean hasRecipe(AdvancedQuarryBlockEntity entity) {
+    private static boolean hasRecipe(LaserQuarryBlockEntity entity) {
         SimpleInventory inventory = new SimpleInventory(entity.size());
         for (int i = 0; i < entity.size(); i++) {
             inventory.setStack(i, entity.getStack(i));

@@ -18,9 +18,7 @@ public class RebornBlockEntities {
     public static BlockEntityType<ManufactoryBlockEntity> MANUFACTORY;
     public static BlockEntityType<MelterBlockEntity> MELTER;
 
-    public static BlockEntityType<BasicQuarryBlockEntity> BASIC_QUARRY;
-    public static BlockEntityType<AdvancedQuarryBlockEntity> ADVANCED_QUARRY;
-    public static BlockEntityType<UltimateQuarryBlockEntity> ULTIMATE_QUARRY;
+    public static BlockEntityType<LaserQuarryBlockEntity> LASER_QUARRY;
 
     public static void register(){
 
@@ -51,20 +49,10 @@ public class RebornBlockEntities {
                 FabricBlockEntityTypeBuilder.create(MelterBlockEntity::new,
                         AdvancedBlocks.MELTER).build(null));
 
-        BASIC_QUARRY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(Reborn12K.MOD_ID, "basic_laser_quarry"),
-                FabricBlockEntityTypeBuilder.create(BasicQuarryBlockEntity::new,
-                        AdvancedBlocks.BASIC_LASER_QUARRY).build(null));
-
-        ADVANCED_QUARRY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(Reborn12K.MOD_ID, "advanced_laser_quarry"),
-                FabricBlockEntityTypeBuilder.create(AdvancedQuarryBlockEntity::new,
-                        AdvancedBlocks.ADVANCED_LASER_QUARRY).build(null));
-
-        ULTIMATE_QUARRY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(Reborn12K.MOD_ID, "ultimate_laser_quarry"),
-                FabricBlockEntityTypeBuilder.create(UltimateQuarryBlockEntity::new,
-                        AdvancedBlocks.ULTIMATE_LASER_QUARRY).build(null));
+        LASER_QUARRY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                new Identifier(Reborn12K.MOD_ID, "laser_quarry"),
+                FabricBlockEntityTypeBuilder.create(LaserQuarryBlockEntity::new,
+                        AdvancedBlocks.LASER_QUARRY).build(null));
 
     }
 

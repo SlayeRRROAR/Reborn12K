@@ -7,13 +7,13 @@
     ],
     "key": {
         "A": {
-            "tag": "c:enderium_ingots"
+            "tag": "c:platinum_ingots"
         },
         "B": {
-            "item": "reborn12k:supercharged_fuel_cell"
+            "item": "reborn12k:empty_fuel_cell"
         },
         "C": {
-            "item": "minecraft:nether_star"
+            "tag": "c:iridium_ingots"
         },
         "D": {
             "item": "reborn12k:advanced_laser_focus"

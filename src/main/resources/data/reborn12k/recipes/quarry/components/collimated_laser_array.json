@@ -10,10 +10,10 @@
             "item": "reborn12k:uhf_laser_emitter"
         },
         "B": {
-            "item": "reborn12k:power_supply_module"
+            "tag": "c:aluminum_ingots"
         },
         "C": {
-            "item": "reborn12k:light_collimator_array"
+            "item": "reborn12k:power_supply_module"
         }
     },
     "result": {

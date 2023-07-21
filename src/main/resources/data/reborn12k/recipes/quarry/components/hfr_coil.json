@@ -7,10 +7,10 @@
     ],
     "key": {
         "A": {
-            "tag": "c:osmium_ingots"
+            "tag": "c:constantan_ingots"
         },
         "B": {
-            "tag": "c:enderium_ingots"
+            "tag": "c:steel_ingots"
         }
     },
     "result": {

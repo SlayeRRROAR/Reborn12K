@@ -522,11 +522,8 @@
 
     "item.reborn12k.cooling_assembly": "Cooling Assembly",
     "item.reborn12k.power_supply_module": "Power Supply Module",
-    "item.reborn12k.laser_diode": "Laser Diode",
     "item.reborn12k.hfr_coil": "HFR Coil",
     "item.reborn12k.light_collimator_array": "Light Collimator Array",
-
-    "item.reborn12k.laser_emitter": "Laser Emitter",
     "item.reborn12k.uhf_laser_emitter": "UHF Laser Emitter",
     "item.reborn12k.collimated_laser_array": "Collimated Laser Array",
 
@@ -820,9 +817,7 @@
     "block.reborn12k.manufactory": "Manufactory",
     "block.reborn12k.melter": "Melter",
 
-    "block.reborn12k.basic_laser_quarry": "Basic Laser Quarry",
-    "block.reborn12k.advanced_laser_quarry": "Advanced Laser Quarry",
-    "block.reborn12k.ultimate_laser_quarry": "Ultimate Laser Quarry",
+    "block.reborn12k.laser_quarry": "Laser Quarry",
 
 
     "block.reborn12k.ash_log": "Ash Log",
@@ -1142,11 +1137,7 @@
     "advancements.reborn12k.optimal_insulation.title": "Optimal Insulation",
     "advancements.reborn12k.optimal_insulation.description": "Obtain an Invar Ingot",
     "advancements.reborn12k.cutting_edge.title": "Cutting Edge",
-    "advancements.reborn12k.cutting_edge.description": "Craft a Basic Laser Quarry",
-    "advancements.reborn12k.ultra_high_frequency_pulse.title": "Ultra-High Frequency Pulse",
-    "advancements.reborn12k.ultra_high_frequency_pulse.description": "Craft an Advanced Laser Quarry",
-    "advancements.reborn12k.collimated_array.title": "Collimated Array",
-    "advancements.reborn12k.collimated_array.description": "Craft an Ultimate Laser Quarry",
+    "advancements.reborn12k.cutting_edge.description": "Craft a Laser Quarry",
 
     "advancements.reborn12k.thermoelectric_balance.title": "Thermoelectric Balance",
     "advancements.reborn12k.thermoelectric_balance.description": "Obtain a Constantan Ingot",

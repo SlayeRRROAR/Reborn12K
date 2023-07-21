@@ -16,15 +16,15 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
-import net.slayerrroar.reborn12k.entity.block_entities.BasicQuarryBlockEntity;
+import net.slayerrroar.reborn12k.entity.block_entities.LaserQuarryBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("deprecation")
-public class BasicQuarryBlock extends BlockWithEntity implements BlockEntityProvider {
+public class LaserQuarryBlock extends BlockWithEntity implements BlockEntityProvider {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     public static BooleanProperty LIT = AbstractFurnaceBlock.LIT;
 
-    public BasicQuarryBlock(Settings settings) {
+    public LaserQuarryBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.getDefaultState().with(LIT, false));
     }
@@ -61,8 +61,8 @@ public class BasicQuarryBlock extends BlockWithEntity implements BlockEntityProv
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof BasicQuarryBlockEntity) {
-                ItemScatterer.spawn(world, pos, (BasicQuarryBlockEntity)blockEntity);
+            if (blockEntity instanceof LaserQuarryBlockEntity) {
+                ItemScatterer.spawn(world, pos, (LaserQuarryBlockEntity)blockEntity);
                 world.updateComparators(pos, this);
             }
             super.onStateReplaced(state, world, pos, newState, moved);
@@ -84,12 +84,12 @@ public class BasicQuarryBlock extends BlockWithEntity implements BlockEntityProv
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new BasicQuarryBlockEntity(pos, state);
+        return new LaserQuarryBlockEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, RebornBlockEntities.BASIC_QUARRY, BasicQuarryBlockEntity::tick);
+        return checkType(type, RebornBlockEntities.LASER_QUARRY, LaserQuarryBlockEntity::tick);
     }
 }
