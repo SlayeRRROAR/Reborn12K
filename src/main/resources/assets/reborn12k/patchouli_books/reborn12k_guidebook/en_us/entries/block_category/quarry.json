@@ -1,53 +1,38 @@
 {
   "name": "Laser Quarry",
-  "icon": "reborn12k:basic_laser_quarry",
+  "icon": "reborn12k:laser_quarry",
   "advancement": "reborn12k:reborn12k/optimal_insulation",
   "category": "reborn12k:block_category",
   "pages": [
     {
       "type": "patchouli:text",
       "title": "Laser Quarry",
-      "text": "The Laser Quarries are utility blocks. By using a properly set Laser Focus, the Quarry can seemingly create resources out of thin air. In reality it's more complicated than that: the laser fired by the quarry can phase through the bedrock and the void until it reaches an ore allowed by the focus, destroying it at a subatomic level and sending it back to the quarry, where its recombined in a physical form."
+      "text": "The Laser Quarry is an utility block. By using a properly set Laser Focus, the Quarry can seemingly create resources out of thin air. In reality it's more complicated than that: the laser fired by the quarry can phase through the bedrock and the void until it reaches an ore allowed by the focus, destroying it at a subatomic level and sending it back to the quarry, where its recombined in a physical form."
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:quarry/basic_laser_quarry",
-      "text": "There are three tiers of Laser Quarries: Basic, Advanced and Ultimate. The only difference between them is the speed of the operation. No point in keeping the basic version unless you are hurt on resources."
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "reborn12k:quarry/advanced_laser_quarry",
-      "recipe2": "reborn12k:quarry/ultimate_laser_quarry"
+      "recipe": "reborn12k:quarry/laser_quarry",
+      "text": "You may have seen that the previous recipes required some components. In the next pages are listed the crafting recipes for those components."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "reborn12k:quarry/empty_machine_casing",
-      "text": "You may have seen that the previous recipes required some components. Here's how to craft them."
+      "recipe2": "reborn12k:quarry/components/cooling_assembly"
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:quarry/components/cooling_assembly",
-      "recipe2": "reborn12k:quarry/components/power_supply_module"
+      "recipe": "reborn12k:quarry/components/power_supply_module",
+      "recipe2": "reborn12k:quarry/components/hfr_coil"
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:quarry/components/laser_diode",
-      "recipe2": "reborn12k:quarry/components/laser_emitter"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "reborn12k:quarry/components/high_frequency_resonance_coil",
-      "recipe2": "reborn12k:quarry/components/uhf_laser_emitter"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "reborn12k:quarry/components/light_collimator_array",
-      "recipe2": "reborn12k:quarry/components/uhf_collimated_laser_array"
+      "recipe": "reborn12k:quarry/components/uhf_laser_emitter",
+      "recipe2": "reborn12k:quarry/components/collimated_laser_array"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "reborn12k:quarry/empty_fuel_cell",
-      "text": "The Laser Quarries run on special purposed fuel. They are the Fuel Cells. For every successful operation the Fuel Cell will deplete a bit of its durability. Higher tiers of Fuel Cell have better durability."
+      "text": "The Laser Quarry runs on special purposed fuel. They are the Fuel Cells. For every successful operation the Fuel Cell will deplete a bit of its durability. Higher tiers of Fuel Cell have better durability."
     },
     {
       "type": "patchouli:crafting",
@@ -62,7 +47,7 @@
     {
       "type": "patchouli:crafting",
       "recipe": "reborn12k:quarry/foci/basic_laser_focus",
-      "text": "The Laser Quarries requires a properly set Laser Focus. They come in three tiers, Basic, Advanced and Ultimate, each of them representing the complexity of the lens required to attune the laser."
+      "text": "The Laser Quarry requires a properly set Laser Focus. They come in three tiers, Basic, Advanced and Ultimate, each of them representing the complexity of the lens required to attune the laser."
     },
     {
       "type": "patchouli:crafting",
