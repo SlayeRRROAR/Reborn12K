@@ -7,13 +7,13 @@
     ],
     "key": {
         "A": {
-            "tag": "c:iridium_ingots"
+            "tag": "c:vanadium_ingots"
         },
         "B": {
-            "item": "reborn12k:charged_fuel_cell"
+            "item": "reborn12k:empty_fuel_cell"
         },
         "C": {
-            "tag": "c:invar_ingots"
+            "tag": "c:neodymium_ingots"
         },
         "D": {
             "item": "reborn12k:basic_laser_focus"

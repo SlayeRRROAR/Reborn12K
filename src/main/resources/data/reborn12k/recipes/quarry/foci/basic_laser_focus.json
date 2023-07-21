@@ -7,10 +7,10 @@
     ],
     "key": {
         "A": {
-            "tag": "c:tungsten_ingots"
+            "tag": "c:invar_ingots"
         },
         "B": {
-            "item": "reborn12k:fuel_cell"
+            "item": "reborn12k:empty_fuel_cell"
         },
         "C": {
             "tag": "c:constantan_ingots"
