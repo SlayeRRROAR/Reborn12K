@@ -1,13 +1,14 @@
 {
   "name": "Iridium Alloy",
   "icon": "reborn12k:iridium_alloy_ingot",
+  "advancement": "minecraft:story/enter_the_end",
   "category": "reborn12k:material_category",
   "pages": [
     {
       "type": "patchouli:spotlight",
       "title": "Iridium Alloy",
       "item": "reborn12k:iridium_alloy_ingot",
-      "text": "Iridium Alloy is an alloy obtained with Advanced Alloy, Iridium and Diamond.$(br)An alternative to Archeosite, Iridium Alloy tools and armor are more durable and just as enchantable than their counterpart, but not as strong or lightweight."
+      "text": "Iridium Alloy is an alloy made out of Advanced Alloy, Iridium and Diamond.$(br)An alternative to Archeosite, Iridium Alloy tools and armor are more durable and just as enchantable than their counterpart, but not as strong or lightweight."
     },
     {
       "type": "patchouli:crafting",

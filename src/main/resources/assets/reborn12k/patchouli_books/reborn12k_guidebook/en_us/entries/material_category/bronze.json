@@ -7,7 +7,7 @@
       "type": "patchouli:spotlight",
       "title": "Bronze",
       "item": "reborn12k:bronze_ingot",
-      "text": "Bronze is an alloy obtained with Copper and Tin.$(br)An alternative to Iron, Bronze tools and armor are more durable than their counterpart, but not as strong or lightweight."
+      "text": "Bronze is an alloy made out of Copper and Tin.$(br)An alternative to Iron, Bronze tools and armor are more durable than their counterpart, but not as strong or lightweight."
     },
     {
       "type": "patchouli:crafting",

@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "ABA",
-        "C C",
+        "CDC",
         "BBB"
     ],
     "key": {
@@ -14,6 +14,9 @@
         },
         "C": {
             "item": "minecraft:hopper"
+        },
+        "D": {
+            "item": "minecraft:iron_pickaxe"
         }
     },
     "result": {

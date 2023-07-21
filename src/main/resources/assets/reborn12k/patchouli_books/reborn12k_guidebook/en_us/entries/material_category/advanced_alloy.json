@@ -1,13 +1,14 @@
 {
   "name": "Advanced Alloy",
   "icon": "reborn12k:advanced_alloy_ingot",
+  "advancement": "minecraft:story/enter_the_nether",
   "category": "reborn12k:material_category",
   "pages": [
     {
       "type": "patchouli:spotlight",
       "title": "Advanced Alloy",
       "item": "reborn12k:advanced_alloy_ingot",
-      "text": "Advanced Alloy is an alloy obtained with Titanium, Vanadium and Aluminum.$(br)An alternative to Netherite, Advanced Alloy tools and armor are more durable and just as enchantable than their counterpart, but not as strong or lightweight."
+      "text": "Advanced Alloy is an alloy made out of Titanium, Vanadium and Aluminum.$(br)An alternative to Netherite, Advanced Alloy tools and armor are more durable and just as enchantable than their counterpart, but not as strong or lightweight."
     },
     {
       "type": "patchouli:crafting",

@@ -1,13 +1,14 @@
 {
   "name": "Thelosite",
   "icon": "reborn12k:thelosite_ingot",
+  "advancement": "minecraft:story/enter_the_end",
   "category": "reborn12k:material_category",
   "pages": [
     {
       "type": "patchouli:spotlight",
       "title": "Thelosite",
       "item": "reborn12k:thelosite_ingot",
-      "text": "Thelosite is an alloy obtained with Tungestensteel, Cobalt and Osmium.$(br)An alternative to Archeosite, Thelosite tools and armor are stronger and just as durable than their counterpart, but not as enchantable."
+      "text": "Thelosite is an alloy made out of Tungestensteel, Cobalt and Osmium.$(br)An alternative to Archeosite, Thelosite tools and armor are stronger and just as durable than their counterpart, but not as enchantable."
     },
     {
       "type": "patchouli:crafting",
