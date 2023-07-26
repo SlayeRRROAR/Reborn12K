@@ -120,6 +120,9 @@ public class GenericBlocks {
     public static final Block MITHRIL_BLOCK = registerBlock("mithril_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(12f).resistance(30f)), ItemGroupUtil.REBORN12K);
     public static final Block DEMONIC_METAL_BLOCK = registerBlock("demonic_metal_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(12f).resistance(30f)), ItemGroupUtil.REBORN12K);
 
+    public static final Block LITHIUM_BLOCK = registerBlock("lithium_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).sounds(BlockSoundGroup.METAL).hardness(3f).resistance(6f)), ItemGroupUtil.REBORN12K);
+    public static final Block SULPHUR_BLOCK = registerBlock("sulphur_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).sounds(BlockSoundGroup.METAL).hardness(3f).resistance(6f)), ItemGroupUtil.REBORN12K);
+
     public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).sounds(BlockSoundGroup.METAL).hardness(5f).resistance(6f)), ItemGroupUtil.REBORN12K);
     public static final Block RUBY_BLOCK = registerBlock("ruby_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).sounds(BlockSoundGroup.METAL).hardness(5f).resistance(6f)), ItemGroupUtil.REBORN12K);
     public static final Block MANATITE_BLOCK = registerBlock("manatite_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).sounds(BlockSoundGroup.METAL).luminance(8).hardness(8f).resistance(10f)), ItemGroupUtil.REBORN12K);

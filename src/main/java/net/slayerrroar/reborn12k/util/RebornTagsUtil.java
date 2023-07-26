@@ -50,6 +50,10 @@ public class RebornTagsUtil {
         public static final TagKey<Block> RAW_TITANIUM_BLOCKS = createCommonTag("raw_titanium_blocks");
         public static final TagKey<Block> TITANIUM_BLOCKS = createCommonTag("titanium_blocks");
 
+        public static final TagKey<Block> LITHIUM_ORES = createCommonTag("lithium_ores");
+        public static final TagKey<Block> LITHIUM_BLOCKS = createCommonTag("lithium_blocks");
+
+
         public static final TagKey<Block> TUNGSTEN_ORES = createCommonTag("tungsten_ores");
         public static final TagKey<Block> RAW_TUNGSTEN_BLOCKS = createCommonTag("raw_tungsten_blocks");
         public static final TagKey<Block> TUNGSTEN_BLOCKS = createCommonTag("tungsten_blocks");
@@ -65,6 +69,10 @@ public class RebornTagsUtil {
         public static final TagKey<Block> URANIUM_ORES = createCommonTag("uranium_ores");
         public static final TagKey<Block> RAW_URANIUM_BLOCKS = createCommonTag("raw_uranium_blocks");
         public static final TagKey<Block> URANIUM_BLOCKS = createCommonTag("uranium_blocks");
+
+        public static final TagKey<Block> SULPHUR_ORES = createCommonTag("sulphur_ores");
+        public static final TagKey<Block> SULPHUR_BLOCKS = createCommonTag("sulphur_blocks");
+
 
         public static final TagKey<Block> COBALT_ORES = createCommonTag("cobalt_ores");
         public static final TagKey<Block> RAW_COBALT_BLOCKS = createCommonTag("raw_cobalt_blocks");
@@ -195,6 +203,11 @@ public class RebornTagsUtil {
         public static final TagKey<Item> TITANIUM_INGOTS = createCommonTag("titanium_ingots");
         public static final TagKey<Item> TITANIUM_BLOCKS = createCommonTag("titanium_blocks");
 
+        public static final TagKey<Item> LITHIUM_ORES = createCommonTag("lithium_ores");
+        public static final TagKey<Item> LITHIUM_DUSTS = createCommonTag("lithium_dusts");
+        public static final TagKey<Item> LITHIUM_BLOCKS = createCommonTag("lithium_blocks");
+
+
         public static final TagKey<Item> TUNGSTEN_ORES = createCommonTag("tungsten_ores");
         public static final TagKey<Item> RAW_TUNGSTEN_ORES = createCommonTag("raw_tungsten_ores");
         public static final TagKey<Item> RAW_TUNGSTEN_BLOCKS = createCommonTag("raw_tungsten_blocks");
@@ -218,6 +231,11 @@ public class RebornTagsUtil {
         public static final TagKey<Item> RAW_URANIUM_BLOCKS = createCommonTag("raw_uranium_blocks");
         public static final TagKey<Item> URANIUM_INGOTS = createCommonTag("uranium_ingots");
         public static final TagKey<Item> URANIUM_BLOCKS = createCommonTag("uranium_blocks");
+
+        public static final TagKey<Item> SULPHUR_ORES = createCommonTag("sulphur_ores");
+        public static final TagKey<Item> SULPHUR_DUSTS = createCommonTag("sulphur_dusts");
+        public static final TagKey<Item> SULPHUR_BLOCKS = createCommonTag("sulphur_blocks");
+
 
         public static final TagKey<Item> COBALT_ORES = createCommonTag("cobalt_ores");
         public static final TagKey<Item> RAW_COBALT_ORES = createCommonTag("raw_cobalt_ores");

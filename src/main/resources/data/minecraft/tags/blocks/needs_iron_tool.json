@@ -20,6 +20,10 @@
     "reborn12k:chromite_ore",
     "reborn12k:deepslate_chromite_ore",
     "reborn12k:chrome_block",
+    "reborn12k:lithium_ore",
+    "reborn12k:deepslate_lithium_ore",
+    "reborn12k:lithium_block",
+
     "reborn12k:sapphire_ore",
     "reborn12k:deepslate_sapphire_ore",
     "reborn12k:sapphire_block",
@@ -28,6 +32,10 @@
     "reborn12k:ruby_block",
     "reborn12k:sunstone_block",
     "reborn12k:moonstone_block",
+
+    "reborn12k:nether_sulphur_ore",
+    "reborn12k:sulphur_block",
+
     "reborn12k:raw_invar_block",
     "reborn12k:invar_block",
     "reborn12k:raw_constantan_block",
@@ -37,7 +45,6 @@
     "reborn12k:raw_electrum_block",
     "reborn12k:electrum_block",
     "reborn12k:raw_lumium_block",
-    "reborn12k:lumium_block",
-    "reborn12k:arcane_artifact"
+    "reborn12k:lumium_block"
   ]
 }

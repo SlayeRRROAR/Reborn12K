@@ -5,11 +5,11 @@
             "item": "reborn12k:basic_laser_focus"
         },
         {
-            "tag": "c:raw_chrome_ores"
+            "tag": "c:lithium_dusts"
         }
     ],
     "result": {
-        "item": "reborn12k:chrome_laser_focus",
+        "item": "reborn12k:lithium_laser_focus",
         "count": 1
     }
 }

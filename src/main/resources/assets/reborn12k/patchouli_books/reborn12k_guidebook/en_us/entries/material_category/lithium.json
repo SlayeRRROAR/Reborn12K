@@ -1,0 +1,20 @@
+{
+  "name": "Lithium",
+  "icon": "reborn12k:lithium_dust",
+  "advancement": "reborn12k:reborn12k/iron_tier",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Lithium",
+      "item": "reborn12k:lithium_dust",
+      "text": "Lithium is a dangerous metal, violently reactive when in contact with water. Very useful in energetic applications."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:lithium_ore",
+      "text": "Lithium can be found in the Overworld between Y level -64 and 32 with a tendency to be in the middle, in decent-sized clusters."
+    }
+  ],
+  "sortnum": 108
+}

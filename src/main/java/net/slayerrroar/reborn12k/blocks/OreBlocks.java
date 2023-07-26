@@ -25,8 +25,10 @@ public class OreBlocks {
     public static final Block SILVER_ORE = registerBlock("silver_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3f).resistance(3f)), ItemGroupUtil.REBORN12K);
     public static final Block LEAD_ORE = registerBlock("lead_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3f).resistance(3f)), ItemGroupUtil.REBORN12K);
     public static final Block NICKEL_ORE = registerBlock("nickel_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3f).resistance(3f)), ItemGroupUtil.REBORN12K);
-    public static final Block CHROMITE_ORE = registerBlock("chromite_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3f).resistance(3f), UniformIntProvider.create(1, 5)), ItemGroupUtil.REBORN12K);
-    public static final Block TITANIUM_ORE = registerBlock("titanium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3f).resistance(3f), UniformIntProvider.create(2, 6)), ItemGroupUtil.REBORN12K);
+    public static final Block CHROMITE_ORE = registerBlock("chromite_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3f).resistance(3f)), ItemGroupUtil.REBORN12K);
+    public static final Block TITANIUM_ORE = registerBlock("titanium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3f).resistance(3f)), ItemGroupUtil.REBORN12K);
+
+    public static final Block LITHIUM_ORE = registerBlock("lithium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3f).resistance(3f), UniformIntProvider.create(2, 6)), ItemGroupUtil.REBORN12K);
 
     public static final Block SAPPHIRE_ORE = registerBlock("sapphire_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3f).resistance(3f), UniformIntProvider.create(2, 6)), ItemGroupUtil.REBORN12K);
     public static final Block RUBY_ORE = registerBlock("ruby_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(3f).resistance(3f), UniformIntProvider.create(2, 6)), ItemGroupUtil.REBORN12K);
@@ -41,6 +43,8 @@ public class OreBlocks {
     public static final Block DEEPSLATE_CHROMITE_ORE = registerBlock("deepslate_chromite_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3f)), ItemGroupUtil.REBORN12K);
     public static final Block DEEPSLATE_TITANIUM_ORE = registerBlock("deepslate_titanium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3f)), ItemGroupUtil.REBORN12K);
 
+    public static final Block DEEPSLATE_LITHIUM_ORE = registerBlock("deepslate_lithium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3f), UniformIntProvider.create(3, 7)), ItemGroupUtil.REBORN12K);
+
     public static final Block DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3f), UniformIntProvider.create(3, 7)), ItemGroupUtil.REBORN12K);
     public static final Block DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).hardness(4.5f).resistance(3f), UniformIntProvider.create(3, 7)), ItemGroupUtil.REBORN12K);
 
@@ -50,11 +54,12 @@ public class OreBlocks {
     public static final Block NETHER_VANADIUM_ORE = registerBlock("nether_vanadium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHER_QUARTZ_ORE).requiresTool().sounds(BlockSoundGroup.NETHER_GOLD_ORE).hardness(4.5f).resistance(3f)), ItemGroupUtil.REBORN12K);
     public static final Block NETHER_NEODYMIUM_ORE = registerBlock("nether_neodymium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHER_QUARTZ_ORE).requiresTool().sounds(BlockSoundGroup.NETHER_GOLD_ORE).hardness(4.5f).resistance(3f)), ItemGroupUtil.REBORN12K);
     public static final Block NETHER_URANIUM_ORE = registerBlock("nether_uranium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHER_QUARTZ_ORE).requiresTool().sounds(BlockSoundGroup.NETHER_GOLD_ORE).hardness(4.5f).resistance(3f)), ItemGroupUtil.REBORN12K);
+    public static final Block NETHER_SULPHUR_ORE = registerBlock("nether_sulphur_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHER_QUARTZ_ORE).requiresTool().sounds(BlockSoundGroup.NETHER_GOLD_ORE).hardness(4.5f).resistance(3f), UniformIntProvider.create(3, 7)), ItemGroupUtil.REBORN12K);
 
-    public static final Block END_COBALT_ORE = registerBlock("end_cobalt_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(9f).resistance(9f), UniformIntProvider.create(3, 7)), ItemGroupUtil.REBORN12K);
-    public static final Block END_OSMIUM_ORE = registerBlock("end_osmium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(10f).resistance(9f), UniformIntProvider.create(3, 7)), ItemGroupUtil.REBORN12K);
-    public static final Block END_PLATINUM_ORE = registerBlock("end_platinum_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(10f).resistance(9f), UniformIntProvider.create(3, 7)), ItemGroupUtil.REBORN12K);
-    public static final Block END_IRIDIUM_ORE = registerBlock("end_iridium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(10f).resistance(9f), UniformIntProvider.create(3, 7)), ItemGroupUtil.REBORN12K);
+    public static final Block END_COBALT_ORE = registerBlock("end_cobalt_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(9f).resistance(9f)), ItemGroupUtil.REBORN12K);
+    public static final Block END_OSMIUM_ORE = registerBlock("end_osmium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(10f).resistance(9f)), ItemGroupUtil.REBORN12K);
+    public static final Block END_PLATINUM_ORE = registerBlock("end_platinum_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(10f).resistance(9f)), ItemGroupUtil.REBORN12K);
+    public static final Block END_IRIDIUM_ORE = registerBlock("end_iridium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE).requiresTool().sounds(BlockSoundGroup.STONE).hardness(10f).resistance(9f)), ItemGroupUtil.REBORN12K);
 
 
     private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> group) {

@@ -37,6 +37,8 @@ public class RebornConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> NICKEL_ORE_KEY = registerKey("nickel_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> CHROMITE_ORE_KEY = registerKey("chromite_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> TITANIUM_ORE_KEY = registerKey("titanium_ore");
+    public static final RegistryKey<ConfiguredFeature<?,?>> LITHIUM_ORE_KEY = registerKey("lithium_ore");
+
     public static final RegistryKey<ConfiguredFeature<?,?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> SAPPHIRE_ORE_LARGE_KEY = registerKey("sapphire_ore_large");
     public static final RegistryKey<ConfiguredFeature<?,?>> RUBY_ORE_KEY = registerKey("ruby_ore");
@@ -48,6 +50,7 @@ public class RebornConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> NETHER_VANADIUM_ORE_KEY = registerKey("nether_vanadium_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> NETHER_NEODYMIUM_ORE_KEY = registerKey("nether_neodymium_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> NETHER_URANIUM_ORE_KEY = registerKey("nether_uranium_ore");
+    public static final RegistryKey<ConfiguredFeature<?,?>> NETHER_SULPHUR_ORE_KEY = registerKey("nether_sulphur_ore");
 
     public static final RegistryKey<ConfiguredFeature<?,?>> END_COBALT_ORE_KEY = registerKey("end_cobalt_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> END_OSMIUM_ORE_KEY = registerKey("end_osmium_ore");
@@ -86,6 +89,10 @@ public class RebornConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldTitaniumOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.TITANIUM_ORE.getDefaultState()),
                 OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_TITANIUM_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldLithiumOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.LITHIUM_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_LITHIUM_ORE.getDefaultState()));
+
+
         List<OreFeatureConfig.Target> overworldSapphireOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.SAPPHIRE_ORE.getDefaultState()),
                 OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_SAPPHIRE_ORE.getDefaultState()));
 
@@ -105,6 +112,8 @@ public class RebornConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(netherReplaceables, OreBlocks.NETHER_NEODYMIUM_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> netherUraniumOres =
                 List.of(OreFeatureConfig.createTarget(netherReplaceables, OreBlocks.NETHER_URANIUM_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> netherSulphurOres =
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, OreBlocks.NETHER_SULPHUR_ORE.getDefaultState()));
 
         //END ORES
 
@@ -147,6 +156,8 @@ public class RebornConfiguredFeatures {
         register(context, NICKEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldNickelOres, 9));
         register(context, CHROMITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldChromiteOres, 9));
         register(context, TITANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTitaniumOres, 9));
+        register(context, LITHIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldLithiumOres, 9));
+
         register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 7, 0.5f));
         register(context, SAPPHIRE_ORE_LARGE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 12, 0.3f));
         register(context, RUBY_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldRubyOres, 7, 0.5f));
@@ -158,6 +169,7 @@ public class RebornConfiguredFeatures {
         register(context, NETHER_VANADIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherVanadiumOres, 4));
         register(context, NETHER_NEODYMIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherNeodymiumOres, 3));
         register(context, NETHER_URANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherUraniumOres, 9));
+        register(context, NETHER_SULPHUR_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherSulphurOres, 9));
 
         register(context, END_COBALT_ORE_KEY, Feature.ORE, new OreFeatureConfig(endCobaltOres, 9));
         register(context, END_OSMIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(endOsmiumOres, 4));

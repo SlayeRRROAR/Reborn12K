@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:sulphur_dusts"
+        }
+    },
+    "result": {
+        "item": "reborn12k:sulphur_block",
+        "count": 1
+    }
+}

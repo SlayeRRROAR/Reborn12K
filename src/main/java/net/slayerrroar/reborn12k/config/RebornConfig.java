@@ -55,6 +55,10 @@ public class RebornConfig implements ConfigData {
     public boolean enableTitaniumOreGeneration = true;
 
     @ConfigEntry.Category("ore_generation")
+    @Comment("When enabled, Titanium Ores will generate")
+    public boolean enableLithiumOreGeneration = true;
+
+    @ConfigEntry.Category("ore_generation")
     @Comment("When enabled, Sapphire Ores will generate")
     public boolean enableSapphireOreGeneration = true;
 
@@ -81,6 +85,10 @@ public class RebornConfig implements ConfigData {
     @ConfigEntry.Category("ore_generation")
     @Comment("When enabled, Uranium Ores will generate")
     public boolean enableUraniumOreGeneration = true;
+
+    @ConfigEntry.Category("ore_generation")
+    @Comment("When enabled, Sulphur Ores will generate")
+    public boolean enableSulphurOreGeneration = true;
 
     @ConfigEntry.Category("ore_generation")
     @Comment("When enabled, Cobalt Ores will generate")

@@ -39,6 +39,10 @@ public class RebornOreGen {
                 BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                         GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.TITANIUM_ORE_PLACED_KEY);
             }
+            if (Reborn12K.CONFIG.enableLithiumOreGeneration) {
+                BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                        GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.LITHIUM_ORE_PLACED_KEY);
+            }
             if (Reborn12K.CONFIG.enableSapphireOreGeneration) {
                 BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                         GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.SAPPHIRE_ORE_PLACED_KEY);
@@ -77,7 +81,10 @@ public class RebornOreGen {
             if (Reborn12K.CONFIG.enableUraniumOreGeneration) {
                 BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
                         GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.NETHER_URANIUM_ORE_PLACED_KEY);
-
+            }
+            if (Reborn12K.CONFIG.enableSulphurOreGeneration) {
+                BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(),
+                        GenerationStep.Feature.UNDERGROUND_ORES, RebornPlacedFeatures.NETHER_SULPHUR_ORE_PLACED_KEY);
             }
         }
 

@@ -78,6 +78,12 @@
     "item.reborn12k.titanium_katana": "Titanium Katana",
 
 
+    "item.reborn12k.lithium_dust": "Lithium Dust",
+    "block.reborn12k.lithium_ore": "Lithium Ore",
+    "block.reborn12k.deepslate_lithium_ore": "Deepslate Lithium Ore",
+    "block.reborn12k.lithium_block": "Block of Lithium",
+
+
     "item.reborn12k.tungsten_ingot": "Tungsten Ingot",
     "item.reborn12k.raw_tungsten": "Raw Tungsten",
     "block.reborn12k.nether_tungsten_ore": "Nether Tungsten Ore",
@@ -104,6 +110,11 @@
     "block.reborn12k.nether_uranium_ore": "Nether Uranium Ore",
     "block.reborn12k.raw_uranium_block": "Block of Raw Uranium",
     "block.reborn12k.uranium_block": "Block of Uranium",
+
+
+    "item.reborn12k.sulphur_dust": "Sulphur Dust",
+    "block.reborn12k.nether_sulphur_ore": "Nether Sulphur Ore",
+    "block.reborn12k.sulphur_block": "Block of Sulphur",
 
 
     "item.reborn12k.cobalt_ingot": "Cobalt Ingot",
@@ -556,6 +567,7 @@
     "item.reborn12k.nickel_laser_focus": "Nickel Laser Focus",
     "item.reborn12k.chrome_laser_focus": "Chrome Laser Focus",
     "item.reborn12k.titanium_laser_focus": "Titanium Laser Focus",
+    "item.reborn12k.lithium_laser_focus": "Lithium Laser Focus",
 
     "item.reborn12k.sapphire_laser_focus": "Sapphire Laser Focus",
     "item.reborn12k.ruby_laser_focus": "Ruby Laser Focus",
@@ -566,6 +578,7 @@
     "item.reborn12k.vanadium_laser_focus": "Vanadium Laser Focus",
     "item.reborn12k.neodymium_laser_focus": "Neodymium Laser Focus",
     "item.reborn12k.uranium_laser_focus": "Uranium Laser Focus",
+    "item.reborn12k.sulphur_laser_focus": "Uranium Laser Focus",
 
     "item.reborn12k.cobalt_laser_focus": "Cobalt Laser Focus",
     "item.reborn12k.osmium_laser_focus": "Osmium Laser Focus",
@@ -1184,6 +1197,8 @@
     "text.autoconfig.reborn12k.option.enableNickelOreGeneration": "Enable Nickel Ore",
     "text.autoconfig.reborn12k.option.enableChromiteOreGeneration": "Enable Chromite Ore",
     "text.autoconfig.reborn12k.option.enableTitaniumOreGeneration": "Enable Titanium Ore",
+    "text.autoconfig.reborn12k.option.enableLithiumOreGeneration": "Enable Lithium Ore",
+
     "text.autoconfig.reborn12k.option.enableSapphireOreGeneration": "Enable Sapphire Ore",
     "text.autoconfig.reborn12k.option.enableRubyOreGeneration": "Enable Ruby Ore",
     "text.autoconfig.reborn12k.option.enableManatiteOreGeneration": "Enable Manatite Ore",
@@ -1192,6 +1207,7 @@
     "text.autoconfig.reborn12k.option.enableVanadiumOreGeneration": "Enable Vanadium Ore",
     "text.autoconfig.reborn12k.option.enableNeodymiumOreGeneration": "Enable Neodymium Ore",
     "text.autoconfig.reborn12k.option.enableUraniumOreGeneration": "Enable Uranium Ore",
+    "text.autoconfig.reborn12k.option.enableSulphurOreGeneration": "Enable Sulphur Ore",
 
     "text.autoconfig.reborn12k.option.enableCobaltOreGeneration": "Enable Cobalt Ore",
     "text.autoconfig.reborn12k.option.enableOsmiumOreGeneration": "Enable Osmium Ore",

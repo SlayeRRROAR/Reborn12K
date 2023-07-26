@@ -60,6 +60,9 @@ public class GenericItems {
     public static final Item MITHRIL_INGOT = registerItem("mithril_ingot", new Item(new FabricItemSettings()));
     public static final Item DEMONIC_METAL_INGOT = registerItem("demonic_metal_ingot", new Item(new FabricItemSettings()));
 
+    public static final Item LITHIUM_DUST = registerItem("lithium_dust", new Item(new FabricItemSettings()));
+    public static final Item SULPHUR_DUST = registerItem("lithium_dust", new Item(new FabricItemSettings()));
+
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new FabricItemSettings()));
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
     public static final Item MANATITE = registerItem("manatite", new Item(new FabricItemSettings()));
@@ -208,6 +211,9 @@ public class GenericItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, DEMONIC_METAL_INGOT);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, LITHIUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SULPHUR_DUST);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, SAPPHIRE);
         addToItemGroup(ItemGroupUtil.REBORN12K, RUBY);

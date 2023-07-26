@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:lithium_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:lithium_dust",
+        "count": 9
+    },
+    "group": "lithium_dust"
+}
