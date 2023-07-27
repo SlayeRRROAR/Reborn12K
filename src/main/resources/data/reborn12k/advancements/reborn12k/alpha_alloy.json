@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "c:advanced_alloy_ingots"
-            ]
+            "tag": "c:advanced_alloy_ingots"
           }
         ]
       }
