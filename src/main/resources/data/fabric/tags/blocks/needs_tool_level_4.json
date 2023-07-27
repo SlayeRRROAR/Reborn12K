@@ -13,14 +13,16 @@
     "reborn12k:end_iridium_ore",
     "reborn12k:raw_iridium_block",
     "reborn12k:iridium_block",
+
     "reborn12k:raw_archeosite_block",
     "reborn12k:archeosite_block",
-    "reborn12k:raw_enderium_block",
-    "reborn12k:enderium_block",
     "reborn12k:raw_thelosite_block",
     "reborn12k:thelosite_block",
     "reborn12k:raw_iridium_alloy_block",
     "reborn12k:iridium_alloy_block",
+    "reborn12k:raw_enderium_block",
+    "reborn12k:enderium_block",
+
     "reborn12k:mithril_block",
     "reborn12k:demonic_metal_block"
   ]

@@ -63,6 +63,18 @@
           }
         ]
       }
+    },
+    "get_orichalcum_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:orichalcum_pickaxe"
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -70,7 +82,8 @@
       "get_tungstensteel_pickaxe",
       "get_signalum_pickaxe",
       "get_advanced_alloy_pickaxe",
-      "get_netherite_pickaxe"
+      "get_netherite_pickaxe",
+      "get_orichalcum_pickaxe"
     ]
   ]
 }
