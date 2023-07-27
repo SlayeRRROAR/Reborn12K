@@ -1,7 +1,7 @@
 {
   "name": "Orichalcum",
   "icon": "reborn12k:orichalcum_ingot",
-  "advancement": "reborn12k:reborn12k_magic/irogane",
+  "advancement": "reborn12k:reborn12k_magic/attunement",
   "category": "reborn12k:material_category",
   "pages": [
     {
