@@ -1,0 +1,76 @@
+{
+  "parent": "reborn12k:reborn12k_magic/runes_first_lesson",
+  "display": {
+    "icon": {
+      "item": "reborn12k:blank_rune"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.runes_second_lesson.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.runes_second_lesson.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_rune_of_air": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_air"
+            ]
+          }
+        ]
+      }
+    },
+    "get_rune_of_earth": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_earth"
+            ]
+          }
+        ]
+      }
+    },
+    "get_rune_of_water": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_water"
+            ]
+          }
+        ]
+      }
+    },
+    "get_rune_of_fire": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_fire"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_rune_of_air",
+      "get_rune_of_earth",
+      "get_rune_of_water",
+      "get_rune_of_fire"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/square_one",
+  "display": {
+    "icon": {
+      "item": "reborn12k:blank_rune"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.runes_first_lesson.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.runes_first_lesson.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_blank_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:blank_rune"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_blank_rune"
+    ]
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/runes_fifth_lesson",
+  "display": {
+    "icon": {
+      "item": "reborn12k:blank_rune"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.runes_last_lesson.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.runes_last_lesson.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_rune_of_strength": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_strength"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_rune_of_strength"
+    ]
+  ]
+}

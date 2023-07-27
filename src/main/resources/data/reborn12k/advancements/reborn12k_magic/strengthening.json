@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/attunement",
+  "display": {
+    "icon": {
+      "item": "reborn12k:orichalcum_ingot"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.toughness.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.toughness.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_orichalcum_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:orichalcum_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_orichalcum_ingot"
+    ]
+  ]
+}

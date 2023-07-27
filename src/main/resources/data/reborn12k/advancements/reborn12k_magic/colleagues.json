@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/enlightenment",
+  "display": {
+    "icon": {
+      "item": "reborn12k:alchemic_table"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.colleagues.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.colleagues.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_alchemic_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:alchemic_table"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_alchemic_table"
+    ]
+  ]
+}

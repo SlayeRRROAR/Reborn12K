@@ -1,0 +1,102 @@
+{
+  "parent": "reborn12k:reborn12k_magic/runes_third_lesson",
+  "display": {
+    "icon": {
+      "item": "reborn12k:blank_rune"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.runes_fourth_lesson.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.runes_fourth_lesson.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_rune_of_lightning": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_lightning"
+            ]
+          }
+        ]
+      }
+    },
+    "get_rune_of_nature": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_nature"
+            ]
+          }
+        ]
+      }
+    },
+    "get_rune_of_ice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_ice"
+            ]
+          }
+        ]
+      }
+    },
+    "get_rune_of_iron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_iron"
+            ]
+          }
+        ]
+      }
+    },
+    "get_rune_of_order": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_order"
+            ]
+          }
+        ]
+      }
+    },
+    "get_rune_of_chaos": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:rune_of_chaos"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_rune_of_lightning",
+      "get_rune_of_nature",
+      "get_rune_of_ice",
+      "get_rune_of_iron",
+      "get_rune_of_order",
+      "get_rune_of_chaos"
+    ]
+  ]
+}
