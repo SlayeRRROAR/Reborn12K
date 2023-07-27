@@ -2,7 +2,7 @@
   "parent": "reborn12k:reborn12k_magic/runes_fifth_lesson",
   "display": {
     "icon": {
-      "item": "reborn12k:blank_rune"
+      "item": "reborn12k:rune_of_strength"
     },
     "title": {
       "translate": "advancements.reborn12k_magic.runes_last_lesson.title"
