@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "c:iridium_alloy_ingots"
-            ]
+            "tag": "c:iridium_alloy_ingots"
           }
         ]
       }

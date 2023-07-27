@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "c:signalum_ingots"
-            ]
+            "tag": "c:signalum_ingots"
           }
         ]
       }

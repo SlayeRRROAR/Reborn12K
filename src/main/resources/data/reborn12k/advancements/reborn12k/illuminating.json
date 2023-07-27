@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "c:lumium_ingots"
-            ]
+            "tag": "c:lumium_ingots"
           }
         ]
       }

@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "c:constantan_ingots"
-            ]
+            "tag": "c:constantan_ingots"
           }
         ]
       }

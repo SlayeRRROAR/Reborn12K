@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "c:invar_ingots"
-            ]
+            "tag": "c:invar_ingots"
           }
         ]
       }

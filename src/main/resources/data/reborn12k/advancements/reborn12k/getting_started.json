@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "c:bronze_ingots"
-            ]
+            "tag": "c:bronze_ingots"
           }
         ]
       }

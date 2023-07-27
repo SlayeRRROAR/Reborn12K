@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "c:cobalt_ingots"
-            ]
+            "tag": "c:cobalt_ingots"
           }
         ]
       }

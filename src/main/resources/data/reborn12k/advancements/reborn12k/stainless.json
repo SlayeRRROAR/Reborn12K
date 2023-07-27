@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "c:steel_ingots"
-            ]
+            "tag": "c:steel_ingots"
           }
         ]
       }
