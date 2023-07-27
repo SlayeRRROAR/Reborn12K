@@ -30,7 +30,6 @@ public class RebornPlacedFeatures {
     public static final RegistryKey<PlacedFeature> NICKEL_ORE_PLACED_KEY = registerKey("nickel_ore_placed");
     public static final RegistryKey<PlacedFeature> CHROMITE_ORE_PLACED_KEY = registerKey("chromite_ore_placed");
     public static final RegistryKey<PlacedFeature> TITANIUM_ORE_PLACED_KEY = registerKey("titanium_ore_placed");
-    public static final RegistryKey<PlacedFeature> LITHIUM_ORE_PLACED_KEY = registerKey("lithium_ore_placed");
 
     public static final RegistryKey<PlacedFeature> SAPPHIRE_ORE_PLACED_KEY = registerKey("sapphire_ore_placed");
     public static final RegistryKey<PlacedFeature> SAPPHIRE_ORE_LARGE_PLACED_KEY = registerKey("sapphire_ore_large_placed");
@@ -43,7 +42,6 @@ public class RebornPlacedFeatures {
     public static final RegistryKey<PlacedFeature> NETHER_VANADIUM_ORE_PLACED_KEY = registerKey("nether_vanadium_ore_placed");
     public static final RegistryKey<PlacedFeature> NETHER_NEODYMIUM_ORE_PLACED_KEY = registerKey("nether_neodymium_ore_placed");
     public static final RegistryKey<PlacedFeature> NETHER_URANIUM_ORE_PLACED_KEY = registerKey("nether_uranium_ore_placed");
-    public static final RegistryKey<PlacedFeature> NETHER_SULPHUR_ORE_PLACED_KEY = registerKey("nether_sulphur_ore_placed");
 
     public static final RegistryKey<PlacedFeature> END_COBALT_ORE_PLACED_KEY = registerKey("end_cobalt_ore_placed");
     public static final RegistryKey<PlacedFeature> END_OSMIUM_ORE_PLACED_KEY = registerKey("end_osmium_ore_placed");
@@ -95,10 +93,6 @@ public class RebornPlacedFeatures {
                 modifiersWithCount(6, // VeinsPerChunk
                         HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-72), YOffset.aboveBottom(24))));
 
-        register(context, LITHIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.LITHIUM_ORE_KEY),
-                modifiersWithCount(9, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-64), YOffset.aboveBottom(32))));
-
 
         register(context, SAPPHIRE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SAPPHIRE_ORE_KEY),
                 modifiersWithCount(2, // VeinsPerChunk
@@ -140,10 +134,6 @@ public class RebornPlacedFeatures {
         register(context, NETHER_URANIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.NETHER_URANIUM_ORE_KEY),
                 modifiersWithCount(7, // VeinsPerChunk
                         HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(0), YOffset.aboveBottom(32))));
-
-        register(context, NETHER_SULPHUR_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.NETHER_URANIUM_ORE_KEY),
-                modifiersWithCount(15, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(10), YOffset.aboveBottom(100))));
 
 
         register(context, END_COBALT_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.END_COBALT_ORE_KEY),
