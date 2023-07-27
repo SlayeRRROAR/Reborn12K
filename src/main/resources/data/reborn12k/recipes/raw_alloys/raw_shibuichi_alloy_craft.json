@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:raw_copper"
+        },
+        {
+            "item": "minecraft:raw_copper"
+        },
+        {
+            "item": "minecraft:raw_copper"
+        },
+        {
+            "tag": "c:raw_silver_ores"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_shibuichi_alloy",
+        "count": 4
+    },
+    "group": "raw_shibuichi_alloy"
+}

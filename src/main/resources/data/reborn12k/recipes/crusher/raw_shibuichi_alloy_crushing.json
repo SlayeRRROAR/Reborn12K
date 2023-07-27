@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:shibuichi_alloy_ingots"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:raw_shibuichi_alloy"
+    }
+}

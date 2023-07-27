@@ -35,6 +35,8 @@ public enum RebornArmorMaterials implements ArmorMaterial {
     ENDERIUM("enderium", 38, new int[] {5, 9, 11, 6}, 30, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
             5f, 0.2f, GenericItems.ENDERIUM_INGOT),
 
+    SHIBUICHI_ALLOY("shibuichi_alloy", 27, new int[] {2, 5, 6, 2}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
+            1f, 0f, GenericItems.SHIBUICHI_ALLOY_INGOT),
     MAGISTEEL("magisteel", 36, new int[] {3, 6, 8, 3}, 17, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
             2f, 0f, GenericItems.MAGISTEEL_INGOT),
     ORICHALCUM("orichalcum", 41, new int[] {3, 6, 8, 3}, 22, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,

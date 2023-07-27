@@ -85,14 +85,32 @@ public class RebornTagsUtil {
         public static final TagKey<Block> IRIDIUM_BLOCKS = createCommonTag("iridium_blocks");
 
 
+        public static final TagKey<Block> RAW_ARCHEOSITE_BLOCKS = createCommonTag("raw_archeosite_blocks");
+        public static final TagKey<Block> ARCHEOSITE_BLOCKS = createCommonTag("archeosite_blocks");
+
         public static final TagKey<Block> RAW_BRONZE_BLOCKS = createCommonTag("raw_bronze_blocks");
         public static final TagKey<Block> BRONZE_BLOCKS = createCommonTag("bronze_blocks");
+
+        public static final TagKey<Block> RAW_CONSTANTAN_BLOCKS = createCommonTag("raw_constantan_blocks");
+        public static final TagKey<Block> CONSTANTAN_BLOCKS = createCommonTag("constantan_blocks");
 
         public static final TagKey<Block> RAW_INVAR_BLOCKS = createCommonTag("raw_invar_blocks");
         public static final TagKey<Block> INVAR_BLOCKS = createCommonTag("invar_blocks");
 
-        public static final TagKey<Block> RAW_CONSTANTAN_BLOCKS = createCommonTag("raw_constantan_blocks");
-        public static final TagKey<Block> CONSTANTAN_BLOCKS = createCommonTag("constantan_blocks");
+        public static final TagKey<Block> RAW_STEEL_BLOCKS = createCommonTag("raw_steel_blocks");
+        public static final TagKey<Block> STEEL_BLOCKS = createCommonTag("steel_blocks");
+
+        public static final TagKey<Block> RAW_TUNGSTENSTEEL_BLOCKS = createCommonTag("raw_tungstensteel_blocks");
+        public static final TagKey<Block> TUNGSTENSTEEL_BLOCKS = createCommonTag("tungstensteel_blocks");
+
+        public static final TagKey<Block> RAW_THELOSITE_BLOCKS = createCommonTag("raw_thelosite_blocks");
+        public static final TagKey<Block> THELOSITE_BLOCKS = createCommonTag("thelosite_blocks");
+
+        public static final TagKey<Block> RAW_ADVANCED_ALLOY_BLOCKS = createCommonTag("raw_advanced_alloy_blocks");
+        public static final TagKey<Block> ADVANCED_ALLOY_BLOCKS = createCommonTag("advanced_alloy_blocks");
+
+        public static final TagKey<Block> RAW_IRIDIUM_ALLOY_BLOCKS = createCommonTag("raw_iridium_alloy_blocks");
+        public static final TagKey<Block> IRIDIUM_ALLOY_BLOCKS = createCommonTag("iridium_alloy_blocks");
 
         public static final TagKey<Block> RAW_ELECTRUM_BLOCKS = createCommonTag("raw_electrum_blocks");
         public static final TagKey<Block> ELECTRUM_BLOCKS = createCommonTag("electrum_blocks");
@@ -106,23 +124,8 @@ public class RebornTagsUtil {
         public static final TagKey<Block> RAW_ENDERIUM_BLOCKS = createCommonTag("raw_enderium_blocks");
         public static final TagKey<Block> ENDERIUM_BLOCKS = createCommonTag("enderium_blocks");
 
-        public static final TagKey<Block> RAW_STEEL_BLOCKS = createCommonTag("raw_steel_blocks");
-        public static final TagKey<Block> STEEL_BLOCKS = createCommonTag("steel_blocks");
-
-        public static final TagKey<Block> RAW_TUNGSTENSTEEL_BLOCKS = createCommonTag("raw_tungstensteel_blocks");
-        public static final TagKey<Block> TUNGSTENSTEEL_BLOCKS = createCommonTag("tungstensteel_blocks");
-
-        public static final TagKey<Block> RAW_ADVANCED_ALLOY_BLOCKS = createCommonTag("raw_advanced_alloy_blocks");
-        public static final TagKey<Block> ADVANCED_ALLOY_BLOCKS = createCommonTag("advanced_alloy_blocks");
-
-        public static final TagKey<Block> RAW_IRIDIUM_ALLOY_BLOCKS = createCommonTag("raw_iridium_alloy_blocks");
-        public static final TagKey<Block> IRIDIUM_ALLOY_BLOCKS = createCommonTag("iridium_alloy_blocks");
-
-        public static final TagKey<Block> RAW_ARCHEOSITE_BLOCKS = createCommonTag("raw_archeosite_blocks");
-        public static final TagKey<Block> ARCHEOSITE_BLOCKS = createCommonTag("archeosite_blocks");
-
-        public static final TagKey<Block> RAW_THELOSITE_BLOCKS = createCommonTag("raw_thelosite_blocks");
-        public static final TagKey<Block> THELOSITE_BLOCKS = createCommonTag("thelosite_blocks");
+        public static final TagKey<Block> RAW_SHIBUICHI_ALLOY_BLOCKS = createCommonTag("raw_shibuichi_alloy_blocks");
+        public static final TagKey<Block> SHIBUICHI_ALLOY_BLOCKS = createCommonTag("shibuichi_alloy_blocks");
 
 
         public static final TagKey<Block> SAPPHIRE_ORES = createCommonTag("sapphire_ores");
@@ -248,20 +251,50 @@ public class RebornTagsUtil {
         public static final TagKey<Item> IRIDIUM_BLOCKS = createCommonTag("iridium_blocks");
 
 
+        public static final TagKey<Item> RAW_ARCHEOSITE_ORES = createCommonTag("raw_archeosite_ores");
+        public static final TagKey<Item> RAW_ARCHEOSITE_BLOCKS = createCommonTag("raw_archeosite_blocks");
+        public static final TagKey<Item> ARCHEOSITE_INGOTS = createCommonTag("archeosite_ingots");
+        public static final TagKey<Item> ARCHEOSITE_BLOCKS = createCommonTag("archeosite_blocks");
+
         public static final TagKey<Item> RAW_BRONZE_ORES = createCommonTag("raw_bronze_ores");
         public static final TagKey<Item> RAW_BRONZE_BLOCKS = createCommonTag("raw_bronze_blocks");
         public static final TagKey<Item> BRONZE_INGOTS = createCommonTag("bronze_ingots");
         public static final TagKey<Item> BRONZE_BLOCKS = createCommonTag("bronze_blocks");
+
+        public static final TagKey<Item> RAW_CONSTANTAN_ORES = createCommonTag("raw_constantan_ores");
+        public static final TagKey<Item> RAW_CONSTANTAN_BLOCKS = createCommonTag("raw_constantan_blocks");
+        public static final TagKey<Item> CONSTANTAN_INGOTS = createCommonTag("constantan_ingots");
+        public static final TagKey<Item> CONSTANTAN_BLOCKS = createCommonTag("constantan_blocks");
 
         public static final TagKey<Item> RAW_INVAR_ORES = createCommonTag("raw_invar_ores");
         public static final TagKey<Item> RAW_INVAR_BLOCKS = createCommonTag("raw_invar_blocks");
         public static final TagKey<Item> INVAR_INGOTS = createCommonTag("invar_ingots");
         public static final TagKey<Item> INVAR_BLOCKS = createCommonTag("invar_blocks");
 
-        public static final TagKey<Item> RAW_CONSTANTAN_ORES = createCommonTag("raw_constantan_ores");
-        public static final TagKey<Item> RAW_CONSTANTAN_BLOCKS = createCommonTag("raw_constantan_blocks");
-        public static final TagKey<Item> CONSTANTAN_INGOTS = createCommonTag("constantan_ingots");
-        public static final TagKey<Item> CONSTANTAN_BLOCKS = createCommonTag("constantan_blocks");
+        public static final TagKey<Item> RAW_STEEL_ORES = createCommonTag("raw_steel_ores");
+        public static final TagKey<Item> RAW_STEEL_BLOCKS = createCommonTag("raw_steel_blocks");
+        public static final TagKey<Item> STEEL_INGOTS = createCommonTag("steel_ingots");
+        public static final TagKey<Item> STEEL_BLOCKS = createCommonTag("steel_blocks");
+
+        public static final TagKey<Item> RAW_TUNGSTENSTEEL_ORES = createCommonTag("raw_tungstensteel_ores");
+        public static final TagKey<Item> RAW_TUNGSTENSTEEL_BLOCKS = createCommonTag("raw_tungstensteel_blocks");
+        public static final TagKey<Item> TUNGSTENSTEEL_INGOTS = createCommonTag("tungstensteel_ingots");
+        public static final TagKey<Item> TUNGSTENSTEEL_BLOCKS = createCommonTag("tungstensteel_blocks");
+
+        public static final TagKey<Item> RAW_THELOSITE_ORES = createCommonTag("raw_thelosite_ores");
+        public static final TagKey<Item> RAW_THELOSITE_BLOCKS = createCommonTag("raw_thelosite_blocks");
+        public static final TagKey<Item> THELOSITE_INGOTS = createCommonTag("thelosite_ingots");
+        public static final TagKey<Item> THELOSITE_BLOCKS = createCommonTag("thelosite_blocks");
+
+        public static final TagKey<Item> RAW_ADVANCED_ALLOY_ORES = createCommonTag("raw_advanced_alloy_ores");
+        public static final TagKey<Item> RAW_ADVANCED_ALLOY_BLOCKS = createCommonTag("raw_advanced_alloy_blocks");
+        public static final TagKey<Item> ADVANCED_ALLOY_INGOTS = createCommonTag("advanced_alloy_ingots");
+        public static final TagKey<Item> ADVANCED_ALLOY_BLOCKS = createCommonTag("advanced_alloy_blocks");
+
+        public static final TagKey<Item> RAW_IRIDIUM_ALLOY_ORES = createCommonTag("raw_iridium_alloy_ores");
+        public static final TagKey<Item> RAW_IRIDIUM_ALLOY_BLOCKS = createCommonTag("raw_iridium_alloy_blocks");
+        public static final TagKey<Item> IRIDIUM_ALLOY_INGOTS = createCommonTag("iridium_alloy_ingots");
+        public static final TagKey<Item> IRIDIUM_ALLOY_BLOCKS = createCommonTag("iridium_alloy_blocks");
 
         public static final TagKey<Item> RAW_ELECTRUM_ORES = createCommonTag("raw_electrum_ores");
         public static final TagKey<Item> RAW_ELECTRUM_BLOCKS = createCommonTag("raw_electrum_blocks");
@@ -283,35 +316,10 @@ public class RebornTagsUtil {
         public static final TagKey<Item> ENDERIUM_INGOTS = createCommonTag("enderium_ingots");
         public static final TagKey<Item> ENDERIUM_BLOCKS = createCommonTag("enderium_blocks");
 
-        public static final TagKey<Item> RAW_STEEL_ORES = createCommonTag("raw_steel_ores");
-        public static final TagKey<Item> RAW_STEEL_BLOCKS = createCommonTag("raw_steel_blocks");
-        public static final TagKey<Item> STEEL_INGOTS = createCommonTag("steel_ingots");
-        public static final TagKey<Item> STEEL_BLOCKS = createCommonTag("steel_blocks");
-
-        public static final TagKey<Item> RAW_TUNGSTENSTEEL_ORES = createCommonTag("raw_tungstensteel_ores");
-        public static final TagKey<Item> RAW_TUNGSTENSTEEL_BLOCKS = createCommonTag("raw_tungstensteel_blocks");
-        public static final TagKey<Item> TUNGSTENSTEEL_INGOTS = createCommonTag("tungstensteel_ingots");
-        public static final TagKey<Item> TUNGSTENSTEEL_BLOCKS = createCommonTag("tungstensteel_blocks");
-
-        public static final TagKey<Item> RAW_ADVANCED_ALLOY_ORES = createCommonTag("raw_advanced_alloy_ores");
-        public static final TagKey<Item> RAW_ADVANCED_ALLOY_BLOCKS = createCommonTag("raw_advanced_alloy_blocks");
-        public static final TagKey<Item> ADVANCED_ALLOY_INGOTS = createCommonTag("advanced_alloy_ingots");
-        public static final TagKey<Item> ADVANCED_ALLOY_BLOCKS = createCommonTag("advanced_alloy_blocks");
-
-        public static final TagKey<Item> RAW_IRIDIUM_ALLOY_ORES = createCommonTag("raw_iridium_alloy_ores");
-        public static final TagKey<Item> RAW_IRIDIUM_ALLOY_BLOCKS = createCommonTag("raw_iridium_alloy_blocks");
-        public static final TagKey<Item> IRIDIUM_ALLOY_INGOTS = createCommonTag("iridium_alloy_ingots");
-        public static final TagKey<Item> IRIDIUM_ALLOY_BLOCKS = createCommonTag("iridium_alloy_blocks");
-
-        public static final TagKey<Item> RAW_ARCHEOSITE_ORES = createCommonTag("raw_archeosite_ores");
-        public static final TagKey<Item> RAW_ARCHEOSITE_BLOCKS = createCommonTag("raw_archeosite_blocks");
-        public static final TagKey<Item> ARCHEOSITE_INGOTS = createCommonTag("archeosite_ingots");
-        public static final TagKey<Item> ARCHEOSITE_BLOCKS = createCommonTag("archeosite_blocks");
-
-        public static final TagKey<Item> RAW_THELOSITE_ORES = createCommonTag("raw_thelosite_ores");
-        public static final TagKey<Item> RAW_THELOSITE_BLOCKS = createCommonTag("raw_thelosite_blocks");
-        public static final TagKey<Item> THELOSITE_INGOTS = createCommonTag("thelosite_ingots");
-        public static final TagKey<Item> THELOSITE_BLOCKS = createCommonTag("thelosite_blocks");
+        public static final TagKey<Item> RAW_SHIBUICHI_ALLOY_ORES = createCommonTag("raw_shibuichi_alloy_ores");
+        public static final TagKey<Item> RAW_SHIBUICHI_ALLOY_BLOCKS = createCommonTag("raw_shibuichi_alloy_blocks");
+        public static final TagKey<Item> SHIBUICHI_ALLOY_INGOTS = createCommonTag("shibuichi_alloy_ingots");
+        public static final TagKey<Item> SHIBUICHI_ALLOY_BLOCKS = createCommonTag("shibuichi_alloy_blocks");
 
 
         public static final TagKey<Item> SAPPHIRE_ORES = createCommonTag("sapphire_ores");

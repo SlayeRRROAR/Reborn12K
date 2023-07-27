@@ -115,6 +115,7 @@ public class GenericBlocks {
     public static final Block LUMIUM_BLOCK = registerBlock("lumium_block", new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).luminance(15).hardness(8f).resistance(9f)), ItemGroupUtil.REBORN12K);
     public static final Block ENDERIUM_BLOCK = registerBlock("enderium_block", new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).requiresTool().sounds(BlockSoundGroup.NETHERITE).luminance(9).hardness(50f).resistance(1200f)), ItemGroupUtil.REBORN12K);
 
+    public static final Block SHIBUICHI_ALLOY_BLOCK = registerBlock("shibuichi_alloy_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5f).resistance(6f)), ItemGroupUtil.REBORN12K);
     public static final Block MAGISTEEL_BLOCK = registerBlock("magisteel_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(8f).resistance(12f)), ItemGroupUtil.REBORN12K);
     public static final Block ORICHALCUM_BLOCK = registerBlock("orichalcum_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(8f).resistance(12f)), ItemGroupUtil.REBORN12K);
     public static final Block MITHRIL_BLOCK = registerBlock("mithril_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(12f).resistance(30f)), ItemGroupUtil.REBORN12K);
@@ -158,6 +159,8 @@ public class GenericBlocks {
     public static final Block RAW_SIGNALUM_BLOCK = registerBlock("raw_signalum_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(8f).resistance(200f)), ItemGroupUtil.REBORN12K);
     public static final Block RAW_LUMIUM_BLOCK = registerBlock("raw_lumium_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).luminance(15).hardness(8f).resistance(9f)), ItemGroupUtil.REBORN12K);
     public static final Block RAW_ENDERIUM_BLOCK = registerBlock("raw_enderium_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).luminance(9).hardness(50f).resistance(1200f)), ItemGroupUtil.REBORN12K);
+
+    public static final Block RAW_SHIBUICHI_ALLOY_BLOCK = registerBlock("raw_shibuichi_alloy_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(5f).resistance(6f)), ItemGroupUtil.REBORN12K);
 
 
     private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> group) {

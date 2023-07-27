@@ -55,6 +55,7 @@ public class GenericItems {
     public static final Item LUMIUM_INGOT = registerItem("lumium_ingot", new Item(new FabricItemSettings()));
     public static final Item ENDERIUM_INGOT = registerItem("enderium_ingot", new Item(new FabricItemSettings()));
 
+    public static final Item SHIBUICHI_ALLOY_INGOT = registerItem("shibuichi_alloy_ingot", new Item(new FabricItemSettings()));
     public static final Item MAGISTEEL_INGOT = registerItem("magisteel_ingot", new Item(new FabricItemSettings()));
     public static final Item ORICHALCUM_INGOT = registerItem("orichalcum_ingot", new Item(new FabricItemSettings()));
     public static final Item MITHRIL_INGOT = registerItem("mithril_ingot", new Item(new FabricItemSettings()));
@@ -98,6 +99,8 @@ public class GenericItems {
     public static final Item RAW_SIGNALUM = registerItem("raw_signalum", new Item(new FabricItemSettings()));
     public static final Item RAW_LUMIUM = registerItem("raw_lumium", new Item(new FabricItemSettings()));
     public static final Item RAW_ENDERIUM = registerItem("raw_enderium", new Item(new FabricItemSettings()));
+
+    public static final Item RAW_SHIBUICHI_ALLOY = registerItem("raw_shibuichi_alloy", new Item(new FabricItemSettings()));
 
     public static final Item DESTABILIZED_MIXTURE = registerItem("destabilized_mixture", new Item(new FabricItemSettings()));
     public static final Item ENERGIZED_MIXTURE = registerItem("energized_mixture", new Item(new FabricItemSettings()));
@@ -204,6 +207,8 @@ public class GenericItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, LUMIUM_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_INGOT);
 
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_INGOT);
@@ -246,6 +251,8 @@ public class GenericItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, RAW_SIGNALUM);
         addToItemGroup(ItemGroupUtil.REBORN12K, RAW_LUMIUM);
         addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ENDERIUM);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_SHIBUICHI_ALLOY);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, DESTABILIZED_MIXTURE);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENERGIZED_MIXTURE);

@@ -72,6 +72,11 @@ public class RebornArmors {
     public static final Item ENDERIUM_BOOTS = registerItem("enderium_boots", new ArmorItem(RebornArmorMaterials.ENDERIUM, ArmorItem.Type.BOOTS, new Item.Settings().fireproof()));
 
 
+    public static final Item SHIBUICHI_ALLOY_HELMET = registerItem("shibuichi_alloy_helmet", new ArmorItem(RebornArmorMaterials.SHIBUICHI_ALLOY, ArmorItem.Type.HELMET, new Item.Settings()));
+    public static final Item SHIBUICHI_ALLOY_CHESTPLATE = registerItem("shibuichi_alloy_chestplate", new ArmorItem(RebornArmorMaterials.SHIBUICHI_ALLOY, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+    public static final Item SHIBUICHI_ALLOY_LEGGINGS = registerItem("shibuichi_alloy_leggings", new ArmorItem(RebornArmorMaterials.SHIBUICHI_ALLOY, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+    public static final Item SHIBUICHI_ALLOY_BOOTS = registerItem("shibuichi_alloy_boots", new ArmorItem(RebornArmorMaterials.SHIBUICHI_ALLOY, ArmorItem.Type.BOOTS, new Item.Settings()));
+
     public static final Item MAGISTEEL_HELMET = registerItem("magisteel_helmet", new ArmorItem(RebornArmorMaterials.MAGISTEEL, ArmorItem.Type.HELMET, new Item.Settings().fireproof()));
     public static final Item MAGISTEEL_CHESTPLATE = registerItem("magisteel_chestplate", new ArmorItem(RebornArmorMaterials.MAGISTEEL, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof()));
     public static final Item MAGISTEEL_LEGGINGS = registerItem("magisteel_leggings", new ArmorItem(RebornArmorMaterials.MAGISTEEL, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof()));
@@ -160,6 +165,11 @@ public class RebornArmors {
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_LEGGINGS);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_BOOTS);
 
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_BOOTS);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_HELMET);
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_CHESTPLATE);

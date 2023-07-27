@@ -30,15 +30,17 @@
     "reborn12k:sunstone_block",
     "reborn12k:moonstone_block",
 
-    "reborn12k:raw_invar_block",
-    "reborn12k:invar_block",
     "reborn12k:raw_constantan_block",
     "reborn12k:constantan_block",
+    "reborn12k:raw_invar_block",
+    "reborn12k:invar_block",
     "reborn12k:raw_steel_block",
     "reborn12k:steel_block",
     "reborn12k:raw_electrum_block",
     "reborn12k:electrum_block",
     "reborn12k:raw_lumium_block",
-    "reborn12k:lumium_block"
+    "reborn12k:lumium_block",
+    "reborn12k:raw_shibuichi_alloy_block",
+    "reborn12k:shibuichi_alloy_block"
   ]
 }

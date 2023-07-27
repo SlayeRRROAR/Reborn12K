@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:raw_shibuichi_alloy_ores"
+        }
+    },
+    "result": {
+        "item": "reborn12k:raw_shibuichi_alloy_block",
+        "count": 1
+    }
+}

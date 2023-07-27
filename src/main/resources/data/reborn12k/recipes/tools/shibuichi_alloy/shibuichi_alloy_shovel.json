@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A",
+        "B",
+        "B"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:shibuichi_alloy_ingots"
+        },
+        "B": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "reborn12k:shibuichi_alloy_shovel",
+        "count": 1
+    }
+}
