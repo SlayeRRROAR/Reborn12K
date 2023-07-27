@@ -21,8 +21,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "reborn12k:archeosite_ingot"
+            "tag": [
+              "c:archeosite_ingots"
             ]
           }
         ]

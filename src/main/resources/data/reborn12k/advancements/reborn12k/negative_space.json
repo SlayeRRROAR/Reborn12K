@@ -21,8 +21,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "reborn12k:enderium_ingot"
+            "tag": [
+              "c:enderium_ingots"
             ]
           }
         ]

@@ -21,8 +21,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "reborn12k:lumium_ingot"
+            "tag": [
+              "c:lumium_ingots"
             ]
           }
         ]

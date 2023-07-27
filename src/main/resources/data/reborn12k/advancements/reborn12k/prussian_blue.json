@@ -21,8 +21,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "reborn12k:cobalt_ingot"
+            "tag": [
+              "c:cobalt_ingots"
             ]
           }
         ]

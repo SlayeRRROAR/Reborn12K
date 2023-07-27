@@ -21,8 +21,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "reborn12k:tungstensteel_ingot"
+            "tag": [
+              "c:tungstensteel_ingots"
             ]
           }
         ]

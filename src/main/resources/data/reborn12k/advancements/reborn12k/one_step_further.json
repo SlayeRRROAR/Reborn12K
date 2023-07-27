@@ -63,6 +63,18 @@
           }
         ]
       }
+    },
+    "get_mithril_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:mithril_pickaxe"
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -70,7 +82,8 @@
       "get_archeosite_pickaxe",
       "get_thelosite_pickaxe",
       "get_enderium_pickaxe",
-      "get_iridium_alloy_pickaxe"
+      "get_iridium_alloy_pickaxe",
+      "get_mithril_pickaxe"
     ]
   ]
 }

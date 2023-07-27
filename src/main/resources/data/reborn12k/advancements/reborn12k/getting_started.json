@@ -21,8 +21,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "reborn12k:bronze_ingot"
+            "tag": [
+              "c:bronze_ingots"
             ]
           }
         ]

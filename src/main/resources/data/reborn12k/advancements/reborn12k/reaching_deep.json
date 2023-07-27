@@ -21,8 +21,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:netherite_ingot"
+            "tag": [
+              "c:netherite_ingots"
             ]
           }
         ]

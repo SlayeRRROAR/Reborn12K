@@ -21,8 +21,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "reborn12k:aluminum_ingot"
+            "tag": [
+              "c:aluminum_ingots"
             ]
           }
         ]

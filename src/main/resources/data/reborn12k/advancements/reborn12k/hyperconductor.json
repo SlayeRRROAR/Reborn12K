@@ -21,8 +21,8 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "reborn12k:signalum_ingot"
+            "tag": [
+              "c:signalum_ingots"
             ]
           }
         ]
