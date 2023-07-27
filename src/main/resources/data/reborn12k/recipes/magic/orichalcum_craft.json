@@ -1,16 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " A ",
     "ABA",
-    " A "
+    "BCB",
+    "ABA"
   ],
   "key": {
     "A": {
-      "item": "reborn12k:magisteel_ingot"
+      "item": "minecraft:blaze_powder"
     },
     "B": {
       "item": "reborn12k:rune_of_iron"
+    },
+    "C": {
+      "item": "reborn12k:magisteel_ingot"
     }
   },
   "result": {
