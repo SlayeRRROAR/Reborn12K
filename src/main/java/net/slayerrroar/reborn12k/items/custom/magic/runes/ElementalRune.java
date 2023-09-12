@@ -8,10 +8,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
 import net.slayerrroar.reborn12k.blocks.GenericBlocks;
+
+import java.util.Random;
 
 public class ElementalRune extends Item {
     public ElementalRune(Settings settings) {
@@ -61,7 +64,26 @@ public class ElementalRune extends Item {
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }
-        return ActionResult.FAIL;
+
+        player.sendMessage(Text.translatable(randomMessage()), true);
+        return ActionResult.SUCCESS;
+    }
+
+    private static String randomMessage() {
+        Random randomMessage = new Random();
+        int messageUpperbound = 4;
+        int messageInt = randomMessage.nextInt(messageUpperbound);
+
+        if (messageInt == 0) {
+            return "item.reborn12k.elemental_rune.tooltip1";
+        }
+        if (messageInt == 1) {
+            return "item.reborn12k.elemental_rune.tooltip2";
+        }
+        if (messageInt == 2) {
+            return "item.reborn12k.elemental_rune.tooltip3";
+        }
+        return "item.reborn12k.elemental_rune.tooltip4";
     }
 
 }
