@@ -129,7 +129,7 @@ public class Magnet extends Item implements Equipment {
         PlayerEntity player = (PlayerEntity) entity;
 
         if(!world.isClient && isActive(stack)) {
-            if(player.getStackInHand(Hand.OFF_HAND) == stack || player.getStackInHand(Hand.MAIN_HAND) == stack) {
+            if(player.getStackInHand(Hand.OFF_HAND) == stack) {
                 attractItemAndXp(entity);
             }
         }

@@ -906,6 +906,11 @@
     "item.reborn12k.alkatraz_disc": "Alkatraz Disc",
     "item.reborn12k.alkatraz_disc.desc": "DEMONDICE - Alkatraz",
 
+    "item.reborn12k.elemental_rune.tooltip1": "Something is wrong",
+    "item.reborn12k.elemental_rune.tooltip2": "You made a mistake",
+    "item.reborn12k.elemental_rune.tooltip3": "The conditions aren't valid",
+    "item.reborn12k.elemental_rune.tooltip4": "Something is wrong",
+
     "item.reborn12k.locked_strongbox.tooltip": "You need a key to open it",
     "item.reborn12k.locked_strongbox.opened": "You opened a strongbox and found a Trinket",
 
@@ -1016,12 +1021,13 @@
     "item.reborn12k.wings.tooltip1": "§8Fly me to the moon",
     "item.reborn12k.wings.tooltip2": "§8Let me play among the stars",
 
-    "item.reborn12k.magnet.tooltip1": "§8Press the §5Activate Trinket",
-    "item.reborn12k.magnet.tooltip2": "§8button to turn it on or off",
-    "item.reborn12k.magnet.tooltip3": "§8The magnet is §cINACTIVE",
-    "item.reborn12k.magnet.tooltip4": "§8The magnet is §1ACTIVE",
-    "item.reborn12k.magnet.tooltip5": "§cINACTIVE",
-    "item.reborn12k.magnet.tooltip6": "§1ACTIVE",
+    "item.reborn12k.magnet.tooltip1": "§8Sneak + Use to toggle it",
+    "item.reborn12k.magnet.tooltip2": "§8on or off. Only works when",
+    "item.reborn12k.magnet.tooltip3": "§8it's in the offhand",
+    "item.reborn12k.magnet.tooltip4": "§8The magnet is §cINACTIVE",
+    "item.reborn12k.magnet.tooltip5": "§8The magnet is §1ACTIVE",
+    "item.reborn12k.magnet.tooltip6": "§cINACTIVE",
+    "item.reborn12k.magnet.tooltip7": "§1ACTIVE",
 
     "item.reborn12k.phoenix_plume.tooltip1": "§8Protects from death",
     "item.reborn12k.phoenix_plume.tooltip2": "§8A Phoenix feather",
