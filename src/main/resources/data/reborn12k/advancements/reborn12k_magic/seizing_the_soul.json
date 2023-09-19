@@ -1,14 +1,14 @@
 {
-  "parent": "reborn12k:reborn12k_magic/toughness",
+  "parent": "reborn12k:reborn12k_magic/imprisonment",
   "display": {
     "icon": {
-      "item": "reborn12k:mithril_ingot"
+      "item": "reborn12k:zombie_soul"
     },
     "title": {
-      "translate": "advancements.reborn12k_magic.purity.title"
+      "translate": "advancements.reborn12k_magic.seizing_the_soul.title"
     },
     "description": {
-      "translate": "advancements.reborn12k_magic.purity.description"
+      "translate": "advancements.reborn12k_magic.seizing_the_soul.description"
     },
     "frame": "goal",
     "show_toast": true,
@@ -16,13 +16,13 @@
     "hidden": false
   },
   "criteria": {
-    "get_mithril_ingot": {
+    "get_mob_soul": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "reborn12k:mithril_ingot"
+            "tag": [
+              "reborn12k:mob_souls"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "get_mithril_ingot"
+      "get_mob_soul"
     ]
   ]
 }
