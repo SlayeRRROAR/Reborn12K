@@ -339,9 +339,11 @@ public class RebornTagsUtil {
         public static final TagKey<Item> ASH_PLANKS = createTag("ash_logs");
 
 
-        public static final TagKey<Item> MANA_GEMS = createTag("mana_gem");
+        public static final TagKey<Item> MANA_GEMS = createTag("mana_gems");
         public static final TagKey<Item> PRECIOUS_GEMS = createTag("precious_gem");
         public static final TagKey<Item> ATTUNED_MANATITES = createTag("attuned_manatites");
+
+        public static final TagKey<Item> MOB_SOULS = createTag("mob_souls");
 
         public static final TagKey<Item> BASIC_LASER_FOCI = createTag("basic_laser_foci");
         public static final TagKey<Item> ADVANCED_LASER_FOCI = createTag("advanced_laser_foci");
