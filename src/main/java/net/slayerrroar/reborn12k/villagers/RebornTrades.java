@@ -102,7 +102,7 @@ public class RebornTrades {
         TradeOfferHelper.registerVillagerOffers(RebornVillagers.BLACKSMITH, 3,  //Blacksmith L3
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 37),
+                            new ItemStack(Items.EMERALD, 43),
                             new ItemStack(GenericItems.UNIVERSAL_SMITHING_TEMPLATE, 5),
                             3, 20, 0.03f));
                     factories.add((entity, random) -> new TradeOffer(
