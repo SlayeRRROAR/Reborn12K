@@ -17,9 +17,7 @@ import net.slayerrroar.reborn12k.items.custom.magic.essences.AdvancedEssenceItem
 import net.slayerrroar.reborn12k.items.custom.magic.essences.BasicEssenceItem;
 import net.slayerrroar.reborn12k.items.custom.magic.essences.SpecialEssenceItem;
 import net.slayerrroar.reborn12k.items.custom.magic.essences.UltimateEssenceItem;
-import net.slayerrroar.reborn12k.items.custom.magic.runes.BlankRune;
-import net.slayerrroar.reborn12k.items.custom.magic.runes.ElementalRune;
-import net.slayerrroar.reborn12k.items.custom.magic.runes.EtherealRune;
+import net.slayerrroar.reborn12k.items.custom.magic.runes.*;
 import net.slayerrroar.reborn12k.items.custom.magic.staffs.abyss.AbyssRod;
 import net.slayerrroar.reborn12k.items.custom.magic.staffs.abyss.AbyssScepter;
 import net.slayerrroar.reborn12k.items.custom.magic.staffs.abyss.AbyssStaff;
@@ -89,8 +87,15 @@ public class MagicItems {
     public static final Item RUNE_OF_WATER = registerItem("rune_of_water", new Item(new FabricItemSettings()));
     public static final Item RUNE_OF_FIRE = registerItem("rune_of_fire", new Item(new FabricItemSettings()));
 
-    public static final Item RUNE_OF_LIGHT = registerItem("rune_of_light", new EtherealRune(new FabricItemSettings()));
+    public static final Item RUNE_OF_LIGHT = registerItem("rune_of_light", new Item(new FabricItemSettings()));
     public static final Item RUNE_OF_DARKNESS= registerItem("rune_of_darkness", new Item(new FabricItemSettings()));
+
+    public static final Item SUPERIOR_RUNE_OF_AIR = registerItem("superior_rune_of_air", new SuperiorRuneAir(new FabricItemSettings()));
+    public static final Item SUPERIOR_RUNE_OF_EARTH = registerItem("superior_rune_of_earth", new SuperiorRuneEarth(new FabricItemSettings()));
+    public static final Item SUPERIOR_RUNE_OF_WATER = registerItem("superior_rune_of_water", new SuperiorRuneWater(new FabricItemSettings()));
+    public static final Item SUPERIOR_RUNE_OF_FIRE = registerItem("superior_rune_of_fire", new SuperiorRuneFire(new FabricItemSettings()));
+    public static final Item SUPERIOR_RUNE_OF_LIGHT = registerItem("superior_rune_of_light", new SuperiorRuneLight(new FabricItemSettings()));
+    public static final Item SUPERIOR_RUNE_OF_DARKNESS= registerItem("superior_rune_of_darkness", new SuperiorRuneDarkness(new FabricItemSettings()));
 
     public static final Item RUNE_OF_LIGHTNING = registerItem("rune_of_lightning", new Item(new FabricItemSettings()));
     public static final Item RUNE_OF_NATURE = registerItem("rune_of_nature", new Item(new FabricItemSettings()));
@@ -278,6 +283,13 @@ public class MagicItems {
 
         addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_LIGHT);
         addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_DARKNESS);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_AIR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_EARTH);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_WATER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_FIRE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_LIGHT);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_DARKNESS);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_LIGHTNING);
         addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_NATURE);
