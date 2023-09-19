@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:universal_smithing_template",
+        "count": 1
+    }
+}
