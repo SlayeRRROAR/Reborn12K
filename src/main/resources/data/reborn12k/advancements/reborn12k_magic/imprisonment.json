@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/colleagues",
+  "display": {
+    "icon": {
+      "item": "reborn12k:soul_vessel"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.imprisonment.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.imprisonment.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_soul_vessel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:soul_vessel"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_soul_vessel"
+    ]
+  ]
+}

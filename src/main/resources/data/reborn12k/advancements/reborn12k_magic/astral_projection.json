@@ -1,0 +1,50 @@
+{
+  "parent": "reborn12k:reborn12k_magic/studying_the_arcane",
+  "display": {
+    "icon": {
+      "item": "reborn12k:sunstone"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.astral_projection.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.astral_projection.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_sunstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:sunstone"
+            ]
+          }
+        ]
+      }
+    },
+    "get_moonstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:moonstone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_sunstone",
+      "get_moonstone"
+    ]
+  ]
+}
