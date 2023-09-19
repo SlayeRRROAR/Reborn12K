@@ -1,28 +1,28 @@
 {
-  "parent": "reborn12k:reborn12k_magic/toughness",
+  "parent": "reborn12k:reborn12k_magic/seizing_the_soul",
   "display": {
     "icon": {
-      "item": "reborn12k:mithril_ingot"
+      "item": "reborn12k:mana_condenser"
     },
     "title": {
-      "translate": "advancements.reborn12k_magic.purity.title"
+      "translate": "advancements.reborn12k_magic.soul_manipulation.title"
     },
     "description": {
-      "translate": "advancements.reborn12k_magic.purity.description"
+      "translate": "advancements.reborn12k_magic.soul_manipulation.description"
     },
-    "frame": "goal",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "get_mithril_ingot": {
+    "get_mana_condenser": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "reborn12k:mithril_ingot"
+              "reborn12k:mana_condenser"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "get_mithril_ingot"
+      "get_mana_condenser"
     ]
   ]
 }
