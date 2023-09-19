@@ -5,10 +5,10 @@
       "item": "reborn12k:soul_vessel"
     },
     "title": {
-      "translate": "advancements.reborn12k_magic.seizing_the_soul.title"
+      "translate": "advancements.reborn12k_magic.imprisonment.title"
     },
     "description": {
-      "translate": "advancements.reborn12k_magic.seizing_the_soul.description"
+      "translate": "advancements.reborn12k_magic.imprisonment.description"
     },
     "frame": "task",
     "show_toast": true,
