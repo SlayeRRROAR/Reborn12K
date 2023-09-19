@@ -671,12 +671,21 @@
     "item.reborn12k.arcane_dust": "Arcane Dust",
 
     "item.reborn12k.blank_rune": "Blank Rune",
+
     "item.reborn12k.rune_of_air": "Rune of Air",
     "item.reborn12k.rune_of_earth": "Rune of Earth",
     "item.reborn12k.rune_of_water": "Rune of Water",
     "item.reborn12k.rune_of_fire": "Rune of Fire",
+
     "item.reborn12k.rune_of_light": "Rune of Light",
     "item.reborn12k.rune_of_darkness": "Rune of Darkness",
+
+    "item.reborn12k.superior_rune_of_air": "§bSuperior Rune of Air",
+    "item.reborn12k.superior_rune_of_earth": "§2Superior Rune of Earth",
+    "item.reborn12k.superior_rune_of_water": "§1Superior Rune of Water",
+    "item.reborn12k.superior_rune_of_fire": "§cSuperior Rune of Fire",
+    "item.reborn12k.superior_rune_of_light": "§eSuperior Rune of Light",
+    "item.reborn12k.superior_rune_of_darkness": "§5Superior Rune of Darkness",
 
     "item.reborn12k.rune_of_iron": "Rune of Iron",
     "item.reborn12k.rune_of_nature": "Rune of Nature",
@@ -906,10 +915,10 @@
     "item.reborn12k.alkatraz_disc": "Alkatraz Disc",
     "item.reborn12k.alkatraz_disc.desc": "DEMONDICE - Alkatraz",
 
-    "item.reborn12k.elemental_rune.tooltip1": "Something is wrong",
-    "item.reborn12k.elemental_rune.tooltip2": "You made a mistake",
-    "item.reborn12k.elemental_rune.tooltip3": "The conditions aren't valid",
-    "item.reborn12k.elemental_rune.tooltip4": "Something is wrong",
+    "item.reborn12k.magic_error.tooltip1": "Something is wrong",
+    "item.reborn12k.magic_error.tooltip2": "You made a mistake",
+    "item.reborn12k.magic_error.tooltip3": "The conditions aren't valid",
+    "item.reborn12k.magic_error.tooltip4": "Something is wrong",
 
     "item.reborn12k.locked_strongbox.tooltip": "You need a key to open it",
     "item.reborn12k.locked_strongbox.opened": "You opened a strongbox and found a Trinket",
