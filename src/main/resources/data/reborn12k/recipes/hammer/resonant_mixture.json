@@ -2,6 +2,9 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
+            "item": "reborn12k:hammer"
+        },
+        {
             "tag": "c:ender_pearl_dust"
         },
         {

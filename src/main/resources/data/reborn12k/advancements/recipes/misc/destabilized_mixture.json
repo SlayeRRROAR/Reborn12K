@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:melter/destabilized_mixture"
+        "reborn12k:hammer/destabilized_mixture"
       ]
     },
     "criteria": {

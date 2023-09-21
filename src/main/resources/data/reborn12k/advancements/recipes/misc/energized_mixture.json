@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:melter/energized_mixture"
+        "reborn12k:hammer/energized_mixture"
       ]
     },
     "criteria": {

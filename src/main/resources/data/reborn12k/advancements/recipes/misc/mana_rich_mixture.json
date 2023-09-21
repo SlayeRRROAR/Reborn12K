@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:melter/mana_rich_mixture"
+        "reborn12k:hammer/mana_rich_mixture"
       ]
     },
     "criteria": {
