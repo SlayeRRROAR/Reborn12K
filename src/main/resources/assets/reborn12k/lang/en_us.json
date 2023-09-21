@@ -434,6 +434,7 @@
     "item.reborn12k.destabilized_mixture": "Destabilized Mixture",
     "item.reborn12k.energized_mixture": "Energized Mixture",
     "item.reborn12k.resonant_mixture": "Resonant Mixture",
+    "item.reborn12k.mana_rich_mixture": "Mana Rich Mixture",
 
     "item.reborn12k.ender_dust": "Ender Dust",
 
@@ -1029,6 +1030,8 @@
 
     "item.reborn12k.wings.tooltip1": "§8Fly me to the moon",
     "item.reborn12k.wings.tooltip2": "§8Let me play among the stars",
+
+    "item.reborn12k.dangerous_bucket.tooltip": "§8Too volatile to place",
 
     "item.reborn12k.magnet.tooltip1": "§8Sneak + Use to toggle it",
     "item.reborn12k.magnet.tooltip2": "§8on or off. Only works when",

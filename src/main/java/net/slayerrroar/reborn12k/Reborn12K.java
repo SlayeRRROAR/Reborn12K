@@ -12,7 +12,6 @@ import net.slayerrroar.reborn12k.config.RebornConfig;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.entity.RebornProjectileEntities;
-import net.slayerrroar.reborn12k.fluids.RebornFluids;
 import net.slayerrroar.reborn12k.items.*;
 import net.slayerrroar.reborn12k.loot.RebornLootTable;
 import net.slayerrroar.reborn12k.recipe.RebornRecipes;
@@ -50,7 +49,6 @@ public class Reborn12K implements ModInitializer {
 
         GenericItems.register();
 
-        RebornFluids.register();
         FuelUtil.register();
 
         TechnicalItems.register();

@@ -14,7 +14,6 @@ public class ClientReborn12K implements ClientModInitializer {
         RebornScreenRegistry.registerClient();
 
         RebornBlockRender.registerClient();
-        RebornFluidRender.registerClient();
         RebornProjectileEntityRender.registerClient();
 
     }

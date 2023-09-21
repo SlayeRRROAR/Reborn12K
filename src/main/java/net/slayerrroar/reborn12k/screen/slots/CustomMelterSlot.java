@@ -14,7 +14,8 @@ public class CustomMelterSlot extends Slot {
     public boolean canInsert(ItemStack stack) {
         return stack.isOf(GenericItems.DESTABILIZED_MIXTURE) ||
                 stack.isOf(GenericItems.ENERGIZED_MIXTURE) ||
-                stack.isOf(GenericItems.RESONANT_MIXTURE);
+                stack.isOf(GenericItems.RESONANT_MIXTURE) ||
+                stack.isOf(GenericItems.MANA_RICH_MIXTURE);
     }
 
     @Override

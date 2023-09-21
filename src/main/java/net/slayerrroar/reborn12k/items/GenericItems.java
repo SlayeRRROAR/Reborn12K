@@ -105,6 +105,7 @@ public class GenericItems {
     public static final Item DESTABILIZED_MIXTURE = registerItem("destabilized_mixture", new Item(new FabricItemSettings()));
     public static final Item ENERGIZED_MIXTURE = registerItem("energized_mixture", new Item(new FabricItemSettings()));
     public static final Item RESONANT_MIXTURE = registerItem("resonant_mixture", new Item(new FabricItemSettings()));
+    public static final Item MANA_RICH_MIXTURE = registerItem("mana_rich_mixture", new Item(new FabricItemSettings()));
 
 
     // Food
@@ -159,7 +160,7 @@ public class GenericItems {
 
     public static final Item UNIVERSAL_SMITHING_TEMPLATE = registerItem("universal_smithing_template", new UniversalTemplate(new FabricItemSettings()));
 
-    public static final Item HAMMER = registerItem("hammer", new Item(new FabricItemSettings().recipeRemainder(GenericItems.HAMMER).maxCount(1)));
+    public static final Item HAMMER = registerItem("hammer", new HammerItem(new FabricItemSettings().maxDamage(24)));
 
     public static final Item ENDER_DUST = registerItem("ender_dust", new Item(new FabricItemSettings()));
     public static final Item CASING_MK237 = registerItem("casing_mk237", new Item(new FabricItemSettings()));
@@ -257,6 +258,7 @@ public class GenericItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, DESTABILIZED_MIXTURE);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENERGIZED_MIXTURE);
         addToItemGroup(ItemGroupUtil.REBORN12K, RESONANT_MIXTURE);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MANA_RICH_MIXTURE);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, BANANA);
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_BANANA);
