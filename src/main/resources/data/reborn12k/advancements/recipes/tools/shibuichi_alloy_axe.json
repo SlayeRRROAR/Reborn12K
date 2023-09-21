@@ -2,16 +2,16 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
       "recipes": [
-        "reborn12k:magic/magisteel_craft"
+        "reborn12k:tools/shibuichi_alloy/shibuichi_alloy_axe"
       ]
     },
     "criteria": {
-      "has_steel_ingot": {
+      "has_shibuichi_alloy_ingot": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
-              "tag": "c:steel_ingots"
+              "tag": "c:shibuichi_alloy_ingots"
             }
           ]
         }
@@ -19,14 +19,14 @@
       "has_the_recipe": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "reborn12k:magisteel_ingot"
+          "recipe": "reborn12k:shibuichi_alloy_axe"
         }
       }
     },
     "requirements": [
       [
-        "has_steel_ingot",
+        "has_shibuichi_alloy_ingot",
         "has_the_recipe"
       ]
     ]
-}
+  }

@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:tools/shibuichi_alloy/shibuichi_alloy_shovel"
+      ]
+    },
+    "criteria": {
+      "has_shibuichi_alloy_ingot": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:shibuichi_alloy_ingots"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:shibuichi_alloy_shovel"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_shibuichi_alloy_ingot",
+        "has_the_recipe"
+      ]
+    ]
+  }
