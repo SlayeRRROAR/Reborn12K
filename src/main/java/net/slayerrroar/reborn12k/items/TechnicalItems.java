@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -14,6 +15,11 @@ import net.slayerrroar.reborn12k.items.custom.tech.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class TechnicalItems {
+
+    public static final Item DESTABILIZED_REDSTONE_BUCKET = registerItem("destabilized_redstone_bucket", new DangerousBucketItem(new FabricItemSettings().recipeRemainder(Items.BUCKET)));
+    public static final Item ENERGIZED_GLOWSTONE_BUCKET = registerItem("energized_glowstone_bucket", new DangerousBucketItem(new FabricItemSettings().recipeRemainder(Items.BUCKET)));
+    public static final Item RESONANT_ENDER_BUCKET = registerItem("resonant_ender_bucket", new DangerousBucketItem(new FabricItemSettings().recipeRemainder(Items.BUCKET)));
+    public static final Item LIQUID_MANA_BUCKET = registerItem("liquid_mana_bucket", new DangerousBucketItem(new FabricItemSettings().recipeRemainder(Items.BUCKET)));
 
     public static final Item MAGNET = registerItem("magnet", new Magnet(new FabricItemSettings().maxCount(1)));
 
@@ -77,6 +83,11 @@ public class TechnicalItems {
     }
 
     public static void addItemsToItemGroup() {
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, DESTABILIZED_REDSTONE_BUCKET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENERGIZED_GLOWSTONE_BUCKET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RESONANT_ENDER_BUCKET);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LIQUID_MANA_BUCKET);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGNET);
 
