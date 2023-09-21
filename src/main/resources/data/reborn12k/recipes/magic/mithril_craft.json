@@ -1,21 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "ABA",
-    "BCB",
-    "ABA"
-  ],
-  "key": {
-    "A": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "reborn12k:orichalcum_ingot"
     },
-    "B": {
-      "item": "minecraft:popped_chorus_fruit"
-    },
-    "C": {
+    {
       "item": "reborn12k:rune_of_strength"
+    },
+    {
+      "item": "reborn12k:liquid_mana_bucket"
     }
-  },
+  ],
   "result": {
     "item": "reborn12k:mithril_ingot",
     "count": 1
