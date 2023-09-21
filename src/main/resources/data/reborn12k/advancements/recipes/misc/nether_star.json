@@ -6,13 +6,13 @@
       ]
     },
     "criteria": {
-      "has_withered_star": {
+      "has_withered_shard": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
             {
               "item": [
-                "reborn12k:withered_star"
+                "reborn12k:withered_shard"
               ]
             }
           ]
@@ -27,7 +27,7 @@
     },
     "requirements": [
       [
-        "has_withered_star",
+        "has_withered_shard",
         "has_the_recipe"
       ]
     ]

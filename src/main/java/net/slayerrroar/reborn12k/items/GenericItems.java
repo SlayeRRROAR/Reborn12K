@@ -153,7 +153,7 @@ public class GenericItems {
     // Mob Drops
 
     public static final Item WITHER_SKULL_FRAGMENT = registerItem("wither_skull_fragment", new Item(new FabricItemSettings()));
-    public static final Item WITHERED_STAR = registerItem("withered_star", new Item(new FabricItemSettings()));
+    public static final Item WITHERED_SHARD = registerItem("withered_shard", new Item(new FabricItemSettings()));
     
 
     // Other
@@ -271,7 +271,7 @@ public class GenericItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, FLOUR);
         addToItemGroup(ItemGroupUtil.REBORN12K, DOUGH);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, WITHERED_STAR);
+        addToItemGroup(ItemGroupUtil.REBORN12K, WITHERED_SHARD);
         addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_SKULL_FRAGMENT);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, UNIVERSAL_SMITHING_TEMPLATE);
