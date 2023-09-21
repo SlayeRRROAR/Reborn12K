@@ -21,9 +21,7 @@
       "conditions": {
         "items": [
           {
-            "tag": [
-              "reborn12k:mob_souls"
-            ]
+            "tag": "reborn12k:mob_souls"
           }
         ]
       }

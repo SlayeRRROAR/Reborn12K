@@ -106,7 +106,7 @@ public class RebornTools {
     public static Item SHIBUICHI_ALLOY_SHOVEL = registerItem("shibuichi_alloy_shovel", new BaseShovel(RebornToolMaterials.SHIBUICHI_ALLOY, 1, -3f, new FabricItemSettings().fireproof()));
     public static Item SHIBUICHI_ALLOY_PICKAXE = registerItem("shibuichi_alloy_pickaxe", new BasePickaxe(RebornToolMaterials.SHIBUICHI_ALLOY, 1, -2.8f, new FabricItemSettings().fireproof()));
     public static Item SHIBUICHI_ALLOY_AXE = registerItem("shibuichi_alloy_axe", new BaseAxe(RebornToolMaterials.SHIBUICHI_ALLOY, 5, -3f, new FabricItemSettings().fireproof()));
-    public static Item SHIBUICHI_ALLOY_HOE = registerItem("shibuichi_alloy_hoe", new BaseHoe(RebornToolMaterials.SHIBUICHI_ALLOY, -3, 0f, new FabricItemSettings().fireproof()));
+    public static Item SHIBUICHI_ALLOY_HOE = registerItem("shibuichi_alloy_hoe", new BaseHoe(RebornToolMaterials.SHIBUICHI_ALLOY, -2, 0f, new FabricItemSettings().fireproof()));
     public static Item SHIBUICHI_ALLOY_KATANA = registerItem("shibuichi_alloy_katana", new BaseSword(RebornToolMaterials.SHIBUICHI_ALLOY, 0, -1.6f, new FabricItemSettings().fireproof()));
 
     public static Item MAGISTEEL_SWORD = registerItem("magisteel_sword", new BaseSword(RebornToolMaterials.MAGISTEEL, 3, -2.4f, new FabricItemSettings().fireproof()));

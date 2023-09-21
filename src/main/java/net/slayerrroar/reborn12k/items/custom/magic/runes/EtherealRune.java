@@ -1,7 +1,6 @@
 package net.slayerrroar.reborn12k.items.custom.magic.runes;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -13,6 +12,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.blocks.GenericBlocks;
 import net.slayerrroar.reborn12k.items.GenericItems;
+
+import static net.minecraft.block.Block.dropStack;
 
 public class EtherealRune extends Item {
     public EtherealRune(Settings settings) {
@@ -29,9 +30,9 @@ public class EtherealRune extends Item {
         BlockPos pos = context.getBlockPos();
 
         if (block.isOf(GenericBlocks.STEEL_BLOCK)) {
-            world.setBlockState(pos, Blocks.AIR.getDefaultState());
+            world.breakBlock(pos, false);
             stack.setCount(stack.getCount()-1);
-            player.dropItem(GenericItems.MAGISTEEL_INGOT, 1);
+            dropStack(world, pos, new ItemStack(GenericItems.MAGISTEEL_INGOT));
             world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25f, 0.25f);
             return ActionResult.SUCCESS;
         }

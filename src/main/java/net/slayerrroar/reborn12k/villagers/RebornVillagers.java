@@ -43,7 +43,7 @@ public class RebornVillagers {
 
     public static PointOfInterestType registerPOI(String name, Block block) {
         Identifier id = new Identifier(Reborn12K.MOD_ID, name);
-        return PointOfInterestHelper.register(id, 1, 1, ImmutableSet.copyOf(block.getStateManager().getStates()));
+        return PointOfInterestHelper.register(id, 1, 1, block);
     }
 
 }
