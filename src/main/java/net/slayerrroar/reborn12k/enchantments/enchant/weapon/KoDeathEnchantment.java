@@ -7,6 +7,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.sound.SoundEvents;
+import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 
 import java.util.Random;
 
@@ -22,17 +23,24 @@ public class KoDeathEnchantment extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != Enchantments.SHARPNESS && other != Enchantments.SMITE && other != Enchantments.BANE_OF_ARTHROPODS;
+        return super.canAccept(other) && other != Enchantments.SHARPNESS && other != Enchantments.SMITE && other != Enchantments.BANE_OF_ARTHROPODS && other != RebornEnchantments.BLOODLUST;
     }
 
-    @Override
+    public boolean isTreasure() {
+        return true;
+    }
+
     public int getMinPower(int level) {
-        return 20 + (5*level);
+        return level * 25;
+    }
+
+    public int getMaxPower(int level) {
+        return this.getMinPower(level) + 50;
     }
 
     @Override
     public int getMaxLevel() {
-        return 5;
+        return 3;
     }
 
     @Override
@@ -40,7 +48,7 @@ public class KoDeathEnchantment extends Enchantment {
         if (target instanceof LivingEntity) {
 
             Random rand = new Random();
-            int upperbound = 100 - (15 * (level - 1));
+            int upperbound = 30 - (5 * (level - 1));
             int int_random = rand.nextInt(upperbound);
             if (int_random == 0) {
                 target.playSound(SoundEvents.ENTITY_WITHER_AMBIENT , 0.25f, 1f);
