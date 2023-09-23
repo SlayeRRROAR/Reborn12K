@@ -8,6 +8,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 
 public class WoundingEnchantment extends Enchantment {
     public WoundingEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
@@ -21,17 +22,17 @@ public class WoundingEnchantment extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != Enchantments.FLAME;
+        return super.canAccept(other) && other != Enchantments.FLAME && other != RebornEnchantments.VENOM;
     }
 
     @Override
     public int getMinPower(int level) {
-        return 10 + 20 * (level - 1);
+        return 20;
     }
 
     @Override
     public int getMaxPower(int level) {
-        return super.getMinPower(level) + 50;
+        return 50;
     }
 
     @Override
