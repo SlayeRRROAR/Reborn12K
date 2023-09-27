@@ -122,6 +122,6 @@ public class MelterBlock extends BlockWithEntity implements BlockEntityProvider 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, RebornBlockEntities.MELTER, MelterBlockEntity::tick);
+        return validateTicker(type, RebornBlockEntities.MELTER, MelterBlockEntity::tick);
     }
 }
