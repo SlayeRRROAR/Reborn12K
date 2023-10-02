@@ -111,6 +111,6 @@ public class ManufactoryBlock extends BlockWithEntity implements BlockEntityProv
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return validateTicker(type, RebornBlockEntities.MANUFACTORY, ManufactoryBlockEntity::tick);
+        return checkType(type, RebornBlockEntities.MANUFACTORY, ManufactoryBlockEntity::tick);
     }
 }

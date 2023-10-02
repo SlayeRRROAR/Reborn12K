@@ -122,6 +122,6 @@ public class CrusherBlock extends BlockWithEntity implements BlockEntityProvider
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return validateTicker(type, RebornBlockEntities.CRUSHER, CrusherBlockEntity::tick);
+        return checkType(type, RebornBlockEntities.CRUSHER, CrusherBlockEntity::tick);
     }
 }

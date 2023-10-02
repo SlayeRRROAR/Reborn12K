@@ -90,6 +90,6 @@ public class LaserQuarryBlock extends BlockWithEntity implements BlockEntityProv
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return validateTicker(type, RebornBlockEntities.LASER_QUARRY, LaserQuarryBlockEntity::tick);
+        return checkType(type, RebornBlockEntities.LASER_QUARRY, LaserQuarryBlockEntity::tick);
     }
 }
