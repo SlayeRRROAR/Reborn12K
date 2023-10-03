@@ -1,17 +1,17 @@
 {
-  "name": "Sunstone and Moonstone",
+  "name": "Sunstone & Moonstone",
   "icon": "reborn12k:sunstone",
   "category": "reborn12k:material_category",
   "pages": [
     {
       "type": "patchouli:spotlight",
-      "title": "Sunstone and Moonstone",
+      "title": "Sunstone",
       "item": "reborn12k:sunstone",
       "text": "An unnatural gem, created by infusing Quartz with a massive amount of mana. Shines the brightest when is exposed to the Sun."
     },
     {
       "type": "patchouli:spotlight",
-      "title": "Sunstone and Moonstone",
+      "title": "Moonstone",
       "item": "reborn12k:moonstone",
       "text": "An unnatural gem, created by infusing Amethyst with a massive amount of mana. Shines the brightest when is exposed the Moon."
     }
