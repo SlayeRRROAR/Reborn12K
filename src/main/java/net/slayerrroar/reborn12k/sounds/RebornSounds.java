@@ -8,10 +8,6 @@ import net.slayerrroar.reborn12k.Reborn12K;
 
 public class RebornSounds {
 
-    public static final SoundEvent Z115 = registerSound("z115");
-    public static final SoundEvent DEVIL_TRIGGER = registerSound("devil_trigger");
-    public static final SoundEvent BURY_THE_LIGHT = registerSound("bury_the_light");
-    public static final SoundEvent FREE_BIRD = registerSound("free_bird");
     public static final SoundEvent ALKATRAZ = registerSound("alkatraz");
 
     private static SoundEvent registerSound(String string) {

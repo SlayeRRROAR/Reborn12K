@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "reborn12k:unrecorded_disc"
-    },
-    "result": "minecraft:music_disc_strad",
-    "count": 1
-}

@@ -901,18 +901,6 @@
 
     "item.reborn12k.unrecorded_disc": "Unrecorded Disc",
 
-    "item.reborn12k.z115_disc": "115 Disc",
-    "item.reborn12k.z115_disc.desc": "Elena Siegman - 115",
-
-    "item.reborn12k.devil_trigger_disc": "Devil Trigger Disc",
-    "item.reborn12k.devil_trigger_disc.desc": "Casey Edwards - Devil Trigger",
-
-    "item.reborn12k.bury_the_light_disc": "Bury The Light Disc",
-    "item.reborn12k.bury_the_light_disc.desc": "Casey Edwards - Bury The Light",
-
-    "item.reborn12k.free_bird_disc": "Free Bird Disc",
-    "item.reborn12k.free_bird_disc.desc": "Lynyrd Skynyrd - Free Bird",
-
     "item.reborn12k.alkatraz_disc": "Alkatraz Disc",
     "item.reborn12k.alkatraz_disc.desc": "DEMONDICE - Alkatraz",
 
@@ -1094,18 +1082,6 @@
     "enchantment.reborn12k.venom": "Venom",
     "enchantment.reborn12k.wounding": "Wounding",
 
-
-    "sounds:reborn12k.z115": "Elena Siegman - 115",
-    "subtitles.reborn12k.z115": "Elena Siegman - 115 is playing",
-
-    "sounds:reborn12k.devil_trigger": "Casey Edwards - Devil Trigger",
-    "subtitles.reborn12k.devil_trigger": "Casey Edwards - Devil Trigger is playing",
-
-    "sounds:reborn12k.bury_the_light": "Casey Edwards - Bury The Light",
-    "subtitles.reborn12k.bury_the_light": "Casey Edwards - Bury The Light is playing",
-
-    "sounds:reborn12k.free_bird": "Lynyrd Skynyrd - Free Bird",
-    "subtitles.reborn12k.free_bird": "Lynyrd Skynyrd - Free Bird is playing",
 
     "sounds:reborn12k.alkatraz": "DEMONDICE - Alkatraz",
     "subtitles.reborn12k.alkatraz": "DEMONDICE - Alkatraz is playing",

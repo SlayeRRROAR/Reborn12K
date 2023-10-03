@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "reborn12k:unrecorded_disc"
-    },
-    "result": "reborn12k:free_bird_disc",
-    "count": 1
-}
