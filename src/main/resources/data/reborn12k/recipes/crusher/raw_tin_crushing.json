@@ -2,10 +2,11 @@
     "type": "reborn12k:crusher",
     "ingredients": [
         {
-            "tag": "c:tin_ingots"
+            "tag": "c:raw_tin_ores"
         }
     ],
     "output": {
-        "item": "reborn12k:raw_tin"
+        "item": "reborn12k:tin_dust",
+        "count": 2
     }
 }

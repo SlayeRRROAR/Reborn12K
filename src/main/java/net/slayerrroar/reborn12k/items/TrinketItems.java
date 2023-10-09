@@ -17,11 +17,6 @@ import net.slayerrroar.reborn12k.items.custom.trinkets.necklace.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.ring.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.shoes.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.*;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.band.*;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.charm.*;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.claw.*;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.medallion.*;
-import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.tonic.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class TrinketItems {
@@ -79,24 +74,16 @@ public class TrinketItems {
     //Trinket
 
     public static final Item BAND_OF_FORTITUDE = registerItem("band_of_fortitude", new BaseBand(new FabricItemSettings().maxCount(1)));
-    public static final Item INDELIBLE_BAND_OF_FORTITUDE = registerItem("indelible_band_of_fortitude", new IndelibleBand(new FabricItemSettings().maxCount(1)));
     public static final Item GREATER_BAND_OF_FORTITUDE = registerItem("greater_band_of_fortitude", new GreaterBand(new FabricItemSettings().maxCount(1)));
 
-    public static final Item BLOODY_CLAW = registerItem("bloody_claw", new BaseClaw(new FabricItemSettings().maxCount(1)));
-    public static final Item INDELIBLE_BLOODY_CLAW = registerItem("indelible_bloody_claw", new IndelibleClaw(new FabricItemSettings().maxCount(1)));
-    public static final Item GREATER_BLOODY_CLAW = registerItem("greater_bloody_claw", new GreaterClaw(new FabricItemSettings().maxCount(1)));
+    public static final Item MONSTER_CLAW = registerItem("monster_claw", new MonsterClaw(new FabricItemSettings().maxCount(1)));
+    public static final Item BLOODY_CLAW = registerItem("bloody_claw", new BloodyClaw(new FabricItemSettings().maxCount(1)));
 
-    public static final Item MEDALLION = registerItem("medallion", new BaseMedallion(new FabricItemSettings().maxCount(1)));
-    public static final Item INDELIBLE_MEDALLION = registerItem("indelible_medallion", new IndelibleMedallion(new FabricItemSettings().maxCount(1)));
-    public static final Item GREATER_MEDALLION = registerItem("greater_medallion", new GreaterMedallion(new FabricItemSettings().maxCount(1)));
+    public static final Item TARNISHED_MEDALLION = registerItem("tarnished_medallion", new TarnishedMedallion(new FabricItemSettings().maxCount(1)));
+    public static final Item GOLDEN_MEDALLION = registerItem("golden_medallion", new GoldenMedallion(new FabricItemSettings().maxCount(1)));
 
-    public static final Item FRENZY_TONIC = registerItem("frenzy_tonic", new BaseTonic(new FabricItemSettings().maxCount(1)));
-    public static final Item INDELIBLE_FRENZY_TONIC = registerItem("indelible_frenzy_tonic", new IndelibleTonic(new FabricItemSettings().maxCount(1)));
-    public static final Item GREATER_FRENZY_TONIC = registerItem("greater_frenzy_tonic", new GreaterTonic(new FabricItemSettings().maxCount(1)));
-
-    public static final Item LUCKY_CHARM = registerItem("lucky_charm", new BaseCharm(new FabricItemSettings().maxCount(1)));
-    public static final Item INDELIBLE_LUCKY_CHARM = registerItem("indelible_lucky_charm", new IndelibleCharm(new FabricItemSettings().maxCount(1)));
-    public static final Item GREATER_LUCKY_CHARM = registerItem("greater_lucky_charm", new GreaterCharm(new FabricItemSettings().maxCount(1)));
+    public static final Item WORN_CHARM = registerItem("worn_charm", new WornCharm(new FabricItemSettings().maxCount(1)));
+    public static final Item LUCKY_CHARM = registerItem("lucky_charm", new LuckyCharm(new FabricItemSettings().maxCount(1)));
 
     public static final Item JETPACK = registerItem("jetpack", new Jetpack(new FabricItemSettings().maxCount(1)));
     public static final Item ANGEL_WINGS = registerItem("angel_wings", new AngelWings(new FabricItemSettings().maxCount(1)));
@@ -105,7 +92,6 @@ public class TrinketItems {
 
     public static final Item GOLD_POUCH = registerItem("gold_pouch", new GoldPouch(new FabricItemSettings().maxCount(1)));
     public static final Item STRONG_SPRING = registerItem("strong_spring", new StrongSpring(new FabricItemSettings().maxCount(1)));
-    public static final Item ENCHANTED_SPRING = registerItem("enchanted_spring", new EnchantedSpring(new FabricItemSettings().maxCount(1)));
     public static final Item BLOODY_ROSE = registerItem("bloody_rose", new BloodyRose(new FabricItemSettings().maxCount(1)));
     public static final Item ENDLESS_QUIVER = registerItem("endless_quiver", new EndlessQuiver(new FabricItemSettings().maxCount(1)));
     public static final Item MAGNIFYING_GLASS = registerItem("magnifying_glass", new MagnifyingGlass(new FabricItemSettings().maxCount(1)));
@@ -167,24 +153,16 @@ public class TrinketItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_STRENGTH);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, BAND_OF_FORTITUDE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, INDELIBLE_BAND_OF_FORTITUDE);
         addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_BAND_OF_FORTITUDE);
 
+        addToItemGroup(ItemGroupUtil.REBORN12K, MONSTER_CLAW);
         addToItemGroup(ItemGroupUtil.REBORN12K, BLOODY_CLAW);
-        addToItemGroup(ItemGroupUtil.REBORN12K, INDELIBLE_BLOODY_CLAW);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_BLOODY_CLAW);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, MEDALLION);
-        addToItemGroup(ItemGroupUtil.REBORN12K, INDELIBLE_MEDALLION);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_MEDALLION);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TARNISHED_MEDALLION);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_MEDALLION);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, FRENZY_TONIC);
-        addToItemGroup(ItemGroupUtil.REBORN12K, INDELIBLE_FRENZY_TONIC);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_FRENZY_TONIC);
-
+        addToItemGroup(ItemGroupUtil.REBORN12K, WORN_CHARM);
         addToItemGroup(ItemGroupUtil.REBORN12K, LUCKY_CHARM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, INDELIBLE_LUCKY_CHARM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_LUCKY_CHARM);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, JETPACK);
         addToItemGroup(ItemGroupUtil.REBORN12K, ANGEL_WINGS);
@@ -193,7 +171,6 @@ public class TrinketItems {
 
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLD_POUCH);
         addToItemGroup(ItemGroupUtil.REBORN12K, STRONG_SPRING);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENCHANTED_SPRING);
         addToItemGroup(ItemGroupUtil.REBORN12K, BLOODY_ROSE);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDLESS_QUIVER);
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGNIFYING_GLASS);

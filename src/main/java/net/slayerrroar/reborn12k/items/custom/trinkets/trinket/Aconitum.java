@@ -24,7 +24,7 @@ public class Aconitum extends TrinketItem implements Trinket {
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity.getHealth() >= 20f) {
-            entity.setHealth(entity.getHealth() + 14f);
+            entity.setHealth(entity.getHealth() + 12f);
         }
     }
 
@@ -37,7 +37,7 @@ public class Aconitum extends TrinketItem implements Trinket {
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 14, EntityAttributeModifier.Operation.ADDITION));
+        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "generic.max_health", 12, EntityAttributeModifier.Operation.ADDITION));
         return modifiers;
     }
 

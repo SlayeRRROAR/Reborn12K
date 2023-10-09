@@ -1,33 +1,35 @@
 package net.slayerrroar.reborn12k.screen.quarry;
 
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
-import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
+import net.slayerrroar.reborn12k.blocks.custom.entities.QuarryBlockEntity;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
-import net.slayerrroar.reborn12k.screen.slots.CustomFocusSlot;
-import net.slayerrroar.reborn12k.screen.slots.CustomFuelCellSlot;
-import net.slayerrroar.reborn12k.screen.slots.CustomResultSlot;
+import net.slayerrroar.reborn12k.screen.slots.*;
 
 public class QuarryScreenHandler extends ScreenHandler {
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
+    public final QuarryBlockEntity blockEntity;
 
-    public QuarryScreenHandler(int syncId, PlayerInventory inventory) {
-        this(syncId, inventory, new SimpleInventory(4), new ArrayPropertyDelegate(2));
+    public QuarryScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
+        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()), new ArrayPropertyDelegate(2));
     }
 
-    public QuarryScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
+    public QuarryScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity entity, PropertyDelegate delegate) {
         super(RebornScreenRegistry.QUARRY_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 4);
-        this.inventory = inventory;
+        checkSize(((Inventory) entity), 4);
+        this.inventory = ((Inventory) entity);
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
+        this.blockEntity = ((QuarryBlockEntity) entity);
 
         this.addSlot(new CustomFuelCellSlot(inventory, 0, 31, 21));
         this.addSlot(new CustomFocusSlot(inventory, 1, 64, 35));

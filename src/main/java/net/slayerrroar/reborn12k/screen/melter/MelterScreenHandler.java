@@ -1,34 +1,35 @@
 package net.slayerrroar.reborn12k.screen.melter;
 
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
-import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
+import net.slayerrroar.reborn12k.blocks.custom.entities.MelterBlockEntity;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
-import net.slayerrroar.reborn12k.screen.slots.CustomBucketSlot;
-import net.slayerrroar.reborn12k.screen.slots.CustomFuelSlot;
-import net.slayerrroar.reborn12k.screen.slots.CustomMelterSlot;
-import net.slayerrroar.reborn12k.screen.slots.CustomResultSlot;
+import net.slayerrroar.reborn12k.screen.slots.*;
 
 public class MelterScreenHandler extends ScreenHandler {
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
+    public final MelterBlockEntity blockEntity;
 
-    public MelterScreenHandler(int syncId, PlayerInventory inventory) {
-        this(syncId, inventory, new SimpleInventory(4), new ArrayPropertyDelegate(4));
+    public MelterScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
+        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()), new ArrayPropertyDelegate(4));
     }
 
-    public MelterScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
+    public MelterScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity entity, PropertyDelegate delegate) {
         super(RebornScreenRegistry.MELTER_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 4);
-        this.inventory = inventory;
+        checkSize(((Inventory) entity), 4);
+        this.inventory = ((Inventory) entity);
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
+        this.blockEntity = ((MelterBlockEntity) entity);
 
         this.addSlot(new CustomFuelSlot(inventory, 0, 31, 53));
         this.addSlot(new CustomMelterSlot(inventory, 1, 31, 17));

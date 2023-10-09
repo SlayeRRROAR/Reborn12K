@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AA",
+        "BB",
+        "CC"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:green_carpet"
+        },
+        "B": {
+            "item": "minecraft:gold_ingot"
+        },
+        "C": {
+            "tag": "planks"
+        }
+    },
+    "result": {
+        "item": "reborn12k:alchemic_table",
+        "count": 1
+    }
+}

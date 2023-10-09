@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_signalum_blocks"
+            "tag": "c:raw_signalum_ores"
         }
     ],
     "result": {
         "item": "reborn12k:raw_signalum",
         "count": 9
-    },
-    "group": "raw_signalum"
+    }
 }

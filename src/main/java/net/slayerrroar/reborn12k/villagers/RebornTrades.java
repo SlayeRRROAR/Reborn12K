@@ -62,7 +62,10 @@ public class RebornTrades {
                             new ItemStack(Items.AMETHYST_SHARD, 16),
                             new ItemStack(Items.EMERALD, 1),
                             12, 30, 0f));
-                    factories.add(((entity, random) -> trims()));
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(Items.QUARTZ, 5),
+                            12, 15, 0f));
                 });
 
         TradeOfferHelper.registerVillagerOffers(RebornVillagers.JEWELER, 5, //Jeweler L5
@@ -71,7 +74,7 @@ public class RebornTrades {
                             new ItemStack(Items.EMERALD, 33),
                             new ItemStack(TrinketItems.IRON_NECKLACE, 1),
                             3, 30, 0f));
-                    factories.add((entity, random) -> greaterTrinket());
+                    factories.add((entity, random) -> trims());
                 });
 
 
@@ -165,7 +168,7 @@ public class RebornTrades {
                             9, 20, 0f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 1),
-                            new ItemStack(Items.QUARTZ, 12),
+                            new ItemStack(Items.QUARTZ, 5),
                             16, 10, 0f));
                 });
 
@@ -184,9 +187,9 @@ public class RebornTrades {
         TradeOfferHelper.registerVillagerOffers(RebornVillagers.MANASMITH, 5,   //Manasmith L5
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.DRAGON_EGG, 1),
-                            new ItemStack(Items.EMERALD, 21),
-                            3, 30, 0f));
+                            new ItemStack(MagicItems.MAGICAL_FRAGMENT, 1),
+                            new ItemStack(Items.EMERALD, 7),
+                            12, 30, 0f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 19),
                             new ItemStack(TrinketItems.COMFY_SLIPPERS, 1),
@@ -223,13 +226,13 @@ public class RebornTrades {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(GenericItems.LEAD_INGOT, 6),
                             new ItemStack(Items.EMERALD, 1),
-                            12, 20, 0.03f));
+                            12, 10, 0.03f));
                 });
 
 
         TradeOfferHelper.registerVillagerOffers(RebornVillagers.HOARDER, 4,   //Hoarder L4
                 factories -> {
-                    factories.add((entity, random) -> indelibleTrinket());
+                    factories.add((entity, random) -> greaterTrinket());
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 1),
                             new ItemStack(Blocks.GLASS, 2),
@@ -339,61 +342,33 @@ public class RebornTrades {
                     new ItemStack(Items.EMERALD, giveEmeralds),
                     new ItemStack(TrinketItems.BAND_OF_FORTITUDE, 1),
                     maxUses, merchantExperience, 0f);
-            case "indelibleBand" -> new TradeOffer(
-                    new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.INDELIBLE_BAND_OF_FORTITUDE, 1),
-                    maxUses, merchantExperience, 0f);
             case "greaterBand" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
                     new ItemStack(TrinketItems.GREATER_BAND_OF_FORTITUDE, 1),
                     maxUses, merchantExperience, 0f);
-            case "baseBloodyClaw" -> new TradeOffer(
+            case "monsterClaw" -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, giveEmeralds),
+                    new ItemStack(TrinketItems.MONSTER_CLAW, 1),
+                    maxUses, merchantExperience, 0f);
+            case "bloodyClaw" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
                     new ItemStack(TrinketItems.BLOODY_CLAW, 1),
                     maxUses, merchantExperience, 0f);
-            case "indelibleBloodyClaw" -> new TradeOffer(
+            case "tarnishedMedallion" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.INDELIBLE_BLOODY_CLAW, 1),
+                    new ItemStack(TrinketItems.TARNISHED_MEDALLION, 1),
                     maxUses, merchantExperience, 0f);
-            case "greaterBloodyClaw" -> new TradeOffer(
+            case "goldenMedallion" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.GREATER_BLOODY_CLAW, 1),
+                    new ItemStack(TrinketItems.GOLDEN_MEDALLION, 1),
                     maxUses, merchantExperience, 0f);
-            case "baseMedallion" -> new TradeOffer(
+            case "wornCharm" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.MEDALLION, 1),
+                    new ItemStack(TrinketItems.WORN_CHARM, 1),
                     maxUses, merchantExperience, 0f);
-            case "indelibleMedallion" -> new TradeOffer(
-                    new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.INDELIBLE_MEDALLION, 1),
-                    maxUses, merchantExperience, 0f);
-            case "greaterMedallion" -> new TradeOffer(
-                    new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.GREATER_MEDALLION, 1),
-                    maxUses, merchantExperience, 0f);
-            case "baseTonic" -> new TradeOffer(
-                    new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.FRENZY_TONIC, 1),
-                    maxUses, merchantExperience, 0f);
-            case "indelibleTonic" -> new TradeOffer(
-                    new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.INDELIBLE_FRENZY_TONIC, 1),
-                    maxUses, merchantExperience, 0f);
-            case "greaterTonic" -> new TradeOffer(
-                    new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.GREATER_FRENZY_TONIC, 1),
-                    maxUses, merchantExperience, 0f);
-            case "baseCharm" -> new TradeOffer(
+            case "luckyCharm" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
                     new ItemStack(TrinketItems.LUCKY_CHARM, 1),
-                    maxUses, merchantExperience, 0f);
-            case "indelibleCharm" -> new TradeOffer(
-                    new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.INDELIBLE_LUCKY_CHARM, 1),
-                    maxUses, merchantExperience, 0f);
-            case "greaterCharm" -> new TradeOffer(
-                    new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.GREATER_LUCKY_CHARM, 1),
                     maxUses, merchantExperience, 0f);
             case "jetpack" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
@@ -406,10 +381,6 @@ public class RebornTrades {
             case "strongSpring" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
                     new ItemStack(TrinketItems.STRONG_SPRING, 1),
-                    maxUses, merchantExperience, 0f);
-            case "enchantedSpring" -> new TradeOffer(
-                    new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.ENCHANTED_SPRING, 1),
                     maxUses, merchantExperience, 0f);
             case "bloodyRose" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
@@ -433,62 +404,36 @@ public class RebornTrades {
 
     private static TradeOffer baseTrinket() {
         Random randomBaseTrinket = new Random();
-        int baseUpperbound = 5;
+        int baseUpperbound = 4;
         int baseTrinketInt = randomBaseTrinket.nextInt(baseUpperbound);
 
         if (baseTrinketInt == 0) {
             return createTrinketOffer("baseBand", 21, 3, 5);
         }
         if (baseTrinketInt == 1) {
-            return createTrinketOffer("baseBloodyClaw", 21, 3, 5);
+            return createTrinketOffer("monsterClaw", 21, 3, 5);
         }
         if (baseTrinketInt == 2) {
-            return createTrinketOffer("baseMedallion", 21, 3, 5);
+            return createTrinketOffer("tarnishedMedallion", 21, 3, 5);
         }
-        if (baseTrinketInt == 3) {
-            return createTrinketOffer("baseTonic", 21, 3, 5);
-        }
-        return createTrinketOffer("baseCharm", 21, 3, 5);
-    }
-
-    private static TradeOffer indelibleTrinket() {
-        Random randomIndelibleTrinket = new Random();
-        int indelibleUpperbound = 5;
-        int indelibleTrinketInt = randomIndelibleTrinket.nextInt(indelibleUpperbound);
-
-        if (indelibleTrinketInt == 0) {
-            return createTrinketOffer("indelibleBand", 41,  1, 15);
-        }
-        if (indelibleTrinketInt == 1) {
-            return createTrinketOffer("indelibleBloodyClaw", 41,  1, 15);
-        }
-        if (indelibleTrinketInt == 2) {
-            return createTrinketOffer("indelibleMedallion", 41,  1, 15);
-        }
-        if (indelibleTrinketInt == 3) {
-            return createTrinketOffer("indelibleTonic", 41,  1, 15);
-        }
-        return createTrinketOffer("indelibleCharm", 41,  1, 15);
+        return createTrinketOffer("wornCharm", 21, 3, 5);
     }
 
     private static TradeOffer greaterTrinket() {
         Random randomGreaterTrinket = new Random();
-        int greaterUpperbound = 16;
+        int greaterUpperbound = 4;
         int greaterTrinketInt = randomGreaterTrinket.nextInt(greaterUpperbound);
 
         if (greaterTrinketInt == 0) {
             return createTrinketOffer("greaterBand", 63,  1, 30);
         }
         if (greaterTrinketInt == 1) {
-            return createTrinketOffer("greaterBloodyClaw", 63,  1, 30);
+            return createTrinketOffer("bloodyClaw", 63,  1, 30);
         }
         if (greaterTrinketInt == 2) {
-            return createTrinketOffer("greaterMedallion", 63,  1, 30);
+            return createTrinketOffer("goldenMedallion", 63,  1, 30);
         }
-        if (greaterTrinketInt == 3) {
-            return createTrinketOffer("greaterTonic", 63,  1, 30);
-        }
-        return createTrinketOffer("greaterCharm", 63,  1, 30);
+        return createTrinketOffer("luckyCharm", 63,  1, 30);
     }
 
     private static TradeOffer hatTrinket() {
@@ -621,12 +566,12 @@ public class RebornTrades {
             return new TradeOffer(
                     new ItemStack(Items.EMERALD, 35),
                     new ItemStack(AdvancedBlocks.STRONGBOX, 1),
-                    3, 30, 0f);
+                    5, 30, 0f);
         }
         return new TradeOffer(
                 new ItemStack(Items.EMERALD, 59),
                 new ItemStack(AdvancedBlocks.PRISTINE_STRONGBOX, 1),
-                1, 30, 0f);
+                3, 30, 0f);
     }
 
 }

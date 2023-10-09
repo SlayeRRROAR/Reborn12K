@@ -59,14 +59,14 @@ public class StrongboxBlock extends Block {
         int upperbound = 100;
         int rarity_int = rarityRand.nextInt(upperbound);
 
-        if (rarity_int < 80) {
-            StrongboxUtil.randomRare(world, pos);
+        if (rarity_int <= 1) {
+            StrongboxUtil.randomLegendary(world, pos);
         }
-        if (rarity_int < 95 && rarity_int > 79) {
+        if (rarity_int > 1 && rarity_int <= 10) {
             StrongboxUtil.randomEpic(world, pos);
         }
-        if (rarity_int > 94) {
-            StrongboxUtil.randomLegendary(world, pos);
+        if (rarity_int > 10 ) {
+            StrongboxUtil.randomRare(world, pos);
         }
         player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.opened"), true);
     }

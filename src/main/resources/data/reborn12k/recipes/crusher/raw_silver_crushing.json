@@ -2,10 +2,11 @@
     "type": "reborn12k:crusher",
     "ingredients": [
         {
-            "tag": "c:silver_ingots"
+            "tag": "c:raw_silver_ores"
         }
     ],
     "output": {
-        "item": "reborn12k:raw_silver"
+        "item": "reborn12k:silver_dust",
+        "count": 2
     }
 }

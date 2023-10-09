@@ -12,8 +12,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:raw_alloys/raw_lumium_craft",
-      "text": "Raw Lumium can only be crafted and is not naturally obtainable."
+      "recipe": "reborn12k:alloy_dusts/lumium_dust_craft",
+      "text": "Lumium can only be crafted and is not naturally obtainable."
     }
   ],
   "sortnum": 211

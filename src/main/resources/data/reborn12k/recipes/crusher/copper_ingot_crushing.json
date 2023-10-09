@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "item": "minecraft:copper_ingot"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:copper_dust"
+    }
+}

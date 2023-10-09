@@ -12,12 +12,16 @@
     {
       "type": "patchouli:crafting",
       "recipe": "reborn12k:melter/melter",
-      "recipe2": "reborn12k:melter/destabilized_mixture"
+      "recipe2": "reborn12k:hammer/destabilized_mixture"
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:melter/energized_mixture",
-      "recipe2": "reborn12k:melter/resonant_mixture"
+      "recipe": "reborn12k:hammer/energized_mixture",
+      "recipe2": "reborn12k:hammer/resonant_mixture"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:hammer/mana_rich_mixture"
     }
   ],
   "sortnum": 503

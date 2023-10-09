@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "tag": "c:tungstensteel_dusts"
+    },
+    "result": "reborn12k:tungstensteel_ingot",
+    "experience": 2.0,
+    "cookingtime": 200
+}

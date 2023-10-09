@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "tag": "c:signalum_dusts"
+    },
+    "result": "reborn12k:signalum_ingot",
+    "experience": 1.4,
+    "cookingtime": 200
+}

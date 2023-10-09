@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:hammer"
+            "tag": "reborn12k:hammers"
         },
         {
             "item": "minecraft:glowstone_dust"
@@ -17,13 +17,13 @@
             "item": "minecraft:glowstone_dust"
         },
         {
-            "tag": "c:raw_tin_ores"
+            "tag": "c:tin_dusts"
         },
         {
-            "tag": "c:raw_tin_ores"
+            "tag": "c:tin_dusts"
         },
         {
-            "tag": "c:raw_tin_ores"
+            "tag": "c:tin_dusts"
         }
     ],
     "result": {

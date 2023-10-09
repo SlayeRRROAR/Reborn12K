@@ -15,7 +15,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.custom.*;
-import net.slayerrroar.reborn12k.blocks.custom.block_entities.*;
+import net.slayerrroar.reborn12k.blocks.custom.entities.*;
 import net.slayerrroar.reborn12k.blocks.custom.trinket_boxes.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
@@ -47,7 +47,7 @@ public class AdvancedBlocks {
     public static final Block MANUFACTORY = registerBlock("manufactory", new ManufactoryBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8f).resistance(20f)), ItemGroupUtil.REBORN12K);
     public static final Block MELTER = registerBlock("melter", new MelterBlock(FabricBlockSettings.copyOf(Blocks.STONE).hardness(8f).resistance(20f)), ItemGroupUtil.REBORN12K);
 
-    public static final Block LASER_QUARRY = registerBlock("laser_quarry", new LaserQuarryBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12f).resistance(200f)), ItemGroupUtil.REBORN12K);
+    public static final Block LASER_QUARRY = registerBlock("laser_quarry", new QuarryBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).hardness(12f).resistance(200f)), ItemGroupUtil.REBORN12K);
 
 
     private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> group) {

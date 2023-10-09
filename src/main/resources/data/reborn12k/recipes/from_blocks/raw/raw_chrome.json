@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_chrome_blocks"
+            "tag": "c:raw_chrome_ores"
         }
     ],
     "result": {
         "item": "reborn12k:raw_chrome",
         "count": 9
-    },
-    "group": "raw_chrome"
+    }
 }

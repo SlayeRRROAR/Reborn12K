@@ -23,6 +23,7 @@ import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.items.TrinketItems;
 import net.slayerrroar.reborn12k.util.StrongboxUtil;
 
+import java.util.Random;
 import java.util.stream.Stream;
 
 @SuppressWarnings("deprecation")
@@ -44,7 +45,7 @@ public class LegendaryStrongboxBlock extends Block {
                     world.breakBlock(pos, false, player);
                     player.getStackInHand(Hand.MAIN_HAND).decrement(1);
                 }
-                StrongboxUtil.randomLegendary(world, pos);
+                randomRarityLoot(player, world, pos);
                 player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.opened"), true);
                 return ActionResult.SUCCESS;
             }
@@ -52,6 +53,20 @@ public class LegendaryStrongboxBlock extends Block {
             return ActionResult.FAIL;
         }
         return super.onUse(state, world, pos, player, hand, hit);
+    }
+
+    private void randomRarityLoot(PlayerEntity player, World world, BlockPos pos) {
+        Random rarityRand = new Random();
+        int upperbound = 10;
+        int rarity_int = rarityRand.nextInt(upperbound);
+
+        if (rarity_int == 0) {
+            StrongboxUtil.randomMythical(world, pos);
+        }
+        if (rarity_int != 0) {
+            StrongboxUtil.randomLegendary(world, pos);
+        }
+        player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.opened"), true);
     }
 
     private static final VoxelShape SHAPE_N = Stream.of(

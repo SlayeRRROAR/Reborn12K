@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_platinum_blocks"
+            "tag": "c:raw_platinum_ores"
         }
     ],
     "result": {
         "item": "reborn12k:raw_platinum",
         "count": 9
-    },
-    "group": "raw_platinum"
+    }
 }

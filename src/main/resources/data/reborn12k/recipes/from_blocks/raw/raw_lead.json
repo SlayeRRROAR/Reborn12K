@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_lead_blocks"
+            "tag": "c:raw_lead_ores"
         }
     ],
     "result": {
         "item": "reborn12k:raw_lead",
         "count": 9
-    },
-    "group": "raw_lead"
+    }
 }

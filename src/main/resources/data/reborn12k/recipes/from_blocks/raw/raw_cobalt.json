@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_cobalt_blocks"
+            "tag": "c:raw_cobalt_ores"
         }
     ],
     "result": {
         "item": "reborn12k:raw_cobalt",
         "count": 9
-    },
-    "group": "raw_cobalt"
+    }
 }

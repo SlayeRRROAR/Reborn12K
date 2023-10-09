@@ -2,10 +2,11 @@
     "type": "reborn12k:crusher",
     "ingredients": [
         {
-            "tag": "c:chrome_ingots"
+            "tag": "c:raw_chrome_ores"
         }
     ],
     "output": {
-        "item": "reborn12k:raw_chrome"
+        "item": "reborn12k:chrome_dust",
+        "count": 2
     }
 }

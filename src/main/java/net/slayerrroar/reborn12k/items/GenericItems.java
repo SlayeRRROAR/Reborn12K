@@ -21,7 +21,6 @@ public class GenericItems {
     // Resources
 
     public static final Item COAL_PIECE = registerItem("coal_piece", new Item(new FabricItemSettings()));
-    public static final Item COAL_DUST = registerItem("coal_dust", new Item(new FabricItemSettings()));
 
     public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new FabricItemSettings()));
     public static final Item ALUMINUM_INGOT = registerItem("aluminum_ingot", new Item(new FabricItemSettings()));
@@ -31,7 +30,7 @@ public class GenericItems {
     public static final Item CHROME_INGOT = registerItem("chrome_ingot", new Item(new FabricItemSettings()));
     public static final Item TITANIUM_INGOT = registerItem("titanium_ingot", new Item(new FabricItemSettings()));
 
-    public static final Item RAW_TUNGSTEN = registerItem("raw_tungsten", new Item(new FabricItemSettings()));
+    public static final Item TUNGSTEN_INGOT = registerItem("tungsten_ingot", new Item(new FabricItemSettings()));
     public static final Item VANADIUM_INGOT = registerItem("vanadium_ingot", new Item(new FabricItemSettings()));
     public static final Item NEODYMIUM_INGOT = registerItem("neodymium_ingot", new Item(new FabricItemSettings()));
     public static final Item URANIUM_INGOT = registerItem("uranium_ingot", new Item(new FabricItemSettings()));
@@ -76,7 +75,7 @@ public class GenericItems {
     public static final Item RAW_CHROME = registerItem("raw_chrome", new Item(new FabricItemSettings()));
     public static final Item RAW_TITANIUM = registerItem("raw_titanium", new Item(new FabricItemSettings()));
 
-    public static final Item TUNGSTEN_INGOT = registerItem("tungsten_ingot", new Item(new FabricItemSettings()));
+    public static final Item RAW_TUNGSTEN = registerItem("raw_tungsten", new Item(new FabricItemSettings()));
     public static final Item RAW_VANADIUM = registerItem("raw_vanadium", new Item(new FabricItemSettings()));
     public static final Item RAW_NEODYMIUM = registerItem("raw_neodymium", new Item(new FabricItemSettings()));
     public static final Item RAW_URANIUM = registerItem("raw_uranium", new Item(new FabricItemSettings()));
@@ -101,6 +100,51 @@ public class GenericItems {
     public static final Item RAW_ENDERIUM = registerItem("raw_enderium", new Item(new FabricItemSettings()));
 
     public static final Item RAW_SHIBUICHI_ALLOY = registerItem("raw_shibuichi_alloy", new Item(new FabricItemSettings()));
+
+
+    public static final Item COAL_DUST = registerItem("coal_dust", new Item(new FabricItemSettings()));
+    public static final Item COPPER_DUST = registerItem("copper_dust", new Item(new FabricItemSettings()));
+    public static final Item IRON_DUST = registerItem("iron_dust", new Item(new FabricItemSettings()));
+    public static final Item GOLD_DUST = registerItem("gold_dust", new Item(new FabricItemSettings()));
+    public static final Item DIAMOND_DUST = registerItem("diamond_dust", new Item(new FabricItemSettings()));
+    public static final Item EMERALD_DUST = registerItem("emerald_dust", new Item(new FabricItemSettings()));
+    public static final Item NETHERITE_DUST = registerItem("netherite_dust", new Item(new FabricItemSettings()));
+
+    public static final Item TIN_DUST = registerItem("tin_dust", new Item(new FabricItemSettings()));
+    public static final Item ALUMINUM_DUST = registerItem("aluminum_dust", new Item(new FabricItemSettings()));
+    public static final Item SILVER_DUST = registerItem("silver_dust", new Item(new FabricItemSettings()));
+    public static final Item LEAD_DUST = registerItem("lead_dust", new Item(new FabricItemSettings()));
+    public static final Item NICKEL_DUST = registerItem("nickel_dust", new Item(new FabricItemSettings()));
+    public static final Item CHROME_DUST = registerItem("chrome_dust", new Item(new FabricItemSettings()));
+    public static final Item TITANIUM_DUST = registerItem("titanium_dust", new Item(new FabricItemSettings()));
+
+    public static final Item TUNGSTEN_DUST = registerItem("tungsten_dust", new Item(new FabricItemSettings()));
+    public static final Item VANADIUM_DUST = registerItem("vanadium_dust", new Item(new FabricItemSettings()));
+    public static final Item NEODYMIUM_DUST = registerItem("neodymium_dust", new Item(new FabricItemSettings()));
+    public static final Item URANIUM_DUST = registerItem("uranium_dust", new Item(new FabricItemSettings()));
+
+    public static final Item COBALT_DUST = registerItem("cobalt_dust", new Item(new FabricItemSettings()));
+    public static final Item OSMIUM_DUST = registerItem("osmium_dust", new Item(new FabricItemSettings()));
+    public static final Item PLATINUM_DUST = registerItem("platinum_dust", new Item(new FabricItemSettings()));
+    public static final Item IRIDIUM_DUST = registerItem("iridium_dust", new Item(new FabricItemSettings()));
+
+    public static final Item ARCHEOSITE_DUST = registerItem("archeosite_dust", new Item(new FabricItemSettings()));
+    public static final Item BRONZE_DUST = registerItem("bronze_dust", new Item(new FabricItemSettings()));
+    public static final Item CONSTANTAN_DUST = registerItem("constantan_dust", new Item(new FabricItemSettings()));
+    public static final Item INVAR_DUST = registerItem("invar_dust", new Item(new FabricItemSettings()));
+    public static final Item STEEL_DUST = registerItem("steel_dust", new Item(new FabricItemSettings()));
+    public static final Item TUNGSTENSTEEL_DUST = registerItem("tungstensteel_dust", new Item(new FabricItemSettings()));
+    public static final Item THELOSITE_DUST = registerItem("thelosite_dust", new Item(new FabricItemSettings()));
+    public static final Item ADVANCED_ALLOY_DUST = registerItem("advanced_alloy_dust", new Item(new FabricItemSettings()));
+    public static final Item IRIDIUM_ALLOY_DUST = registerItem("iridium_alloy_dust", new Item(new FabricItemSettings()));
+    public static final Item ELECTRUM_DUST = registerItem("electrum_dust", new Item(new FabricItemSettings()));
+    public static final Item SIGNALUM_DUST = registerItem("signalum_dust", new Item(new FabricItemSettings()));
+    public static final Item LUMIUM_DUST = registerItem("lumium_dust", new Item(new FabricItemSettings()));
+    public static final Item ENDERIUM_DUST = registerItem("enderium_dust", new Item(new FabricItemSettings()));
+
+    public static final Item SHIBUICHI_ALLOY_DUST = registerItem("shibuichi_alloy_dust", new Item(new FabricItemSettings()));
+
+    public static final Item ENDER_DUST = registerItem("ender_dust", new Item(new FabricItemSettings()));
 
     public static final Item DESTABILIZED_MIXTURE = registerItem("destabilized_mixture", new Item(new FabricItemSettings()));
     public static final Item ENERGIZED_MIXTURE = registerItem("energized_mixture", new Item(new FabricItemSettings()));
@@ -160,9 +204,10 @@ public class GenericItems {
 
     public static final Item UNIVERSAL_SMITHING_TEMPLATE = registerItem("universal_smithing_template", new UniversalTemplate(new FabricItemSettings()));
 
-    public static final Item HAMMER = registerItem("hammer", new HammerItem(new FabricItemSettings().maxDamage(24)));
+    public static final Item STONE_HAMMER = registerItem("stone_hammer", new HammerItem(new FabricItemSettings().maxDamage(64)));
+    public static final Item IRON_HAMMER = registerItem("iron_hammer", new HammerItem(new FabricItemSettings().maxDamage(128)));
+    public static final Item DIAMOND_HAMMER = registerItem("diamond_hammer", new HammerItem(new FabricItemSettings().maxDamage(512)));
 
-    public static final Item ENDER_DUST = registerItem("ender_dust", new Item(new FabricItemSettings()));
     public static final Item CASING_MK237 = registerItem("casing_mk237", new Item(new FabricItemSettings()));
     public static final Item CERAMITE_PLATE = registerItem("ceramite_plate", new Item(new FabricItemSettings()));
 
@@ -174,7 +219,6 @@ public class GenericItems {
     public static void addItemsToItemGroup() {
 
         addToItemGroup(ItemGroupUtil.REBORN12K, COAL_PIECE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, COAL_DUST);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, TIN_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, ALUMINUM_INGOT);
@@ -255,6 +299,52 @@ public class GenericItems {
 
         addToItemGroup(ItemGroupUtil.REBORN12K, RAW_SHIBUICHI_ALLOY);
 
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, COAL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, COPPER_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRON_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, GOLD_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DIAMOND_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, EMERALD_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, NETHERITE_DUST);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, TIN_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ALUMINUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SILVER_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LEAD_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, NICKEL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CHROME_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_DUST);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTEN_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, VANADIUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, NEODYMIUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, URANIUM_DUST);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, COBALT_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, OSMIUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, PLATINUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_DUST);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, CONSTANTAN_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, INVAR_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LUMIUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_DUST);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_DUST);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, ENDER_DUST);
+
+
         addToItemGroup(ItemGroupUtil.REBORN12K, DESTABILIZED_MIXTURE);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENERGIZED_MIXTURE);
         addToItemGroup(ItemGroupUtil.REBORN12K, RESONANT_MIXTURE);
@@ -276,9 +366,10 @@ public class GenericItems {
 
         addToItemGroup(ItemGroupUtil.REBORN12K, UNIVERSAL_SMITHING_TEMPLATE);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, HAMMER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, STONE_HAMMER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, IRON_HAMMER);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DIAMOND_HAMMER);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENDER_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, CASING_MK237);
         addToItemGroup(ItemGroupUtil.REBORN12K, CERAMITE_PLATE);
     }

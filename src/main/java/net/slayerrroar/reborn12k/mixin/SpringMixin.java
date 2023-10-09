@@ -18,9 +18,6 @@ public abstract class SpringMixin {
     private static void getKnockback(LivingEntity entity, CallbackInfoReturnable<Integer> cir) {
 
         if (TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.STRONG_SPRING)) {
-            cir.setReturnValue(Math.max(cir.getReturnValueI() + 1, 0));
-        }
-        if (TrinketsApi.getTrinketComponent(entity).get().isEquipped(TrinketItems.ENCHANTED_SPRING)) {
             cir.setReturnValue(Math.max(cir.getReturnValueI() + 2, 0));
         }
 

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:lumium_dusts"
+        },
+        {
+            "tag": "c:platinum_dusts"
+        },
+        {
+            "item": "reborn12k:resonant_ender_bucket"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:enderium_dust",
+        "count": 2
+    },
+    "group": "enderium_dust"
+}

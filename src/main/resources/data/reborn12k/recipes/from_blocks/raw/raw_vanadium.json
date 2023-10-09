@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_vanadium_blocks"
+            "tag": "c:raw_vanadium_ores"
         }
     ],
     "result": {
         "item": "reborn12k:raw_vanadium",
         "count": 9
-    },
-    "group": "raw_vanadium"
+    }
 }

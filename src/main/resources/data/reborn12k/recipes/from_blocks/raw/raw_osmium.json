@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_osmium_blocks"
+            "tag": "c:raw_osmium_ores"
         }
     ],
     "result": {
         "item": "reborn12k:raw_osmium",
         "count": 9
-    },
-    "group": "raw_osmium"
+    }
 }

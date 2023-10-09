@@ -2,28 +2,28 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:hammer"
+            "tag": "reborn12k:hammers"
         },
         {
-            "tag": "c:ender_pearl_dust"
+            "tag": "c:ender_pearl_dusts"
         },
         {
-            "tag": "c:ender_pearl_dust"
+            "tag": "c:ender_pearl_dusts"
         },
         {
-            "tag": "c:ender_pearl_dust"
+            "tag": "c:ender_pearl_dusts"
         },
         {
-            "tag": "c:ender_pearl_dust"
+            "tag": "c:ender_pearl_dusts"
         },
         {
-            "tag": "c:raw_lead_ores"
+            "tag": "c:lead_dusts"
         },
         {
-            "tag": "c:raw_lead_ores"
+            "tag": "c:lead_dusts"
         },
         {
-            "tag": "c:raw_lead_ores"
+            "tag": "c:lead_dusts"
         }
     ],
     "result": {

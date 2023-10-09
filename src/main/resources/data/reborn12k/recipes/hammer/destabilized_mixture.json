@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:hammer"
+            "tag": "reborn12k:hammers"
         },
         {
             "item": "minecraft:redstone_block"
@@ -11,13 +11,13 @@
             "item": "minecraft:redstone"
         },
         {
-            "tag": "c:raw_copper_ores"
+            "tag": "c:copper_dusts"
         },
         {
-            "tag": "c:raw_copper_ores"
+            "tag": "c:copper_dusts"
         },
         {
-            "tag": "c:raw_copper_ores"
+            "tag": "c:copper_dusts"
         }
     ],
     "result": {

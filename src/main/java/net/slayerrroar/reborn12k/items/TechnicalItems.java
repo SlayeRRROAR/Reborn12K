@@ -16,10 +16,10 @@ import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class TechnicalItems {
 
-    public static final Item DESTABILIZED_REDSTONE_BUCKET = registerItem("destabilized_redstone_bucket", new DangerousBucketItem(new FabricItemSettings().recipeRemainder(Items.BUCKET)));
-    public static final Item ENERGIZED_GLOWSTONE_BUCKET = registerItem("energized_glowstone_bucket", new DangerousBucketItem(new FabricItemSettings().recipeRemainder(Items.BUCKET)));
-    public static final Item RESONANT_ENDER_BUCKET = registerItem("resonant_ender_bucket", new DangerousBucketItem(new FabricItemSettings().recipeRemainder(Items.BUCKET)));
-    public static final Item LIQUID_MANA_BUCKET = registerItem("liquid_mana_bucket", new DangerousBucketItem(new FabricItemSettings().recipeRemainder(Items.BUCKET)));
+    public static final Item DESTABILIZED_REDSTONE_BUCKET = registerItem("destabilized_redstone_bucket", new DangerousBucketItem(new FabricItemSettings().maxCount(16).recipeRemainder(Items.BUCKET)));
+    public static final Item ENERGIZED_GLOWSTONE_BUCKET = registerItem("energized_glowstone_bucket", new DangerousBucketItem(new FabricItemSettings().maxCount(16).recipeRemainder(Items.BUCKET)));
+    public static final Item RESONANT_ENDER_BUCKET = registerItem("resonant_ender_bucket", new DangerousBucketItem(new FabricItemSettings().maxCount(16).recipeRemainder(Items.BUCKET)));
+    public static final Item LIQUID_MANA_BUCKET = registerItem("liquid_mana_bucket", new DangerousBucketItem(new FabricItemSettings().maxCount(16).recipeRemainder(Items.BUCKET)));
 
     public static final Item MAGNET = registerItem("magnet", new Magnet(new FabricItemSettings().maxCount(1)));
 

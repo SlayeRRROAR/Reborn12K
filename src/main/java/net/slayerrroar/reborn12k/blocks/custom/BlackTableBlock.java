@@ -19,8 +19,8 @@ public class BlackTableBlock extends Block {
     }
 
     private static final VoxelShape DEFAULT = Stream.of(
-            Block.createCuboidShape(0, 10, 0, 16, 14, 16),
-            Block.createCuboidShape(5, 2, 5, 11, 10, 11),
+            Block.createCuboidShape(0, 12, 0, 16, 16, 16),
+            Block.createCuboidShape(5, 2, 5, 11, 12, 11),
             Block.createCuboidShape(3, 0, 3, 13, 2, 13)
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 

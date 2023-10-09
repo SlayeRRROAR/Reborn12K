@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_lumium_blocks"
+            "tag": "c:raw_lumium_ores"
         }
     ],
     "result": {
         "item": "reborn12k:raw_lumium",
         "count": 9
-    },
-    "group": "raw_lumium"
+    }
 }

@@ -1,6 +1,7 @@
 {
   "name": "Sunstone & Moonstone",
   "icon": "reborn12k:sunstone",
+  "advancement": "reborn12k:reborn12k_magic/studying_the_arcane",
   "category": "reborn12k:material_category",
   "pages": [
     {

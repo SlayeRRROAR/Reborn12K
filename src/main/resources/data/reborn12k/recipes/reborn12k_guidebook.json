@@ -5,7 +5,7 @@
             "item": "minecraft:book"
         },
         {
-            "item": "reborn12k:hammer"
+            "tag": "reborn12k:hammers"
         }
     ],
     "book": "reborn12k:reborn12k_guidebook"

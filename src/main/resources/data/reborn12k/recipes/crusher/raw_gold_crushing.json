@@ -2,10 +2,11 @@
     "type": "reborn12k:crusher",
     "ingredients": [
         {
-            "item": "minecraft:gold_ingot"
+            "item": "minecraft:raw_gold"
         }
     ],
     "output": {
-        "item": "minecraft:raw_gold"
+        "item": "reborn12k:gold_dust",
+        "count": 2
     }
 }

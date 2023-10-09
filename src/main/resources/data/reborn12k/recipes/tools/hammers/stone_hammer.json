@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    " BA",
+    "B  "
+  ],
+  "key": {
+    "A": {
+      "tag": "stone_tool_materials"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "reborn12k:stone_hammer",
+    "count": 1
+  }
+}

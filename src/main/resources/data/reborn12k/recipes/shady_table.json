@@ -10,7 +10,7 @@
             "item": "minecraft:black_carpet"
         },
         "B": {
-            "item": "minecraft:dark_oak_planks"
+            "tag": "planks"
         }
     },
     "result": {

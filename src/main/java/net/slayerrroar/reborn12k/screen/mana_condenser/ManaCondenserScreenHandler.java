@@ -1,32 +1,35 @@
 package net.slayerrroar.reborn12k.screen.mana_condenser;
 
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
-import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
+import net.slayerrroar.reborn12k.blocks.custom.entities.ManaCondenserBlockEntity;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
-import net.slayerrroar.reborn12k.screen.slots.CustomResultSlot;
-import net.slayerrroar.reborn12k.screen.slots.CustomSoulSlot;
+import net.slayerrroar.reborn12k.screen.slots.*;
 
 public class ManaCondenserScreenHandler extends ScreenHandler {
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
+    public final ManaCondenserBlockEntity blockEntity;
 
-    public ManaCondenserScreenHandler(int syncId, PlayerInventory inventory) {
-        this(syncId, inventory, new SimpleInventory(2), new ArrayPropertyDelegate(2));
+    public ManaCondenserScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
+        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()), new ArrayPropertyDelegate(2));
     }
 
-    public ManaCondenserScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
+    public ManaCondenserScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity entity, PropertyDelegate delegate) {
         super(RebornScreenRegistry.MANA_CONDENSER_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 2);
-        this.inventory = inventory;
+        checkSize(((Inventory) entity), 2);
+        this.inventory = ((Inventory) entity);
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
+        this.blockEntity = ((ManaCondenserBlockEntity) entity);
 
         this.addSlot(new CustomSoulSlot(inventory, 0, 80, 17));
         this.addSlot(new CustomResultSlot(inventory, 1, 80, 56));

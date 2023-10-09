@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "tag": "c:tungsten_ingots"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:tungsten_dust",
+
+        "count": 1
+    },
+    "group": "tungsten_dust_dust"
+}

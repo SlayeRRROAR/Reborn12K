@@ -12,8 +12,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:raw_alloys/raw_enderium_craft",
-      "text": "Raw Enderium can only be crafted and is not naturally obtainable."
+      "recipe": "reborn12k:alloy_dusts/enderium_dust_craft",
+      "text": "Enderium can only be crafted and is not naturally obtainable."
     }
   ],
   "sortnum": 212

@@ -2,10 +2,11 @@
     "type": "reborn12k:crusher",
     "ingredients": [
         {
-            "tag": "c:aluminum_ingots"
+            "tag": "c:raw_aluminum_ores"
         }
     ],
     "output": {
-        "item": "reborn12k:raw_aluminum"
+        "item": "reborn12k:aluminum_dust",
+        "count": 2
     }
 }

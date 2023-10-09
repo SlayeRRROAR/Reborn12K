@@ -7,7 +7,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
-import net.slayerrroar.reborn12k.entity.block_entities.*;
+import net.slayerrroar.reborn12k.blocks.custom.entities.*;
 
 public class RebornBlockEntities {
 
@@ -18,7 +18,7 @@ public class RebornBlockEntities {
     public static BlockEntityType<ManufactoryBlockEntity> MANUFACTORY;
     public static BlockEntityType<MelterBlockEntity> MELTER;
 
-    public static BlockEntityType<LaserQuarryBlockEntity> LASER_QUARRY;
+    public static BlockEntityType<QuarryBlockEntity> LASER_QUARRY;
 
     public static void register(){
 
@@ -51,7 +51,7 @@ public class RebornBlockEntities {
 
         LASER_QUARRY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
                 new Identifier(Reborn12K.MOD_ID, "laser_quarry"),
-                FabricBlockEntityTypeBuilder.create(LaserQuarryBlockEntity::new,
+                FabricBlockEntityTypeBuilder.create(QuarryBlockEntity::new,
                         AdvancedBlocks.LASER_QUARRY).build(null));
 
     }

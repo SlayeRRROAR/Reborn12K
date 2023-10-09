@@ -12,8 +12,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:raw_alloys/raw_advanced_alloy_craft",
-      "text": "Raw Advanced Alloy can only be crafted and is not naturally obtainable."
+      "recipe": "reborn12k:alloy_dusts/advanced_alloy_dust_craft",
+      "text": "Advanced Alloy can only be crafted and is not naturally obtainable."
     }
   ],
   "sortnum": 207

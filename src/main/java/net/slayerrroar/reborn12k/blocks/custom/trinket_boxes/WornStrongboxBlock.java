@@ -59,17 +59,17 @@ public class WornStrongboxBlock extends HorizontalFacingBlock {
         int upperbound = 100;
         int rarity_int = rarityRand.nextInt(upperbound);
 
-        if (rarity_int < 80) {
-            StrongboxUtil.randomCommon(world, pos);
+        if (rarity_int == 0) {
+            StrongboxUtil.randomLegendary(world, pos);
         }
-        if (rarity_int < 95 && rarity_int > 79) {
-            StrongboxUtil.randomRare(world, pos);
-        }
-        if (rarity_int < 99 && rarity_int > 94) {
+        if (rarity_int != 0 && rarity_int <= 2) {
             StrongboxUtil.randomEpic(world, pos);
         }
-        if (rarity_int == 99) {
-            StrongboxUtil.randomLegendary(world, pos);
+        if (rarity_int > 2 && rarity_int <= 10) {
+            StrongboxUtil.randomRare(world, pos);
+        }
+        if (rarity_int > 10 ) {
+            StrongboxUtil.randomCommon(world, pos);
         }
         player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.opened"), true);
     }

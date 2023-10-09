@@ -2,6 +2,9 @@ package net.slayerrroar.reborn12k.recipe.recipe_types;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.DataResult;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
@@ -10,23 +13,24 @@ import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
 import net.minecraft.util.collection.DefaultedList;
+import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
+
+import java.util.List;
 
 public class CrusherRecipe implements Recipe<SimpleInventory> {
 
-    private final Identifier id;
     private final ItemStack output;
-    private final DefaultedList<Ingredient> recipeItems;
+    private final List<Ingredient> recipeItems;
 
-    public CrusherRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems) {
-        this.id = id;
-        this.output = output;
-        this.recipeItems = recipeItems;
+    public CrusherRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
+        this.output = itemStack;
+        this.recipeItems = ingredients;
     }
 
     @Override
     public boolean matches(SimpleInventory inventory, World world) {
-        if (world.isClient()) {
+        if(world.isClient()) {
             return false;
         }
 
@@ -34,7 +38,7 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
     }
 
     @Override
-    public ItemStack craft(SimpleInventory inventory, DynamicRegistryManager dynamicRegistryManager) {
+    public ItemStack craft(SimpleInventory inventory, DynamicRegistryManager registryManager) {
         return output;
     }
 
@@ -44,74 +48,73 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
     }
 
     @Override
-    @Deprecated
-    public ItemStack getOutput(DynamicRegistryManager registryManager) {
-        return null;
-    }
-
-    @Deprecated
-    public ItemStack getOutput() {
-        return this.output;
+    public ItemStack getResult(DynamicRegistryManager registryManager) {
+        return output;
     }
 
     @Override
-    public Identifier getId() {
-        return id;
+    public DefaultedList<Ingredient> getIngredients() {
+        DefaultedList<Ingredient> list = DefaultedList.ofSize(this.recipeItems.size());
+        list.addAll(recipeItems);
+        return list;
     }
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return Serializer.INSTANCE;
+        return CrusherRecipe.Serializer.INSTANCE;
     }
 
     @Override
     public RecipeType<?> getType() {
-        return Type.INSTANCE;
+        return CrusherRecipe.Type.INSTANCE;
     }
 
     public static class Type implements RecipeType<CrusherRecipe> {
-        private Type() { }
-        public static final Type INSTANCE = new Type();
+        public static final CrusherRecipe.Type INSTANCE = new CrusherRecipe.Type();
         public static final String ID = "crusher";
     }
 
     public static class Serializer implements RecipeSerializer<CrusherRecipe> {
-        public static final Serializer INSTANCE = new Serializer();
+        public static final CrusherRecipe.Serializer INSTANCE = new CrusherRecipe.Serializer();
         public static final String ID = "crusher";
 
-        @Override
-        public CrusherRecipe read(Identifier id, JsonObject json) {
-            ItemStack output = ShapedRecipe.outputFromJson(JsonHelper.getObject(json, "output"));
+        public static final Codec<CrusherRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
+                validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(CrusherRecipe::getIngredients),
+                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output)
+        ).apply(in, CrusherRecipe::new));
 
-            JsonArray ingredients = JsonHelper.getArray(json, "ingredients");
-            DefaultedList<Ingredient> inputs = DefaultedList.ofSize(1, Ingredient.EMPTY);
-
-            for (int i = 0; i < inputs.size(); i++) {
-                inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
-            }
-
-            return new CrusherRecipe(id, output, inputs);
+        private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
+            return Codecs.validate(Codecs.validate(
+                    delegate.listOf(), list -> list.size() > max ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
+            ), list -> list.isEmpty() ? DataResult.error(() -> "Recipe has no ingredients!") : DataResult.success(list));
         }
 
         @Override
-        public CrusherRecipe read(Identifier id, PacketByteBuf buf) {
+        public Codec<CrusherRecipe> codec() {
+            return CODEC;
+        }
+
+        @Override
+        public CrusherRecipe read(PacketByteBuf buf) {
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
 
-            for (int i = 0; i < inputs.size(); i++) {
+            for(int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromPacket(buf));
             }
 
             ItemStack output = buf.readItemStack();
-            return new CrusherRecipe(id, output, inputs);
+            return new CrusherRecipe(inputs, output);
         }
 
         @Override
         public void write(PacketByteBuf buf, CrusherRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
-            for (Ingredient ing : recipe.getIngredients()) {
-                ing.write(buf);
+
+            for (Ingredient ingredient : recipe.getIngredients()) {
+                ingredient.write(buf);
             }
-            buf.writeItemStack(recipe.getOutput());
+
+            buf.writeItemStack(recipe.getResult(null));
         }
     }
 }

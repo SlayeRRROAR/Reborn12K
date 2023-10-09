@@ -2,10 +2,11 @@
     "type": "reborn12k:crusher",
     "ingredients": [
         {
-            "tag": "c:vanadium_ingots"
+            "tag": "c:raw_vanadium_ores"
         }
     ],
     "output": {
-        "item": "reborn12k:raw_vanadium"
+        "item": "reborn12k:vanadium_dust",
+        "count": 2
     }
 }

@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_silver_blocks"
+            "tag": "c:raw_silver_ores"
         }
     ],
     "result": {
         "item": "reborn12k:raw_silver",
         "count": 9
-    },
-    "group": "raw_silver"
+    }
 }

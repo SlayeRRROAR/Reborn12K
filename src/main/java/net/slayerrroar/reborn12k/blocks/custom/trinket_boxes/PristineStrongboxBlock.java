@@ -56,14 +56,14 @@ public class PristineStrongboxBlock extends Block {
 
     private void randomRarityLoot(PlayerEntity player, World world, BlockPos pos) {
         Random rarityRand = new Random();
-        int upperbound = 11;
+        int upperbound = 100;
         int rarity_int = rarityRand.nextInt(upperbound);
 
-        if (rarity_int != 0) {
-            StrongboxUtil.randomEpic(world, pos);
-        }
-        if (rarity_int == 0) {
+        if (rarity_int <= 10) {
             StrongboxUtil.randomLegendary(world, pos);
+        }
+        if (rarity_int > 10) {
+            StrongboxUtil.randomEpic(world, pos);
         }
         player.sendMessage(Text.translatable("item.reborn12k.locked_strongbox.opened"), true);
     }

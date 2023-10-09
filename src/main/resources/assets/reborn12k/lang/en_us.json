@@ -1,6 +1,5 @@
 {
     "item.reborn12k.coal_piece": "Coal Piece",
-    "item.reborn12k.coal_dust": "Coal Dust",
 
     "item.reborn12k.wooden_katana": "Wooden Katana",
     "item.reborn12k.stone_katana": "Stone Katana",
@@ -10,7 +9,16 @@
     "item.reborn12k.golden_katana": "Golden Katana",
 
 
+    "item.reborn12k.coal_dust": "Coal Dust",
+    "item.reborn12k.copper_dust": "Copper Dust",
+    "item.reborn12k.iron_dust": "Iron Dust",
+    "item.reborn12k.gold_dust": "Gold Dust",
+    "item.reborn12k.diamond_dust": "Diamond Dust",
+    "item.reborn12k.emerald_dust": "Emerald Dust",
+    "item.reborn12k.netherite_dust": "Netherite Dust",
+
     "item.reborn12k.tin_ingot": "Tin Ingot",
+    "item.reborn12k.tin_dust": "Tin Dust",
     "item.reborn12k.raw_tin": "Raw Tin",
     "block.reborn12k.tin_ore": "Tin Ore",
     "block.reborn12k.deepslate_tin_ore": "Deepslate Tin Ore",
@@ -19,6 +27,7 @@
 
 
     "item.reborn12k.aluminum_ingot": "Aluminum Ingot",
+    "item.reborn12k.aluminum_dust": "Aluminum Dust",
     "item.reborn12k.raw_aluminum": "Raw Aluminum",
     "block.reborn12k.aluminum_ore": "Aluminum Ore",
     "block.reborn12k.deepslate_aluminum_ore": "Deepslate Aluminum Ore",
@@ -27,6 +36,7 @@
 
 
     "item.reborn12k.silver_ingot": "Silver Ingot",
+    "item.reborn12k.silver_dust": "Silver Dust",
     "item.reborn12k.raw_silver": "Raw Silver",
     "block.reborn12k.silver_ore": "Silver Ore",
     "block.reborn12k.deepslate_silver_ore": "Deepslate Silver Ore",
@@ -35,6 +45,7 @@
 
 
     "item.reborn12k.lead_ingot": "Lead Ingot",
+    "item.reborn12k.lead_dust": "Lead Dust",
     "item.reborn12k.raw_lead": "Raw Lead",
     "block.reborn12k.lead_ore": "Lead Ore",
     "block.reborn12k.deepslate_lead_ore": "Deepslate Lead Ore",
@@ -43,6 +54,7 @@
 
 
     "item.reborn12k.nickel_ingot": "Nickel Ingot",
+    "item.reborn12k.nickel_dust": "Nickel Dust",
     "item.reborn12k.raw_nickel": "Raw Nickel",
     "block.reborn12k.nickel_ore": "Nickel Ore",
     "block.reborn12k.deepslate_nickel_ore": "Deepslate Nickel Ore",
@@ -51,6 +63,7 @@
 
 
     "item.reborn12k.chrome_ingot": "Chrome Ingot",
+    "item.reborn12k.chrome_dust": "Chrome Dust",
     "item.reborn12k.raw_chrome": "Raw Chrome",
     "block.reborn12k.chromite_ore": "Chromite Ore",
     "block.reborn12k.deepslate_chromite_ore": "Deepslate Chromite Ore",
@@ -59,6 +72,7 @@
 
 
     "item.reborn12k.titanium_ingot": "Titanium Ingot",
+    "item.reborn12k.titanium_dust": "Titanium Dust",
     "item.reborn12k.raw_titanium": "Raw Titanium",
     "block.reborn12k.titanium_ore": "Titanium Ore",
     "block.reborn12k.deepslate_titanium_ore": "Deepslate Titanium Ore",
@@ -79,6 +93,7 @@
 
 
     "item.reborn12k.tungsten_ingot": "Tungsten Ingot",
+    "item.reborn12k.tungsten_dust": "Tungsten Dust",
     "item.reborn12k.raw_tungsten": "Raw Tungsten",
     "block.reborn12k.nether_tungsten_ore": "Nether Tungsten Ore",
     "block.reborn12k.raw_tungsten_block": "Block of Raw Tungsten",
@@ -86,6 +101,7 @@
 
 
     "item.reborn12k.vanadium_ingot": "Vanadium Ingot",
+    "item.reborn12k.vanadium_dust": "Vanadium Dust",
     "item.reborn12k.raw_vanadium": "Raw Vanadium",
     "block.reborn12k.nether_vanadium_ore": "Nether Vanadium Ore",
     "block.reborn12k.raw_vanadium_block": "Block of Raw Vanadium",
@@ -93,6 +109,7 @@
 
 
     "item.reborn12k.neodymium_ingot": "Neodymium Ingot",
+    "item.reborn12k.neodymium_dust": "Neodymium Dust",
     "item.reborn12k.raw_neodymium": "Raw Neodymium",
     "block.reborn12k.nether_neodymium_ore": "Nether Neodymium Ore",
     "block.reborn12k.raw_neodymium_block": "Block of Raw Neodymium",
@@ -100,6 +117,7 @@
 
 
     "item.reborn12k.uranium_ingot": "Uranium Ingot",
+    "item.reborn12k.uranium_dust": "Uranium Dust",
     "item.reborn12k.raw_uranium": "Raw Uranium",
     "block.reborn12k.nether_uranium_ore": "Nether Uranium Ore",
     "block.reborn12k.raw_uranium_block": "Block of Raw Uranium",
@@ -107,6 +125,7 @@
 
 
     "item.reborn12k.cobalt_ingot": "Cobalt Ingot",
+    "item.reborn12k.cobalt_dust": "Cobalt Dust",
     "item.reborn12k.raw_cobalt": "Raw Cobalt",
     "block.reborn12k.end_cobalt_ore": "End Cobalt Ore",
     "block.reborn12k.raw_cobalt_block": "Block of Raw Cobalt",
@@ -114,6 +133,7 @@
 
 
     "item.reborn12k.osmium_ingot": "Osmium Ingot",
+    "item.reborn12k.osmium_dust": "Osmium Dust",
     "item.reborn12k.raw_osmium": "Raw Osmium",
     "block.reborn12k.end_osmium_ore": "End Osmium Ore",
     "block.reborn12k.raw_osmium_block": "Block of Raw Osmium",
@@ -121,6 +141,7 @@
 
 
     "item.reborn12k.platinum_ingot": "Platinum Ingot",
+    "item.reborn12k.platinum_dust": "Platinum Dust",
     "item.reborn12k.raw_platinum": "Raw Platinum",
     "block.reborn12k.end_platinum_ore": "End Platinum Ore",
     "block.reborn12k.raw_platinum_block": "Block of Raw Platinum",
@@ -128,6 +149,7 @@
 
 
     "item.reborn12k.iridium_ingot": "Iridium Ingot",
+    "item.reborn12k.iridium_dust": "Iridium Dust",
     "item.reborn12k.raw_iridium": "Raw Iridium",
     "block.reborn12k.end_iridium_ore": "End Iridium Ore",
     "block.reborn12k.raw_iridium_block": "Block of Raw Iridium",
@@ -135,6 +157,7 @@
 
 
     "item.reborn12k.archeosite_ingot": "Archeosite Ingot",
+    "item.reborn12k.archeosite_dust": "Archeosite Dust",
     "item.reborn12k.raw_archeosite": "Raw Archeosite",
     "block.reborn12k.raw_archeosite_block": "Block of Raw Archeosite",
     "block.reborn12k.archeosite_block": "Block of Archeosite",
@@ -153,6 +176,7 @@
 
 
     "item.reborn12k.bronze_ingot": "Bronze Ingot",
+    "item.reborn12k.bronze_dust": "Bronze Dust",
     "item.reborn12k.raw_bronze": "Raw Bronze",
     "block.reborn12k.raw_bronze_block": "Block of Raw Bronze",
     "block.reborn12k.bronze_block": "Block of Bronze",
@@ -171,18 +195,21 @@
 
 
     "item.reborn12k.constantan_ingot": "Constantan Ingot",
+    "item.reborn12k.constantan_dust": "Constantan Dust",
     "item.reborn12k.raw_constantan": "Raw Constantan",
     "block.reborn12k.raw_constantan_block": "Block of Raw Constantan",
     "block.reborn12k.constantan_block": "Block of Constantan",
 
 
     "item.reborn12k.invar_ingot": "Invar Ingot",
+    "item.reborn12k.invar_dust": "Invar Dust",
     "item.reborn12k.raw_invar": "Raw Invar",
     "block.reborn12k.raw_invar_block": "Block of Raw Invar",
     "block.reborn12k.invar_block": "Block of Invar",
 
 
     "item.reborn12k.steel_ingot": "Steel Ingot",
+    "item.reborn12k.steel_dust": "Steel Dust",
     "item.reborn12k.raw_steel": "Raw Steel",
     "block.reborn12k.raw_steel_block": "Block of Raw Steel",
     "block.reborn12k.steel_block": "Block of Steel",
@@ -201,6 +228,7 @@
 
 
     "item.reborn12k.tungstensteel_ingot": "Tungstensteel Ingot",
+    "item.reborn12k.tungstensteel_dust": "Tungstensteel Dust",
     "item.reborn12k.raw_tungstensteel": "Raw Tungstensteel",
     "block.reborn12k.raw_tungstensteel_block": "Block of Raw Tungstensteel",
     "block.reborn12k.tungstensteel_block": "Block of Tungstensteel",
@@ -219,6 +247,7 @@
 
 
     "item.reborn12k.thelosite_ingot": "Thelosite Ingot",
+    "item.reborn12k.thelosite_dust": "Thelosite Dust",
     "item.reborn12k.raw_thelosite": "Raw Thelosite",
     "block.reborn12k.raw_thelosite_block": "Block of Raw Thelosite",
     "block.reborn12k.thelosite_block": "Block of Thelosite",
@@ -237,6 +266,7 @@
 
 
     "item.reborn12k.advanced_alloy_ingot": "Advanced Alloy Ingot",
+    "item.reborn12k.advanced_alloy_dust": "Advanced Alloy Dust",
     "item.reborn12k.raw_advanced_alloy": "Raw Advanced Alloy",
     "block.reborn12k.raw_advanced_alloy_block": "Block of Raw Advanced Alloy",
     "block.reborn12k.advanced_alloy_block": "Block of Advanced Alloy",
@@ -255,6 +285,7 @@
 
 
     "item.reborn12k.iridium_alloy_ingot": "Iridium Alloy Ingot",
+    "item.reborn12k.iridium_alloy_dust": "Iridium Alloy Dust",
     "item.reborn12k.raw_iridium_alloy": "Raw Iridium Alloy",
     "block.reborn12k.raw_iridium_alloy_block": "Block of Raw Iridium Alloy",
     "block.reborn12k.iridium_alloy_block": "Block of Iridium Alloy",
@@ -273,6 +304,7 @@
 
 
     "item.reborn12k.electrum_ingot": "Electrum Ingot",
+    "item.reborn12k.electrum_dust": "Electrum Dust",
     "item.reborn12k.raw_electrum": "Raw Electrum",
     "block.reborn12k.raw_electrum_block": "Block of Raw Electrum",
     "block.reborn12k.electrum_block": "Block of Electrum",
@@ -291,6 +323,7 @@
 
 
     "item.reborn12k.signalum_ingot": "Signalum Ingot",
+    "item.reborn12k.signalum_dust": "Signalum Dust",
     "item.reborn12k.raw_signalum": "Raw Signalum",
     "block.reborn12k.raw_signalum_block": "Block of Raw Signalum",
     "block.reborn12k.signalum_block": "Block of Signalum",
@@ -309,12 +342,14 @@
 
 
     "item.reborn12k.lumium_ingot": "Lumium Ingot",
+    "item.reborn12k.lumium_dust": "Lumium Dust",
     "item.reborn12k.raw_lumium": "Raw Lumium",
     "block.reborn12k.raw_lumium_block": "Block of Raw Lumium",
     "block.reborn12k.lumium_block": "Block of Lumium",
 
 
     "item.reborn12k.enderium_ingot": "Enderium Ingot",
+    "item.reborn12k.enderium_dust": "Enderium Dust",
     "item.reborn12k.raw_enderium": "Raw Enderium",
     "block.reborn12k.raw_enderium_block": "Block of Raw Enderium",
     "block.reborn12k.enderium_block": "Block of Enderium",
@@ -333,6 +368,7 @@
 
 
     "item.reborn12k.shibuichi_alloy_ingot": "Shibuichi Alloy Ingot",
+    "item.reborn12k.shibuichi_alloy_dust": "Shibuichi Alloy Dust",
     "item.reborn12k.raw_shibuichi_alloy": "Raw Shibuichi Alloy",
     "block.reborn12k.shibuichi_alloy_block": "Block of Shibuichi Alloy",
     "block.reborn12k.raw_shibuichi_alloy_block": "Block of Raw Shibuichi Alloy",
@@ -727,7 +763,7 @@
     "item.reborn12k.long_fall_boots": "Long Fall Boots",
     "item.reborn12k.winged_shoes": "Winged Shoes",
 
-    "item.reborn12k.old_necklace": "Old Necklace",
+    "item.reborn12k.iron_necklace": "Iron Necklace",
     "item.reborn12k.golden_necklace": "Golden Necklace",
     "item.reborn12k.bejeweled_necklace": "Bejeweled Necklace",
     "item.reborn12k.heart_pendant": "Heart Pendant",
@@ -752,24 +788,16 @@
     "item.reborn12k.ring_of_strength": "§4Ring of Mars Ultor",
 
     "item.reborn12k.band_of_fortitude": "Band of Fortitude",
-    "item.reborn12k.indelible_band_of_fortitude": "Indelible Band of Fortitude",
     "item.reborn12k.greater_band_of_fortitude": "Greater Band of Fortitude",
 
+    "item.reborn12k.monster_claw": "Monster Claw",
     "item.reborn12k.bloody_claw": "Bloody Claw",
-    "item.reborn12k.indelible_bloody_claw": "Indelible Bloody Claw",
-    "item.reborn12k.greater_bloody_claw": "Greater Bloody Claw",
 
-    "item.reborn12k.medallion": "Medallion",
-    "item.reborn12k.indelible_medallion": "Indelible Medallion",
-    "item.reborn12k.greater_medallion": "Greater Medallion",
+    "item.reborn12k.tarnished_medallion": "Tarnished Medallion",
+    "item.reborn12k.golden_medallion": "Golden Medallion",
 
-    "item.reborn12k.frenzy_tonic": "Frenzy Tonic",
-    "item.reborn12k.indelible_frenzy_tonic": "Indelible Frenzy Tonic",
-    "item.reborn12k.greater_frenzy_tonic": "Greater Frenzy Tonic",
-
+    "item.reborn12k.worn_charm": "Worn Charm",
     "item.reborn12k.lucky_charm": "Lucky Charm",
-    "item.reborn12k.indelible_lucky_charm": "Indelible Lucky Charm",
-    "item.reborn12k.greater_lucky_charm": "Greater Lucky Charm",
 
     "item.reborn12k.griffin_feather": "Griffin Feather",
     "item.reborn12k.aconitum": "Aconitum",
@@ -978,7 +1006,7 @@
     "item.reborn12k.ring_of_air.tooltip1": "§8Boosts the speed",
     "item.reborn12k.ring_of_air.tooltip2": "§8of the wearer",
 
-    "item.reborn12k.ring_of_earth.tooltip1": "§8Boost the resistance and",
+    "item.reborn12k.ring_of_earth.tooltip1": "§8Boosts the resistance and",
     "item.reborn12k.ring_of_earth.tooltip2": "§8hastiness of the wearer",
 
     "item.reborn12k.ring_of_water.tooltip1": "§8Improves the underwater",
@@ -987,7 +1015,7 @@
     "item.reborn12k.ring_of_fire.tooltip1": "§8Grants the wearer",
     "item.reborn12k.ring_of_fire.tooltip2": "§8resistance to fire",
 
-    "item.reborn12k.ring_of_light.tooltip1": "§Grants saturation and",
+    "item.reborn12k.ring_of_light.tooltip1": "§8Grants saturation and",
     "item.reborn12k.ring_of_light.tooltip2": "§8regeneration to the wearer",
 
     "item.reborn12k.ring_of_dark.tooltip1": "§8Grants invisibility and",

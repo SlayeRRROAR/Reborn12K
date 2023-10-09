@@ -12,8 +12,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:raw_alloys/raw_archeosite_craft",
-      "text": "Raw Archeosite can only be crafted and is not naturally obtainable."
+      "recipe": "reborn12k:alloy_dusts/archeosite_dust_craft",
+      "text": "Archeosite can only be crafted and is not naturally obtainable."
     }
   ],
   "sortnum": 200

@@ -12,8 +12,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:raw_alloys/raw_signalum_craft",
-      "text": "Raw Signalum can only be crafted and is not naturally obtainable."
+      "recipe": "reborn12k:alloy_dusts/signalum_dust_craft",
+      "text": "Signalum can only be crafted and is not naturally obtainable."
     }
   ],
   "sortnum": 210

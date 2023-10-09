@@ -12,8 +12,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:raw_alloys/raw_invar_craft",
-      "text": "Raw Invar can only be crafted and is not naturally obtainable."
+      "recipe": "reborn12k:alloy_dusts/invar_dust_craft",
+      "text": "Invar can only be crafted and is not naturally obtainable."
     }
   ],
   "sortnum": 203

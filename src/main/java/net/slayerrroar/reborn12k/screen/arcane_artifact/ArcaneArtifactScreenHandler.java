@@ -1,31 +1,35 @@
 package net.slayerrroar.reborn12k.screen.arcane_artifact;
 
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
-import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
+import net.slayerrroar.reborn12k.blocks.custom.entities.ArcaneArtifactBlockEntity;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
-import net.slayerrroar.reborn12k.screen.slots.CustomResultSlot;
+import net.slayerrroar.reborn12k.screen.slots.*;
 
 public class ArcaneArtifactScreenHandler extends ScreenHandler {
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
+    public final ArcaneArtifactBlockEntity blockEntity;
 
-    public ArcaneArtifactScreenHandler(int syncId, PlayerInventory inventory) {
-        this(syncId, inventory, new SimpleInventory(2), new ArrayPropertyDelegate(2));
+    public ArcaneArtifactScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
+        this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()), new ArrayPropertyDelegate(2));
     }
 
-    public ArcaneArtifactScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
+    public ArcaneArtifactScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity entity, PropertyDelegate delegate) {
         super(RebornScreenRegistry.ARCANE_ARTIFACT_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 2);
-        this.inventory = inventory;
+        checkSize(((Inventory) entity), 2);
+        this.inventory = ((Inventory) entity);
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
+        this.blockEntity = ((ArcaneArtifactBlockEntity) entity);
 
         this.addSlot(new Slot(inventory, 0, 41, 35));
         this.addSlot(new CustomResultSlot(inventory, 1, 115, 35));

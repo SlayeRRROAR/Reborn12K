@@ -12,8 +12,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:raw_alloys/raw_constantan_craft",
-      "text": "Raw Constantan can only be crafted and is not naturally obtainable."
+      "recipe": "reborn12k:alloy_dusts/constantan_dust_craft",
+      "text": "Constantan can only be crafted and is not naturally obtainable."
     }
   ],
   "sortnum": 202

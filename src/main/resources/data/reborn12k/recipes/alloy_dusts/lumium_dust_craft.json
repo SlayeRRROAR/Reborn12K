@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:silver_dusts"
+        },
+        {
+            "tag":  "sand"
+        },
+        {
+            "item": "reborn12k:energized_glowstone_bucket"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:lumium_dust",
+        "count": 4
+    },
+    "group": "lumium_dust"
+}

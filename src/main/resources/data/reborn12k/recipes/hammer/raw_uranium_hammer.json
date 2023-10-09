@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "tag": "c:uranium_ingots"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:uranium_dust",
+        "count": 1
+    },
+    "group": "uranium_dust"
+}

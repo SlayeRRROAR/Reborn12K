@@ -14,13 +14,4 @@ public class HammerItem extends Item {
         return true;
     }
 
-    @Override
-    public boolean hasRecipeRemainder() {
-        return true;
-    }
-
-    @Override
-    public ItemStack getRecipeRemainder(ItemStack stack) {
-        return new ItemStack(GenericItems.HAMMER);
-    }
 }

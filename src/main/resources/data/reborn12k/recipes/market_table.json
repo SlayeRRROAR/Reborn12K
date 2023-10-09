@@ -1,18 +1,15 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "ABA",
-        "C C",
-        "C C"
+        "AAA",
+        "B B",
+        "B B"
     ],
     "key": {
         "A": {
-            "tag": "c:planks"
+            "tag": "planks"
         },
         "B": {
-            "item": "minecraft:crafting_table"
-        },
-        "C": {
             "item": "minecraft:stick"
         }
     },

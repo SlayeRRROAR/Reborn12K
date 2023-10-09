@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_bronze_blocks"
+            "tag": "c:raw_bronze_ores"
         }
     ],
     "result": {
         "item": "reborn12k:raw_bronze",
         "count": 9
-    },
-    "group": "raw_bronze"
+    }
 }

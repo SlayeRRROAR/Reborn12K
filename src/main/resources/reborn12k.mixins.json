@@ -10,6 +10,7 @@
     "OnHitMixin",
     "PhoenixPlumeMixin",
     "QuiverMixin",
+    "RemainderDamageMixin",
     "ShadesMixin",
     "SpringMixin",
     "SwordCritMixin"

@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:silver_ingots"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:silver_dust"
+    }
+}

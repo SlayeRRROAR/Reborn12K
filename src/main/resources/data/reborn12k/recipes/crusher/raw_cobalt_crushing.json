@@ -2,10 +2,11 @@
     "type": "reborn12k:crusher",
     "ingredients": [
         {
-            "tag": "c:cobalt_ingots"
+            "tag": "c:raw_cobalt_ores"
         }
     ],
     "output": {
-        "item": "reborn12k:raw_cobalt"
+        "item": "reborn12k:cobalt_dust",
+        "count": 2
     }
 }

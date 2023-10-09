@@ -12,8 +12,8 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "reborn12k:raw_alloys/raw_electrum_craft",
-      "text": "Raw Electrum can only be crafted and is not naturally obtainable."
+      "recipe": "reborn12k:alloy_dusts/electrum_dust_craft",
+      "text": "Electrum can only be crafted and is not naturally obtainable."
     }
   ],
   "sortnum": 209

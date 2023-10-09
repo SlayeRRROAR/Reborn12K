@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:nickel_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_nickel",
+        "count": 9
+    },
+    "group": "raw_nickel"
+}

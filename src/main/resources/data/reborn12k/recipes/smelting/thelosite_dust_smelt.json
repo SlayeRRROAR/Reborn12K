@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "tag": "c:thelosite_dusts"
+    },
+    "result": "reborn12k:thelosite_ingot",
+    "experience": 3.0,
+    "cookingtime": 200
+}
