@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:vanadium_ingots"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:vanadium_dust"
+    }
+}

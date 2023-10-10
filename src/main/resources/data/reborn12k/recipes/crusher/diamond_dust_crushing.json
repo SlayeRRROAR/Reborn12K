@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "item": "minecraft:diamond"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:diamond_dust"
+    }
+}

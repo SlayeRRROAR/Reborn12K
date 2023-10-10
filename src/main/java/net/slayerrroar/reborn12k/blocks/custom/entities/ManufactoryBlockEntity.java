@@ -189,7 +189,7 @@ public class ManufactoryBlockEntity extends BlockEntity implements ExtendedScree
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
         if (side == Direction.DOWN) {
-            return slot == 3;
+            return slot == OUTPUT_SLOT;
         }
         return false;
     }

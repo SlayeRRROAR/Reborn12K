@@ -143,6 +143,10 @@ public class GenericItems {
     public static final Item ENDERIUM_DUST = registerItem("enderium_dust", new Item(new FabricItemSettings()));
 
     public static final Item SHIBUICHI_ALLOY_DUST = registerItem("shibuichi_alloy_dust", new Item(new FabricItemSettings()));
+    public static final Item MAGISTEEL_DUST = registerItem("magisteel_dust", new Item(new FabricItemSettings()));
+    public static final Item ORICHALCUM_DUST = registerItem("orichalcum_dust", new Item(new FabricItemSettings()));
+    public static final Item MITHRIL_DUST = registerItem("mithril_dust", new Item(new FabricItemSettings()));
+    public static final Item DEMONIC_METAL_DUST = registerItem("demonic_metal_dust", new Item(new FabricItemSettings()));
 
     public static final Item ENDER_DUST = registerItem("ender_dust", new Item(new FabricItemSettings()));
 
@@ -341,6 +345,10 @@ public class GenericItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_DUST);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, DEMONIC_METAL_DUST);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDER_DUST);
 

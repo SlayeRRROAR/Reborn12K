@@ -235,10 +235,10 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
         if (side == Direction.DOWN) {
-            if (slot == 0) {
+            if (slot == FUEL_SLOT) {
                 return stack.isOf(Items.BUCKET);
             }
-            return slot == 3;
+            return slot == OUTPUT_SLOT;
         }
         return false;
     }
@@ -248,12 +248,12 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
     }
 
     public boolean isValid(int slot, ItemStack stack) {
-        if (slot == 2) {
+        if (slot == OUTPUT_SLOT) {
             return false;
-        } else if (slot != 0) {
+        } else if (slot != FUEL_SLOT) {
             return true;
         } else {
-            ItemStack itemStack = this.inventory.get(0);
+            ItemStack itemStack = this.inventory.get(FUEL_SLOT);
             return canUseAsFuel(stack) || stack.isOf(Items.BUCKET) && !itemStack.isOf(Items.BUCKET);
         }
     }

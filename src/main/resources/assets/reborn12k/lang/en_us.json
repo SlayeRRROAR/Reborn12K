@@ -1,4 +1,8 @@
 {
+    "item.reborn12k.stone_hammer": "Stone Hammer",
+    "item.reborn12k.iron_hammer": "Iron Hammer",
+    "item.reborn12k.diamond_hammer": "Diamond Hammer",
+
     "item.reborn12k.coal_piece": "Coal Piece",
 
     "item.reborn12k.wooden_katana": "Wooden Katana",
@@ -388,6 +392,7 @@
 
 
     "item.reborn12k.magisteel_ingot": "Magisteel Ingot",
+    "item.reborn12k.magisteel_dust": "Magisteel Dust",
     "block.reborn12k.magisteel_block": "Block of Magisteel",
 
 
@@ -405,6 +410,7 @@
 
 
     "item.reborn12k.orichalcum_ingot": "Orichalcum Ingot",
+    "item.reborn12k.orichalcum_dust": "Orichalcum Dust",
     "block.reborn12k.orichalcum_block": "Block of Orichalcum",
 
     "item.reborn12k.orichalcum_helmet": "Orichalcum Helmet",
@@ -421,6 +427,7 @@
 
 
     "item.reborn12k.mithril_ingot": "Mithril Ingot",
+    "item.reborn12k.mithril_dust": "Mithril Dust",
     "block.reborn12k.mithril_block": "Block of Mithril",
 
     "item.reborn12k.mithril_helmet": "Mithril Helmet",
@@ -437,6 +444,7 @@
 
 
     "item.reborn12k.demonic_metal_ingot": "Demonic Metal Ingot",
+    "item.reborn12k.demonic_metal_dust": "Demonic Metal Dust",
     "block.reborn12k.demonic_metal_block": "Block of Demonic Metal",
 
 
@@ -490,8 +498,6 @@
     "item.reborn12k.withered_shard": "Withered Shard",
 
     "item.reborn12k.universal_smithing_template": "Universal Smithing Template",
-
-    "item.reborn12k.hammer": "Hammer",
 
 
     "item.reborn12k.windstorm_manatite": "Windstorm Manatite",
@@ -1083,7 +1089,7 @@
 
     "item.reborn12k.laser_focus.tooltip1": "§8Can be used in",
     "item.reborn12k.laser_focus.tooltip2": "§8a §4Laser Quarry",
-    "item.reborn12k.laser_focus.tooltip3": "§§4Must be set before use",
+    "item.reborn12k.laser_focus.tooltip3": "§4Must be set before use",
 
     "item.reborn12k.soul_vessel.tooltip1": "§8Throw it to a mob to",
     "item.reborn12k.soul_vessel.tooltip2": "§8capture its soul",

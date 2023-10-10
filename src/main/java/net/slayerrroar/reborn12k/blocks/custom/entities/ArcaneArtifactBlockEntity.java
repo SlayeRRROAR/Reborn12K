@@ -182,7 +182,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements ExtendedSc
         if (side == Direction.DOWN) {
             return false;
         }
-        return slot == 0;
+        return slot == INPUT_SLOT;
 
     }
 
@@ -190,7 +190,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements ExtendedSc
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
         if (side == Direction.DOWN) {
-            return slot == 1;
+            return slot == OUTPUT_SLOT;
         }
         return false;
     }

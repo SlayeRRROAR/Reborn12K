@@ -199,16 +199,16 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
             return false;
         }
         if (side == Direction.UP) {
-            return slot == 1;
+            return slot == INPUT_SLOT;
         }
-        return slot == 0;
+        return slot == FUEL_SLOT;
     }
 
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
         if (side == Direction.DOWN) {
-            return slot == 2;
+            return slot == OUTPUT_SLOT;
         }
         return false;
     }

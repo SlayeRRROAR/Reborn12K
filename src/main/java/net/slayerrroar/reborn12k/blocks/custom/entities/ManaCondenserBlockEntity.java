@@ -180,7 +180,7 @@ public class ManaCondenserBlockEntity extends BlockEntity implements ExtendedScr
         if (side == Direction.DOWN) {
             return false;
         }
-        return slot == 0;
+        return slot == INPUT_SLOT;
 
     }
 
@@ -188,7 +188,7 @@ public class ManaCondenserBlockEntity extends BlockEntity implements ExtendedScr
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
         if (side == Direction.DOWN) {
-            return slot == 1;
+            return slot == OUTPUT_SLOT;
         }
         return false;
     }

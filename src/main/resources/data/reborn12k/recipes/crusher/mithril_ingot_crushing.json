@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "item": "reborn12k:mithril_ingot"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:mithril_dust"
+    }
+}

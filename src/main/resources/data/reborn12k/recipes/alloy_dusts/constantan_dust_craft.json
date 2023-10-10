@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:copper_dusts"
+        },
+        {
+            "tag": "c:nickel_dusts"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:constantan_dust",
+        "count": 2
+    },
+    "group": "constantan_dust"
+}
