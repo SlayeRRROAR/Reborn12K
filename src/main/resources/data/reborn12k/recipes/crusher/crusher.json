@@ -3,17 +3,20 @@
     "pattern": [
         "AAA",
         "BCB",
-        "AAA"
+        "DDD"
     ],
     "key": {
         "A": {
-            "item": "minecraft:cobblestone"
+            "item": "minecraft:smooth_stone"
         },
         "B": {
-            "item": "minecraft:iron_ingot"
+            "tag": "c:steel_ingots"
         },
         "C": {
             "item": "minecraft:diamond"
+        },
+        "D": {
+            "tag": "minecraft:iron_ingot"
         }
     },
     "result": {
