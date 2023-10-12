@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:squid_essence"
-  },
-  "result": "minecraft:glow_ink_sac",
-  "count": 1
-}

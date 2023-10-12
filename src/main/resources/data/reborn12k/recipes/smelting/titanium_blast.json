@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:raw_titanium_ores"
-    },
-    "result": "reborn12k:titanium_ingot",
-    "experience": 1.0,
-    "cookingtime": 100
-}

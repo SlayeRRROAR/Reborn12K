@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:zombie_essence"
-  },
-  "result": "minecraft:potato",
-  "count": 2
-}

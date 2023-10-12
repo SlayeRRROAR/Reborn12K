@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:wither_skeleton_essence"
-  },
-  "result": "minecraft:coal",
-  "count": 2
-}

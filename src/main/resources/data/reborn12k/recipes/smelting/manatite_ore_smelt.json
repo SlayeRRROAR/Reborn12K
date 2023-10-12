@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "tag": "c:manatite_ores"
-    },
-    "result": "reborn12k:manatite",
-    "experience": 1.0,
-    "cookingtime": 200
-}

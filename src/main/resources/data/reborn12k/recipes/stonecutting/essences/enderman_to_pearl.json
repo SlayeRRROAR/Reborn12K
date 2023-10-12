@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:enderman_essence"
-  },
-  "result": "minecraft:ender_pearl",
-  "count": 2
-}

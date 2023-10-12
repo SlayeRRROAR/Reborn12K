@@ -1,9 +1,0 @@
-{
-  "icon": "trinkets:gui/slots/belt",
-  "drop_rule": "default",
-  "validator_predicates": [
-  ],
-  "tooltip_predicates": [
-    "trinkets:none"
-  ]
-}

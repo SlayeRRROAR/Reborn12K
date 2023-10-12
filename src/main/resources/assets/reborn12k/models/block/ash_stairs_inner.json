@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "reborn12k:block/ash_planks",
-    "top": "reborn12k:block/ash_planks",
-    "side": "reborn12k:block/ash_planks"
-  }
-}

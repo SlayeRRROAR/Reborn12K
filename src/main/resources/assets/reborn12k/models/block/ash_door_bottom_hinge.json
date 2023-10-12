@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_rh",
-  "textures": {
-    "top": "reborn12k:block/ash_door_top",
-    "bottom": "reborn12k:block/ash_door_bottom"
-  }
-}

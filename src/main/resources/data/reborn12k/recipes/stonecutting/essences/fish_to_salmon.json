@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:fish_essence"
-  },
-  "result": "minecraft:salmon",
-  "count": 4
-}

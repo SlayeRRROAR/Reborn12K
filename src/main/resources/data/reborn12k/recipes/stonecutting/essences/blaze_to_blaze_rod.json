@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:blaze_essence"
-  },
-  "result": "minecraft:blaze_rod",
-  "count": 1
-}

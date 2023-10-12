@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:chrome_dusts"
-    },
-    "result": "reborn12k:chrome_ingot",
-    "experience": 0.7,
-    "cookingtime": 100
-}

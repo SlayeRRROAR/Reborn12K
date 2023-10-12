@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:enderium_dusts"
-    },
-    "result": "reborn12k:enderium_ingot",
-    "experience": 3.0,
-    "cookingtime": 100
-}

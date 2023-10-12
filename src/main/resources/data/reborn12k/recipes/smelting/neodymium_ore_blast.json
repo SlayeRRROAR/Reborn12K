@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:neodymium_ores"
-    },
-    "result": "reborn12k:neodymium_ingot",
-    "experience": 1.0,
-    "cookingtime": 100
-}

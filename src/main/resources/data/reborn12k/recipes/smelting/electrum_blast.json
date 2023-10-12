@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:raw_electrum_ores"
-    },
-    "result": "reborn12k:electrum_ingot",
-    "experience": 1.0,
-    "cookingtime": 100
-}

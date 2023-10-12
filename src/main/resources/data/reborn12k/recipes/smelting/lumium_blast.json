@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:raw_lumium_ores"
-    },
-    "result": "reborn12k:lumium_ingot",
-    "experience": 1.2,
-    "cookingtime": 100
-}

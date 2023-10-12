@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:chicken_essence"
-  },
-  "result": "minecraft:chicken",
-  "count": 4
-}

@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:tungsten_ores"
-    },
-    "result": "reborn12k:tungsten_ingot",
-    "experience": 1.0,
-    "cookingtime": 100
-}

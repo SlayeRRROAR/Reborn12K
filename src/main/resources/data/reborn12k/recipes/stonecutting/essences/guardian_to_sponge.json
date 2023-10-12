@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:guardian_essence"
-  },
-  "result": "minecraft:sponge",
-  "count": 1
-}

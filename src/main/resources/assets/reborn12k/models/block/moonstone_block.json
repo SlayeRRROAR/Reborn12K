@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "reborn12k:block/moonstone_block"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:wither_skeleton_essence"
-  },
-  "result": "reborn12k:wither_skull_fragment",
-  "count": 1
-}

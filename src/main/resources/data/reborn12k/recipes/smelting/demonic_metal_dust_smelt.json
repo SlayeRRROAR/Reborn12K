@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "reborn12k:demonic_metal_dust"
-    },
-    "result": "reborn12k:demonic_metal_ingot",
-    "experience": 3.0,
-    "cookingtime": 200
-}

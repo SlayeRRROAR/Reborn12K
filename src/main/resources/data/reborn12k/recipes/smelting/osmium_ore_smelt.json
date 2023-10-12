@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "tag": "c:osmium_ores"
-    },
-    "result": "reborn12k:osmium_ingot",
-    "experience": 1.3,
-    "cookingtime": 200
-}

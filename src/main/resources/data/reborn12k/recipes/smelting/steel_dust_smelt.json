@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "tag": "c:steel_dusts"
-    },
-    "result": "reborn12k:steel_ingot",
-    "experience": 1.0,
-    "cookingtime": 200
-}

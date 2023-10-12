@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:phantom_essence"
-  },
-  "result": "minecraft:phantom_membrane",
-  "count": 2
-}

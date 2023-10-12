@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:osmium_dusts"
-    },
-    "result": "reborn12k:osmium_ingot",
-    "experience": 1.3,
-    "cookingtime": 100
-}

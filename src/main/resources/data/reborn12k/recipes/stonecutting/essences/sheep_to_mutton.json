@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:sheep_essence"
-  },
-  "result": "minecraft:mutton",
-  "count": 3
-}

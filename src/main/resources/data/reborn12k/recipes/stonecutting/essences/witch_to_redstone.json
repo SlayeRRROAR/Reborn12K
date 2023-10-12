@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:witch_essence"
-  },
-  "result": "minecraft:redstone",
-  "count": 2
-}

@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "tag": "c:raw_invar_ores"
-    },
-    "result": "reborn12k:invar_ingot",
-    "experience": 0.9,
-    "cookingtime": 100
-}

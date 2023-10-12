@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:sheep_essence"
-  },
-  "result": "minecraft:white_wool",
-  "count": 1
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:slime_essence"
-  },
-  "result": "minecraft:slime_ball",
-  "count": 2
-}

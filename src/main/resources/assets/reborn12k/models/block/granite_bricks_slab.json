@@ -1,8 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "reborn12k:block/granite_bricks",
-    "top": "reborn12k:block/granite_bricks",
-    "side": "reborn12k:block/granite_bricks"
-  }
-}

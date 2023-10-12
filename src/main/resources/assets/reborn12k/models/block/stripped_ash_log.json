@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "reborn12k:block/stripped_ash_log_top",
-    "side": "reborn12k:block/stripped_ash_log"
-  }
-}

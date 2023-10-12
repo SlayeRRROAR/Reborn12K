@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "tag": "reborn12k:spark_trinkets"
-  },
-  "result": "reborn12k:mana_spark",
-  "count": 1
-}

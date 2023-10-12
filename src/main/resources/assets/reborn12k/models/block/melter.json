@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "top": "reborn12k:block/melter_top",
-    "front": "reborn12k:block/melter_front",
-    "side": "reborn12k:block/melter_side"
-  }
-}

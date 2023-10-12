@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "tag": "c:raw_cobalt_ores"
-    },
-    "result": "reborn12k:cobalt_ingot",
-    "experience": 1.3,
-    "cookingtime": 200
-}

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "reborn12k:magma_cube_essence"
-  },
-  "result": "minecraft:magma_cream",
-  "count": 2
-}
