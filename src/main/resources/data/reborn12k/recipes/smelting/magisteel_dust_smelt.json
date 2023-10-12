@@ -1,9 +1,9 @@
 {
     "type": "minecraft:smelting",
     "ingredient": {
-        "tag": "c:vanadium_dusts"
+        "item": "reborn12k:magisteel_dust"
     },
-    "result": "reborn12k:vanadium_ingot",
+    "result": "reborn12k:magisteel_ingot",
     "experience": 1.0,
     "cookingtime": 200
 }

@@ -1,9 +1,9 @@
 {
     "type": "minecraft:smelting",
     "ingredient": {
-        "tag": "c:platinum_dusts"
+        "item": "reborn12k:orichalcum_dust"
     },
-    "result": "reborn12k:platinum_ingot",
+    "result": "reborn12k:orichalcum_ingot",
     "experience": 1.5,
     "cookingtime": 200
 }

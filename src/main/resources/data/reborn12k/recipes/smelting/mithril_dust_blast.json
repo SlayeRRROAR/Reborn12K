@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "reborn12k:mithril_dust"
+    },
+    "result": "reborn12k:mithril_ingot",
+    "experience": 3.0,
+    "cookingtime": 100
+}

@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_uranium_ores"
+            "tag": "c:raw_uranium_blocks"
         }
     ],
     "result": {

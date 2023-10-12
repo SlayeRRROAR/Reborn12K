@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_cobalt_ores"
+            "tag": "c:raw_cobalt_blocks"
         }
     ],
     "result": {

@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "tag": "c:raw_advanced_alloy_ores"
+            "tag": "c:raw_advanced_alloy_blocks"
         }
     ],
     "result": {

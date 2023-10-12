@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "tag": "c:shibuichi_alloy_dusts"
+    },
+    "result": "reborn12k:shibuichi_alloy_ingot",
+    "experience": 0.8,
+    "cookingtime": 100
+}
