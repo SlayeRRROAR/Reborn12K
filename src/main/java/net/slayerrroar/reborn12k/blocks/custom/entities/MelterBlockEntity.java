@@ -47,8 +47,8 @@ public class MelterBlockEntity extends BlockEntity implements ExtendedScreenHand
     private int maxProgress = 200;
     private int fuelTime = 0;
     private int maxFuelTime = 0;
-    private static final int[] TOP_SLOTS = new int[]{1};
-    private static final int[] BOTTOM_SLOTS = new int[]{2, 0};
+    private static final int[] TOP_SLOTS = new int[]{1, 2};
+    private static final int[] BOTTOM_SLOTS = new int[]{3, 0};
     private static final int[] SIDE_SLOTS = new int[]{0};
 
     public MelterBlockEntity(BlockPos pos, BlockState state) {
