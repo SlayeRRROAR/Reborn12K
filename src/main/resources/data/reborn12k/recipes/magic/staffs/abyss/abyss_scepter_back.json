@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:abyss_scepter"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:abyss_manatite",
+        "count": 1
+    },
+    "group": "abyss_manatite"
+}

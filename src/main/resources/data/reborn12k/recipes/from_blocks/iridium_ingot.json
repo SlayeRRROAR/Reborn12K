@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:iridium_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:iridium_ingot",
+        "count": 9
+    },
+    "group": "iridium_ingot"
+}

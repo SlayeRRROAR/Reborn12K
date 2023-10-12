@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:warped_wart_block"
+        }
+    ],
+    "result": {
+        "item": "minecraft:nether_wart",
+        "count": 9
+    },
+    "group": "wart"
+}

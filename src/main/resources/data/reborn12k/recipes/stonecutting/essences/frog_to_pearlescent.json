@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:frog_essence"
+  },
+  "result": "minecraft:pearlescent_froglight",
+  "count": 1
+}

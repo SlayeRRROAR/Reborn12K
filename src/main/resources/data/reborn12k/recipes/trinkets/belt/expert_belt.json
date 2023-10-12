@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": {
+        "item": "reborn12k:universal_smithing_template"
+    },
+    "base": {
+        "item": "reborn12k:black_belt"
+    },
+    "addition": {
+        "item": "reborn12k:arcane_dust"
+    },
+    "result": {
+        "item": "reborn12k:expert_belt"
+    }
+}

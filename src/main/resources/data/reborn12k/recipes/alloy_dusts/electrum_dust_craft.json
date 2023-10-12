@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:gold_dusts"
+        },
+        {
+            "tag": "c:silver_dusts"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:electrum_dust",
+        "count": 2
+    },
+    "group": "electrum_dust"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:vanadium_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:vanadium_ingot",
+        "count": 9
+    },
+    "group": "vanadium_ingot"
+}

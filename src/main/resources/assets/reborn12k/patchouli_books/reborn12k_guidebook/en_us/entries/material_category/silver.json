@@ -1,0 +1,20 @@
+{
+  "name": "Silver",
+  "icon": "reborn12k:silver_ingot",
+  "advancement": "reborn12k:reborn12k/iron_tier",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Silver",
+      "item": "reborn12k:silver_ingot",
+      "text": "Silver is precious metal. While Gold is better in any way possible in most applications, Silver is easier to obtain and lighter. However Silver is a better mana conduit and as such is always used as the basis for magical purposes."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:silver_ore",
+      "text": "Silver can be found in the Overworld between Y level -48 and 16 with a tendency to be in the middle, in decent-sized clusters."
+    }
+  ],
+  "sortnum": 103
+}

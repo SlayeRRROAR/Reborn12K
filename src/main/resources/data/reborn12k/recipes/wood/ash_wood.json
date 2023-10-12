@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "bark",
+    "pattern": [
+        "AA",
+        "AA"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:ash_log"
+        }
+    },
+    "result": {
+        "item": "reborn12k:ash_wood",
+        "count": 3
+    }
+}

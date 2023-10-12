@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:aluminum_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:aluminum_ingot",
+        "count": 9
+    },
+    "group": "aluminum_ingot"
+}

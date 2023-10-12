@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "reborn12k:dust_trinkets"
+  },
+  "result": "reborn12k:arcane_dust",
+  "count": 1
+}

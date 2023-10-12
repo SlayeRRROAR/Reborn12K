@@ -1,0 +1,19 @@
+{
+  "name": "Blacksmith",
+  "icon": "reborn12k:melter",
+  "category": "reborn12k:villager_category",
+  "pages": [
+      {
+        "type": "patchouli:text",
+        "title": "Blacksmith",
+        "text": "Metal is his way of life. Generally will buy and sell ingots, but has very rare stuff to show his friends. He is the only one can trade Universal Upgrade Templates because you know... that's his job."
+      },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:'reborn12k:blacksmith',level:1,type:'minecraft:plains'}}",
+      "name": "Blacksmith",
+      "text": "An unemployed villager can become a Blacksmith when standing near a Melter."
+    }
+  ],
+  "sortnum": 602
+}

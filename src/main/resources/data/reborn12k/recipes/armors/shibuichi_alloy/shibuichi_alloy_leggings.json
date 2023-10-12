@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "A A",
+        "A A"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:shibuichi_alloy_ingots"
+        }
+    },
+    "result": {
+        "item": "reborn12k:shibuichi_alloy_leggings",
+        "count": 1
+    }
+}

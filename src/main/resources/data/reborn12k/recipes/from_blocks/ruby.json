@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:ruby_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:ruby",
+        "count": 9
+    }
+}

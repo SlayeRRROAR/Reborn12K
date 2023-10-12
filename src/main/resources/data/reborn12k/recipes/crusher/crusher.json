@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "BCB",
+        "DDD"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:smooth_stone"
+        },
+        "B": {
+            "tag": "c:steel_ingots"
+        },
+        "C": {
+            "item": "minecraft:diamond"
+        },
+        "D": {
+            "tag": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "reborn12k:crusher",
+        "count": 1
+    }
+}

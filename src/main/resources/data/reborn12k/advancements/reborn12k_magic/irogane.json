@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/square_one",
+  "display": {
+    "icon": {
+      "item": "reborn12k:shibuichi_alloy_ingot"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.irogane.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.irogane.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_shibuichi_alloy_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:shibuichi_alloy_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_shibuichi_alloy_ingot"
+    ]
+  ]
+}

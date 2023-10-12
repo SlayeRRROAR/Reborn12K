@@ -1,0 +1,20 @@
+{
+  "name": "Enderium",
+  "icon": "reborn12k:enderium_ingot",
+  "advancement": "minecraft:story/enter_the_end",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Enderium",
+      "item": "reborn12k:enderium_ingot",
+      "text": "Enderium is an alloy made out of Lumium, Platinum and Resonant Ender.$(br)An alternative to Archeosite, Enderium tools and armor are more enchantable and just as strong than their counterpart, but not as durable."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:alloy_dusts/enderium_dust_craft",
+      "text": "Enderium can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 212
+}

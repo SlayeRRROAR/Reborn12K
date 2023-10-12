@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:wither_essence"
+  },
+  "result": "reborn12k:withered_shard",
+  "count": 1
+}

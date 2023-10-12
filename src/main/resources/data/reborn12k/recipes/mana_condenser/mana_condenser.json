@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABC",
+        "DED",
+        "BBB"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:rune_of_chaos"
+        },
+        "B": {
+            "item": "reborn12k:ash_planks"
+        },
+        "C": {
+            "item": "reborn12k:ethereal_rune"
+        },
+        "D": {
+            "item": "minecraft:obsidian"
+        },
+        "E": {
+            "item": "minecraft:cauldron"
+        }
+    },
+    "result": {
+        "item": "reborn12k:mana_condenser",
+        "count": 1
+    }
+}

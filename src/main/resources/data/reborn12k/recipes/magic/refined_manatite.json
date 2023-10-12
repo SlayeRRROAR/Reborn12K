@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "BCB",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "tag": "c:silver_ingots"
+        },
+        "B": {
+            "item": "minecraft:gold_ingot"
+        },
+        "C": {
+            "item": "reborn12k:manatite"
+        }
+    },
+    "result": {
+        "item": "reborn12k:refined_manatite",
+        "count": 1
+    }
+}

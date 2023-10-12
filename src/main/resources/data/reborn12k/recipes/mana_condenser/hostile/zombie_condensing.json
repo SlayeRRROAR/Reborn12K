@@ -1,0 +1,11 @@
+{
+  "type": "reborn12k:mana_condenser",
+  "ingredients": [
+    {
+      "item": "reborn12k:zombie_soul"
+    }
+  ],
+  "output": {
+    "item": "reborn12k:zombie_essence"
+  }
+}

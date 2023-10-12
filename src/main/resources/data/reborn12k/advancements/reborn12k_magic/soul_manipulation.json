@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/imprisonment",
+  "display": {
+    "icon": {
+      "item": "reborn12k:mana_condenser"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.soul_manipulation.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.soul_manipulation.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_mana_condenser": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:mana_condenser"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_mana_condenser"
+    ]
+  ]
+}

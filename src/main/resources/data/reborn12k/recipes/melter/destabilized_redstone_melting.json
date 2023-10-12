@@ -1,0 +1,14 @@
+{
+  "type": "reborn12k:melter",
+  "ingredients": [
+    {
+      "item": "reborn12k:destabilized_mixture"
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "output": {
+    "item": "reborn12k:destabilized_redstone_bucket"
+  }
+}

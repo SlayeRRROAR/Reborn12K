@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:tungstensteel_ingots"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:tungstensteel_dust"
+    }
+}

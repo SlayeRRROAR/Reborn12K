@@ -1,0 +1,34 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:into_blocks/magisteel_block"
+      ]
+    },
+    "criteria": {
+      "has_magisteel_ingot": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": [
+                "reborn12k:magisteel_ingot"
+              ]
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:magisteel_block"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_magisteel_ingot",
+        "has_the_recipe"
+      ]
+    ]
+  }

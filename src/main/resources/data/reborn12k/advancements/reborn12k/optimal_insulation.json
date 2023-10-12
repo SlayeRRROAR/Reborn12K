@@ -1,0 +1,35 @@
+{
+  "parent": "reborn12k:reborn12k/if_i_had_a_nickel",
+  "display": {
+    "icon": {
+      "item": "reborn12k:invar_ingot"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.optimal_insulation.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.optimal_insulation.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_invar_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:invar_ingots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_invar_ingot"
+    ]
+  ]
+}

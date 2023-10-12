@@ -1,0 +1,35 @@
+{
+  "replace": false,
+  "values": [
+    "reborn12k:band_of_fortitude",
+    "reborn12k:greater_band_of_fortitude",
+
+    "reborn12k:monster_claw",
+    "reborn12k:bloody_claw",
+
+    "reborn12k:tarnished_medallion",
+    "reborn12k:golden_medallion",
+
+    "reborn12k:worn_charm",
+    "reborn12k:lucky_charm",
+
+    "reborn12k:jetpack",
+    "reborn12k:angel_wings",
+    "reborn12k:demon_wings",
+    "reborn12k:bat_wings",
+
+    "reborn12k:gold_pouch",
+    "reborn12k:strong_spring",
+    "reborn12k:bloody_rose",
+    "reborn12k:endless_quiver",
+    "reborn12k:magnifying_glass",
+    "reborn12k:phoenix_plume",
+
+    "reborn12k:griffin_feather",
+    "reborn12k:aconitum",
+    "reborn12k:leviathan_eye",
+    "reborn12k:crystalized_ember",
+    "reborn12k:loaded_dice",
+    "reborn12k:basilisk_fang"
+  ]
+}

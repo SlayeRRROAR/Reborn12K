@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:raw_alloys/raw_shibuichi_alloy_craft"
+      ]
+    },
+    "criteria": {
+      "has_raw_copper": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:raw_copper_ores"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:raw_shibuichi_alloy"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_raw_copper",
+        "has_the_recipe"
+      ]
+    ]
+  }

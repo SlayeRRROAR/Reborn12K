@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:raw_lead_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:lead_dust",
+        "count": 2
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "tag": "c:chrome_ingots"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:chrome_dust",
+        "count": 1
+    },
+    "group": "chrome_dust"
+}

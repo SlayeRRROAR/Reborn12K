@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": {
+        "item": "reborn12k:universal_smithing_template"
+    },
+    "base": {
+        "item": "reborn12k:titanium_sword"
+    },
+    "addition": {
+        "tag": "c:advanced_alloy_ingots"
+    },
+    "result": {
+        "item": "reborn12k:advanced_alloy_sword"
+    }
+}

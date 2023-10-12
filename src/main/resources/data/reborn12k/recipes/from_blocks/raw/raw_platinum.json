@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:raw_platinum_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_platinum",
+        "count": 9
+    }
+}

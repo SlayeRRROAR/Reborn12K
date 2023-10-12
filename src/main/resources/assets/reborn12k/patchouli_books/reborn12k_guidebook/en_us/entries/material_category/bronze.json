@@ -1,0 +1,19 @@
+{
+  "name": "Bronze",
+  "icon": "reborn12k:bronze_ingot",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Bronze",
+      "item": "reborn12k:bronze_ingot",
+      "text": "Bronze is an alloy made out of Copper and Tin.$(br)An alternative to Iron, Bronze tools and armor are more durable than their counterpart, but not as strong or lightweight."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:alloy_dusts/bronze_dust_craft",
+      "text": "Bronze can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 201
+}

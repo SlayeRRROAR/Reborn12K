@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "reborn12k:block/crusher_top",
+    "front": "reborn12k:block/crusher_front",
+    "side": "reborn12k:block/crusher_side"
+  }
+}

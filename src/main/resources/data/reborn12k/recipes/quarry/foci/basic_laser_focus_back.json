@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "reborn12k:basic_laser_foci"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:basic_laser_focus",
+        "count": 1
+    }
+}

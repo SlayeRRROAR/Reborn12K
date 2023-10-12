@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:cobalt_dusts"
+        },
+        "B": {
+            "tag": "c:osmium_dusts"
+        },
+        "C": {
+            "tag": "c:tungstensteel_dusts"
+        }
+    },
+    "result": {
+        "item": "reborn12k:thelosite_dust",
+        "count": 1
+    },
+    "group": "thelosite_dust"
+}

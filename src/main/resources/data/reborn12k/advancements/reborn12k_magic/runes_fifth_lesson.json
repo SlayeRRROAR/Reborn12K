@@ -1,0 +1,50 @@
+{
+  "parent": "reborn12k:reborn12k_magic/runes_fourth_lesson",
+  "display": {
+    "icon": {
+      "item": "reborn12k:elemental_rune"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.runes_fifth_lesson.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.runes_fifth_lesson.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_elemental_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:elemental_rune"
+            ]
+          }
+        ]
+      }
+    },
+    "get_ethereal_rune": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:ethereal_rune"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_elemental_rune",
+      "get_ethereal_rune"
+    ]
+  ]
+}

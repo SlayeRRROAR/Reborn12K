@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "coals"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:coal_dust"
+    }
+}

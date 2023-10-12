@@ -1,0 +1,51 @@
+{
+  "parent": "reborn12k:reborn12k/root",
+  "display": {
+    "icon": {
+      "item": "reborn12k:bronze_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.iron_tier.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.iron_tier.description"
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "get_bronze_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:bronze_pickaxe"
+            ]
+          }
+        ]
+      }
+    },
+
+    "get_iron_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_bronze_pickaxe",
+      "get_iron_pickaxe"
+    ]
+  ]
+}

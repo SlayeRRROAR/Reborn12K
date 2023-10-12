@@ -1,0 +1,20 @@
+{
+  "name": "Shibuichi Alloy",
+  "icon": "reborn12k:shibuichi_alloy_ingot",
+  "advancement": "reborn12k:reborn12k/iron_tier",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Shibuichi Alloy",
+      "item": "reborn12k:shibuichi_alloy_ingot",
+      "text": "Shibuichi Alloy is a dark alloy made of Copper and Silver. Shibuichi means \"one-fourth\" and indicates the alloy composition: one part Silver to three parts Copper.$(br)An alternative to Diamond, Shibuichi Alloy tools and armor are significantly less durable than their counterpart, but keeping the same speed and enchantability."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:alloy_dusts/shibuichi_alloy_dust_craft",
+      "text": "Shibuichi Alloy can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 250
+}

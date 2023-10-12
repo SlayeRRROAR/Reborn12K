@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "tag": "c:raw_bronze_ores"
+    },
+    "result": "reborn12k:bronze_ingot",
+    "experience": 0.7,
+    "cookingtime": 200
+}

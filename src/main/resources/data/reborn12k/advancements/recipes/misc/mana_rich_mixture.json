@@ -1,0 +1,34 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:hammer/mana_rich_mixture"
+      ]
+    },
+    "criteria": {
+      "has_manatite": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "reborn12k:manatite"
+              ]
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:mana_rich_mixture"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_manatite",
+        "has_the_recipe"
+      ]
+    ]
+  }

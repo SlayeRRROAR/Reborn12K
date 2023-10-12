@@ -1,0 +1,20 @@
+{
+  "name": "Signalum",
+  "icon": "reborn12k:signalum_ingot",
+  "advancement": "minecraft:story/enter_the_nether",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Signalum",
+      "item": "reborn12k:signalum_ingot",
+      "text": "Signalum is an alloy made out of Silver and Destabilized Redstone.$(br)An alternative to Netherite, Signalum tools and armor are more enchantable and just as strong than their counterpart, but not as durable."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:alloy_dusts/signalum_dust_craft",
+      "text": "Signalum can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 210
+}

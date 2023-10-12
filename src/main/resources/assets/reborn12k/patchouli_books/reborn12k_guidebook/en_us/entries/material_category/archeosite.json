@@ -1,0 +1,20 @@
+{
+  "name": "Archeosite",
+  "icon": "reborn12k:archeosite_ingot",
+  "advancement": "minecraft:story/enter_the_end",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Archeosite",
+      "item": "reborn12k:archeosite_ingot",
+      "text": "Archeosite is an alloy made out of Netherite, Cobalt and Osmium. Tought to be the first alloy to ever exist, Archeosite is a strong metal, better than Netherite in any way, shape or form.$(br)Netherite tools and armor can be upgraded to this material."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:alloy_dusts/archeosite_dust_craft",
+      "text": "Archeosite can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 200
+}

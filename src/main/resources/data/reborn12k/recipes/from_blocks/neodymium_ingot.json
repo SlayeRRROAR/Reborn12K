@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:neodymium_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:neodymium_ingot",
+        "count": 9
+    },
+    "group": "neodymium_ingot"
+}

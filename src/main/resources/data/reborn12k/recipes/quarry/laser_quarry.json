@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "BCB",
+        "BDB"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:cooling_assembly"
+        },
+        "B": {
+            "tag": "c:aluminum_ingots"
+        },
+        "C": {
+            "item": "reborn12k:empty_machine_casing"
+        },
+        "D": {
+            "item": "reborn12k:collimated_laser_array"
+        }
+    },
+    "result": {
+        "item": "reborn12k:laser_quarry",
+        "count": 1
+    }
+}

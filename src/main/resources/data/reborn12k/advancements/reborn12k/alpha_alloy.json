@@ -1,0 +1,35 @@
+{
+  "parent": "reborn12k:reborn12k/bulletproof",
+  "display": {
+    "icon": {
+      "item": "reborn12k:advanced_alloy_ingot"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.alpha_alloy.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.alpha_alloy.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_advanced_alloy_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:advanced_alloy_ingots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_advanced_alloy_ingot"
+    ]
+  ]
+}

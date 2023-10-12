@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:from_blocks/uranium_ingot"
+      ]
+    },
+    "criteria": {
+      "has_uranium_block": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:uranium_blocks"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:uranium_ingot"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_uranium_block",
+        "has_the_recipe"
+      ]
+    ]
+  }

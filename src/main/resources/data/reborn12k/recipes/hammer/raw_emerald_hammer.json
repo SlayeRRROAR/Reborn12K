@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "item": "minecraft:emerald"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:emerald_dust",
+        "count": 1
+    }
+}

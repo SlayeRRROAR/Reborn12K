@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:armors/electrum/electrum_boots"
+      ]
+    },
+    "criteria": {
+      "has_electrum_ingot": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:electrum_ingots"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:electrum_boots"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_electrum_ingot",
+        "has_the_recipe"
+      ]
+    ]
+  }

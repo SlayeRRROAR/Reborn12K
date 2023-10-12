@@ -1,0 +1,14 @@
+{
+  "name": "Ender Dust",
+  "icon": "reborn12k:ender_dust",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Ender Dust",
+      "item": "reborn12k:ender_dust",
+      "text": "Ender Dust is a fine powder that has not exhausted the teleportive properties of the pearl (which are usually consumed on impact). Ender Dust can only be obtained by grinding an Ender Pearl in a Crusher."
+    }
+  ],
+  "sortnum": 302
+}

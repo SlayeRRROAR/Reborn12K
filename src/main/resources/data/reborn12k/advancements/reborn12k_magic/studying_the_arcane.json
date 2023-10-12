@@ -1,0 +1,37 @@
+{
+  "parent": "reborn12k:reborn12k_magic/enlightenment",
+  "display": {
+    "icon": {
+      "item": "reborn12k:arcane_artifact"
+    },
+    "title": {
+      "translate": "advancements.reborn12k_magic.studying_the_arcane.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k_magic.studying_the_arcane.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_arcane_artifact": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:arcane_artifact"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_arcane_artifact"
+    ]
+  ]
+}

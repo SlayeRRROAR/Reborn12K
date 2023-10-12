@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "item": "minecraft:netherite_ingot"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:netherite_dust"
+    }
+}

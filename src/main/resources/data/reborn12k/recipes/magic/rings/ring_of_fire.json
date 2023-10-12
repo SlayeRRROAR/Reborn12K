@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:awakened_golden_ring"
+        },
+        {
+            "item": "reborn12k:volcanic_manatite"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:ring_of_fire",
+        "count": 1
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "reborn12k:fragment_trinkets"
+  },
+  "result": "reborn12k:magical_fragment",
+  "count": 1
+}

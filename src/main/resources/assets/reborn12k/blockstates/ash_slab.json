@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "reborn12k:block/ash_slab"
+    },
+    "type=double": {
+      "model": "reborn12k:block/ash_planks"
+    },
+    "type=top": {
+      "model": "reborn12k:block/ash_slab_top"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "reborn12k:reborn12k/root",
+  "display": {
+    "icon": {
+      "item": "reborn12k:electrum_ingot"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.shocking.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.shocking.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_electrum_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "c:electrum_ingots"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_electrum_ingot"
+    ]
+  ]
+}

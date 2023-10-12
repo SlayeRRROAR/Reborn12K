@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "reborn12k:spider_essence"
+  },
+  "result": "minecraft:spider_eye",
+  "count": 1
+}

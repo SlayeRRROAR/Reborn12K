@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:raw_constantan_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:raw_constantan",
+        "count": 9
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Constantan",
+  "icon": "reborn12k:constantan_ingot",
+  "advancement": "reborn12k:reborn12k/iron_tier",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Constantan",
+      "item": "reborn12k:constantan_ingot",
+      "text": "Constantan is an alloy made out of Copper and Nickel."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:alloy_dusts/constantan_dust_craft",
+      "text": "Constantan can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 202
+}

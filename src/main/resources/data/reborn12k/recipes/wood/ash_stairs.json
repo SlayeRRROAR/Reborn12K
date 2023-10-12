@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "A  ",
+        "AA ",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:ash_planks"
+        }
+    },
+    "result": {
+        "item": "reborn12k:ash_stairs",
+        "count": 4
+    }
+}

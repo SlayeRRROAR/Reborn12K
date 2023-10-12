@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:iridium_dusts"
+        },
+        "B": {
+            "tag": "c:advanced_alloy_dusts"
+        },
+        "C": {
+            "tag": "c:diamond_dust"
+        }
+    },
+    "result": {
+        "item": "reborn12k:iridium_alloy_dust",
+        "count": 1
+    },
+    "group": "iridium_alloy_dust"
+}

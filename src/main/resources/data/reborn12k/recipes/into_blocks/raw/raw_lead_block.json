@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:raw_lead_ores"
+        }
+    },
+    "result": {
+        "item": "reborn12k:raw_lead_block",
+        "count": 1
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "reborn12k:orichalcum_dust"
+    },
+    "result": "reborn12k:orichalcum_ingot",
+    "experience": 1.5,
+    "cookingtime": 200
+}

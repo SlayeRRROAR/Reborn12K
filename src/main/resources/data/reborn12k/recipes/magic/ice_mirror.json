@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "reborn12k:magic_mirror",
+      "data": {
+        "require": {
+          "Damage": "$..0"
+        }
+      }
+    },
+    {
+      "item": "minecraft:ice"
+    }
+  ],
+  "result": {
+    "item": "reborn12k:ice_mirror",
+    "count": 1
+  },
+  "group": "ice_mirror"
+}

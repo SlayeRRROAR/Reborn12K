@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:raw_cobalt_ores"
+        }
+    },
+    "result": {
+        "item": "reborn12k:raw_cobalt_block",
+        "count": 1
+    }
+}

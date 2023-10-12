@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABC"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:titanium_dusts"
+        },
+        "B": {
+            "tag": "c:vanadium_dusts"
+        },
+        "C": {
+            "tag": "c:aluminum_dusts"
+        }
+    },
+    "result": {
+        "item": "reborn12k:advanced_alloy_dust",
+        "count": 1
+    },
+    "group": "advanced_alloy_dust"
+}

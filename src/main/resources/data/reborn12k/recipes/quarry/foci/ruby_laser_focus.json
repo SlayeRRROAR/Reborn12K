@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:advanced_laser_focus"
+        },
+        {
+            "tag": "c:rubies"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:ruby_laser_focus",
+        "count": 1
+    }
+}

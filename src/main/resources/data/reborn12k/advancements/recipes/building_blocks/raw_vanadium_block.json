@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:into_blocks/raw/raw_vanadium_block"
+      ]
+    },
+    "criteria": {
+      "has_raw_vanadium": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:raw_vanadium_ores"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:raw_vanadium_block"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_raw_vanadium",
+        "has_the_recipe"
+      ]
+    ]
+  }

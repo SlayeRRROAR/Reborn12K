@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:signalum_blocks"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:signalum_ingot",
+        "count": 9
+    },
+    "group": "signalum_ingot"
+}

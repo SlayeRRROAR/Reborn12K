@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": {
+        "item": "reborn12k:universal_smithing_template"
+    },
+    "base": {
+        "item": "reborn12k:comfy_slippers"
+    },
+    "addition": {
+        "item": "reborn12k:mana_spark"
+    },
+    "result": {
+        "item": "reborn12k:loafers"
+    }
+}

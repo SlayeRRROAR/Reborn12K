@@ -1,0 +1,34 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:magic/ring/ring_of_fire"
+      ]
+    },
+    "criteria": {
+      "has_awakened_golden_ring": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "reborn12k:awakened_golden_ring"
+              ]
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:ring_of_fire"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_awakened_golden_ring",
+        "has_the_recipe"
+      ]
+    ]
+  }

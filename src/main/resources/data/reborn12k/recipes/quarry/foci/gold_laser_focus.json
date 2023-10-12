@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:basic_laser_focus"
+        },
+        {
+            "item": "minecraft:raw_gold"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:gold_laser_focus",
+        "count": 1
+    }
+}

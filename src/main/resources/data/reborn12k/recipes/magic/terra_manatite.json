@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "ABA",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:rune_of_nature"
+        },
+        "B": {
+            "item": "reborn12k:refined_manatite"
+        }
+    },
+    "result": {
+        "item": "reborn12k:terra_manatite",
+        "count": 1
+    },
+    "group": "terra_manatite"
+}

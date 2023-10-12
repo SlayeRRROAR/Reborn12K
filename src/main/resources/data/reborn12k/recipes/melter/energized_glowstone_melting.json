@@ -1,0 +1,14 @@
+{
+  "type": "reborn12k:melter",
+  "ingredients": [
+    {
+      "item": "reborn12k:energized_mixture"
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "output": {
+    "item": "reborn12k:energized_glowstone_bucket"
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "reborn12k:basic_laser_focus"
+        },
+        {
+            "tag": "c:raw_aluminum_ores"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:aluminum_laser_focus",
+        "count": 1
+    }
+}

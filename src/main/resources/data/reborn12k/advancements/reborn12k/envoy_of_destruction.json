@@ -1,0 +1,52 @@
+{
+  "parent": "reborn12k:reborn12k/the_last_end",
+  "display": {
+    "icon": {
+      "item": "reborn12k:thelosite_chestplate"
+    },
+    "title": {
+      "translate": "advancements.reborn12k.envoy_of_destruction.title"
+    },
+    "description": {
+      "translate": "advancements.reborn12k.envoy_of_destruction.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thelosite_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "reborn12k:thelosite_helmet"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:thelosite_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:thelosite_leggings"
+            ]
+          },
+          {
+            "items": [
+              "reborn12k:thelosite_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "thelosite_armor"
+    ]
+  ]
+}

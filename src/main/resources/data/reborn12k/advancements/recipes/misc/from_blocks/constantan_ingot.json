@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+      "recipes": [
+        "reborn12k:from_blocks/constantan_ingot"
+      ]
+    },
+    "criteria": {
+      "has_constantan_block": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "tag": "c:constantan_blocks"
+            }
+          ]
+        }
+      },
+      "has_the_recipe": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "reborn12k:constantan_ingot"
+        }
+      }
+    },
+    "requirements": [
+      [
+        "has_constantan_block",
+        "has_the_recipe"
+      ]
+    ]
+  }

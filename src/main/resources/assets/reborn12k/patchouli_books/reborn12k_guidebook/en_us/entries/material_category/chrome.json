@@ -1,0 +1,20 @@
+{
+  "name": "Chrome",
+  "icon": "reborn12k:chrome_ingot",
+  "advancement": "reborn12k:reborn12k/iron_tier",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Chrome",
+      "item": "reborn12k:chrome_ingot",
+      "text": "Shiny and resistant, Chrome has found most of its uses in the production of rust-resistant alloys, mainly stainless steel."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "reborn12k:chromite_ore",
+      "text": "Chrome can easily be found in the Overworld between Y level -64 and 48 with a tendency to be in the middle, in decent-sized clusters."
+    }
+  ],
+  "sortnum": 106
+}

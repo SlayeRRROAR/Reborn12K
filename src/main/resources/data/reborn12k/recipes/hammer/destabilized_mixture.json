@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "item": "minecraft:redstone_block"
+        },
+        {
+            "item": "minecraft:redstone"
+        },
+        {
+            "tag": "c:copper_dusts"
+        },
+        {
+            "tag": "c:copper_dusts"
+        },
+        {
+            "tag": "c:copper_dusts"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:destabilized_mixture",
+        "count": 1
+    }
+}

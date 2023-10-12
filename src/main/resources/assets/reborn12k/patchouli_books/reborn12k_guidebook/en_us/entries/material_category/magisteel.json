@@ -1,0 +1,19 @@
+{
+  "name": "Magisteel",
+  "icon": "reborn12k:magisteel_ingot",
+  "advancement": "reborn12k:reborn12k_magic/irogane",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Magisteel",
+      "item": "reborn12k:magisteel_ingot",
+      "text": "Magisteel is an alloy made out of Steel, Silver and Gold. Each of the metals used represent a facet of the alloy: Steel for strength, Silver for magical affinity and Gold for purity.$(br)An alternative to Diamond, Magisteel tools and armor are stronger, tougher and easier to enchant."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Magisteel is not craftable or naturally obtainable. Its creation is only possible with a Steel Block via infusion of mana through the use of an Ethereal Rune. As already said, crafting won't work, this process must be done $(o)en plein air$()."
+    }
+  ],
+  "sortnum": 251
+}

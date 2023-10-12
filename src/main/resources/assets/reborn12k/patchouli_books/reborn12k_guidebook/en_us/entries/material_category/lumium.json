@@ -1,0 +1,20 @@
+{
+  "name": "Lumium",
+  "icon": "reborn12k:lumium_ingot",
+  "advancement": "minecraft:story/enter_the_nether",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Lumium",
+      "item": "reborn12k:lumium_ingot",
+      "text": "Lumium is an alloy made out of Silver and Energized Glowstone."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:alloy_dusts/lumium_dust_craft",
+      "text": "Lumium can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 211
+}

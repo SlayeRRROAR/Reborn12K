@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "tag": "c:vanadium_dusts"
+    },
+    "result": "reborn12k:vanadium_ingot",
+    "experience": 1.0,
+    "cookingtime": 200
+}

@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "CDC",
+        "ABA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:invar_ingots"
+        },
+        "B": {
+            "item": "reborn12k:empty_fuel_cell"
+        },
+        "C": {
+            "tag": "c:constantan_ingots"
+        },
+        "D": {
+            "tag": "c:glass_panes"
+        }
+    },
+    "result": {
+        "item": "reborn12k:basic_laser_focus",
+        "count": 1
+    }
+}

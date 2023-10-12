@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:tin_ingots"
+        }
+    },
+    "result": {
+        "item": "reborn12k:tin_block",
+        "count": 1
+    }
+}

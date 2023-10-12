@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "c:silver_dusts"
+        },
+        {
+            "tag": "sand"
+        },
+        {
+            "item": "reborn12k:destabilized_redstone_bucket"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:signalum_dust",
+        "count": 4
+    },
+    "group": "signalum_dust"
+}

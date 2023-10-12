@@ -1,0 +1,18 @@
+{
+  "name": "Manufactory",
+  "icon": "reborn12k:manufactory",
+  "category": "reborn12k:block_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Manufactory",
+      "text": "The Manufactory is a utility block. It requires two buckets and a targetable stone to work, nothing will not be consumed and will run indefinitely. A bucket of lava is always required, the other bucket can be water for Overworld resources, energized glowstone for Nether resources and resonant ender for End resources."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:manufactory/manufactory",
+      "name": "manufactory"
+    }
+  ],
+  "sortnum": 502
+}

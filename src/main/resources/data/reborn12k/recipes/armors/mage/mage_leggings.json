@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "A A",
+        "A A"
+    ],
+    "key": {
+        "A": {
+            "item": "reborn12k:manaweave"
+        }
+    },
+    "result": {
+        "item": "reborn12k:mage_leggings",
+        "count": 1
+    }
+}

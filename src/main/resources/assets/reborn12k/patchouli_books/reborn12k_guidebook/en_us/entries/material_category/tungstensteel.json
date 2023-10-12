@@ -1,0 +1,20 @@
+{
+  "name": "Tungstensteel",
+  "icon": "reborn12k:tungstensteel_ingot",
+  "advancement": "minecraft:story/enter_the_nether",
+  "category": "reborn12k:material_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Tungstensteel",
+      "item": "reborn12k:tungstensteel_ingot",
+      "text": "Tungstensteel is an alloy made out of Steel, Tungsten and Vanadium.$(br)An alternative to Netherite, Tungstensteel tools and armor are stronger and just as durable than their counterpart, but not as enchantable."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "reborn12k:alloy_dusts/tungstensteel_dust_craft",
+      "text": "Tungstensteel can only be crafted and is not naturally obtainable."
+    }
+  ],
+  "sortnum": 205
+}
