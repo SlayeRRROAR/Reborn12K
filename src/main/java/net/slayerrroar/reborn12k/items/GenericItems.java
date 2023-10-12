@@ -189,14 +189,6 @@ public class GenericItems {
             .statusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 20*120, 1), 0.1f)
             .alwaysEdible().build()).rarity(Rarity.EPIC)));
 
-    public static final Item FLOUR = registerItem("flour", new Item(new FabricItemSettings().food(new FoodComponent
-            .Builder().snack().hunger(1).saturationModifier(0.2f).build())
-    ));
-
-    public static final Item DOUGH = registerItem("dough", new Item(new FabricItemSettings().food(new FoodComponent
-            .Builder().snack().hunger(2).saturationModifier(0.4f).build())
-    ));
-
 
     // Mob Drops
 
@@ -365,9 +357,6 @@ public class GenericItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, CHERRY);
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_CHERRY);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENCHANTED_GOLDEN_CHERRY);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, FLOUR);
-        addToItemGroup(ItemGroupUtil.REBORN12K, DOUGH);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, WITHERED_SHARD);
         addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_SKULL_FRAGMENT);
