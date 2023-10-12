@@ -9,8 +9,8 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class UraniumBlocks extends Block {
-    public UraniumBlocks(Settings settings) {
+public class UraniumBlock extends Block {
+    public UraniumBlock(Settings settings) {
         super(settings);
     }
 

@@ -13,7 +13,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.custom.UraniumBlocks;
+import net.slayerrroar.reborn12k.blocks.custom.UraniumBlock;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 import net.slayerrroar.reborn12k.world.features.tree.*;
 
@@ -94,7 +94,7 @@ public class GenericBlocks {
     public static final Block TUNGSTEN_BLOCK = registerBlock("tungsten_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(8f).resistance(8f)), ItemGroupUtil.REBORN12K);
     public static final Block VANADIUM_BLOCK = registerBlock("vanadium_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(8f).resistance(8f)), ItemGroupUtil.REBORN12K);
     public static final Block NEODYMIUM_BLOCK = registerBlock("neodymium_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(7f).resistance(8f)), ItemGroupUtil.REBORN12K);
-    public static final Block URANIUM_BLOCK = registerBlock("uranium_block", new UraniumBlocks(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(8f).resistance(8f)), ItemGroupUtil.REBORN12K);
+    public static final Block URANIUM_BLOCK = registerBlock("uranium_block", new UraniumBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(8f).resistance(8f)), ItemGroupUtil.REBORN12K);
 
     public static final Block COBALT_BLOCK = registerBlock("cobalt_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(9f).resistance(18f)), ItemGroupUtil.REBORN12K);
     public static final Block OSMIUM_BLOCK = registerBlock("osmium_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(10f).resistance(30f)), ItemGroupUtil.REBORN12K);
@@ -139,7 +139,7 @@ public class GenericBlocks {
     public static final Block RAW_TUNGSTEN_BLOCK = registerBlock("raw_tungsten_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(8f).resistance(8f)), ItemGroupUtil.REBORN12K);
     public static final Block RAW_VANADIUM_BLOCK = registerBlock("raw_vanadium_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(8f).resistance(8f)), ItemGroupUtil.REBORN12K);
     public static final Block RAW_NEODYMIUM_BLOCK = registerBlock("raw_neodymium_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(8f).resistance(8f)), ItemGroupUtil.REBORN12K);
-    public static final Block RAW_URANIUM_BLOCK = registerBlock("raw_uranium_block", new UraniumBlocks(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(8f).resistance(8f)), ItemGroupUtil.REBORN12K);
+    public static final Block RAW_URANIUM_BLOCK = registerBlock("raw_uranium_block", new UraniumBlock(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(8f).resistance(8f)), ItemGroupUtil.REBORN12K);
 
     public static final Block RAW_COBALT_BLOCK = registerBlock("raw_cobalt_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(9f).resistance(18f)), ItemGroupUtil.REBORN12K);
     public static final Block RAW_OSMIUM_BLOCK = registerBlock("raw_osmium_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).requiresTool().sounds(BlockSoundGroup.METAL).hardness(10f).resistance(30f)), ItemGroupUtil.REBORN12K);
