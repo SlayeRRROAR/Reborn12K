@@ -38,6 +38,9 @@ public class GenericBlocks {
     public static final Block ASH_SAPLING = registerBlock("ash_sapling", new SaplingBlock(new AshSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly()), ItemGroupUtil.REBORN12K);
     public static final Block SLIMY_SAPLING = registerBlock("slimy_sapling", new SaplingBlock(new SlimySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).noCollision().nonOpaque().breakInstantly()), ItemGroupUtil.REBORN12K);
 
+    public static final Block POTTED_ASH_SAPLING = registerBlockWithoutItem("potted_ash_sapling", new FlowerPotBlock(ASH_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
+    public static final Block POTTED_SLIMY_SAPLING = registerBlockWithoutItem("potted_slimy_sapling", new FlowerPotBlock(SLIMY_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
+
     public static final Block ASH_STAIRS = registerBlock("ash_stairs", new StairsBlock(GenericBlocks.ASH_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)), ItemGroupUtil.REBORN12K);
 
     public static final Block ASH_SLAB = registerBlock("ash_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB)), ItemGroupUtil.REBORN12K);
@@ -165,6 +168,9 @@ public class GenericBlocks {
 
     private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> group) {
         registerBlockItem(name, block, group);
+        return Registry.register(Registries.BLOCK, new Identifier(Reborn12K.MOD_ID, name), block);
+    }
+    private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(Reborn12K.MOD_ID, name), block);
     }
 
