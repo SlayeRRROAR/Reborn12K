@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "reborn12k:block/laser_quarry_side"
+    "all": "reborn12k:block/quarry_side"
   }
 }

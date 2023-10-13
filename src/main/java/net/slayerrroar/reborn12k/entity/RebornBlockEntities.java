@@ -18,7 +18,7 @@ public class RebornBlockEntities {
     public static BlockEntityType<ManufactoryBlockEntity> MANUFACTORY;
     public static BlockEntityType<MelterBlockEntity> MELTER;
 
-    public static BlockEntityType<QuarryBlockEntity> LASER_QUARRY;
+    public static BlockEntityType<QuarryBlockEntity> QUARRY;
 
     public static void register(){
 
@@ -49,10 +49,10 @@ public class RebornBlockEntities {
                 FabricBlockEntityTypeBuilder.create(MelterBlockEntity::new,
                         AdvancedBlocks.MELTER).build(null));
 
-        LASER_QUARRY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
-                new Identifier(Reborn12K.MOD_ID, "laser_quarry"),
+        QUARRY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
+                new Identifier(Reborn12K.MOD_ID, "quarry"),
                 FabricBlockEntityTypeBuilder.create(QuarryBlockEntity::new,
-                        AdvancedBlocks.LASER_QUARRY).build(null));
+                        AdvancedBlocks.QUARRY).build(null));
 
     }
 

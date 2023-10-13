@@ -2,7 +2,7 @@
   "parent": "reborn12k:reborn12k/optimal_insulation",
   "display": {
     "icon": {
-      "item": "reborn12k:laser_quarry"
+      "item": "reborn12k:quarry"
     },
     "title": {
       "translate": "advancements.reborn12k.cutting_edge.title"
@@ -16,13 +16,13 @@
     "hidden": false
   },
   "criteria": {
-    "get_laser_quarry": {
+    "get_quarry": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "reborn12k:laser_quarry"
+              "reborn12k:quarry"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "get_laser_quarry"
+      "get_quarry"
     ]
   ]
 }

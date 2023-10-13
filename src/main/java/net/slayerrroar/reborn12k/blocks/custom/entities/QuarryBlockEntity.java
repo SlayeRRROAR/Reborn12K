@@ -45,7 +45,7 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
     private int maxProgress = 120;
 
     public QuarryBlockEntity(BlockPos blockPos, BlockState state) {
-        super(RebornBlockEntities.LASER_QUARRY, blockPos, state);
+        super(RebornBlockEntities.QUARRY, blockPos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {
@@ -76,7 +76,7 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
 
     @Override
     public Text getDisplayName() {
-        return Text.translatable("block.reborn12k.laser_quarry");
+        return Text.translatable("block.reborn12k.quarry");
     }
 
     @Override
