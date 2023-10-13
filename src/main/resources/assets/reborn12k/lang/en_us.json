@@ -877,7 +877,7 @@
     "block.reborn12k.manufactory": "Manufactory",
     "block.reborn12k.melter": "Melter",
 
-    "block.reborn12k.laser_quarry": "Laser Quarry",
+    "block.reborn12k.quarry": "Quarry",
 
 
     "block.reborn12k.ash_log": "Ash Log",
@@ -888,6 +888,7 @@
 
     "block.reborn12k.ash_leaves": "Ash Leaves",
     "block.reborn12k.ash_sapling": "Ash Sapling",
+    "block.reborn12k.potted_ash_sapling": "Potted Sapling",
 
     "block.reborn12k.ash_stairs": "Ash Stairs",
     "block.reborn12k.ash_slab": "Ash Slab",
@@ -902,6 +903,7 @@
     "block.reborn12k.slimy_log": "Slimy Log",
     "block.reborn12k.slimy_leaves": "Slimy Leaves",
     "block.reborn12k.slimy_sapling": "Slimy Sapling",
+    "block.reborn12k.potted_slimy_sapling": "Potted Slimy Sapling",
 
 
     "block.reborn12k.diorite_bricks": "Diorite Bricks",
