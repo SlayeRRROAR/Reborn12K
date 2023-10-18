@@ -1087,7 +1087,7 @@
     "item.reborn12k.fuel_cell.tooltip": "§4Remaining uses: %s",
 
     "item.reborn12k.laser_focus.tooltip1": "§8Can be used in",
-    "item.reborn12k.laser_focus.tooltip2": "§8a §4Laser Quarry",
+    "item.reborn12k.laser_focus.tooltip2": "§8a §4Quarry",
     "item.reborn12k.laser_focus.tooltip3": "§4Must be set before use",
 
     "item.reborn12k.soul_vessel.tooltip1": "§8Throw it to a mob to",
@@ -1184,7 +1184,7 @@
     "advancements.reborn12k.optimal_insulation.title": "Optimal Insulation",
     "advancements.reborn12k.optimal_insulation.description": "Obtain an Invar Ingot",
     "advancements.reborn12k.cutting_edge.title": "Cutting Edge",
-    "advancements.reborn12k.cutting_edge.description": "Craft a Laser Quarry",
+    "advancements.reborn12k.cutting_edge.description": "Craft a Quarry",
 
     "advancements.reborn12k.thermoelectric_balance.title": "Thermoelectric Balance",
     "advancements.reborn12k.thermoelectric_balance.description": "Obtain a Constantan Ingot",
