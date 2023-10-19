@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "tag": "c:tin_ingots"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:tin_dust",
+        "count": 1
+    },
+    "group": "tin_dust"
+}

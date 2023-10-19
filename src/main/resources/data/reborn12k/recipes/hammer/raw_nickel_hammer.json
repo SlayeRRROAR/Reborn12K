@@ -5,12 +5,12 @@
             "tag": "reborn12k:hammers"
         },
         {
-            "tag": "c:nickel_ingots"
+            "tag": "c:raw_nickel_ores"
         }
     ],
     "result": {
-        "item": "reborn12k:neodymium_dust",
+        "item": "reborn12k:nickel_dust",
         "count": 1
     },
-    "group": "neodymium_dust"
+    "group": "nickel_dust"
 }

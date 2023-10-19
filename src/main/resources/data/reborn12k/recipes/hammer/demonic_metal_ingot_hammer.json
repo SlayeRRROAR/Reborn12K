@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "tag": "c:demonic_metal_ingots"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:demonic_metal_dust",
+        "count": 1
+    },
+    "group": "demonic_metal_dust_dust"
+}
