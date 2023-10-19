@@ -396,58 +396,51 @@ public class RebornItems {
 
 
     public static final Item WINDSTORM_WAND = registerItem ("windstorm_wand", new WindstormWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
-    public static final Item WINDSTORM_SCEPTER = registerItem ("windstorm_scepter", new WindstormScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
-    public static final Item WINDSTORM_ROD = registerItem ("windstorm_rod", new WindstormRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
-    public static final Item WINDSTORM_STAFF = registerItem ("windstorm_staff", new WindstormStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
-
     public static final Item VIRIDIAN_WAND = registerItem ("viridian_wand", new ViridianWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
-    public static final Item VIRIDIAN_SCEPTER = registerItem ("viridian_scepter", new ViridianScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
-    public static final Item VIRIDIAN_ROD = registerItem ("viridian_rod", new ViridianRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
-    public static final Item VIRIDIAN_STAFF = registerItem ("viridian_staff", new ViridianStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
-
     public static final Item ABYSS_WAND = registerItem ("abyss_wand", new AbyssWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
-    public static final Item ABYSS_SCEPTER = registerItem ("abyss_scepter", new AbyssScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
-    public static final Item ABYSS_ROD = registerItem ("abyss_rod", new AbyssRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
-    public static final Item ABYSS_STAFF = registerItem ("abyss_staff", new AbyssStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
-
     public static final Item VOLCANIC_WAND = registerItem ("volcanic_wand", new VolcanicWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
-    public static final Item VOLCANIC_SCEPTER = registerItem ("volcanic_scepter", new VolcanicScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
-    public static final Item VOLCANIC_ROD = registerItem ("volcanic_rod", new VolcanicRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
-    public static final Item VOLCANIC_STAFF = registerItem ("volcanic_staff", new VolcanicStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
-
     public static final Item SUNLIGHT_WAND = registerItem ("sunlight_wand", new SunlightWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
-    public static final Item SUNLIGHT_SCEPTER = registerItem ("sunlight_scepter", new SunlightScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
-    public static final Item SUNLIGHT_ROD = registerItem ("sunlight_rod", new SunlightRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
-    public static final Item SUNLIGHT_STAFF = registerItem ("sunlight_staff", new SunlightStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
-
     public static final Item NOVILUNIUM_WAND = registerItem ("novilunium_wand", new NoviluniumWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
-    public static final Item NOVILUNIUM_SCEPTER = registerItem ("novilunium_scepter", new NoviluniumScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
-    public static final Item NOVILUNIUM_ROD = registerItem ("novilunium_rod", new NoviluniumRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
-    public static final Item NOVILUNIUM_STAFF = registerItem ("novilunium_staff", new NoviluniumStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
-
-    public static final Item FERRUM_WAND = registerItem ("ferrum_wand", new FerrumWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
-    public static final Item FERRUM_SCEPTER = registerItem ("ferrum_scepter", new FerrumScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
-    public static final Item FERRUM_ROD = registerItem ("ferrum_rod", new FerrumRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
-    public static final Item FERRUM_STAFF = registerItem ("ferrum_staff", new FerrumStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
-
-    public static final Item TERRA_WAND = registerItem ("terra_wand", new TerraWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
-    public static final Item TERRA_SCEPTER = registerItem ("terra_scepter", new TerraScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
-    public static final Item TERRA_ROD = registerItem ("terra_rod", new TerraRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
-    public static final Item TERRA_STAFF = registerItem ("terra_staff", new TerraStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
-
-    public static final Item GLACIAL_WAND = registerItem ("glacial_wand", new GlacialWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
-    public static final Item GLACIAL_SCEPTER = registerItem ("glacial_scepter", new GlacialScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
-    public static final Item GLACIAL_ROD = registerItem ("glacial_rod", new GlacialRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
-    public static final Item GLACIAL_STAFF = registerItem ("glacial_staff", new GlacialStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
-
     public static final Item THUNDERBOLT_WAND = registerItem ("thunderbolt_wand", new ThunderboltWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
-    public static final Item THUNDERBOLT_SCEPTER = registerItem ("thunderbolt_scepter", new ThunderboltScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
-    public static final Item THUNDERBOLT_ROD = registerItem ("thunderbolt_rod", new ThunderboltRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
-    public static final Item THUNDERBOLT_STAFF = registerItem ("thunderbolt_staff", new ThunderboltStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
-
+    public static final Item TERRA_WAND = registerItem ("terra_wand", new TerraWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
+    public static final Item GLACIAL_WAND = registerItem ("glacial_wand", new GlacialWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
+    public static final Item FERRUM_WAND = registerItem ("ferrum_wand", new FerrumWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
     public static final Item CRIMSON_WAND = registerItem ("crimson_wand", new CrimsonWand(new FabricItemSettings().recipeRemainder(WOODEN_WAND).maxCount(1).fireproof()));
+
+    public static final Item WINDSTORM_SCEPTER = registerItem ("windstorm_scepter", new WindstormScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
+    public static final Item VIRIDIAN_SCEPTER = registerItem ("viridian_scepter", new ViridianScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
+    public static final Item ABYSS_SCEPTER = registerItem ("abyss_scepter", new AbyssScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
+    public static final Item VOLCANIC_SCEPTER = registerItem ("volcanic_scepter", new VolcanicScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
+    public static final Item SUNLIGHT_SCEPTER = registerItem ("sunlight_scepter", new SunlightScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
+    public static final Item NOVILUNIUM_SCEPTER = registerItem ("novilunium_scepter", new NoviluniumScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
+    public static final Item THUNDERBOLT_SCEPTER = registerItem ("thunderbolt_scepter", new ThunderboltScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
+    public static final Item TERRA_SCEPTER = registerItem ("terra_scepter", new TerraScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
+    public static final Item GLACIAL_SCEPTER = registerItem ("glacial_scepter", new GlacialScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
+    public static final Item FERRUM_SCEPTER = registerItem ("ferrum_scepter", new FerrumScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
     public static final Item CRIMSON_SCEPTER = registerItem ("crimson_scepter", new CrimsonScepter(new FabricItemSettings().recipeRemainder(SILVER_SCEPTER).maxCount(1).fireproof().rarity(Rarity.UNCOMMON)));
+
+    public static final Item WINDSTORM_ROD = registerItem ("windstorm_rod", new WindstormRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
+    public static final Item VIRIDIAN_ROD = registerItem ("viridian_rod", new ViridianRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
+    public static final Item ABYSS_ROD = registerItem ("abyss_rod", new AbyssRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
+    public static final Item VOLCANIC_ROD = registerItem ("volcanic_rod", new VolcanicRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
+    public static final Item SUNLIGHT_ROD = registerItem ("sunlight_rod", new SunlightRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
+    public static final Item NOVILUNIUM_ROD = registerItem ("novilunium_rod", new NoviluniumRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
+    public static final Item THUNDERBOLT_ROD = registerItem ("thunderbolt_rod", new ThunderboltRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
+    public static final Item TERRA_ROD = registerItem ("terra_rod", new TerraRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
+    public static final Item GLACIAL_ROD = registerItem ("glacial_rod", new GlacialRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
+    public static final Item FERRUM_ROD = registerItem ("ferrum_rod", new FerrumRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
     public static final Item CRIMSON_ROD = registerItem ("crimson_rod", new CrimsonRod(new FabricItemSettings().recipeRemainder(GOLDEN_ROD).maxCount(1).fireproof().rarity(Rarity.RARE)));
+
+    public static final Item WINDSTORM_STAFF = registerItem ("windstorm_staff", new WindstormStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+    public static final Item VIRIDIAN_STAFF = registerItem ("viridian_staff", new ViridianStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+    public static final Item ABYSS_STAFF = registerItem ("abyss_staff", new AbyssStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+    public static final Item VOLCANIC_STAFF = registerItem ("volcanic_staff", new VolcanicStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+    public static final Item SUNLIGHT_STAFF = registerItem ("sunlight_staff", new SunlightStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+    public static final Item NOVILUNIUM_STAFF = registerItem ("novilunium_staff", new NoviluniumStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+    public static final Item THUNDERBOLT_STAFF = registerItem ("thunderbolt_staff", new ThunderboltStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+    public static final Item TERRA_STAFF = registerItem ("terra_staff", new TerraStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+    public static final Item GLACIAL_STAFF = registerItem ("glacial_staff", new GlacialStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+    public static final Item FERRUM_STAFF = registerItem ("ferrum_staff", new FerrumStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
     public static final Item CRIMSON_STAFF = registerItem ("crimson_staff", new CrimsonStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
 
 
