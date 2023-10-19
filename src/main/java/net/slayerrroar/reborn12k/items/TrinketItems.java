@@ -19,6 +19,7 @@ import net.slayerrroar.reborn12k.items.custom.trinkets.shoes.*;
 import net.slayerrroar.reborn12k.items.custom.trinkets.trinket.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
+@SuppressWarnings("SameParameterValue")
 public class TrinketItems {
 
     // Key

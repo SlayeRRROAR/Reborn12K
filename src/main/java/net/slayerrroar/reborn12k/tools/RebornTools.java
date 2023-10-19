@@ -13,8 +13,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.tools.type.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
-@SuppressWarnings("unused")
-
+@SuppressWarnings({"unused", "SameParameterValue"})
 public class RebornTools {
 
     public static Item WOODEN_KATANA = registerItem("wooden_katana", new BaseSword(ToolMaterials.WOOD, 1, -1.6f, new FabricItemSettings()));

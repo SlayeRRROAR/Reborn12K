@@ -71,7 +71,7 @@ import net.slayerrroar.reborn12k.items.custom.tech.*;
 import net.slayerrroar.reborn12k.sounds.RebornSounds;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "SameParameterValue"})
 public class RebornItems {
 
     // Resources

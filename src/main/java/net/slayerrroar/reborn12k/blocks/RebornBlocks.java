@@ -22,8 +22,7 @@ import net.slayerrroar.reborn12k.blocks.custom.trinket_boxes.WornStrongboxBlock;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 import net.slayerrroar.reborn12k.world.features.tree.*;
 
-@SuppressWarnings("unused")
-
+@SuppressWarnings({"unused", "SameParameterValue"})
 public class RebornBlocks {
 
     public static final Block ASH_LOG = registerBlock("ash_log", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)), ItemGroupUtil.REBORN12K);

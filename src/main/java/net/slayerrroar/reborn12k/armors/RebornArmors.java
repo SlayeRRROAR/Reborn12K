@@ -12,8 +12,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.armors.custom.MageArmorItem;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
-@SuppressWarnings("unused")
-
+@SuppressWarnings({"unused", "SameParameterValue"})
 public class RebornArmors {
 
     public static final Item ARCHEOSITE_HELMET = registerItem("archeosite_helmet", new ArmorItem(RebornArmorMaterials.ARCHEOSITE, ArmorItem.Type.HELMET, (new Item.Settings().fireproof())));
