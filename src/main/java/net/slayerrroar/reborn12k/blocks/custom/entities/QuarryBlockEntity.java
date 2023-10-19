@@ -9,6 +9,7 @@ import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.recipe.RecipeEntry;
@@ -41,7 +42,7 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 400;
+    private int maxProgress = 200;
 
     public QuarryBlockEntity(BlockPos blockPos, BlockState state) {
         super(RebornBlockEntities.QUARRY, blockPos, state);
@@ -132,7 +133,7 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
     }
 
     private boolean hasFuelInFuelSlot(QuarryBlockEntity entity) {
-        return !this.getStack(FUEL_SLOT).isEmpty();
+        return this.getStack(FUEL_SLOT).getMaxDamage() != 0 && !this.getStack(FUEL_SLOT).isEmpty();
     }
 
     private void resetProgress() {
@@ -206,6 +207,9 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
         if (side == Direction.DOWN) {
+            if (slot == FUEL_SLOT) {
+                return stack.isOf(RebornItems.EMPTY_FUEL_CELL);
+            }
             return slot == OUTPUT_SLOT;
         }
         return false;
