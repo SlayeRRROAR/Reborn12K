@@ -10,11 +10,11 @@
             "item": "minecraft:gold_ingot"
         },
         "B": {
-            "item":  "reborn12k:banana"
+            "item":  "reborn12k:golden_cherry"
         }
     },
     "result": {
-        "item": "reborn12k:golden_banana",
+        "item": "reborn12k:enchanted_golden_cherry",
         "count": 1
     }
 }

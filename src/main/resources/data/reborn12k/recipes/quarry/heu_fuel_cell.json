@@ -13,11 +13,11 @@
             "tag": "c:uranium_blocks"
         },
         "C": {
-            "item": "reborn12k:charged_fuel_cell"
+            "item": "reborn12k:leu_fuel_cell"
         }
     },
     "result": {
-        "item": "reborn12k:supercharged_fuel_cell",
+        "item": "reborn12k:heu_fuel_cell",
         "count": 1
     }
 }

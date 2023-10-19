@@ -1,20 +1,20 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "A",
-        "B",
-        "A"
+        "AAA",
+        "ABA",
+        "AAA"
     ],
     "key": {
         "A": {
-            "tag": "c:uranium_ingots"
+            "item": "minecraft:gold_nugget"
         },
         "B": {
-            "item": "reborn12k:empty_fuel_cell"
+            "item":  "reborn12k:banana"
         }
     },
     "result": {
-        "item": "reborn12k:fuel_cell",
+        "item": "reborn12k:golden_cherry",
         "count": 1
     }
 }

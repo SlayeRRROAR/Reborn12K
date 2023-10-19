@@ -13,11 +13,11 @@
             "tag": "c:signalum_ingots"
         },
         "C": {
-            "item": "reborn12k:fuel_cell"
+            "item": "reborn12k:seu_fuel_cell"
         }
     },
     "result": {
-        "item": "reborn12k:charged_fuel_cell",
+        "item": "reborn12k:leu_fuel_cell",
         "count": 1
     }
 }
