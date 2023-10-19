@@ -148,7 +148,7 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
         if (this.getStack(FUEL_SLOT).getDamage() < this.getStack(FUEL_SLOT).getMaxDamage()) {
             this.getStack(FUEL_SLOT).setDamage(this.getStack(FUEL_SLOT).getDamage() + 1);
         }
-        if (this.getStack(FUEL_SLOT).getDamage() == this.getStack(FUEL_SLOT).getMaxDamage()) {
+        if (this.getStack(FUEL_SLOT).getDamage() >= this.getStack(FUEL_SLOT).getMaxDamage()) {
             this.removeStack(FUEL_SLOT);
             this.setStack(FUEL_SLOT, new ItemStack(RebornItems.EMPTY_FUEL_CELL, 1));
         }
