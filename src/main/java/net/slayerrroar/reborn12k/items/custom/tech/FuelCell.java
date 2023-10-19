@@ -15,14 +15,14 @@ public class FuelCell extends Item {
         super(settings);
     }
 
-    private int getRemaining(ItemStack itemStack) {
-        return itemStack.getMaxDamage() - itemStack.getDamage();
+    private int getRemainingPercent(ItemStack stack) {
+        return ((stack.getMaxDamage() - stack.getDamage()) * 100) / stack.getMaxDamage();
     }
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
 
-        String remaining = Integer.toString(getRemaining(itemStack));
+        String remaining = getRemainingPercent(itemStack) + "%";
 
         tooltip.add(Text.translatable("item.reborn12k.fuel_cell.tooltip", remaining));
     }
