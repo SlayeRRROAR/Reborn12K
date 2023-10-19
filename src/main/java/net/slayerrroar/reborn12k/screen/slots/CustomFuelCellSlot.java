@@ -12,9 +12,9 @@ public class CustomFuelCellSlot extends Slot {
 
     @Override
     public boolean canInsert(ItemStack stack) {
-        return stack.isOf(RebornItems.FUEL_CELL) ||
-                stack.isOf(RebornItems.CHARGED_FUEL_CELL) ||
-                stack.isOf(RebornItems.SUPERCHARGED_FUEL_CELL);
+        return stack.isOf(RebornItems.SEU_FUEL_CELL) ||
+                stack.isOf(RebornItems.LEU_FUEL_CELL) ||
+                stack.isOf(RebornItems.HEU_FUEL_CELL);
     }
 
     @Override

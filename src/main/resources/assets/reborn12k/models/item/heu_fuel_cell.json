@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "reborn12k:item/fuel_cell"
+    "layer0": "reborn12k:item/heu_fuel_cell"
   }
 }

@@ -587,9 +587,9 @@
     "item.reborn12k.collimated_laser_array": "Collimated Laser Array",
 
     "item.reborn12k.empty_fuel_cell": "Empty Fuel Cell",
-    "item.reborn12k.fuel_cell": "Fuel Cell",
-    "item.reborn12k.charged_fuel_cell": "Charged Fuel Cell",
-    "item.reborn12k.supercharged_fuel_cell": "Supercharged Fuel Cell",
+    "item.reborn12k.seu_fuel_cell": "SEU Fuel Cell",
+    "item.reborn12k.leu_fuel_cell": "LEU Fuel Cell",
+    "item.reborn12k.heu_fuel_cell": "SEU Fuel Cell",
 
     "item.reborn12k.basic_laser_focus": "Basic Laser Focus",
     "item.reborn12k.advanced_laser_focus": "Advanced Laser Focus",
@@ -1065,7 +1065,7 @@
     "item.reborn12k.red_queen.tooltip5": "Exceed is already charged!",
 
 
-    "item.reborn12k.fuel_cell.tooltip": "§4Remaining uses: %s",
+    "item.reborn12k.fuel_cell.tooltip": "§4Remaining fuel: %s",
 
     "item.reborn12k.laser_focus.tooltip1": "§8Can be used in",
     "item.reborn12k.laser_focus.tooltip2": "§8a §4Quarry",
