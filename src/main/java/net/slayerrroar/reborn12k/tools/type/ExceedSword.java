@@ -31,7 +31,7 @@ public class ExceedSword extends SwordItem {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
-   public enum ExceedState {
+    public enum ExceedState {
         ACTIVE(true), INACTIVE(false);
         final boolean state;
         ExceedState(boolean state) {
@@ -42,52 +42,50 @@ public class ExceedSword extends SwordItem {
         }
     }
 
-    private void setExceedState(ItemStack red_queen, ExceedState mode) {
-        checkTag(red_queen);
-        assert red_queen.getNbt() != null;
-        red_queen.getNbt().putBoolean(EXCEED_STATE, mode.getBoolean());
+    private void setExceedState(ItemStack stack, ExceedState mode) {
+        checkTag(stack);
+        assert stack.getNbt() != null;
+        stack.getNbt().putBoolean(EXCEED_STATE, mode.getBoolean());
     }
 
-    private ExceedState getExceedState(ItemStack red_queen) {
-        if (!red_queen.isEmpty()) {
-            checkTag(red_queen);
+    private ExceedState getExceedState(ItemStack stack) {
+        if (!stack.isEmpty()) {
+            checkTag(stack);
 
-            assert red_queen.getNbt() != null;
-            return red_queen.getNbt().getBoolean(EXCEED_STATE) ? ExceedState.ACTIVE : ExceedState.INACTIVE;
+            assert stack.getNbt() != null;
+            return stack.getNbt().getBoolean(EXCEED_STATE) ? ExceedState.ACTIVE : ExceedState.INACTIVE;
         }
         return ExceedState.INACTIVE;
     }
 
-
-
-    private void ActivateExceed(ItemStack red_queen) {
-        setExceedState(red_queen, ExceedState.ACTIVE);
+    private void ActivateExceed(ItemStack stack) {
+        setExceedState(stack, ExceedState.ACTIVE);
     }
 
-    private void DeactivateExceed(ItemStack red_queen) {
-        setExceedState(red_queen, ExceedState.INACTIVE);
+    private void DeactivateExceed(ItemStack stack) {
+        setExceedState(stack, ExceedState.INACTIVE);
     }
 
     @Override
-    public boolean postHit(ItemStack red_queen, LivingEntity target, LivingEntity attacker) {
-        ExceedState currentmode = getExceedState(red_queen);
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        ExceedState currentmode = getExceedState(stack);
+        float damage = (float) attacker.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
+        float bonusDamage = 2f;
+
         if (currentmode != ExceedState.INACTIVE && target instanceof MobEntity) {
-            float damage = (float) attacker.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
-            float critBonus = 2f;
-            target.damage(attacker.getDamageSources().generic(), (damage * critBonus));
-            DeactivateExceed(red_queen);
+            target.damage(attacker.getDamageSources().generic(), (damage * bonusDamage));
+            DeactivateExceed(stack);
         }
-        red_queen.damage(1, attacker, livingEntity -> livingEntity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
-        return super.postHit(red_queen, target, attacker);
+        return super.postHit(stack, target, attacker);
     }
 
-    private void checkTag(ItemStack red_queen) {
-        if (!red_queen.isEmpty()) {
+    private void checkTag(ItemStack stack) {
+        if (!stack.isEmpty()) {
 
-            if (!red_queen.hasNbt()) {
-                red_queen.setNbt(new NbtCompound());
+            if (!stack.hasNbt()) {
+                stack.setNbt(new NbtCompound());
             }
-            NbtCompound nbt = red_queen.getNbt();
+            NbtCompound nbt = stack.getNbt();
 
             assert nbt != null;
 
@@ -97,12 +95,10 @@ public class ExceedSword extends SwordItem {
         }
     }
 
-
-
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
-        ItemStack red_queen = playerEntity.getStackInHand(hand);
-        ExceedState currentMode = getExceedState(red_queen);
+        ItemStack stack = playerEntity.getStackInHand(hand);
+        ExceedState currentMode = getExceedState(stack);
 
         if (!world.isClient && !playerEntity.isSneaking()) {
             if (currentMode!= ExceedState.ACTIVE) {
@@ -111,27 +107,26 @@ public class ExceedSword extends SwordItem {
                 int int_random = rand.nextInt(upperbound);
 
                 if (int_random < 6) {
-                    ActivateExceed(red_queen);
+                    ActivateExceed(stack);
                     world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.15f, 1f);
                     playerEntity.sendMessage(Text.translatable("item.reborn12k.red_queen.tooltip3"), true);
                 }
                 else {
                     playerEntity.sendMessage(Text.translatable("item.reborn12k.red_queen.tooltip4"), true);
                 }
-                return new TypedActionResult<>(ActionResult.SUCCESS, red_queen);
+                return new TypedActionResult<>(ActionResult.SUCCESS, stack);
             }
             playerEntity.sendMessage(Text.translatable("item.reborn12k.red_queen.tooltip5"), true);
         }
-        return new TypedActionResult<>(ActionResult.FAIL, red_queen);
+        return new TypedActionResult<>(ActionResult.FAIL, stack);
     }
 
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         if (getExceedState(itemStack) != ExceedState.ACTIVE){
             tooltip.add(Text.translatable("item.reborn12k.red_queen.tooltip1"));
-        }
- else {
-            tooltip.add(Text.translatable("item.reborn12k.red_queen.tooltip2"));
+        } else {
+             tooltip.add(Text.translatable("item.reborn12k.red_queen.tooltip2"));
         }
     }
 
