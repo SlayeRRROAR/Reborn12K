@@ -14,7 +14,7 @@ import java.util.Random;
 
 public class RebornTrades {
 
-    public static void register() {     //todo: Finish adding trade createTrinketOffer
+    public static void register() {
 
         Reborn12K.LOGGER.info(Reborn12K.MOD_ID + ": Correctly registered Trade Offers");
 
