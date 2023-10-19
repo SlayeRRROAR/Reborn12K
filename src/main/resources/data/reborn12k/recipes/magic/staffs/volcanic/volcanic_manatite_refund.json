@@ -2,12 +2,12 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:thunderbolt_wand"
+            "tag": "reborn12k:volcanic_staffs"
         }
     ],
     "result": {
-        "item": "reborn12k:thunderbolt_manatite",
+        "item": "reborn12k:volcanic_manatite",
         "count": 1
     },
-    "group": "thunderbolt_manatite"
+    "group": "volcanic_manatite"
 }

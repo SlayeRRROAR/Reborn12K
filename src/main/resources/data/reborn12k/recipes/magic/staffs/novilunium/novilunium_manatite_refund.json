@@ -2,12 +2,12 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:viridian_rod"
+            "tag": "reborn12k:novilunium_staffs"
         }
     ],
     "result": {
-        "item": "reborn12k:viridian_manatite",
+        "item": "reborn12k:novilunium_manatite",
         "count": 1
     },
-    "group": "viridian_manatite"
+    "group": "novilunium_manatite"
 }

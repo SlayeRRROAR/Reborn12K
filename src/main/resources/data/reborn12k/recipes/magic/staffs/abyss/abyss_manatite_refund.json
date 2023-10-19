@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:abyss_rod"
+            "tag": "reborn12k:abyss_staffs"
         }
     ],
     "result": {

@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:terra_scepter"
+            "tag": "reborn12k:terra_staffs"
         }
     ],
     "result": {

@@ -2,12 +2,12 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:windstorm_wand"
+            "tag": "reborn12k:thunderbolt_staffs"
         }
     ],
     "result": {
-        "item": "reborn12k:windstorm_manatite",
+        "item": "reborn12k:thunderbolt_manatite",
         "count": 1
     },
-    "group": "windstorm_manatite"
+    "group": "thunderbolt_manatite"
 }

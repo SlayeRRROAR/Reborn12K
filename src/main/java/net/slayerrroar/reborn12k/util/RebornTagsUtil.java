@@ -138,7 +138,7 @@ public class RebornTagsUtil {
 
 
         public static final TagKey<Block> ASH_LOGS = createTag("ash_logs");
-        public static final TagKey<Block> ASH_PLANKS = createTag("ash_logs");
+        public static final TagKey<Block> ASH_PLANKS = createTag("ash_planks");
 
 
     }
@@ -370,9 +370,22 @@ public class RebornTagsUtil {
         public static final TagKey<Item> MANATITE_ORES = createCommonTag("manatite_ores");
 
 
+        public static final TagKey<Item> WINDSTORM_STAFFS = createTag("windstorm_staffs");
+        public static final TagKey<Item> VIRIDIAN_STAFFS = createTag("viridian_staffs");
+        public static final TagKey<Item> ABYSS_STAFFS = createTag("abyss_staffs");
+        public static final TagKey<Item> VOLCANIC_STAFFS = createTag("volcanic_staffs");
+        public static final TagKey<Item> SUNLIGHT_STAFFS = createTag("sunlight_staffs");
+        public static final TagKey<Item> NOVILUNIUM_STAFFS = createTag("novilunium_staffs");
+        public static final TagKey<Item> THUNDERBOLT_STAFFS = createTag("thunderbolt_staffs");
+        public static final TagKey<Item> TERRA_STAFFS = createTag("terra_staffs");
+        public static final TagKey<Item> GLACIAL_STAFFS = createTag("glacial_staffs");
+        public static final TagKey<Item> FERRUM_STAFFS = createTag("ferrum_staffs");
+        public static final TagKey<Item> CRIMSON_STAFFS = createTag("crimson_staffs");
+
         public static final TagKey<Item> ASH_LOGS = createTag("ash_logs");
         public static final TagKey<Item> ASH_PLANKS = createTag("ash_logs");
 
+        public static final TagKey<Item> LEVEL_3_PICKAXES = createTag("level_3_pickaxes");
 
         public static final TagKey<Item> MANA_GEMS = createTag("mana_gems");
         public static final TagKey<Item> PRECIOUS_GEMS = createTag("precious_gem");

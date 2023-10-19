@@ -2,12 +2,12 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:sunlight_rod"
+            "tag": "reborn12k:glacial_staffs"
         }
     ],
     "result": {
-        "item": "reborn12k:sunlight_manatite",
+        "item": "reborn12k:glacial_manatite",
         "count": 1
     },
-    "group": "sunlight_manatite"
+    "group": "glacial_manatite"
 }

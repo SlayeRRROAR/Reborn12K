@@ -2,12 +2,12 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:volcanic_rod"
+            "tag": "reborn12k:crimson_staffs"
         }
     ],
     "result": {
-        "item": "reborn12k:volcanic_manatite",
+        "item": "reborn12k:crimson_manatite",
         "count": 1
     },
-    "group": "volcanic_manatite"
+    "group": "crimson_manatite"
 }

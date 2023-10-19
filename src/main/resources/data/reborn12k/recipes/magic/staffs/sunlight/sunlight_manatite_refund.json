@@ -2,12 +2,12 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "reborn12k:ferrum_scepter"
+            "tag": "reborn12k:sunlight_staffs"
         }
     ],
     "result": {
-        "item": "reborn12k:ferrum_manatite",
+        "item": "reborn12k:sunlight_manatite",
         "count": 1
     },
-    "group": "ferrum_manatite"
+    "group": "sunlight_manatite"
 }
