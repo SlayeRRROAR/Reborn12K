@@ -25,7 +25,7 @@ public class QuarryScreenHandler extends ScreenHandler {
 
     public QuarryScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity entity, PropertyDelegate delegate) {
         super(RebornScreenRegistry.QUARRY_SCREEN_HANDLER, syncId);
-        checkSize(((Inventory) entity), 4);
+        checkSize(((Inventory) entity), 3);
         this.inventory = ((Inventory) entity);
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
