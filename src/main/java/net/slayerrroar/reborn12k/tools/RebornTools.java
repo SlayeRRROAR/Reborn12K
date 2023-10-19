@@ -20,9 +20,9 @@ public class RebornTools {
     public static Item WOODEN_KATANA = registerItem("wooden_katana", new BaseSword(ToolMaterials.WOOD, 1, -1.6f, new FabricItemSettings()));
     public static Item STONE_KATANA = registerItem("stone_katana", new BaseSword(ToolMaterials.STONE, 1, -1.6f, new FabricItemSettings()));
     public static Item IRON_KATANA = registerItem("iron_katana", new BaseSword(ToolMaterials.IRON, 1, -1.6f, new FabricItemSettings()));
+    public static Item GOLDEN_KATANA = registerItem("golden_katana", new BaseSword(ToolMaterials.GOLD, 1, -1.6f, new FabricItemSettings()));
     public static Item DIAMOND_KATANA = registerItem("diamond_katana", new BaseSword(ToolMaterials.DIAMOND, 0, -1.6f, new FabricItemSettings()));
     public static Item NETHERITE_KATANA = registerItem("netherite_katana", new BaseSword(ToolMaterials.NETHERITE, 0, -1.6f, new FabricItemSettings().fireproof()));
-    public static Item GOLDEN_KATANA = registerItem("golden_katana", new BaseSword(ToolMaterials.GOLD, 1, -1.6f, new FabricItemSettings()));
 
     public static Item ARCHEOSITE_SWORD = registerItem("archeosite_sword", new BaseSword(RebornToolMaterials.ARCHEOSITE, 3, -2.4f, new FabricItemSettings().fireproof()));
     public static Item ARCHEOSITE_SHOVEL = registerItem("archeosite_shovel", new BaseShovel(RebornToolMaterials.ARCHEOSITE, 1, -3f, new FabricItemSettings().fireproof()));
@@ -138,7 +138,7 @@ public class RebornTools {
     public static Item RED_QUEEN = registerItem("red_queen", new ExceedSword(RebornToolMaterials.DMC, 5 , -2.4f, new FabricItemSettings().fireproof()));
     public static Item MURASAMA = registerItem("murasama", new BaseSword(RebornToolMaterials.HFB, 3, -1.6f, new FabricItemSettings()));
     public static Item BLADEWOLF = registerItem("bladewolf", new BaseSword(RebornToolMaterials.HFB, 5, -2.4f, new FabricItemSettings()));
-    public static Item POWER_SWORD = registerItem("power_sword", new BaseSword(RebornToolMaterials.POWER, 5, -2.4f, new FabricItemSettings()));
+    public static Item POWER_SWORD = registerItem("power_sword", new PowerSword(RebornToolMaterials.POWER, 5, -2.4f, new FabricItemSettings()));
     public static Item SILENCE = registerItem("silence", new BaseSword(RebornToolMaterials.POWER, 8, -2.8f, new FabricItemSettings().fireproof()));
 
 
