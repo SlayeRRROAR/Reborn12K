@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "reborn12k:block/small_andesite_bricks",
-    "top": "reborn12k:block/small_andesite_bricks",
-    "side": "reborn12k:block/small_andesite_bricks"
-  }
-}

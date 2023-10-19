@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "reborn12k:block/small_stone_bricks",
-    "top": "reborn12k:block/small_stone_bricks",
-    "side": "reborn12k:block/small_stone_bricks"
-  }
-}
