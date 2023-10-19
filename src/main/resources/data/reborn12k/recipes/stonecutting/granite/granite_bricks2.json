@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:polished_granite"
-  },
-  "result": "reborn12k:granite_bricks",
-  "count": 1
-}
