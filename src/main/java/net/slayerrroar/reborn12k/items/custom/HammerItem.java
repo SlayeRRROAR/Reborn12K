@@ -1,8 +1,6 @@
 package net.slayerrroar.reborn12k.items.custom;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.slayerrroar.reborn12k.items.GenericItems;
 
 public class HammerItem extends Item {
     public HammerItem(Settings settings) {

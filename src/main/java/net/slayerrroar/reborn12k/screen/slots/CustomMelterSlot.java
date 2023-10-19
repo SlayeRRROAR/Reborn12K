@@ -3,7 +3,7 @@ package net.slayerrroar.reborn12k.screen.slots;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.slot.Slot;
-import net.slayerrroar.reborn12k.items.GenericItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class CustomMelterSlot extends Slot {
     public CustomMelterSlot(Inventory inventory, int index, int x, int y) {
@@ -12,10 +12,10 @@ public class CustomMelterSlot extends Slot {
 
     @Override
     public boolean canInsert(ItemStack stack) {
-        return stack.isOf(GenericItems.DESTABILIZED_MIXTURE) ||
-                stack.isOf(GenericItems.ENERGIZED_MIXTURE) ||
-                stack.isOf(GenericItems.RESONANT_MIXTURE) ||
-                stack.isOf(GenericItems.MANA_RICH_MIXTURE);
+        return stack.isOf(RebornItems.DESTABILIZED_MIXTURE) ||
+                stack.isOf(RebornItems.ENERGIZED_MIXTURE) ||
+                stack.isOf(RebornItems.RESONANT_MIXTURE) ||
+                stack.isOf(RebornItems.MANA_RICH_MIXTURE);
     }
 
     @Override

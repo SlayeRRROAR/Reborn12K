@@ -11,25 +11,25 @@ import net.minecraft.util.Identifier;
 import net.minecraft.village.VillagerProfession;
 import net.minecraft.world.poi.PointOfInterestType;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 
 @SuppressWarnings({"deprecation", "unused"})
 
 public class RebornVillagers {
 
-    public static final PointOfInterestType JEWELER_POI = registerPOI("jewelerpoi", AdvancedBlocks.MARKET_TABLE);
+    public static final PointOfInterestType JEWELER_POI = registerPOI("jewelerpoi", RebornBlocks.MARKET_TABLE);
     public static final VillagerProfession JEWELER = registerProfession("jeweler",
             RegistryKey.of(Registries.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(Reborn12K.MOD_ID, "jewelerpoi")));
 
-    public static final PointOfInterestType BLACKSMITH_POI = registerPOI("blacksmithpoi", AdvancedBlocks.MELTER);
+    public static final PointOfInterestType BLACKSMITH_POI = registerPOI("blacksmithpoi", RebornBlocks.MELTER);
     public static final VillagerProfession BLACKSMITH = registerProfession("blacksmith",
             RegistryKey.of(Registries.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(Reborn12K.MOD_ID, "blacksmithpoi")));
 
-    public static final PointOfInterestType MANASMITH_POI = registerPOI("manasmithpoi", AdvancedBlocks.ALCHEMIC_TABLE);
+    public static final PointOfInterestType MANASMITH_POI = registerPOI("manasmithpoi", RebornBlocks.ALCHEMIC_TABLE);
     public static final VillagerProfession MANASMITH = registerProfession("manasmith",
             RegistryKey.of(Registries.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(Reborn12K.MOD_ID, "manasmithpoi")));
 
-    public static final PointOfInterestType HOARDER_POI = registerPOI("hoarderpoi", AdvancedBlocks.SHADY_TABLE);
+    public static final PointOfInterestType HOARDER_POI = registerPOI("hoarderpoi", RebornBlocks.SHADY_TABLE);
     public static final VillagerProfession HOARDER = registerProfession("hoarder",
             RegistryKey.of(Registries.POINT_OF_INTEREST_TYPE.getKey(), new Identifier(Reborn12K.MOD_ID, "hoarderpoi")));
 

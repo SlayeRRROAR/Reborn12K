@@ -1,7 +1,6 @@
 package net.slayerrroar.reborn12k.items.custom.magic.runes;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -12,8 +11,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
-import net.slayerrroar.reborn12k.blocks.GenericBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 
 import java.util.Random;
 
@@ -44,9 +42,9 @@ public class SuperiorRuneLight extends Item {
         BlockState block = world.getBlockState(context.getBlockPos());
         BlockPos pos = context.getBlockPos();
 
-        if (block.isOf(GenericBlocks.SUNSTONE_BLOCK) && world.isDay()) {
+        if (block.isOf(RebornBlocks.SUNSTONE_BLOCK) && world.isDay()) {
             world.breakBlock(pos, false);
-            dropStack(world, pos, new ItemStack(AdvancedBlocks.SUN_GEM));
+            dropStack(world, pos, new ItemStack(RebornBlocks.SUN_GEM));
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }

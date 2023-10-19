@@ -10,7 +10,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.gen.feature.EndPortalFeature;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -81,15 +81,15 @@ public abstract class EnderDragonMixin {
         int random_int = Rand.nextInt(upperbound);
 
         if (random_int == 0) {
-            return AdvancedBlocks.LEGENDARY_STRONGBOX.getDefaultState();
+            return RebornBlocks.LEGENDARY_STRONGBOX.getDefaultState();
         }
         if (random_int < 3) {
-            return AdvancedBlocks.PRISTINE_STRONGBOX.getDefaultState();
+            return RebornBlocks.PRISTINE_STRONGBOX.getDefaultState();
         }
         if (random_int < 6) {
-            return AdvancedBlocks.STRONGBOX.getDefaultState();
+            return RebornBlocks.STRONGBOX.getDefaultState();
         }
-        return AdvancedBlocks.WORN_STRONGBOX.getDefaultState();
+        return RebornBlocks.WORN_STRONGBOX.getDefaultState();
     }
 
 }

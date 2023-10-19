@@ -10,8 +10,8 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.GenericBlocks;
-import net.slayerrroar.reborn12k.items.GenericItems;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 import static net.minecraft.block.Block.dropStack;
 
@@ -29,10 +29,10 @@ public class EtherealRune extends Item {
         BlockState block = world.getBlockState(context.getBlockPos());
         BlockPos pos = context.getBlockPos();
 
-        if (block.isOf(GenericBlocks.STEEL_BLOCK)) {
+        if (block.isOf(RebornBlocks.STEEL_BLOCK)) {
             world.breakBlock(pos, false);
             stack.setCount(stack.getCount()-1);
-            dropStack(world, pos, new ItemStack(GenericItems.MAGISTEEL_INGOT));
+            dropStack(world, pos, new ItemStack(RebornItems.MAGISTEEL_INGOT));
             world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25f, 0.25f);
             return ActionResult.SUCCESS;
         }

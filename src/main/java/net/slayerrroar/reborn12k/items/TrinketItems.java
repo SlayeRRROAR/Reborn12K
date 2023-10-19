@@ -21,11 +21,11 @@ import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 public class TrinketItems {
 
-    //Key
+    // Key
 
     public static final Item STRONGBOX_KEY = registerItem("strongbox_key", new KeyItem(new FabricItemSettings()));
 
-    //Hat
+    // Hat
 
     public static final Item SHADES = registerItem("shades", new Shades(new FabricItemSettings().maxCount(1)));
     public static final Item IRON_CROWN = registerItem("iron_crown", new IronCrown(new FabricItemSettings().maxCount(1)));
@@ -33,7 +33,7 @@ public class TrinketItems {
     public static final Item COW_EARS = registerItem("cow_ears", new CowEars(new FabricItemSettings().maxCount(1)));
     public static final Item BUNNY_EARS = registerItem("bunny_ears", new BunnyEars(new FabricItemSettings().maxCount(1)));
 
-    //Belt
+    // Belt
 
     public static final Item GREEN_BELT = registerItem("green_belt", new GreenBelt(new FabricItemSettings().maxCount(1)));
     public static final Item RED_BELT = registerItem("red_belt", new RedBelt(new FabricItemSettings().maxCount(1)));
@@ -41,7 +41,7 @@ public class TrinketItems {
     public static final Item EXPERT_BELT = registerItem("expert_belt", new ExpertBelt(new FabricItemSettings().maxCount(1)));
     public static final Item ANTIGRAV_BUCKLE = registerItem("antigrav_buckle", new AntiGravBuckle(new FabricItemSettings().maxCount(1)));
 
-    //Shoes
+    // Shoes
 
     public static final Item COMFY_SLIPPERS = registerItem("comfy_slippers", new ComfySlippers(new FabricItemSettings().maxCount(1)));
     public static final Item LOAFERS = registerItem("loafers", new Loafers(new FabricItemSettings().maxCount(1)));
@@ -50,14 +50,14 @@ public class TrinketItems {
     public static final Item LONG_FALL_BOOTS = registerItem("long_fall_boots", new LongFallBoots(new FabricItemSettings().maxCount(1)));
     public static final Item WINGED_SHOES = registerItem("winged_shoes", new WingedShoes(new FabricItemSettings().maxCount(1)));
 
-    //Necklace
+    // Necklace
 
     public static final Item IRON_NECKLACE = registerItem("iron_necklace", new IronNecklace(new FabricItemSettings().maxCount(1)));
     public static final Item GOLDEN_NECKLACE = registerItem("golden_necklace", new GoldenNecklace(new FabricItemSettings().maxCount(1)));
     public static final Item BEJEWELED_NECKLACE = registerItem("bejeweled_necklace", new BejeweledNecklace(new FabricItemSettings().maxCount(1)));
     public static final Item HEART_PENDANT = registerItem("heart_pendant", new HeartPendant(new FabricItemSettings().maxCount(1)));
 
-    //Ring
+    // Ring
 
     public static final Item GOLDEN_RING = registerItem("golden_ring", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
     public static final Item AWAKENED_GOLDEN_RING = registerItem("awakened_golden_ring", new GlintedItem(new FabricItemSettings().maxCount(1).fireproof().rarity(Rarity.RARE)));
@@ -71,7 +71,7 @@ public class TrinketItems {
 
     public static final Item RING_OF_STRENGTH = registerItem("ring_of_strength", new StrengthRing(new FabricItemSettings().maxCount(1).fireproof()));
 
-    //Trinket
+    // Trinket
 
     public static final Item BAND_OF_FORTITUDE = registerItem("band_of_fortitude", new BaseBand(new FabricItemSettings().maxCount(1)));
     public static final Item GREATER_BAND_OF_FORTITUDE = registerItem("greater_band_of_fortitude", new GreaterBand(new FabricItemSettings().maxCount(1)));

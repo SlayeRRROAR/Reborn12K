@@ -2,7 +2,6 @@ package net.slayerrroar.reborn12k.world.features;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
-import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
@@ -17,8 +16,8 @@ import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.GenericBlocks;
-import net.slayerrroar.reborn12k.blocks.OreBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornOres;
 
 import java.util.List;
 
@@ -67,64 +66,64 @@ public class RebornConfiguredFeatures {
 
         //OVERWORLD ORES
 
-        List<OreFeatureConfig.Target> overworldTinOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.TIN_ORE.getDefaultState()),
-                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_TIN_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldTinOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, RebornOres.TIN_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, RebornOres.DEEPSLATE_TIN_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldAluminumOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.ALUMINUM_ORE.getDefaultState()),
-                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_ALUMINUM_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldAluminumOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, RebornOres.ALUMINUM_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, RebornOres.DEEPSLATE_ALUMINUM_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldSilverOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.SILVER_ORE.getDefaultState()),
-                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_SILVER_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldSilverOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, RebornOres.SILVER_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, RebornOres.DEEPSLATE_SILVER_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldLeadOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.LEAD_ORE.getDefaultState()),
-                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_LEAD_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldLeadOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, RebornOres.LEAD_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, RebornOres.DEEPSLATE_LEAD_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldNickelOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.NICKEL_ORE.getDefaultState()),
-                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_NICKEL_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldNickelOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, RebornOres.NICKEL_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, RebornOres.DEEPSLATE_NICKEL_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldChromiteOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.CHROMITE_ORE.getDefaultState()),
-                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_CHROMITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldChromiteOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, RebornOres.CHROMITE_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, RebornOres.DEEPSLATE_CHROMITE_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldTitaniumOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.TITANIUM_ORE.getDefaultState()),
-                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_TITANIUM_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldTitaniumOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, RebornOres.TITANIUM_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, RebornOres.DEEPSLATE_TITANIUM_ORE.getDefaultState()));
 
 
-        List<OreFeatureConfig.Target> overworldSapphireOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.SAPPHIRE_ORE.getDefaultState()),
-                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_SAPPHIRE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldSapphireOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, RebornOres.SAPPHIRE_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, RebornOres.DEEPSLATE_SAPPHIRE_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldRubyOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.RUBY_ORE.getDefaultState()),
-                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_RUBY_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldRubyOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, RebornOres.RUBY_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, RebornOres.DEEPSLATE_RUBY_ORE.getDefaultState()));
 
-        List<OreFeatureConfig.Target> overworldManatiteOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, OreBlocks.MANATITE_ORE.getDefaultState()),
-                OreFeatureConfig.createTarget(deepslateReplaceables, OreBlocks.DEEPSLATE_MANATITE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldManatiteOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, RebornOres.MANATITE_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, RebornOres.DEEPSLATE_MANATITE_ORE.getDefaultState()));
 
         //NETHER ORES
 
         List<OreFeatureConfig.Target> netherTungestenOres =
-                List.of(OreFeatureConfig.createTarget(netherReplaceables, OreBlocks.NETHER_TUNGSTEN_ORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, RebornOres.NETHER_TUNGSTEN_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> netherVanadiumOres =
-                List.of(OreFeatureConfig.createTarget(netherReplaceables, OreBlocks.NETHER_VANADIUM_ORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, RebornOres.NETHER_VANADIUM_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> netherNeodymiumOres =
-                List.of(OreFeatureConfig.createTarget(netherReplaceables, OreBlocks.NETHER_NEODYMIUM_ORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, RebornOres.NETHER_NEODYMIUM_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> netherUraniumOres =
-                List.of(OreFeatureConfig.createTarget(netherReplaceables, OreBlocks.NETHER_URANIUM_ORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, RebornOres.NETHER_URANIUM_ORE.getDefaultState()));
 
         //END ORES
 
         List<OreFeatureConfig.Target> endCobaltOres =
-                List.of(OreFeatureConfig.createTarget(endstoneReplaceables, OreBlocks.END_COBALT_ORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(endstoneReplaceables, RebornOres.END_COBALT_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> endOsmiumOres =
-                List.of(OreFeatureConfig.createTarget(endstoneReplaceables, OreBlocks.END_OSMIUM_ORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(endstoneReplaceables, RebornOres.END_OSMIUM_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> endPlatinumOres =
-                List.of(OreFeatureConfig.createTarget(endstoneReplaceables, OreBlocks.END_PLATINUM_ORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(endstoneReplaceables, RebornOres.END_PLATINUM_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> endIridiumOres =
-                List.of(OreFeatureConfig.createTarget(endstoneReplaceables, OreBlocks.END_IRIDIUM_ORE.getDefaultState()));
+                List.of(OreFeatureConfig.createTarget(endstoneReplaceables, RebornOres.END_IRIDIUM_ORE.getDefaultState()));
 
 
         register(context, ASH_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(GenericBlocks.ASH_LOG),
+                BlockStateProvider.of(RebornBlocks.ASH_LOG),
                 new StraightTrunkPlacer(6, 4, 0),
-                BlockStateProvider.of(GenericBlocks.ASH_LEAVES),
+                BlockStateProvider.of(RebornBlocks.ASH_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
@@ -133,9 +132,9 @@ public class RebornConfiguredFeatures {
                         0.5f)), placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.ASH_PLACED_KEY)));
 
         register(context, SLIMY_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(GenericBlocks.SLIMY_LOG),
+                BlockStateProvider.of(RebornBlocks.SLIMY_LOG),
                 new StraightTrunkPlacer(5, 2, 1),
-                BlockStateProvider.of(GenericBlocks.SLIMY_LEAVES),
+                BlockStateProvider.of(RebornBlocks.SLIMY_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 

@@ -12,8 +12,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
-import net.slayerrroar.reborn12k.blocks.GenericBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 
 import java.util.Random;
 
@@ -44,9 +43,9 @@ public class SuperiorRuneWater extends Item {
         BlockState block = world.getBlockState(context.getBlockPos());
         BlockPos pos = context.getBlockPos();
 
-        if (block.isOf(GenericBlocks.SAPPHIRE_BLOCK) && world.getBlockState(pos.up()).isOf(Blocks.WATER) && player.isSubmergedInWater()) {
+        if (block.isOf(RebornBlocks.SAPPHIRE_BLOCK) && world.getBlockState(pos.up()).isOf(Blocks.WATER) && player.isSubmergedInWater()) {
             world.breakBlock(pos, false);
-            dropStack(world, pos, new ItemStack(AdvancedBlocks.WATER_GEM));
+            dropStack(world, pos, new ItemStack(RebornBlocks.WATER_GEM));
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }

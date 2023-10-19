@@ -10,7 +10,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.items.GenericItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class ItemGroupUtil {
 
@@ -19,7 +19,7 @@ public class ItemGroupUtil {
     public static void registerItemGroups() {
         Registry.register(Registries.ITEM_GROUP, REBORN12K, FabricItemGroup.builder()
                 .displayName(Text.translatable("itemgroup.reborn12k"))
-                .icon(() -> new ItemStack(GenericItems.SAPPHIRE)).build()
+                .icon(() -> new ItemStack(RebornItems.SAPPHIRE)).build()
         );
     }
 

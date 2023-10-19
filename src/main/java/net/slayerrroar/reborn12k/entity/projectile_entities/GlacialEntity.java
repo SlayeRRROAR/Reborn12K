@@ -14,7 +14,7 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornProjectileEntities;
-import net.slayerrroar.reborn12k.items.MagicItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class GlacialEntity extends ThrownItemEntity {
     public GlacialEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
@@ -27,7 +27,7 @@ public class GlacialEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return MagicItems.GLACIAL_MANATITE;
+        return RebornItems.GLACIAL_MANATITE;
     }
 
     private void slowTarget(EntityHitResult entityHitResult) {

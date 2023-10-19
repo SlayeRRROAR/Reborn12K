@@ -11,8 +11,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
-import net.slayerrroar.reborn12k.blocks.GenericBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 
 import java.util.Random;
 
@@ -43,9 +42,9 @@ public class SuperiorRuneDarkness extends Item {
         BlockState block = world.getBlockState(context.getBlockPos());
         BlockPos pos = context.getBlockPos();
 
-        if (block.isOf(GenericBlocks.MOONSTONE_BLOCK) && world.isNight()) {
+        if (block.isOf(RebornBlocks.MOONSTONE_BLOCK) && world.isNight()) {
             world.breakBlock(pos, false);
-            dropStack(world, pos, new ItemStack(AdvancedBlocks.MOON_GEM));
+            dropStack(world, pos, new ItemStack(RebornBlocks.MOON_GEM));
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }

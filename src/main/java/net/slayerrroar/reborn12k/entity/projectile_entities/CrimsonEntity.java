@@ -10,7 +10,7 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornProjectileEntities;
-import net.slayerrroar.reborn12k.items.MagicItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class CrimsonEntity extends ThrownItemEntity {
     public CrimsonEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
@@ -23,7 +23,7 @@ public class CrimsonEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return MagicItems.CRIMSON_MANATITE;
+        return RebornItems.CRIMSON_MANATITE;
     }
 
     private void explode(EntityHitResult entityHitResult) {

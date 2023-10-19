@@ -1,7 +1,6 @@
 package net.slayerrroar.reborn12k.world.features;
 
 import net.minecraft.registry.Registerable;
-import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
@@ -10,7 +9,7 @@ import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.*;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.GenericBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 
 import java.util.List;
 
@@ -54,16 +53,16 @@ public class RebornPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, ASH_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.ASH_KEY),
-                List.of(PlacedFeatures.wouldSurvive(GenericBlocks.ASH_SAPLING)));
+                List.of(PlacedFeatures.wouldSurvive(RebornBlocks.ASH_SAPLING)));
         register(context, ASH_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.ASH_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2),
-                        GenericBlocks.ASH_SAPLING));
+                        RebornBlocks.ASH_SAPLING));
 
         register(context, SLIMY_CHECKED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SLIMY_KEY),
-                List.of(PlacedFeatures.wouldSurvive(GenericBlocks.SLIMY_SAPLING)));
+                List.of(PlacedFeatures.wouldSurvive(RebornBlocks.SLIMY_SAPLING)));
         register(context, SLIMY_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SLIMY_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.1f, 1),
-                        GenericBlocks.SLIMY_SAPLING));
+                        RebornBlocks.SLIMY_SAPLING));
 
 
         register(context, TIN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.TIN_ORE_KEY),

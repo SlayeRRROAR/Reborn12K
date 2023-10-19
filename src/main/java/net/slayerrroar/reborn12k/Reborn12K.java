@@ -5,9 +5,8 @@ import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.slayerrroar.reborn12k.armors.RebornArmors;
-import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
-import net.slayerrroar.reborn12k.blocks.GenericBlocks;
-import net.slayerrroar.reborn12k.blocks.OreBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornOres;
 import net.slayerrroar.reborn12k.config.RebornConfig;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
@@ -43,20 +42,13 @@ public class Reborn12K implements ModInitializer {
 
         RebornSounds.register();
 
-        OreBlocks.register();
-        GenericBlocks.register();
-        AdvancedBlocks.register();
+        RebornOres.register();
+        RebornBlocks.register();
 
-        GenericItems.register();
-
-        FuelUtil.register();
-
-        TechnicalItems.register();
-        MagicItems.register();
-
+        RebornItems.register();
         TrinketItems.register();
 
-        DiscItems.register();
+        FuelUtil.register();
 
         RebornTools.register();
         RebornArmors.register();

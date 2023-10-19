@@ -6,14 +6,12 @@ import net.minecraft.entity.LightningEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornProjectileEntities;
-import net.slayerrroar.reborn12k.items.MagicItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class ThunderboltEntity extends ThrownItemEntity {
     public ThunderboltEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
@@ -26,7 +24,7 @@ public class ThunderboltEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return MagicItems.THUNDERBOLT_MANATITE;
+        return RebornItems.THUNDERBOLT_MANATITE;
     }
 
     private void summonLightning(EntityHitResult entityHitResult) {

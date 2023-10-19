@@ -1,13 +1,13 @@
 package net.slayerrroar.reborn12k.util;
 
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
-import net.slayerrroar.reborn12k.blocks.GenericBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 
 public class StrippableUtil {
 
     public static void register() {
-        StrippableBlockRegistry.register(GenericBlocks.ASH_LOG, GenericBlocks.STRIPPED_ASH_LOG);
-        StrippableBlockRegistry.register(GenericBlocks.ASH_WOOD, GenericBlocks.STRIPPED_ASH_WOOD);
+        StrippableBlockRegistry.register(RebornBlocks.ASH_LOG, RebornBlocks.STRIPPED_ASH_LOG);
+        StrippableBlockRegistry.register(RebornBlocks.ASH_WOOD, RebornBlocks.STRIPPED_ASH_WOOD);
     }
 
 }

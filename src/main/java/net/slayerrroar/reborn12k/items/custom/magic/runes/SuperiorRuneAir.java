@@ -12,7 +12,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 
 import java.util.Random;
 
@@ -45,7 +45,7 @@ public class SuperiorRuneAir extends Item {
 
         if (block.isOf(Blocks.DIAMOND_BLOCK) && pos.getY() > 310) {
             world.breakBlock(pos, false);
-            dropStack(world, pos, new ItemStack(AdvancedBlocks.AIR_GEM));
+            dropStack(world, pos, new ItemStack(RebornBlocks.AIR_GEM));
             decreaseStackAndPlaySound(stack, world, player);
             return ActionResult.SUCCESS;
         }

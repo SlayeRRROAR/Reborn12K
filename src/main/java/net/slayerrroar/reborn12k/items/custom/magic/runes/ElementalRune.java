@@ -12,9 +12,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
-import net.slayerrroar.reborn12k.blocks.GenericBlocks;
-import net.slayerrroar.reborn12k.items.MagicItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 import java.util.Random;
 
@@ -44,43 +42,43 @@ public class ElementalRune extends Item {
         if (block.isOf(Blocks.BLUE_ORCHID)) {
             world.breakBlock(pos, false);
             decreaseStackAndPlaySound(stack, world, player);
-            dropStack(world, pos, new ItemStack(MagicItems.SUPERIOR_RUNE_OF_AIR, 1));
+            dropStack(world, pos, new ItemStack(RebornItems.SUPERIOR_RUNE_OF_AIR, 1));
             return ActionResult.SUCCESS;
         }
         if (block.isOf(Blocks.OXEYE_DAISY)) {
             world.breakBlock(pos, false);
             decreaseStackAndPlaySound(stack, world, player);
-            dropStack(world, pos, new ItemStack(MagicItems.SUPERIOR_RUNE_OF_EARTH, 1));
+            dropStack(world, pos, new ItemStack(RebornItems.SUPERIOR_RUNE_OF_EARTH, 1));
             return ActionResult.SUCCESS;
         }
         if (block.isOf(Blocks.CORNFLOWER)) {
             world.breakBlock(pos, false);
             decreaseStackAndPlaySound(stack, world, player);
-            dropStack(world, pos, new ItemStack(MagicItems.SUPERIOR_RUNE_OF_WATER, 1));
+            dropStack(world, pos, new ItemStack(RebornItems.SUPERIOR_RUNE_OF_WATER, 1));
             return ActionResult.SUCCESS;
         }
         if (block.isOf(Blocks.POPPY)) {
             world.breakBlock(pos, false);
             decreaseStackAndPlaySound(stack, world, player);
-            dropStack(world, pos, new ItemStack(MagicItems.SUPERIOR_RUNE_OF_FIRE, 1));
+            dropStack(world, pos, new ItemStack(RebornItems.SUPERIOR_RUNE_OF_FIRE, 1));
             return ActionResult.SUCCESS;
         }
         if (block.isOf(Blocks.SUNFLOWER) && world.getBlockState(pos.up()).isOf(Blocks.SUNFLOWER)) {
             world.breakBlock(pos, false);
             decreaseStackAndPlaySound(stack, world, player);
-            dropStack(world, pos, new ItemStack(MagicItems.SUPERIOR_RUNE_OF_LIGHT, 1));
+            dropStack(world, pos, new ItemStack(RebornItems.SUPERIOR_RUNE_OF_LIGHT, 1));
             return ActionResult.SUCCESS;
         }
         if (block.isOf(Blocks.SUNFLOWER) && !world.getBlockState(pos.up()).isOf(Blocks.SUNFLOWER)) {
             world.breakBlock(pos.down(), false);
             decreaseStackAndPlaySound(stack, world, player);
-            dropStack(world, pos, new ItemStack(MagicItems.SUPERIOR_RUNE_OF_LIGHT, 1));
+            dropStack(world, pos, new ItemStack(RebornItems.SUPERIOR_RUNE_OF_LIGHT, 1));
             return ActionResult.SUCCESS;
         }
         if (block.isOf(Blocks.ALLIUM)) {
             world.breakBlock(pos, false);
             decreaseStackAndPlaySound(stack, world, player);
-            dropStack(world, pos, new ItemStack(MagicItems.SUPERIOR_RUNE_OF_DARKNESS, 1));
+            dropStack(world, pos, new ItemStack(RebornItems.SUPERIOR_RUNE_OF_DARKNESS, 1));
             return ActionResult.SUCCESS;
         }
 

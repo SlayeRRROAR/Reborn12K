@@ -67,7 +67,7 @@ public class RebornLootTable {
                                 0.00625f,
                                 0.008333334f,
                                 0.025f))
-                        .with(ItemEntry.builder(GenericItems.BANANA))
+                        .with(ItemEntry.builder(RebornItems.BANANA))
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
@@ -81,7 +81,7 @@ public class RebornLootTable {
                                 0.0095f,
                                 0.011111112f,
                                 0.033f))
-                        .with(ItemEntry.builder(GenericItems.CHERRY))
+                        .with(ItemEntry.builder(RebornItems.CHERRY))
                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
@@ -93,10 +93,10 @@ public class RebornLootTable {
                     LootPool.Builder poolBuilder = LootPool.builder()
                             .rolls(UniformLootNumberProvider.create(0, 2))
                             .conditionally(RandomChanceLootCondition.builder(1f))
-                            .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                            .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                            .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                            .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                            .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                            .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                            .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                            .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                     tableBuilder.pool(poolBuilder.build());
                 }
@@ -104,10 +104,10 @@ public class RebornLootTable {
                 if (ANCIENT_CITY_ID.equals(id)) {
                     LootPool.Builder poolBuilder = LootPool.builder()
                             .rolls(UniformLootNumberProvider.create(1, 3))
-                            .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                            .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                            .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                            .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                            .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                            .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                            .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                            .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                     tableBuilder.pool(poolBuilder.build());
                 }
@@ -115,10 +115,10 @@ public class RebornLootTable {
                 if (BASTION_TREASURE_ID.equals(id)) {
                     LootPool.Builder poolBuilder = LootPool.builder()
                             .rolls(UniformLootNumberProvider.create(1, 2))
-                            .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                            .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                            .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                            .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                            .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                            .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                            .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                            .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                     tableBuilder.pool(poolBuilder.build());
                 }
@@ -126,10 +126,10 @@ public class RebornLootTable {
                 if (BURIED_TREASURE_ID.equals(id)) {
                     LootPool.Builder poolBuilder = LootPool.builder()
                             .rolls(UniformLootNumberProvider.create(0, 2))
-                            .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                            .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                            .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                            .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                            .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                            .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                            .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                            .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                     tableBuilder.pool(poolBuilder.build());
                 }
@@ -137,10 +137,10 @@ public class RebornLootTable {
                 if (DESERT_PYRAMID_ID.equals(id)) {
                     LootPool.Builder poolBuilder = LootPool.builder()
                             .rolls(UniformLootNumberProvider.create(0, 2))
-                            .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                            .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                            .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                            .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                            .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                            .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                            .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                            .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                     tableBuilder.pool(poolBuilder.build());
                 }
@@ -148,10 +148,10 @@ public class RebornLootTable {
                 if (END_CITY_TREASURE_ID.equals(id)) {
                     LootPool.Builder poolBuilder = LootPool.builder()
                             .rolls(UniformLootNumberProvider.create(2, 4))
-                            .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                            .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                            .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                            .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                            .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                            .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                            .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                            .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                     tableBuilder.pool(poolBuilder.build());
                 }
@@ -159,10 +159,10 @@ public class RebornLootTable {
                 if (JUNGLE_TEMPLE_ID.equals(id)) {
                     LootPool.Builder poolBuilder = LootPool.builder()
                             .rolls(UniformLootNumberProvider.create(0, 2))
-                            .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                            .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                            .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                            .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                            .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                            .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                            .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                            .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                     tableBuilder.pool(poolBuilder.build());
                 }
@@ -170,10 +170,10 @@ public class RebornLootTable {
                 if (NETHER_BRIDGE_ID.equals(id)) {
                     LootPool.Builder poolBuilder = LootPool.builder()
                             .rolls(UniformLootNumberProvider.create(1, 2))
-                            .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                            .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                            .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                            .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                            .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                            .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                            .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                            .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                     tableBuilder.pool(poolBuilder.build());
                 }
@@ -181,10 +181,10 @@ public class RebornLootTable {
                 if (STRONGHOLD_LIBRARY_ID.equals(id)) {
                     LootPool.Builder poolBuilder = LootPool.builder()
                             .rolls(UniformLootNumberProvider.create(1, 3))
-                            .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                            .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                            .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                            .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                            .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                            .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                            .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                            .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                     tableBuilder.pool(poolBuilder.build());
                 }
@@ -192,10 +192,10 @@ public class RebornLootTable {
                 if (WOODLAND_MANSION_ID.equals(id)) {
                     LootPool.Builder poolBuilder = LootPool.builder()
                             .rolls(UniformLootNumberProvider.create(1, 3))
-                            .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                            .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                            .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                            .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                            .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                            .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                            .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                            .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                     tableBuilder.pool(poolBuilder.build());
                 }
@@ -209,10 +209,10 @@ public class RebornLootTable {
                     if (WARDEN_ID.equals(id)) {
                         LootPool.Builder poolBuilder = LootPool.builder()
                                 .rolls(ConstantLootNumberProvider.create(1))
-                                .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                                .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                                .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                                .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                                .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                                .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                                .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                                .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                         tableBuilder.pool(poolBuilder.build());
                     }
@@ -222,10 +222,10 @@ public class RebornLootTable {
                     if (WITHER_ID.equals(id)) {
                         LootPool.Builder poolBuilder = LootPool.builder()
                                 .rolls(ConstantLootNumberProvider.create(1))
-                                .with(ItemEntry.builder(AdvancedBlocks.WORN_STRONGBOX).weight(8))
-                                .with(ItemEntry.builder(AdvancedBlocks.STRONGBOX).weight(4))
-                                .with(ItemEntry.builder(AdvancedBlocks.PRISTINE_STRONGBOX).weight(2))
-                                .with(ItemEntry.builder(AdvancedBlocks.LEGENDARY_STRONGBOX).weight(1))
+                                .with(ItemEntry.builder(RebornBlocks.WORN_STRONGBOX).weight(8))
+                                .with(ItemEntry.builder(RebornBlocks.STRONGBOX).weight(4))
+                                .with(ItemEntry.builder(RebornBlocks.PRISTINE_STRONGBOX).weight(2))
+                                .with(ItemEntry.builder(RebornBlocks.LEGENDARY_STRONGBOX).weight(1))
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)).build());
                         tableBuilder.pool(poolBuilder.build());
                     }

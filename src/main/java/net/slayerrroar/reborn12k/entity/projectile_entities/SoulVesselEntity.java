@@ -16,7 +16,7 @@ import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornProjectileEntities;
-import net.slayerrroar.reborn12k.items.MagicItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class SoulVesselEntity extends ThrownItemEntity {
     public SoulVesselEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
@@ -29,7 +29,7 @@ public class SoulVesselEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return MagicItems.SOUL_VESSEL;
+        return RebornItems.SOUL_VESSEL;
     }
 
     private void removeAndPlaySound(EntityHitResult entityHitResult) {
@@ -47,39 +47,39 @@ public class SoulVesselEntity extends ThrownItemEntity {
 
             if (entity instanceof ChickenEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.CHICKEN_SOUL);
+                entity.dropItem(RebornItems.CHICKEN_SOUL);
             }
             if (entity instanceof CowEntity && !(entity instanceof MooshroomEntity)) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.COW_SOUL);
+                entity.dropItem(RebornItems.COW_SOUL);
             }
             if (entity instanceof FishEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.FISH_SOUL);
+                entity.dropItem(RebornItems.FISH_SOUL);
             }
             if (entity instanceof FrogEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.FROG_SOUL);
+                entity.dropItem(RebornItems.FROG_SOUL);
             }
             if (entity instanceof MooshroomEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.MOOSHROOM_SOUL);
+                entity.dropItem(RebornItems.MOOSHROOM_SOUL);
             }
             if (entity instanceof PigEntity || entity instanceof HoglinEntity || entity instanceof ZoglinEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.PIG_SOUL);
+                entity.dropItem(RebornItems.PIG_SOUL);
             }
             if (entity instanceof RabbitEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.RABBIT_SOUL);
+                entity.dropItem(RebornItems.RABBIT_SOUL);
             }
             if (entity instanceof SheepEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.SHEEP_SOUL);
+                entity.dropItem(RebornItems.SHEEP_SOUL);
             }
             if (entity instanceof SquidEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.SQUID_SOUL);
+                entity.dropItem(RebornItems.SQUID_SOUL);
             }
 
             //Neutrals
@@ -87,86 +87,86 @@ public class SoulVesselEntity extends ThrownItemEntity {
 
             if (entity instanceof BeeEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.BEE_SOUL);
+                entity.dropItem(RebornItems.BEE_SOUL);
             }
             if (entity instanceof SpiderEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.SPIDER_SOUL);
+                entity.dropItem(RebornItems.SPIDER_SOUL);
             }
             if (entity instanceof EndermanEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.ENDERMAN_SOUL);
+                entity.dropItem(RebornItems.ENDERMAN_SOUL);
             }
 
             //Hostile
 
             if (entity instanceof BlazeEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.BLAZE_SOUL);
+                entity.dropItem(RebornItems.BLAZE_SOUL);
             }
             if (entity instanceof CreeperEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.CREEPER_SOUL);
+                entity.dropItem(RebornItems.CREEPER_SOUL);
             }
             if (entity instanceof DrownedEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.DROWNED_SOUL);
+                entity.dropItem(RebornItems.DROWNED_SOUL);
             }
             if (entity instanceof GhastEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.GHAST_SOUL);
+                entity.dropItem(RebornItems.GHAST_SOUL);
             }
             if (entity instanceof GuardianEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.GUARDIAN_SOUL);
+                entity.dropItem(RebornItems.GUARDIAN_SOUL);
             }
             if (entity instanceof IllagerEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.ILLAGER_SOUL);
+                entity.dropItem(RebornItems.ILLAGER_SOUL);
             }
             if (entity instanceof MagmaCubeEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.MAGMA_CUBE_SOUL);
+                entity.dropItem(RebornItems.MAGMA_CUBE_SOUL);
             }
             if (entity instanceof PhantomEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.PHANTOM_SOUL);
+                entity.dropItem(RebornItems.PHANTOM_SOUL);
             }
             if (entity instanceof ShulkerEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.SHULKER_SOUL);
+                entity.dropItem(RebornItems.SHULKER_SOUL);
             }
             if (entity instanceof SkeletonEntity || entity instanceof StrayEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.SKELETON_SOUL);
+                entity.dropItem(RebornItems.SKELETON_SOUL);
             }
             if (entity instanceof SlimeEntity && !(entity instanceof MagmaCubeEntity)) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.SLIME_SOUL);
+                entity.dropItem(RebornItems.SLIME_SOUL);
             }
             if (entity instanceof WitchEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.WITCH_SOUL);
+                entity.dropItem(RebornItems.WITCH_SOUL);
             }
             if (entity instanceof WitherSkeletonEntity) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.WITHER_SKELETON_SOUL);
+                entity.dropItem(RebornItems.WITHER_SKELETON_SOUL);
             }
             if (entity instanceof ZombieEntity && !(entity instanceof DrownedEntity)) {
                 removeAndPlaySound(entityHitResult);
-                entity.dropItem(MagicItems.ZOMBIE_SOUL);
+                entity.dropItem(RebornItems.ZOMBIE_SOUL);
             }
 
             //Bosses
 
             if (entity instanceof EnderDragonEntity) {
-                entity.dropItem(MagicItems.ENDER_DRAGON_SOUL);
+                entity.dropItem(RebornItems.ENDER_DRAGON_SOUL);
             }
             if (entity instanceof WardenEntity) {
-                entity.dropItem(MagicItems.WARDEN_SOUL);
+                entity.dropItem(RebornItems.WARDEN_SOUL);
             }
             if (entity instanceof WitherEntity) {
-                entity.dropItem(MagicItems.WITHER_SOUL);
+                entity.dropItem(RebornItems.WITHER_SOUL);
             }
 
         }

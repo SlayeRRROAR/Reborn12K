@@ -14,7 +14,7 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornProjectileEntities;
-import net.slayerrroar.reborn12k.items.MagicItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 
 public class TerraEntity extends ThrownItemEntity {
     public TerraEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
@@ -27,7 +27,7 @@ public class TerraEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return MagicItems.TERRA_MANATITE;
+        return RebornItems.TERRA_MANATITE;
     }
 
     private void slowTarget(EntityHitResult entityHitResult) {

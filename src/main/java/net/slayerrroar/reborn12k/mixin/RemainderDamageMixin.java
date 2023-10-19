@@ -4,7 +4,7 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.util.collection.DefaultedList;
-import net.slayerrroar.reborn12k.items.GenericItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -18,9 +18,9 @@ public interface RemainderDamageMixin {
         DefaultedList<ItemStack> defaultedList = cir.getReturnValue();
 
         for(int i = 0; i < defaultedList.size(); ++i) {
-            if (inventory.getStack(i).isOf(GenericItems.STONE_HAMMER) ||
-                inventory.getStack(i).isOf(GenericItems.IRON_HAMMER) ||
-                inventory.getStack(i).isOf(GenericItems.STONE_HAMMER)) {
+            if (inventory.getStack(i).isOf(RebornItems.STONE_HAMMER) ||
+                inventory.getStack(i).isOf(RebornItems.IRON_HAMMER) ||
+                inventory.getStack(i).isOf(RebornItems.STONE_HAMMER)) {
 
                 ItemStack remainderStack = inventory.getStack(i);
                 remainderStack.setDamage(remainderStack.getDamage()+1);

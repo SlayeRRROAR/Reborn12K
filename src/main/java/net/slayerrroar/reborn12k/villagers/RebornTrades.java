@@ -6,10 +6,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.blocks.AdvancedBlocks;
-import net.slayerrroar.reborn12k.blocks.GenericBlocks;
-import net.slayerrroar.reborn12k.items.GenericItems;
-import net.slayerrroar.reborn12k.items.MagicItems;
+import net.slayerrroar.reborn12k.blocks.RebornBlocks;
+import net.slayerrroar.reborn12k.items.RebornItems;
 import net.slayerrroar.reborn12k.items.TrinketItems;
 
 import java.util.Random;
@@ -28,7 +26,7 @@ public class RebornTrades {
                             12, 2, 0.08f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 1),
-                            new ItemStack(GenericItems.SILVER_INGOT, 2),
+                            new ItemStack(RebornItems.SILVER_INGOT, 2),
                             16, 1, 0.08f));
                 });
 
@@ -36,11 +34,11 @@ public class RebornTrades {
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 5),
-                            new ItemStack(GenericItems.RUBY, 1),
+                            new ItemStack(RebornItems.RUBY, 1),
                             9, 5, 0.03f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 5),
-                            new ItemStack(GenericItems.SAPPHIRE, 1),
+                            new ItemStack(RebornItems.SAPPHIRE, 1),
                             9, 5, 0.03f));
                 });
 
@@ -52,7 +50,7 @@ public class RebornTrades {
                             9, 10, 0.03f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 9),
-                            new ItemStack(GenericItems.MANATITE, 1),
+                            new ItemStack(RebornItems.MANATITE, 1),
                             12, 10, 0.03f));
                 });
 
@@ -85,7 +83,7 @@ public class RebornTrades {
                             new ItemStack(Items.EMERALD, 1),
                             12, 1, 0.08f));
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(GenericItems.TIN_INGOT, 7),
+                            new ItemStack(RebornItems.TIN_INGOT, 7),
                             new ItemStack(Items.EMERALD, 1),
                             12, 1, 0.08f));
                 });
@@ -106,10 +104,10 @@ public class RebornTrades {
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 43),
-                            new ItemStack(GenericItems.UNIVERSAL_SMITHING_TEMPLATE, 5),
+                            new ItemStack(RebornItems.UNIVERSAL_SMITHING_TEMPLATE, 5),
                             3, 20, 0.03f));
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(GenericItems.TITANIUM_INGOT, 3),
+                            new ItemStack(RebornItems.TITANIUM_INGOT, 3),
                             new ItemStack(Items.EMERALD, 1),
                             12, 20, 0.03f));
                 });
@@ -117,7 +115,7 @@ public class RebornTrades {
         TradeOfferHelper.registerVillagerOffers(RebornVillagers.BLACKSMITH, 4,  //Blacksmith L4
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(GenericItems.VANADIUM_INGOT, 2),
+                            new ItemStack(RebornItems.VANADIUM_INGOT, 2),
                             new ItemStack(Items.EMERALD, 1),
                             12, 30, 0f));
                     factories.add((entity, random) -> trims());
@@ -140,10 +138,10 @@ public class RebornTrades {
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 2),
-                            new ItemStack(MagicItems.BLANK_RUNE, 1),
+                            new ItemStack(RebornItems.BLANK_RUNE, 1),
                             12, 1, 0.08f));
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(GenericBlocks.ASH_LOG, 16),
+                            new ItemStack(RebornBlocks.ASH_LOG, 16),
                             new ItemStack(Items.EMERALD, 1),
                             12, 2, 0.05f));
                 });
@@ -163,8 +161,8 @@ public class RebornTrades {
         TradeOfferHelper.registerVillagerOffers(RebornVillagers.MANASMITH, 3,   //Manasmith L3
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(MagicItems.RUNE_OF_ORDER, 1),
-                            new ItemStack(MagicItems.SOUL_VESSEL, 4),
+                            new ItemStack(RebornItems.RUNE_OF_ORDER, 1),
+                            new ItemStack(RebornItems.SOUL_VESSEL, 4),
                             9, 20, 0f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 1),
@@ -176,18 +174,18 @@ public class RebornTrades {
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 3),
-                            new ItemStack(MagicItems.MANA_SPARK, 1),
+                            new ItemStack(RebornItems.MANA_SPARK, 1),
                             16, 15, 0f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 3),
-                            new ItemStack(MagicItems.MANAWEAVE, 1),
+                            new ItemStack(RebornItems.MANAWEAVE, 1),
                             12, 15, 0f));
                 });
 
         TradeOfferHelper.registerVillagerOffers(RebornVillagers.MANASMITH, 5,   //Manasmith L5
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(MagicItems.MAGICAL_FRAGMENT, 1),
+                            new ItemStack(RebornItems.MAGICAL_FRAGMENT, 1),
                             new ItemStack(Items.EMERALD, 7),
                             12, 30, 0f));
                     factories.add((entity, random) -> new TradeOffer(
@@ -224,7 +222,7 @@ public class RebornTrades {
                 factories -> {
                     factories.add((entity, random) -> hatTrinket());
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(GenericItems.LEAD_INGOT, 6),
+                            new ItemStack(RebornItems.LEAD_INGOT, 6),
                             new ItemStack(Items.EMERALD, 1),
                             12, 10, 0.03f));
                 });
@@ -565,12 +563,12 @@ public class RebornTrades {
         if (strongboxInt == 0) {
             return new TradeOffer(
                     new ItemStack(Items.EMERALD, 35),
-                    new ItemStack(AdvancedBlocks.STRONGBOX, 1),
+                    new ItemStack(RebornBlocks.STRONGBOX, 1),
                     5, 30, 0f);
         }
         return new TradeOffer(
                 new ItemStack(Items.EMERALD, 59),
-                new ItemStack(AdvancedBlocks.PRISTINE_STRONGBOX, 1),
+                new ItemStack(RebornBlocks.PRISTINE_STRONGBOX, 1),
                 3, 30, 0f);
     }
 

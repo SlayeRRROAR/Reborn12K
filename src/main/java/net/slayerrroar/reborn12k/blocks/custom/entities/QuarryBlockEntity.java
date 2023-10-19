@@ -21,7 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
-import net.slayerrroar.reborn12k.items.TechnicalItems;
+import net.slayerrroar.reborn12k.items.RebornItems;
 import net.slayerrroar.reborn12k.recipe.recipe_types.QuarryRecipe;
 import net.slayerrroar.reborn12k.screen.quarry.QuarryScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
@@ -151,7 +151,7 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
         }
         if (this.getStack(FUEL_SLOT).getDamage() == this.getStack(FUEL_SLOT).getMaxDamage()) {
             this.removeStack(FUEL_SLOT);
-            this.setStack(SPENT_SLOT, new ItemStack(TechnicalItems.EMPTY_FUEL_CELL,
+            this.setStack(SPENT_SLOT, new ItemStack(RebornItems.EMPTY_FUEL_CELL,
                     this.getStack(SPENT_SLOT).getCount() + 1));
         }
     }
