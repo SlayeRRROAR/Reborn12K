@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diamond_pickaxe",
+    "reborn12k:titanium_pickaxe",
+    "reborn12k:steel_pickaxe",
+    "reborn12k:enderium_pickaxe",
+    "reborn12k:magisteel_pickaxe"
+  ]
+}

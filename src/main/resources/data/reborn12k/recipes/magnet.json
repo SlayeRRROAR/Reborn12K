@@ -3,17 +3,20 @@
   "pattern": [
     "A B",
     "C C",
-    "CCC"
+    "CDC"
   ],
   "key": {
     "A": {
       "item": "minecraft:lapis_lazuli"
     },
     "B": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:redstone"
     },
     "C": {
-      "item": "minecraft:redstone"
+      "item": "minecraft:iron_ingot"
+    },
+    "D": {
+      "tag": "c:neodymium_ingots"
     }
   },
   "result": {

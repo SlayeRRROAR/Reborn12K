@@ -1,21 +1,15 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        " A ",
-        "ABA",
-        " A "
-    ],
-    "key": {
-        "A": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
             "item": "reborn12k:blank_rune"
         },
-        "B": {
+        {
             "item": "reborn12k:sunstone"
         }
-    },
+    ],
     "result": {
-        "item": "reborn12k:rune_of_light",
-        "count": 1
+        "item": "reborn12k:rune_of_light"
     },
     "group": "rune_of_light"
 }

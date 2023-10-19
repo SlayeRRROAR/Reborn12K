@@ -5,19 +5,19 @@
             "tag": "reborn12k:hammers"
         },
         {
-            "item": "minecraft:redstone_block"
+            "tag": "c:copper_dusts"
         },
         {
             "item": "minecraft:redstone"
         },
         {
-            "tag": "c:copper_dusts"
+            "item": "minecraft:redstone"
         },
         {
-            "tag": "c:copper_dusts"
+            "item": "minecraft:redstone"
         },
         {
-            "tag": "c:copper_dusts"
+            "item": "minecraft:redstone"
         }
     ],
     "result": {

@@ -16,7 +16,7 @@
             "item": "minecraft:hopper"
         },
         "D": {
-            "item": "minecraft:iron_pickaxe"
+            "tag": "reborn12k:level_3_pickaxes"
         }
     },
     "result": {

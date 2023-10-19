@@ -8,6 +8,15 @@
             "tag": "c:platinum_dusts"
         },
         {
+            "tag": "c:lead_dusts"
+        },
+        {
+            "tag": "c:lead_dusts"
+        },
+        {
+            "tag":  "sand"
+        },
+        {
             "item": "reborn12k:resonant_ender_bucket"
         }
     ],
