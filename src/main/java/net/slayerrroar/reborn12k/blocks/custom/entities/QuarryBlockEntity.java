@@ -33,16 +33,15 @@ import java.util.Optional;
 
 public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
-            DefaultedList.ofSize(4, ItemStack.EMPTY);
+            DefaultedList.ofSize(3, ItemStack.EMPTY);
 
     private static final int FUEL_SLOT = 0;
     private static final int INPUT_SLOT = 1;
     private static final int OUTPUT_SLOT = 2;
-    private static final int SPENT_SLOT = 3;
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 120;
+    private int maxProgress = 400;
 
     public QuarryBlockEntity(BlockPos blockPos, BlockState state) {
         super(RebornBlockEntities.QUARRY, blockPos, state);
@@ -151,8 +150,7 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
         }
         if (this.getStack(FUEL_SLOT).getDamage() == this.getStack(FUEL_SLOT).getMaxDamage()) {
             this.removeStack(FUEL_SLOT);
-            this.setStack(SPENT_SLOT, new ItemStack(RebornItems.EMPTY_FUEL_CELL,
-                    this.getStack(SPENT_SLOT).getCount() + 1));
+            this.setStack(FUEL_SLOT, new ItemStack(RebornItems.EMPTY_FUEL_CELL, 1));
         }
     }
 
