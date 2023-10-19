@@ -760,7 +760,8 @@
     "item.reborn12k.focus_belt": "Focus Belt",
     "item.reborn12k.antigrav_buckle": "AntiGrav Buckle",
 
-    "item.reborn12k.comfy_loafers": "Comfy Loafers",
+    "item.reborn12k.comfy_slippers": "Comfy Slippers",
+    "item.reborn12k.loafers": "Loafers",
     "item.reborn12k.traveler_shoes": "Traveler's Shoes",
     "item.reborn12k.running_shoes": "Running Shoes",
     "item.reborn12k.long_fall_boots": "Long Fall Boots",
@@ -1051,6 +1052,11 @@
     "item.reborn12k.loaded_dice.tooltip2": "§8can match this luck",
     "item.reborn12k.basilisk_fang.tooltip": "§8Not only its gaze can kill...",
 
+
+    "item.reborn12k.power_sword.tooltip1": "§cInactive",
+    "item.reborn12k.power_sword.tooltip2": "§1Active",
+    "item.reborn12k.power_sword.tooltip3": "Power Sword activated!",
+    "item.reborn12k.power_sword.tooltip4": "Power Sword deactivated!",
 
     "item.reborn12k.red_queen.tooltip1": "§8Exceed is §cOFF",
     "item.reborn12k.red_queen.tooltip2": "§8Exceed is §1ON",
