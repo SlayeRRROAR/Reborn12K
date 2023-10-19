@@ -9,7 +9,6 @@ import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.recipe.RecipeEntry;
@@ -132,8 +131,14 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
         }
     }
 
+    private boolean hasCorrectFuel(QuarryBlockEntity entity) {
+        return this.getStack(FUEL_SLOT).isOf(RebornItems.SEU_FUEL_CELL) ||
+                this.getStack(FUEL_SLOT).isOf(RebornItems.LEU_FUEL_CELL) ||
+                this.getStack(FUEL_SLOT).isOf(RebornItems.HEU_FUEL_CELL);
+    }
+
     private boolean hasFuelInFuelSlot(QuarryBlockEntity entity) {
-        return this.getStack(FUEL_SLOT).getMaxDamage() != 0 && !this.getStack(FUEL_SLOT).isEmpty();
+        return hasCorrectFuel(entity) && this.getStack(FUEL_SLOT).getMaxDamage() >= 0;
     }
 
     private void resetProgress() {
