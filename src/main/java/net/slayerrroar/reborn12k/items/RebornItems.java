@@ -71,6 +71,7 @@ import net.slayerrroar.reborn12k.items.custom.tech.*;
 import net.slayerrroar.reborn12k.sounds.RebornSounds;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
+@SuppressWarnings("unused")
 public class RebornItems {
 
     // Resources
@@ -289,9 +290,9 @@ public class RebornItems {
     public static final Item COLLIMATED_LASER_ARRAY = registerItem("collimated_laser_array", new Item(new FabricItemSettings()));
 
     public static final Item EMPTY_FUEL_CELL = registerItem("empty_fuel_cell", new Item(new FabricItemSettings()));
-    public static final Item FUEL_CELL = registerItem("fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(8)));
-    public static final Item CHARGED_FUEL_CELL = registerItem("charged_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(32)));
-    public static final Item SUPERCHARGED_FUEL_CELL = registerItem("supercharged_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(128)));
+    public static final Item SEU_FUEL_CELL = registerItem("seu_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(32)));
+    public static final Item LEU_FUEL_CELL = registerItem("leu_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(64)));
+    public static final Item HEU_FUEL_CELL = registerItem("heu_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(128)));
 
     public static final Item BASIC_LASER_FOCUS = registerItem("basic_laser_focus", new UnsetFocusItem(new FabricItemSettings()));
     public static final Item ADVANCED_LASER_FOCUS = registerItem("advanced_laser_focus", new UnsetFocusItem(new FabricItemSettings()));
@@ -701,9 +702,9 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, COLLIMATED_LASER_ARRAY);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, EMPTY_FUEL_CELL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, FUEL_CELL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CHARGED_FUEL_CELL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERCHARGED_FUEL_CELL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, SEU_FUEL_CELL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LEU_FUEL_CELL);
+        addToItemGroup(ItemGroupUtil.REBORN12K, HEU_FUEL_CELL);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, BASIC_LASER_FOCUS);
         addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_LASER_FOCUS);
