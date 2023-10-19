@@ -46,6 +46,6 @@
   },
   "suggests": {
     "modmenu": "*",
-    "jei": "*"
+    "rei": "*"
   }
 }
