@@ -110,6 +110,8 @@ public class RebornItems {
     public static final Item LUMIUM_INGOT = registerItem("lumium_ingot", new Item(new FabricItemSettings()));
     public static final Item ENDERIUM_INGOT = registerItem("enderium_ingot", new Item(new FabricItemSettings()));
 
+    public static final Item YELLOWCAKE_URANIUM_INGOT = registerItem("yellowcake_uranium_ingot", new Item(new FabricItemSettings()));
+
     public static final Item SHIBUICHI_ALLOY_INGOT = registerItem("shibuichi_alloy_ingot", new Item(new FabricItemSettings()));
     public static final Item MAGISTEEL_INGOT = registerItem("magisteel_ingot", new Item(new FabricItemSettings()));
     public static final Item ORICHALCUM_INGOT = registerItem("orichalcum_ingot", new Item(new FabricItemSettings()));
@@ -205,6 +207,8 @@ public class RebornItems {
     public static final Item LUMIUM_DUST = registerItem("lumium_dust", new Item(new FabricItemSettings()));
     public static final Item ENDERIUM_DUST = registerItem("enderium_dust", new Item(new FabricItemSettings()));
 
+    public static final Item YELLOWCAKE_URANIUM_DUST = registerItem("yellowcake_uranium_dust", new Item(new FabricItemSettings()));
+
     public static final Item SHIBUICHI_ALLOY_DUST = registerItem("shibuichi_alloy_dust", new Item(new FabricItemSettings()));
     public static final Item MAGISTEEL_DUST = registerItem("magisteel_dust", new Item(new FabricItemSettings()));
     public static final Item ORICHALCUM_DUST = registerItem("orichalcum_dust", new Item(new FabricItemSettings()));
@@ -292,15 +296,12 @@ public class RebornItems {
     public static final Item COOLING_ASSEMBLY = registerItem("cooling_assembly", new Item(new FabricItemSettings()));
     public static final Item POWER_SUPPLY_MODULE = registerItem("power_supply_module", new Item(new FabricItemSettings()));
     public static final Item HFR_COIL = registerItem("hfr_coil", new Item(new FabricItemSettings()));
-    public static final Item LIGHT_COLLIMATOR_ARRAY = registerItem("light_collimator_array", new Item(new FabricItemSettings()));
     public static final Item UHF_LASER_EMITTER = registerItem("uhf_laser_emitter", new Item(new FabricItemSettings()));
     public static final Item COLLIMATED_LASER_ARRAY = registerItem("collimated_laser_array", new Item(new FabricItemSettings()));
 
     public static final Item EMPTY_FUEL_CELL = registerItem("empty_fuel_cell", new Item(new FabricItemSettings()));
-    //TODO: rework fuel usage, fuel charges and laser foci stuff
-    public static final Item SEU_FUEL_CELL = registerItem("seu_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(32)));
-    public static final Item LEU_FUEL_CELL = registerItem("leu_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(64)));
-    public static final Item HEU_FUEL_CELL = registerItem("heu_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(128)));
+    public static final Item LEU_FUEL_CELL = registerItem("leu_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(16)));
+    public static final Item HEU_FUEL_CELL = registerItem("heu_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(64)));
 
     public static final Item LASER_FOCUS = registerItem("laser_focus", new UnsetFocusItem(new FabricItemSettings()));
 
@@ -562,6 +563,7 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, LUMIUM_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_INGOT);
 
+        addToItemGroup(ItemGroupUtil.REBORN12K, YELLOWCAKE_URANIUM_INGOT);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_INGOT);
@@ -657,6 +659,8 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, LUMIUM_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_DUST);
 
+        addToItemGroup(ItemGroupUtil.REBORN12K, YELLOWCAKE_URANIUM_DUST);
+
         addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_DUST);
@@ -707,12 +711,10 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, COOLING_ASSEMBLY);
         addToItemGroup(ItemGroupUtil.REBORN12K, POWER_SUPPLY_MODULE);
         addToItemGroup(ItemGroupUtil.REBORN12K, HFR_COIL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LIGHT_COLLIMATOR_ARRAY);
         addToItemGroup(ItemGroupUtil.REBORN12K, UHF_LASER_EMITTER);
         addToItemGroup(ItemGroupUtil.REBORN12K, COLLIMATED_LASER_ARRAY);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, EMPTY_FUEL_CELL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SEU_FUEL_CELL);
         addToItemGroup(ItemGroupUtil.REBORN12K, LEU_FUEL_CELL);
         addToItemGroup(ItemGroupUtil.REBORN12K, HEU_FUEL_CELL);
 
