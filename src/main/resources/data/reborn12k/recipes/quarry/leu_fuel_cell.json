@@ -1,22 +1,14 @@
 {
-    "type": "minecraft:crafting_shaped",
+    "type": "minecraft:crafting_shapeless",
     "category": "misc",
-    "pattern": [
-        " A ",
-        "BCB",
-        " A "
-    ],
-    "key": {
-        "A": {
-            "tag": "c:uranium_blocks"
+    "ingredients": [
+        {
+            "item": "reborn12k:empty_fuel_cell"
         },
-        "B": {
-            "tag": "c:signalum_ingots"
-        },
-        "C": {
-            "item": "reborn12k:seu_fuel_cell"
+        {
+            "tag": "c:uranium_ingots"
         }
-    },
+    ],
     "result": {
         "item": "reborn12k:leu_fuel_cell",
         "count": 1
