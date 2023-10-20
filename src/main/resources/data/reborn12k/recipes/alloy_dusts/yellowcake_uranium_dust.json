@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "tag": "c:uranium_dusts"
+        },
+        {
+            "tag": "c:uranium_dusts"
+        },
+        {
+            "tag": "c:uranium_dusts"
+        },
+        {
+            "tag": "c:osmium_dusts"
+        },
+        {
+            "tag": "c:osmium_dusts"
+        },
+        {
+            "tag": "c:cobalt_dusts"
+        },
+        {
+            "tag": "c:coal_dusts"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:yellowcake_uranium_dust",
+        "count": 1
+    },
+    "group": "yellowcake_uranium_dust"
+}

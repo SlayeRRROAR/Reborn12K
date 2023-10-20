@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "item": "reborn12k:yellowcake_uranium_ingot"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:yellowcake_uranium_dust"
+    }
+}
