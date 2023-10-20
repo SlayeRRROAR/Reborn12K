@@ -3,7 +3,7 @@
     "category": "misc",
     "pattern": [
         "ABA",
-        "ACA",
+        "CDC",
         "ABA"
     ],
     "key": {
@@ -11,10 +11,13 @@
             "tag": "c:titanium_ingots"
         },
         "B": {
-            "tag": "c:gold_ingots"
+            "tag": "c:iridium_ingots"
         },
         "C": {
-            "tag": "c:glass_panes"
+            "tag": "c:tungsten_ingots"
+        },
+        "D": {
+            "tag": "c:glass"
         }
     },
     "result": {

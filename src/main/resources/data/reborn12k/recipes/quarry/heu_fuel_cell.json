@@ -1,22 +1,14 @@
 {
-    "type": "minecraft:crafting_shaped",
+    "type": "minecraft:crafting_shapeless",
     "category": "misc",
-    "pattern": [
-        "ABA",
-        "BCB",
-        "ABA"
-    ],
-    "key": {
-        "A": {
-            "tag": "c:lumium_ingots"
+    "ingredients": [
+        {
+            "item": "reborn12k:empty_fuel_cell"
         },
-        "B": {
-            "tag": "c:uranium_blocks"
-        },
-        "C": {
-            "item": "reborn12k:leu_fuel_cell"
+        {
+            "item": "reborn12k:yellowcake_uranium_ingot"
         }
-    },
+    ],
     "result": {
         "item": "reborn12k:heu_fuel_cell",
         "count": 1
