@@ -2,11 +2,11 @@
     "type": "reborn12k:crusher",
     "ingredients": [
         {
-            "tag": "c:quartz_ores"
+            "tag": "c:ruby_ores"
         }
     ],
     "output": {
-        "item": "reborn12k:quartz_dust",
+        "item": "reborn12k:ruby_dust",
         "count": 2
     }
 }

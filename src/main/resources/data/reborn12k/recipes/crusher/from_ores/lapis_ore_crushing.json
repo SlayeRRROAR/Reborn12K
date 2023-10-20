@@ -2,7 +2,7 @@
     "type": "reborn12k:crusher",
     "ingredients": [
         {
-            "tag": "c:lapises"
+            "tag": "c:lapis_ores"
         }
     ],
     "output": {

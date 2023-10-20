@@ -2,7 +2,7 @@
     "type": "reborn12k:crusher",
     "ingredients": [
         {
-            "tag": "c:diamonds"
+            "tag": "c:diamond_ores"
         }
     ],
     "output": {

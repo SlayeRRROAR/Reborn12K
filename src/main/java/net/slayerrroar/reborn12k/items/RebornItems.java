@@ -177,6 +177,10 @@ public class RebornItems {
     public static final Item CHROME_DUST = registerItem("chrome_dust", new Item(new FabricItemSettings()));
     public static final Item TITANIUM_DUST = registerItem("titanium_dust", new Item(new FabricItemSettings()));
 
+    public static final Item SAPPHIRE_DUST = registerItem("sapphire_dust", new Item(new FabricItemSettings()));
+    public static final Item RUBY_DUST = registerItem("ruby_dust", new Item(new FabricItemSettings()));
+    public static final Item MANATITE_DUST = registerItem("manatite_dust", new Item(new FabricItemSettings()));
+
     public static final Item TUNGSTEN_DUST = registerItem("tungsten_dust", new Item(new FabricItemSettings()));
     public static final Item VANADIUM_DUST = registerItem("vanadium_dust", new Item(new FabricItemSettings()));
     public static final Item NEODYMIUM_DUST = registerItem("neodymium_dust", new Item(new FabricItemSettings()));
@@ -624,6 +628,10 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, NICKEL_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, CHROME_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_DUST);
+
+        addToItemGroup(ItemGroupUtil.REBORN12K, SAPPHIRE_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, RUBY_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, MANATITE_DUST);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTEN_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, VANADIUM_DUST);

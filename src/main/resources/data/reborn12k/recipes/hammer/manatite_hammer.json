@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "tag": "c:manatites"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:manatite_dust",
+        "count": 1
+    }
+}

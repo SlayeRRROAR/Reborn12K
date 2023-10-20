@@ -2,11 +2,11 @@
     "type": "reborn12k:crusher",
     "ingredients": [
         {
-            "tag": "c:quartz_ores"
+            "tag": "c:manatite_ores"
         }
     ],
     "output": {
-        "item": "reborn12k:quartz_dust",
+        "item": "reborn12k:manatite_dust",
         "count": 2
     }
 }

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "tag": "c:rubies"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:ruby_dust",
+        "count": 1
+    }
+}
