@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "item": "reborn12k:yellowcake_uranium_ingot"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:yellowcake_uranium_dust",
+        "count": 1
+    },
+    "group": "yellowcake_uranium_dust"
+}

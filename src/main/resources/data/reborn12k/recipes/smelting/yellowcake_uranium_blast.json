@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:blasting",
+    "category": "misc",
+    "ingredient": {
+        "item": "reborn12k:yellowcake_uranium_dust"
+    },
+    "result": "reborn12k:yellowcake_uranium_ingot",
+    "experience": 1.3,
+    "cookingtime": 100
+}

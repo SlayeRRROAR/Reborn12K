@@ -11,6 +11,7 @@ public class FuelUtil {
         registry.add(RebornItems.COAL_PIECE, 200);
         registry.add(RebornItems.COAL_DUST, 1600);
         registry.add(RebornItems.URANIUM_INGOT, 3200);
+        registry.add(RebornItems.YELLOWCAKE_URANIUM_INGOT, 12800);
 
     }
 }
