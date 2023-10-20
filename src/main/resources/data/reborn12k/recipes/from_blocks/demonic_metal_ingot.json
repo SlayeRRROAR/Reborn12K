@@ -1,13 +1,14 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+
     "ingredients": [
         {
-            "item": "reborn12k:demonic_metal_block"
+            "tag": "c:demonic_metal_blocks"
         }
     ],
     "result": {
         "item": "reborn12k:demonic_metal_ingot",
         "count": 9
-    },
-    "group": "demonic_metal_ingot"
+    }
 }

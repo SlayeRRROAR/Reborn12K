@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "building_blocks",
     "pattern": [
         "AAA"
     ],
@@ -11,5 +12,6 @@
     "result": {
         "item": "reborn12k:ash_slab",
         "count": 3
-    }
+    },
+    "group": "wooden_slab"
 }

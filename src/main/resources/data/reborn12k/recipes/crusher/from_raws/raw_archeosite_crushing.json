@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:raw_archeosite_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:archeosite_dust",
+        "count": 2
+    }
+}

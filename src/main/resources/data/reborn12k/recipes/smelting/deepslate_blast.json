@@ -1,5 +1,6 @@
 {
     "type": "minecraft:blasting",
+    "category": "building_blocks",
     "ingredient": {
         "item": "minecraft:cobbled_deepslate"
     },

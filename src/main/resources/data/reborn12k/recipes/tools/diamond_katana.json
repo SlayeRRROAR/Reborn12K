@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "combat",
     "pattern": [
         "  A",
         " A ",
@@ -7,7 +8,7 @@
     ],
     "key": {
         "A": {
-            "item": "minecraft:diamond"
+            "tag": "c:diamonds"
         },
         "B": {
             "item": "minecraft:stick"

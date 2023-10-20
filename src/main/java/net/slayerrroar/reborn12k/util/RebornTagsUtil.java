@@ -20,7 +20,36 @@ public class RebornTagsUtil {
             return TagKey.of(Registries.BLOCK.getKey(), new Identifier(Reborn12K.MOD_ID, name));
         }
 
+        public static final TagKey<Block> GLASS = createCommonTag("glass");
+
+        public static final TagKey<Block> COPPER_ORES = createCommonTag("copper_ores");
+        public static final TagKey<Block> RAW_COPPER_BLOCKS = createCommonTag("raw_copper_blocks");
+        public static final TagKey<Block> COPPER_BLOCKS = createCommonTag("copper_blocks");
+
+        public static final TagKey<Block> IRON_ORES = createCommonTag("iron_ores");
+        public static final TagKey<Block> RAW_IRON_BLOCKS = createCommonTag("raw_iron_blocks");
+        public static final TagKey<Block> IRON_BLOCKS = createCommonTag("iron_blocks");
+
+        public static final TagKey<Block> GOLD_ORES = createCommonTag("gold_ores");
+        public static final TagKey<Block> RAW_GOLD_BLOCKS = createCommonTag("raw_gold_blocks");
+        public static final TagKey<Block> GOLD_BLOCKS = createCommonTag("gold_blocks");
+
+        public static final TagKey<Block> LAPIS_ORES = createCommonTag("lapis_ores");
+        public static final TagKey<Block> LAPIS_BLOCKS = createCommonTag("lapis_blocks");
+
+        public static final TagKey<Block> DIAMOND_ORES = createCommonTag("diamond_ores");
+        public static final TagKey<Block> DIAMOND_BLOCKS = createCommonTag("diamond_blocks");
+
+        public static final TagKey<Block> EMERALD_ORES = createCommonTag("emerald_ores");
+        public static final TagKey<Block> EMERALD_BLOCKS = createCommonTag("emerald_blocks");
+
+        public static final TagKey<Block> AMETHYST_BLOCKS = createCommonTag("amethyst_blocks");
+
+        public static final TagKey<Block> QUARTZ_ORES = createCommonTag("quartz_ores");
         public static final TagKey<Block> QUARTZ_BLOCKS = createCommonTag("quartz_blocks");
+
+        public static final TagKey<Block> NETHERITE_ORES = createCommonTag("netherite_ores");
+        public static final TagKey<Block> NETHERITE_BLOCKS = createCommonTag("netherite_blocks");
 
         public static final TagKey<Block> TIN_ORES = createCommonTag("tin_ores");
         public static final TagKey<Block> RAW_TIN_BLOCKS = createCommonTag("raw_tin_blocks");
@@ -127,6 +156,14 @@ public class RebornTagsUtil {
         public static final TagKey<Block> RAW_SHIBUICHI_ALLOY_BLOCKS = createCommonTag("raw_shibuichi_alloy_blocks");
         public static final TagKey<Block> SHIBUICHI_ALLOY_BLOCKS = createCommonTag("shibuichi_alloy_blocks");
 
+        public static final TagKey<Block> MAGISTEEL_BLOCKS = createCommonTag("magisteel_blocks");
+
+        public static final TagKey<Block> ORICHALCUM_BLOCKS = createCommonTag("orichalcum_blocks");
+
+        public static final TagKey<Block> MITHRIL_BLOCKS = createCommonTag("mithril_blocks");
+
+        public static final TagKey<Block> DEMONIC_METAL_BLOCKS = createCommonTag("demonic_metal_blocks");
+
 
         public static final TagKey<Block> SAPPHIRE_ORES = createCommonTag("sapphire_ores");
         public static final TagKey<Block> SAPPHIRE_BLOCKS = createCommonTag("sapphire_blocks");
@@ -135,6 +172,7 @@ public class RebornTagsUtil {
         public static final TagKey<Block> RUBY_BLOCKS = createCommonTag("ruby_blocks");
 
         public static final TagKey<Block> MANATITE_ORES = createCommonTag("manatite_ores");
+        public static final TagKey<Block> MANATITE_BLOCKS = createCommonTag("manatite_blocks");
 
 
         public static final TagKey<Block> ASH_LOGS = createTag("ash_logs");
@@ -154,17 +192,63 @@ public class RebornTagsUtil {
             return TagKey.of(Registries.ITEM.getKey(), new Identifier("c", name));
         }
 
-        public static final TagKey<Item> QUARTZ_BLOCKS = createCommonTag("quartz_blocks");
+        public static final TagKey<Item> GLASS = createCommonTag("glass");
 
         public static final TagKey<Item> ENDER_PEARL_DUSTS = createCommonTag("ender_pearl_dusts");
 
         public static final TagKey<Item> COAL_DUSTS = createCommonTag("coal_dusts");
+
+        public static final TagKey<Item> COPPER_ORES = createCommonTag("copper_ores");
+        public static final TagKey<Item> RAW_COPPER_ORES = createCommonTag("raw_gold_ores");
+        public static final TagKey<Item> RAW_COPPER_BLOCKS = createCommonTag("raw_copper_blocks");
         public static final TagKey<Item> COPPER_DUSTS = createCommonTag("copper_dusts");
+        public static final TagKey<Item> COPPER_INGOTS = createCommonTag("copper_ingots");
+        public static final TagKey<Item> COPPER_BLOCKS = createCommonTag("copper_blocks");
+
+        public static final TagKey<Item> IRON_ORES = createCommonTag("iron_ores");
+        public static final TagKey<Item> RAW_IRON_ORES = createCommonTag("raw_gold_ores");
+        public static final TagKey<Item> RAW_IRON_BLOCKS = createCommonTag("raw_iron_blocks");
         public static final TagKey<Item> IRON_DUSTS = createCommonTag("iron_dusts");
+        public static final TagKey<Item> IRON_NUGGETS = createCommonTag("iron_nuggets");
+        public static final TagKey<Item> IRON_INGOTS = createCommonTag("iron_ingots");
+        public static final TagKey<Item> IRON_BLOCKS = createCommonTag("iron_blocks");
+
+        public static final TagKey<Item> GOLD_ORES = createCommonTag("gold_ores");
+        public static final TagKey<Item> RAW_GOLD_ORES = createCommonTag("raw_gold_ores");
+        public static final TagKey<Item> RAW_GOLD_BLOCKS = createCommonTag("raw_gold_blocks");
         public static final TagKey<Item> GOLD_DUSTS = createCommonTag("gold_dusts");
+        public static final TagKey<Item> GOLD_NUGGETS = createCommonTag("gold_nuggets");
+        public static final TagKey<Item> GOLD_INGOTS = createCommonTag("gold_ingots");
+        public static final TagKey<Item> GOLD_BLOCKS = createCommonTag("gold_blocks");
+
+        public static final TagKey<Item> LAPIS_ORES = createCommonTag("lapis_ores");
+        public static final TagKey<Item> LAPIS_DUSTS = createCommonTag("lapis_dusts");
+        public static final TagKey<Item> LAPISES = createCommonTag("lapises");
+        public static final TagKey<Item> LAPIS_BLOCKS = createCommonTag("lapis_blocks");
+
+        public static final TagKey<Item> DIAMOND_ORES = createCommonTag("diamond_ores");
         public static final TagKey<Item> DIAMOND_DUSTS = createCommonTag("diamond_dusts");
+        public static final TagKey<Item> DIAMONDS = createCommonTag("diamonds");
+        public static final TagKey<Item> DIAMOND_BLOCKS = createCommonTag("diamond_blocks");
+
+        public static final TagKey<Item> EMERALD_ORES = createCommonTag("emerald_ores");
         public static final TagKey<Item> EMERALD_DUSTS = createCommonTag("emerald_dusts");
+        public static final TagKey<Item> EMERALDS = createCommonTag("emeralds");
+        public static final TagKey<Item> EMERALD_BLOCKS = createCommonTag("emerald_blocks");
+
+        public static final TagKey<Item> AMETHYST_BLOCKS = createCommonTag("amethyst_blocks");
+        public static final TagKey<Item> AMETHYST_DUSTS = createCommonTag("amethyst_dusts");
+        public static final TagKey<Item> AMETHYSTS = createCommonTag("amethysts");
+
+        public static final TagKey<Item> QUARTZ_ORES = createCommonTag("quartz_ores");
+        public static final TagKey<Item> QUARTZ_DUSTS = createCommonTag("quartz_dusts");
+        public static final TagKey<Item> QUARTZES = createCommonTag("quartzes");
+        public static final TagKey<Item> QUARTZ_BLOCKS = createCommonTag("quartz_blocks");
+
+        public static final TagKey<Item> NETHERITE_ORES = createCommonTag("netherite_ores");
         public static final TagKey<Item> NETHERITE_DUSTS = createCommonTag("netherite_dusts");
+        public static final TagKey<Item> NETHERITE_INGOTS = createCommonTag("netherite_ingots");
+        public static final TagKey<Item> NETHERITE_BLOCKS = createCommonTag("netherite_blocks");
 
         public static final TagKey<Item> TIN_ORES = createCommonTag("tin_ores");
         public static final TagKey<Item> RAW_TIN_ORES = createCommonTag("raw_tin_ores");
@@ -358,16 +442,37 @@ public class RebornTagsUtil {
         public static final TagKey<Item> SHIBUICHI_ALLOY_INGOTS = createCommonTag("shibuichi_alloy_ingots");
         public static final TagKey<Item> SHIBUICHI_ALLOY_BLOCKS = createCommonTag("shibuichi_alloy_blocks");
 
+        public static final TagKey<Item> MAGISTEEL_DUSTS = createCommonTag("magisteel_dusts");
+        public static final TagKey<Item> MAGISTEEL_INGOTS = createCommonTag("magisteel_ingots");
+        public static final TagKey<Item> MAGISTEEL_BLOCKS = createCommonTag("magisteel_blocks");
+
+        public static final TagKey<Item> ORICHALCUM_DUSTS = createCommonTag("orichalcum_dusts");
+        public static final TagKey<Item> ORICHALCUM_INGOTS = createCommonTag("orichalcum_ingots");
+        public static final TagKey<Item> ORICHALCUM_BLOCKS = createCommonTag("orichalcum_blocks");
+
+        public static final TagKey<Item> MITHRIL_DUSTS = createCommonTag("mithril_dusts");
+        public static final TagKey<Item> MITHRIL_INGOTS = createCommonTag("mithril_ingots");
+        public static final TagKey<Item> MITHRIL_BLOCKS = createCommonTag("mithril_blocks");
+
+        public static final TagKey<Item> DEMONIC_METAL_DUSTS = createCommonTag("demonic_metal_dusts");
+        public static final TagKey<Item> DEMONIC_METAL_INGOTS = createCommonTag("demonic_metal_ingots");
+        public static final TagKey<Item> DEMONIC_METAL_BLOCKS = createCommonTag("demonic_metal_blocks");
+
 
         public static final TagKey<Item> SAPPHIRE_ORES = createCommonTag("sapphire_ores");
         public static final TagKey<Item> SAPPHIRE_BLOCKS = createCommonTag("sapphire_blocks");
         public static final TagKey<Item> SAPPHIRES = createCommonTag("sapphires");
+        public static final TagKey<Item> SAPPHIRE_DUSTS = createCommonTag("sapphire_dusts");
 
         public static final TagKey<Item> RUBY_ORES = createCommonTag("ruby_ores");
         public static final TagKey<Item> RUBY_BLOCKS = createCommonTag("ruby_blocks");
         public static final TagKey<Item> RUBIES = createCommonTag("rubies");
+        public static final TagKey<Item> RUBY_DUSTS = createCommonTag("ruby_dusts");
 
         public static final TagKey<Item> MANATITE_ORES = createCommonTag("manatite_ores");
+        public static final TagKey<Item> MANATITES = createCommonTag("manatite_ores");
+        public static final TagKey<Item> MANATITE_BLOCKS = createCommonTag("manatite_blocks");
+        public static final TagKey<Item> MANATITE_DUSTS = createCommonTag("manatite_dusts");
 
 
         public static final TagKey<Item> WINDSTORM_STAFFS = createTag("windstorm_staffs");
@@ -393,9 +498,9 @@ public class RebornTagsUtil {
 
         public static final TagKey<Item> MOB_SOULS = createTag("mob_souls");
 
-        public static final TagKey<Item> BASIC_LASER_FOCI = createTag("basic_laser_foci");
-        public static final TagKey<Item> ADVANCED_LASER_FOCI = createTag("advanced_laser_foci");
-        public static final TagKey<Item> ULTIMATE_LASER_FOCI = createTag("ultimate_laser_foci");
+        public static final TagKey<Item> FUEL_CELLS = createTag("fuel_cells");
+
+        public static final TagKey<Item> LASER_FOCI = createTag("laser_foci");
 
         public static final TagKey<Item> SPARK_TRINKETS = createTag("spark_trinkets");
         public static final TagKey<Item> FRAGMENT_TRINKETS = createTag("fragment_trinkets");

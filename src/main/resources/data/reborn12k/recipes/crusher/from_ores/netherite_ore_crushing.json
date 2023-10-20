@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:netherite_ores"
+        }
+    ],
+    "output": {
+        "item": "minecraft:netherite_scrap",
+        "count": 2
+    }
+}

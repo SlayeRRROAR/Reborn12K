@@ -25,7 +25,7 @@ public class QuarryScreenHandler extends ScreenHandler {
 
     public QuarryScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity entity, PropertyDelegate delegate) {
         super(RebornScreenRegistry.QUARRY_SCREEN_HANDLER, syncId);
-        checkSize(((Inventory) entity), 3);
+        checkSize(((Inventory) entity), 4);
         this.inventory = ((Inventory) entity);
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
@@ -34,6 +34,7 @@ public class QuarryScreenHandler extends ScreenHandler {
         this.addSlot(new CustomFuelCellSlot(inventory, 0, 31, 35));
         this.addSlot(new CustomFocusSlot(inventory, 1, 64, 35));
         this.addSlot(new CustomResultSlot(inventory, 2, 125, 35));
+        this.addSlot(new CustomResultSlot(inventory, 3, 125, 35));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
@@ -59,7 +60,7 @@ public class QuarryScreenHandler extends ScreenHandler {
         ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(invSlot);
 
-        int entitySize = 3;
+        int entitySize = 4;
         int resultSlots = 1;
         int inventorySize = entitySize + 27;
         int hotbarSize = entitySize + 36;
@@ -79,7 +80,7 @@ public class QuarryScreenHandler extends ScreenHandler {
 
             //transfers from blockentity to inventory and hotbar
             if (invSlot < entitySize) {
-                if (invSlot == 2) {
+                if (invSlot == 2 || invSlot == 3) {
                     //results go from last to first slot
                     if (!this.insertItem(originalStack, entitySize, hotbarSize, true)) {
                         return ItemStack.EMPTY;

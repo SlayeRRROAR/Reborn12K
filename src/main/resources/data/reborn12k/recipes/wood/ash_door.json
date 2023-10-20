@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "redstone",
     "pattern": [
         "AA",
         "AA",
@@ -13,5 +14,6 @@
     "result": {
         "item": "reborn12k:ash_door",
         "count": 3
-    }
+    },
+    "group": "wooden_door"
 }

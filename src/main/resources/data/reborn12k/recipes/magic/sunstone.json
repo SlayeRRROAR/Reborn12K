@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "misc",
     "pattern": [
         " A ",
         "ABA",
@@ -7,7 +8,7 @@
     ],
     "key": {
         "A": {
-            "item": "reborn12k:manatite"
+            "tag": "c:manatites"
         },
         "B": {
             "tag": "c:quartz_blocks"

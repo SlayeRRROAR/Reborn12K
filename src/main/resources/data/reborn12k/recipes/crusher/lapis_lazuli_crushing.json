@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:lapises"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:lapis_dust"
+    }
+}

@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "redstone",
     "pattern": [
         "ABA",
         "ABA"
@@ -15,5 +16,6 @@
     "result": {
         "item": "reborn12k:ash_fence_gate",
         "count": 1
-    }
+    },
+    "group": "wooden_fence_gate"
 }

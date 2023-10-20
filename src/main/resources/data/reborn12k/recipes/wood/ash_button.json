@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "redstone",
     "pattern": [
         "A"
     ],
@@ -11,5 +12,6 @@
     "result": {
         "item": "reborn12k:ash_button",
         "count": 1
-    }
+    },
+    "group": "wooden_button"
 }

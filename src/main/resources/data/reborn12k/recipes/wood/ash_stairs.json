@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "building_blocks",
     "pattern": [
         "A  ",
         "AA ",
@@ -13,5 +14,6 @@
     "result": {
         "item": "reborn12k:ash_stairs",
         "count": 4
-    }
+    },
+    "group": "wooden_stairs"
 }

@@ -1,0 +1,11 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:amethysts"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:amethyst_dust"
+    }
+}

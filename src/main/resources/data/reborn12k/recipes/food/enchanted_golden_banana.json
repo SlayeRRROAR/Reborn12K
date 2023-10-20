@@ -7,10 +7,10 @@
     ],
     "key": {
         "A": {
-            "item": "minecraft:gold_block"
+            "tag": "c:gold_blocks"
         },
         "B": {
-            "item":  "reborn12k:golden_banana"
+            "item": "reborn12k:golden_banana"
         }
     },
     "result": {

@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:raw_constantan_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:constantan_dust",
+        "count": 2
+    }
+}

@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
     "ingredients": [
         {
             "item": "minecraft:nether_wart_block"
@@ -9,5 +10,5 @@
         "item": "minecraft:nether_wart",
         "count": 9
     },
-    "group": "wart"
+    "group": "nether_wart"
 }

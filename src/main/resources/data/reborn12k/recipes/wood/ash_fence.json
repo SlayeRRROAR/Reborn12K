@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "misc",
     "pattern": [
         "ABA",
         "ABA"
@@ -15,5 +16,6 @@
     "result": {
         "item": "reborn12k:ash_fence",
         "count": 3
-    }
+    },
+    "group": "wooden_fence"
 }

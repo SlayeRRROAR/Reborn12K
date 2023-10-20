@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
     "ingredients": [
         {
             "tag": "reborn12k:hammers"
@@ -11,7 +12,7 @@
             "tag": "reborn12k:mana_gems"
         },
         {
-            "item": "reborn12k:manatite"
+            "tag": "c:manatites"
         },
         {
             "item": "minecraft:blaze_powder"

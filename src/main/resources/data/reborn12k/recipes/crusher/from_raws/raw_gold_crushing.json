@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:raw_gold_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:gold_dust",
+        "count": 2
+    }
+}

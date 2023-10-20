@@ -28,6 +28,9 @@
     "fabric-datagen": [
       "net.slayerrroar.reborn12k.Reborn12KDataGen"
     ],
+    "rei_client": [
+      "net.slayerrroar.reborn12k.compat.ReiClientIntegration"
+    ],
     "modmenu": [
       "net.slayerrroar.reborn12k.config.ModMenuIntegration"
     ]

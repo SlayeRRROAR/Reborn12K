@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+    "category": "tools",
   "pattern": [
     " A ",
     " BA",
@@ -7,7 +8,7 @@
   ],
   "key": {
     "A": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:iron_ingots"
     },
     "B": {
       "item": "minecraft:stick"

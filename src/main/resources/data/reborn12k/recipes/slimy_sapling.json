@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "decorations",
     "ingredients": [
         {
             "tag": "minecraft_saplings"

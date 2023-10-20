@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:uranium_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:uranium_dust",
+        "count": 2
+    }
+}

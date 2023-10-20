@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:iron_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:iron_dust",
+        "count": 2
+    }
+}

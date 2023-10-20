@@ -1,5 +1,6 @@
 {
     "type": "minecraft:blasting",
+    "category": "misc",
     "ingredient": {
         "tag": "c:raw_advanced_alloy_ores"
     },

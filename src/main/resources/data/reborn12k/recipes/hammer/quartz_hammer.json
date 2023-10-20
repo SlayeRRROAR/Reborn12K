@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "tag": "c:quartzes"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:quartz_dust",
+        "count": 1
+    }
+}

@@ -1,8 +1,9 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
     "ingredients": [
         {
-            "item": "reborn12k:basic_laser_focus"
+            "item": "reborn12k:laser_focus"
         },
         {
             "tag": "c:raw_chrome_ores"

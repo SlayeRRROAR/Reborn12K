@@ -1,0 +1,38 @@
+{
+  "replace": false,
+  "values": [
+    "reborn12k:coal_laser_focus",
+    "reborn12k:copper_laser_focus",
+    "reborn12k:iron_laser_focus",
+    "reborn12k:gold_laser_focus",
+    "reborn12k:lapis_laser_focus",
+    "reborn12k:redstone_laser_focus",
+    "reborn12k:diamond_laser_focus",
+    "reborn12k:emerald_laser_focus",
+    "reborn12k:amethyst_laser_focus",
+    "reborn12k:quartz_laser_focus",
+    "reborn12k:netherite_laser_focus",
+
+    "reborn12k:tin_laser_focus",
+    "reborn12k:aluminum_laser_focus",
+    "reborn12k:silver_laser_focus",
+    "reborn12k:lead_laser_focus",
+    "reborn12k:nickel_laser_focus",
+    "reborn12k:chrome_laser_focus",
+    "reborn12k:titanium_laser_focus",
+    "reborn12k:sapphire_laser_focus",
+    "reborn12k:ruby_laser_focus",
+    "reborn12k:manatite_laser_focus",
+
+    "reborn12k:tungsten_laser_focus",
+    "reborn12k:vanadium_laser_focus",
+    "reborn12k:neodymium_laser_focus",
+    "reborn12k:uranium_laser_focus",
+
+    "reborn12k:cobalt_laser_focus",
+    "reborn12k:osmium_laser_focus",
+    "reborn12k:platinum_laser_focus",
+    "reborn12k:iridium_laser_focus"
+
+  ]
+}

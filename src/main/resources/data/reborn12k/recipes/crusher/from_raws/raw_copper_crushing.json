@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:raw_copper_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:copper_dust",
+        "count": 2
+    }
+}

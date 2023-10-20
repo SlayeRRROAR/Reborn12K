@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
     "ingredients": [
         {
             "tag": "c:silver_dusts"
@@ -11,7 +12,7 @@
             "tag": "c:tin_dusts"
         },
         {
-            "tag":  "sand"
+            "tag": "sand"
         },
         {
             "item": "reborn12k:energized_glowstone_bucket"

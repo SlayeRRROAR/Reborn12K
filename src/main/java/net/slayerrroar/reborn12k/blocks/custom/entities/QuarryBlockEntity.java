@@ -33,15 +33,17 @@ import java.util.Optional;
 
 public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
-            DefaultedList.ofSize(3, ItemStack.EMPTY);
+            DefaultedList.ofSize(4, ItemStack.EMPTY);
 
     private static final int FUEL_SLOT = 0;
     private static final int INPUT_SLOT = 1;
     private static final int OUTPUT_SLOT = 2;
+    private static final int SPENT_SLOT = 3;
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
     private int maxProgress = 200;
+    private static final int[] OUTUPUT_SLOTS = new int[]{3, 0};
 
     public QuarryBlockEntity(BlockPos blockPos, BlockState state) {
         super(RebornBlockEntities.QUARRY, blockPos, state);
@@ -131,14 +133,8 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
         }
     }
 
-    private boolean hasCorrectFuel(QuarryBlockEntity entity) {
-        return this.getStack(FUEL_SLOT).isOf(RebornItems.SEU_FUEL_CELL) ||
-                this.getStack(FUEL_SLOT).isOf(RebornItems.LEU_FUEL_CELL) ||
-                this.getStack(FUEL_SLOT).isOf(RebornItems.HEU_FUEL_CELL);
-    }
-
     private boolean hasFuelInFuelSlot(QuarryBlockEntity entity) {
-        return hasCorrectFuel(entity) && this.getStack(FUEL_SLOT).getMaxDamage() >= 0;
+        return this.getStack(FUEL_SLOT).getMaxDamage() >= 0;
     }
 
     private void resetProgress() {
@@ -156,7 +152,7 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
         }
         if (this.getStack(FUEL_SLOT).getDamage() >= this.getStack(FUEL_SLOT).getMaxDamage()) {
             this.removeStack(FUEL_SLOT);
-            this.setStack(FUEL_SLOT, new ItemStack(RebornItems.EMPTY_FUEL_CELL, 1));
+            this.setStack(SPENT_SLOT, new ItemStack(RebornItems.EMPTY_FUEL_CELL, this.getStack(SPENT_SLOT).getCount() + 1));
         }
     }
 
@@ -212,10 +208,9 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
 
         if (side == Direction.DOWN) {
-            if (slot == FUEL_SLOT) {
-                return stack.isOf(RebornItems.EMPTY_FUEL_CELL);
+            if (slot == OUTPUT_SLOT || slot == SPENT_SLOT) {
+                return slot == OUTPUT_SLOT;
             }
-            return slot == OUTPUT_SLOT;
         }
         return false;
     }

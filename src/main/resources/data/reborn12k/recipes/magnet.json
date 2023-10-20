@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "tools",
   "pattern": [
     "A B",
     "C C",
@@ -7,13 +8,13 @@
   ],
   "key": {
     "A": {
-      "item": "minecraft:lapis_lazuli"
+      "tag": "c:lapises"
     },
     "B": {
       "item": "minecraft:redstone"
     },
     "C": {
-      "item": "minecraft:iron_ingot"
+      "tag": "c:iron_ingots"
     },
     "D": {
       "tag": "c:neodymium_ingots"

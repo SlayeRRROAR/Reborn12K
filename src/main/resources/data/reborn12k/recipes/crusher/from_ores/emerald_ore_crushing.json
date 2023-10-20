@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:emeralds"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:emerald_dust",
+        "count": 2
+    }
+}

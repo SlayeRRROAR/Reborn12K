@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:chrome_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:chrome_dust",
+        "count": 2
+    }
+}

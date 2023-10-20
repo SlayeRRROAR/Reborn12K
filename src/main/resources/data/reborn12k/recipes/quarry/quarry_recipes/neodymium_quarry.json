@@ -2,6 +2,9 @@
   "type": "reborn12k:quarry",
   "ingredients": [
     {
+      "tag": "reborn12k:fuel_cells"
+    },
+    {
       "item": "reborn12k:neodymium_laser_focus"
     }
   ],

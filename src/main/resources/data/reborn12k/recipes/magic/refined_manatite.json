@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "misc",
     "pattern": [
         " A ",
         "BCB",
@@ -10,10 +11,10 @@
             "tag": "c:silver_ingots"
         },
         "B": {
-            "item": "minecraft:gold_ingot"
+            "tag": "c:gold_ingots"
         },
         "C": {
-            "item": "reborn12k:manatite"
+            "tag": "c:manatites"
         }
     },
     "result": {

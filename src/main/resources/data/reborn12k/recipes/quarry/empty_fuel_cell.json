@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "misc",
     "pattern": [
         "ABA",
         "ACA",
@@ -10,7 +11,7 @@
             "tag": "c:titanium_ingots"
         },
         "B": {
-            "item": "minecraft:gold_ingot"
+            "tag": "c:gold_ingots"
         },
         "C": {
             "tag": "c:glass_panes"

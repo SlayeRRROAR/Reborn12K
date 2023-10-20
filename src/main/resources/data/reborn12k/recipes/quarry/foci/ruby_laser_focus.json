@@ -1,8 +1,9 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
     "ingredients": [
         {
-            "item": "reborn12k:advanced_laser_focus"
+            "item": "reborn12k:laser_focus"
         },
         {
             "tag": "c:rubies"

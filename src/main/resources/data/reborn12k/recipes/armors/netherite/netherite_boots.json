@@ -7,7 +7,7 @@
         "item": "minecraft:diamond_boots"
     },
     "addition": {
-        "item": "minecraft:netherite_ingot"
+        "tag": "c:netherite_ingots"
     },
     "result": {
         "item": "minecraft:netherite_boots"

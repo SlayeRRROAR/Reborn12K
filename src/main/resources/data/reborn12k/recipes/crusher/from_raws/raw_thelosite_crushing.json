@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:raw_thelosite_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:thelosite_dust",
+        "count": 2
+    }
+}

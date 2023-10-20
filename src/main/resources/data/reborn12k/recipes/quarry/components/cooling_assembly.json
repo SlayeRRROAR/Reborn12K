@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "misc",
     "pattern": [
         "ABA",
         "ABA",
@@ -10,13 +11,13 @@
             "tag": "c:aluminum_ingots"
         },
         "B": {
-            "item": "minecraft:copper_ingot"
+            "tag": "c:copper_ingots"
         },
         "C": {
-            "item": "minecraft:iron_nugget"
+            "tag": "c:iron_nuggets"
         },
         "D": {
-            "item": "minecraft:copper_block"
+            "tag": "c:copper_blocks"
         }
     },
     "result": {

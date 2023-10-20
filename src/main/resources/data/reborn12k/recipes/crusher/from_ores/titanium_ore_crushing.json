@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:titanium_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:titanium_dust",
+        "count": 2
+    }
+}

@@ -1,11 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
     "ingredients": [
         {
             "item": "minecraft:lead"
         },
         {
-            "item": "minecraft:iron_ingot"
+            "tag": "c:iron_ingots"
         }
     ],
     "result": {

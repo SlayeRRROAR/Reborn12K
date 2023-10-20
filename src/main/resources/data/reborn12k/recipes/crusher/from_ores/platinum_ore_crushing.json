@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:platinum_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:platinum_dust",
+        "count": 2
+    }
+}

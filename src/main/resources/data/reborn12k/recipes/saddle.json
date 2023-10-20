@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "misc",
     "pattern": [
         "AAA",
         "BAB",
@@ -10,10 +11,10 @@
             "item": "minecraft:leather"
         },
         "B": {
-            "item":  "minecraft:string"
+            "item": "minecraft:string"
         },
         "C": {
-            "item":  "minecraft:iron_nugget"
+            "tag": "c:iron_nuggets"
         }
     },
     "result": {

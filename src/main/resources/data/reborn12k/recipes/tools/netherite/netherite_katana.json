@@ -7,7 +7,7 @@
         "item": "reborn12k:diamond_katana"
     },
     "addition": {
-        "item": "minecraft:netherite_ingot"
+        "tag": "c:netherite_ingots"
     },
     "result": {
         "item": "reborn12k:netherite_katana"

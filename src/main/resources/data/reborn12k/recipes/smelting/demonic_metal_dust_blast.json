@@ -1,5 +1,6 @@
 {
     "type": "minecraft:blasting",
+    "category": "misc",
     "ingredient": {
         "item": "reborn12k:demonic_metal_dust"
     },

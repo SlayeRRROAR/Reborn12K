@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "tag": "reborn12k:hammers"
+        },
+        {
+            "tag": "c:lapises"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:lapis_dust",
+        "count": 1
+    }
+}

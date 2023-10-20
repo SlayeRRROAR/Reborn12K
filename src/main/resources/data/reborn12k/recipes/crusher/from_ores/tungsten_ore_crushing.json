@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:tungsten_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:tungsten_dust",
+        "count": 2
+    }
+}

@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "decorations",
     "pattern": [
         "AA",
         "BB",
@@ -10,7 +11,7 @@
             "item": "minecraft:green_carpet"
         },
         "B": {
-            "item": "minecraft:gold_ingot"
+            "tag": "c:gold_ingots"
         },
         "C": {
             "tag": "planks"

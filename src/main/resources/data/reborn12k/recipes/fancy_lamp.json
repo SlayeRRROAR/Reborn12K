@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "decorations",
     "pattern": [
         "ABA",
         "BCB",
@@ -10,7 +11,7 @@
             "item": "minecraft:stone_bricks"
         },
         "B": {
-            "item": "minecraft:glass"
+            "tag": "c:glass"
         },
         "C": {
             "item": "minecraft:redstone_lamp"

@@ -1,12 +1,13 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "misc",
     "pattern": [
         "A",
         "B"
     ],
     "key": {
         "A": {
-            "item": "minecraft:gold_ingot"
+            "tag": "c:gold_ingots"
         },
         "B": {
             "item": "reborn12k:ash_planks"

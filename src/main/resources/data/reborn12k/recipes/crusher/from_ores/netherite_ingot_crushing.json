@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:netherite_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:netherite_dust",
+        "count": 2
+    }
+}

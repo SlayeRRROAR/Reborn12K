@@ -1,8 +1,9 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
     "ingredients": [
         {
-            "item": "minecraft:quartz_block"
+            "tag": "c:quartz_blocks"
         }
     ],
     "result": {

@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:raw_iridium_alloy_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:iridium_alloy_dust",
+        "count": 2
+    }
+}

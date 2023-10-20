@@ -1,11 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
     "ingredients": [
         {
             "item": "reborn12k:blank_rune"
         },
         {
-            "item": "minecraft:diamond"
+            "tag": "c:diamonds"
         }
     ],
     "result": {

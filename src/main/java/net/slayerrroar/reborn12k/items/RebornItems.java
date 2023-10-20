@@ -162,8 +162,11 @@ public class RebornItems {
     public static final Item COPPER_DUST = registerItem("copper_dust", new Item(new FabricItemSettings()));
     public static final Item IRON_DUST = registerItem("iron_dust", new Item(new FabricItemSettings()));
     public static final Item GOLD_DUST = registerItem("gold_dust", new Item(new FabricItemSettings()));
+    public static final Item LAPIS_DUST = registerItem("lapis_dust", new Item(new FabricItemSettings()));
     public static final Item DIAMOND_DUST = registerItem("diamond_dust", new Item(new FabricItemSettings()));
     public static final Item EMERALD_DUST = registerItem("emerald_dust", new Item(new FabricItemSettings()));
+    public static final Item AMETHYST_DUST = registerItem("amethyst_dust", new Item(new FabricItemSettings()));
+    public static final Item QUARTZ_DUST = registerItem("quartz_dust", new Item(new FabricItemSettings()));
     public static final Item NETHERITE_DUST = registerItem("netherite_dust", new Item(new FabricItemSettings()));
 
     public static final Item TIN_DUST = registerItem("tin_dust", new Item(new FabricItemSettings()));
@@ -290,13 +293,12 @@ public class RebornItems {
     public static final Item COLLIMATED_LASER_ARRAY = registerItem("collimated_laser_array", new Item(new FabricItemSettings()));
 
     public static final Item EMPTY_FUEL_CELL = registerItem("empty_fuel_cell", new Item(new FabricItemSettings()));
+    //TODO: rework fuel usage, fuel charges and laser foci stuff
     public static final Item SEU_FUEL_CELL = registerItem("seu_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(32)));
     public static final Item LEU_FUEL_CELL = registerItem("leu_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(64)));
     public static final Item HEU_FUEL_CELL = registerItem("heu_fuel_cell", new FuelCell(new FabricItemSettings().maxDamage(128)));
 
-    public static final Item BASIC_LASER_FOCUS = registerItem("basic_laser_focus", new UnsetFocusItem(new FabricItemSettings()));
-    public static final Item ADVANCED_LASER_FOCUS = registerItem("advanced_laser_focus", new UnsetFocusItem(new FabricItemSettings()));
-    public static final Item ULTIMATE_LASER_FOCUS = registerItem("ultimate_laser_focus", new UnsetFocusItem(new FabricItemSettings()));
+    public static final Item LASER_FOCUS = registerItem("laser_focus", new UnsetFocusItem(new FabricItemSettings()));
 
     public static final Item COAL_LASER_FOCUS = registerItem("coal_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item COPPER_LASER_FOCUS = registerItem("copper_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
@@ -307,7 +309,6 @@ public class RebornItems {
     public static final Item DIAMOND_LASER_FOCUS = registerItem("diamond_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item EMERALD_LASER_FOCUS = registerItem("emerald_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item AMETHYST_LASER_FOCUS = registerItem("amethyst_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
-
     public static final Item QUARTZ_LASER_FOCUS = registerItem("quartz_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item NETHERITE_LASER_FOCUS = registerItem("netherite_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
 
@@ -318,10 +319,8 @@ public class RebornItems {
     public static final Item NICKEL_LASER_FOCUS = registerItem("nickel_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item CHROME_LASER_FOCUS = registerItem("chrome_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item TITANIUM_LASER_FOCUS = registerItem("titanium_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
-
     public static final Item SAPPHIRE_LASER_FOCUS = registerItem("sapphire_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item RUBY_LASER_FOCUS = registerItem("ruby_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
-
     public static final Item MANATITE_LASER_FOCUS = registerItem("manatite_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
 
     public static final Item TUNGSTEN_LASER_FOCUS = registerItem("tungsten_laser_focus", new SetFocusItem(new FabricItemSettings().rarity(Rarity.RARE)));
@@ -611,8 +610,11 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, COPPER_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, IRON_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, GOLD_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LAPIS_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, DIAMOND_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, EMERALD_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, AMETHYST_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN12K, QUARTZ_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, NETHERITE_DUST);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, TIN_DUST);
@@ -706,9 +708,7 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, LEU_FUEL_CELL);
         addToItemGroup(ItemGroupUtil.REBORN12K, HEU_FUEL_CELL);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, BASIC_LASER_FOCUS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_LASER_FOCUS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ULTIMATE_LASER_FOCUS);
+        addToItemGroup(ItemGroupUtil.REBORN12K, LASER_FOCUS);
 
 
         addToItemGroup(ItemGroupUtil.REBORN12K, MANAWEAVE);

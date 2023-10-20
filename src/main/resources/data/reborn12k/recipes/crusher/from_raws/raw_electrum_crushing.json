@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:raw_electrum_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:electrum_dust",
+        "count": 2
+    }
+}

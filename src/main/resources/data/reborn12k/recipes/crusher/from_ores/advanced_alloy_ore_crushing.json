@@ -1,0 +1,13 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:advanced_alloy_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:advanced_alloy_dust",
+        "count": 2,
+        "count": 2
+    }
+}

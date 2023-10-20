@@ -1,0 +1,12 @@
+{
+    "type": "reborn12k:crusher",
+    "ingredients": [
+        {
+            "tag": "c:neodymium_ores"
+        }
+    ],
+    "output": {
+        "item": "reborn12k:neodymium_dust",
+        "count": 2
+    }
+}

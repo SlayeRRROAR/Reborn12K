@@ -1,8 +1,9 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
     "ingredients": [
         {
-            "item": "reborn12k:ultimate_laser_focus"
+            "item": "reborn12k:laser_focus"
         },
         {
             "tag": "c:raw_platinum_ores"

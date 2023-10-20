@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+    "category": "tools",
   "ingredients": [
     {
       "item": "reborn12k:ice_mirror"

@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "redstone",
     "pattern": [
         "AAA",
         "AAA"
@@ -12,5 +13,6 @@
     "result": {
         "item": "reborn12k:ash_trapdoor",
         "count": 2
-    }
+    },
+    "group": "wooden_trapdoor"
 }

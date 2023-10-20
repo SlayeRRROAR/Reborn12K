@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "decorations",
     "pattern": [
         "AAA",
         "BCB",
@@ -13,10 +14,10 @@
             "tag": "c:steel_ingots"
         },
         "C": {
-            "item": "minecraft:diamond"
+            "tag": "c:diamonds"
         },
         "D": {
-            "item": "minecraft:iron_ingot"
+            "tag": "c:iron_ingots"
         }
     },
     "result": {

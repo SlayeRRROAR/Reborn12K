@@ -1,11 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
     "ingredients": [
         {
             "tag": "reborn12k:hammers"
         },
         {
-            "item": "minecraft:copper_ingot"
+            "tag": "c:copper_ingots"
         }
     ],
     "result": {

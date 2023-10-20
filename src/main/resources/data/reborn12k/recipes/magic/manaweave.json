@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "misc",
     "pattern": [
         "ABC",
         " D ",
@@ -7,10 +8,10 @@
     ],
     "key": {
         "A": {
-            "item": "minecraft:diamond"
+            "tag": "c:diamonds"
         },
         "B": {
-            "item": "minecraft:emerald"
+            "tag": "c:emeralds"
         },
         "C": {
             "tag": "c:sapphires"
