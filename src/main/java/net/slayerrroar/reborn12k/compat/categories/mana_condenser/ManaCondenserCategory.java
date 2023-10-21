@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.compat.mana_condenser;
+package net.slayerrroar.reborn12k.compat.categories.mana_condenser;
 
 import com.google.common.collect.Lists;
 import me.shedaniel.math.Point;

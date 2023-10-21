@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.compat.crusher;
+package net.slayerrroar.reborn12k.compat.categories.manufactory;
 
 import com.google.common.collect.Lists;
 import me.shedaniel.math.Point;
@@ -16,43 +16,47 @@ import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 
 import java.util.List;
 
-public class CrusherCategory implements DisplayCategory<BasicDisplay> {
-    public static final CategoryIdentifier<CrusherDisplay> CRUSHER =
-            CategoryIdentifier.of(Reborn12K.MOD_ID, "crusher");
+public class ManufactoryCategory implements DisplayCategory<BasicDisplay> {
+    public static final CategoryIdentifier<ManufactoryDisplay> MANUFACTORY =
+            CategoryIdentifier.of(Reborn12K.MOD_ID, "manufactory");
 
     @Override
     public CategoryIdentifier<? extends BasicDisplay> getCategoryIdentifier() {
-        return CRUSHER;
+        return MANUFACTORY;
     }
 
     @Override
     public Text getTitle() {
-        return Text.translatable("rei.reborn12k.crusher");
+        return Text.translatable("rei.reborn12k.manufactory");
     }
 
     @Override
     public Renderer getIcon() {
-        return EntryStacks.of(RebornBlocks.CRUSHER.asItem().getDefaultStack());
+        return EntryStacks.of(RebornBlocks.MANUFACTORY.asItem().getDefaultStack());
     }
 
     @Override
     public List<Widget> setupDisplay(BasicDisplay display, Rectangle bounds) {
-        Point startPoint = new Point(bounds.getCenterX() - 41, bounds.y + 10);
+        Point startPoint = new Point(bounds.getCenterX() - 41, bounds.getCenterY() - 10);
 
         List<Widget> widgets = Lists.newArrayList();
         widgets.add(Widgets.createRecipeBase(bounds));
 
-        widgets.add(Widgets.createSlot(new Point(startPoint.x + 1, startPoint.y + 1))
+
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 20 - 21 * 2, startPoint.y + 3))
                 .entries(display.getInputEntries().get(0)).markInput());
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 20 - 21, startPoint.y + 3))
+                .entries(display.getInputEntries().get(2)).markInput());
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 20, startPoint.y + 3))
+                .entries(display.getInputEntries().get(1)).markInput());
 
-        widgets.add(Widgets.createSlot(new Point(startPoint.x + 61, startPoint.y + 9))
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 80, startPoint.y + 3))
                 .entries(display.getOutputEntries().get(0)).disableBackground().markOutput());
-        widgets.add(Widgets.createResultSlotBackground(new Point(startPoint.x + 61, startPoint.y + 9)));
+        widgets.add(Widgets.createResultSlotBackground(new Point(startPoint.x + 80, startPoint.y + 3)));
 
-        widgets.add(Widgets.createBurningFire(new Point(startPoint.x + 1, startPoint.y + 20))
-                .animationDurationMS(10000));
-        widgets.add(Widgets.createArrow(new Point(startPoint.x + 24, startPoint.y + 8))
+        widgets.add(Widgets.createArrow(new Point(startPoint.x + 44, startPoint.y + 2))
                 .animationDurationTicks(60));
+
 
         return widgets;
     }
@@ -61,4 +65,5 @@ public class CrusherCategory implements DisplayCategory<BasicDisplay> {
     public int getDisplayHeight() {
         return 49;
     }
+
 }

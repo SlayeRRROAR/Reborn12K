@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.compat.quarry;
+package net.slayerrroar.reborn12k.compat.categories.quarry;
 
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
