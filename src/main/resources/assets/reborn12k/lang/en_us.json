@@ -17,8 +17,11 @@
     "item.reborn12k.copper_dust": "Copper Dust",
     "item.reborn12k.iron_dust": "Iron Dust",
     "item.reborn12k.gold_dust": "Gold Dust",
+    "item.reborn12k.lapis_dust": "Lapis Lazuli Dust",
     "item.reborn12k.diamond_dust": "Diamond Dust",
     "item.reborn12k.emerald_dust": "Emerald Dust",
+    "item.reborn12k.amethyst_dust": "Amethyst Dust",
+    "item.reborn12k.quartz_dust": "Quartz Dust",
     "item.reborn12k.netherite_dust": "Netherite Dust",
 
     "item.reborn12k.tin_ingot": "Tin Ingot",
@@ -370,6 +373,10 @@
     "item.reborn12k.enderium_hoe": "Enderium Hoe",
     "item.reborn12k.enderium_katana": "Enderium Katana",
 
+    "item.reborn12k.yellowcake_uranium_ingot": "Yellowcake Uranium Ingot",
+    "item.reborn12k.yellowcake_uranium_dust": "Yellowcake Uranium Dust",
+    "block.reborn12k.yellowcake_uranium_block": "Yellowcake Uranium Block",
+
 
     "item.reborn12k.shibuichi_alloy_ingot": "Shibuichi Alloy Ingot",
     "item.reborn12k.shibuichi_alloy_dust": "Shibuichi Alloy Dust",
@@ -449,18 +456,21 @@
 
 
     "item.reborn12k.sapphire": "Sapphire",
+    "item.reborn12k.sapphire_dust": "Sapphire Dust",
     "block.reborn12k.sapphire_ore": "Sapphire Ore",
     "block.reborn12k.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
     "block.reborn12k.sapphire_block": "Block of Sapphire",
 
 
-    "block.reborn12k.ruby_ore": "Ruby Ore",
     "item.reborn12k.ruby": "Ruby",
+    "item.reborn12k.ruby_dust": "Ruby Dust",
+    "block.reborn12k.ruby_ore": "Ruby Ore",
     "block.reborn12k.deepslate_ruby_ore": "Deepslate Ruby Ore",
     "block.reborn12k.ruby_block": "Block of Ruby",
 
 
     "item.reborn12k.manatite": "Manatite",
+    "item.reborn12k.manatite_dust": "Manatite Dust",
     "item.reborn12k.refined_manatite": "Refined Manatite",
     "block.reborn12k.manatite_ore": "Manatite Ore",
     "block.reborn12k.deepslate_manatite_ore": "Deepslate Manatite Ore",
@@ -587,7 +597,6 @@
     "item.reborn12k.collimated_laser_array": "Collimated Laser Array",
 
     "item.reborn12k.empty_fuel_cell": "Empty Fuel Cell",
-    "item.reborn12k.seu_fuel_cell": "SEU Fuel Cell",
     "item.reborn12k.leu_fuel_cell": "LEU Fuel Cell",
     "item.reborn12k.heu_fuel_cell": "SEU Fuel Cell",
 
