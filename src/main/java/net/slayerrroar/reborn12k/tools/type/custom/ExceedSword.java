@@ -1,9 +1,8 @@
-package net.slayerrroar.reborn12k.tools.type;
+package net.slayerrroar.reborn12k.tools.type.custom;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.MobEntity;

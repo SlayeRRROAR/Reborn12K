@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.tools.type;
+package net.slayerrroar.reborn12k.tools.type.custom;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
