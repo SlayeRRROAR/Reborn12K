@@ -11,6 +11,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.tools.type.*;
+import net.slayerrroar.reborn12k.tools.type.custom.*;
 import net.slayerrroar.reborn12k.util.ItemGroupUtil;
 
 @SuppressWarnings({"unused", "SameParameterValue"})
@@ -131,10 +132,10 @@ public class RebornTools {
 
 
     public static Item SILVER_CLAYMORE = registerItem("silver_claymore", new BaseSword(RebornToolMaterials.SILVER, 2, -3f, new FabricItemSettings()));
-    public static Item CUTTER_237 = registerItem("cutter_237", new Cutter(RebornToolMaterials.CUTTER237, 3, -1.8f, new FabricItemSettings().fireproof()));
-    public static Item REBELLION = registerItem("rebellion", new BaseSword(RebornToolMaterials.DMC, 5, -2.6f, new FabricItemSettings().fireproof()));
-    public static Item YAMATO = registerItem("yamato", new BaseSword(RebornToolMaterials.DMC, 1, -1.6f, new FabricItemSettings().fireproof()));
-    public static Item RED_QUEEN = registerItem("red_queen", new ExceedSword(RebornToolMaterials.DMC, 5 , -2.4f, new FabricItemSettings().fireproof()));
+    public static Item CUTTER_237 = registerItem("cutter_237", new BaseSword(RebornToolMaterials.CUTTER237, 3, -1.8f, new FabricItemSettings().fireproof()));
+    public static Item REBELLION = registerItem("rebellion", new BaseSword(RebornToolMaterials.DMC, 4, -2.6f, new FabricItemSettings().fireproof()));
+    public static Item YAMATO = registerItem("yamato", new YamatoSword(RebornToolMaterials.DMC, -1, -1.6f, new FabricItemSettings().fireproof()));
+    public static Item RED_QUEEN = registerItem("red_queen", new ExceedSword(RebornToolMaterials.DMC, 2 , -2.4f, new FabricItemSettings().fireproof()));
     public static Item MURASAMA = registerItem("murasama", new BaseSword(RebornToolMaterials.HFB, 3, -1.6f, new FabricItemSettings()));
     public static Item BLADEWOLF = registerItem("bladewolf", new BaseSword(RebornToolMaterials.HFB, 5, -2.4f, new FabricItemSettings()));
     public static Item POWER_SWORD = registerItem("power_sword", new PowerSword(RebornToolMaterials.POWER, 5, -2.4f, new FabricItemSettings()));
