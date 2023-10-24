@@ -49,6 +49,7 @@
   },
   "suggests": {
     "modmenu": "*",
-    "rei": "*"
+    "rei": "*",
+    "coloful_hearts": "*"
   }
 }
