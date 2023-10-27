@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.compat.categories.mana_condenser;
+package net.slayerrroar.reborn12k.compat.rei.categories.quarry;
 
 import com.google.common.collect.Lists;
 import me.shedaniel.math.Point;
@@ -16,23 +16,23 @@ import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 
 import java.util.List;
 
-public class ManaCondenserCategory implements DisplayCategory<BasicDisplay> {
-    public static final CategoryIdentifier<ManaCondenserDisplay> MANA_CONDENSER =
-            CategoryIdentifier.of(Reborn12K.MOD_ID, "mana_condenser");
+public class QuarryCategory implements DisplayCategory<BasicDisplay> {
+    public static final CategoryIdentifier<QuarryDisplay> QUARRY =
+            CategoryIdentifier.of(Reborn12K.MOD_ID, "quarry");
 
     @Override
     public CategoryIdentifier<? extends BasicDisplay> getCategoryIdentifier() {
-        return MANA_CONDENSER;
+        return QUARRY;
     }
 
     @Override
     public Text getTitle() {
-        return Text.translatable("rei.reborn12k.mana_condenser");
+        return Text.translatable("rei.reborn12k.quarry");
     }
 
     @Override
     public Renderer getIcon() {
-        return EntryStacks.of(RebornBlocks.MANA_CONDENSER.asItem().getDefaultStack());
+        return EntryStacks.of(RebornBlocks.QUARRY.asItem().getDefaultStack());
     }
 
     @Override
@@ -42,14 +42,16 @@ public class ManaCondenserCategory implements DisplayCategory<BasicDisplay> {
         List<Widget> widgets = Lists.newArrayList();
         widgets.add(Widgets.createRecipeBase(bounds));
 
-        widgets.add(Widgets.createSlot(new Point(startPoint.x + 1, startPoint.y + 6))
+        widgets.add(Widgets.createSlot(new Point(startPoint.x - 15, startPoint.y + 6))
                 .entries(display.getInputEntries().get(0)).markInput());
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 12, startPoint.y + 6))
+                .entries(display.getInputEntries().get(1)).markInput());
 
-        widgets.add(Widgets.createSlot(new Point(startPoint.x + 61, startPoint.y + 6))
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 77, startPoint.y + 6))
                 .entries(display.getOutputEntries().get(0)).disableBackground().markOutput());
-        widgets.add(Widgets.createResultSlotBackground(new Point(startPoint.x + 61, startPoint.y + 6)));
+        widgets.add(Widgets.createResultSlotBackground(new Point(startPoint.x + 77, startPoint.y + 6)));
 
-        widgets.add(Widgets.createArrow(new Point(startPoint.x + 24, startPoint.y + 6))
+        widgets.add(Widgets.createArrow(new Point(startPoint.x + 38, startPoint.y + 6))
                 .animationDurationTicks(60));
 
         return widgets;
@@ -59,5 +61,4 @@ public class ManaCondenserCategory implements DisplayCategory<BasicDisplay> {
     public int getDisplayHeight() {
         return 49;
     }
-
 }

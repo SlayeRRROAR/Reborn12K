@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.compat.categories.arcane_artifact;
+package net.slayerrroar.reborn12k.compat.rei.categories.arcane_artifact;
 
 import com.google.common.collect.Lists;
 import me.shedaniel.math.Point;

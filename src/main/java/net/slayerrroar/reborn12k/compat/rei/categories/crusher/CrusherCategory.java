@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.compat.categories.crusher;
+package net.slayerrroar.reborn12k.compat.rei.categories.crusher;
 
 import com.google.common.collect.Lists;
 import me.shedaniel.math.Point;

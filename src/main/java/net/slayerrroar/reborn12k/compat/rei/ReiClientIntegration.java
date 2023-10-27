@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.compat;
+package net.slayerrroar.reborn12k.compat.rei;
 
 import me.shedaniel.math.Rectangle;
 import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
@@ -7,12 +7,12 @@ import me.shedaniel.rei.api.client.registry.display.DisplayRegistry;
 import me.shedaniel.rei.api.client.registry.screen.ScreenRegistry;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.slayerrroar.reborn12k.blocks.RebornBlocks;
-import net.slayerrroar.reborn12k.compat.categories.arcane_artifact.*;
-import net.slayerrroar.reborn12k.compat.categories.crusher.*;
-import net.slayerrroar.reborn12k.compat.categories.mana_condenser.*;
-import net.slayerrroar.reborn12k.compat.categories.manufactory.*;
-import net.slayerrroar.reborn12k.compat.categories.melter.*;
-import net.slayerrroar.reborn12k.compat.categories.quarry.*;
+import net.slayerrroar.reborn12k.compat.rei.categories.arcane_artifact.*;
+import net.slayerrroar.reborn12k.compat.rei.categories.crusher.*;
+import net.slayerrroar.reborn12k.compat.rei.categories.mana_condenser.*;
+import net.slayerrroar.reborn12k.compat.rei.categories.manufactory.*;
+import net.slayerrroar.reborn12k.compat.rei.categories.melter.*;
+import net.slayerrroar.reborn12k.compat.rei.categories.quarry.*;
 import net.slayerrroar.reborn12k.recipe.recipe_types.*;
 import net.slayerrroar.reborn12k.screen.arcane_artifact.ArcaneArtifactScreen;
 import net.slayerrroar.reborn12k.screen.crusher.CrusherScreen;
