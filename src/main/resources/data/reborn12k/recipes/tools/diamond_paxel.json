@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "combat",
+    "pattern": [
+        "AAA",
+        "AB ",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "tag": "c:diamonds"
+        },
+        "B": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "reborn12k:diamond_paxel",
+        "count": 1
+    }
+}

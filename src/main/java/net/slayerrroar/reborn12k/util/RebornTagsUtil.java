@@ -20,6 +20,8 @@ public class RebornTagsUtil {
             return TagKey.of(Registries.BLOCK.getKey(), new Identifier(Reborn12K.MOD_ID, name));
         }
 
+        public static final TagKey<Block> PAXEL_MINEABLES = createTag("paxel_mineables");
+
         public static final TagKey<Block> GLASS = createCommonTag("glass");
 
         public static final TagKey<Block> COPPER_ORES = createCommonTag("copper_ores");

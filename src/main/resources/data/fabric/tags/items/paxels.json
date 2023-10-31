@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "reborn12k:wooden_paxel",
+    "reborn12k:stone_paxel",
+    "reborn12k:iron_paxel",
+    "reborn12k:golden_paxel",
+    "reborn12k:diamond_paxel",
+    "reborn12k:netherite_paxel"
+  ]
+}
