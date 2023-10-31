@@ -56,19 +56,23 @@ public class PowerSword extends SwordItem {
         return ActiveState.INACTIVE;
     }
 
+    private boolean isActive(ItemStack stack) {
+        return getActiveState(stack) == ActiveState.ACTIVE;
+    }
+
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         World world = attacker.getWorld();
-        ActiveState currentmode = getActiveState(stack);
+
         float damage = (float) attacker.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
         float bonusDamage = 2f;
 
         if (!world.isClient()) {
-            if (currentmode == ActiveState.ACTIVE) {
+            if (isActive(stack)) {
             target.damage(attacker.getDamageSources().generic(), (damage * bonusDamage));
             stack.damage(1, attacker, livingEntity -> livingEntity.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
             }
-            if (currentmode == ActiveState.INACTIVE)
+            if (!isActive(stack))
             target.damage(attacker.getDamageSources().generic(), (damage));
         }
         return super.postHit(stack, target, attacker);
@@ -93,7 +97,7 @@ public class PowerSword extends SwordItem {
     private void toggleState(ItemStack stack, PlayerEntity player) {
         World world = player.getWorld();
 
-        if (getActiveState(stack).getBoolean()) {
+        if (isActive(stack)) {
             setActiveState(stack, ActiveState.INACTIVE);
             world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.25f, 0.25f);
             player.getItemCooldownManager().set(this, 10);
