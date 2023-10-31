@@ -6,11 +6,22 @@
     "item.reborn12k.coal_piece": "Coal Piece",
 
     "item.reborn12k.wooden_katana": "Wooden Katana",
+    "item.reborn12k.wooden_paxel": "Wooden Paxel",
+
     "item.reborn12k.stone_katana": "Stone Katana",
+    "item.reborn12k.stone_paxel": "Stone Paxel",
+
     "item.reborn12k.iron_katana": "Iron Katana",
+    "item.reborn12k.iron_paxel": "Iron Paxel",
+
     "item.reborn12k.diamond_katana": "Diamond Katana",
+    "item.reborn12k.diamond_paxel": "Diamond Paxel",
+
     "item.reborn12k.netherite_katana": "Netherite Katana",
+    "item.reborn12k.netherite_paxel": "Netherite Paxel",
+
     "item.reborn12k.golden_katana": "Golden Katana",
+    "item.reborn12k.golden_paxel": "Golden Paxel",
 
 
     "item.reborn12k.coal_dust": "Coal Dust",
@@ -97,6 +108,7 @@
     "item.reborn12k.titanium_axe": "Titanium Axe",
     "item.reborn12k.titanium_hoe": "Titanium Hoe",
     "item.reborn12k.titanium_katana": "Titanium Katana",
+    "item.reborn12k.titanium_paxel": "Titanium Paxel",
 
 
     "item.reborn12k.tungsten_ingot": "Tungsten Ingot",
@@ -180,6 +192,7 @@
     "item.reborn12k.archeosite_axe": "Archeosite Axe",
     "item.reborn12k.archeosite_hoe": "Archeosite Hoe",
     "item.reborn12k.archeosite_katana": "Archeosite Katana",
+    "item.reborn12k.archeosite_paxel": "Archeosite Paxel",
 
 
     "item.reborn12k.bronze_ingot": "Bronze Ingot",
@@ -199,6 +212,7 @@
     "item.reborn12k.bronze_axe": "Bronze Axe",
     "item.reborn12k.bronze_hoe": "Bronze Hoe",
     "item.reborn12k.bronze_katana": "Bronze Katana",
+    "item.reborn12k.bronze_paxel": "Bronze Paxel",
 
 
     "item.reborn12k.constantan_ingot": "Constantan Ingot",
@@ -232,6 +246,7 @@
     "item.reborn12k.steel_axe": "Steel Axe",
     "item.reborn12k.steel_hoe": "Steel Hoe",
     "item.reborn12k.steel_katana": "Steel Katana",
+    "item.reborn12k.steel_paxel": "Steel Paxel",
 
 
     "item.reborn12k.tungstensteel_ingot": "Tungstensteel Ingot",
@@ -251,6 +266,7 @@
     "item.reborn12k.tungstensteel_axe": "Tungstensteel Axe",
     "item.reborn12k.tungstensteel_hoe": "Tungstensteel Hoe",
     "item.reborn12k.tungstensteel_katana": "Tungstensteel Katana",
+    "item.reborn12k.tungstensteel_paxel": "Tungstensteel Paxel",
 
 
     "item.reborn12k.thelosite_ingot": "Thelosite Ingot",
@@ -270,6 +286,7 @@
     "item.reborn12k.thelosite_axe": "Thelosite Axe",
     "item.reborn12k.thelosite_hoe": "Thelosite Hoe",
     "item.reborn12k.thelosite_katana": "Thelosite Katana",
+    "item.reborn12k.thelosite_paxel": "Thelosite Paxel",
 
 
     "item.reborn12k.advanced_alloy_ingot": "Advanced Alloy Ingot",
@@ -289,6 +306,7 @@
     "item.reborn12k.advanced_alloy_axe": "Advanced Alloy Axe",
     "item.reborn12k.advanced_alloy_hoe": "Advanced Alloy Hoe",
     "item.reborn12k.advanced_alloy_katana": "Advanced Alloy Katana",
+    "item.reborn12k.advanced_alloy_paxel": "Advanced Alloy Paxel",
 
 
     "item.reborn12k.iridium_alloy_ingot": "Iridium Alloy Ingot",
@@ -308,6 +326,7 @@
     "item.reborn12k.iridium_alloy_axe": "Iridium Alloy Axe",
     "item.reborn12k.iridium_alloy_hoe": "Iridium Alloy Hoe",
     "item.reborn12k.iridium_alloy_katana": "Iridium Alloy Katana",
+    "item.reborn12k.iridium_alloy_paxel": "Iridium Alloy Paxel",
 
 
     "item.reborn12k.electrum_ingot": "Electrum Ingot",
@@ -327,6 +346,7 @@
     "item.reborn12k.electrum_axe": "Electrum Axe",
     "item.reborn12k.electrum_hoe": "Electrum Hoe",
     "item.reborn12k.electrum_katana": "Electrum Katana",
+    "item.reborn12k.electrum_paxel": "Electrum Paxel",
 
 
     "item.reborn12k.signalum_ingot": "Signalum Ingot",
@@ -346,6 +366,7 @@
     "item.reborn12k.signalum_axe": "Signalum Axe",
     "item.reborn12k.signalum_hoe": "Signalum Hoe",
     "item.reborn12k.signalum_katana": "Signalum Katana",
+    "item.reborn12k.signalum_paxel": "Signalum Paxel",
 
 
     "item.reborn12k.lumium_ingot": "Lumium Ingot",
@@ -372,6 +393,7 @@
     "item.reborn12k.enderium_axe": "Enderium Axe",
     "item.reborn12k.enderium_hoe": "Enderium Hoe",
     "item.reborn12k.enderium_katana": "Enderium Katana",
+    "item.reborn12k.enderium_paxel": "Enderium Paxel",
 
     "item.reborn12k.yellowcake_uranium_ingot": "Yellowcake Uranium Ingot",
     "item.reborn12k.yellowcake_uranium_dust": "Yellowcake Uranium Dust",
@@ -396,6 +418,7 @@
     "item.reborn12k.shibuichi_alloy_axe": "Shibuichi Alloy Axe",
     "item.reborn12k.shibuichi_alloy_hoe": "Shibuichi Alloy Hoe",
     "item.reborn12k.shibuichi_alloy_katana": "Shibuichi Alloy Katana",
+    "item.reborn12k.shibuichi_alloy_paxel": "Shibuichi Alloy Paxel",
 
 
     "item.reborn12k.magisteel_ingot": "Magisteel Ingot",
@@ -414,6 +437,7 @@
     "item.reborn12k.magisteel_axe": "Magisteel Axe",
     "item.reborn12k.magisteel_hoe": "Magisteel Hoe",
     "item.reborn12k.magisteel_katana": "Magisteel Katana",
+    "item.reborn12k.magisteel_paxel": "Magisteel Paxel",
 
 
     "item.reborn12k.orichalcum_ingot": "Orichalcum Ingot",
@@ -431,6 +455,7 @@
     "item.reborn12k.orichalcum_axe": "Orichalcum Axe",
     "item.reborn12k.orichalcum_hoe": "Orichalcum Hoe",
     "item.reborn12k.orichalcum_katana": "Orichalcum Katana",
+    "item.reborn12k.orichalcum_paxel": "Orichalcum Paxel",
 
 
     "item.reborn12k.mithril_ingot": "Mithril Ingot",
@@ -448,6 +473,7 @@
     "item.reborn12k.mithril_axe": "Mithril Axe",
     "item.reborn12k.mithril_hoe": "Mithril Hoe",
     "item.reborn12k.mithril_katana": "Mithril Katana",
+    "item.reborn12k.mithril_paxel": "Mithril Paxel",
 
 
     "item.reborn12k.demonic_metal_ingot": "Demonic Metal Ingot",
@@ -846,7 +872,6 @@
 
     "item.reborn12k.power_sword": "Power Sword",
 
-    "item.reborn12k.red_engine": "Red Engine",
     "item.reborn12k.casing_mk237": "Casing Mk.237",
     "item.reborn12k.ceramite_plate": "Ceramite Plate",
 
@@ -1067,11 +1092,21 @@
     "item.reborn12k.power_sword.tooltip3": "Power Sword activated!",
     "item.reborn12k.power_sword.tooltip4": "Power Sword deactivated!",
 
-    "item.reborn12k.red_queen.tooltip1": "§8Exceed is §cOFF",
-    "item.reborn12k.red_queen.tooltip2": "§8Exceed is §1ON",
-    "item.reborn12k.red_queen.tooltip3": "§1Exceed is charged!",
-    "item.reborn12k.red_queen.tooltip4": "§cNot quite there yet!",
-    "item.reborn12k.red_queen.tooltip5": "Exceed is already charged!",
+    "item.reborn12k.red_queen.tooltip1": "§8A heavy sword that deals",
+    "item.reborn12k.red_queen.tooltip2": "§8massive damage when charged",
+    "item.reborn12k.red_queen.tooltip3": "Exceed charges: %s",
+    "item.reborn12k.red_queen.tooltip4": "§8Not quite there yet!",
+    "item.reborn12k.red_queen.tooltip5": "§cExceed Up!",
+    "item.reborn12k.red_queen.tooltip6": "§6SSStylish!",
+    "item.reborn12k.red_queen.tooltip7": "Exceed is already MAX!",
+    "item.reborn12k.red_queen.tooltip8": "§8Dismal...",
+
+    "item.reborn12k.yamato.tooltip1": "§8A quick demonic sword that",
+    "item.reborn12k.yamato.tooltip2": "§8rewards a motivated style.",
+    "item.reborn12k.yamato.tooltip3": "§1No Concentration",
+    "item.reborn12k.yamato.tooltip4": "§3Low Concentration",
+    "item.reborn12k.yamato.tooltip5": "§9High Concentration",
+    "item.reborn12k.yamato.tooltip6": "§bMaximum Concentration",
 
 
     "item.reborn12k.fuel_cell.tooltip": "§4Remaining fuel: %s",

@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "combat",
+    "pattern": [
+        "AAA",
+        "AB ",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "tag": "stone_tool_materials"
+        },
+        "B": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "reborn12k:stone_paxel",
+        "count": 1
+    }
+}
