@@ -1,15 +1,21 @@
 {
-    "type": "minecraft:smithing_transform",
-    "template": {
-        "item": "reborn12k:universal_smithing_template"
-    },
-    "base": {
-        "item": "reborn12k:shibuichi_alloy_paxel"
-    },
-    "addition": {
-        "tag": "c:magisteel_ingots"
+    "type": "minecraft:crafting_shaped",
+    "category": "combat",
+    "pattern": [
+        "AAA",
+        "AB ",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "tag": "c:magisteel_ingots"
+        },
+        "B": {
+            "item": "minecraft:stick"
+        }
     },
     "result": {
-        "item": "reborn12k:magisteel_paxel"
+        "item": "reborn12k:magisteel_paxel",
+        "count": 1
     }
 }

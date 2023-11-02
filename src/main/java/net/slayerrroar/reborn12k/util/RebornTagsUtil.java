@@ -155,9 +155,6 @@ public class RebornTagsUtil {
         public static final TagKey<Block> RAW_ENDERIUM_BLOCKS = createCommonTag("raw_enderium_blocks");
         public static final TagKey<Block> ENDERIUM_BLOCKS = createCommonTag("enderium_blocks");
 
-        public static final TagKey<Block> RAW_SHIBUICHI_ALLOY_BLOCKS = createCommonTag("raw_shibuichi_alloy_blocks");
-        public static final TagKey<Block> SHIBUICHI_ALLOY_BLOCKS = createCommonTag("shibuichi_alloy_blocks");
-
         public static final TagKey<Block> MAGISTEEL_BLOCKS = createCommonTag("magisteel_blocks");
 
         public static final TagKey<Block> ORICHALCUM_BLOCKS = createCommonTag("orichalcum_blocks");
@@ -437,12 +434,6 @@ public class RebornTagsUtil {
         public static final TagKey<Item> ENDERIUM_DUSTS = createCommonTag("enderium_dusts");
         public static final TagKey<Item> ENDERIUM_INGOTS = createCommonTag("enderium_ingots");
         public static final TagKey<Item> ENDERIUM_BLOCKS = createCommonTag("enderium_blocks");
-
-        public static final TagKey<Item> RAW_SHIBUICHI_ALLOY_ORES = createCommonTag("raw_shibuichi_alloy_ores");
-        public static final TagKey<Item> RAW_SHIBUICHI_ALLOY_BLOCKS = createCommonTag("raw_shibuichi_alloy_blocks");
-        public static final TagKey<Item> SHIBUICHI_ALLOY_DUSTS = createCommonTag("shibuichi_alloy_dusts");
-        public static final TagKey<Item> SHIBUICHI_ALLOY_INGOTS = createCommonTag("shibuichi_alloy_ingots");
-        public static final TagKey<Item> SHIBUICHI_ALLOY_BLOCKS = createCommonTag("shibuichi_alloy_blocks");
 
         public static final TagKey<Item> MAGISTEEL_DUSTS = createCommonTag("magisteel_dusts");
         public static final TagKey<Item> MAGISTEEL_INGOTS = createCommonTag("magisteel_ingots");

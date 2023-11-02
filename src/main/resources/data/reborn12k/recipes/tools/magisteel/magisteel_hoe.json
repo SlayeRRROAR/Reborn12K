@@ -1,15 +1,21 @@
 {
-    "type": "minecraft:smithing_transform",
-    "template": {
-        "item": "reborn12k:universal_smithing_template"
-    },
-    "base": {
-        "item": "reborn12k:shibuichi_alloy_hoe"
-    },
-    "addition": {
-       "item": "reborn12k:magisteel_ingot"
+    "type": "minecraft:crafting_shaped",
+    "category": "tools",
+    "pattern": [
+        "AA",
+        " B",
+        " B"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:magisteel_ingots"
+        },
+        "B": {
+            "item": "minecraft:stick"
+        }
     },
     "result": {
-        "item": "reborn12k:magisteel_hoe"
+        "item": "reborn12k:magisteel_hoe",
+        "count": 1
     }
 }

@@ -15,15 +15,12 @@
             "tag": "c:lead_dusts"
         },
         {
-            "tag": "sand"
-        },
-        {
             "item": "reborn12k:resonant_ender_bucket"
         }
     ],
     "result": {
         "item": "reborn12k:enderium_dust",
-        "count": 2
+        "count": 1
     },
     "group": "enderium_dust"
 }

@@ -16,6 +16,9 @@
         },
         {
             "tag": "c:tin_dusts"
+        },
+        {
+            "tag": "sand"
         }
     ],
     "result": {

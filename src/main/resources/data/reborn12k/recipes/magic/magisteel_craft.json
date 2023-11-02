@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "tag": "c:iron_ingots"
+        },
+        {
+            "tag": "c:silver_dusts"
+        },
+        {
+            "tag": "c:chrome_dusts"
+        },
+        {
+            "tag": "c:coal_dusts"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:magisteel_ingot",
+        "count": 1
+    },
+    "group": "magisteel_ingot"
+}

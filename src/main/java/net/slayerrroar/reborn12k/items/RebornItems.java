@@ -14,10 +14,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.items.custom.GlintedItem;
-import net.slayerrroar.reborn12k.items.custom.HammerItem;
-import net.slayerrroar.reborn12k.items.custom.RebornDiscItem;
-import net.slayerrroar.reborn12k.items.custom.UniversalTemplate;
+import net.slayerrroar.reborn12k.items.custom.*;
 import net.slayerrroar.reborn12k.items.custom.magic.MirrorItem;
 import net.slayerrroar.reborn12k.items.custom.magic.MobSoulItem;
 import net.slayerrroar.reborn12k.items.custom.magic.SoulVesselItem;
@@ -115,7 +112,6 @@ public class RebornItems {
 
     public static final Item YELLOWCAKE_URANIUM_INGOT = registerItem("yellowcake_uranium_ingot", new Item(new FabricItemSettings()));
 
-    public static final Item SHIBUICHI_ALLOY_INGOT = registerItem("shibuichi_alloy_ingot", new Item(new FabricItemSettings()));
     public static final Item MAGISTEEL_INGOT = registerItem("magisteel_ingot", new Item(new FabricItemSettings()));
     public static final Item ORICHALCUM_INGOT = registerItem("orichalcum_ingot", new Item(new FabricItemSettings()));
     public static final Item MITHRIL_INGOT = registerItem("mithril_ingot", new Item(new FabricItemSettings()));
@@ -159,8 +155,6 @@ public class RebornItems {
     public static final Item RAW_SIGNALUM = registerItem("raw_signalum", new Item(new FabricItemSettings()));
     public static final Item RAW_LUMIUM = registerItem("raw_lumium", new Item(new FabricItemSettings()));
     public static final Item RAW_ENDERIUM = registerItem("raw_enderium", new Item(new FabricItemSettings()));
-
-    public static final Item RAW_SHIBUICHI_ALLOY = registerItem("raw_shibuichi_alloy", new Item(new FabricItemSettings()));
 
 
     public static final Item COAL_DUST = registerItem("coal_dust", new Item(new FabricItemSettings()));
@@ -212,7 +206,6 @@ public class RebornItems {
 
     public static final Item YELLOWCAKE_URANIUM_DUST = registerItem("yellowcake_uranium_dust", new Item(new FabricItemSettings()));
 
-    public static final Item SHIBUICHI_ALLOY_DUST = registerItem("shibuichi_alloy_dust", new Item(new FabricItemSettings()));
     public static final Item MAGISTEEL_DUST = registerItem("magisteel_dust", new Item(new FabricItemSettings()));
     public static final Item ORICHALCUM_DUST = registerItem("orichalcum_dust", new Item(new FabricItemSettings()));
     public static final Item MITHRIL_DUST = registerItem("mithril_dust", new Item(new FabricItemSettings()));
@@ -376,7 +369,7 @@ public class RebornItems {
     public static final Item RUNE_OF_LIGHTNING = registerItem("rune_of_lightning", new Item(new FabricItemSettings()));
     public static final Item RUNE_OF_NATURE = registerItem("rune_of_nature", new Item(new FabricItemSettings()));
     public static final Item RUNE_OF_ICE = registerItem("rune_of_ice", new Item(new FabricItemSettings()));
-    public static final Item RUNE_OF_IRON = registerItem("rune_of_iron", new Item(new FabricItemSettings()));
+    public static final Item RUNE_OF_IRON = registerItem("rune_of_iron", new RuneIron(new FabricItemSettings()));
 
     public static final Item RUNE_OF_ORDER = registerItem("rune_of_order", new Item(new FabricItemSettings()));
     public static final Item RUNE_OF_CHAOS = registerItem("rune_of_chaos", new Item(new FabricItemSettings()));
@@ -568,7 +561,6 @@ public class RebornItems {
 
         addToItemGroup(ItemGroupUtil.REBORN12K, YELLOWCAKE_URANIUM_INGOT);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_INGOT);
@@ -611,8 +603,6 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN12K, RAW_SIGNALUM);
         addToItemGroup(ItemGroupUtil.REBORN12K, RAW_LUMIUM);
         addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ENDERIUM);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_SHIBUICHI_ALLOY);
 
 
         addToItemGroup(ItemGroupUtil.REBORN12K, COAL_DUST);
@@ -664,7 +654,6 @@ public class RebornItems {
 
         addToItemGroup(ItemGroupUtil.REBORN12K, YELLOWCAKE_URANIUM_DUST);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_DUST);
         addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_DUST);

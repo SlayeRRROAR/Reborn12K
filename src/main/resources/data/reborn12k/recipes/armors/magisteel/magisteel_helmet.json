@@ -1,15 +1,17 @@
 {
-    "type": "minecraft:smithing_transform",
-    "template": {
-        "item": "reborn12k:universal_smithing_template"
-    },
-    "base": {
-        "item": "reborn12k:shibuichi_alloy_helmet"
-    },
-    "addition": {
-        "item": "reborn12k:magisteel_ingot"
+    "type": "minecraft:crafting_shaped",
+    "category": "combat",
+    "pattern": [
+        "AAA",
+        "A A"
+    ],
+    "key": {
+        "A": {
+            "tag": "c:magisteel_ingots"
+        }
     },
     "result": {
-        "item": "reborn12k:magisteel_helmet"
+        "item": "reborn12k:magisteel_helmet",
+        "count": 1
     }
 }

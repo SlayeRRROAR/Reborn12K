@@ -19,7 +19,6 @@ public enum RebornToolMaterials implements ToolMaterial {
     SIGNALUM(4, 1625, 9f, 4f, 22, RebornItems.SIGNALUM_INGOT),
     ENDERIUM(5, 2112, 14f, 7f, 30, RebornItems.ENDERIUM_INGOT),
 
-    SHIBUICHI_ALLOY(3, 1172, 8f, 2f, 15, RebornItems.SHIBUICHI_ALLOY_INGOT),
     MAGISTEEL(3, 1874, 8f, 3f, 17, RebornItems.MAGISTEEL_INGOT),
     ORICHALCUM(4, 2437, 9f, 4f, 22, RebornItems.ORICHALCUM_INGOT),
     MITHRIL(5, 3168, 14f, 7f, 30, RebornItems.MITHRIL_INGOT),

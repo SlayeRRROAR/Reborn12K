@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "tag": "c:iron_dusts"
+        },
+        {
+            "tag": "c:silver_dusts"
+        },
+        {
+            "tag": "c:coal_dusts"
+        }
+    ],
+    "result": {
+        "item": "reborn12k:magisteel_dust",
+        "count": 1
+    },
+    "group": "magisteel_dust"
+}

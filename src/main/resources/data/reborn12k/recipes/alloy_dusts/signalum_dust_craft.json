@@ -12,7 +12,7 @@
             "tag": "c:copper_dusts"
         },
         {
-            "tag": "sand"
+            "tag": "c:copper_dusts"
         },
         {
             "item": "reborn12k:destabilized_redstone_bucket"
@@ -20,7 +20,7 @@
     ],
     "result": {
         "item": "reborn12k:signalum_dust",
-        "count": 4
+        "count": 1
     },
     "group": "signalum_dust"
 }

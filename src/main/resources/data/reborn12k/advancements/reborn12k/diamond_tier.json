@@ -64,18 +64,6 @@
         ]
       }
     },
-    "get_shibuichi_alloy_pickaxe": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "reborn12k:shibuichi_alloy_pickaxe"
-            ]
-          }
-        ]
-      }
-    },
     "get_magisteel_pickaxe": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -95,7 +83,6 @@
       "get_electrum_pickaxe",
       "get_titanium_pickaxe",
       "get_diamond_pickaxe",
-      "get_shibuichi_alloy_pickaxe",
       "get_magisteel_pickaxe"
     ]
   ]

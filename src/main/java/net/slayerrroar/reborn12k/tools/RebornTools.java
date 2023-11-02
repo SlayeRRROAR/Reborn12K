@@ -124,14 +124,6 @@ public class RebornTools {
     public static Item ENDERIUM_PAXEL = registerItem("enderium_paxel", new BasePaxel(RebornToolMaterials.ENDERIUM, 5, -3.0f, new FabricItemSettings().fireproof()));
 
 
-    public static Item SHIBUICHI_ALLOY_SWORD = registerItem("shibuichi_alloy_sword", new BaseSword(RebornToolMaterials.SHIBUICHI_ALLOY, 3, -2.4f, new FabricItemSettings().fireproof()));
-    public static Item SHIBUICHI_ALLOY_SHOVEL = registerItem("shibuichi_alloy_shovel", new BaseShovel(RebornToolMaterials.SHIBUICHI_ALLOY, 1, -3.0f, new FabricItemSettings().fireproof()));
-    public static Item SHIBUICHI_ALLOY_PICKAXE = registerItem("shibuichi_alloy_pickaxe", new BasePickaxe(RebornToolMaterials.SHIBUICHI_ALLOY, 1, -2.8f, new FabricItemSettings().fireproof()));
-    public static Item SHIBUICHI_ALLOY_AXE = registerItem("shibuichi_alloy_axe", new BaseAxe(RebornToolMaterials.SHIBUICHI_ALLOY, 6, -3.1f, new FabricItemSettings().fireproof()));
-    public static Item SHIBUICHI_ALLOY_HOE = registerItem("shibuichi_alloy_hoe", new BaseHoe(RebornToolMaterials.SHIBUICHI_ALLOY, -2, 0f, new FabricItemSettings().fireproof()));
-    public static Item SHIBUICHI_ALLOY_KATANA = registerItem("shibuichi_alloy_katana", new BaseSword(RebornToolMaterials.SHIBUICHI_ALLOY, 0, -1.6f, new FabricItemSettings().fireproof()));
-    public static Item SHIBUICHI_ALLOY_PAXEL = registerItem("shibuichi_alloy_paxel", new BasePaxel(RebornToolMaterials.SHIBUICHI_ALLOY, 6, -3.1f, new FabricItemSettings().fireproof()));
-
     public static Item MAGISTEEL_SWORD = registerItem("magisteel_sword", new BaseSword(RebornToolMaterials.MAGISTEEL, 3, -2.4f, new FabricItemSettings().fireproof()));
     public static Item MAGISTEEL_SHOVEL = registerItem("magisteel_shovel", new BaseShovel(RebornToolMaterials.MAGISTEEL, 1, -3.0f, new FabricItemSettings().fireproof()));
     public static Item MAGISTEEL_PICKAXE = registerItem("magisteel_pickaxe", new BasePickaxe(RebornToolMaterials.MAGISTEEL, 1, -2.8f, new FabricItemSettings().fireproof()));
@@ -280,14 +272,6 @@ public class RebornTools {
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_KATANA);
         addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_PAXEL);
 
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_SWORD);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_SHOVEL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_PICKAXE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_AXE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_HOE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_KATANA);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHIBUICHI_ALLOY_PAXEL);
 
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_SWORD);
         addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_SHOVEL);

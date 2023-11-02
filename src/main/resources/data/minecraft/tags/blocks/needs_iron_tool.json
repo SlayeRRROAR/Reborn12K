@@ -39,8 +39,6 @@
     "reborn12k:raw_electrum_block",
     "reborn12k:electrum_block",
     "reborn12k:raw_lumium_block",
-    "reborn12k:lumium_block",
-    "reborn12k:raw_shibuichi_alloy_block",
-    "reborn12k:shibuichi_alloy_block"
+    "reborn12k:lumium_block"
   ]
 }

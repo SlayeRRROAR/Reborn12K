@@ -15,7 +15,10 @@
             "tag": "c:ender_pearl_dusts"
         },
         {
-            "tag": "c:lead_dusts"
+            "tag": "c:tin_dusts"
+        },
+        {
+            "tag": "sand"
         }
     ],
     "result": {

@@ -1,6 +1,5 @@
 {
     "type": "minecraft:crafting_shaped",
-    "category": "food",
     "category": "combat",
     "pattern": [
         "A A",

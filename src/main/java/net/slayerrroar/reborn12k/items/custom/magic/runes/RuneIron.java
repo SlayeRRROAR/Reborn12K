@@ -1,6 +1,7 @@
 package net.slayerrroar.reborn12k.items.custom.magic.runes;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -10,13 +11,12 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 import net.slayerrroar.reborn12k.items.RebornItems;
 
 import static net.minecraft.block.Block.dropStack;
 
-public class EtherealRune extends Item {
-    public EtherealRune(Settings settings) {
+public class RuneIron extends Item {
+    public RuneIron(Settings settings) {
         super(settings);
     }
 
@@ -29,10 +29,10 @@ public class EtherealRune extends Item {
         BlockState block = world.getBlockState(context.getBlockPos());
         BlockPos pos = context.getBlockPos();
 
-        if (block.isOf(RebornBlocks.SILVER_BLOCK)) {
+        if (block.isOf(Blocks.IRON_BLOCK)) {
             world.breakBlock(pos, false);
             stack.setCount(stack.getCount()-1);
-            dropStack(world, pos, new ItemStack(RebornItems.MITHRIL_INGOT));
+            dropStack(world, pos, new ItemStack(RebornItems.ORICHALCUM_INGOT));
             world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.25f, 0.25f);
             return ActionResult.SUCCESS;
         }
