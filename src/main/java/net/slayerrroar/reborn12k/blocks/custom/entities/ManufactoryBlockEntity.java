@@ -12,7 +12,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.recipe.RecipeEntry;
-import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -23,13 +22,10 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.recipe.recipe_types.ManufactoryRecipe;
-import net.slayerrroar.reborn12k.recipe.recipe_types.ManufactoryRecipe;
-import net.slayerrroar.reborn12k.screen.manufactory.ManufactoryScreenHandler;
 import net.slayerrroar.reborn12k.screen.manufactory.ManufactoryScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Objects;
 import java.util.Optional;
 
 @SuppressWarnings({"OptionalGetWithoutIsPresent", "unused"})

@@ -19,7 +19,6 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
-import net.slayerrroar.reborn12k.blocks.custom.entities.ManaCondenserBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.stream.Stream;
