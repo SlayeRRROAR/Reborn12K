@@ -339,9 +339,6 @@ public class RebornItems {
 
     public static final Item MANAWEAVE = registerItem("manaweave", new Item(new FabricItemSettings()));
     public static final Item REFINED_MANATITE = registerItem("refined_manatite", new Item(new FabricItemSettings().rarity(Rarity.RARE)));
-    public static final Item MANA_SPARK = registerItem("mana_spark", new Item(new FabricItemSettings()));
-    public static final Item MAGICAL_FRAGMENT = registerItem("magical_fragment", new Item(new FabricItemSettings()));
-    public static final Item ARCANE_DUST = registerItem("arcane_dust", new Item(new FabricItemSettings()));
 
     public static final Item WOODEN_WAND = registerItem ("wooden_wand", new Item(new FabricItemSettings()));
     public static final Item SILVER_SCEPTER = registerItem ("silver_scepter", new Item(new FabricItemSettings()));
@@ -525,322 +522,319 @@ public class RebornItems {
 
     public static void addItemsToItemGroup() {
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, COAL_PIECE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, COAL_PIECE);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, TIN_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ALUMINUM_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SILVER_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LEAD_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, NICKEL_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CHROME_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, TIN_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ALUMINUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, SILVER_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, LEAD_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, NICKEL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, CHROME_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, TITANIUM_INGOT);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTEN_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, VANADIUM_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, NEODYMIUM_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, URANIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, TUNGSTEN_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, VANADIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, NEODYMIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, URANIUM_INGOT);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, COBALT_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, OSMIUM_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, PLATINUM_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, COBALT_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, OSMIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, PLATINUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, IRIDIUM_INGOT);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CONSTANTAN_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, INVAR_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LUMIUM_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ARCHEOSITE_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, BRONZE_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, CONSTANTAN_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, INVAR_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, STEEL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, TUNGSTENSTEEL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, THELOSITE_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ADVANCED_ALLOY_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, IRIDIUM_ALLOY_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ELECTRUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, SIGNALUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, LUMIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ENDERIUM_INGOT);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, YELLOWCAKE_URANIUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, YELLOWCAKE_URANIUM_INGOT);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, DEMONIC_METAL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MAGISTEEL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ORICHALCUM_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MITHRIL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, DEMONIC_METAL_INGOT);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, SAPPHIRE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUBY);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MANATITE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SUNSTONE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MOONSTONE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, SAPPHIRE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RUBY);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, SUNSTONE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MOONSTONE);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_TIN);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ALUMINUM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_SILVER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_LEAD);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_NICKEL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_CHROME);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_TITANIUM);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_TIN);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_ALUMINUM);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_SILVER);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_LEAD);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_NICKEL);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_CHROME);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_TITANIUM);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_TUNGSTEN);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_VANADIUM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_NEODYMIUM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_URANIUM);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_TUNGSTEN);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_VANADIUM);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_NEODYMIUM);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_URANIUM);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_COBALT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_OSMIUM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_PLATINUM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_IRIDIUM);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_COBALT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_OSMIUM);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_PLATINUM);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_IRIDIUM);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ARCHEOSITE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_BRONZE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_CONSTANTAN);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_INVAR);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_STEEL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_TUNGSTENSTEEL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_THELOSITE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ADVANCED_ALLOY);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_IRIDIUM_ALLOY);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ELECTRUM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_SIGNALUM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_LUMIUM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RAW_ENDERIUM);
-
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, COAL_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, COPPER_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, IRON_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GOLD_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LAPIS_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, DIAMOND_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, EMERALD_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, AMETHYST_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, QUARTZ_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, NETHERITE_DUST);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, TIN_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ALUMINUM_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SILVER_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LEAD_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, NICKEL_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CHROME_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, TITANIUM_DUST);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, SAPPHIRE_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUBY_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MANATITE_DUST);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTEN_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, VANADIUM_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, NEODYMIUM_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, URANIUM_DUST);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, COBALT_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, OSMIUM_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, PLATINUM_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_DUST);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHEOSITE_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BRONZE_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CONSTANTAN_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, INVAR_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, STEEL_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, TUNGSTENSTEEL_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, THELOSITE_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ADVANCED_ALLOY_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, IRIDIUM_ALLOY_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ELECTRUM_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SIGNALUM_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LUMIUM_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERIUM_DUST);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, YELLOWCAKE_URANIUM_DUST);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGISTEEL_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ORICHALCUM_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MITHRIL_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN12K, DEMONIC_METAL_DUST);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENDER_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_ARCHEOSITE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_BRONZE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_CONSTANTAN);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_INVAR);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_STEEL);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_TUNGSTENSTEEL);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_THELOSITE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_ADVANCED_ALLOY);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_IRIDIUM_ALLOY);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_ELECTRUM);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_SIGNALUM);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_LUMIUM);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_ENDERIUM);
 
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, DESTABILIZED_MIXTURE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENERGIZED_MIXTURE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RESONANT_MIXTURE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MANA_RICH_MIXTURE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, COAL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, COPPER_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, IRON_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, GOLD_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, LAPIS_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, DIAMOND_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, EMERALD_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, AMETHYST_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, QUARTZ_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, NETHERITE_DUST);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, BANANA);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_BANANA);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENCHANTED_GOLDEN_BANANA);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, TIN_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ALUMINUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, SILVER_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, LEAD_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, NICKEL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, CHROME_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, TITANIUM_DUST);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, CHERRY);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_CHERRY);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENCHANTED_GOLDEN_CHERRY);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, SAPPHIRE_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RUBY_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MANATITE_DUST);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, WITHERED_SHARD);
-        addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_SKULL_FRAGMENT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, TUNGSTEN_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, VANADIUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, NEODYMIUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, URANIUM_DUST);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, UNRECORDED_DISC);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ALKATRAZ_DISC);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, COBALT_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, OSMIUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, PLATINUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, IRIDIUM_DUST);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, UNIVERSAL_SMITHING_TEMPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ARCHEOSITE_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, BRONZE_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, CONSTANTAN_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, INVAR_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, STEEL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, TUNGSTENSTEEL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, THELOSITE_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ADVANCED_ALLOY_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, IRIDIUM_ALLOY_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ELECTRUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, SIGNALUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, LUMIUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ENDERIUM_DUST);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, STONE_HAMMER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, IRON_HAMMER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, DIAMOND_HAMMER);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, YELLOWCAKE_URANIUM_DUST);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, CASING_MK237);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CERAMITE_PLATE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MAGISTEEL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ORICHALCUM_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MITHRIL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, DEMONIC_METAL_DUST);
 
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, DESTABILIZED_REDSTONE_BUCKET);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENERGIZED_GLOWSTONE_BUCKET);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RESONANT_ENDER_BUCKET);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LIQUID_MANA_BUCKET);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGNET);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, EMPTY_MACHINE_CASING);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, COOLING_ASSEMBLY);
-        addToItemGroup(ItemGroupUtil.REBORN12K, POWER_SUPPLY_MODULE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, HFR_COIL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, UHF_LASER_EMITTER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, COLLIMATED_LASER_ARRAY);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, EMPTY_FUEL_CELL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LEU_FUEL_CELL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, HEU_FUEL_CELL);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, LASER_FOCUS);
-
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, MANAWEAVE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, REFINED_MANATITE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MANA_SPARK);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGICAL_FRAGMENT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ARCANE_DUST);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, WOODEN_WAND);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SILVER_SCEPTER );
-        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_ROD);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ARCHMAGE_STAFF);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, BLANK_RUNE);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_AIR);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_EARTH);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_WATER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_FIRE);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_LIGHT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_DARKNESS);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_AIR);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_EARTH);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_WATER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_FIRE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_LIGHT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SUPERIOR_RUNE_OF_DARKNESS);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_LIGHTNING);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_NATURE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_ICE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_IRON);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_ORDER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_CHAOS);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, ELEMENTAL_RUNE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ETHEREAL_RUNE);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNE_OF_STRENGTH);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, WINDSTORM_MANATITE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, VIRIDIAN_MANATITE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ABYSS_MANATITE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, VOLCANIC_MANATITE);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, SUNLIGHT_MANATITE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, NOVILUNIUM_MANATITE);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, THUNDERBOLT_MANATITE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, TERRA_MANATITE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GLACIAL_MANATITE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, FERRUM_MANATITE);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, CRIMSON_MANATITE);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGIC_MIRROR);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ICE_MIRROR);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CELL_PHONE);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, SOUL_VESSEL);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, CHICKEN_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, COW_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, FISH_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, FROG_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MOOSHROOM_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, PIG_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RABBIT_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHEEP_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SQUID_SOUL);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, BEE_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SPIDER_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERMAN_SOUL);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, BLAZE_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CREEPER_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, DROWNED_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GHAST_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GUARDIAN_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ILLAGER_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGMA_CUBE_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, PHANTOM_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHULKER_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SKELETON_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SLIME_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, WITCH_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_SKELETON_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ZOMBIE_SOUL);
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENDER_DRAGON_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, WARDEN_SOUL);
-        addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ENDER_DUST);
 
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, CHICKEN_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, COW_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, FISH_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, FROG_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MOOSHROOM_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, PIG_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RABBIT_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHEEP_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SQUID_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, DESTABILIZED_MIXTURE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ENERGIZED_MIXTURE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RESONANT_MIXTURE);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MANA_RICH_MIXTURE);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, BEE_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SPIDER_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENDERMAN_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, BANANA);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, GOLDEN_BANANA);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ENCHANTED_GOLDEN_BANANA);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, BLAZE_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CREEPER_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, DROWNED_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GHAST_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GUARDIAN_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ILLAGER_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGMA_CUBE_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, PHANTOM_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHULKER_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SKELETON_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, SLIME_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, WITCH_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_SKELETON_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ZOMBIE_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, CHERRY);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, GOLDEN_CHERRY);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ENCHANTED_GOLDEN_CHERRY);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENDER_DRAGON_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, WARDEN_ESSENCE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, WITHER_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, WITHERED_SHARD);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, WITHER_SKULL_FRAGMENT);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, UNRECORDED_DISC);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ALKATRAZ_DISC);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, UNIVERSAL_SMITHING_TEMPLATE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, STONE_HAMMER);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, IRON_HAMMER);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, DIAMOND_HAMMER);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, CASING_MK237);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, CERAMITE_PLATE);
+
+
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, DESTABILIZED_REDSTONE_BUCKET);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ENERGIZED_GLOWSTONE_BUCKET);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RESONANT_ENDER_BUCKET);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, LIQUID_MANA_BUCKET);
+
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, MAGNET);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, EMPTY_MACHINE_CASING);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, COOLING_ASSEMBLY);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, POWER_SUPPLY_MODULE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, HFR_COIL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, UHF_LASER_EMITTER);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, COLLIMATED_LASER_ARRAY);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, EMPTY_FUEL_CELL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, LEU_FUEL_CELL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, HEU_FUEL_CELL);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, LASER_FOCUS);
+
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, MANAWEAVE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, REFINED_MANATITE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, WOODEN_WAND);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, SILVER_SCEPTER );
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, GOLDEN_ROD);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, ARCHMAGE_STAFF);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, BLANK_RUNE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_AIR);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_EARTH);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_WATER);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_FIRE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_LIGHT);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_DARKNESS);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SUPERIOR_RUNE_OF_AIR);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SUPERIOR_RUNE_OF_EARTH);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SUPERIOR_RUNE_OF_WATER);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SUPERIOR_RUNE_OF_FIRE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SUPERIOR_RUNE_OF_LIGHT);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SUPERIOR_RUNE_OF_DARKNESS);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_LIGHTNING);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_NATURE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_ICE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_IRON);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_ORDER);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_CHAOS);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ELEMENTAL_RUNE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ETHEREAL_RUNE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_STRENGTH);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, WINDSTORM_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, VIRIDIAN_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ABYSS_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, VOLCANIC_MANATITE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SUNLIGHT_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, NOVILUNIUM_MANATITE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, THUNDERBOLT_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, TERRA_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, GLACIAL_MANATITE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, FERRUM_MANATITE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, CRIMSON_MANATITE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, MAGIC_MIRROR);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, ICE_MIRROR);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, CELL_PHONE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SOUL_VESSEL);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, CHICKEN_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, COW_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, FISH_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, FROG_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, MOOSHROOM_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, PIG_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RABBIT_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SHEEP_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SQUID_SOUL);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, BEE_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SPIDER_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ENDERMAN_SOUL);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, BLAZE_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, CREEPER_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, DROWNED_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, GHAST_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, GUARDIAN_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ILLAGER_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, MAGMA_CUBE_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, PHANTOM_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SHULKER_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SKELETON_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SLIME_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, WITCH_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, WITHER_SKELETON_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ZOMBIE_SOUL);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ENDER_DRAGON_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, WARDEN_SOUL);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, WITHER_SOUL);
+
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, CHICKEN_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, COW_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, FISH_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, FROG_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, MOOSHROOM_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, PIG_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, RABBIT_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SHEEP_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SQUID_ESSENCE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, BEE_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SPIDER_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ENDERMAN_ESSENCE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, BLAZE_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, CREEPER_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, DROWNED_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, GHAST_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, GUARDIAN_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ILLAGER_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, MAGMA_CUBE_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, PHANTOM_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SHULKER_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SKELETON_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, SLIME_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, WITCH_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, WITHER_SKELETON_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ZOMBIE_ESSENCE);
+
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, ENDER_DRAGON_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, WARDEN_ESSENCE);
+        addToItemGroup(ItemGroupUtil.REBORN_STUFF, WITHER_ESSENCE);
 
     }
 

@@ -1130,6 +1130,13 @@
 
 
     "itemgroup.reborn12k": "Reborn12K",
+    "itemgroup.a.materials": "Reborn12K - Materials",
+    "itemgroup.b.stuff": "Reborn12K - Stuff",
+    "itemgroup.c.blocks": "Reborn12K - Blocks",
+    "itemgroup.d.decorations": "Reborn12K - Decorations",
+    "itemgroup.e.trinkets": "Reborn12K - Trinkets",
+    "itemgroup.f.tools": "Reborn12K - Tools",
+    "itemgroup.g.combat": "Reborn12K - Combat",
 
 
     "advancements.reborn12k.root.title": "Reborn12K",
@@ -1256,5 +1263,15 @@
     "text.autoconfig.reborn12k.option.enableTreeGeneration": "Enable Tree Generation",
     "text.autoconfig.reborn12k.option.enableCherryTreeGeneration": "Enable Cherry Tree",
     "text.autoconfig.reborn12k.option.enableAshTreeGeneration": "Enable Ash Tree",
-    "text.autoconfig.reborn12k.option.enableSlimyTreeGeneration": "Enable Slimy Tree"
+    "text.autoconfig.reborn12k.option.enableSlimyTreeGeneration": "Enable Slimy Tree",
+
+
+
+    "rei.reborn12k.arcane_artifact": "Arcane Artifact",
+    "rei.reborn12k.mana_condenser": "Mana Condenser",
+    "rei.reborn12k.crusher": "Crusher",
+    "rei.reborn12k.manufactory": "Manufactory",
+    "rei.reborn12k.melter": "Melter",
+    "rei.reborn12k.quarry": "Quarry"
+
 }

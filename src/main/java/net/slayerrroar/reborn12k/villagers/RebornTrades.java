@@ -174,7 +174,7 @@ public class RebornTrades {
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 3),
-                            new ItemStack(RebornItems.MANA_SPARK, 1),
+                            new ItemStack(TrinketItems.MANA_SPARK, 1),
                             16, 15, 0f));
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 3),
@@ -185,7 +185,7 @@ public class RebornTrades {
         TradeOfferHelper.registerVillagerOffers(RebornVillagers.MANASMITH, 5,   //Manasmith L5
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(RebornItems.MAGICAL_FRAGMENT, 1),
+                            new ItemStack(TrinketItems.MAGICAL_FRAGMENT, 1),
                             new ItemStack(Items.EMERALD, 7),
                             12, 30, 0f));
                     factories.add((entity, random) -> new TradeOffer(

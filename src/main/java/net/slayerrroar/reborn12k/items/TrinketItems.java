@@ -26,6 +26,13 @@ public class TrinketItems {
 
     public static final Item STRONGBOX_KEY = registerItem("strongbox_key", new KeyItem(new FabricItemSettings()));
 
+    //Upgrade
+
+    public static final Item MANA_SPARK = registerItem("mana_spark", new Item(new FabricItemSettings()));
+    public static final Item MAGICAL_FRAGMENT = registerItem("magical_fragment", new Item(new FabricItemSettings()));
+    public static final Item ARCANE_DUST = registerItem("arcane_dust", new Item(new FabricItemSettings()));
+
+
     // Hat
 
     public static final Item SHADES = registerItem("shades", new Shades(new FabricItemSettings().maxCount(1)));
@@ -112,77 +119,81 @@ public class TrinketItems {
 
     public static void addItemsToItemGroup() {
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, STRONGBOX_KEY);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, STRONGBOX_KEY);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, SHADES);
-        addToItemGroup(ItemGroupUtil.REBORN12K, IRON_CROWN);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CAT_EARS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, COW_EARS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BUNNY_EARS);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, MANA_SPARK);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, MAGICAL_FRAGMENT);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, ARCANE_DUST);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, GREEN_BELT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RED_BELT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BLACK_BELT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, EXPERT_BELT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ANTIGRAV_BUCKLE);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, SHADES);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, IRON_CROWN);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, CAT_EARS);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, COW_EARS);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, BUNNY_EARS);
 
-
-        addToItemGroup(ItemGroupUtil.REBORN12K, COMFY_SLIPPERS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LOAFERS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, TRAVELER_SHOES);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RUNNING_SHOES);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LONG_FALL_BOOTS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, WINGED_SHOES);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, GREEN_BELT);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, RED_BELT);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, BLACK_BELT);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, EXPERT_BELT);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, ANTIGRAV_BUCKLE);
 
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, IRON_NECKLACE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_NECKLACE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BEJEWELED_NECKLACE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, HEART_PENDANT);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, COMFY_SLIPPERS);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, LOAFERS);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, TRAVELER_SHOES);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, RUNNING_SHOES);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, LONG_FALL_BOOTS);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, WINGED_SHOES);
 
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_RING);
-        addToItemGroup(ItemGroupUtil.REBORN12K, AWAKENED_GOLDEN_RING);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, IRON_NECKLACE);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, GOLDEN_NECKLACE);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, BEJEWELED_NECKLACE);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, HEART_PENDANT);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_AIR);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_EARTH);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_WATER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_FIRE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_LIGHT);
-        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_DARKNESS);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, RING_OF_STRENGTH);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, GOLDEN_RING);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, AWAKENED_GOLDEN_RING);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, BAND_OF_FORTITUDE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GREATER_BAND_OF_FORTITUDE);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, RING_OF_AIR);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, RING_OF_EARTH);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, RING_OF_WATER);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, RING_OF_FIRE);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, RING_OF_LIGHT);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, RING_OF_DARKNESS);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, MONSTER_CLAW);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BLOODY_CLAW);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, RING_OF_STRENGTH);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, TARNISHED_MEDALLION);
-        addToItemGroup(ItemGroupUtil.REBORN12K, GOLDEN_MEDALLION);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, BAND_OF_FORTITUDE);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, GREATER_BAND_OF_FORTITUDE);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, WORN_CHARM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LUCKY_CHARM);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, MONSTER_CLAW);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, BLOODY_CLAW);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, JETPACK);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ANGEL_WINGS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, DEMON_WINGS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BAT_WINGS);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, TARNISHED_MEDALLION);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, GOLDEN_MEDALLION);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, GOLD_POUCH);
-        addToItemGroup(ItemGroupUtil.REBORN12K, STRONG_SPRING);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BLOODY_ROSE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ENDLESS_QUIVER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, MAGNIFYING_GLASS);
-        addToItemGroup(ItemGroupUtil.REBORN12K, PHOENIX_PLUME);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, WORN_CHARM);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, LUCKY_CHARM);
 
-        addToItemGroup(ItemGroupUtil.REBORN12K, GRIFFIN_FEATHER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, ACONITUM);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LEVIATHAN_EYE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, CRYSTALIZED_EMBER);
-        addToItemGroup(ItemGroupUtil.REBORN12K, LOADED_DICE);
-        addToItemGroup(ItemGroupUtil.REBORN12K, BASILISK_FANG);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, JETPACK);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, ANGEL_WINGS);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, DEMON_WINGS);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, BAT_WINGS);
+
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, GOLD_POUCH);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, STRONG_SPRING);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, BLOODY_ROSE);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, ENDLESS_QUIVER);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, MAGNIFYING_GLASS);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, PHOENIX_PLUME);
+
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, GRIFFIN_FEATHER);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, ACONITUM);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, LEVIATHAN_EYE);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, CRYSTALIZED_EMBER);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, LOADED_DICE);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, BASILISK_FANG);
     }
 
     private static void addToItemGroup(RegistryKey<ItemGroup> group, Item item) {
