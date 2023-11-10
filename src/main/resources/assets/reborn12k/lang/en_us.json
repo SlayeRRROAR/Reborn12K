@@ -1140,15 +1140,29 @@
 
     "enchantment.reborn12k.magic_protection": "Magic Protection",
 
-    "enchantment.reborn12k.toxic_edge": "Toxic Edge",
     "enchantment.reborn12k.frost_bite": "Frost Bite",
+    "enchantment.reborn12k.jagged_teeth": "Jagged Teeth",
+    "enchantment.reborn12k.toxic_edge": "Toxic Edge",
 
     "enchantment.reborn12k.bloodlust": "Bloodlust",
     "enchantment.reborn12k.kiss_of_death": "Kiss of Death",
 
-    "enchantment.reborn12k.venom": "Venom",
+    "enchantment.reborn12k.frigid_bolt": "Frigid Bolt",
+    "enchantment.reborn12k.barbed_shot": "Barbed Shot",
+    "enchantment.reborn12k.venomous_tip": "Venomous Tip",
     "enchantment.reborn12k.wounding": "Wounding",
 
+
+    "effect.reborn12k.bleed": "Bleed",
+    "item.minecraft.potion.effect.bleed": "Potion of Bleed",
+    "item.minecraft.potion.effect.bleed_extended": "Potion of Bleed",
+    "item.minecraft.potion.effect.bleed_2": "Potion of Bleed",
+    "item.minecraft.splash_potion.effect.bleed": "Splash Potion of Bleed",
+    "item.minecraft.splash_potion.effect.bleed_extended": "Splash Potion of Bleed",
+    "item.minecraft.splash_potion.effect.bleed_2": "Splash Potion of Bleed",
+    "item.minecraft.lingering_potion.effect.bleed": "Lingering Potion of Bleed",
+    "item.minecraft.lingering_potion.effect.bleed_extended": "Lingering Potion of Bleed",
+    "item.minecraft.lingering_potion.effect.bleed_2": "Lingering Potion of Bleed",
 
     "sounds:reborn12k.alkatraz": "DEMONDICE - Alkatraz",
     "subtitles.reborn12k.alkatraz": "DEMONDICE - Alkatraz is playing",

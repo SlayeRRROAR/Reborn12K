@@ -8,10 +8,11 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.slayerrroar.reborn12k.effects.RebornStatusEffects;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 
-public class FrostBiteEnchantment extends Enchantment {
-    public FrostBiteEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
+public class JaggedTeethEnchantment extends Enchantment {
+    public JaggedTeethEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
         super(weight, type, slotTypes);
     }
 
@@ -22,7 +23,7 @@ public class FrostBiteEnchantment extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != Enchantments.FIRE_ASPECT && other != RebornEnchantments.JAGGED_TEETH && other != RebornEnchantments.TOXIC_EDGE;
+        return super.canAccept(other) && other != Enchantments.FIRE_ASPECT && other!= RebornEnchantments.FROST_BITE && other != RebornEnchantments.TOXIC_EDGE;
     }
 
     @Override
@@ -43,7 +44,7 @@ public class FrostBiteEnchantment extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (target instanceof LivingEntity) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, (6 + level) * 20, 3));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(RebornStatusEffects.BLEED, 4 * 20 * level, 1));
         }
     }
 }

@@ -10,8 +10,8 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 
-public class VenomEnchantment extends Enchantment {
-    public VenomEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
+public class VenomousTipEnchantment extends Enchantment {
+    public VenomousTipEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
         super(weight, type, slotTypes);
     }
 
@@ -22,7 +22,7 @@ public class VenomEnchantment extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != Enchantments.FLAME && other !=RebornEnchantments.WOUNDING;
+        return super.canAccept(other) && other != Enchantments.FLAME && other != RebornEnchantments.FRIGID_BOLT && other != RebornEnchantments.BARBED_SHOT && other != RebornEnchantments.WOUNDING;
     }
 
     @Override
@@ -37,7 +37,7 @@ public class VenomEnchantment extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 1;
+        return 2;
     }
 
     @Override

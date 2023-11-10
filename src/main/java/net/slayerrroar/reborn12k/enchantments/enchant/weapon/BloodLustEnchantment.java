@@ -22,7 +22,7 @@ public class BloodLustEnchantment extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != Enchantments.SHARPNESS && other != Enchantments.SMITE && other != Enchantments.BANE_OF_ARTHROPODS&& other != RebornEnchantments.KISS_OF_DEATH;
+        return super.canAccept(other) && other != Enchantments.SHARPNESS && other != Enchantments.SMITE && other != Enchantments.BANE_OF_ARTHROPODS && other != RebornEnchantments.KISS_OF_DEATH;
     }
 
     public boolean isTreasure() {
@@ -45,7 +45,7 @@ public class BloodLustEnchantment extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (user.getHealth() < user.getMaxHealth() / 2) {
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20*5, level, false, false));
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 10, level, false, false));
         }
     }
 }
