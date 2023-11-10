@@ -10,6 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
+import net.slayerrroar.reborn12k.effects.RebornStatusEffects;
 
 import java.util.List;
 
@@ -43,6 +44,7 @@ public class CowEars extends TrinketItem implements Trinket {
         entity.removeStatusEffect(StatusEffects.WITHER);
         entity.removeStatusEffect(StatusEffects.BAD_OMEN);
         entity.removeStatusEffect(StatusEffects.DARKNESS);
+        entity.removeStatusEffect(RebornStatusEffects.BLEED);
 
     }
 
