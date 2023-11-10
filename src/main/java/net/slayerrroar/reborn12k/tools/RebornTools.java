@@ -149,6 +149,23 @@ public class RebornTools {
     public static Item MITHRIL_PAXEL = registerItem("mithril_paxel", new BasePaxel(RebornToolMaterials.MITHRIL, 5, -3.0f, new FabricItemSettings().fireproof()));
 
 
+    public static Item EMETAL_SWORD = registerItem("emetal_sword", new BaseSword(RebornToolMaterials.EMETAL, 3, -2.4f, new FabricItemSettings().fireproof()));
+    public static Item EMETAL_SHOVEL = registerItem("emetal_shovel", new BaseShovel(RebornToolMaterials.EMETAL, 1, -3.0f, new FabricItemSettings().fireproof()));
+    public static Item EMETAL_PICKAXE = registerItem("emetal_pickaxe", new BasePickaxe(RebornToolMaterials.EMETAL, 1, -2.8f, new FabricItemSettings().fireproof()));
+    public static Item EMETAL_AXE = registerItem("emetal_axe", new BaseAxe(RebornToolMaterials.EMETAL, 5, -3.0f, new FabricItemSettings().fireproof()));
+    public static Item EMETAL_HOE = registerItem("emetal_hoe", new BaseHoe(RebornToolMaterials.EMETAL, -3, 0f, new FabricItemSettings().fireproof()));
+    public static Item EMETAL_KATANA = registerItem("emetal_katana", new BaseSword(RebornToolMaterials.EMETAL, 0, -1.6f, new FabricItemSettings().fireproof()));
+    public static Item EMETAL_PAXEL = registerItem("emetal_paxel", new BasePaxel(RebornToolMaterials.EMETAL, 5, -3.0f, new FabricItemSettings().fireproof()));
+
+    public static Item DARK_ALLOY_SWORD = registerItem("dark_alloy_sword", new BaseSword(RebornToolMaterials.DARK_ALLOY, 3, -2.4f, new FabricItemSettings().fireproof()));
+    public static Item DARK_ALLOY_SHOVEL = registerItem("dark_alloy_shovel", new BaseShovel(RebornToolMaterials.DARK_ALLOY, 1, -3.0f, new FabricItemSettings().fireproof()));
+    public static Item DARK_ALLOY_PICKAXE = registerItem("dark_alloy_pickaxe", new BasePickaxe(RebornToolMaterials.DARK_ALLOY, 1, -2.8f, new FabricItemSettings().fireproof()));
+    public static Item DARK_ALLOY_AXE = registerItem("dark_alloy_axe", new BaseAxe(RebornToolMaterials.DARK_ALLOY, 5, -3.0f, new FabricItemSettings().fireproof()));
+    public static Item DARK_ALLOY_HOE = registerItem("dark_alloy_hoe", new BaseHoe(RebornToolMaterials.DARK_ALLOY, -3, 0f, new FabricItemSettings().fireproof()));
+    public static Item DARK_ALLOY_KATANA = registerItem("dark_alloy_katana", new BaseSword(RebornToolMaterials.DARK_ALLOY, 0, -1.6f, new FabricItemSettings().fireproof()));
+    public static Item DARK_ALLOY_PAXEL = registerItem("dark_alloy_paxel", new BasePaxel(RebornToolMaterials.DARK_ALLOY, 5, -3.0f, new FabricItemSettings().fireproof()));
+
+
     public static Item SILVER_CLAYMORE = registerItem("silver_claymore", new BaseSword(RebornToolMaterials.SILVER, 2, -3.0f, new FabricItemSettings()));
     public static Item CUTTER_237 = registerItem("cutter_237", new BaseSword(RebornToolMaterials.CUTTER237, 3, -1.8f, new FabricItemSettings().fireproof()));
     public static Item REBELLION = registerItem("rebellion", new BaseSword(RebornToolMaterials.DMC, 4, -2.6f, new FabricItemSettings().fireproof()));
@@ -296,6 +313,24 @@ public class RebornTools {
         addToItemGroup(ItemGroupUtil.REBORN_TOOLS, MITHRIL_HOE);
         addToItemGroup(ItemGroupUtil.REBORN_COMBAT, MITHRIL_KATANA);
         addToItemGroup(ItemGroupUtil.REBORN_TOOLS, MITHRIL_PAXEL);
+
+
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, EMETAL_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, EMETAL_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, EMETAL_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, EMETAL_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, EMETAL_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, EMETAL_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, EMETAL_PAXEL);
+
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, DARK_ALLOY_SWORD);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, DARK_ALLOY_SHOVEL);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, DARK_ALLOY_PICKAXE);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, DARK_ALLOY_AXE);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, DARK_ALLOY_HOE);
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, DARK_ALLOY_KATANA);
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, DARK_ALLOY_PAXEL);
+
 
         addToItemGroup(ItemGroupUtil.REBORN_COMBAT, SILVER_CLAYMORE);
         addToItemGroup(ItemGroupUtil.REBORN_COMBAT, CUTTER_237);

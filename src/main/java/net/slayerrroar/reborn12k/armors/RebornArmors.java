@@ -70,6 +70,7 @@ public class RebornArmors {
     public static final Item ENDERIUM_LEGGINGS = registerItem("enderium_leggings", new ArmorItem(RebornArmorMaterials.ENDERIUM, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof()));
     public static final Item ENDERIUM_BOOTS = registerItem("enderium_boots", new ArmorItem(RebornArmorMaterials.ENDERIUM, ArmorItem.Type.BOOTS, new Item.Settings().fireproof()));
 
+
     public static final Item MAGISTEEL_HELMET = registerItem("magisteel_helmet", new ArmorItem(RebornArmorMaterials.MAGISTEEL, ArmorItem.Type.HELMET, new Item.Settings().fireproof()));
     public static final Item MAGISTEEL_CHESTPLATE = registerItem("magisteel_chestplate", new ArmorItem(RebornArmorMaterials.MAGISTEEL, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof()));
     public static final Item MAGISTEEL_LEGGINGS = registerItem("magisteel_leggings", new ArmorItem(RebornArmorMaterials.MAGISTEEL, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof()));
@@ -84,6 +85,17 @@ public class RebornArmors {
     public static final Item MITHRIL_CHESTPLATE = registerItem("mithril_chestplate", new ArmorItem(RebornArmorMaterials.MITHRIL, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof()));
     public static final Item MITHRIL_LEGGINGS = registerItem("mithril_leggings", new ArmorItem(RebornArmorMaterials.MITHRIL, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof()));
     public static final Item MITHRIL_BOOTS = registerItem("mithril_boots", new ArmorItem(RebornArmorMaterials.MITHRIL, ArmorItem.Type.BOOTS, new Item.Settings().fireproof()));
+
+
+    public static final Item EMETAL_HELMET = registerItem("emetal_helmet", new ArmorItem(RebornArmorMaterials.EMETAL, ArmorItem.Type.HELMET, new Item.Settings().fireproof()));
+    public static final Item EMETAL_CHESTPLATE = registerItem("emetal_chestplate", new ArmorItem(RebornArmorMaterials.EMETAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof()));
+    public static final Item EMETAL_LEGGINGS = registerItem("emetal_leggings", new ArmorItem(RebornArmorMaterials.EMETAL, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof()));
+    public static final Item EMETAL_BOOTS = registerItem("emetal_boots", new ArmorItem(RebornArmorMaterials.EMETAL, ArmorItem.Type.BOOTS, new Item.Settings().fireproof()));
+
+    public static final Item DARK_ALLOY_HELMET = registerItem("dark_alloy_helmet", new ArmorItem(RebornArmorMaterials.DARK_ALLOY, ArmorItem.Type.HELMET, new Item.Settings().fireproof()));
+    public static final Item DARK_ALLOY_CHESTPLATE = registerItem("dark_alloy_chestplate", new ArmorItem(RebornArmorMaterials.DARK_ALLOY, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof()));
+    public static final Item DARK_ALLOY_LEGGINGS = registerItem("dark_alloy_leggings", new ArmorItem(RebornArmorMaterials.DARK_ALLOY, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof()));
+    public static final Item DARK_ALLOY_BOOTS = registerItem("dark_alloy_boots", new ArmorItem(RebornArmorMaterials.DARK_ALLOY, ArmorItem.Type.BOOTS, new Item.Settings().fireproof()));
 
 
     public static final Item MAGE_HELMET = registerItem("mage_helmet", new MageArmorItem(RebornArmorMaterials.MAGE, ArmorItem.Type.HELMET, new Item.Settings().fireproof()));
@@ -173,6 +185,16 @@ public class RebornArmors {
         addToItemGroup(ItemGroupUtil.REBORN_COMBAT, MITHRIL_CHESTPLATE);
         addToItemGroup(ItemGroupUtil.REBORN_COMBAT, MITHRIL_LEGGINGS);
         addToItemGroup(ItemGroupUtil.REBORN_COMBAT, MITHRIL_BOOTS);
+
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, EMETAL_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, EMETAL_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, EMETAL_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, EMETAL_BOOTS);
+
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, DARK_ALLOY_HELMET);
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, DARK_ALLOY_CHESTPLATE);
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, DARK_ALLOY_LEGGINGS);
+        addToItemGroup(ItemGroupUtil.REBORN_COMBAT, DARK_ALLOY_BOOTS);
 
 
         addToItemGroup(ItemGroupUtil.REBORN_COMBAT, MAGE_HELMET);
