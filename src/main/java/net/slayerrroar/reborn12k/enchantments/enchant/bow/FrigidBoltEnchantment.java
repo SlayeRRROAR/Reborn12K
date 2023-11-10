@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.enchantments.enchant.weapon;
+package net.slayerrroar.reborn12k.enchantments.enchant.bow;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -10,8 +10,8 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 
-public class FrostBiteEnchantment extends Enchantment {
-    public FrostBiteEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
+public class FrigidBoltEnchantment extends Enchantment {
+    public FrigidBoltEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
         super(weight, type, slotTypes);
     }
 
@@ -22,17 +22,17 @@ public class FrostBiteEnchantment extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != Enchantments.FIRE_ASPECT && other != RebornEnchantments.JAGGED_TEETH && other != RebornEnchantments.TOXIC_EDGE;
+        return super.canAccept(other) && other != Enchantments.FLAME && other != RebornEnchantments.BARBED_SHOT && other != RebornEnchantments.VENOMOUS_TIP && other != RebornEnchantments.WOUNDING;
     }
 
     @Override
     public int getMinPower(int level) {
-        return 10 + 20 * (level - 1);
+        return 20;
     }
 
     @Override
     public int getMaxPower(int level) {
-        return super.getMinPower(level) + 50;
+        return 50;
     }
 
     @Override
@@ -43,7 +43,9 @@ public class FrostBiteEnchantment extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (target instanceof LivingEntity) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, (6 + level) * 20, 3));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, (5 + level) * 20 , 3, true, false));
         }
+        super.onTargetDamaged(user, target, level);
     }
+
 }

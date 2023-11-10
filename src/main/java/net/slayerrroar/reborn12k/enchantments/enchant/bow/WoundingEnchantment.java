@@ -22,7 +22,7 @@ public class WoundingEnchantment extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != Enchantments.FLAME && other != RebornEnchantments.VENOM;
+        return super.canAccept(other) && other != Enchantments.FLAME && other != RebornEnchantments.FRIGID_BOLT && other != RebornEnchantments.BARBED_SHOT && other != RebornEnchantments.VENOMOUS_TIP;
     }
 
     @Override

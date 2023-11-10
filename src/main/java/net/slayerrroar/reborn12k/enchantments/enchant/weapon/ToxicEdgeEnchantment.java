@@ -22,7 +22,7 @@ public class ToxicEdgeEnchantment extends Enchantment {
 
     @Override
     protected boolean canAccept(Enchantment other) {
-        return super.canAccept(other) && other != Enchantments.FIRE_ASPECT && other != RebornEnchantments.FROST_BITE;
+        return super.canAccept(other) && other != Enchantments.FIRE_ASPECT && other != RebornEnchantments.FROST_BITE && other != RebornEnchantments.JAGGED_TEETH;
     }
 
     @Override
