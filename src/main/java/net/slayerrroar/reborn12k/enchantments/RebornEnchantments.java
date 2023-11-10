@@ -20,7 +20,7 @@ public class RebornEnchantments {
     public static final Enchantment TOXIC_EDGE = new ToxicEdgeEnchantment(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
 
     public static final Enchantment BLOODLUST = new BloodLustEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
-    public static final Enchantment KISS_OF_DEATH = new KoDeathEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+    public static final Enchantment KISS_OF_DEATH = new KissOfDeathEnchantment(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
 
     public static final Enchantment FRIGID_BOLT = new FrigidBoltEnchantment(Enchantment.Rarity.RARE, EnchantmentTarget.BOW, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
     public static final Enchantment BARBED_SHOT = new BarbedShotEnchantment(Enchantment.Rarity.RARE, EnchantmentTarget.BOW, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
