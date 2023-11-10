@@ -67,90 +67,90 @@ public class RebornPlacedFeatures {
 
         register(context, TIN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.TIN_ORE_KEY),
                 modifiersWithCount(12, // VeinsPerChunk
-                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(24), YOffset.aboveBottom(124))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(24), YOffset.fixed(124))));
 
         register(context, ALUMINUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.ALUMINUM_ORE_KEY),
                 modifiersWithCount(9, // VeinsPerChunk
-                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-16), YOffset.aboveBottom(64))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(64))));
 
         register(context, SILVER_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SILVER_ORE_KEY),
                 modifiersWithCount(7, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-48), YOffset.aboveBottom(16))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-48), YOffset.fixed(16))));
 
         register(context, LEAD_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.LEAD_ORE_KEY),
                 modifiersWithCount(6, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-32), YOffset.aboveBottom(32))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-32), YOffset.fixed(32))));
 
         register(context, NICKEL_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.NICKEL_ORE_KEY),
                 modifiersWithCount(5, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-64), YOffset.aboveBottom(0))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-64), YOffset.fixed(0))));
 
         register(context, CHROMITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.CHROMITE_ORE_KEY),
                 modifiersWithCount(9, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-64), YOffset.aboveBottom(48))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-64), YOffset.fixed(48))));
 
         register(context, TITANIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.TITANIUM_ORE_KEY),
                 modifiersWithCount(6, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-72), YOffset.aboveBottom(24))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-72), YOffset.fixed(24))));
 
 
         register(context, SAPPHIRE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SAPPHIRE_ORE_KEY),
                 modifiersWithCount(2, // VeinsPerChunk
-                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-16), YOffset.aboveBottom(16))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(16))));
 
         register(context, SAPPHIRE_ORE_LARGE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.SAPPHIRE_ORE_LARGE_KEY),
                 modifiersWithCount(5, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-144), YOffset.fixed(16))));
 
         register(context, RUBY_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.RUBY_ORE_KEY),
                 modifiersWithCount(2, // VeinsPerChunk
-                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-16), YOffset.aboveBottom(16))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(16))));
 
         register(context, RUBY_ORE_LARGE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.RUBY_ORE_LARGE_KEY),
                 modifiersWithCount(5, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-144), YOffset.fixed(16))));
 
         register(context, MANATITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.MANATITE_ORE_KEY),
                 modifiersWithCount(2, // VeinsPerChunk
-                        HeightRangePlacementModifier.uniform(YOffset.aboveBottom(-16), YOffset.aboveBottom(16))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-16), YOffset.fixed(16))));
 
         register(context, MANATITE_ORE_LARGE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.MANATITE_ORE_LARGE_KEY),
                 modifiersWithCount(4, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-144), YOffset.aboveBottom(16))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-144), YOffset.fixed(16))));
 
 
         register(context, NETHER_TUNGSTEN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.NETHER_TUNGSTEN_ORE_KEY),
                 modifiersWithCount(11, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-8), YOffset.aboveBottom(40))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-8), YOffset.fixed(40))));
 
         register(context, NETHER_VANADIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.NETHER_VANADIUM_ORE_KEY),
                 modifiersWithCount(13, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(10), YOffset.aboveBottom(60))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(60))));
 
         register(context, NETHER_NEODYMIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.NETHER_NEODYMIUM_ORE_KEY),
                 modifiersWithCount(3, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(10), YOffset.aboveBottom(20))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(10), YOffset.fixed(20))));
 
         register(context, NETHER_URANIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.NETHER_URANIUM_ORE_KEY),
                 modifiersWithCount(7, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(0), YOffset.aboveBottom(32))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(32))));
 
 
         register(context, END_COBALT_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.END_COBALT_ORE_KEY),
                 modifiersWithCount(10, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(32), YOffset.aboveBottom(72))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(32), YOffset.fixed(72))));
 
         register(context, END_OSMIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.END_OSMIUM_ORE_KEY),
                 modifiersWithCount(6, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(52), YOffset.aboveBottom(68))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(52), YOffset.fixed(68))));
 
         register(context, END_PLATINUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.END_PLATINUM_ORE_KEY),
                 modifiersWithCount(7, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(48), YOffset.aboveBottom(64))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(48), YOffset.fixed(64))));
 
         register(context, END_IRIDIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(RebornConfiguredFeatures.END_IRIDIUM_ORE_KEY),
                 modifiersWithCount(5, // VeinsPerChunk
-                        HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(56), YOffset.aboveBottom(72))));
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(56), YOffset.fixed(72))));
 
     }
 

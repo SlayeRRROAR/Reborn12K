@@ -64,6 +64,30 @@ public class RebornConfiguredFeatures {
         RuleTest netherReplaceables = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
         RuleTest endstoneReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
 
+        //TREES
+
+        register(context, ASH_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(RebornBlocks.ASH_LOG),
+                new StraightTrunkPlacer(6, 4, 0),
+                BlockStateProvider.of(RebornBlocks.ASH_LEAVES),
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, ASH_SPAWN_KEY, Feature.RANDOM_SELECTOR,
+                new RandomFeatureConfig(List.of(new RandomFeatureEntry(placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.ASH_PLACED_KEY),
+                        0.5f)), placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.ASH_PLACED_KEY)));
+
+        register(context, SLIMY_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(RebornBlocks.SLIMY_LOG),
+                new StraightTrunkPlacer(5, 2, 1),
+                BlockStateProvider.of(RebornBlocks.SLIMY_LEAVES),
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, SLIMY_SPAWN_KEY, Feature.RANDOM_SELECTOR,
+                new RandomFeatureConfig(List.of(new RandomFeatureEntry(placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.SLIMY_PLACED_KEY),
+                        0.1f)), placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.SLIMY_PLACED_KEY)));
+
         //OVERWORLD ORES
 
         List<OreFeatureConfig.Target> overworldTinOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, RebornOres.TIN_ORE.getDefaultState()),
@@ -118,29 +142,6 @@ public class RebornConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(endstoneReplaceables, RebornOres.END_PLATINUM_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> endIridiumOres =
                 List.of(OreFeatureConfig.createTarget(endstoneReplaceables, RebornOres.END_IRIDIUM_ORE.getDefaultState()));
-
-
-        register(context, ASH_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(RebornBlocks.ASH_LOG),
-                new StraightTrunkPlacer(6, 4, 0),
-                BlockStateProvider.of(RebornBlocks.ASH_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-                new TwoLayersFeatureSize(1, 0, 2)).build());
-
-        register(context, ASH_SPAWN_KEY, Feature.RANDOM_SELECTOR,
-                new RandomFeatureConfig(List.of(new RandomFeatureEntry(placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.ASH_PLACED_KEY),
-                        0.5f)), placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.ASH_PLACED_KEY)));
-
-        register(context, SLIMY_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(RebornBlocks.SLIMY_LOG),
-                new StraightTrunkPlacer(5, 2, 1),
-                BlockStateProvider.of(RebornBlocks.SLIMY_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-                new TwoLayersFeatureSize(1, 0, 2)).build());
-
-        register(context, SLIMY_SPAWN_KEY, Feature.RANDOM_SELECTOR,
-                new RandomFeatureConfig(List.of(new RandomFeatureEntry(placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.SLIMY_PLACED_KEY),
-                        0.1f)), placedFeatureRegistryEntryLookup.getOrThrow(RebornPlacedFeatures.SLIMY_PLACED_KEY)));
 
         register(context, TIN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTinOres, 9));
         register(context, ALUMINUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldAluminumOres, 9));
