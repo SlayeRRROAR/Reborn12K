@@ -28,6 +28,11 @@ public class YamatoSword extends SwordItem {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return false;
+    }
+
     private enum ConcentrationLevel {
         NONE(0), LOW(1), HIGH(2), MAX(3);
         final int level;

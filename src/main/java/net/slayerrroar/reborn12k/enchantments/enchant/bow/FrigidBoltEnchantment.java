@@ -43,7 +43,7 @@ public class FrigidBoltEnchantment extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (target instanceof LivingEntity) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, (5 + level) * 20 , 3, true, false));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, (3 + level) * 20 , 3, false, false));
         }
         super.onTargetDamaged(user, target, level);
     }

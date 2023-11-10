@@ -30,6 +30,11 @@ public class ExceedSword extends SwordItem {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return false;
+    }
+
     private enum ExceedLevel {
         NONE(0), LOW(1), HIGH(2), MAX(3);
         final int level;
@@ -138,9 +143,11 @@ public class ExceedSword extends SwordItem {
         float damage = (float) attacker.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
         float bonusDamage = !isExceedNone(stack) ? 2f : 1f;
 
+        if (!isExceedNone(stack)) {
+            playerEntity.sendMessage(Text.translatable("item.reborn12k.red_queen.tooltip6"), true);
+        }
         target.damage(attacker.getDamageSources().generic(), (damage * bonusDamage));
         exceedDown(stack);
-        playerEntity.sendMessage(Text.translatable("item.reborn12k.red_queen.tooltip6"), true);
 
         return super.postHit(stack, target, attacker);
     }
