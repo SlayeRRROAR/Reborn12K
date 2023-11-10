@@ -8,12 +8,14 @@ import net.slayerrroar.reborn12k.armors.RebornArmors;
 import net.slayerrroar.reborn12k.blocks.RebornBlocks;
 import net.slayerrroar.reborn12k.blocks.RebornOres;
 import net.slayerrroar.reborn12k.config.RebornConfig;
+import net.slayerrroar.reborn12k.effects.RebornStatusEffects;
 import net.slayerrroar.reborn12k.enchantments.RebornEnchantments;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.entity.RebornProjectileEntities;
 import net.slayerrroar.reborn12k.items.RebornItems;
 import net.slayerrroar.reborn12k.items.TrinketItems;
 import net.slayerrroar.reborn12k.loot.RebornLootTable;
+import net.slayerrroar.reborn12k.potions.RebornPotions;
 import net.slayerrroar.reborn12k.recipe.RebornRecipes;
 import net.slayerrroar.reborn12k.screen.RebornScreenRegistry;
 import net.slayerrroar.reborn12k.sounds.RebornSounds;
@@ -54,7 +56,9 @@ public class Reborn12K implements ModInitializer {
         RebornTools.register();
         RebornArmors.register();
 
+        RebornStatusEffects.register();
         RebornEnchantments.register();
+        RebornPotions.register();
 
         RebornWorldGen.generate();
 
