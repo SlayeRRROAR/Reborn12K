@@ -455,9 +455,39 @@
     "item.reborn12k.mithril_paxel": "Mithril Paxel",
 
 
-    "item.reborn12k.demonic_metal_ingot": "Demonic Metal Ingot",
-    "item.reborn12k.demonic_metal_dust": "Demonic Metal Dust",
-    "block.reborn12k.demonic_metal_block": "Block of Demonic Metal",
+    "item.reborn12k.emetal_ingot": "Emetal Ingot",
+    "item.reborn12k.emetal_dust": "Emetal Dust",
+    "block.reborn12k.emetal_block": "Block of Emetal",
+
+    "item.reborn12k.emetal_helmet": "Emetal Helmet",
+    "item.reborn12k.emetal_chestplate": "Emetal Chestplate",
+    "item.reborn12k.emetal_leggings": "Emetal Leggings",
+    "item.reborn12k.emetal_boots": "Emetal Boots",
+
+    "item.reborn12k.emetal_sword": "Emetal Sword",
+    "item.reborn12k.emetal_shovel": "Emetal Shovel",
+    "item.reborn12k.emetal_pickaxe": "Emetal Pickaxe",
+    "item.reborn12k.emetal_axe": "Emetal Axe",
+    "item.reborn12k.emetal_hoe": "Emetal Hoe",
+    "item.reborn12k.emetal_katana": "Emetal Katana",
+    "item.reborn12k.emetal_paxel": "Emetal Paxel",
+
+    "item.reborn12k.dark_alloy_ingot": "Dark Alloy Ingot",
+    "item.reborn12k.dark_alloy_dust": "Dark Alloy Dust",
+    "block.reborn12k.dark_alloy_block": "Blocks of Dark Alloy",
+
+    "item.reborn12k.dark_alloy_helmet": "Dark Alloy Helmet",
+    "item.reborn12k.dark_alloy_chestplate": "Dark Alloy Chestplate",
+    "item.reborn12k.dark_alloy_leggings": "Dark Alloy Leggings",
+    "item.reborn12k.dark_alloy_boots": "Dark Alloy Boots",
+
+    "item.reborn12k.dark_alloy_sword": "Dark Alloy Sword",
+    "item.reborn12k.dark_alloy_shovel": "Dark Alloy Shovel",
+    "item.reborn12k.dark_alloy_pickaxe": "Dark Alloy Pickaxe",
+    "item.reborn12k.dark_alloy_axe": "Dark Alloy Axe",
+    "item.reborn12k.dark_alloy_hoe": "Dark Alloy Hoe",
+    "item.reborn12k.dark_alloy_katana": "Dark Alloy Katana",
+    "item.reborn12k.dark_alloy_paxel": "Dark Alloy Paxel",
 
 
     "item.reborn12k.sapphire": "Sapphire",
@@ -1228,42 +1258,10 @@
     "text.autoconfig.reborn12k.title": "Reborn12K",
 
     "text.autoconfig.reborn12k.category.ore_generation": "Ore Generation",
-
     "text.autoconfig.reborn12k.option.enableOreGeneration": "Enable Ore Generation",
 
-    "text.autoconfig.reborn12k.option.enableOverworldGeneration": "Enable Overworld Ores",
-    "text.autoconfig.reborn12k.option.enableNetherGeneration": "Enable Nether Ores",
-    "text.autoconfig.reborn12k.option.enableEndGeneration": "Enable End Ores",
-
-    "text.autoconfig.reborn12k.option.enableTinOreGeneration": "Enable Tin Ore",
-    "text.autoconfig.reborn12k.option.enableAluminumOreGeneration": "Enable Aluminum Ore",
-    "text.autoconfig.reborn12k.option.enableSilverOreGeneration": "Enable Silver Ore",
-    "text.autoconfig.reborn12k.option.enableLeadOreGeneration": "Enable Lead Ore",
-    "text.autoconfig.reborn12k.option.enableNickelOreGeneration": "Enable Nickel Ore",
-    "text.autoconfig.reborn12k.option.enableChromiteOreGeneration": "Enable Chromite Ore",
-    "text.autoconfig.reborn12k.option.enableTitaniumOreGeneration": "Enable Titanium Ore",
-
-    "text.autoconfig.reborn12k.option.enableSapphireOreGeneration": "Enable Sapphire Ore",
-    "text.autoconfig.reborn12k.option.enableRubyOreGeneration": "Enable Ruby Ore",
-    "text.autoconfig.reborn12k.option.enableManatiteOreGeneration": "Enable Manatite Ore",
-
-    "text.autoconfig.reborn12k.option.enableTungstenOreGeneration": "Enable Tungsten Ore",
-    "text.autoconfig.reborn12k.option.enableVanadiumOreGeneration": "Enable Vanadium Ore",
-    "text.autoconfig.reborn12k.option.enableNeodymiumOreGeneration": "Enable Neodymium Ore",
-    "text.autoconfig.reborn12k.option.enableUraniumOreGeneration": "Enable Uranium Ore",
-
-    "text.autoconfig.reborn12k.option.enableCobaltOreGeneration": "Enable Cobalt Ore",
-    "text.autoconfig.reborn12k.option.enableOsmiumOreGeneration": "Enable Osmium Ore",
-    "text.autoconfig.reborn12k.option.enablePlatinumOreGeneration": "Enable Platinum Ore",
-    "text.autoconfig.reborn12k.option.enableIridiumOreGeneration": "Enable Iridium Ore",
-
-
     "text.autoconfig.reborn12k.category.tree_generation": "Tree Generation",
-
     "text.autoconfig.reborn12k.option.enableTreeGeneration": "Enable Tree Generation",
-    "text.autoconfig.reborn12k.option.enableCherryTreeGeneration": "Enable Cherry Tree",
-    "text.autoconfig.reborn12k.option.enableAshTreeGeneration": "Enable Ash Tree",
-    "text.autoconfig.reborn12k.option.enableSlimyTreeGeneration": "Enable Slimy Tree",
 
 
 

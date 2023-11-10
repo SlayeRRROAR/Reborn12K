@@ -115,7 +115,9 @@ public class RebornItems {
     public static final Item MAGISTEEL_INGOT = registerItem("magisteel_ingot", new Item(new FabricItemSettings()));
     public static final Item ORICHALCUM_INGOT = registerItem("orichalcum_ingot", new Item(new FabricItemSettings()));
     public static final Item MITHRIL_INGOT = registerItem("mithril_ingot", new Item(new FabricItemSettings()));
-    public static final Item DEMONIC_METAL_INGOT = registerItem("demonic_metal_ingot", new Item(new FabricItemSettings()));
+
+    public static final Item EMETAL_INGOT = registerItem("emetal_ingot", new Item(new FabricItemSettings()));
+    public static final Item DARK_ALLOY_INGOT = registerItem("dark_alloy_ingot", new Item(new FabricItemSettings()));
 
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new FabricItemSettings()));
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
@@ -209,7 +211,9 @@ public class RebornItems {
     public static final Item MAGISTEEL_DUST = registerItem("magisteel_dust", new Item(new FabricItemSettings()));
     public static final Item ORICHALCUM_DUST = registerItem("orichalcum_dust", new Item(new FabricItemSettings()));
     public static final Item MITHRIL_DUST = registerItem("mithril_dust", new Item(new FabricItemSettings()));
-    public static final Item DEMONIC_METAL_DUST = registerItem("demonic_metal_dust", new Item(new FabricItemSettings()));
+
+    public static final Item EMETAL_DUST = registerItem("emetal_dust", new Item(new FabricItemSettings()));
+    public static final Item DARK_ALLOY_DUST = registerItem("dark_alloy_dust", new Item(new FabricItemSettings()));
 
     public static final Item ENDER_DUST = registerItem("ender_dust", new Item(new FabricItemSettings()));
 
@@ -561,7 +565,9 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MAGISTEEL_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ORICHALCUM_INGOT);
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MITHRIL_INGOT);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, DEMONIC_METAL_INGOT);
+
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, EMETAL_INGOT);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, DARK_ALLOY_INGOT);
 
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, SAPPHIRE);
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RUBY);
@@ -654,7 +660,9 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MAGISTEEL_DUST);
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ORICHALCUM_DUST);
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, MITHRIL_DUST);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, DEMONIC_METAL_DUST);
+
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, EMETAL_DUST);
+        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, DARK_ALLOY_DUST);
 
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, ENDER_DUST);
 

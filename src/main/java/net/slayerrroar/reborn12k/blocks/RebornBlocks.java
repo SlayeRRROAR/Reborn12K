@@ -62,7 +62,9 @@ public class RebornBlocks {
     public static final Block MAGISTEEL_BLOCK = registerBlock("magisteel_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(8f).resistance(12f)), ItemGroupUtil.REBORN_BLOCKS);
     public static final Block ORICHALCUM_BLOCK = registerBlock("orichalcum_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(8f).resistance(12f)), ItemGroupUtil.REBORN_BLOCKS);
     public static final Block MITHRIL_BLOCK = registerBlock("mithril_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(12f).resistance(30f)), ItemGroupUtil.REBORN_BLOCKS);
-    public static final Block DEMONIC_METAL_BLOCK = registerBlock("demonic_metal_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(12f).resistance(30f)), ItemGroupUtil.REBORN_BLOCKS);
+
+    public static final Block EMETAL_BLOCK = registerBlock("emetal_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(12f).resistance(30f)), ItemGroupUtil.REBORN_BLOCKS);
+    public static final Block DARK_ALLOY_BLOCK = registerBlock("dark_alloy_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).hardness(12f).resistance(30f)), ItemGroupUtil.REBORN_BLOCKS);
 
     public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).sounds(BlockSoundGroup.METAL).hardness(5f).resistance(6f)), ItemGroupUtil.REBORN_BLOCKS);
     public static final Block RUBY_BLOCK = registerBlock("ruby_block", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK).sounds(BlockSoundGroup.METAL).hardness(5f).resistance(6f)), ItemGroupUtil.REBORN_BLOCKS);

@@ -4,11 +4,11 @@
 
     "ingredients": [
         {
-            "tag": "c:demonic_metal_blocks"
+            "tag": "c:emetal_blocks"
         }
     ],
     "result": {
-        "item": "reborn12k:demonic_metal_ingot",
+        "item": "reborn12k:emetal_ingot",
         "count": 9
     }
 }

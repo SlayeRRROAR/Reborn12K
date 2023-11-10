@@ -6,12 +6,12 @@
             "tag": "reborn12k:hammers"
         },
         {
-            "tag": "c:demonic_metal_ingots"
+            "tag": "c:emetal_ingots"
         }
     ],
     "result": {
-        "item": "reborn12k:demonic_metal_dust",
+        "item": "reborn12k:emetal_dust",
         "count": 1
     },
-    "group": "demonic_metal_dust_dust"
+    "group": "emetal_dust_dust"
 }

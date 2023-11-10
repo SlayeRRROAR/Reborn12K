@@ -8,11 +8,11 @@
     ],
     "key": {
         "A": {
-            "item": "reborn12k:demonic_metal_ingot"
+            "item": "reborn12k:emetal_ingot"
         }
     },
     "result": {
-        "item": "reborn12k:demonic_metal_block",
+        "item": "reborn12k:emetal_block",
         "count": 1
     }
 }

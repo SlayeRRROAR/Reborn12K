@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "reborn12k:block/demonic_metal_block"
+    "all": "reborn12k:block/emetal_block"
   }
 }

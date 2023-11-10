@@ -44,6 +44,8 @@
     "reborn12k:magisteel_block",
     "reborn12k:orichalcum_block",
     "reborn12k:mithril_block",
-    "reborn12k:demonic_metal_block"
+
+    "reborn12k:emetal_block",
+    "reborn12k:dark_alloy_block"
   ]
 }

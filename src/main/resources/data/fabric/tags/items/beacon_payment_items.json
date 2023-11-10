@@ -44,6 +44,8 @@
     "reborn12k:magisteel_ingot",
     "reborn12k:orichalcum_ingot",
     "reborn12k:mithril_ingot",
-    "reborn12k:demonic_metal_ingot"
+
+    "reborn12k:emetal_ingot",
+    "reborn12k:dark_alloy_ingot"
   ]
 }

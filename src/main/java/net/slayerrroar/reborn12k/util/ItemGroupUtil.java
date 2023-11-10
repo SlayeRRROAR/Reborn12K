@@ -42,6 +42,10 @@ public class ItemGroupUtil {
                 .displayName(Text.translatable("itemgroup.d.decorations"))
                 .icon(() -> new ItemStack(RebornBlocks.FANCY_LAMP)).build()
         );
+        Registry.register(Registries.ITEM_GROUP, REBORN_TRINKETS, FabricItemGroup.builder()
+                .displayName(Text.translatable("itemgroup.e.trinkets"))
+                .icon(() -> new ItemStack(TrinketItems.STRONGBOX_KEY)).build()
+        );
         Registry.register(Registries.ITEM_GROUP, REBORN_TOOLS, FabricItemGroup.builder()
                 .displayName(Text.translatable("itemgroup.f.tools"))
                 .icon(() -> new ItemStack(RebornTools.ENDERIUM_PAXEL)).build()

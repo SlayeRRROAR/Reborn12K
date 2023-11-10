@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "reborn12k:item/demonic_metal_dust"
+    "layer0": "reborn12k:item/dark_alloy_ingot"
   }
 }

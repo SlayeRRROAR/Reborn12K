@@ -156,12 +156,11 @@ public class RebornTagsUtil {
         public static final TagKey<Block> ENDERIUM_BLOCKS = createCommonTag("enderium_blocks");
 
         public static final TagKey<Block> MAGISTEEL_BLOCKS = createCommonTag("magisteel_blocks");
-
         public static final TagKey<Block> ORICHALCUM_BLOCKS = createCommonTag("orichalcum_blocks");
-
         public static final TagKey<Block> MITHRIL_BLOCKS = createCommonTag("mithril_blocks");
 
-        public static final TagKey<Block> DEMONIC_METAL_BLOCKS = createCommonTag("demonic_metal_blocks");
+        public static final TagKey<Block> EMETAL_BLOCKS = createCommonTag("emetal_blocks");
+        public static final TagKey<Block> DARK_ALLOY_BLOCKS = createCommonTag("dark_alloy_blocks");
 
 
         public static final TagKey<Block> SAPPHIRE_ORES = createCommonTag("sapphire_ores");
@@ -447,9 +446,13 @@ public class RebornTagsUtil {
         public static final TagKey<Item> MITHRIL_INGOTS = createCommonTag("mithril_ingots");
         public static final TagKey<Item> MITHRIL_BLOCKS = createCommonTag("mithril_blocks");
 
-        public static final TagKey<Item> DEMONIC_METAL_DUSTS = createCommonTag("demonic_metal_dusts");
-        public static final TagKey<Item> DEMONIC_METAL_INGOTS = createCommonTag("demonic_metal_ingots");
-        public static final TagKey<Item> DEMONIC_METAL_BLOCKS = createCommonTag("demonic_metal_blocks");
+        public static final TagKey<Item> EMETAL_DUSTS = createCommonTag("emetal_dusts");
+        public static final TagKey<Item> EMETAL_INGOTS = createCommonTag("emetal_ingots");
+        public static final TagKey<Item> EMETAL_BLOCKS = createCommonTag("emetal_blocks");
+
+        public static final TagKey<Item> DARK_ALLOY_DUSTS = createCommonTag("dark_alloy_dusts");
+        public static final TagKey<Item> DARK_ALLOY_INGOTS = createCommonTag("dark_alloy_ingots");
+        public static final TagKey<Item> DARK_ALLOY_BLOCKS = createCommonTag("dark_alloy_blocks");
 
 
         public static final TagKey<Item> SAPPHIRE_ORES = createCommonTag("sapphire_ores");
