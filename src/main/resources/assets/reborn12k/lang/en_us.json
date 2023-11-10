@@ -1164,6 +1164,8 @@
     "item.minecraft.lingering_potion.effect.bleed_extended": "Lingering Potion of Bleed",
     "item.minecraft.lingering_potion.effect.bleed_2": "Lingering Potion of Bleed",
 
+    "death.attack.bleed": "%1$s died from blood loss",
+
     "sounds:reborn12k.alkatraz": "DEMONDICE - Alkatraz",
     "subtitles.reborn12k.alkatraz": "DEMONDICE - Alkatraz is playing",
 

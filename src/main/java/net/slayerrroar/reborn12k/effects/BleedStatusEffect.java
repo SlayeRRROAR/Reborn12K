@@ -3,6 +3,8 @@ package net.slayerrroar.reborn12k.effects;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.world.World;
+import net.slayerrroar.reborn12k.damage_type.RebornDamageTypes;
 
 public class BleedStatusEffect extends StatusEffect {
     protected BleedStatusEffect() {
@@ -10,8 +12,9 @@ public class BleedStatusEffect extends StatusEffect {
     }
 
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
+        World world = entity.getWorld();
         super.applyUpdateEffect(entity, amplifier);
-        entity.damage(entity.getDamageSources().magic(), 1.0f);
+        entity.damage(RebornDamageTypes.of(world, RebornDamageTypes.BLEED), 1.0f);
 
     }
 
