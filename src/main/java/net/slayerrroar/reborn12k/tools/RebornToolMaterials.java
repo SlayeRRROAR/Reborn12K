@@ -32,7 +32,7 @@ public enum RebornToolMaterials implements ToolMaterial {
 
     SILVER(3, 1689, 6f, 2f, 18, () -> { return Ingredient.fromTag(RebornTagsUtil.Items.SILVER_INGOTS); }),
     CUTTER237(4, 2370, 8f, 6f, 18, () -> { return Ingredient.ofItems(RebornItems.CASING_MK237); }),
-    DMC(4, 1930, 8f, 6f, 18, () -> { return Ingredient.fromTag(RebornTagsUtil.Items.EMETAL_INGOTS); }),
+    DMC(4, 1930, 8f, 4f, 18, () -> { return Ingredient.fromTag(RebornTagsUtil.Items.EMETAL_INGOTS); }),
     HFB(4, 1689, 8f, 5f, 8, () -> { return Ingredient.fromTag(RebornTagsUtil.Items.LUMIUM_INGOTS); }),
     POWER(4, 2222, 8f, 5f, 12, () -> { return Ingredient.ofItems(RebornItems.CERAMITE_PLATE); });
 
