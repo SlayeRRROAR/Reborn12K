@@ -144,7 +144,7 @@ public class YamatoSword extends SwordItem {
         float damage = (float) attacker.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
         float lowDamage = isConcentrationLow(stack) ? 1.5f : 1f;
         float highDamage = isConcentrationHigh(stack) ? 2f : 1f;
-        float maxDamage = isConcentrationMax(stack) ? 3f : 1f;
+        float maxDamage = isConcentrationMax(stack) ? 2.5f : 1f;
 
         target.damage(attacker.getDamageSources().generic(), (damage * (lowDamage * highDamage * maxDamage)));
         concentrationUp(stack, playerEntity);
@@ -161,24 +161,8 @@ public class YamatoSword extends SwordItem {
             if (!livingEntity.getStackInHand(Hand.MAIN_HAND).equals(stack)) {
                setConcentrationToNone(stack);
             }
-            if (livingEntity.getStackInHand(Hand.MAIN_HAND).equals(stack)) {
-                if (livingEntity.isSprinting() || livingEntity.isInFluid() || livingEntity.isFallFlying()) {
-                    if (timer > 0) {
-                        timer--;
-                    }
-                    if (timer <= 0) {
-                        concentrationDown(stack, playerEntity);
-                        timer = 10;
-                    }
-                }
-                if (!livingEntity.isSprinting() && !livingEntity.isInFluid() && !livingEntity.isFallFlying()) {
-                    if (timer < 10) {
-                        timer++;
-                    }
-                }
-                if (playerEntity.hurtTime == 1) {
-                    concentrationDown(stack, playerEntity);
-                }
+            if (playerEntity.hurtTime == 1) {
+                concentrationDown(stack, playerEntity);
             }
         }
     }
