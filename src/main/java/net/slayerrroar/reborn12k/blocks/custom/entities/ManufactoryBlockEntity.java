@@ -21,7 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
-import net.slayerrroar.reborn12k.recipe.recipe_types.ManufactoryRecipe;
+import net.slayerrroar.reborn12k.recipe.types.ManufactoryRecipe;
 import net.slayerrroar.reborn12k.screen.manufactory.ManufactoryScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;

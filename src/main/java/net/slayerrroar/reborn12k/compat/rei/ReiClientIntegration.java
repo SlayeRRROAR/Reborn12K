@@ -13,7 +13,7 @@ import net.slayerrroar.reborn12k.compat.rei.categories.mana_condenser.*;
 import net.slayerrroar.reborn12k.compat.rei.categories.manufactory.*;
 import net.slayerrroar.reborn12k.compat.rei.categories.melter.*;
 import net.slayerrroar.reborn12k.compat.rei.categories.quarry.*;
-import net.slayerrroar.reborn12k.recipe.recipe_types.*;
+import net.slayerrroar.reborn12k.recipe.types.*;
 import net.slayerrroar.reborn12k.screen.arcane_artifact.ArcaneArtifactScreen;
 import net.slayerrroar.reborn12k.screen.crusher.CrusherScreen;
 import net.slayerrroar.reborn12k.screen.mana_condenser.ManaCondenserScreen;

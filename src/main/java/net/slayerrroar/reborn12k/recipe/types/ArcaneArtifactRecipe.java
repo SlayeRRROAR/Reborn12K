@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.recipe.recipe_types;
+package net.slayerrroar.reborn12k.recipe.types;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
@@ -14,12 +14,12 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class CrusherRecipe implements Recipe<SimpleInventory> {
+public class ArcaneArtifactRecipe implements Recipe<SimpleInventory> {
 
     private final ItemStack output;
     private final List<Ingredient> recipeItems;
 
-    public CrusherRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
+    public ArcaneArtifactRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
         this.output = itemStack;
         this.recipeItems = ingredients;
     }
@@ -30,7 +30,7 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
             return false;
         }
 
-        return recipeItems.get(0).test(inventory.getStack(1));
+        return recipeItems.get(0).test(inventory.getStack(0));
     }
 
     @Override
@@ -57,27 +57,27 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return CrusherRecipe.Serializer.INSTANCE;
+        return ArcaneArtifactRecipe.Serializer.INSTANCE;
     }
 
     @Override
     public RecipeType<?> getType() {
-        return CrusherRecipe.Type.INSTANCE;
+        return ArcaneArtifactRecipe.Type.INSTANCE;
     }
 
-    public static class Type implements RecipeType<CrusherRecipe> {
-        public static final CrusherRecipe.Type INSTANCE = new CrusherRecipe.Type();
-        public static final String ID = "crusher";
+    public static class Type implements RecipeType<ArcaneArtifactRecipe> {
+        public static final ArcaneArtifactRecipe.Type INSTANCE = new ArcaneArtifactRecipe.Type();
+        public static final String ID = "arcane_artifact";
     }
 
-    public static class Serializer implements RecipeSerializer<CrusherRecipe> {
-        public static final CrusherRecipe.Serializer INSTANCE = new CrusherRecipe.Serializer();
-        public static final String ID = "crusher";
+    public static class Serializer implements RecipeSerializer<ArcaneArtifactRecipe> {
+        public static final ArcaneArtifactRecipe.Serializer INSTANCE = new ArcaneArtifactRecipe.Serializer();
+        public static final String ID = "arcane_artifact";
 
-        public static final Codec<CrusherRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
-                validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(CrusherRecipe::getIngredients),
+        public static final Codec<ArcaneArtifactRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
+                validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(ArcaneArtifactRecipe::getIngredients),
                 RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output)
-        ).apply(in, CrusherRecipe::new));
+        ).apply(in, ArcaneArtifactRecipe::new));
 
         private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
             return Codecs.validate(Codecs.validate(
@@ -86,12 +86,12 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
         }
 
         @Override
-        public Codec<CrusherRecipe> codec() {
+        public Codec<ArcaneArtifactRecipe> codec() {
             return CODEC;
         }
 
         @Override
-        public CrusherRecipe read(PacketByteBuf buf) {
+        public ArcaneArtifactRecipe read(PacketByteBuf buf) {
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
 
             for(int i = 0; i < inputs.size(); i++) {
@@ -99,11 +99,11 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
             }
 
             ItemStack output = buf.readItemStack();
-            return new CrusherRecipe(inputs, output);
+            return new ArcaneArtifactRecipe(inputs, output);
         }
 
         @Override
-        public void write(PacketByteBuf buf, CrusherRecipe recipe) {
+        public void write(PacketByteBuf buf, ArcaneArtifactRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
 
             for (Ingredient ingredient : recipe.getIngredients()) {

@@ -4,7 +4,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.slayerrroar.reborn12k.Reborn12K;
-import net.slayerrroar.reborn12k.recipe.recipe_types.*;
+import net.slayerrroar.reborn12k.recipe.types.*;
 
 public class RebornRecipes {
 

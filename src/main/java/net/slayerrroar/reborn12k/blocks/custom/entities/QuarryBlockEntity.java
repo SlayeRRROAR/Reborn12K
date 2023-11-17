@@ -22,7 +22,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.entity.RebornBlockEntities;
 import net.slayerrroar.reborn12k.items.RebornItems;
-import net.slayerrroar.reborn12k.recipe.recipe_types.QuarryRecipe;
+import net.slayerrroar.reborn12k.recipe.types.QuarryRecipe;
 import net.slayerrroar.reborn12k.screen.quarry.QuarryScreenHandler;
 import net.slayerrroar.reborn12k.util.ImplementedInventory;
 import org.jetbrains.annotations.Nullable;

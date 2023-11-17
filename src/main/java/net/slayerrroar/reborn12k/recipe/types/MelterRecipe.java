@@ -1,4 +1,4 @@
-package net.slayerrroar.reborn12k.recipe.recipe_types;
+package net.slayerrroar.reborn12k.recipe.types;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
@@ -14,24 +14,24 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class QuarryRecipe implements Recipe<SimpleInventory> {
+public class MelterRecipe implements Recipe<SimpleInventory> {
 
     private final ItemStack output;
     private final List<Ingredient> recipeItems;
 
-    public QuarryRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
+    public MelterRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
         this.output = itemStack;
         this.recipeItems = ingredients;
     }
 
     @Override
     public boolean matches(SimpleInventory inventory, World world) {
-        if(world.isClient()) {
+        if (world.isClient()) {
             return false;
         }
 
-        return recipeItems.get(0).test(inventory.getStack(0)) &&
-                recipeItems.get(1).test(inventory.getStack(1));
+        return recipeItems.get(0).test(inventory.getStack(1)) &&
+                recipeItems.get(1).test(inventory.getStack(2));
     }
 
     @Override
@@ -58,27 +58,27 @@ public class QuarryRecipe implements Recipe<SimpleInventory> {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return Serializer.INSTANCE;
+        return MelterRecipe.Serializer.INSTANCE;
     }
 
     @Override
     public RecipeType<?> getType() {
-        return Type.INSTANCE;
+        return MelterRecipe.Type.INSTANCE;
     }
 
-    public static class Type implements RecipeType<QuarryRecipe> {
-        public static final Type INSTANCE = new Type();
-        public static final String ID = "quarry";
+    public static class Type implements RecipeType<MelterRecipe> {
+        public static final MelterRecipe.Type INSTANCE = new MelterRecipe.Type();
+        public static final String ID = "melter";
     }
 
-    public static class Serializer implements RecipeSerializer<QuarryRecipe> {
-        public static final Serializer INSTANCE = new Serializer();
-        public static final String ID = "quarry";
+    public static class Serializer implements RecipeSerializer<MelterRecipe> {
+        public static final MelterRecipe.Serializer INSTANCE = new MelterRecipe.Serializer();
+        public static final String ID = "melter";
 
-        public static final Codec<QuarryRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
-                validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(QuarryRecipe::getIngredients),
+        public static final Codec<MelterRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
+                validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(MelterRecipe::getIngredients),
                 RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output)
-        ).apply(in, QuarryRecipe::new));
+        ).apply(in, MelterRecipe::new));
 
         private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
             return Codecs.validate(Codecs.validate(
@@ -87,12 +87,12 @@ public class QuarryRecipe implements Recipe<SimpleInventory> {
         }
 
         @Override
-        public Codec<QuarryRecipe> codec() {
+        public Codec<MelterRecipe> codec() {
             return CODEC;
         }
 
         @Override
-        public QuarryRecipe read(PacketByteBuf buf) {
+        public MelterRecipe read(PacketByteBuf buf) {
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
 
             for(int i = 0; i < inputs.size(); i++) {
@@ -100,11 +100,11 @@ public class QuarryRecipe implements Recipe<SimpleInventory> {
             }
 
             ItemStack output = buf.readItemStack();
-            return new QuarryRecipe(inputs, output);
+            return new MelterRecipe(inputs, output);
         }
 
         @Override
-        public void write(PacketByteBuf buf, QuarryRecipe recipe) {
+        public void write(PacketByteBuf buf, MelterRecipe recipe) {
             buf.writeInt(recipe.getIngredients().size());
 
             for (Ingredient ingredient : recipe.getIngredients()) {

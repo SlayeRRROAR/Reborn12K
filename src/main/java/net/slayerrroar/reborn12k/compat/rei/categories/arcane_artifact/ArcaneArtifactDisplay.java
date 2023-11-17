@@ -6,7 +6,7 @@ import me.shedaniel.rei.api.common.entry.EntryIngredient;
 import me.shedaniel.rei.api.common.util.EntryIngredients;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.minecraft.recipe.RecipeEntry;
-import net.slayerrroar.reborn12k.recipe.recipe_types.ArcaneArtifactRecipe;
+import net.slayerrroar.reborn12k.recipe.types.ArcaneArtifactRecipe;
 
 import java.util.ArrayList;
 import java.util.Collections;
