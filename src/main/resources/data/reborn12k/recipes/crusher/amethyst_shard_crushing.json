@@ -5,6 +5,7 @@
             "tag": "c:amethysts"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:amethyst_dust"
     }

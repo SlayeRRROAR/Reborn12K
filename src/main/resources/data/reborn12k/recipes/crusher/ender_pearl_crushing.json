@@ -5,6 +5,7 @@
             "item": "minecraft:ender_pearl"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:ender_dust"
     }

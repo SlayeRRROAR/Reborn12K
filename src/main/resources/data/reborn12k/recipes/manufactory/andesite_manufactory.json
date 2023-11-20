@@ -11,6 +11,7 @@
       "item": "minecraft:andesite"
     }
   ],
+  "cookingtime": 120,
   "output": {
     "item": "minecraft:andesite"
   }

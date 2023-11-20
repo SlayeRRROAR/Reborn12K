@@ -5,6 +5,7 @@
             "tag": "c:vanadium_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:vanadium_dust"
     }

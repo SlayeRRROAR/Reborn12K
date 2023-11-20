@@ -5,6 +5,7 @@
             "tag": "c:silver_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:silver_dust"
     }

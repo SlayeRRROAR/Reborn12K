@@ -5,6 +5,7 @@
             "tag": "c:neodymium_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:neodymium_dust"
     }

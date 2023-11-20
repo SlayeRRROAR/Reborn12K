@@ -5,6 +5,7 @@
             "item": "minecraft:cobblestone"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "minecraft:gravel"
     }

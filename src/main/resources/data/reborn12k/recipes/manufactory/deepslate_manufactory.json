@@ -11,6 +11,7 @@
       "item": "minecraft:deepslate"
     }
   ],
+  "cookingtime": 160,
   "output": {
     "item": "minecraft:deepslate"
   }

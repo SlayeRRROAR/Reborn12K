@@ -5,6 +5,7 @@
             "tag": "c:raw_uranium_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:uranium_dust",
         "count": 2

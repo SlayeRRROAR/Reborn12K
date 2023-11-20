@@ -5,6 +5,7 @@
             "tag": "c:quartzes"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:quartz_dust"
     }

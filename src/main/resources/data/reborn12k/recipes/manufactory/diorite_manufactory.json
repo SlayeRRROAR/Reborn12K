@@ -11,6 +11,7 @@
       "item": "minecraft:diorite"
     }
   ],
+  "cookingtime": 120,
   "output": {
     "item": "minecraft:diorite"
   }

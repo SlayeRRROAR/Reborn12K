@@ -5,6 +5,7 @@
             "tag": "c:raw_iridium_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:iridium_dust",
         "count": 2

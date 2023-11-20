@@ -5,6 +5,8 @@
             "tag": "c:advanced_alloy_ingots"
         }
     ],
+    "cookingtime": 200,
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:advanced_alloy_dust"
     }

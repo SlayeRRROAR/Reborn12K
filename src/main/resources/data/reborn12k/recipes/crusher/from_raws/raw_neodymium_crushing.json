@@ -5,6 +5,7 @@
             "tag": "c:raw_neodymium_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:neodymium_dust",
         "count": 2

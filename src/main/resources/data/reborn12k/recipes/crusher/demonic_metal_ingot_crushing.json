@@ -5,6 +5,7 @@
             "item": "reborn12k:emetal_ingot"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:emetal_dust"
     }

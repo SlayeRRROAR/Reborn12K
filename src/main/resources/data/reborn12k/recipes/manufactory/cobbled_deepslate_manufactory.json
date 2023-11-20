@@ -11,6 +11,7 @@
       "item": "minecraft:cobbled_deepslate"
     }
   ],
+  "cookingtime": 120,
   "output": {
     "item": "minecraft:cobbled_deepslate"
   }

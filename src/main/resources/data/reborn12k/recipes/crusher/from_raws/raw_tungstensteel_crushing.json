@@ -5,6 +5,7 @@
             "tag": "c:raw_tungstensteel_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:tungstensteel_dust",
         "count": 2

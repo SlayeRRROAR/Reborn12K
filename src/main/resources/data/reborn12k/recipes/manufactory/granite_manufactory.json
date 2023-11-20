@@ -11,6 +11,7 @@
       "item": "minecraft:granite"
     }
   ],
+  "cookingtime": 120,
   "output": {
     "item": "minecraft:granite"
   }

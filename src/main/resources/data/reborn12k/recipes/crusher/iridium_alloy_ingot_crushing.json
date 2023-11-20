@@ -5,6 +5,7 @@
             "tag": "c:iridium_alloy_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:iridium_alloy_dust"
     }

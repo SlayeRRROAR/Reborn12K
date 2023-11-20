@@ -5,6 +5,7 @@
             "tag": "c:electrum_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:electrum_dust"
     }

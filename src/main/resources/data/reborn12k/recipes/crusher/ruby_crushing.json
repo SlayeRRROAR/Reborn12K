@@ -5,6 +5,7 @@
             "tag": "c:rubies"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:ruby_dust"
     }

@@ -11,6 +11,7 @@
       "item": "minecraft:basalt"
     }
   ],
+  "cookingtime": 120,
   "output": {
     "item": "minecraft:basalt"
   }

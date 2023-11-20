@@ -5,6 +5,7 @@
             "tag": "c:coal_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:coal_dust",
         "count": 2

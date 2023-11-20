@@ -5,6 +5,7 @@
             "tag": "c:netherite_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "minecraft:netherite_scrap",
         "count": 2

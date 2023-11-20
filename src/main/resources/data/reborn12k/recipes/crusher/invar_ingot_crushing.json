@@ -5,6 +5,7 @@
             "tag": "c:invar_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:invar_dust"
     }

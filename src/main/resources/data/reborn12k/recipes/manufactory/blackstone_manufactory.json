@@ -11,6 +11,7 @@
       "item": "minecraft:blackstone"
     }
   ],
+  "cookingtime": 120,
   "output": {
     "item": "minecraft:blackstone"
   }

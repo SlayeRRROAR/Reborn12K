@@ -5,6 +5,7 @@
             "tag": "c:tungstensteel_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:tungstensteel_dust"
     }

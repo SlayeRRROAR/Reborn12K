@@ -5,6 +5,7 @@
             "tag": "c:sapphire_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:sapphire_dust",
         "count": 2

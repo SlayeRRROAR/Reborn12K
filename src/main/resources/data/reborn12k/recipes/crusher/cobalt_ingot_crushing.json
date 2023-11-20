@@ -5,6 +5,7 @@
             "tag": "c:cobalt_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:cobalt_dust"
     }

@@ -5,6 +5,7 @@
             "tag": "c:lumium_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:lumium_dust"
     }

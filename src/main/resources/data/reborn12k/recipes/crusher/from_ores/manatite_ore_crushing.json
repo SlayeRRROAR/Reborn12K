@@ -5,6 +5,7 @@
             "tag": "c:manatite_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:manatite_dust",
         "count": 2

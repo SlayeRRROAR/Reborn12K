@@ -11,6 +11,7 @@
       "item": "minecraft:end_stone"
     }
   ],
+  "cookingtime": 320,
   "output": {
     "item": "minecraft:end_stone"
   }

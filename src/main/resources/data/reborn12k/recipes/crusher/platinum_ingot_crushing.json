@@ -5,6 +5,7 @@
             "tag": "c:platinum_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:platinum_dust"
     }

@@ -11,6 +11,7 @@
       "item": "minecraft:netherrack"
     }
   ],
+  "cookingtime": 80,
   "output": {
     "item": "minecraft:netherrack"
   }

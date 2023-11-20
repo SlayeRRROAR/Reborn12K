@@ -11,6 +11,7 @@
       "item": "minecraft:obsidian"
     }
   ],
+  "cookingtime": 480,
   "output": {
     "item": "minecraft:obsidian"
   }
