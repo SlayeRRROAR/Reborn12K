@@ -32,7 +32,7 @@ public class QuarryScreenHandler extends ScreenHandler {
         this.blockEntity = ((QuarryBlockEntity) entity);
 
         this.addSlot(new CustomFuelCellSlot(inventory, 0, 31, 17));
-        this.addSlot(new CustomFocusSlot(inventory, 1, 64, 35));
+        this.addSlot(new Slot(inventory, 1, 64, 35));
         this.addSlot(new CustomResultSlot(inventory, 2, 125, 35));
         this.addSlot(new CustomResultSlot(inventory, 3, 31, 53));
 

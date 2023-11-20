@@ -33,7 +33,7 @@ public class ManufactoryScreenHandler extends ScreenHandler {
 
         this.addSlot(new CustomAgentSlot(inventory, 0, 44, 22));
         this.addSlot(new CustomReagentSlot(inventory, 1, 116, 22));
-        this.addSlot(new CustomRockSlot(inventory, 2, 80, 22));
+        this.addSlot(new Slot(inventory, 2, 80, 22));
         this.addSlot(new CustomResultSlot(inventory, 3, 80, 55));
 
         addPlayerInventory(playerInventory);
@@ -141,7 +141,7 @@ public class ManufactoryScreenHandler extends ScreenHandler {
 
     private void addPlayerHotbar(PlayerInventory playerInventory) {
         for (int i = 0; i < 9; ++i) {
-            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 144));
+            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
         }
     }
 

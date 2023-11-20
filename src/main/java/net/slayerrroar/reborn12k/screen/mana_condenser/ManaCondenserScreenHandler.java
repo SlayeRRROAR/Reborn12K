@@ -31,7 +31,7 @@ public class ManaCondenserScreenHandler extends ScreenHandler {
         this.propertyDelegate = delegate;
         this.blockEntity = ((ManaCondenserBlockEntity) entity);
 
-        this.addSlot(new CustomSoulSlot(inventory, 0, 80, 17));
+        this.addSlot(new Slot(inventory, 0, 80, 17));
         this.addSlot(new CustomResultSlot(inventory, 1, 80, 56));
 
         addPlayerInventory(playerInventory);

@@ -32,7 +32,7 @@ public class MelterScreenHandler extends ScreenHandler {
         this.blockEntity = ((MelterBlockEntity) entity);
 
         this.addSlot(new CustomFuelSlot(inventory, 0, 31, 53));
-        this.addSlot(new CustomMelterSlot(inventory, 1, 31, 17));
+        this.addSlot(new Slot(inventory, 1, 31, 17));
         this.addSlot(new CustomBucketSlot(inventory, 2, 64, 35));
         this.addSlot(new CustomResultSlot(inventory, 3, 125, 35));
 
