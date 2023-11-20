@@ -8,6 +8,7 @@
       "item": "minecraft:bucket"
     }
   ],
+  "cookingtime": 200,
   "output": {
     "item": "reborn12k:resonant_ender_bucket"
   }

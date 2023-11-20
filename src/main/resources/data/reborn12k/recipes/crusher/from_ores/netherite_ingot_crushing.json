@@ -5,6 +5,7 @@
             "tag": "c:netherite_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:netherite_dust",
         "count": 2

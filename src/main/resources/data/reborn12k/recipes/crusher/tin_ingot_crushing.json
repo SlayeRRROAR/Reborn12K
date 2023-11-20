@@ -5,6 +5,7 @@
             "tag": "c:tin_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:tin_dust"
     }

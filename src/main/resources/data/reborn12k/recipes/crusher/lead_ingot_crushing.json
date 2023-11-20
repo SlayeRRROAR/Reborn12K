@@ -5,6 +5,7 @@
             "tag": "c:lead_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:lead_dust"
     }

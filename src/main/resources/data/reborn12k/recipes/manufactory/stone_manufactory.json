@@ -11,6 +11,7 @@
       "item": "minecraft:stone"
     }
   ],
+  "cookingtime": 160,
   "output": {
     "item": "minecraft:stone"
   }

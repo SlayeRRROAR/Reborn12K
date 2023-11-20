@@ -5,6 +5,7 @@
             "tag": "c:raw_vanadium_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:vanadium_dust",
         "count": 2

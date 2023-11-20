@@ -5,6 +5,7 @@
             "tag": "c:raw_lead_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:lead_dust",
         "count": 2

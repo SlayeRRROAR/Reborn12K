@@ -5,6 +5,7 @@
             "tag": "c:signalum_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:signalum_dust"
     }

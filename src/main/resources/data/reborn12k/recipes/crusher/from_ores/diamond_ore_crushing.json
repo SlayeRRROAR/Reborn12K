@@ -5,6 +5,7 @@
             "tag": "c:diamond_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:diamond_dust",
         "count": 2

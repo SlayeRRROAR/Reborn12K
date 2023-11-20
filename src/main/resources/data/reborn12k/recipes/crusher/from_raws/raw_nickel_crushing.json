@@ -5,6 +5,7 @@
             "tag": "c:raw_nickel_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:nickel_dust",
         "count": 2

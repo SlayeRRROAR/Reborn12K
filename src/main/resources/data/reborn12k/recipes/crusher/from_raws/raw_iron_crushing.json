@@ -5,6 +5,7 @@
             "tag": "c:raw_iron_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:iron_dust",
         "count": 2

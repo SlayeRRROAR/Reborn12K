@@ -5,6 +5,7 @@
             "tag": "c:tungsten_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:tungsten_dust"
     }

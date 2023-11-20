@@ -5,6 +5,7 @@
             "tag": "c:raw_thelosite_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:thelosite_dust",
         "count": 2

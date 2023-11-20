@@ -5,6 +5,7 @@
             "tag": "c:raw_aluminum_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:aluminum_dust",
         "count": 2

@@ -5,6 +5,7 @@
             "tag": "c:silver_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:silver_dust",
         "count": 2

@@ -5,6 +5,7 @@
             "tag": "c:emerald_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:emerald_dust",
         "count": 2

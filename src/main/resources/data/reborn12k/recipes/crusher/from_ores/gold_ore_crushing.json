@@ -5,6 +5,7 @@
             "tag": "c:gold_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:gold_dust",
         "count": 2

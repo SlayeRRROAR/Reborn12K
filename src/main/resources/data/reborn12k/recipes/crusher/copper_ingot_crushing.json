@@ -5,6 +5,7 @@
             "tag": "c:copper_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:copper_dust"
     }

@@ -5,6 +5,7 @@
             "tag": "c:lapises"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:lapis_dust"
     }

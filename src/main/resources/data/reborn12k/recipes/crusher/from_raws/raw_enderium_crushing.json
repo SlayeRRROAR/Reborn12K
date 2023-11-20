@@ -5,6 +5,7 @@
             "tag": "c:raw_enderium_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:enderium_dust",
         "count": 2

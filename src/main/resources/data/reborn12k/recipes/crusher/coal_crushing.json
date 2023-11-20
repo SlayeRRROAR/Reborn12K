@@ -5,6 +5,7 @@
             "tag": "coals"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:coal_dust"
     }

@@ -5,6 +5,7 @@
             "tag": "c:diamonds"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:diamond_dust"
     }

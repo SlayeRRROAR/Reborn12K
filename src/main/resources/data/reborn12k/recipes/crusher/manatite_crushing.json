@@ -5,6 +5,7 @@
             "tag": "c:manatites"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:manatite_dust"
     }

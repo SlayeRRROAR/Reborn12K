@@ -5,6 +5,7 @@
             "tag": "c:titanium_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:titanium_dust",
         "count": 2

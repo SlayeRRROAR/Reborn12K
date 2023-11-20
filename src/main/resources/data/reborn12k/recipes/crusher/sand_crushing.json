@@ -5,6 +5,7 @@
             "item": "minecraft:gravel"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "minecraft:sand"
     }

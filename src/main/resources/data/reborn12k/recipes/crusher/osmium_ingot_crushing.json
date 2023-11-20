@@ -5,6 +5,7 @@
             "tag": "c:osmium_ingots"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:osmium_dust"
     }
