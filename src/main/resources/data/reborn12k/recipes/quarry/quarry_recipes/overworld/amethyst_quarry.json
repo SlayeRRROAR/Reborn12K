@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:copper_laser_focus"
+      "item": "reborn12k:amethyst_laser_focus"
     }
   ],
+  "cookingtime" : 400,
   "output": {
-    "item": "minecraft:copper_ore"
+    "item": "minecraft:amethyst_block"
   }
 }

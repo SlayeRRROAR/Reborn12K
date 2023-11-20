@@ -5,6 +5,7 @@
       "item": "reborn12k:phantom_soul"
     }
   ],
+  "cookingtime" : 400,
   "output": {
     "item": "reborn12k:phantom_essence"
   }

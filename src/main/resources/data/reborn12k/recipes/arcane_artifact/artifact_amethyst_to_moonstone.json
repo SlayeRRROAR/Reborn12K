@@ -5,6 +5,7 @@
       "tag": "c:amethyst_blocks"
     }
   ],
+  "cookingtime" : 100,
   "output": {
     "item": "reborn12k:moonstone"
   }

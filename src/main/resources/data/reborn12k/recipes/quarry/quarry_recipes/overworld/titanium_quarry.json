@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:ruby_laser_focus"
+      "item": "reborn12k:titanium_laser_focus"
     }
   ],
+  "cookingtime" : 500,
   "output": {
-    "item": "reborn12k:ruby_ore"
+    "item": "reborn12k:titanium_ore"
   }
 }

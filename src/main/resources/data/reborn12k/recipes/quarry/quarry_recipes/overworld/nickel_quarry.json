@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:gold_laser_focus"
+      "item": "reborn12k:nickel_laser_focus"
     }
   ],
+  "cookingtime" : 400,
   "output": {
-    "item": "minecraft:gold_ore"
+    "item": "reborn12k:nickel_ore"
   }
 }

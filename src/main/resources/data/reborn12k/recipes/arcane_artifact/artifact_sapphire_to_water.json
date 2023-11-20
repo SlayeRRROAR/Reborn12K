@@ -5,6 +5,7 @@
       "tag": "c:sapphires"
     }
   ],
+  "cookingtime" : 200,
   "output": {
     "item": "reborn12k:rune_of_water"
   }

@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:lead_laser_focus"
+      "item": "reborn12k:netherite_laser_focus"
     }
   ],
+  "cookingtime" : 800,
   "output": {
-    "item": "reborn12k:lead_ore"
+    "item": "minecraft:ancient_debris"
   }
 }

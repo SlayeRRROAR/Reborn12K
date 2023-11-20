@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:cobalt_laser_focus"
+      "item": "reborn12k:gold_laser_focus"
     }
   ],
+  "cookingtime" : 400,
   "output": {
-    "item": "reborn12k:end_cobalt_ore"
+    "item": "minecraft:gold_ore"
   }
 }

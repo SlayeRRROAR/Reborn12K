@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:vanadium_laser_focus"
+      "item": "reborn12k:iron_laser_focus"
     }
   ],
+  "cookingtime" : 400,
   "output": {
-    "item": "reborn12k:nether_vanadium_ore"
+    "item": "minecraft:iron_ore"
   }
 }

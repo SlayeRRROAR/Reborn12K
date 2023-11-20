@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:uranium_laser_focus"
+      "item": "reborn12k:neodymium_laser_focus"
     }
   ],
+  "cookingtime" : 600,
   "output": {
-    "item": "reborn12k:nether_uranium_ore"
+    "item": "reborn12k:nether_neodymium_ore"
   }
 }

@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:diamond_laser_focus"
+      "item": "reborn12k:copper_laser_focus"
     }
   ],
+  "cookingtime" : 200,
   "output": {
-    "item": "minecraft:diamond_ore"
+    "item": "minecraft:copper_ore"
   }
 }

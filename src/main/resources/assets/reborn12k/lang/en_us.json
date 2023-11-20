@@ -635,9 +635,7 @@
     "item.reborn12k.leu_fuel_cell": "LEU Fuel Cell",
     "item.reborn12k.heu_fuel_cell": "SEU Fuel Cell",
 
-    "item.reborn12k.basic_laser_focus": "Basic Laser Focus",
-    "item.reborn12k.advanced_laser_focus": "Advanced Laser Focus",
-    "item.reborn12k.ultimate_laser_focus": "Ultimate Laser Focus",
+    "item.reborn12k.laser_focus": "Laser Focus",
 
     "item.reborn12k.coal_laser_focus": "Coal Laser Focus",
     "item.reborn12k.copper_laser_focus": "Copper Laser Focus",
@@ -685,6 +683,7 @@
     "item.reborn12k.chicken_soul": "Chicken Soul",
     "item.reborn12k.cow_soul": "Cow Soul",
     "item.reborn12k.fish_soul": "Fish Soul",
+    "item.reborn12k.frog_soul": "Frog Soul",
     "item.reborn12k.mooshroom_soul": "Mooshroom Soul",
     "item.reborn12k.pig_soul": "Pig Soul",
     "item.reborn12k.rabbit_soul": "Rabbit Soul",
@@ -718,6 +717,7 @@
     "item.reborn12k.chicken_essence": "Chicken Essence",
     "item.reborn12k.cow_essence": "Cow Essence",
     "item.reborn12k.fish_essence": "Fish Essence",
+    "item.reborn12k.frog_essence": "Frog Essence",
     "item.reborn12k.mooshroom_essence": "Mooshroom Essence",
     "item.reborn12k.pig_essence": "Pig Essence",
     "item.reborn12k.rabbit_essence": "Rabbit Essence",
@@ -982,10 +982,12 @@
 
     "item.reborn12k.crimson.tooltip": "§8Unleashes an explosion",
 
-    "item.reborn12k.magic_mirror.tooltip1": "§bTeleported to your last respawn",
-    "item.reborn12k.magic_mirror.tooltip2": "§6You haven't set a respawn point",
-    "item.reborn12k.magic_mirror.tooltip3": "§cOnly works in the Overworld",
-    "item.reborn12k.magic_mirror.tooltip4": "§cYou're out of charges",
+    "item.reborn12k.magic_mirror.tooltip1": "§6Coordinates have not been set",
+    "item.reborn12k.magic_mirror.tooltip2": "§bTeleportation Successful",
+    "item.reborn12k.magic_mirror.tooltip3": "§2Coordinates set",
+    "item.reborn12k.magic_mirror.tooltip4": "§2Charges replenished",
+    "item.reborn12k.magic_mirror.tooltip5": "§cYou are out of charges",
+    "item.reborn12k.magic_mirror.tooltip6": "§cOnly works in the Overworld",
 
     "item.reborn12k.yggdrasill_branch.tooltip1": "§8The Yggdrasill's Branch is §2INACTIVE",
     "item.reborn12k.yggdrasill_branch.tooltip2": "§8The Yggdrasill's Branch is §aACTIVE",
@@ -1163,6 +1165,9 @@
     "item.minecraft.lingering_potion.effect.bleed": "Lingering Potion of Bleed",
     "item.minecraft.lingering_potion.effect.bleed_extended": "Lingering Potion of Bleed",
     "item.minecraft.lingering_potion.effect.bleed_2": "Lingering Potion of Bleed",
+    "item.minecraft.tipped_arrow.effect.bleed": "Arrow of Bleed",
+    "item.minecraft.tipped_arrow.effect.bleed_extended": "Arrow of Bleed",
+    "item.minecraft.tipped_arrow.effect.bleed_2": "Arrow of Bleed",
 
     "death.attack.bleed": "%1$s died from blood loss",
 

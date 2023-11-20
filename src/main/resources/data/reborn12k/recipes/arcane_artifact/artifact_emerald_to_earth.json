@@ -5,6 +5,7 @@
       "tag": "c:emeralds"
     }
   ],
+  "cookingtime" : 200,
   "output": {
     "item": "reborn12k:rune_of_earth"
   }

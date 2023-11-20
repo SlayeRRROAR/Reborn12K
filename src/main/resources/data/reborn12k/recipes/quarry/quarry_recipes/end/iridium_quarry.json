@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:iron_laser_focus"
+      "item": "reborn12k:iridium_laser_focus"
     }
   ],
+  "cookingtime" : 800,
   "output": {
-    "item": "minecraft:iron_ore"
+    "item": "reborn12k:end_iridium_ore"
   }
 }

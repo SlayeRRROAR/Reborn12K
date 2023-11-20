@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:nickel_laser_focus"
+      "item": "reborn12k:sapphire_laser_focus"
     }
   ],
+  "cookingtime" : 600,
   "output": {
-    "item": "reborn12k:nickel_ore"
+    "item": "reborn12k:sapphire_ore"
   }
 }

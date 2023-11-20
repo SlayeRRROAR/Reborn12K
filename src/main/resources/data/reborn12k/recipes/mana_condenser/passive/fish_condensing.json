@@ -5,6 +5,7 @@
       "item": "reborn12k:fish_soul"
     }
   ],
+  "cookingtime" : 400,
   "output": {
     "item": "reborn12k:fish_essence"
   }

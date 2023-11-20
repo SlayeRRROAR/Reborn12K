@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:netherite_laser_focus"
+      "item": "reborn12k:coal_laser_focus"
     }
   ],
+  "cookingtime" : 200,
   "output": {
-    "item": "minecraft:ancient_debris"
+    "item": "minecraft:coal_ore"
   }
 }

@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:coal_laser_focus"
+      "item": "reborn12k:emerald_laser_focus"
     }
   ],
+  "cookingtime" : 600,
   "output": {
-    "item": "minecraft:coal_ore"
+    "item": "minecraft:emerald_ore"
   }
 }

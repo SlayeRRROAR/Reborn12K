@@ -5,10 +5,11 @@
       "tag": "reborn12k:fuel_cells"
     },
     {
-      "item": "reborn12k:tin_laser_focus"
+      "item": "reborn12k:redstone_laser_focus"
     }
   ],
+  "cookingtime" : 200,
   "output": {
-    "item": "reborn12k:tin_ore"
+    "item": "minecraft:redstone_ore"
   }
 }
