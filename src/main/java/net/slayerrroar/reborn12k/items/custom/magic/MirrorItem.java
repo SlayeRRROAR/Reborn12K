@@ -1,9 +1,12 @@
 package net.slayerrroar.reborn12k.items.custom.magic;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.registry.RegistryKey;
+import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.Items;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -13,49 +16,78 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.slayerrroar.reborn12k.util.InventoryInteractionUtil;
 
 public class MirrorItem extends Item {
     public MirrorItem(Settings settings) {
         super(settings);
     }
 
-    public void setPositionAndUpdate(ServerPlayerEntity player, BlockPos pos) {
-        player.teleport(pos.getX() + 0.5f, pos.getY() + 0.6F, pos.getZ() + 0.5f);
+    static BlockPos teleportPos = null;
+
+    public void setPositionAndUpdate(ServerPlayerEntity player, BlockPos teleportPos) {
+        player.teleport(teleportPos.getX() + 0.5f, teleportPos.getY() + 0.6F, teleportPos.getZ() + 0.5f);
         player.fallDistance = 0;
     }
 
-    private void teleport(World world, PlayerEntity player) {
+    private void attemptTeleport(World world, PlayerEntity player) {
         ServerPlayerEntity serverPlayer = (ServerPlayerEntity) player;
-        BlockPos pos = serverPlayer.getSpawnPointPosition();
 
-        if(pos != null) {
-            serverPlayer.stopRiding();
-            setPositionAndUpdate(serverPlayer, pos);
+        if (teleportPos == null) {
+            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip1"), true);
+        } else {
+            setPositionAndUpdate(serverPlayer, teleportPos);
             world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 0.25f, 0.25f);
-            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip1"), true);    //tp to last bed
+            player.getStackInHand(Hand.MAIN_HAND).damage(1, world.random, serverPlayer);
+            player.getItemCooldownManager().set(this, 20);
+            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip2"), true);
         }
-        if(pos == null) {
-            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip2"), true);    //bed not set
+    }
+
+    @Override
+    public ActionResult useOnBlock(ItemUsageContext context) {
+        World world = context.getWorld();
+        PlayerEntity player = context.getPlayer();
+
+        assert player != null;
+        BlockState block = world.getBlockState(context.getBlockPos());
+        BlockPos pos = context.getBlockPos();
+
+        if (player.isSneaking() && block.isIn(BlockTags.BEDS)) {
+            teleportPos = pos;
+            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip3"), true);
+
+            return ActionResult.SUCCESS;
+        } else {
+            return ActionResult.PASS;
         }
     }
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
-        ItemStack stack = player.getStackInHand(hand);
-        RegistryKey<World> registryKey = world.getRegistryKey();
-        if(player.getStackInHand(hand) == stack && player.getStackInHand(hand).getDamage() < 16) {
-            if(!world.isClient) {
-                if(registryKey == World.OVERWORLD) {
-                    teleport(world, player);
-                    player.getItemCooldownManager().set(this, 20 * 2);
-                    player.getStackInHand(hand).damage(1, world.random, null);
-                    return new TypedActionResult<>(ActionResult.SUCCESS, player.getStackInHand(hand));
+        ItemStack stack = player.getStackInHand(Hand.MAIN_HAND);
+
+        if (!world.isClient) {
+            if (hand == Hand.MAIN_HAND) {
+                if (world.getRegistryKey() == World.OVERWORLD) {
+                    if (stack.getDamage() < 16) {
+                        attemptTeleport(world, player);
+                        return new TypedActionResult<>(ActionResult.SUCCESS, player.getStackInHand(hand));
+                    } else {
+                        if (InventoryInteractionUtil.itemCountInInventory(player, Items.ENDER_PEARL) >= 1) {
+                            InventoryInteractionUtil.removeOneItemFromInventory(player, Items.ENDER_PEARL);
+                            stack.setDamage(0);
+                            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip4"), true);
+
+                            return new TypedActionResult<>(ActionResult.SUCCESS, player.getStackInHand(hand));
+                        } else {
+                            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip5"), true);
+                        }
+                    }
+                } else {
+                    player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip6"), true);
                 }
-                player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip3"), true);    //works only in the overworld
             }
-        }
-        if(player.getStackInHand(hand) == stack && player.getStackInHand(hand).getDamage() == 16) {
-            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip4"), true);    //no uses left
         }
         return new TypedActionResult<>(ActionResult.FAIL, player.getStackInHand(hand));
     }
