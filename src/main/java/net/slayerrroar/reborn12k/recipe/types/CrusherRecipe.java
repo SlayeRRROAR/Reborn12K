@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.recipe.*;
 import net.minecraft.registry.DynamicRegistryManager;
+import net.minecraft.util.JsonHelper;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
@@ -18,10 +19,17 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
 
     private final ItemStack output;
     private final List<Ingredient> recipeItems;
+    private final int cookingTime;
 
-    public CrusherRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
+    public CrusherRecipe(List<Ingredient> ingredients, ItemStack itemStack, int cookingTime) {
         this.output = itemStack;
         this.recipeItems = ingredients;
+        this.cookingTime = cookingTime;
+    }
+
+    @Override
+    public boolean isIgnoredInRecipeBook() {
+        return true;
     }
 
     @Override
@@ -55,6 +63,10 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
         return list;
     }
 
+    public int getCookingTime() {
+        return this.cookingTime;
+    }
+
     @Override
     public RecipeSerializer<?> getSerializer() {
         return CrusherRecipe.Serializer.INSTANCE;
@@ -76,7 +88,8 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
 
         public static final Codec<CrusherRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
                 validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(CrusherRecipe::getIngredients),
-                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output)
+                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output),
+                Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)
         ).apply(in, CrusherRecipe::new));
 
         private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
@@ -99,7 +112,8 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
             }
 
             ItemStack output = buf.readItemStack();
-            return new CrusherRecipe(inputs, output);
+            int cookingTime = buf.readVarInt();
+            return new CrusherRecipe(inputs, output, cookingTime);
         }
 
         @Override
@@ -111,6 +125,7 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
             }
 
             buf.writeItemStack(recipe.getResult(null));
+            buf.writeInt(recipe.cookingTime);
         }
     }
 }

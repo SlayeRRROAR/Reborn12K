@@ -29,7 +29,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-@SuppressWarnings({"OptionalGetWithoutIsPresent", "unused"})
+@SuppressWarnings({"OptionalGetWithoutIsPresent", "unused", "ConstantConditions"})
 
 public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -42,7 +42,7 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 200;
+    private int maxProgress = 20;
     private static final int[] OUTUPUT_SLOTS = new int[]{3, 0};
 
     public QuarryBlockEntity(BlockPos blockPos, BlockState state) {
@@ -115,6 +115,12 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
         state = state.with(ArcaneArtifactBlock.LIT, isCrafting);
         world.setBlockState(pos, state,3);
 
+        if (hasRecipe()) {
+            this.maxProgress = setCookingTime();
+        } else {
+            resetProgress();
+        }
+
         if (isOutputSlotEmptyOrReceivable()) {
             if (this.hasRecipe() && this.hasFuelInFuelSlot(this)) {
                 this.increaseCraftProgress();
@@ -139,6 +145,10 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
 
     private void resetProgress() {
         this.progress = 0;
+    }
+
+    private int setCookingTime() {
+        return getCurrentRecipe().get().value().getCookingTime();
     }
 
     private void craftItem() {

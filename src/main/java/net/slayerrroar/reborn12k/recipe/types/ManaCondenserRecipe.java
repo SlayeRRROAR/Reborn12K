@@ -18,10 +18,17 @@ public class ManaCondenserRecipe implements Recipe<SimpleInventory> {
 
     private final ItemStack output;
     private final List<Ingredient> recipeItems;
+    private final int cookingTime;
 
-    public ManaCondenserRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
+    public ManaCondenserRecipe(List<Ingredient> ingredients, ItemStack itemStack, int cookingTime) {
         this.output = itemStack;
         this.recipeItems = ingredients;
+        this.cookingTime = cookingTime;
+    }
+
+    @Override
+    public boolean isIgnoredInRecipeBook() {
+        return true;
     }
 
     @Override
@@ -55,6 +62,10 @@ public class ManaCondenserRecipe implements Recipe<SimpleInventory> {
         return list;
     }
 
+    public int getCookingTime() {
+        return this.cookingTime;
+    }
+
     @Override
     public RecipeSerializer<?> getSerializer() {
         return ManaCondenserRecipe.Serializer.INSTANCE;
@@ -76,7 +87,8 @@ public class ManaCondenserRecipe implements Recipe<SimpleInventory> {
 
         public static final Codec<ManaCondenserRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
                 validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(ManaCondenserRecipe::getIngredients),
-                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output)
+                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output),
+                Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)
         ).apply(in, ManaCondenserRecipe::new));
 
         private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
@@ -99,7 +111,8 @@ public class ManaCondenserRecipe implements Recipe<SimpleInventory> {
             }
 
             ItemStack output = buf.readItemStack();
-            return new ManaCondenserRecipe(inputs, output);
+            int cookingTime = buf.readVarInt();
+            return new ManaCondenserRecipe(inputs, output, cookingTime);
         }
 
         @Override
@@ -111,6 +124,7 @@ public class ManaCondenserRecipe implements Recipe<SimpleInventory> {
             }
 
             buf.writeItemStack(recipe.getResult(null));
+            buf.writeInt(recipe.cookingTime);
         }
     }
 }

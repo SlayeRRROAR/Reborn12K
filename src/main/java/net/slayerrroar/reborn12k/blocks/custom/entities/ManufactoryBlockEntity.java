@@ -28,7 +28,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-@SuppressWarnings({"OptionalGetWithoutIsPresent", "unused"})
+@SuppressWarnings({"OptionalGetWithoutIsPresent", "unused", "ConstantConditions"})
 
 public class ManufactoryBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -41,7 +41,7 @@ public class ManufactoryBlockEntity extends BlockEntity implements ExtendedScree
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 160;
+    private int maxProgress = 20;
 
     public ManufactoryBlockEntity(BlockPos blockPos, BlockState state) {
         super(RebornBlockEntities.MANUFACTORY, blockPos, state);
@@ -111,6 +111,12 @@ public class ManufactoryBlockEntity extends BlockEntity implements ExtendedScree
         state = state.with(ManufactoryBlock.LIT, this.hasRecipe());
         world.setBlockState(pos, state,3);
 
+        if (hasRecipe()) {
+            this.maxProgress = setCookingTime();
+        } else {
+            resetProgress();
+        }
+
         if (isOutputSlotEmptyOrReceivable()) {
             if (this.hasRecipe()) {
                 this.increaseCraftProgress();
@@ -131,6 +137,10 @@ public class ManufactoryBlockEntity extends BlockEntity implements ExtendedScree
 
     private void resetProgress() {
         this.progress = 0;
+    }
+
+    private int setCookingTime() {
+        return getCurrentRecipe().get().value().getCookingTime();
     }
 
     private void craftItem() {

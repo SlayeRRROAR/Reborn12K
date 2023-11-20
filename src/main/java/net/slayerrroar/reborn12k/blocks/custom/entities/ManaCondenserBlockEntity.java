@@ -28,7 +28,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-@SuppressWarnings({"OptionalGetWithoutIsPresent", "unused"})
+@SuppressWarnings({"OptionalGetWithoutIsPresent", "unused", "ConstantConditions"})
 
 public class ManaCondenserBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -39,7 +39,7 @@ public class ManaCondenserBlockEntity extends BlockEntity implements ExtendedScr
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 200;
+    private int maxProgress = 20;
 
     public ManaCondenserBlockEntity(BlockPos blockPos, BlockState state) {
         super(RebornBlockEntities.MANA_CONDENSER, blockPos, state);
@@ -109,6 +109,12 @@ public class ManaCondenserBlockEntity extends BlockEntity implements ExtendedScr
         state = state.with(ManaCondenserBlock.LIT, this.hasRecipe());
         world.setBlockState(pos, state,3);
 
+        if (hasRecipe()) {
+            this.maxProgress = setCookingTime();
+        } else {
+            resetProgress();
+        }
+
         if (isOutputSlotEmptyOrReceivable()) {
             if (this.hasRecipe()) {
                 this.increaseCraftProgress();
@@ -129,6 +135,10 @@ public class ManaCondenserBlockEntity extends BlockEntity implements ExtendedScr
 
     private void resetProgress() {
         this.progress = 0;
+    }
+
+    private int setCookingTime() {
+        return getCurrentRecipe().get().value().getCookingTime();
     }
 
     private void craftItem() {

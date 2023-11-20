@@ -28,7 +28,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-@SuppressWarnings({"OptionalGetWithoutIsPresent", "unused"})
+@SuppressWarnings({"OptionalGetWithoutIsPresent", "unused", "ConstantConditions"})
 
 public class ArcaneArtifactBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
@@ -39,7 +39,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements ExtendedSc
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 200;
+    private int maxProgress = 20;
 
     public ArcaneArtifactBlockEntity(BlockPos blockPos, BlockState state) {
         super(RebornBlockEntities.ARCANE_ARTIFACT, blockPos, state);
@@ -109,6 +109,12 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements ExtendedSc
         state = state.with(ArcaneArtifactBlock.LIT, this.hasRecipe());
         world.setBlockState(pos, state,3);
 
+        if (hasRecipe()) {
+            this.maxProgress = setCookingTime();
+        } else {
+            resetProgress();
+        }
+
         if (isOutputSlotEmptyOrReceivable()) {
             if (this.hasRecipe()) {
                 this.increaseCraftProgress();
@@ -129,6 +135,10 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements ExtendedSc
 
     private void resetProgress() {
         this.progress = 0;
+    }
+
+    private int setCookingTime() {
+        return getCurrentRecipe().get().value().getCookingTime();
     }
 
     private void craftItem() {

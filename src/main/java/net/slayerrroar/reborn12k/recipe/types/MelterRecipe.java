@@ -18,10 +18,17 @@ public class MelterRecipe implements Recipe<SimpleInventory> {
 
     private final ItemStack output;
     private final List<Ingredient> recipeItems;
+    private final int cookingTime;
 
-    public MelterRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
+    public MelterRecipe(List<Ingredient> ingredients, ItemStack itemStack, int cookingTime) {
         this.output = itemStack;
         this.recipeItems = ingredients;
+        this.cookingTime = cookingTime;
+    }
+
+    @Override
+    public boolean isIgnoredInRecipeBook() {
+        return true;
     }
 
     @Override
@@ -56,6 +63,10 @@ public class MelterRecipe implements Recipe<SimpleInventory> {
         return list;
     }
 
+    public int getCookingTime() {
+        return this.cookingTime;
+    }
+
     @Override
     public RecipeSerializer<?> getSerializer() {
         return MelterRecipe.Serializer.INSTANCE;
@@ -77,7 +88,8 @@ public class MelterRecipe implements Recipe<SimpleInventory> {
 
         public static final Codec<MelterRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
                 validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(MelterRecipe::getIngredients),
-                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output)
+                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output),
+                Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)
         ).apply(in, MelterRecipe::new));
 
         private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
@@ -100,7 +112,8 @@ public class MelterRecipe implements Recipe<SimpleInventory> {
             }
 
             ItemStack output = buf.readItemStack();
-            return new MelterRecipe(inputs, output);
+            int cookingTime = buf.readVarInt();
+            return new MelterRecipe(inputs, output, cookingTime);
         }
 
         @Override
@@ -112,6 +125,7 @@ public class MelterRecipe implements Recipe<SimpleInventory> {
             }
 
             buf.writeItemStack(recipe.getResult(null));
+            buf.writeInt(recipe.cookingTime);
         }
     }
 }
