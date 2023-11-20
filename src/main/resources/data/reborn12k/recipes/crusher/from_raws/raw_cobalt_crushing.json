@@ -5,6 +5,7 @@
             "tag": "c:raw_cobalt_ores"
         }
     ],
+    "cookingtime": 200,
     "output": {
         "item": "reborn12k:cobalt_dust",
         "count": 2
