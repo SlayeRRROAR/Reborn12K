@@ -1,33 +1,62 @@
 package net.slayerrroar.reborn12k.compat.rei.categories.quarry;
 
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
+import me.shedaniel.rei.api.common.display.SimpleGridMenuDisplay;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
 import me.shedaniel.rei.api.common.entry.EntryIngredient;
+import me.shedaniel.rei.api.common.registry.RecipeManagerContext;
 import me.shedaniel.rei.api.common.util.EntryIngredients;
-import me.shedaniel.rei.api.common.util.EntryStacks;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.recipe.RecipeEntry;
 import net.slayerrroar.reborn12k.recipe.types.QuarryRecipe;
+import org.jetbrains.annotations.ApiStatus;
+import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
-@SuppressWarnings("unused")
-public class QuarryDisplay extends BasicDisplay {
-    public QuarryDisplay(List<EntryIngredient> inputs, List<EntryIngredient> outputs) {
-        super(inputs, outputs);
+@SuppressWarnings({"unused","FieldMayBeFinal", "UnstableApiUsage"})
+public class QuarryDisplay extends BasicDisplay implements SimpleGridMenuDisplay {
+    private RecipeEntry<?> recipe;
+    private double cookTime;
+
+    public QuarryDisplay(RecipeEntry<? extends QuarryRecipe> recipe) {
+        this(EntryIngredients.ofIngredients(recipe.value().getIngredients()), Collections.singletonList(EntryIngredients.of(recipe.value().getResult(BasicDisplay.registryAccess()))),
+                recipe, recipe.value().getCookingTime());
     }
 
-    public QuarryDisplay(RecipeEntry<QuarryRecipe> recipe) {
-        super(getInputList(recipe.value()), List.of(EntryIngredient.of(EntryStacks.of(recipe.value().getResult(null)))));
+    public QuarryDisplay(List<EntryIngredient> input, List<EntryIngredient> output, NbtCompound tag) {
+        this(input, output, RecipeManagerContext.getInstance().byId(tag, "location"), tag.getDouble("cookTime"));
     }
 
-    private static List<EntryIngredient> getInputList(QuarryRecipe recipe) {
-        if(recipe == null) return Collections.emptyList();
-        List<EntryIngredient> list = new ArrayList<>();
-        list.add(EntryIngredients.ofIngredient(recipe.getIngredients().get(0)));
-        list.add(EntryIngredients.ofIngredient(recipe.getIngredients().get(1)));
-        return list;
+    public QuarryDisplay(List<EntryIngredient> input, List<EntryIngredient> output, @Nullable RecipeEntry<?> recipe, double cookTime) {
+        super(input, output, Optional.ofNullable(recipe).map(RecipeEntry::id));
+        this.recipe = recipe;
+        this.cookTime = cookTime;
+    }
+
+    public double getCookingTime() {
+        return cookTime;
+    }
+
+    @ApiStatus.Internal
+    public Optional<RecipeEntry<?>> getOptionalRecipe() {
+        return Optional.ofNullable(recipe);
+    }
+
+    @Override
+    public int getWidth() {
+        return 1;
+    }
+
+    @Override
+    public int getHeight() {
+        return 1;
+    }
+
+    public static <R extends QuarryDisplay> BasicDisplay.Serializer<R> serializer(BasicDisplay.Serializer.RecipeLessConstructor<R> constructor) {
+        return BasicDisplay.Serializer.ofRecipeLess(constructor, (display, tag) -> tag.putDouble("cookTime", display.getCookingTime()));
     }
 
     @Override
