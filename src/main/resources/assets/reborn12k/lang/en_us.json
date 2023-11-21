@@ -956,6 +956,9 @@
     "item.reborn12k.alkatraz_disc": "Alkatraz Disc",
     "item.reborn12k.alkatraz_disc.desc": "DEMONDICE - Alkatraz",
 
+    "item.reborn12k.mirror.tooltip1": "§2Valid Coordinates",
+    "item.reborn12k.mirror.tooltip2": "§4Missing Coordinates",
+
     "item.reborn12k.magic_error.tooltip1": "Something is wrong",
     "item.reborn12k.magic_error.tooltip2": "You made a mistake",
     "item.reborn12k.magic_error.tooltip3": "The conditions aren't valid",
