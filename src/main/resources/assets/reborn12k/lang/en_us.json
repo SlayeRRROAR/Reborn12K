@@ -956,9 +956,6 @@
     "item.reborn12k.alkatraz_disc": "Alkatraz Disc",
     "item.reborn12k.alkatraz_disc.desc": "DEMONDICE - Alkatraz",
 
-    "item.reborn12k.mirror.tooltip1": "§2Valid Coordinates",
-    "item.reborn12k.mirror.tooltip2": "§4Missing Coordinates",
-
     "item.reborn12k.magic_error.tooltip1": "Something is wrong",
     "item.reborn12k.magic_error.tooltip2": "You made a mistake",
     "item.reborn12k.magic_error.tooltip3": "The conditions aren't valid",
@@ -985,12 +982,15 @@
 
     "item.reborn12k.crimson.tooltip": "§8Unleashes an explosion",
 
-    "item.reborn12k.magic_mirror.tooltip1": "§6Coordinates have not been set",
+    "item.reborn12k.magic_mirror.tooltip1": "§cBed is missing",
     "item.reborn12k.magic_mirror.tooltip2": "§bTeleportation Successful",
-    "item.reborn12k.magic_mirror.tooltip3": "§2Coordinates set",
+    "item.reborn12k.magic_mirror.tooltip3": "§2Bed is set",
     "item.reborn12k.magic_mirror.tooltip4": "§2Charges replenished",
     "item.reborn12k.magic_mirror.tooltip5": "§cYou are out of charges",
     "item.reborn12k.magic_mirror.tooltip6": "§cOnly works in the Overworld",
+    "item.reborn12k.magic_mirror.tooltip7": "§cNO CHARGES",
+    "item.reborn12k.magic_mirror.tooltip8": "§2Teleport Possible",
+    "item.reborn12k.magic_mirror.tooltip9": "§cTeleport Impossible",
 
     "item.reborn12k.yggdrasill_branch.tooltip1": "§8The Yggdrasill's Branch is §2INACTIVE",
     "item.reborn12k.yggdrasill_branch.tooltip2": "§8The Yggdrasill's Branch is §aACTIVE",
