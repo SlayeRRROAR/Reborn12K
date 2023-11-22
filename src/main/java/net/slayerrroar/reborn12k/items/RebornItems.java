@@ -729,6 +729,7 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN_TOOLS, GOLDEN_ROD);
         addToItemGroup(ItemGroupUtil.REBORN_TOOLS, ARCHMAGE_STAFF);
 
+
         addToItemGroup(ItemGroupUtil.REBORN_STUFF, BLANK_RUNE);
 
         addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_AIR);
@@ -759,6 +760,7 @@ public class RebornItems {
 
         addToItemGroup(ItemGroupUtil.REBORN_STUFF, RUNE_OF_STRENGTH);
 
+
         addToItemGroup(ItemGroupUtil.REBORN_STUFF, WINDSTORM_MANATITE);
         addToItemGroup(ItemGroupUtil.REBORN_STUFF, VIRIDIAN_MANATITE);
         addToItemGroup(ItemGroupUtil.REBORN_STUFF, ABYSS_MANATITE);
@@ -773,6 +775,9 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN_STUFF, FERRUM_MANATITE);
 
         addToItemGroup(ItemGroupUtil.REBORN_STUFF, CRIMSON_MANATITE);
+
+
+        addToItemGroup(ItemGroupUtil.REBORN_TOOLS, WARP_SCROLL);
 
         addToItemGroup(ItemGroupUtil.REBORN_TOOLS, MAGIC_MIRROR);
         addToItemGroup(ItemGroupUtil.REBORN_TOOLS, ICE_MIRROR);

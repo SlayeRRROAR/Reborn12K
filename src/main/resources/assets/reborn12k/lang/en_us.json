@@ -556,6 +556,8 @@
 
     "item.reborn12k.crimson_manatite": "Crimson Manatite",
 
+    "item.reborn12k.warp_scroll": "Warp Scroll",
+
     "item.reborn12k.magic_mirror": "Magic Mirror",
     "item.reborn12k.ice_mirror": "Ice Mirror",
     "item.reborn12k.cell_phone": "Cell Phone",
@@ -982,15 +984,21 @@
 
     "item.reborn12k.crimson.tooltip": "§8Unleashes an explosion",
 
+    "item.reborn12k.warp_scroll.tooltip1": "§cScroll is unbound to a location",
+    "item.reborn12k.warp_scroll.tooltip2": "§bTeleportation Successful",
+    "item.reborn12k.warp_scroll.tooltip3": "§cScroll is already bound to a location",
+    "item.reborn12k.warp_scroll.tooltip4": "§2Location has been bound to the scroll",
+    "item.reborn12k.warp_scroll.tooltip5": "§2Bound",
+    "item.reborn12k.warp_scroll.tooltip6": "§cUnbound",
+
     "item.reborn12k.magic_mirror.tooltip1": "§cBed is missing",
     "item.reborn12k.magic_mirror.tooltip2": "§bTeleportation Successful",
     "item.reborn12k.magic_mirror.tooltip3": "§2Bed is set",
     "item.reborn12k.magic_mirror.tooltip4": "§2Charges replenished",
     "item.reborn12k.magic_mirror.tooltip5": "§cYou are out of charges",
-    "item.reborn12k.magic_mirror.tooltip6": "§cOnly works in the Overworld",
-    "item.reborn12k.magic_mirror.tooltip7": "§cNO CHARGES",
-    "item.reborn12k.magic_mirror.tooltip8": "§2Teleport Possible",
-    "item.reborn12k.magic_mirror.tooltip9": "§cTeleport Impossible",
+    "item.reborn12k.magic_mirror.tooltip6": "§cNO CHARGES",
+    "item.reborn12k.magic_mirror.tooltip7": "§2Teleport Possible",
+    "item.reborn12k.magic_mirror.tooltip8": "§cTeleport Impossible",
 
     "item.reborn12k.yggdrasill_branch.tooltip1": "§8The Yggdrasill's Branch is §2INACTIVE",
     "item.reborn12k.yggdrasill_branch.tooltip2": "§8The Yggdrasill's Branch is §aACTIVE",
