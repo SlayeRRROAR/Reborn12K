@@ -24,6 +24,9 @@ public class RebornTagsUtil {
 
         public static final TagKey<Block> GLASS = createCommonTag("glass");
 
+        public static final TagKey<Block> COAL_ORES = createCommonTag("coal_ores");
+        public static final TagKey<Block> COAL_BLOCKS = createCommonTag("coal_ores");
+
         public static final TagKey<Block> COPPER_ORES = createCommonTag("copper_ores");
         public static final TagKey<Block> RAW_COPPER_BLOCKS = createCommonTag("raw_copper_blocks");
         public static final TagKey<Block> COPPER_BLOCKS = createCommonTag("copper_blocks");
@@ -194,6 +197,8 @@ public class RebornTagsUtil {
 
         public static final TagKey<Item> ENDER_PEARL_DUSTS = createCommonTag("ender_pearl_dusts");
 
+        public static final TagKey<Item> COAL_ORES = createCommonTag("coal_ores");
+        public static final TagKey<Item> COAL_BLOCKS = createCommonTag("coal_blocks");
         public static final TagKey<Item> COAL_DUSTS = createCommonTag("coal_dusts");
 
         public static final TagKey<Item> COPPER_ORES = createCommonTag("copper_ores");
