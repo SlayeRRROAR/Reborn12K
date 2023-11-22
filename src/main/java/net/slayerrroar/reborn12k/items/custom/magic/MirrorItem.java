@@ -1,6 +1,5 @@
 package net.slayerrroar.reborn12k.items.custom.magic;
 
-import com.mojang.logging.LogUtils;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,6 +11,7 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtHelper;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
@@ -22,12 +22,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.util.InventoryInteractionUtil;
 import org.jetbrains.annotations.Nullable;
-import org.slf4j.Logger;
 
 import java.util.List;
 
 @SuppressWarnings("ConstantConditions")
-public class MirrorItem extends Item {public MirrorItem(Settings settings) {
+public class MirrorItem extends Item {
+    public MirrorItem(Settings settings) {
         super(settings);
     }
 
@@ -37,23 +37,26 @@ public class MirrorItem extends Item {public MirrorItem(Settings settings) {
         } else return world.getBlockState(getTeleportPos(stack.getOrCreateNbt())).isIn(BlockTags.BEDS);
     }
 
-    private void setPositionAndUpdate(ServerPlayerEntity player, BlockPos pos) {
-        player.fallDistance = 0;
-        player.teleport(pos.getX(), pos.getY(), pos.getZ());
-        player.sleep(pos);
+    private void setPositionAndUpdate(ServerPlayerEntity serverPlayer, BlockPos pos) {
+        serverPlayer.fallDistance = 0;
+        serverPlayer.teleport(serverPlayer.getServer().getWorld(serverPlayer.getSpawnPointDimension()),
+                pos.getX(), pos.getY(), pos.getZ(),
+                serverPlayer.getYaw(), serverPlayer.getPitch());
+        serverPlayer.sleep(pos);
     }
 
     private void attemptTeleport(World world, PlayerEntity player) {
         ServerPlayerEntity serverPlayer = (ServerPlayerEntity) player;
+        ServerWorld teleportDim = serverPlayer.getServer().getWorld(serverPlayer.getSpawnPointDimension());
         ItemStack stack = player.getStackInHand(Hand.MAIN_HAND);
 
         if (getTeleportPos(stack.getOrCreateNbt()) == null) {
             player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip1"), true);
-        } else if (!world.getBlockState(getTeleportPos(stack.getOrCreateNbt())).isIn(BlockTags.BEDS)) {
+        } else if (!teleportDim.getBlockState(getTeleportPos(stack.getOrCreateNbt())).isIn(BlockTags.BEDS)) {
             player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip1"), true);
         } else {
+            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_CHORUS_FRUIT_TELEPORT, SoundCategory.PLAYERS, 0.25f, 0.25f);
             setPositionAndUpdate(serverPlayer, getTeleportPos(stack.getOrCreateNbt()));
-            world.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 0.25f, 0.25f);
             player.getStackInHand(Hand.MAIN_HAND).damage(1, world.random, serverPlayer);
             player.getItemCooldownManager().set(this, 20);
             player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip2"), true);
@@ -89,9 +92,8 @@ public class MirrorItem extends Item {public MirrorItem(Settings settings) {
             writeNbt(pos, stack.getOrCreateNbt());
             player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip3"), true);
             return ActionResult.SUCCESS;
-        } else {
-            return ActionResult.PASS;
         }
+        return ActionResult.PASS;
     }
 
     @Override
@@ -100,20 +102,18 @@ public class MirrorItem extends Item {public MirrorItem(Settings settings) {
 
         if (!world.isClient) {
             if (hand == Hand.MAIN_HAND) {
-                if (world.getRegistryKey() == World.OVERWORLD) {
-                    if (stack.getDamage() < 16) {
-                        attemptTeleport(world, player);
+                if (stack.getDamage() < 16) {
+                    attemptTeleport(world, player);
+                    return new TypedActionResult<>(ActionResult.SUCCESS, player.getStackInHand(hand));
+                } else {
+                    if (InventoryInteractionUtil.itemCountInInventory(player, Items.ENDER_PEARL) >= 1) {
+                        InventoryInteractionUtil.removeOneItemFromInventory(player, Items.ENDER_PEARL);
+                        stack.setDamage(0);
+                        player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip4"), true);
+
                         return new TypedActionResult<>(ActionResult.SUCCESS, player.getStackInHand(hand));
                     } else {
-                        if (InventoryInteractionUtil.itemCountInInventory(player, Items.ENDER_PEARL) >= 1) {
-                            InventoryInteractionUtil.removeOneItemFromInventory(player, Items.ENDER_PEARL);
-                            stack.setDamage(0);
-                            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip4"), true);
-
-                            return new TypedActionResult<>(ActionResult.SUCCESS, player.getStackInHand(hand));
-                        } else {
-                            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip5"), true);
-                        }
+                        player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip5"), true);
                     }
                 }
             }
