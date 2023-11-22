@@ -1,7 +1,7 @@
 package net.slayerrroar.reborn12k.items.custom.magic;
 
+import com.mojang.logging.LogUtils;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -22,38 +22,25 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.slayerrroar.reborn12k.util.InventoryInteractionUtil;
 import org.jetbrains.annotations.Nullable;
+import org.slf4j.Logger;
 
 import java.util.List;
 
 @SuppressWarnings("ConstantConditions")
-public class MirrorItem extends Item {
-    public MirrorItem(Settings settings) {
+public class MirrorItem extends Item {public MirrorItem(Settings settings) {
         super(settings);
     }
 
-    private void setPositionAndUpdate(ServerPlayerEntity player, BlockPos pos) {
-        World world = player.getWorld();
-        boolean isPosEastFree = (!world.getBlockState(pos.east()).isIn(BlockTags.BEDS) && world.getBlockState(pos.east().up()).isOf(Blocks.AIR));
-        boolean isPosSouthFree = (!world.getBlockState(pos.south()).isIn(BlockTags.BEDS) && world.getBlockState(pos.south().up()).isOf(Blocks.AIR));
-        boolean isPosWestFree = (!world.getBlockState(pos.west()).isIn(BlockTags.BEDS) && world.getBlockState(pos.west().up()).isOf(Blocks.AIR));
-        boolean isPosNorthFree = (!world.getBlockState(pos.north()).isIn(BlockTags.BEDS) && world.getBlockState(pos.north().up()).isOf(Blocks.AIR));
+    private boolean bedIsAvaible(World world, ItemStack stack) {
+        if (getTeleportPos(stack.getOrCreateNbt()) == null) {
+            return false;
+        } else return world.getBlockState(getTeleportPos(stack.getOrCreateNbt())).isIn(BlockTags.BEDS);
+    }
 
-        if (isPosEastFree) {
-            player.fallDistance = 0;
-            player.teleport(pos.east().getX() + 0.5f, pos.getY() + 0.063f, pos.east().getZ() + 0.5f);
-        } else if (isPosSouthFree) {
-            player.fallDistance = 0;
-            player.teleport(pos.south().getX() + 0.5f, pos.getY() + 0.063f, pos.south().getZ() + 0.5f);
-        } else if (isPosWestFree) {
-            player.fallDistance = 0;
-            player.teleport(pos.west().getX() + 0.5f, pos.getY() + 0.063f, pos.west().getZ() + 0.5f);
-        } else if (isPosNorthFree) {
-            player.fallDistance = 0;
-            player.teleport(pos.north().getX() + 0.5f, pos.getY() + 0.063f, pos.north().getZ() + 0.5f);
-        } else {
-            player.fallDistance = 0;
-            player.teleport(pos.getX() + 0.5f, pos.getY() + 0.563, pos.getZ() + 0.5f);
-        }
+    private void setPositionAndUpdate(ServerPlayerEntity player, BlockPos pos) {
+        player.fallDistance = 0;
+        player.teleport(pos.getX(), pos.getY(), pos.getZ());
+        player.sleep(pos);
     }
 
     private void attemptTeleport(World world, PlayerEntity player) {
@@ -61,6 +48,8 @@ public class MirrorItem extends Item {
         ItemStack stack = player.getStackInHand(Hand.MAIN_HAND);
 
         if (getTeleportPos(stack.getOrCreateNbt()) == null) {
+            player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip1"), true);
+        } else if (!world.getBlockState(getTeleportPos(stack.getOrCreateNbt())).isIn(BlockTags.BEDS)) {
             player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip1"), true);
         } else {
             setPositionAndUpdate(serverPlayer, getTeleportPos(stack.getOrCreateNbt()));
@@ -126,8 +115,6 @@ public class MirrorItem extends Item {
                             player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip5"), true);
                         }
                     }
-                } else {
-                    player.sendMessage(Text.translatable("item.reborn12k.magic_mirror.tooltip6"), true);
                 }
             }
         }
@@ -136,10 +123,13 @@ public class MirrorItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        if (stack.hasNbt()) {
-            tooltip.add(Text.translatable("item.reborn12k.mirror.tooltip1"));
+        if (stack.getDamage() >= stack.getMaxDamage()) {
+            tooltip.add(Text.translatable("item.reborn12k.magic_mirror.tooltip6"));
+        } else if (bedIsAvaible(world, stack)) {
+            tooltip.add(Text.translatable("item.reborn12k.magic_mirror.tooltip7"));
         } else {
-            tooltip.add(Text.translatable("item.reborn12k.mirror.tooltip2"));
+            tooltip.add(Text.translatable("item.reborn12k.magic_mirror.tooltip8"));
         }
     }
+
 }
