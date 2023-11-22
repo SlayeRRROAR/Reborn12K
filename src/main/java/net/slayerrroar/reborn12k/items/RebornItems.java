@@ -17,6 +17,7 @@ import net.slayerrroar.reborn12k.Reborn12K;
 import net.slayerrroar.reborn12k.items.custom.*;
 import net.slayerrroar.reborn12k.items.custom.magic.MirrorItem;
 import net.slayerrroar.reborn12k.items.custom.magic.MobSoulItem;
+import net.slayerrroar.reborn12k.items.custom.magic.WarpScrollItem;
 import net.slayerrroar.reborn12k.items.custom.magic.SoulVesselItem;
 import net.slayerrroar.reborn12k.items.custom.magic.essences.AdvancedEssenceItem;
 import net.slayerrroar.reborn12k.items.custom.magic.essences.BasicEssenceItem;
@@ -445,6 +446,8 @@ public class RebornItems {
     public static final Item FERRUM_STAFF = registerItem ("ferrum_staff", new FerrumStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
     public static final Item CRIMSON_STAFF = registerItem ("crimson_staff", new CrimsonStaff(new FabricItemSettings().recipeRemainder(ARCHMAGE_STAFF).maxCount(1).fireproof().rarity(Rarity.EPIC)));
 
+
+    public static final Item WARP_SCROLL = registerItem("warp_scroll", new WarpScrollItem(new FabricItemSettings()));
 
     public static final Item MAGIC_MIRROR = registerItem("magic_mirror", new MirrorItem(new FabricItemSettings().maxCount(1).maxDamage(16)));
     public static final Item ICE_MIRROR = registerItem("ice_mirror", new MirrorItem(new FabricItemSettings().maxCount(1).maxDamage(16)));
