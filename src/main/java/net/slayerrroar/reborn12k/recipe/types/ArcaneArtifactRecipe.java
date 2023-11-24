@@ -86,14 +86,14 @@ public class ArcaneArtifactRecipe implements Recipe<SimpleInventory> {
         public static final String ID = "arcane_artifact";
 
         public static final Codec<ArcaneArtifactRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
-                validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(ArcaneArtifactRecipe::getIngredients),
+                validateAmount().fieldOf("ingredients").forGetter(ArcaneArtifactRecipe::getIngredients),
                 RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output),
                 Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)
         ).apply(in, ArcaneArtifactRecipe::new));
 
-        private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
+        private static Codec<List<Ingredient>> validateAmount() {
             return Codecs.validate(Codecs.validate(
-                    delegate.listOf(), list -> list.size() > max ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
+                    Ingredient.DISALLOW_EMPTY_CODEC.listOf(), list -> list.size() > 9 ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
             ), list -> list.isEmpty() ? DataResult.error(() -> "Recipe has no ingredients!") : DataResult.success(list));
         }
 

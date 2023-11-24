@@ -86,14 +86,14 @@ public class ManaCondenserRecipe implements Recipe<SimpleInventory> {
         public static final String ID = "mana_condenser";
 
         public static final Codec<ManaCondenserRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
-                validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(ManaCondenserRecipe::getIngredients),
+                validateAmount().fieldOf("ingredients").forGetter(ManaCondenserRecipe::getIngredients),
                 RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output),
                 Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)
         ).apply(in, ManaCondenserRecipe::new));
 
-        private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
+        private static Codec<List<Ingredient>> validateAmount() {
             return Codecs.validate(Codecs.validate(
-                    delegate.listOf(), list -> list.size() > max ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
+                    Ingredient.DISALLOW_EMPTY_CODEC.listOf(), list -> list.size() > 9 ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
             ), list -> list.isEmpty() ? DataResult.error(() -> "Recipe has no ingredients!") : DataResult.success(list));
         }
 

@@ -88,14 +88,14 @@ public class ManufactoryRecipe implements Recipe<SimpleInventory> {
         public static final String ID = "manufactory";
 
         public static final Codec<ManufactoryRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
-                validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(ManufactoryRecipe::getIngredients),
+                validateAmount().fieldOf("ingredients").forGetter(ManufactoryRecipe::getIngredients),
                 RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output),
                 Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)
         ).apply(in, ManufactoryRecipe::new));
 
-        private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
+        private static Codec<List<Ingredient>> validateAmount() {
             return Codecs.validate(Codecs.validate(
-                    delegate.listOf(), list -> list.size() > max ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
+                    Ingredient.DISALLOW_EMPTY_CODEC.listOf(), list -> list.size() > 9 ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
             ), list -> list.isEmpty() ? DataResult.error(() -> "Recipe has no ingredients!") : DataResult.success(list));
         }
 

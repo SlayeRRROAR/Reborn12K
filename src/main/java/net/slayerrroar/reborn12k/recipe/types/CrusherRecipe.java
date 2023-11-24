@@ -8,7 +8,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.recipe.*;
 import net.minecraft.registry.DynamicRegistryManager;
-import net.minecraft.util.JsonHelper;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.dynamic.Codecs;
 import net.minecraft.world.World;
@@ -87,14 +86,14 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
         public static final String ID = "crusher";
 
         public static final Codec<CrusherRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
-                validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(CrusherRecipe::getIngredients),
+                validateAmount().fieldOf("ingredients").forGetter(CrusherRecipe::getIngredients),
                 RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output),
                 Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)
         ).apply(in, CrusherRecipe::new));
 
-        private static Codec<List<Ingredient>> validateAmount(Codec<Ingredient> delegate, int max) {
+        private static Codec<List<Ingredient>> validateAmount() {
             return Codecs.validate(Codecs.validate(
-                    delegate.listOf(), list -> list.size() > max ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
+                    Ingredient.DISALLOW_EMPTY_CODEC.listOf(), list -> list.size() > 9 ? DataResult.error(() -> "Recipe has too many ingredients!") : DataResult.success(list)
             ), list -> list.isEmpty() ? DataResult.error(() -> "Recipe has no ingredients!") : DataResult.success(list));
         }
 
