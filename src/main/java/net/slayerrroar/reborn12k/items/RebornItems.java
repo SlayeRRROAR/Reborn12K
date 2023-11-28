@@ -596,20 +596,6 @@ public class RebornItems {
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_PLATINUM);
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_IRIDIUM);
 
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_ARCHEOSITE);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_BRONZE);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_CONSTANTAN);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_INVAR);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_STEEL);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_TUNGSTENSTEEL);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_THELOSITE);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_ADVANCED_ALLOY);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_IRIDIUM_ALLOY);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_ELECTRUM);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_SIGNALUM);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_LUMIUM);
-        addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, RAW_ENDERIUM);
-
 
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, COAL_DUST);
         addToItemGroup(ItemGroupUtil.REBORN_MATERIALS, COPPER_DUST);
