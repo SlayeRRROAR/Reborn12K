@@ -18,12 +18,17 @@ public class ManufactoryRecipe implements Recipe<SimpleInventory> {
 
     private final ItemStack output;
     private final List<Ingredient> recipeItems;
-    private final int cookingTime;
+    //private final int cookingTime;
 
-    public ManufactoryRecipe(List<Ingredient> ingredients, ItemStack itemStack, int cookingTime) {
+    /*public ManufactoryRecipe(List<Ingredient> ingredients, ItemStack itemStack, int cookingTime) {
         this.output = itemStack;
         this.recipeItems = ingredients;
         this.cookingTime = cookingTime;
+    }*/
+
+    public ManufactoryRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
+        this.output = itemStack;
+        this.recipeItems = ingredients;
     }
 
     @Override
@@ -64,9 +69,9 @@ public class ManufactoryRecipe implements Recipe<SimpleInventory> {
         return list;
     }
 
-    public int getCookingTime() {
+    /*public int getCookingTime() {
         return this.cookingTime;
-    }
+    }*/
 
     @Override
     public RecipeSerializer<?> getSerializer() {
@@ -89,8 +94,8 @@ public class ManufactoryRecipe implements Recipe<SimpleInventory> {
 
         public static final Codec<ManufactoryRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
                 validateAmount().fieldOf("ingredients").forGetter(ManufactoryRecipe::getIngredients),
-                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output),
-                Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)
+                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output) /*,
+                Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)*/
         ).apply(in, ManufactoryRecipe::new));
 
         private static Codec<List<Ingredient>> validateAmount() {
@@ -104,7 +109,7 @@ public class ManufactoryRecipe implements Recipe<SimpleInventory> {
             return CODEC;
         }
 
-        @Override
+        /*@Override
         public ManufactoryRecipe read(PacketByteBuf buf) {
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
 
@@ -115,6 +120,18 @@ public class ManufactoryRecipe implements Recipe<SimpleInventory> {
             ItemStack output = buf.readItemStack();
             int cookingTime = buf.readVarInt();
             return new ManufactoryRecipe(inputs, output, cookingTime);
+        }*/
+
+        @Override
+        public ManufactoryRecipe read(PacketByteBuf buf) {
+            DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
+
+            for(int i = 0; i < inputs.size(); i++) {
+                inputs.set(i, Ingredient.fromPacket(buf));
+            }
+
+            ItemStack output = buf.readItemStack();
+            return new ManufactoryRecipe(inputs, output);
         }
 
         @Override
@@ -126,7 +143,7 @@ public class ManufactoryRecipe implements Recipe<SimpleInventory> {
             }
 
             buf.writeItemStack(recipe.getResult(null));
-            buf.writeInt(recipe.cookingTime);
+            //buf.writeInt(recipe.cookingTime);
         }
     }
 }

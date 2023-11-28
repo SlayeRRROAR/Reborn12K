@@ -18,12 +18,17 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
 
     private final ItemStack output;
     private final List<Ingredient> recipeItems;
-    private final int cookingTime;
+    //private final int cookingTime;
 
-    public CrusherRecipe(List<Ingredient> ingredients, ItemStack itemStack, int cookingTime) {
+    /*public CrusherRecipe(List<Ingredient> ingredients, ItemStack itemStack, int cookingTime) {
         this.output = itemStack;
         this.recipeItems = ingredients;
         this.cookingTime = cookingTime;
+    }*/
+
+    public CrusherRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
+        this.output = itemStack;
+        this.recipeItems = ingredients;
     }
 
     @Override
@@ -62,9 +67,9 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
         return list;
     }
 
-    public int getCookingTime() {
+    /*public int getCookingTime() {
         return this.cookingTime;
-    }
+    }*/
 
     @Override
     public RecipeSerializer<?> getSerializer() {
@@ -87,8 +92,8 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
 
         public static final Codec<CrusherRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
                 validateAmount().fieldOf("ingredients").forGetter(CrusherRecipe::getIngredients),
-                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output),
-                Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)
+                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output) /*,
+                Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)*/
         ).apply(in, CrusherRecipe::new));
 
         private static Codec<List<Ingredient>> validateAmount() {
@@ -102,7 +107,7 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
             return CODEC;
         }
 
-        @Override
+        /*@Override
         public CrusherRecipe read(PacketByteBuf buf) {
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
 
@@ -113,6 +118,18 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
             ItemStack output = buf.readItemStack();
             int cookingTime = buf.readVarInt();
             return new CrusherRecipe(inputs, output, cookingTime);
+        }*/
+
+        @Override
+        public CrusherRecipe read(PacketByteBuf buf) {
+            DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
+
+            for(int i = 0; i < inputs.size(); i++) {
+                inputs.set(i, Ingredient.fromPacket(buf));
+            }
+
+            ItemStack output = buf.readItemStack();
+            return new CrusherRecipe(inputs, output);
         }
 
         @Override
@@ -124,7 +141,7 @@ public class CrusherRecipe implements Recipe<SimpleInventory> {
             }
 
             buf.writeItemStack(recipe.getResult(null));
-            buf.writeInt(recipe.cookingTime);
+            //buf.writeInt(recipe.cookingTime);
         }
     }
 }

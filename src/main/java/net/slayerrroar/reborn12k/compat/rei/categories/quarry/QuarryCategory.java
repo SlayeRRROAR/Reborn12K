@@ -42,8 +42,8 @@ public class QuarryCategory implements DisplayCategory<QuarryDisplay> {
     public List<Widget> setupDisplay(QuarryDisplay display, Rectangle bounds) {
         Point startPoint = new Point(bounds.getCenterX() - 41, bounds.y + 10);
 
-        double cookingTime = display.getCookingTime();
-        DecimalFormat df = new DecimalFormat("###.##");
+        /*double cookingTime = display.getCookingTime();
+        DecimalFormat df = new DecimalFormat("###.##");*/
 
         List<Widget> widgets = Lists.newArrayList();
         widgets.add(Widgets.createRecipeBase(bounds));
@@ -62,10 +62,10 @@ public class QuarryCategory implements DisplayCategory<QuarryDisplay> {
         widgets.add(Widgets.createResultSlotBackground(new Point(startPoint.x + 77, startPoint.y + 6)));
 
 
-        widgets.add(Widgets.createLabel(new Point(bounds.x + bounds.width - 48, bounds.y + 5),
-                Text.translatable("rei.reborn12k.cooking.time", df.format(cookingTime / 20d))).noShadow().rightAligned().color(0xFF404040, 0xFFBBBBBB));
+        /*widgets.add(Widgets.createLabel(new Point(bounds.x + bounds.width - 48, bounds.y + 5),
+                Text.translatable("rei.reborn12k.cooking.time", df.format(cookingTime / 20d))).noShadow().rightAligned().color(0xFF404040, 0xFFBBBBBB));*/
         widgets.add(Widgets.createArrow(new Point(startPoint.x + 38, startPoint.y + 6))
-                .animationDurationTicks(cookingTime));
+                .animationDurationTicks(60));
 
         return widgets;
     }

@@ -19,26 +19,40 @@ import java.util.Optional;
 @SuppressWarnings({"unused","FieldMayBeFinal", "UnstableApiUsage"})
 public class CrusherDisplay extends BasicDisplay implements SimpleGridMenuDisplay {
     private RecipeEntry<?> recipe;
-    private double cookTime;
+    //private double cookTime;
+
+    /*public CrusherDisplay(RecipeEntry<? extends CrusherRecipe> recipe) {
+        this(EntryIngredients.ofIngredients(recipe.value().getIngredients()), Collections.singletonList(EntryIngredients.of(recipe.value().getResult(BasicDisplay.registryAccess()))),
+                recipe, recipe.value().getCookingTime());
+    }*/
 
     public CrusherDisplay(RecipeEntry<? extends CrusherRecipe> recipe) {
         this(EntryIngredients.ofIngredients(recipe.value().getIngredients()), Collections.singletonList(EntryIngredients.of(recipe.value().getResult(BasicDisplay.registryAccess()))),
-                recipe, recipe.value().getCookingTime());
+                recipe);
     }
+
+    /*public CrusherDisplay(List<EntryIngredient> input, List<EntryIngredient> output, NbtCompound tag) {
+        this(input, output, RecipeManagerContext.getInstance().byId(tag, "location"), tag.getDouble("cookTime"));
+    }*/
 
     public CrusherDisplay(List<EntryIngredient> input, List<EntryIngredient> output, NbtCompound tag) {
-        this(input, output, RecipeManagerContext.getInstance().byId(tag, "location"), tag.getDouble("cookTime"));
+        this(input, output, RecipeManagerContext.getInstance().byId(tag, "location"));
     }
 
-    public CrusherDisplay(List<EntryIngredient> input, List<EntryIngredient> output, @Nullable RecipeEntry<?> recipe, double cookTime) {
+    /*public CrusherDisplay(List<EntryIngredient> input, List<EntryIngredient> output, @Nullable RecipeEntry<?> recipe, double cookTime) {
         super(input, output, Optional.ofNullable(recipe).map(RecipeEntry::id));
         this.recipe = recipe;
         this.cookTime = cookTime;
+    }*/
+
+    public CrusherDisplay(List<EntryIngredient> input, List<EntryIngredient> output, @Nullable RecipeEntry<?> recipe) {
+        super(input, output, Optional.ofNullable(recipe).map(RecipeEntry::id));
+        this.recipe = recipe;
     }
 
-    public double getCookingTime() {
+    /*public double getCookingTime() {
         return cookTime;
-    }
+    }*/
 
     @ApiStatus.Internal
     public Optional<RecipeEntry<?>> getOptionalRecipe() {
@@ -55,9 +69,9 @@ public class CrusherDisplay extends BasicDisplay implements SimpleGridMenuDispla
         return 1;
     }
 
-    public static <R extends CrusherDisplay> BasicDisplay.Serializer<R> serializer(BasicDisplay.Serializer.RecipeLessConstructor<R> constructor) {
+    /*public static <R extends CrusherDisplay> BasicDisplay.Serializer<R> serializer(BasicDisplay.Serializer.RecipeLessConstructor<R> constructor) {
         return BasicDisplay.Serializer.ofRecipeLess(constructor, (display, tag) -> tag.putDouble("cookTime", display.getCookingTime()));
-    }
+    }*/
 
     @Override
     public CategoryIdentifier<?> getCategoryIdentifier() {

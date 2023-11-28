@@ -39,7 +39,7 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements ExtendedSc
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 20;
+    private int maxProgress = 200;
 
     public ArcaneArtifactBlockEntity(BlockPos blockPos, BlockState state) {
         super(RebornBlockEntities.ARCANE_ARTIFACT, blockPos, state);
@@ -109,11 +109,11 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements ExtendedSc
         state = state.with(ArcaneArtifactBlock.LIT, this.hasRecipe());
         world.setBlockState(pos, state,3);
 
-        if (hasRecipe()) {
+        /*if (hasRecipe()) {
             this.maxProgress = setCookingTime();
         } else {
             resetProgress();
-        }
+        }*/
 
         if (isOutputSlotEmptyOrReceivable()) {
             if (this.hasRecipe()) {
@@ -137,9 +137,9 @@ public class ArcaneArtifactBlockEntity extends BlockEntity implements ExtendedSc
         this.progress = 0;
     }
 
-    private int setCookingTime() {
+    /*private int setCookingTime() {
         return getCurrentRecipe().get().value().getCookingTime();
-    }
+    }*/
 
     private void craftItem() {
         Optional<RecipeEntry<ArcaneArtifactRecipe>> recipe = getCurrentRecipe();

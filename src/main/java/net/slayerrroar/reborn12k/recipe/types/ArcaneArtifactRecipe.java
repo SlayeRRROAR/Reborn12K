@@ -18,12 +18,17 @@ public class ArcaneArtifactRecipe implements Recipe<SimpleInventory> {
 
     private final ItemStack output;
     private final List<Ingredient> recipeItems;
-    private final int cookingTime;
+    //private final int cookingTime;
 
-    public ArcaneArtifactRecipe(List<Ingredient> ingredients, ItemStack itemStack, int cookingTime) {
+    /*public ArcaneArtifactRecipe(List<Ingredient> ingredients, ItemStack itemStack, int cookingTime) {
         this.output = itemStack;
         this.recipeItems = ingredients;
         this.cookingTime = cookingTime;
+    }*/
+
+    public ArcaneArtifactRecipe(List<Ingredient> ingredients, ItemStack itemStack) {
+        this.output = itemStack;
+        this.recipeItems = ingredients;
     }
 
     @Override
@@ -62,9 +67,9 @@ public class ArcaneArtifactRecipe implements Recipe<SimpleInventory> {
         return list;
     }
 
-    public int getCookingTime() {
+    /*public int getCookingTime() {
         return this.cookingTime;
-    }
+    }*/
 
     @Override
     public RecipeSerializer<?> getSerializer() {
@@ -87,8 +92,8 @@ public class ArcaneArtifactRecipe implements Recipe<SimpleInventory> {
 
         public static final Codec<ArcaneArtifactRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
                 validateAmount().fieldOf("ingredients").forGetter(ArcaneArtifactRecipe::getIngredients),
-                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output),
-                Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)
+                RecipeCodecs.CRAFTING_RESULT.fieldOf("output").forGetter(r -> r.output) /*,
+                Codec.INT.fieldOf("cookingtime").orElse(200).forGetter(r -> r.cookingTime)*/
         ).apply(in, ArcaneArtifactRecipe::new));
 
         private static Codec<List<Ingredient>> validateAmount() {
@@ -102,7 +107,7 @@ public class ArcaneArtifactRecipe implements Recipe<SimpleInventory> {
             return CODEC;
         }
 
-        @Override
+        /*@Override
         public ArcaneArtifactRecipe read(PacketByteBuf buf) {
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
 
@@ -113,6 +118,18 @@ public class ArcaneArtifactRecipe implements Recipe<SimpleInventory> {
             ItemStack output = buf.readItemStack();
             int cookingTime = buf.readVarInt();
             return new ArcaneArtifactRecipe(inputs, output, cookingTime);
+        }*/
+
+        @Override
+        public ArcaneArtifactRecipe read(PacketByteBuf buf) {
+            DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
+
+            for(int i = 0; i < inputs.size(); i++) {
+                inputs.set(i, Ingredient.fromPacket(buf));
+            }
+
+            ItemStack output = buf.readItemStack();
+            return new ArcaneArtifactRecipe(inputs, output);
         }
 
         @Override
@@ -124,7 +141,7 @@ public class ArcaneArtifactRecipe implements Recipe<SimpleInventory> {
             }
 
             buf.writeItemStack(recipe.getResult(null));
-            buf.writeInt(recipe.cookingTime);
+            //buf.writeInt(recipe.cookingTime);
         }
     }
 }

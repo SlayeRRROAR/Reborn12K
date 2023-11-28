@@ -41,7 +41,7 @@ public class ManufactoryBlockEntity extends BlockEntity implements ExtendedScree
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 20;
+    private int maxProgress = 200;
 
     public ManufactoryBlockEntity(BlockPos blockPos, BlockState state) {
         super(RebornBlockEntities.MANUFACTORY, blockPos, state);
@@ -111,11 +111,11 @@ public class ManufactoryBlockEntity extends BlockEntity implements ExtendedScree
         state = state.with(ManufactoryBlock.LIT, this.hasRecipe());
         world.setBlockState(pos, state,3);
 
-        if (hasRecipe()) {
+        /*if (hasRecipe()) {
             this.maxProgress = setCookingTime();
         } else {
             resetProgress();
-        }
+        }*/
 
         if (isOutputSlotEmptyOrReceivable()) {
             if (this.hasRecipe()) {
@@ -139,9 +139,9 @@ public class ManufactoryBlockEntity extends BlockEntity implements ExtendedScree
         this.progress = 0;
     }
 
-    private int setCookingTime() {
+    /*private int setCookingTime() {
         return getCurrentRecipe().get().value().getCookingTime();
-    }
+    }*/
 
     private void craftItem() {
         Optional<RecipeEntry<ManufactoryRecipe>> recipe = getCurrentRecipe();

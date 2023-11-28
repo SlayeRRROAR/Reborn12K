@@ -19,26 +19,40 @@ import java.util.Optional;
 @SuppressWarnings({"unused","FieldMayBeFinal", "UnstableApiUsage"})
 public class QuarryDisplay extends BasicDisplay implements SimpleGridMenuDisplay {
     private RecipeEntry<?> recipe;
-    private double cookTime;
+    //private double cookTime;
+
+    /*public QuarryDisplay(RecipeEntry<? extends QuarryRecipe> recipe) {
+        this(EntryIngredients.ofIngredients(recipe.value().getIngredients()), Collections.singletonList(EntryIngredients.of(recipe.value().getResult(BasicDisplay.registryAccess()))),
+                recipe, recipe.value().getCookingTime());
+    }*/
 
     public QuarryDisplay(RecipeEntry<? extends QuarryRecipe> recipe) {
         this(EntryIngredients.ofIngredients(recipe.value().getIngredients()), Collections.singletonList(EntryIngredients.of(recipe.value().getResult(BasicDisplay.registryAccess()))),
-                recipe, recipe.value().getCookingTime());
+                recipe);
     }
+
+    /*public QuarryDisplay(List<EntryIngredient> input, List<EntryIngredient> output, NbtCompound tag) {
+        this(input, output, RecipeManagerContext.getInstance().byId(tag, "location"), tag.getDouble("cookTime"));
+    }*/
 
     public QuarryDisplay(List<EntryIngredient> input, List<EntryIngredient> output, NbtCompound tag) {
-        this(input, output, RecipeManagerContext.getInstance().byId(tag, "location"), tag.getDouble("cookTime"));
+        this(input, output, RecipeManagerContext.getInstance().byId(tag, "location"));
     }
 
-    public QuarryDisplay(List<EntryIngredient> input, List<EntryIngredient> output, @Nullable RecipeEntry<?> recipe, double cookTime) {
+    /*public QuarryDisplay(List<EntryIngredient> input, List<EntryIngredient> output, @Nullable RecipeEntry<?> recipe, double cookTime) {
         super(input, output, Optional.ofNullable(recipe).map(RecipeEntry::id));
         this.recipe = recipe;
         this.cookTime = cookTime;
+    }*/
+
+    public QuarryDisplay(List<EntryIngredient> input, List<EntryIngredient> output, @Nullable RecipeEntry<?> recipe) {
+        super(input, output, Optional.ofNullable(recipe).map(RecipeEntry::id));
+        this.recipe = recipe;
     }
 
-    public double getCookingTime() {
+    /*public double getCookingTime() {
         return cookTime;
-    }
+    }*/
 
     @ApiStatus.Internal
     public Optional<RecipeEntry<?>> getOptionalRecipe() {
@@ -55,9 +69,9 @@ public class QuarryDisplay extends BasicDisplay implements SimpleGridMenuDisplay
         return 1;
     }
 
-    public static <R extends QuarryDisplay> BasicDisplay.Serializer<R> serializer(BasicDisplay.Serializer.RecipeLessConstructor<R> constructor) {
+    /*public static <R extends QuarryDisplay> BasicDisplay.Serializer<R> serializer(BasicDisplay.Serializer.RecipeLessConstructor<R> constructor) {
         return BasicDisplay.Serializer.ofRecipeLess(constructor, (display, tag) -> tag.putDouble("cookTime", display.getCookingTime()));
-    }
+    }*/
 
     @Override
     public CategoryIdentifier<?> getCategoryIdentifier() {

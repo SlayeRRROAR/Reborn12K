@@ -42,7 +42,7 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 20;
+    private int maxProgress = 400;
     private static final int[] OUTUPUT_SLOTS = new int[]{3, 0};
 
     public QuarryBlockEntity(BlockPos blockPos, BlockState state) {
@@ -115,11 +115,11 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
         state = state.with(ArcaneArtifactBlock.LIT, isCrafting);
         world.setBlockState(pos, state,3);
 
-        if (hasRecipe()) {
+        /*if (hasRecipe()) {
             this.maxProgress = setCookingTime();
         } else {
             resetProgress();
-        }
+        }*/
 
         if (isOutputSlotEmptyOrReceivable()) {
             if (this.hasRecipe() && this.hasFuelInFuelSlot(this)) {
@@ -147,9 +147,9 @@ public class QuarryBlockEntity extends BlockEntity implements ExtendedScreenHand
         this.progress = 0;
     }
 
-    private int setCookingTime() {
+    /*private int setCookingTime() {
         return getCurrentRecipe().get().value().getCookingTime();
-    }
+    }*/
 
     private void craftItem() {
         Optional<RecipeEntry<QuarryRecipe>> recipe = getCurrentRecipe();

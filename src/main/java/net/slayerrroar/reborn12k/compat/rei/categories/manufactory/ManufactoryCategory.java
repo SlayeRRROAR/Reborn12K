@@ -41,8 +41,8 @@ public class ManufactoryCategory implements DisplayCategory<ManufactoryDisplay> 
     public List<Widget> setupDisplay(ManufactoryDisplay display, Rectangle bounds) {
         Point startPoint = new Point(bounds.getCenterX() - 41, bounds.getCenterY() - 10);
 
-        double cookingTime = display.getCookingTime();
-        DecimalFormat df = new DecimalFormat("###.##");
+        /*double cookingTime = display.getCookingTime();
+        DecimalFormat df = new DecimalFormat("###.##");*/
 
         List<Widget> widgets = Lists.newArrayList();
         widgets.add(Widgets.createRecipeBase(bounds));
@@ -63,10 +63,10 @@ public class ManufactoryCategory implements DisplayCategory<ManufactoryDisplay> 
                 .markOutput());
         widgets.add(Widgets.createResultSlotBackground(new Point(startPoint.x + 80, startPoint.y + 3)));
 
-        widgets.add(Widgets.createLabel(new Point(bounds.x + bounds.width - 50, bounds.y + 5),
-                    Text.translatable("rei.reborn12k.cooking.time", df.format(cookingTime / 20d))).noShadow().rightAligned().color(0xFF404040, 0xFFBBBBBB));
+        /*widgets.add(Widgets.createLabel(new Point(bounds.x + bounds.width - 50, bounds.y + 5),
+                    Text.translatable("rei.reborn12k.cooking.time", df.format(cookingTime / 20d))).noShadow().rightAligned().color(0xFF404040, 0xFFBBBBBB));*/
         widgets.add(Widgets.createArrow(new Point(startPoint.x + 44, startPoint.y + 2))
-                .animationDurationTicks(cookingTime));
+                .animationDurationTicks(60));
 
 
         return widgets;

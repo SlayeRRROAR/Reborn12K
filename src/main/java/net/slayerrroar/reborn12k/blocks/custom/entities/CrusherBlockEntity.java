@@ -43,7 +43,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 20;
+    private int maxProgress = 200;
     private int fuelTime = 0;
     private int maxFuelTime = 0;
     private static final int[] TOP_SLOTS = new int[]{1};
@@ -123,7 +123,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         state = state.with(CrusherBlock.LIT, isConsumingFuel(this));
         world.setBlockState(pos, state, 3);
 
-        if (hasRecipe()) {
+        /*if (hasRecipe()) {
             this.maxProgress = setCookingTime();
         } else {
             resetProgress();
@@ -131,7 +131,7 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
 
         if (isConsumingFuel(this)) {
             this.fuelTime--;
-        }
+        }*/
 
         if (isOutputSlotEmptyOrReceivable()) {
             if (this.hasRecipe()) {
@@ -179,9 +179,9 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
         this.progress = 0;
     }
 
-    private int setCookingTime() {
+    /*private int setCookingTime() {
         return getCurrentRecipe().get().value().getCookingTime();
-    }
+    }*/
 
     private void craftItem() {
         Optional<RecipeEntry<CrusherRecipe>> recipe = getCurrentRecipe();

@@ -44,7 +44,7 @@ public class MelterBlockEntity extends BlockEntity implements ExtendedScreenHand
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 20;
+    private int maxProgress = 200;
     private int fuelTime = 0;
     private int maxFuelTime = 0;
     private static final int[] TOP_SLOTS = new int[]{1, 2};
@@ -124,11 +124,11 @@ public class MelterBlockEntity extends BlockEntity implements ExtendedScreenHand
         state = state.with(MelterBlock.LIT, isConsumingFuel(this));
         world.setBlockState(pos, state, 3);
 
-        if (hasRecipe()) {
+        /*if (hasRecipe()) {
             this.maxProgress = setCookingTime();
         } else {
             resetProgress();
-        }
+        }*/
 
         if (isConsumingFuel(this)) {
             this.fuelTime--;
@@ -179,9 +179,9 @@ public class MelterBlockEntity extends BlockEntity implements ExtendedScreenHand
         this.progress = 0;
     }
 
-    private int setCookingTime() {
+    /*private int setCookingTime() {
         return getCurrentRecipe().get().value().getCookingTime();
-    }
+    }*/
 
     private void craftItem() {
         Optional<RecipeEntry<MelterRecipe>> recipe = getCurrentRecipe();

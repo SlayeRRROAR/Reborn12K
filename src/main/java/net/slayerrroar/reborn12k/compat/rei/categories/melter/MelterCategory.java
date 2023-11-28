@@ -42,8 +42,8 @@ public class MelterCategory implements DisplayCategory<MelterDisplay> {
     public List<Widget> setupDisplay(MelterDisplay display, Rectangle bounds) {
         Point startPoint = new Point(bounds.getCenterX() - 41, bounds.y + 10);
 
-        double cookingTime = display.getCookingTime();
-        DecimalFormat df = new DecimalFormat("###.##");
+        /*double cookingTime = display.getCookingTime();
+        DecimalFormat df = new DecimalFormat("###.##");*/
 
         List<Widget> widgets = Lists.newArrayList();
         widgets.add(Widgets.createRecipeBase(bounds));
@@ -63,10 +63,10 @@ public class MelterCategory implements DisplayCategory<MelterDisplay> {
 
         widgets.add(Widgets.createBurningFire(new Point(startPoint.x - 1, startPoint.y + 20))
                 .animationDurationMS(10000));
-        widgets.add(Widgets.createLabel(new Point(bounds.x + bounds.width - 51, bounds.y + 5),
-                Text.translatable("rei.reborn12k.cooking.time", df.format(cookingTime / 20d))).noShadow().rightAligned().color(0xFF404040, 0xFFBBBBBB));
+        /*widgets.add(Widgets.createLabel(new Point(bounds.x + bounds.width - 51, bounds.y + 5),
+                Text.translatable("rei.reborn12k.cooking.time", df.format(cookingTime / 20d))).noShadow().rightAligned().color(0xFF404040, 0xFFBBBBBB));*/
         widgets.add(Widgets.createArrow(new Point(startPoint.x + 36, startPoint.y + 8))
-                .animationDurationTicks(cookingTime));
+                .animationDurationTicks(60));
 
         return widgets;
     }
