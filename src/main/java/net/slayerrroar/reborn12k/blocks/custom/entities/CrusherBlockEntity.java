@@ -127,12 +127,11 @@ public class CrusherBlockEntity extends BlockEntity implements ExtendedScreenHan
             this.maxProgress = setCookingTime();
         } else {
             resetProgress();
-        }
+        }*/
 
         if (isConsumingFuel(this)) {
             this.fuelTime--;
-        }*/
-
+        }
         if (isOutputSlotEmptyOrReceivable()) {
             if (this.hasRecipe()) {
                 if (hasFuelInFuelSlot(this) && !isConsumingFuel(this)) {
