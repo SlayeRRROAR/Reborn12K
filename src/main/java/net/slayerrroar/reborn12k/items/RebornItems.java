@@ -455,38 +455,38 @@ public class RebornItems {
 
     public static final Item SOUL_VESSEL = registerItem("soul_vessel", new SoulVesselItem(new FabricItemSettings().maxCount(1)));
 
-    public static final Item CHICKEN_SOUL = registerItem("chicken_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item COW_SOUL = registerItem("cow_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item FISH_SOUL = registerItem("fish_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item FROG_SOUL = registerItem("frog_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item MOOSHROOM_SOUL = registerItem("mooshroom_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item PIG_SOUL = registerItem("pig_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item RABBIT_SOUL = registerItem("rabbit_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item SHEEP_SOUL = registerItem("sheep_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item SQUID_SOUL = registerItem("squid_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item CHICKEN_SOUL = registerItem("chicken_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item COW_SOUL = registerItem("cow_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item FISH_SOUL = registerItem("fish_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item FROG_SOUL = registerItem("frog_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item MOOSHROOM_SOUL = registerItem("mooshroom_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item PIG_SOUL = registerItem("pig_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item RABBIT_SOUL = registerItem("rabbit_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item SHEEP_SOUL = registerItem("sheep_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item SQUID_SOUL = registerItem("squid_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
 
-    public static final Item BEE_SOUL = registerItem("bee_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item SPIDER_SOUL = registerItem("spider_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item ENDERMAN_SOUL = registerItem("enderman_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item BEE_SOUL = registerItem("bee_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item SPIDER_SOUL = registerItem("spider_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item ENDERMAN_SOUL = registerItem("enderman_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
 
-    public static final Item BLAZE_SOUL = registerItem("blaze_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item CREEPER_SOUL = registerItem("creeper_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item DROWNED_SOUL = registerItem("drowned_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item GHAST_SOUL = registerItem("ghast_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item GUARDIAN_SOUL = registerItem("guardian_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item ILLAGER_SOUL = registerItem("illager_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item MAGMA_CUBE_SOUL = registerItem("magma_cube_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item PHANTOM_SOUL = registerItem("phantom_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item SHULKER_SOUL = registerItem("shulker_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item SKELETON_SOUL = registerItem("skeleton_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item SLIME_SOUL = registerItem("slime_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item WITCH_SOUL = registerItem("witch_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item WITHER_SKELETON_SOUL = registerItem("wither_skeleton_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item ZOMBIE_SOUL = registerItem("zombie_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item BLAZE_SOUL = registerItem("blaze_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item CREEPER_SOUL = registerItem("creeper_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item DROWNED_SOUL = registerItem("drowned_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item GHAST_SOUL = registerItem("ghast_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item GUARDIAN_SOUL = registerItem("guardian_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item ILLAGER_SOUL = registerItem("illager_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item MAGMA_CUBE_SOUL = registerItem("magma_cube_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item PHANTOM_SOUL = registerItem("phantom_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item SHULKER_SOUL = registerItem("shulker_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item SKELETON_SOUL = registerItem("skeleton_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item SLIME_SOUL = registerItem("slime_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item WITCH_SOUL = registerItem("witch_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item WITHER_SKELETON_SOUL = registerItem("wither_skeleton_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item ZOMBIE_SOUL = registerItem("zombie_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
 
-    public static final Item ENDER_DRAGON_SOUL = registerItem("ender_dragon_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item WARDEN_SOUL = registerItem("warden_soul", new MobSoulItem(new FabricItemSettings()));
-    public static final Item WITHER_SOUL = registerItem("wither_soul", new MobSoulItem(new FabricItemSettings()));
+    public static final Item ENDER_DRAGON_SOUL = registerItem("ender_dragon_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item WARDEN_SOUL = registerItem("warden_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
+    public static final Item WITHER_SOUL = registerItem("wither_soul", new MobSoulItem(new FabricItemSettings().rarity(Rarity.EPIC)));
 
 
     public static final Item CHICKEN_ESSENCE = registerItem("chicken_essence", new BasicEssenceItem(new FabricItemSettings()));
