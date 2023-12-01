@@ -336,13 +336,13 @@ public class RebornTrades {
                     new ItemStack(Items.EMERALD, giveEmeralds),
                     new ItemStack(TrinketItems.HEART_PENDANT, 1),
                     maxUses, merchantExperience, 0f);
-            case "baseBand" -> new TradeOffer(
+            case "tattered_band" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.BAND_OF_FORTITUDE, 1),
+                    new ItemStack(TrinketItems.TATTERED_BAND, 1),
                     maxUses, merchantExperience, 0f);
-            case "greaterBand" -> new TradeOffer(
+            case "colored_band" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
-                    new ItemStack(TrinketItems.GREATER_BAND_OF_FORTITUDE, 1),
+                    new ItemStack(TrinketItems.COLORED_BAND, 1),
                     maxUses, merchantExperience, 0f);
             case "monsterClaw" -> new TradeOffer(
                     new ItemStack(Items.EMERALD, giveEmeralds),
@@ -406,7 +406,7 @@ public class RebornTrades {
         int baseTrinketInt = randomBaseTrinket.nextInt(baseUpperbound);
 
         if (baseTrinketInt == 0) {
-            return createTrinketOffer("baseBand", 21, 3, 5);
+            return createTrinketOffer("tattered_band", 21, 3, 5);
         }
         if (baseTrinketInt == 1) {
             return createTrinketOffer("monsterClaw", 21, 3, 5);
@@ -423,7 +423,7 @@ public class RebornTrades {
         int greaterTrinketInt = randomGreaterTrinket.nextInt(greaterUpperbound);
 
         if (greaterTrinketInt == 0) {
-            return createTrinketOffer("greaterBand", 63,  1, 30);
+            return createTrinketOffer("colored_band", 63,  1, 30);
         }
         if (greaterTrinketInt == 1) {
             return createTrinketOffer("bloodyClaw", 63,  1, 30);

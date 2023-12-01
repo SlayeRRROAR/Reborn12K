@@ -81,8 +81,8 @@ public class TrinketItems {
 
     // Trinket
 
-    public static final Item BAND_OF_FORTITUDE = registerItem("band_of_fortitude", new BaseBand(new FabricItemSettings().maxCount(1)));
-    public static final Item GREATER_BAND_OF_FORTITUDE = registerItem("greater_band_of_fortitude", new GreaterBand(new FabricItemSettings().maxCount(1)));
+    public static final Item TATTERED_BAND = registerItem("tattered_band", new BaseBand(new FabricItemSettings().maxCount(1)));
+    public static final Item COLORED_BAND = registerItem("colored_band", new GreaterBand(new FabricItemSettings().maxCount(1)));
 
     public static final Item MONSTER_CLAW = registerItem("monster_claw", new MonsterClaw(new FabricItemSettings().maxCount(1)));
     public static final Item BLOODY_CLAW = registerItem("bloody_claw", new BloodyClaw(new FabricItemSettings().maxCount(1)));
@@ -164,8 +164,8 @@ public class TrinketItems {
 
         addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, RING_OF_STRENGTH);
 
-        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, BAND_OF_FORTITUDE);
-        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, GREATER_BAND_OF_FORTITUDE);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, TATTERED_BAND);
+        addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, COLORED_BAND);
 
         addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, MONSTER_CLAW);
         addToItemGroup(ItemGroupUtil.REBORN_TRINKETS, BLOODY_CLAW);

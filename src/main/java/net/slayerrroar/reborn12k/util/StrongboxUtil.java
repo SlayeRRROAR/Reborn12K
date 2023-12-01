@@ -31,7 +31,7 @@ public class StrongboxUtil {
             dropStack(world, pos, new ItemStack(TrinketItems.BUNNY_EARS, 1));
         }
         if (common_int == 4) {
-            dropStack(world, pos, new ItemStack(TrinketItems.BAND_OF_FORTITUDE, 1));
+            dropStack(world, pos, new ItemStack(TrinketItems.TATTERED_BAND, 1));
         }
         if (common_int == 5) {
             dropStack(world, pos, new ItemStack(TrinketItems.MONSTER_CLAW, 1));
@@ -81,7 +81,7 @@ public class StrongboxUtil {
             dropStack(world, pos, new ItemStack(TrinketItems.WINGED_SHOES, 1));
         }
         if (epic_int == 2) {
-            dropStack(world, pos, new ItemStack(TrinketItems.GREATER_BAND_OF_FORTITUDE, 1));
+            dropStack(world, pos, new ItemStack(TrinketItems.COLORED_BAND, 1));
         }
         if (epic_int == 3) {
             dropStack(world, pos, new ItemStack(TrinketItems.BLOODY_CLAW, 1));
